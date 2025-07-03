@@ -1,0 +1,2356 @@
+{
+  "title": "Provide papers claiming that reinforcement learning can negatively impact the performance of supervised fine-tuned LLMs.",
+  "arxiv_id": "",
+  "depth": -1,
+  "child": {
+    "Reinforcement learning hindrances in supervised fine-tuned LLMs": [
+      {
+        "title": "The Ultimate Guide to Fine-Tuning LLMs from Basics to Breakthroughs: An Exhaustive Review of Technologies, Research, Best Practices, Applied Research Challenges and Opportunities",
+        "arxiv_id": "2408.13296",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract This technical report thoroughly examines the process of fine-tuning Large Language Models (LLMs), integrating theoretical insights and practical applications. It begins by tracing the historical development of LLMs, emphasising their evolution from traditional Natural Language Processing (NLP) models and their pivotal role in modern AI systems. The analysis differentiates between various fine-tuning methodologies, including supervised, unsupervised, and instruction-based approaches, underscoring their respective implications for specific tasks. A structured seven-stage pipeline for LLM fine-tuning is introduced, covering the complete lifecycle from data preparation to model deployment. Key considerations include data collection strategies, handling of imbalanced datasets, model initialisation, and optimisation techniques, with a particular focus on hyperparameter tuning. The report also highlights parameter-efficient fine-tuning methods such as Low-Rank Adaptation (LoRA) and Half Fine-Tuning, which balance resource constraints with optimal model performance. The exploration extends to advanced fine-tuning techniques and configurations like memory fine-tuning, Mixture of Experts (MoE) and Mixture of Agents (MoA), demonstrating how these methods harness specialised networks and multi-agent collaboration for improved outcomes. Proximal Policy Optimisation (PPO) and Direct Preference Optimisation (DPO) are discussed as innovative approaches to aligning models with human preferences, while the benefits of pruning and routing optimisations are examined for enhancing efficiency. In the latter sections, the report delves into validation frameworks, post-deployment monitoring, and optimisation techniques for inference. It also addresses the deployment of LLMs on distributed and cloud-based platforms. Additionally, cutting-edge topics such as multimodal LLMs and fine-tuning for audio and speech processing are covered, alongside emerging challenges related to scalability, privacy, and accountability. This report aims to serve as a comprehensive guide for researchers and practitioners, offering actionable insights into fine-tuning LLMs while navigating the challenges and opportunities inherent in this rapidly evolving field.",
+        "sections": {
+          "Chapter 1 Introduction 1.1 Background of Large Language Models (LLMs)": [
+            "A survey of reinforcement learning from human feedback",
+            "N-gram language models",
+            "A survey on evaluation of large language models",
+            "Gpt-4 vs. gpt-3.5: A concise showdown"
+          ],
+          "Chapter 1 Introduction 1.2 Historical Development and Key Milestones": [
+            "Building trust in conversational ai: A review and solution architecture using large language models and knowledge graphs"
+          ],
+          "Chapter 1 Introduction 1.3 Evolution from Traditional NLP Models to State-of-the-Art LLMs": [
+            "Bert: Pre-training of deep bidirectional transformers for language understanding",
+            "Language models are unsupervised multitask learners",
+            "Llama: Open and efficient foundation language models",
+            "Efficient estimation of word representations in vector space",
+            "Dai, Thanumalayan\u00a0Sankaranarayana Pillai, Marie Pellat, Aitor Lewkowycz, Erica Moreira, Rewon Child, Oleksandr Polozov, Katherine Lee, Zongwei Zhou, Xuezhi Wang, Brennan Saeta, Mark Diaz, Orhan Firat, Michele Catasta, Jason Wei, Kathy Meier-Hellstern, Douglas Eck, Jeff Dean, Slav Petrov, and Noah Fiedel"
+          ],
+          "Chapter 1 Introduction 1.4 Overview of Current Leading LLMs": [
+            "The art of fine-tuning large language models, explained in depth"
+          ],
+          "Chapter 2 Seven Stage Fine-Tuning Pipeline for LLM 2.4 Stage 4: Partial or Full Fine-Tuning": [
+            "Hft: Half fine-tuning for large language models"
+          ],
+          "Chapter 3 Stage 1: Data Preparation 3.2 Existing and Potential Research Methodologies": [
+            "Snorkel: Rapid training data creation with weak supervision",
+            "A survey of data augmentation approaches for nlp",
+            "Cheap and fast\u2014but is it good? evaluating non-expert annotations for natural language tasks",
+            "Language models are few-shot learners.",
+            "Making pre-trained language models better few-shot learners",
+            "Efficient estimation of word representations in vector space",
+            "Hotflip: White-box adversarial examples for text classification",
+            "Automatic data labeling for supervised learning with applications to visual inspection of mixed-plastic waste",
+            "Improving neural machine translation models with monolingual data"
+          ],
+          "Chapter 3 Stage 1: Data Preparation 3.3 Challenges in Data Preparation for Fine-Tuning LLMs": [
+            "Fairness in machine learning: Lessons from political philosophy",
+            "On the dangers of stochastic parrots: Can language models be too big?",
+            "Don\u2019t stop pretraining: Adapt language models to domains and tasks"
+          ],
+          "Chapter 3 Stage 1: Data Preparation 3.5 Best Practices": [
+            "The stanford natural language inference (snli) corpus",
+            "Machine learning for data preprocessing",
+            "Fairness in machine learning: Lessons from political philosophy",
+            "Smote: synthetic minority over-sampling technique",
+            "A survey on image data augmentation for deep learning"
+          ],
+          "Chapter 4 Stage 2: Model Initialisation 4.2 Tools and Libraries for Model Initialisation": [
+            "Transformers: State-of-the-art natural language processing",
+            "Pytorch: An imperative style, high-performance deep learning library",
+            "Tensorflow: Large-scale machine learning on heterogeneous distributed systems"
+          ],
+          "Chapter 5 Stage 3: Training Setup 5.1 Steps Involved in Training Setup": [
+            "Adam: A method for stochastic optimization"
+          ],
+          "Chapter 5 Stage 3: Training Setup 5.2 Setting up Training Environment": [
+            "Transformers: State-of-the-art natural language processing",
+            "Pytorch: An imperative style, high-performance deep learning library",
+            "Tensorflow: A system for large-scale machine learning",
+            "In-datacenter performance analysis of a tensor processing unit",
+            "Large batch optimization for deep learning: Training bert in 76 minutes",
+            "Megatron-lm: Training multi-billion parameter language models using model parallelism"
+          ],
+          "Chapter 5 Stage 3: Training Setup 5.3 Defining Hyperparameters": [
+            "Random search for hyper-parameter optimization",
+            "Deep learning",
+            "Automated Machine Learning: Methods, Systems, Challenges"
+          ],
+          "Chapter 5 Stage 3: Training Setup 5.6 Best Practices": [
+            "Mixed precision training",
+            "Horovod: fast and easy distributed deep learning in tensorflow",
+            "Neural Networks: Tricks of the trade",
+            "Random search for hyper-parameter optimization"
+          ],
+          "Chapter 6 Stage 4: Selection of Fine-Tuning Techniques and Appropriate Model Configurations 6.2 Fine-Tuning Strategies for LLMs": [
+            "Lawgpt: A chinese legal knowledge-enhanced large language model",
+            "Towards expert-level medical question answering with large language models",
+            "Palmyra-Fin-70B-32k: a powerful LLM designed for Finance",
+            "Pharmagpt: Domain-specific large language models for bio-pharmaceutical and chemistry"
+          ],
+          "Chapter 6 Stage 4: Selection of Fine-Tuning Techniques and Appropriate Model Configurations 6.3 Parameter-Efficient Fine-Tuning (PEFT) Techniques": [
+            "Lora: Low-rank adaptation of large language models",
+            "Qlora: Efficient finetuning of quantized llms",
+            "Dora: Weight-decomposed low-rank adaptation"
+          ],
+          "Chapter 6 Stage 4: Selection of Fine-Tuning Techniques and Appropriate Model Configurations 6.4 Half Fine Tuning": [
+            "Hft: Half fine-tuning for large language models"
+          ],
+          "Chapter 6 Stage 4: Selection of Fine-Tuning Techniques and Appropriate Model Configurations 6.5 Lamini Memory Tuning": [
+            "Banishing llm hallucinations requires rethinking generalization"
+          ],
+          "Chapter 6 Stage 4: Selection of Fine-Tuning Techniques and Appropriate Model Configurations 6.6 Mixture of Experts": [
+            "Mixtral of experts"
+          ],
+          "Chapter 6 Stage 4: Selection of Fine-Tuning Techniques and Appropriate Model Configurations 6.7 Mixture of Agents": [
+            "Mixture-of-agents enhances large language model capabilities"
+          ],
+          "Chapter 6 Stage 4: Selection of Fine-Tuning Techniques and Appropriate Model Configurations 6.8 Proximal Policy Optimisation (PPO)": [
+            "Proximal policy optimization algorithms"
+          ],
+          "Chapter 6 Stage 4: Selection of Fine-Tuning Techniques and Appropriate Model Configurations 6.9 Direct Preference Optimisation (DPO)": [
+            "Is dpo superior to ppo for llm alignment?",
+            "Direct preference optimization: Your language model is secretly a reward model"
+          ],
+          "Chapter 6 Stage 4: Selection of Fine-Tuning Techniques and Appropriate Model Configurations 6.10 Optimised Routing and Pruning Operations (ORPO)": [
+            "What are the most effective techniques for pruning ai models?"
+          ],
+          "Chapter 7 Stage 5: Evaluation and Validation 7.8 Evaluating Fine-Tuned LLMs on Safety Benchmark": [
+            "Decodingtrust: A comprehensive assessment of trustworthiness in gpt models"
+          ],
+          "Chapter 7 Stage 5: Evaluation and Validation 7.9 Evaluating Safety of Fine-Tuned LLM using AI Models": [
+            "Wildguard: Open one-stop moderation tools for safety risks, jailbreaks, and refusals of llms",
+            "Llama guard: Llm-based input-output safeguard for human-ai conversations",
+            "Shieldgemma: Generative ai content moderation based on gemma"
+          ],
+          "Chapter 8 Stage 6: Deployment 8.3 Techniques for Optimising Model Performance During Inference": [
+            "Efficient memory management for large language model serving with pagedattention"
+          ],
+          "Chapter 10 Industrial Fine-Tuning Platforms and Frameworks for LLMs 10.7 NVIDIA NeMo Customizer": [
+            "What is nvidia nemo?",
+            "Nvidia nemo build and customize your own llms (with tutorial) \u2014 run.ai"
+          ],
+          "Chapter 11 Multimodal LLMs and their Fine-tuning": [
+            "Gemini: A family of highly capable multimodal models"
+          ],
+          "Chapter 11 Multimodal LLMs and their Fine-tuning 11.2 Fine-tuning of multimodal models": [
+            "Lora-fa: Memory-efficient low-rank adaptation for large language models fine-tuning",
+            "Memory-space visual prompting for efficient vision-language fine-tuning",
+            "Full parameter fine-tuning for large language models with limited resources",
+            "Few-shot parameter-efficient fine-tuning is better and cheaper than in-context learning",
+            "Dylora: Parameter efficient tuning of pre-trained models using dynamic search-free low-rank adaptation",
+            "Fine-tuning language models with just forward passes",
+            "Efficient multimodal large language models: A survey",
+            "Not all attention is needed: Parameter and computation efficient transfer learning for multi-modal large language models"
+          ],
+          "Chapter 11 Multimodal LLMs and their Fine-tuning 11.4 Audio or Speech LLMs Or Large Audio Models": [
+            "Hubert: Self-supervised speech representation learning by masked prediction of hidden units",
+            "wav2vec 2.0: A framework for self-supervised learning of speech representations",
+            "Audiopalm: A large language model that can speak and listen",
+            "Audiolm: a language modeling approach to audio generation",
+            "A comprehensive overview of large language models"
+          ],
+          "Chapter 12 Open Challenges and Research Directions 12.1 Scalability Issues": [
+            "Understanding llm fine-tuning: Tailoring large language models to your unique requirements",
+            "Data-efficient fine-tuning for llm-based recommendation",
+            "Scaling sparse fine-tuning to large language models",
+            "Fine-tune llama 2 with lora: Customizing a large language model for question-answering",
+            "End-to-end learnable clustering for intent learning in recommendation"
+          ],
+          "Chapter 12 Open Challenges and Research Directions 12.3 Accountability and Transparency": [
+            "Federated domain-specific knowledge transfer on large language models using synthetic data",
+            "Towards deep learning models resistant to adversarial attacks"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.00025489748804830015,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Preference Fine-Tuning of LLMs Should Leverage Suboptimal, On-Policy Data",
+        "arxiv_id": "2404.14367",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract Learning from preference labels plays a crucial role in fine-tuning large language models. There are several distinct approaches for preference fine-tuning, including supervised learning, on-policy reinforcement learning (RL), and contrastive learning. Different methods come with different implementation tradeoffs and performance differences, and existing empirical findings present different conclusions, for instance, some results show that online RL is quite important to attain good fine-tuning results, while others find (offline) contrastive or even purely supervised methods sufficient. This raises a natural question: what kind of approaches are important for fine-tuning with preference data and why? In this paper, we answer this question by performing a rigorous analysis of a number of fine-tuning techniques on didactic and full-scale LLM problems. Our main finding is that, in general, approaches that use on-policy sampling or attempt to push down the likelihood on certain responses (i.e., employ a \u201cnegative gradient\u201d) outperform offline and maximum likelihood objectives. We conceptualize our insights and unify methods that use on-policy sampling or negative gradient under a notion of mode-seeking objectives for categorical distributions. Mode-seeking objectives are able to alter probability mass on specific bins of a categorical distribution at a fast rate compared to maximum likelihood, allowing them to relocate masses across bins more effectively. Our analysis prescribes actionable insights for preference fine-tuning of LLMs and informs how data should be collected for maximal improvement.",
+        "sections": {
+          "1 Introduction": [
+            "UltraFeedback: Boosting Language Models with High-quality Feedback",
+            "Training language models to follow instructions with human feedback",
+            "Reinforced self-training (rest) for language modeling",
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "Alpacafarm: A simulation framework for methods that learn from human feedback"
+          ],
+          "2 Related Work": [
+            "Mechanistically analyzing the effects of fine-tuning on procedurally defined tasks",
+            "Human-centered loss functions (halos)",
+            "Understanding the Effects of RLHF on LLM Generalisation and Diversity",
+            "Gkd: Generalized knowledge distillation for auto-regressive sequence models",
+            "Policy gradient methods for reinforcement learning with function approximation",
+            "Self-Rewarding Language Models",
+            "Aligning Language Models with Offline Learning from Human Feedback",
+            "Back to basics: Revisiting reinforce style optimization for learning from human feedback in llms",
+            "Alpacafarm: A simulation framework for methods that learn from human feedback",
+            "Proximal Policy Optimization Algorithms",
+            "A General Theoretical Paradigm to Understand Learning from Human Preferences",
+            "Reinforced self-training (rest) for language modeling",
+            "A critical evaluation of ai feedback for aligning large language models",
+            "SuperHF: Supervised Iterative Learning from Human Feedback",
+            "A long way to go: Investigating length correlations in rlhf",
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "Open problems and fundamental limitations of reinforcement learning from human feedback",
+            "SLiC-HF: Sequence Likelihood Calibration with Human Feedback",
+            "Scaling Laws for Reward Model Overoptimization"
+          ],
+          "3 Characterizing And Unifying Preference Fine-Tuning Methods 3.1 Preliminaries and Notation": [
+            "A General Theoretical Paradigm to Understand Learning from Human Preferences",
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "Rank analysis of incomplete block designs: I. the method of paired comparisons"
+          ],
+          "3 Characterizing And Unifying Preference Fine-Tuning Methods 3.2 Characterizing Fine-Tuning Methods": [
+            "The role of baselines in policy gradient optimization",
+            "Simple statistical gradient-following algorithms for connectionist reinforcement learning",
+            "Proximal policy optimization algorithms",
+            "SuperHF: Supervised Iterative Learning from Human Feedback",
+            "Reinforced self-training (rest) for language modeling",
+            "Raft: Reward ranked finetuning for generative foundation model alignment",
+            "Alpacafarm: A simulation framework for methods that learn from human feedback",
+            "Reinforcement learning by reward-weighted regression for operational space control",
+            "Combo: Conservative offline model-based policy optimization"
+          ],
+          "4 Research Questions and Analysis Setup 4.1 Coverage Conditions and Geometric Relationships": [
+            "Finite-time bounds for fitted value iteration"
+          ],
+          "4 Research Questions and Analysis Setup 4.2 Tasks and Datasets": [
+            "Enhancing chat language models by scaling high-quality instructional conversations",
+            "A long way to go: Investigating length correlations in rlhf",
+            "Alpacafarm: A simulation framework for methods that learn from human feedback"
+          ],
+          "5 Empirical Analysis Results 5.1 Question 1: The Role of On-Policy Sampling": [
+            "The self-normalized estimator for counterfactual learning"
+          ],
+          "5 Empirical Analysis Results 5.2 Question 2: The Role of Negative Gradient": [
+            "A General Theoretical Paradigm to Understand Learning from Human Preferences",
+            "Enhancing chat language models by scaling high-quality instructional conversations",
+            "Zephyr: Direct distillation of lm alignment",
+            "From r to q\u2217superscript\ud835\udc5eq^{*}: Your language model is secretly a q-function",
+            "Neural text generation with unlikelihood training"
+          ],
+          "5 Empirical Analysis Results 5.3 Question 3:  On-Policy Sampling and Negative Gradients are Complementary": [
+            "Direct nash optimization: Teaching language models to self-improve with general preferences"
+          ],
+          "6 Conceptual Unification and Theoretical Analysis 6.1 Seeking Modes Unifies On-Policy Sampling and Negative Gradients": [
+            "Direct preference optimization: Your language model is secretly a reward model"
+          ],
+          "7 Discussion, Conclusion, and Limitations": [
+            "Nash Learning from Human Feedback"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.001134609803557396,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Fine-Tuning Language Models with Reward Learning on Policy",
+        "arxiv_id": "2403.19279",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Reinforcement learning from human feedback (RLHF) has emerged as an effective approach to aligning large language models (LLMs) to human preferences. RLHF contains three steps, i.e., human preference collecting, reward learning, and policy optimization, which are usually performed serially. Despite its popularity, however, (fixed) reward models may suffer from inaccurate off-distribution, since policy optimization continuously shifts LLMs\u2019 data distribution. Repeatedly collecting new preference data from the latest LLMs may alleviate this issue, which unfortunately makes the resulting system more complicated and difficult to optimize. In this paper, we propose reward learning on policy (RLP), an unsupervised framework that refines a reward model using policy samples to keep it on-distribution. Specifically, an unsupervised multi-view learning method is introduced to learn robust representations of policy samples. Meanwhile, a synthetic preference generation approach is developed to simulate high-quality preference data with policy outputs. Extensive experiments on three benchmark datasets show that RLP consistently outperforms the state-of-the-art. Our code is available at https://github.com/AlibabaResearch/DAMO-ConvAI/tree/main/rlp. ",
+        "sections": {
+          "1 Introduction": [
+            "The information bottleneck method",
+            "Fine-tuning language models from human preferences",
+            "Self-consistency improves chain of thought reasoning in language models",
+            "Scaling laws for reward model overoptimization",
+            "Llama 2: Open foundation and fine-tuned chat models",
+            "Semantic uncertainty: Linguistic invariances for uncertainty estimation in natural language generation",
+            "Constitutional ai: Harmlessness from ai feedback",
+            "Open problems and fundamental limitations of reinforcement learning from human feedback",
+            "Generating with confidence: Uncertainty quantification for black-box large language models",
+            "Multi-view learning overview: Recent progress and new challenges",
+            "Gpt-4 technical report",
+            "Language models are few-shot learners",
+            "Learning robust representations via multi-view information bottleneck",
+            "A general language assistant as a laboratory for alignment",
+            "Deep reinforcement learning from human preferences"
+          ],
+          "2 Related Work": [
+            "Language models (mostly) know what they know",
+            "Semantic uncertainty: Linguistic invariances for uncertainty estimation in natural language generation",
+            "Scaling instruction-finetuned language models",
+            "Constitutional ai: Harmlessness from ai feedback",
+            "Constructive large language models alignment with diverse feedback",
+            "Defining and characterizing reward gaming",
+            "Causal confusion and reward misidentification in preference-based reward learning",
+            "Reward model ensembles help mitigate overoptimization",
+            "Cross-task generalization via natural language crowdsourcing instructions",
+            "Rlcd: Reinforcement learning from contrast distillation for language model alignment",
+            "Learning reward functions from diverse sources of human feedback: Optimally integrating demonstrations and preferences",
+            "Prompting gpt-3 to be reliable",
+            "Rlaif: Scaling reinforcement learning from human feedback with ai feedback",
+            "Deep reinforcement learning from human preferences"
+          ],
+          "3 Preliminaries": [
+            "Alpacafarm: A simulation framework for methods that learn from human feedback",
+            "Training language models to follow instructions with human feedback"
+          ],
+          "3 Preliminaries Step 2, Reward learning:": [
+            "Deep reinforcement learning from human preferences"
+          ],
+          "3 Preliminaries Step 3, RL policy optimization:": [
+            "Proximal policy optimization algorithms"
+          ],
+          "4 Reward Learning on Policy 4.1 Overview": [
+            "Alpacafarm: A simulation framework for methods that learn from human feedback",
+            "Training language models to follow instructions with human feedback",
+            "Llama 2: Open foundation and fine-tuned chat models"
+          ],
+          "4 Reward Learning on Policy 4.2 Reward Retraining": [
+            "The information bottleneck method",
+            "Self-consistency improves chain of thought reasoning in language models",
+            "Semantic uncertainty: Linguistic invariances for uncertainty estimation in natural language generation",
+            "Multi-view learning overview: Recent progress and new challenges",
+            "Learning robust representations via multi-view information bottleneck",
+            "Prompting gpt-3 to be reliable"
+          ],
+          "5 Experiments 5.1 Datasets": [
+            "Alpacafarm: A simulation framework for methods that learn from human feedback",
+            "Reasoning or reciting? exploring the capabilities and limitations of language models through counterfactual tasks.",
+            "Koala: A dialogue model for academic research",
+            "Training a helpful and harmless assistant with reinforcement learning from human feedback",
+            "Super-naturalinstructions: Generalization via declarative instructions on 1600+ nlp tasks.",
+            "Stanford alpaca: An instruction-following llama model.",
+            "Evaluating large language models at evaluating instruction following",
+            "Vicuna: An open-source chatbot impressing gpt-4 with 90%* chatgpt quality",
+            "Can large language models be an alternative to human evaluations?",
+            "Training language models to follow instructions with human feedback"
+          ],
+          "5 Experiments 5.2 Metrics and Experimental Setups": [
+            "Alpacafarm: A simulation framework for methods that learn from human feedback"
+          ],
+          "5 Experiments 5.3 Implementation Details": [
+            "Alpacafarm: A simulation framework for methods that learn from human feedback",
+            "Deberta: Decoding-enhanced bert with disentangled attention",
+            "Learning deep representations by mutual information estimation and maximization",
+            "Proximal policy optimization algorithms",
+            "Llama: Open and efficient foundation language models"
+          ],
+          "5 Experiments 5.4 Baselines": [
+            "Learning to summarize with human feedback",
+            "Llama: Open and efficient foundation language models",
+            "Stanford alpaca: An instruction-following llama model.",
+            "Proximal policy optimization algorithms"
+          ],
+          "5 Experiments 5.5 Main Results": [
+            "Alpacafarm: A simulation framework for methods that learn from human feedback",
+            "Measuring massive multitask language understanding"
+          ],
+          "5 Experiments 5.6 Ablation Studies": [
+            "Learning representations by maximizing mutual information across views",
+            "On variational bounds of mutual information",
+            "Rlaif: Scaling reinforcement learning from human feedback with ai feedback",
+            "Unsupervised learning of visual features by contrasting cluster assignments"
+          ],
+          "Limitations": [
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "Llama 2: Open foundation and fine-tuned chat models"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.0012702043168246746,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Training Language Models to Self-Correct via Reinforcement Learning",
+        "arxiv_id": "2409.12917",
+        "depth": 0,
+        "child": {},
+        "abstract": "Self-correction is a highly desirable capability of large language models (LLMs), yet it has consistently been found to be largely ineffective in modern LLMs. Current methods for training self-correction typically depend on either multiple models, a more advanced model, or additional forms of supervision. To address these shortcomings, we develop a multi-turn online reinforcement learning (RL) approach, SCoRe, that significantly improves an LLM's self-correction ability using entirely self-generated data. To build SCoRe, we first show that variants of supervised fine-tuning (SFT) on offline model-generated correction traces are often insufficient for instilling self-correction behavior. In particular, we observe that training via SFT falls prey to either a distribution mismatch between mistakes made by the data-collection policy and the model's own responses, or to behavior collapse, where learning implicitly prefers only a certain mode of correction behavior that is often not effective at self-correction on test problems. SCoRe addresses these challenges by training under the model's own distribution of self-generated correction traces and using appropriate regularization to steer the learning process into learning a self-correction behavior that is effective at test time as opposed to fitting high-reward responses for a given prompt. This regularization process includes an initial phase of multi-turn RL on a base model to generate a policy initialization that is less susceptible to collapse, followed by using a reward bonus to amplify self-correction. With Gemini 1.0 Pro and 1.5 Flash models, we find that SCoRe achieves state-of-the-art self-correction performance, improving the base models' self-correction by 15.6% and 9.1% respectively on MATH and HumanEval.",
+        "sections": null,
+        "source": "Search SearchFrom:arxiv",
+        "select_score": 0.04277321696281433,
+        "extra": {
+          "expand": "get full paper error"
+        }
+      }
+    ],
+    "Impact of reinforcement learning on supervised fine-tuned LLMs": [
+      {
+        "title": "Improving Large Language Models via Fine-grained Reinforcement Learning with Minimum Editing Constraint",
+        "arxiv_id": "2401.06081",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Reinforcement learning (RL) has been widely used in training large language models\u00a0(LLMs) for preventing unexpected outputs, e.g., reducing harmfulness and errors. However, existing RL methods mostly adopt the instance-level reward, which is unable to provide fine-grained supervision for complex reasoning tasks, and can not focus on the few key tokens that lead to the incorrectness. To address it, we propose a new RL method named RLMEC that incorporates a generative model as the reward model, which is trained by the erroneous solution rewriting task under the minimum editing constraint, and can produce token-level rewards for RL training. Based on the generative reward model, we design the token-level RL objective for training and an imitation-based regularization for stabilizing RL process. And the both objectives focus on the learning of the key tokens for the erroneous solution, reducing the effect of other unimportant tokens. The experiment results on mathematical tasks and question-answering tasks have demonstrated the effectiveness of our approach. Our code and data are available at https://github.com/RUCAIBox/RLMEC. ",
+        "sections": {
+          "1 Introduction": [
+            "Training verifiers to solve math word problems",
+            "Explanations for commonsenseqa: New dataset and models",
+            "A survey of large language models",
+            "Wizardmath: Empowering mathematical reasoning for large language models via reinforced evol-instruct",
+            "Deep reinforcement learning from human preferences",
+            "Anthropic. 2023. Claude 2. Anthropic Blog.",
+            "Llama 2: Open foundation and fine-tuned chat models.",
+            "Proximal policy optimization algorithms",
+            "Teaching machines to read and comprehend",
+            "Training language models to follow instructions with human feedback",
+            "Scaling relationship on learning mathematical reasoning with large language models"
+          ],
+          "2 Related Work": [
+            "PAL: program-aided language models",
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "Self-refine: Iterative refinement with self-feedback",
+            "Let\u2019s verify step by step",
+            "Slic-hf: Sequence likelihood calibration with human feedback",
+            "A minimaximalist approach to reinforcement learning from human feedback",
+            "Exchange-of-thought: Enhancing large language model capabilities through cross-model communication",
+            "Graph of thoughts: Solving elaborate problems with large language models",
+            "Chain of hindsight aligns language models with feedback",
+            "Solving math word problems with process- and outcome-based feedback",
+            "Solving quantitative reasoning problems with language models",
+            "Mammoth: Building math generalist models through hybrid instruction tuning",
+            "Tree of thoughts: Deliberate problem solving with large language models",
+            "Successive prompting for decomposing complex questions",
+            "QUARK: controllable text generation with reinforced unlearning",
+            "Tora: A tool-integrated reasoning agent for mathematical problem solving",
+            "Chain-of-thought prompting elicits reasoning in large language models",
+            "Beyond imitation: Leveraging fine-grained quality signals for alignment",
+            "Deep reinforcement learning from human preferences",
+            "Asynchronous methods for deep reinforcement learning",
+            "Proximal policy optimization algorithms"
+          ],
+          "3 Preliminary": [
+            "Chain-of-thought prompting elicits reasoning in large language models",
+            "A multitask, multilingual, multimodal evaluation of chatgpt on reasoning, hallucination, and interactivity",
+            "Proximal policy optimization algorithms"
+          ],
+          "4 Approach 4.1 Generative Reward Model Training": [
+            "Anthropic. 2023. Claude 2. Anthropic Blog.",
+            "Gpt-4 technical report"
+          ],
+          "4 Approach 4.2 RL with Fine-grained Supervision": [
+            "Binary codes capable of correcting deletions, insertions and reversals",
+            "Proximal policy optimization algorithms"
+          ],
+          "5 Experiment 5.1 Experimental Settings": [
+            "Training verifiers to solve math word problems",
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "Measuring mathematical problem solving with the MATH dataset",
+            "Anthropic. 2023. Claude 2. Anthropic Blog.",
+            "Judging llm-as-a-judge with mt-bench and chatbot arena",
+            "QASC: A dataset for question answering via sentence composition",
+            "Secrets of RLHF in large language models part I: PPO",
+            "Statistical rejection sampling improves preference optimization",
+            "Chain of hindsight aligns language models with feedback",
+            "Mammoth: Building math generalist models through hybrid instruction tuning",
+            "Llama 2: Open foundation and fine-tuned chat models.",
+            "Can a suit of armor conduct electricity? A new dataset for open book question answering",
+            "Think you have solved question answering? try arc, the AI2 reasoning challenge",
+            "Beyond imitation: Leveraging fine-grained quality signals for alignment",
+            "Wizardlm: Empowering large language models to follow complex instructions",
+            "Training language models to follow instructions with human feedback",
+            "Explanations for commonsenseqa: New dataset and models",
+            "Are NLP models really able to solve simple math word problems?",
+            "Measuring massive multitask language understanding",
+            "Proximal policy optimization algorithms"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.0010191771434620023,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Unlock the Correlation between Supervised Fine-Tuning and Reinforcement Learning in Training Code Large Language Models",
+        "arxiv_id": "2406.10305",
+        "depth": 0,
+        "child": {},
+        "abstract": "Automatic code generation has been a longstanding research topic. With the advancement of general-purpose large language models (LLMs), the ability to code stands out as one important measure to the model's reasoning performance. Usually, a two-stage training paradigm is implemented to obtain a Code LLM, namely the pretraining and the fine-tuning. Within the fine-tuning, supervised fine-tuning (SFT), and reinforcement learning (RL) are often used to improve the model's zero-shot ability. A large number of work has been conducted to improve the model's performance on code-related benchmarks with either modifications to the algorithm or refinement of the dataset. However, we still lack a deep insight into the correlation between SFT and RL. For instance, what kind of dataset should be used to ensure generalization, or what if we abandon the SFT phase in fine-tuning. In this work, we make an attempt to understand the correlation between SFT and RL. To facilitate our research, we manually craft 100 basis python functions, called atomic functions, and then a synthesizing pipeline is deployed to create a large number of synthetic functions on top of the atomic ones. In this manner, we ensure that the train and test sets remain distinct, preventing data contamination. Through comprehensive ablation study, we find: (1) Both atomic and synthetic functions are indispensable for SFT's generalization, and only a handful of synthetic functions are adequate; (2) Through RL, the SFT's generalization to target domain can be greatly enhanced, even with the same training prompts; (3) Training RL from scratch can alleviate the over-fitting issue introduced in the SFT phase.",
+        "sections": null,
+        "source": "Search SearchFrom:arxiv",
+        "select_score": 0.004418729804456234,
+        "extra": {
+          "expand": "get full paper error"
+        }
+      }
+    ],
+    "Negative effects of reinforcement learning on supervised LLMs performance": [
+      {
+        "title": "Uncertainty-Penalized Reinforcement Learning from Human Feedback with Diverse Reward LoRA Ensembles",
+        "arxiv_id": "2401.00243",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Reinforcement learning from human feedback (RLHF) emerges as a promising paradigm for aligning large language models (LLMs). However, a notable challenge in RLHF is overoptimization, where beyond a certain threshold, the pursuit of higher rewards leads to a decline in human preferences. In this paper, we observe the weakness of KL regularization which is commonly employed in existing RLHF methods to address overoptimization. To mitigate this limitation, we scrutinize the RLHF objective in the offline dataset and propose uncertainty-penalized RLHF (UP-RLHF), which incorporates uncertainty regularization during RL-finetuning. To enhance the uncertainty quantification abilities for reward models, we first propose a diverse low-rank adaptation (LoRA) ensemble by maximizing the nuclear norm of LoRA matrix concatenations. Then we optimize policy models utilizing penalized rewards, determined by both rewards and uncertainties provided by the diverse reward LoRA ensembles. Our experimental results, based on two real human preference datasets, showcase the effectiveness of diverse reward LoRA ensembles in quantifying reward uncertainty. Additionally, uncertainty regularization in UP-RLHF proves to be pivotal in mitigating overoptimization, thereby contributing to the overall performance. ",
+        "sections": {
+          "1 Introduction": [
+            "Fine-tuning language models from human preferences",
+            "Stackllama: An rl fine-tuned llama model for stack exchange question and answering",
+            "Scaling laws for reward model overoptimization",
+            "Simple statistical gradient-following algorithms for connectionist reinforcement learning",
+            "A general theoretical paradigm to understand learning from human preferences.",
+            "Asynchronous methods for deep reinforcement learning",
+            "Confronting reward model overoptimization with constrained rlhf",
+            "Language models are few-shot learners",
+            "Proximal policy optimization algorithms",
+            "Training language models to follow instructions with human feedback",
+            "Red teaming language models with language models"
+          ],
+          "2 Preliminaries 2.1 Reinforcement Learning from Human feedback": [
+            "Proximal policy optimization algorithms",
+            "Fine-tuning language models from human preferences",
+            "Training language models to follow instructions with human feedback",
+            "Rank analysis of incomplete block designs: I. the method of paired comparisons"
+          ],
+          "2 Preliminaries 2.2 Low-Rank Adaptations": [
+            "Lora: Low-rank adaptation of large language models"
+          ],
+          "3 Methods 3.1 Analysis of Regularizations in RLHF": [
+            "Advantage-weighted regression: Simple and scalable off-policy reinforcement learning",
+            "On reinforcement learning and distribution matching for fine-tuning language models with no catastrophic forgetting",
+            "Trust region policy optimization"
+          ],
+          "3 Methods 3.2 Training Diverse Reward LoRA Ensembles": [
+            "Uncertainty estimation for language reward models"
+          ],
+          "4 Experimental Results 4.1 Datasets and Training Setups": [
+            "Opt: Open pre-trained transformer language models",
+            "Deepspeed-chat: Easy, fast and affordable rlhf training of chatgpt-like models at all scales.",
+            "Scaling laws for reward model overoptimization",
+            "Llama 2: Open foundation and fine-tuned chat models",
+            "Training a helpful and harmless assistant with reinforcement learning from human feedback",
+            "Understanding dataset difficulty with \ud835\udcb1\ud835\udcb1\\mathcal{V}-usable information"
+          ],
+          "4 Experimental Results 4.2 Reward Model Evaluation": [
+            "Scaling laws for reward model overoptimization",
+            "Obtaining well calibrated probabilities using bayesian binning"
+          ],
+          "5 Related Works 5.1 Reinforcement Learning from Human Feedback": [
+            "Scaling laws for reward model overoptimization",
+            "A general theoretical paradigm to understand learning from human preferences.",
+            "Is reinforcement learning (not) for natural language processing: Benchmarks, baselines, and building blocks for natural language policy optimization",
+            "Learning to summarize with human feedback",
+            "Training a helpful and harmless assistant with reinforcement learning from human feedback",
+            "Open problems and fundamental limitations of reinforcement learning from human feedback",
+            "Rrhf: Rank responses to align language models with human feedback without tears",
+            "Offline rl for natural language generation with implicit language q learning",
+            "Confronting reward model overoptimization with constrained rlhf",
+            "Proximal policy optimization algorithms",
+            "Pairwise proximal policy optimization: Harnessing relative feedback for llm alignment",
+            "Remax: A simple, effective, and efficient method for aligning large language models"
+          ],
+          "5 Related Works 5.2 Uncertainty Aware Reinforcement Learning": [
+            "Offline reinforcement learning: Tutorial, review, and perspectives on open problems.",
+            "Mopo: Model-based offline policy optimization",
+            "Uncertainty estimation for language reward models",
+            "Improved algorithms for linear stochastic bandits",
+            "Helping or herding? reward model ensembles mitigate but do not eliminate reward hacking",
+            "Self-supervised exploration via disagreement",
+            "A review of uncertainty for deep reinforcement learning",
+            "Reward model ensembles help mitigate overoptimization.",
+            "When to trust your model: Model-based policy optimization"
+          ],
+          "5 Related Works 5.3 Uncertainty for LLMs": [
+            "Dropout as a bayesian approximation: Representing model uncertainty in deep learning",
+            "Random forests",
+            "Uncertainty estimation for language reward models",
+            "Quantifying uncertainty in foundation models via ensembles",
+            "A survey of uncertainty in deep neural networks",
+            "Lora: Low-rank adaptation of large language models",
+            "Lora ensembles for large language model fine-tuning"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.013972005806863308,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Beyond Human Preferences: Exploring Reinforcement Learning Trajectory Evaluation and Improvement through LLMs",
+        "arxiv_id": "2406.19644",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract Reinforcement learning (RL) faces challenges in evaluating policy trajectories within intricate game tasks due to the difficulty in designing comprehensive and precise reward functions. This inherent difficulty curtails the broader application of RL within game environments characterized by diverse constraints. Preference-based reinforcement learning (PbRL) presents a pioneering framework that capitalizes on human preferences as pivotal reward signals, thereby circumventing the need for meticulous reward engineering. However, obtaining preference data from human experts is costly and inefficient, especially under conditions marked by complex constraints. To tackle this challenge, we propose a LLM-enabled automatic preference generation framework named LLM4PG which harnesses the capabilities of large language models (LLMs) to abstract trajectories, rank preferences, and reconstruct reward functions to optimize conditioned policies. Experiments on tasks with complex language constraints demonstrated the effectiveness of our LLM-enabled reward functions, accelerating RL convergence and overcoming stagnation caused by slow or absent progress under original reward structures. This approach mitigates the reliance on specialized human knowledge and demonstrates the potential of LLMs to enhance RL\u2019s effectiveness in complex environments in the wild.",
+        "sections": {
+          "1 Introduction": [
+            "Reinforcement learning: An introduction",
+            "Mastering the game of go with deep neural networks and tree search",
+            "Winning the l2rpn challenge: Power grid management via semi-markov afterstate actor-critic",
+            "Navigating occluded intersections with autonomous vehicles using deep reinforcement learning",
+            "Reinforcement learning and the reward engineering principle",
+            "Learning hand-eye coordination for robotic grasping with deep learning and large-scale data collection",
+            "Deep reinforcement learning from human preferences",
+            "Algorithms for inverse reinforcement learning",
+            "Language models are few-shot learners"
+          ],
+          "2 Related Works": [
+            "Reward learning from human preferences and demonstrations in atari",
+            "Learning to summarize with human feedback",
+            "Reward design with language models",
+            "Exploration by random network distillation",
+            "Towards socially and morally aware rl agent: Reward design with llm",
+            "Recursively summarizing books with human feedback",
+            "Eureka: Human-level reward design via coding large language models",
+            "Deep reinforcement learning from human preferences",
+            "Policy invariance under reward transformations: Theory and application to reward shaping",
+            "Algorithms for inverse reinforcement learning",
+            "Sequence modeling of temporal credit assignment for episodic reinforcement learning"
+          ],
+          "3 Methodology 3.3 Policy evaluating and Reward Modeling from LLM Feedback": [
+            "Deep reinforcement learning from human preferences"
+          ],
+          "3 Methodology 3.4 Policy Optimization": [
+            "Proximal policy optimization algorithms"
+          ],
+          "4 Experiments": [
+            "Qwen technical report",
+            "Mixtral of experts",
+            "Minigrid & miniworld: Modular & customizable reinforcement learning environments for goal-oriented tasks"
+          ],
+          "4 Experiments 4.1 Experiments on MiniGrid-Unlock-v0": [
+            "Proximal policy optimization algorithms"
+          ],
+          "4 Experiments 4.2 Experiments on MiniGrid-LavaGapS7-v0": [
+            "Proximal policy optimization algorithms"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.0004251474456395954,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "DRLC: Reinforcement Learning with Dense Rewards from LLM Critic",
+        "arxiv_id": "2401.07382",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Reinforcement learning (RL) can align language models with non-differentiable reward signals, such as human preferences. However, a major challenge arises from the sparsity of these reward signals - typically, there is only one reward for the entire generation. This sparsity of rewards can lead to inefficient and unstable learning. In this paper, we introduce a novel framework leveraging the critique ability of LLMs to produce dense rewards throughout the learning process. Our approach incorporates a critic language model alongside the policy model. This critic is prompted with the task description, question, policy model\u2019s output, and environment\u2019s reward signal as input, and provides token or span-level dense rewards that reflect the quality of each segment of the output. We assess our approach on three text generation tasks: sentiment control, language model detoxification, and summarization. Experimental results show that incorporating artificial dense rewards in training yields consistent performance gains over the PPO baseline with holistic rewards. Furthermore, in a setting where the same model serves as both policy and critic, we demonstrate that \u201cself-critique\u201d rewards also boost learning efficiency.  ",
+        "sections": {
+          "1 Introduction": [
+            "Fine-tuning language models from human preferences",
+            "Hindsight experience replay",
+            "Data-efficient hierarchical reinforcement learning",
+            "Policy invariance under reward transformations: Theory and application to reward shaping",
+            "Unifying count-based exploration and intrinsic motivation",
+            "Fine-grained human feedback gives better rewards for language model training",
+            "Language models are few-shot learners",
+            "Proximal policy optimization algorithms",
+            "Self-refine: Iterative refinement with self-feedback",
+            "Let\u2019s verify step by step"
+          ],
+          "2 Related Work RL for Text Generation.": [
+            "Framework of automatic text summarization using reinforcement learning",
+            "Ask the right questions: Active question reformulation with reinforcement learning",
+            "Reward augmented maximum likelihood for neural structured prediction",
+            "Language models are few-shot learners",
+            "Policy networks with two-stage training for dialogue systems",
+            "Training language models to follow instructions with human feedback"
+          ],
+          "2 Related Work Reward Shaping and Intrinsic Rewards.": [
+            "Policy invariance under reward transformations: Theory and application to reward shaping",
+            "Unifying count-based exploration and intrinsic motivation",
+            "Fine-grained human feedback gives better rewards for language model training",
+            "On learning intrinsic rewards for policy gradient methods",
+            "Curiosity-driven exploration by self-supervised prediction"
+          ],
+          "2 Related Work LLM for Reward Design.": [
+            "Reward design with language models",
+            "The nethack learning environment",
+            "Eureka: Human-level reward design via coding large language models",
+            "Motif: Intrinsic motivation from artificial intelligence feedback",
+            "Guiding pretraining in reinforcement learning with large language models",
+            "Rlaif: Scaling reinforcement learning from human feedback with ai feedback"
+          ],
+          "3 Method 3.1 RL for Text Generation": [
+            "Markov Decision Processes: Discrete Stochastic Dynamic Programming"
+          ],
+          "3 Method 3.2 Policy Gradient based RL & PPO": [
+            "Proximal policy optimization algorithms",
+            "High-dimensional continuous control using generalized advantage estimation",
+            "Policy gradient methods for reinforcement learning with function approximation"
+          ],
+          "3 Method 3.3 Learning with LLM Generated Intrinsic Rewards": [
+            "Fine-tuning language models from human preferences",
+            "Llama 2: Open foundation and fine-tuned chat models, 2023.",
+            "Asynchronous methods for deep reinforcement learning"
+          ],
+          "4 Experiments 4.1 Sentiment Control": [
+            "Ctrl: A conditional transformer language model for controllable generation",
+            "Don\u2019t stop pretraining: Adapt language models to domains and tasks",
+            "A large-scale dataset for empathetic response generation",
+            "Plug and play language models: A simple approach to controlled text generation",
+            "DExperts: Decoding-time controlled text generation with experts and anti-experts",
+            "Systematic rectification of language models via dead-end analysis",
+            "GeDi: Generative discriminator guided sequence generation",
+            "Learning word vectors for sentiment analysis",
+            "Openwebtext corpus"
+          ],
+          "4 Experiments 4.2 Detoxification": [
+            "Systematic rectification of language models via dead-end analysis",
+            "DExperts: Decoding-time controlled text generation with experts and anti-experts",
+            "Semantics derived automatically from language corpora contain human-like biases",
+            "RealToxicityPrompts: Evaluating neural toxic degeneration in language models"
+          ],
+          "4 Experiments 4.3 Summarization": [
+            "Learning to summarize with human feedback",
+            "TL;DR: Mining Reddit to learn automatic summarization"
+          ],
+          "5 Self-Critique": [
+            "LoRA: Low-rank adaptation of large language models"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.0008942029671743512,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "RL on Incorrect Synthetic Data Scales the Efficiency of LLM Math Reasoning by Eight-Fold",
+        "arxiv_id": "2406.14532",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract Training on model-generated synthetic data is a promising approach for finetuning LLMs, but it remains unclear when it helps or hurts. In this paper, we investigate this question for math reasoning via an empirical study, followed by building a conceptual understanding of our observations. First, we find that while the typical approach of finetuning a model on synthetic correct or positive problem-solution pairs generated by capable models offers modest performance gains, sampling more correct solutions from the finetuned learner itself followed by subsequent fine-tuning on this self-generated data doubles the efficiency of the same synthetic problems. At the same time, training on model-generated positives can amplify various spurious correlations, resulting in flat or even inverse scaling trends as the amount of data increases. Surprisingly, we find that several of these issues can be addressed if we also utilize negative responses, i.e., model-generated responses that are deemed incorrect by a final answer verifier. Crucially, these negatives must be constructed such that the training can appropriately recover the utility or advantage of each intermediate step in the negative response. With this per-step scheme, we are able to attain consistent gains over only positive data, attaining performance similar to amplifying the amount of synthetic data by \ud835\udfd6\u00d7\\mathbf{8\\times}. We show that training on per-step negatives can help to unlearn spurious correlations in the positive data, and is equivalent to advantage-weighted reinforcement learning (RL), implying that it inherits robustness benefits of RL over imitating positive data alone.",
+        "sections": {
+          "1 Introduction": [
+            "When Should We Prefer Offline Reinforcement Learning over Behavioral Cloning?",
+            "Advantage-weighted regression: Simple and scalable off-policy reinforcement learning",
+            "When scaling meets llm finetuning: The effect of data, model and finetuning method",
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "The curse of recursion: Training on generated data makes models forget",
+            "Will we run out of data? an analysis of the limits of scaling datasets in machine learning",
+            "Training verifiers to solve math word problems",
+            "Measuring mathematical problem solving with the math dataset",
+            "Unfamiliar finetuning examples control how language models hallucinate",
+            "Common 7b language models already possess strong math capabilities"
+          ],
+          "2 Related Work": [
+            "Model collapse demystified: The case of regression",
+            "When scaling meets llm finetuning: The effect of data, model and finetuning method",
+            "A learning algorithm for continually running fully recurrent neural networks",
+            "Iterative reasoning preference optimization",
+            "Memorization without overfitting: Analyzing the training dynamics of large language models",
+            "Wizardmath: Empowering mathematical reasoning for large language models via reinforced evol-instruct",
+            "Metamath: Bootstrap your own mathematical questions for large language models",
+            "Preference Fine-Tuning of LLMs Should Leverage Suboptimal, On-Policy Data, ICML 2024",
+            "How bad is training on synthetic data? a statistical analysis of language model collapse",
+            "Unfamiliar finetuning examples control how language models hallucinate",
+            "Star: Bootstrapping reasoning with reasoning",
+            "Deepseek llm: Scaling open-source language models with longtermism",
+            "Self-explore to avoid the pit: Improving the reasoning capabilities of language models with fine-grained rewards.",
+            "Smaug: Fixing failure modes of preference optimisation with dpo-positive",
+            "A critical evaluation of ai feedback for aligning large language models",
+            "Common 7b language models already possess strong math capabilities",
+            "How abilities in large language models are affected by supervised fine-tuning data composition",
+            "Math-shepherd: Verify and reinforce llms step-by-step without human annotations",
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "Self-play fine-tuning converts weak language models to strong language models",
+            "V-star: Training verifiers for self-taught reasoners"
+          ],
+          "3 Problem Setup and Synthetic Data Generation Pipeline": [
+            "Training verifiers to solve math word problems",
+            "Measuring mathematical problem solving with the math dataset",
+            "Gpt-4 technical report",
+            "Metamath: Bootstrap your own mathematical questions for large language models",
+            "Common 7b language models already possess strong math capabilities",
+            "Gemini 1.5: Unlocking multimodal understanding across millions of tokens of context."
+          ],
+          "4 Learning from Synthetic Data": [
+            "Self-explore to avoid the pit: Improving the reasoning capabilities of language models with fine-grained rewards.",
+            "Scaling relationship on learning mathematical reasoning with large language models",
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "Star: Bootstrapping reasoning with reasoning"
+          ],
+          "5 Positive Data Improves Coverage, But Amplifies Spurious Correlations": [
+            "Llama 2: Open foundation and fine-tuned chat models",
+            "When scaling meets llm finetuning: The effect of data, model and finetuning method",
+            "Scaling relationship on learning mathematical reasoning with large language models",
+            "A critical evaluation of ai feedback for aligning large language models",
+            "Training compute-optimal large language models",
+            "Causal confusion in imitation learning",
+            "Unfamiliar finetuning examples control how language models hallucinate",
+            "Gpt-4 technical report",
+            "Deepseek llm: Scaling open-source language models with longtermism",
+            "Gemini 1.5: Unlocking multimodal understanding across millions of tokens of context.",
+            "Advancing llm reasoning generalists with preference trees"
+          ],
+          "6 Negative Synthetic Data Enables Per-Step Credit Assignment 6.1 Conceptual Model: Constructing Negatives to Enable Per-Step Credit Assignment": [
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "Self-explore to avoid the pit: Improving the reasoning capabilities of language models with fine-grained rewards.",
+            "Reinforcement learning: An introduction",
+            "Advantage-weighted regression: Simple and scalable off-policy reinforcement learning"
+          ],
+          "6 Negative Synthetic Data Enables Per-Step Credit Assignment 6.2 Scaling Results for Negative Data": [
+            "Smaug: Fixing failure modes of preference optimisation with dpo-positive",
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "Insights into alignment: Evaluating dpo and its variants across multiple tasks"
+          ],
+          "6 Negative Synthetic Data Enables Per-Step Credit Assignment 6.3 Why Does Credit Assignment from Negative Data Improve Model Generalization?": [
+            "Self-explore to avoid the pit: Improving the reasoning capabilities of language models with fine-grained rewards.",
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "Distributionally robust optimization: A review",
+            "The pitfalls of next-token prediction",
+            "Efficient reductions for imitation learning",
+            "Bitrate-constrained dro: Beyond worst case robustness to unknown group shifts",
+            "Distributionally robust neural networks",
+            "Large-scale methods for distributionally robust optimization"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.028954310342669487,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Open Problems and Fundamental Limitations of Reinforcement Learning from Human Feedback",
+        "arxiv_id": "2307.15217",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Reinforcement learning from human feedback (RLHF) is a technique for training AI systems to align with human goals. RLHF has emerged as the central method used to finetune state-of-the-art large language models (LLMs). Despite this popularity, there has been relatively little public work systematizing its flaws. In this paper, we (1) survey open problems and fundamental limitations of RLHF and related methods; (2) overview techniques to understand, improve, and complement RLHF in practice; and (3) propose auditing and disclosure standards to improve societal oversight of RLHF systems. Our work emphasizes the limitations of RLHF and highlights the importance of a multi-layered approach to the development of safer AI systems. ",
+        "sections": {
+          "1 Introduction": [
+            "Bard",
+            "Prompt injection",
+            "Discovering language model behaviors with model-written evaluations",
+            "Revealed preference theory, volume 56",
+            "The netflix prize",
+            "Whose opinions do language models reflect?",
+            "Gpt-4 technical report",
+            "Survey of hallucination in natural language generation",
+            "Anthropic. Introducing claude",
+            "Multi-step jailbreaking privacy attacks on chatgpt",
+            "Deep reinforcement learning from human preferences",
+            "Llama 2: Open foundation and fine-tuned chat models, 2023."
+          ],
+          "2 Background and Notation": [
+            "Training a helpful and harmless assistant with reinforcement learning from human feedback",
+            "Bpr: Bayesian personalized ranking from implicit feedback",
+            "RL with KL penalties is better viewed as Bayesian inference",
+            "Deep reinforcement learning from human preferences"
+          ],
+          "3 Open Problems and Limitations of RLHF 3.1 Challenges with Obtaining Human Feedback": [
+            "Choice set misspecification in reward inference",
+            "Bowman, Jeeyoon Hyun, Ethan Perez, Edwin Chen, Craig Pettit, Scott Heiner, Kamil\u0117 Luko\u0161i\u016bt\u0117, Amanda Askell, Andy Jones, Anna Chen, Anna Goldie, Azalia Mirhoseini, Cameron McKinnon, Christopher Olah, Daniela Amodei, Dario Amodei, Dawn Drain, Dustin Li, Eli Tran-Johnson, Jackson Kernion, Jamie Kerr, Jared Mueller, Jeffrey Ladish, Joshua Landau, Kamal Ndousse, Liane Lovitt, Nelson Elhage, Nicholas Schiefer, Nicholas Joseph, Noem\u00ed Mercado, Nova DasSarma, Robin Larson, Sam McCandlish, Sandipan Kundu, Scott Johnston, Shauna Kravec, Sheer\u00a0El Showk, Stanislav Fort, Timothy Telleen-Lawton, Tom Brown, Tom Henighan, Tristan Hume, Yuntao Bai, Zac Hatfield-Dodds, Ben Mann, and Jared Kaplan",
+            "Training a helpful and harmless assistant with reinforcement learning from human feedback",
+            "Why AI Alignment Could Be Hard with Modern Deep Learning",
+            "Asking easy questions: A user-friendly approach to active reward learning",
+            "Ranking vs. preference: a comparative study of self-reporting",
+            "The Galactica AI model was trained on scientific knowledge \u2013 but it spat out alarmingly plausible nonsense",
+            "The hidden workforce that helped filter violence and abuse out of chatgpt",
+            "Learning human objectives from sequences of physical corrections",
+            "Artificial artificial artificial intelligence: Crowd workers widely use large language models for text production tasks",
+            "Specification gaming: the flip side of ai ingenuity",
+            "Tamer: Training an agent manually via evaluative reinforcement",
+            "Constitutional ai: Harmlessness from ai feedback",
+            "The authenticity gap in human evaluation",
+            "Lima: Less is more for alignment",
+            "Poisoning language models during instruction tuning",
+            "Whose opinions do language models reflect?",
+            "Learning reward functions from scale feedback",
+            "Do users write more insecure code with ai assistants?",
+            "Artificial Intelligence Can Persuade Humans",
+            "Self-critiquing models for assisting human evaluators",
+            "Poisoning web-scale training datasets is practical",
+            "Uncertainty estimation for language reward models",
+            "Modeling and mitigating human annotation errors to design efficient stream processing systems with human-in-the-loop machine learning",
+            "The mandela effect and new memory",
+            "Alignment of Language Agents",
+            "Microsoft\u2019s Bing is an emotionally manipulative liar, and people love it",
+            "Characterizing Manipulation from AI Systems",
+            "Training language models to follow instructions with human feedback",
+            "Deep reinforcement learning from human preferences",
+            "Learning multimodal rewards from rankings",
+            "Discovering language model behaviors with model-written evaluations",
+            "Investigations of performance and bias in human-ai teamwork in hiring",
+            "Concrete problems in AI safety",
+            "Adversarial training for high-stakes reliability",
+            "Correcting robot plans with natural language feedback",
+            "Extrapolating beyond suboptimal demonstrations via inverse reinforcement learning from observations",
+            "From language to goals: Inverse reinforcement learning for vision-based instruction following"
+          ],
+          "3 Open Problems and Limitations of RLHF 3.2 Challenges with the Reward Model": [
+            "Models of human preference for learning reward functions",
+            "The reward hypothesis is false",
+            "Training a helpful and harmless assistant with reinforcement learning from human feedback",
+            "Quantifying hypothesis space misspecification in learning from human\u2013robot demonstrations and physical corrections",
+            "Consequences of misaligned ai",
+            "Causal confusion and reward misidentification in preference-based reward learning",
+            "The effects of reward misspecification: Mapping and mitigating misaligned models",
+            "Learning reward functions from diverse sources of human feedback: Optimally integrating demonstrations and preferences",
+            "On releasing annotator-level labels and information in datasets",
+            "Reward-rational (implicit) choice: A unifying formalism for reward learning",
+            "The \u2018awful idea of accountability\u2019: inscribing people into the measurement of objects",
+            "Understanding learned reward functions",
+            "On the fragility of learned reward functions",
+            "Reinforcement learning for bandit neural machine translation with simulated human feedback",
+            "Fine-tuning language models from human preferences",
+            "Reward is enough",
+            "Scaling laws for reward model overoptimization",
+            "On the sensitivity of reward inference to misspecified human models",
+            "Learning to summarize with human feedback",
+            "Defining and characterizing reward hacking",
+            "Quantifying differences in reward functions",
+            "Which examples should be multiply annotated? active learning when annotators may disagree",
+            "Ethical aspects of multi-stakeholder recommendation systems",
+            "Invariance in policy optimisation and partial identifiability in reward learning",
+            "Learning mixtures of plackett-luce models",
+            "Training language models to follow instructions with human feedback",
+            "Aligning robot and human representations",
+            "Literal or pedagogic human? analyzing human model misspecification in objective learning",
+            "Misspecification in inverse reinforcement learning",
+            "Batch active preference-based learning of reward functions"
+          ],
+          "3 Open Problems and Limitations of RLHF 3.3 Challenges with the Policy": [
+            "Understanding rl vision",
+            "Prompt injection",
+            "Reward collapse in aligning large language models",
+            "RL with KL penalties is better viewed as Bayesian inference",
+            "Goal misgeneralization: Why correct specifications aren\u2019t enough for correct goals",
+            "Discovering language model behaviors with model-written evaluations",
+            "Ethical and social risks of harm from language models",
+            "Improving stability in deep reinforcement learning with weight averaging",
+            "Adversarial policies: Attacking deep reinforcement learning",
+            "Worst-case guarantees",
+            "Seeking power is convergently instrumental in a broad class of environments",
+            "Whose opinions do language models reflect?",
+            "Gpt-4 technical report",
+            "Delving into adversarial attacks on deep policies",
+            "A distributional approach to controlled text generation",
+            "Survey on reinforcement learning for language processing",
+            "A survey of exploration methods in reinforcement learning",
+            "Challenges of reinforcement learning"
+          ],
+          "3 Open Problems and Limitations of RLHF 3.4 Challenges with Jointly Training the Reward Model and Policy": [
+            "Hidden incentives for auto-induced distributional shift",
+            "Scaling laws for reward model overoptimization",
+            "Offline reinforcement learning: Tutorial, review, and perspectives on open problems",
+            "Recursively summarizing books with human feedback",
+            "On the fragility of learned reward functions"
+          ],
+          "4 Incorporating RLHF into a Broader Framework for Safer AI": [
+            "Unsolved problems in ml safety"
+          ],
+          "4 Incorporating RLHF into a Broader Framework for Safer AI 4.1 Frameworks for Better Understanding RLHF": [
+            "The reward hypothesis is false",
+            "Active preference-based learning of reward functions",
+            "On reinforcement learning and distribution matching for fine-tuning language models with no catastrophic forgetting",
+            "Fundamental limitations of alignment in large language models",
+            "Asking easy questions: A user-friendly approach to active reward learning",
+            "Social choice theory",
+            "Red teaming language models with language models",
+            "Confidence-aware imitation learning from demonstrations with varying optimality",
+            "RL with KL penalties is better viewed as Bayesian inference",
+            "Assistance with large language models",
+            "Achilles heels for agi/asi via decision theoretic adversaries",
+            "The disagreement deconvolution: Bringing machine learning performance metrics in line with reality",
+            "Cooperative inverse reinforcement learning",
+            "Arc evals",
+            "A distributional approach to controlled text generation",
+            "Prompt injection",
+            "Fine-tuning language models to find agreement among humans with diverse preferences",
+            "Where Do You Think You\u2019re Going?: Inferring Beliefs about Dynamics from Behavior",
+            "A voting-based system for ethical decision making",
+            "Hard choices in artificial intelligence",
+            "The expertise problem: Learning from specialized feedback",
+            "Designing toxic content classification for a diversity of perspectives",
+            "Active reward learning from multiple teachers",
+            "A unified framework of five principles for ai in society"
+          ],
+          "4 Incorporating RLHF into a Broader Framework for Safer AI 4.2 Addressing Challenges with RLHF": [
+            "The reward hypothesis is false",
+            "RealToxicityPrompts: Evaluating neural toxic degeneration in language models",
+            "Offline reinforcement learning: Tutorial, review, and perspectives on open problems",
+            "Algorithms for inverse reinforcement learning",
+            "Learning reward functions from diverse sources of human feedback: Optimally integrating demonstrations and preferences",
+            "Process for adapting language models to society (palms) with values-targeted datasets",
+            "Reward-rational (implicit) choice: A unifying formalism for reward learning",
+            "Rlaif: Scaling reinforcement learning from human feedback with ai feedback",
+            "Is reinforcement learning (not) for natural language processing?: Benchmarks, baselines, and building blocks for natural language policy optimization",
+            "Scalable agent alignment via reward modeling: a research direction",
+            "Interactive learning from policy-dependent human feedback",
+            "Constitutional ai: Harmlessness from ai feedback",
+            "Safe reinforcement learning via probabilistic shields",
+            "Solving math word problems with process-and outcome-based feedback",
+            "Aligning large language models with human: A survey",
+            "Scalar reward is not enough: A response to silver, singh, precup and sutton (2021)",
+            "Explore, establish, exploit: Red teaming language models from scratch",
+            "Scaling data-driven robotics with reward sketching and batch reinforcement learning",
+            "A survey of reinforcement learning informed by natural language",
+            "Uncertainty estimation for language reward models",
+            "Pretraining language models with human preferences",
+            "Clare: Conservative model-based reward learning for offline inverse reinforcement learning",
+            "Reward uncertainty for exploration in preference-based reinforcement learning",
+            "Training language models with language feedback",
+            "Learning multimodal rewards from rankings",
+            "Deep reinforcement learning from human preferences",
+            "Inverse constrained reinforcement learning",
+            "Discovering language model behaviors with model-written evaluations",
+            "Fine-grained human feedback gives better rewards for language model training",
+            "Ai safety via debate",
+            "Extrapolating beyond suboptimal demonstrations via inverse reinforcement learning from observations",
+            "Inverse reward design",
+            "Rewarded soups: towards pareto-optimal alignment by interpolating weights fine-tuned on diverse rewards",
+            "Active reward learning from multiple teachers"
+          ],
+          "4 Incorporating RLHF into a Broader Framework for Safer AI 4.3 RLHF is Not All You Need: Complementary Strategies for Safety": [
+            "Scalable agent alignment via reward modeling: a research direction",
+            "Inference-time intervention: Eliciting truthful answers from a language model",
+            "Deep learning for anomaly detection: A review",
+            "Ai research considerations for human existential safety (arches)",
+            "Adversarial examples: Opportunities and challenges",
+            "The alignment problem from a deep learning perspective",
+            "Local relighting of real scenes",
+            "Unsolved problems in ml safety",
+            "An overview of 11 proposals for building safe advanced ai",
+            "Causal abstraction for faithful model interpretation",
+            "Formalizing trust in artificial intelligence: Prerequisites, causes and goals of human trust in ai",
+            "Gpt-4 technical report",
+            "Adversarial training for high-stakes reliability",
+            "Locating and editing factual associations in gpt",
+            "Machine learning techniques for anomaly detection: an overview",
+            "Supporting human-ai collaboration in auditing llms with llms",
+            "Red teaming language models with language models"
+          ],
+          "5 Governance and Transparency": [
+            "Fda and clinical drug trials: a short history",
+            "Leviathan and the air-pump: Hobbes, Boyle, and the experimental life",
+            "Ai governance: a research agenda",
+            "Transparency in artificial intelligence",
+            "Auditing large language models: a three-layered approach",
+            "A baseline for detecting misclassified and out-of-distribution examples in neural networks",
+            "The hidden workforce that helped filter violence and abuse out of chatgpt",
+            "CSET Policy Brief. Why ai chips matter.",
+            "The societal implications of deep reinforcement learning",
+            "The windfall clause: Distributing the benefits of ai for the common good",
+            "What does it take to catch a chinchilla? verifying rules on large-scale neural network training via compute monitoring",
+            "Subjectifying objectivity: Delineating tastes in theoretical quantum gravity research",
+            "The Belmont report: ethical principles and guidelines for the protection of human subjects of research, volume 1",
+            "Holistic evaluation of language models",
+            "Exclusive: The $2 per hour workers who made chatgpt safer",
+            "Federal Trade Commission Civil Investigative Demand Schedule FTC File No. 232-3044",
+            "Reward reports for reinforcement learning"
+          ],
+          "6 Discussion": [
+            "Scalable agent alignment via reward modeling: a research direction",
+            "An overview of 11 proposals for building safe advanced ai",
+            "Ai safety via debate",
+            "Toward comprehensive risk assessments and assurance of ai-based systems",
+            "Unsolved problems in ml safety",
+            "Hard choices in artificial intelligence",
+            "Thoughts on the impact of rlhf research",
+            "Deep reinforcement learning from human preferences"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.1321745663881302,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Reinforcement Learning from Multi-role Debates as Feedback for Bias Mitigation in LLMs",
+        "arxiv_id": "2404.10160",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract Biases and stereotypes in Large Language Models (LLMs) can have negative implications for user experience and societal outcomes. Current approaches to bias mitigation like Reinforcement Learning from Human Feedback (RLHF) rely on costly manual feedback. While LLMs have the capability to understand logic and identify biases in text, they often struggle to effectively acknowledge and address their own biases due to factors such as prompt influences, internal mechanisms, and policies. We found that informing LLMs that the content they generate is not their own and questioning them about potential biases in the text can significantly enhance their recognition and improvement capabilities regarding biases. Based on this finding, we propose RLRF (Reinforcement Learning from Reflection through Debates as Feedback), replacing human feedback with AI for bias mitigation. RLRF engages LLMs in multi-role debates to expose biases and gradually reduce biases in each iteration using a ranking scoring mechanism. The dialogue are then used to create a dataset with high-bias and low-bias instances to train the reward model in reinforcement learning. This dataset can be generated by the same LLMs for self-reflection or a superior LLMs guiding the former in a student-teacher mode to enhance its logical reasoning abilities. Experimental results demonstrate the significant effectiveness of our approach in bias reduction.",
+        "sections": {
+          "1 Introduction": [
+            "Mitigating gender bias in natural language processing: Literature review",
+            "On the dangers of stochastic parrots: Can language models be too big?",
+            "Large image datasets: A pyrrhic win for computer vision?",
+            "Towards the systematic reporting of the energy and carbon footprints of machine learning",
+            "Deep reinforcement learning from human preferences"
+          ],
+          "2 Related Work 2.1 Current Bias Mitigation Methods in LLMs and Their Limitations": [
+            "Fairness reprogramming",
+            "Mitigating gender bias in natural language processing: Literature review",
+            "Gender bias in contextualized word embeddings",
+            "Self-contrast: Better reflection through inconsistent solving perspectives",
+            "Language (technology) is power: A critical survey of\" bias\" in nlp",
+            "On the dangers of stochastic parrots: Can language models be too big?",
+            "Man is to computer programmer as woman is to homemaker? debiasing word embeddings"
+          ],
+          "2 Related Work 2.2 Self-Reflection in LLMs": [
+            "Can large language models really improve by self-critiquing their own plans?",
+            "Self-rag: Learning to retrieve, generate, and critique through self-reflection",
+            "Large language models cannot self-correct reasoning yet",
+            "Towards mitigating llm hallucination via self reflection",
+            "Large language models can self-improve",
+            "Self-refine: Iterative refinement with self-feedback",
+            "Reflexion: an autonomous agent with dynamic memory and self-reflection",
+            "Isr-llm: Iterative self-refined large language model for long-horizon sequential task planning",
+            "Your large language model is secretly a fairness proponent and you should prompt it like one"
+          ],
+          "2 Related Work 2.3 Reinforcement Learning from Human Feedback": [
+            "Reinforcement learning from simultaneous human and mdp reward",
+            "Guided policy search",
+            "Deep reinforcement learning from human preferences",
+            "Learning to learn from weak supervision by full supervision."
+          ],
+          "3 Methodology 3.1 Reflection from Multi-Role Debates for Reward Model Training Dataset": [
+            "Self-contrast: Better reflection through inconsistent solving perspectives"
+          ],
+          "3 Methodology 3.2 Reinforcement Learning from Reflection as Feedback": [
+            "A general language assistant as a laboratory for alignment",
+            "Fine-tuning language models from human preferences",
+            "The influence of the sigmoid function parameters on the speed of backpropagation learning",
+            "Deep reinforcement learning from human preferences"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.0008082041749730706,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "The RL/LLM Taxonomy Tree: Reviewing Synergies Between Reinforcement Learning and Large Language Models",
+        "arxiv_id": "2402.01874",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract In this work, we review research studies that combine Reinforcement Learning (RL) and Large Language Models (LLMs), two areas that owe their momentum to the development of deep neural networks. We propose a novel taxonomy of three main classes based on the way that the two model types interact with each other. The first class, RL4LLM, includes studies where RL is leveraged to improve the performance of LLMs on tasks related to Natural Language Processing. RL4LLM is divided into two sub-categories depending on whether RL is used to directly fine-tune an existing LLM or to improve the prompt of the LLM. In the second class, LLM4RL, an LLM assists the training of an RL model that performs a task that is not inherently related to natural language. We further break down LLM4RL based on the component of the RL training framework that the LLM assists or replaces, namely reward shaping, goal generation, and policy function. Finally, in the third class, RL+LLM, an LLM and an RL agent are embedded in a common planning framework without either of them contributing to training or fine-tuning of the other. We further branch this class to distinguish between studies with and without natural language feedback. We use this taxonomy to explore the motivations behind the synergy of LLMs and RL and explain the reasons for its success, while pinpointing potential shortcomings and areas where further research is needed, as well as alternative methodologies that serve the same goal. ",
+        "sections": {
+          "1 Introduction": [
+            "Reinforcement Learning: An Introduction",
+            "An introduction to deep reinforcement learning",
+            "Is reinforcement learning (not) for natural language processing: Benchmarks, baselines, and building blocks for natural language policy optimization",
+            "Jumping nlp curves: A review of natural language processing research [review article]",
+            "Attention is all you need",
+            "Dynamic programming and markov processes",
+            "A markovian decision process"
+          ],
+          "2 Background, State-of-Art, Scope, and Contributions 2.1 Overview of RL and LLMs": [
+            "Thoppilan, D",
+            "Language models are few-shot learners",
+            "Attention is all you need",
+            "Chowdhery, S",
+            "Bert: Pre-training of deep bidirectional transformers for language understanding"
+          ],
+          "2 Background, State-of-Art, Scope, and Contributions 2.2 State-of-Art Review Studies": [
+            "Hierarchical reinforcement learning: A comprehensive survey",
+            "Software testing with large language model: Survey, landscape, and vision",
+            "A Survey of Meta-Reinforcement Learning",
+            "The life cycle of knowledge in big language models: A survey",
+            "A survey of reinforcement learning algorithms for dynamically varying environments",
+            "Ai-augmented surveys: Leveraging large language models for opinion prediction in nationally representative surveys",
+            "A survey on offline reinforcement learning: Taxonomy, review, and open problems",
+            "A survey on natural language processing for fake news detection",
+            "Natural language processing advancements by deep learning: A survey",
+            "Reinforcement learning for generative ai: A survey",
+            "Evaluating large language models: A comprehensive survey",
+            "Pre-trained models for natural language processing: A survey",
+            "Multi-agent deep reinforcement learning: a survey",
+            "Reinforcement learning on graphs: A survey",
+            "Reinforcement learning for mobile robotics exploration: A survey",
+            "Reinforcement learning in healthcare: A survey",
+            "Bias and fairness in large language models: A survey",
+            "A survey on large language models for recommendation",
+            "A survey of the usages of deep learning for natural language processing",
+            "Reinforcement learning for combinatorial optimization: A survey",
+            "A survey of large language models",
+            "Evolutionary reinforcement learning: A survey",
+            "Explainability for large language models: A survey",
+            "Reinforcement learning: A survey",
+            "Instruction tuning for large language models: A survey",
+            "Survey of natural language processing techniques in bioinformatics",
+            "Shortcut learning of large language models in natural language understanding",
+            "A survey on clinical natural language processing in the united kingdom from 2007 to 2022.",
+            "Large language models for information retrieval: A survey",
+            "A survey of graphs in natural language processing",
+            "Reinforcement learning in the era of llms: What is essential? what is needed? an rl perspective on rlhf, prompting, and beyond",
+            "Large language model alignment: A survey"
+          ],
+          "2 Background, State-of-Art, Scope, and Contributions 2.3 Scope of This Study": [
+            "Agentbench: Evaluating llms as agents",
+            "Towards reasoning in large language models: A survey",
+            "Large-scale multi-modal pre-trained models: A comprehensive survey",
+            "Lmpriors: Pre-trained language models as task-specific priors",
+            "A survey on large language model based autonomous agents",
+            "Temporal video-language alignment network for reward shaping in reinforcement learning",
+            "Language-informed transfer learning for embodied household activities"
+          ],
+          "4 RL4LLM: Using Reinforcement Learning to Enhance Large Language Models": [
+            "Is reinforcement learning (not) for natural language processing: Benchmarks, baselines, and building blocks for natural language policy optimization",
+            "Rlprompt: Optimizing discrete text prompts with reinforcement learning",
+            "Tempera: Test-time prompting via reinforcement learning",
+            "Red teaming language models with language models"
+          ],
+          "4 RL4LLM: Using Reinforcement Learning to Enhance Large Language Models 4.1 RL4LLM-Fine-Tuning": [
+            "Reinforcement learning by reward-weighted regression for operational space control",
+            "Is reinforcement learning (not) for natural language processing: Benchmarks, baselines, and building blocks for natural language policy optimization",
+            "Learning to summarize with human feedback",
+            "Training a helpful and harmless assistant with reinforcement learning from human feedback",
+            "Decision transformer: Reinforcement learning via sequence modeling",
+            "Bai, S",
+            "Efficient unsupervised sentence compression by fine-tuning transformers with reinforcement learning",
+            "Language models are few-shot learners",
+            "Gpt-4 technical report",
+            "Distilbert, a distilled version of bert: smaller, faster, cheaper and lighter",
+            "Process for adapting language models to society (palms) with values-targeted datasets",
+            "Aligning language models with offline reinforcement learning from human feedback",
+            "Training language models to follow instructions with human feedback"
+          ],
+          "4 RL4LLM: Using Reinforcement Learning to Enhance Large Language Models 4.2 RL4LLM-Prompt": [
+            "Offline prompt evaluation and optimization with inverse reinforcement learning",
+            "Rlprompt: Optimizing discrete text prompts with reinforcement learning",
+            "Tempera: Test-time prompting via reinforcement learning",
+            "Red teaming language models with language models"
+          ],
+          "5 LLM4RL: Enhancing Reinforcement Learning Agents through Large Language Models": [
+            "Collaborating with language models for embodied reasoning",
+            "Exploiting contextual structure to generate useful auxiliary tasks",
+            "Can wikipedia help offline reinforcement learning?",
+            "Text2reward: Automated dense reward function generation for reinforcement learning",
+            "Language instructed reinforcement learning for human-ai coordination"
+          ],
+          "5 LLM4RL: Enhancing Reinforcement Learning Agents through Large Language Models 5.1 LLM4RL-Reward": [
+            "Curriculum learning",
+            "Using natural language for reward shaping in reinforcement learning",
+            "Meta-world: A benchmark and evaluation for multi-task and meta reinforcement learning",
+            "Apprenticeship learning via inverse reinforcement learning",
+            "Reinforcement Learning: An Introduction",
+            "Openai gym",
+            "Maniskill2: A unified benchmark for generalizable manipulation skills",
+            "Reward design with language models, 2023.",
+            "Eureka: Human-level reward design via coding large language models",
+            "Language models are few-shot learners",
+            "Reward Function Design in Reinforcement Learning",
+            "Temporal video-language alignment network for reward shaping in reinforcement learning",
+            "Text2reward: Automated dense reward function generation for reinforcement learning",
+            "Self-refined large language model as automated reward function designer for deep reinforcement learning in robotics"
+          ],
+          "5 LLM4RL: Enhancing Reinforcement Learning Agents through Large Language Models 5.2 LLM4RL-Goal": [
+            "Exploiting contextual structure to generate useful auxiliary tasks",
+            "Language models are unsupervised multitask learners",
+            "Guiding pretraining in reinforcement learning with large language models",
+            "Intrinsically motivated reinforcement learning",
+            "A survey on intrinsic motivation in reinforcement learning"
+          ],
+          "5 LLM4RL: Enhancing Reinforcement Learning Agents through Large Language Models 5.3 LLM4RL-Policy": [
+            "Collaborating with language models for embodied reasoning",
+            "Conservative q-learning for offline reinforcement learning",
+            "Can wikipedia help offline reinforcement learning?",
+            "Rladapter: Bridging large language models to reinforcement learning in open worlds",
+            "Decision transformer: Reinforcement learning via sequence modeling",
+            "Grounding large language models in interactive environments with online reinforcement learning",
+            "Offline reinforcement learning: Tutorial, review, and perspectives on open problems",
+            "Pointer sentinel mixture models",
+            "Behavior regularized offline reinforcement learning",
+            "Gpt-4 technical report",
+            "Spring: Gpt-4 out-performs rl algorithms by studying papers and reasoning",
+            "Gpt-3.5",
+            "Language instructed reinforcement learning for human-ai coordination",
+            "Advantage-weighted regression: Simple and scalable off-policy reinforcement learning",
+            "Hardware conditioned policies for multi-robot transfer learning",
+            "Guiding pretraining in reinforcement learning with large language models",
+            "A minimalist approach to offline reinforcement learning"
+          ],
+          "6 RL+LLM: Combining Independently Trained Models for Planning 6.1 RL+LLM-Without Language Feedback": [
+            "Plan4mc: Skill reinforcement learning and planning for open-world minecraft tasks",
+            "Chatgpt"
+          ],
+          "6 RL+LLM: Combining Independently Trained Models for Planning 6.2 RL+LLM-With Language Feedback": [
+            "Collaborating with language models for embodied reasoning",
+            "pycolab",
+            "Ahn, A",
+            "Chain-of-thought prompting elicits reasoning in large language models",
+            "Inner monologue: Embodied reasoning through planning with language models"
+          ],
+          "7 Discussion 7.1 Goals of Synergy and Reasons for Success": [
+            "Training a helpful and harmless assistant with reinforcement learning from human feedback",
+            "Red teaming language models with language models"
+          ],
+          "7 Discussion 7.2 Shortcomings": [
+            "Ahn, A",
+            "Grounding large language models in interactive environments with online reinforcement learning",
+            "Text2reward: Automated dense reward function generation for reinforcement learning",
+            "Language instructed reinforcement learning for human-ai coordination",
+            "Guiding pretraining in reinforcement learning with large language models",
+            "Plan4mc: Skill reinforcement learning and planning for open-world minecraft tasks",
+            "Language-informed transfer learning for embodied household activities"
+          ],
+          "7 Discussion 7.3 Alternatives": [
+            "Large language models are human-level prompt engineers",
+            "Tempera: Test-time prompting via reinforcement learning",
+            "Spring: Gpt-4 out-performs rl algorithms by studying papers and reasoning",
+            "Rain: Your language models can align themselves without finetuning.",
+            "Gpt-4 technical report",
+            "Rlprompt: Optimizing discrete text prompts with reinforcement learning",
+            "Syndicom: Improving conversational commonsense with error-injection and natural language feedback",
+            "Automatic prompt optimization with \"gradient descent\" and beam search",
+            "Offline prompt evaluation and optimization with inverse reinforcement learning",
+            "Palm-e: An embodied multimodal language model",
+            "Language is not all you need: Aligning perception with language models",
+            "Lima: Less is more for alignment."
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.0003311621549073607,
+        "extra": {
+          "expand": "not expand"
+        }
+      }
+    ],
+    "Drawbacks of reinforcement learning in fine-tuning LLMs": [
+      {
+        "title": "RLHF Deciphered: A Critical Analysis of Reinforcement Learning from Human Feedback for LLMs",
+        "arxiv_id": "2404.08555",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract State-of-the-art large language models (LLMs) have become indispensable tools for various tasks. However, training LLMs to serve as effective assistants for humans requires careful consideration. A promising approach is reinforcement learning from human feedback (RLHF), which leverages human feedback to update the model in accordance with human preferences and mitigate issues like toxicity and hallucinations. Yet, an understanding of RLHF for LLMs is largely entangled with initial design choices that popularized the method and current research focuses on augmenting those choices rather than fundamentally improving the framework. In this paper, we analyze RLHF through the lens of reinforcement learning principles to develop an understanding of its fundamentals, dedicating substantial focus to the core component of RLHF\u2014the reward model. Our study investigates modeling choices, caveats of function approximation, and their implications on RLHF training algorithms, highlighting the underlying assumptions made about the expressivity of reward. Our analysis improves the understanding of the role of reward models and methods for their training, concurrently revealing limitations of the current methodology. We characterize these limitations, including incorrect generalization, model misspecification, and the sparsity of feedback, along with their impact on the performance of a language model. The discussion and analysis are substantiated by a categorical review of current literature, serving as a reference for researchers and practitioners to understand the challenges of RLHF and build upon existing efforts.",
+        "sections": {
+          "1 Introduction": [
+            "Is reinforcement learning (not) for natural language processing?: Benchmarks, baselines, and building blocks for natural language policy optimization",
+            "Large language models encode clinical knowledge.",
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "Open problems and fundamental limitations of reinforcement learning from human feedback",
+            "Deep reinforcement learning from human preferences",
+            "Chatgpt",
+            "Fine-grained human feedback gives better rewards for language model training"
+          ],
+          "2 Motivation: Eliminating Objective Mismatch in Pre-Trained Language Models": [
+            "Bert: Pre-training of deep bidirectional transformers for language understanding",
+            "Attention is all you need",
+            "Language models are few-shot learners."
+          ],
+          "2 Motivation: Eliminating Objective Mismatch in Pre-Trained Language Models 2.1 Bayesian Interpretation of RLHF": [
+            "Proximal policy optimization algorithms",
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "Rank analysis of incomplete block designs: I. the method of paired comparisons",
+            "Deep reinforcement learning from human preferences",
+            "Rl with kl penalties is better viewed as bayesian inference"
+          ],
+          "3 Formulation: Text Generation as Sequential Decision-Making Markov decision process.": [
+            "The theory of algorithms"
+          ],
+          "3 Formulation: Text Generation as Sequential Decision-Making Language models as agents in MDP.": [
+            "Reinforcement learning: An introduction",
+            "Open problems and fundamental limitations of reinforcement learning from human feedback",
+            "Llama: Open and efficient foundation language models"
+          ],
+          "4 The Role of Reward 4.1 Oracular Reward and the Role of Human Feedback": [
+            "Active reward learning from multiple teachers",
+            "Training language models to follow instructions with human feedback",
+            "Models of human preference for learning reward functions",
+            "Bayesian inverse reinforcement learning",
+            "Learning to rank for information retrieval",
+            "Reinforcement learning for bandit neural machine translation with simulated human feedback",
+            "The reward hypothesis"
+          ],
+          "4 The Role of Reward 4.2 Reward Modeling": [
+            "Training language models to follow instructions with human feedback"
+          ],
+          "4 The Role of Reward 4.3 Measuring Alignment": [
+            "The alignment problem from a deep learning perspective"
+          ],
+          "5 Inferring the Reward from Human Feedback": [
+            "Constitutional ai: Harmlessness from ai feedback.",
+            "Deep double descent: Where bigger models and more data hurt",
+            "Pattern recognition and machine learning"
+          ],
+          "5 Inferring the Reward from Human Feedback 5.1 Limitations of the Reward Model": [
+            "Bandit structured prediction for learning from partial feedback in statistical machine translation",
+            "Hindsight experience replay",
+            "Anthropomorphization of ai: Opportunities and risks",
+            "Calibrated language models must hallucinate",
+            "Fine-grained human feedback gives better rewards for language model training"
+          ],
+          "6 Reinforcement Learning with Imperfect Rewards": [
+            "Reinforcement learning: An introduction",
+            "Policy gradient methods for reinforcement learning with function approximation"
+          ],
+          "6 Reinforcement Learning with Imperfect Rewards 6.1 Policy Gradient Algorithms": [
+            "Policy gradient algorithms",
+            "Proximal policy optimization algorithms",
+            "The role of baselines in policy gradient optimization"
+          ],
+          "6 Reinforcement Learning with Imperfect Rewards 6.2 Misalignment due to Imperfect Rewards": [
+            "Training language models with language feedback at scale"
+          ],
+          "6 Reinforcement Learning with Imperfect Rewards 6.3 Why use Reinforcement Learning Algorithms?": [
+            "A survey of inverse reinforcement learning: Challenges, methods and progress",
+            "An autonomous land vehicle in a neural network"
+          ],
+          "7 Review of Reinforcement Learning from Human Feedback for Language Models 7.1 Language Model Pre-Training: Foundation for Large Language Models": [
+            "Scaling language models: Methods, analysis & insights from training gopher.",
+            "Attention is all you need",
+            "Training language models to follow instructions with human feedback",
+            "Bert: Pre-training of deep bidirectional transformers for language understanding",
+            "Improving language understanding by generative pre-training",
+            "Palm 2 technical report.",
+            "Red teaming language models with language models",
+            "Scaling laws for neural language models",
+            "Language models are few-shot learners.",
+            "Towards coherent and engaging spoken dialog response generation using automatic conversation evaluators"
+          ],
+          "7 Review of Reinforcement Learning from Human Feedback for Language Models 7.2 Reinforcement Learning from Human Feedback (RLHF): Overview and Motivation": [
+            "Deep reinforcement learning: A brief survey",
+            "Webgpt: Browser-assisted question-answering with human feedback",
+            "Training language models to follow instructions with human feedback",
+            "Paraphrase generation with deep reinforcement learning",
+            "Learning to summarize from human feedback",
+            "Sequence level training with recurrent neural networks",
+            "Deep reinforcement learning from human preferences",
+            "Reinforcement learning for bandit neural machine translation with simulated human feedback",
+            "Tamer: Training an agent manually via evaluative reinforcement",
+            "Improving a neural semantic parser by counterfactual learning from human bandit feedback",
+            "Can neural machine translation be improved with user feedback?",
+            "Towards coherent and engaging spoken dialog response generation using automatic conversation evaluators"
+          ],
+          "7 Review of Reinforcement Learning from Human Feedback for Language Models 7.3 Human Feedback": [
+            "Towards measuring the representation of subjective global opinions in language models",
+            "Continually improving extractive qa via human feedback",
+            "Whose opinions do language models reflect?",
+            "Automatic evaluation of machine translation quality using longest common subsequence and skip-bigram statistics",
+            "A technique for the measurement of attitudes",
+            "How not to evaluate your dialogue system: An empirical study of unsupervised evaluation metrics for dialogue response generation",
+            "Constitutional ai: Harmlessness from ai feedback.",
+            "Continuous measurement scales in human evaluation of machine translation",
+            "Fine-tuning language models from human preferences",
+            "Don\u2019t blame the annotator: Bias already starts in the annotation instructions",
+            "Rank analysis of incomplete block designs: I. the method of paired comparisons",
+            "The curse of recursion: Training on generated data makes models forget",
+            "Models of human behaviour and confidence in judgement: A review",
+            "Teaching language models to support answers with verified quotes",
+            "Improving alignment of dialogue agents via targeted human judgements",
+            "Webgpt: Browser-assisted question-answering with human feedback",
+            "Reflexion: Language agents with verbal reinforcement learning",
+            "Investigations of performance and bias in human-ai teamwork in hiring",
+            "Bridging the gap: A survey on integrating (human) feedback for natural language generation",
+            "Training a helpful and harmless assistant with reinforcement learning from human feedback",
+            "Principled reinforcement learning with human feedback from pairwise or k-wise comparisons",
+            "Let\u2019s verify step by step",
+            "Sample efficient text summarization using a single pre-trained transformer",
+            "Dialogue learning with human-in-the-loop",
+            "A general language assistant as a laboratory for alignment",
+            "Aligning large language models through synthetic feedback",
+            "Ranking vs. preference: A comparative study of self-reporting",
+            "Can neural machine translation be improved with user feedback?",
+            "Solving math word problems with process- and outcome-based feedback",
+            "Improving code generation by training with natural language feedback",
+            "Reliability and learnability of human bandit feedback for sequence-to-sequence reinforcement learning",
+            "Training language models with language feedback at scale",
+            "Reward gaming in conditional text generation",
+            "Learning to summarize from human feedback",
+            "Using interactive feedback to improve the accuracy and explainability of question answering systems post-deployment",
+            "Learning from dialogue after deployment: Feed yourself, chatbot!",
+            "Towards coherent and engaging spoken dialog response generation using automatic conversation evaluators",
+            "Training language models to follow instructions with human feedback",
+            "Econometric models of probabilistic choice",
+            "Semsup: Semantic supervision for simple and scalable zero-shot generalization",
+            "An actor-critic algorithm for sequence prediction",
+            "Fine-grained human feedback gives better rewards for language model training"
+          ],
+          "7 Review of Reinforcement Learning from Human Feedback for Language Models 7.4 Supervised Fine-Tuning: Limitations and Role": [
+            "Webgpt: Browser-assisted question-answering with human feedback",
+            "Finetuned language models are zero-shot learners",
+            "Training a helpful and harmless assistant with reinforcement learning from human feedback",
+            "An autonomous land vehicle in a neural network",
+            "Training language models to follow instructions with human feedback",
+            "Learning to summarize from human feedback",
+            "Instructeval: Systematic evaluation of instruction selection methods",
+            "Red teaming language models to reduce harms: Methods, scaling behaviors, and lessons learned",
+            "Improving alignment of dialogue agents via targeted human judgements",
+            "Reinforcement learning for bandit neural machine translation with simulated human feedback",
+            "A general language assistant as a laboratory for alignment",
+            "Language models are few-shot learners."
+          ],
+          "7 Review of Reinforcement Learning from Human Feedback for Language Models 7.5 Reward Modeling": [
+            "Is reinforcement learning (not) for natural language processing?: Benchmarks, baselines, and building blocks for natural language policy optimization",
+            "Training a helpful and harmless assistant with reinforcement learning from human feedback",
+            "Training language models to follow instructions with human feedback",
+            "Principled reinforcement learning with human feedback from pairwise or k-wise comparisons",
+            "Fine-tuning language models from human preferences",
+            "Let\u2019s verify step by step",
+            "Training language models with language feedback at scale",
+            "Rank analysis of incomplete block designs: I. the method of paired comparisons",
+            "The analysis of permutations",
+            "Deep reinforcement learning from human preferences",
+            "Improving alignment of dialogue agents via targeted human judgements",
+            "An actor-critic algorithm for sequence prediction",
+            "A general language assistant as a laboratory for alignment",
+            "Solving math word problems with process- and outcome-based feedback",
+            "Fine-grained human feedback gives better rewards for language model training"
+          ],
+          "7 Review of Reinforcement Learning from Human Feedback for Language Models 7.6 RLHF Finetuning of Language Models": [
+            "Is reinforcement learning (not) for natural language processing?: Benchmarks, baselines, and building blocks for natural language policy optimization",
+            "Sheared llama: Accelerating language model pre-training via structured pruning.",
+            "Proximal policy optimization algorithms",
+            "Training a helpful and harmless assistant with reinforcement learning from human feedback",
+            "Training language models to follow instructions with human feedback",
+            "Efficient rlhf: Reducing the memory usage of ppo",
+            "Secrets of rlhf in large language models part i: Ppo",
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "Way off-policy batch deep reinforcement learning of implicit human preferences in dialog",
+            "Learning to summarize from human feedback",
+            "Asynchronous methods for deep reinforcement learning",
+            "On the weaknesses of reinforcement learning for neural machine translation",
+            "Policy gradient algorithms",
+            "Rl with kl penalties is better viewed as bayesian inference"
+          ],
+          "7 Review of Reinforcement Learning from Human Feedback for Language Models 7.7 Limitations of RLHF Models": [
+            "Is reinforcement learning (not) for natural language processing?: Benchmarks, baselines, and building blocks for natural language policy optimization",
+            "Training a helpful and harmless assistant with reinforcement learning from human feedback",
+            "Scaling laws for reward model overoptimization",
+            "Training language models to follow instructions with human feedback",
+            "Efficient rlhf: Reducing the memory usage of ppo",
+            "A long way to go: Investigating length correlations in rlhf",
+            "Way off-policy batch deep reinforcement learning of implicit human preferences in dialog",
+            "Rrhf: Rank responses to align language models with human feedback without tears",
+            "What matters for on-policy deep actor-critic methods?",
+            "Red teaming language models with language models",
+            "On the weaknesses of reinforcement learning for neural machine translation",
+            "Toxicity in chatgpt: Analyzing persona-assigned language models",
+            "Sources of hallucination by large language models on inference tasks",
+            "Understanding the effects of rlhf on llm generalisation and diversity",
+            "Gpt-4 technical report"
+          ],
+          "7 Review of Reinforcement Learning from Human Feedback for Language Models 7.8 Enriching Reward Signals in Reinforcement Learning": [
+            "Reward learning from human preferences and demonstrations in atari",
+            "Reinforcement learning: An introduction",
+            "Rewarded soups: towards pareto-optimal alignment by interpolating weights fine-tuned on diverse rewards",
+            "Fine-grained human feedback gives better rewards for language model training",
+            "Intrinsic motivation systems for autonomous mental development",
+            "A joint model of language and perception for grounded attribute learning",
+            "Reinforcement learning with sparse rewards using guidance from offline demonstration",
+            "Self-refine: Iterative refinement with self-feedback",
+            "A survey of multi-objective sequential decision-making",
+            "Learning preferences for manipulation tasks from online coactive feedback",
+            "Unifying count-based exploration and intrinsic motivation",
+            "Policy invariance under reward transformations: Theory and application to reward shaping",
+            "Hierarchical reinforcement learning with the maxq value function decomposition",
+            "Training language models with language feedback",
+            "Inverse reward design"
+          ],
+          "7 Review of Reinforcement Learning from Human Feedback for Language Models 7.9 Moving Beyond RL Training": [
+            "Efficient rlhf: Reducing the memory usage of ppo",
+            "Reward-augmented decoding: Efficient controlled text generation with a unidirectional reward model",
+            "Constitutional ai: Harmlessness from ai feedback.",
+            "Director: Generator-classifiers for supervised language modeling",
+            "Raft: Reward ranked finetuning for generative foundation model alignment",
+            "On the weaknesses of reinforcement learning for neural machine translation",
+            "Webgpt: Browser-assisted question-answering with human feedback",
+            "Learning new skills after deployment: Improving open-domain internet-driven dialogue with human feedback",
+            "Chain of hindsight aligns language models with feedback",
+            "Statistical rejection sampling improves preference optimization",
+            "Second thoughts are best: Learning to re-align with human values from text edits",
+            "Principle-driven self-alignment of language models from scratch with minimal human supervision",
+            "Training language models to follow instructions with human feedback",
+            "Calibrating sequence likelihood improves conditional language generation",
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "Llama: Open and efficient foundation language models",
+            "Rrhf: Rank responses to align language models with human feedback without tears",
+            "Slic-hf: Sequence likelihood calibration with human feedback",
+            "Training language models with language feedback",
+            "Fine-grained human feedback gives better rewards for language model training"
+          ],
+          "8 Discussion and Conclusion": [
+            "A survey of reinforcement learning from human feedback",
+            "Open problems and fundamental limitations of reinforcement learning from human feedback"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.23938269913196564,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "A Closer Look at the Limitations of Instruction Tuning",
+        "arxiv_id": "2402.05119",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Instruction Tuning (IT), the process of training large language models (LLMs) using instruction-response pairs, has emerged as the predominant method for transforming base pre-trained LLMs into open-domain conversational agents. While IT has achieved notable success and widespread adoption, its limitations and shortcomings remain underexplored. In this paper, through rigorous experiments and an in-depth analysis of the changes LLMs undergo through IT, we reveal various limitations of IT. In particular, we show that (1) IT fails to enhance knowledge or skills in LLMs. LoRA fine-tuning is limited to learning response initiation and style tokens, and full-parameter fine-tuning leads to knowledge degradation. (2) Copying response patterns from IT datasets derived from knowledgeable sources leads to a decline in response quality. (3) Full-parameter fine-tuning increases hallucination by inaccurately borrowing tokens from conceptually similar instances in the IT dataset for generating responses. (4) Popular methods to improve IT do not lead to performance improvements over a simple LoRA fine-tuned model. Our findings reveal that responses generated solely from pre-trained knowledge consistently outperform responses by models that learn any form of new knowledge from IT on open-source datasets. We hope the insights and challenges revealed inspire future work. ",
+        "sections": {
+          "1 Introduction": [
+            "Chatgpt: Optimizing language models for dialogue",
+            "The unlocking spell on base llms: Rethinking alignment via in-context learning",
+            "Instruction tuning for large language models: A survey",
+            "Alpagasus: Training a better alpaca with fewer data",
+            "A survey of large language models",
+            "Judging LLM-as-a-judge with MT-bench and chatbot arena",
+            "Training a helpful and harmless assistant with reinforcement learning from human feedback",
+            "Neftune: Noisy embeddings improve instruction finetuning",
+            "Finetuned language models are zero-shot learners",
+            "Lora: Low-rank adaptation of large language models.",
+            "LIMA: Less is more for alignment",
+            "Self-instruct: Aligning language models with self-generated instructions",
+            "The false promise of imitating proprietary llms",
+            "Sparks of artificial general intelligence: Early experiments with gpt-4"
+          ],
+          "2 Experimental Setting": [
+            "LIMA: Less is more for alignment",
+            "The unlocking spell on base llms: Rethinking alignment via in-context learning",
+            "Llama 2: Open foundation and fine-tuned chat models",
+            "Textbooks are all you need ii: phi-1.5 technical report",
+            "Camels in a changing climate: Enhancing lm adaptation with tulu 2",
+            "When scaling meets LLM finetuning: The effect of data, model and finetuning method",
+            "Open llm leaderboard",
+            "Stanford alpaca: An instruction-following llama model",
+            "Alpacare:instruction-tuned large language models for medical application",
+            "G-eval: NLG evaluation using GPT-4 with better human alignment",
+            "Free dolly: Introducing the world\u2019s first truly open instruction-tuned llm",
+            "Mistral 7b"
+          ],
+          "3 IT is (currently) Not a Knowledge Enhancer": [
+            "The unlocking spell on base llms: Rethinking alignment via in-context learning"
+          ],
+          "4 Pattern Copying (often) Hurts Performance": [
+            "The false promise of imitating proprietary llms"
+          ],
+          "6 Methods to Improve IT are Ineffective": [
+            "Wizardlm: Empowering large language models to follow complex instructions.",
+            "Alpagasus: Training a better alpaca with fewer data",
+            "Neftune: Noisy embeddings improve instruction finetuning"
+          ],
+          "7 Related Work": [
+            "The unlocking spell on base llms: Rethinking alignment via in-context learning",
+            "Instruction tuning for large language models: A survey",
+            "LIMA: Less is more for alignment",
+            "The false promise of imitating proprietary llms",
+            "Do models really learn to follow instructions? an empirical study of instruction tuning"
+          ],
+          "8 Conclusion, Limitations and Future Work": [
+            "Direct preference optimization: Your language model is secretly a reward model"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.004801427014172077,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Supervised Fine-Tuning as Inverse Reinforcement Learning",
+        "arxiv_id": "2403.12017",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract The prevailing approach to aligning Large Language Models (LLMs) typically relies on human or AI feedback and assumes access to specific types of preference datasets. In our work, we question the efficacy of such datasets and explore various scenarios where alignment with expert demonstrations proves more realistic. We build a sequential decision-making framework to formulate the problem of aligning LLMs using demonstration datasets. Drawing insights from inverse reinforcement learning and imitation learning, we introduce various approaches for divergence minimization in the LLM alignment tasks. Our analysis highlights the mass-covering and mode-seeking behaviors of these different approaches. Inclusively, we examine the pros and cons of the classical supervised fine-tuning method, elaborating on scenarios where different methods shine.  ",
+        "sections": {
+          "1 Introduction": [
+            "Slic-hf: Sequence likelihood calibration with human feedback",
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "Nash learning from human feedback",
+            "Constitutional ai: Harmlessness from ai feedback",
+            "Rrhf: Rank responses to align language models with human feedback without tears",
+            "Rank analysis of incomplete block designs: I. the method of paired comparisons",
+            "A general theoretical paradigm to understand learning from human preferences",
+            "Deep reinforcement learning from human preferences"
+          ],
+          "2 Preliminaries 2.3 Behavior Clone and Imitation Learning": [
+            "A reduction of imitation learning and structured prediction to no-regret online learning"
+          ],
+          "2 Preliminaries 2.4 Reinforcement Learning from Human Feedback (RLHF)": [
+            "Slic-hf: Sequence likelihood calibration with human feedback",
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "Nash learning from human feedback",
+            "Rrhf: Rank responses to align language models with human feedback without tears",
+            "A general theoretical paradigm to understand learning from human preferences",
+            "Training language models to follow instructions with human feedback",
+            "Deep reinforcement learning from human preferences"
+          ],
+          "3 Rethinking LLM Alignment from an RL Perspective 3.2 Alignment as Online Reinforcement Learning with Human Feedback": [
+            "Training language models to follow instructions with human feedback"
+          ],
+          "3 Rethinking LLM Alignment from an RL Perspective 3.3 Imitation Learning for Alignment with Offline Feedback": [
+            "Learning from demonstration",
+            "Mastering the game of go with deep neural networks and tree search",
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "Grandmaster level in starcraft ii using multi-agent reinforcement learning",
+            "Learning driving styles for autonomous vehicles from demonstration",
+            "A general theoretical paradigm to understand learning from human preferences"
+          ],
+          "3 Rethinking LLM Alignment from an RL Perspective 3.4 Alignment as Inverse RL: from Behavior Cloning to Adversarial Imitation": [
+            "Kto: Model alignment as prospect theoretic optimization",
+            "A reduction of imitation learning and structured prediction to no-regret online learning",
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "A divergence minimization perspective on imitation learning methods",
+            "Algorithms for inverse reinforcement learning",
+            "A general theoretical paradigm to understand learning from human preferences",
+            "Learning robust rewards with adversarial inverse reinforcement learning",
+            "Generative adversarial imitation learning",
+            "Self-play fine-tuning converts weak language models to strong language models",
+            "Efficient training of artificial neural networks for autonomous navigation",
+            "Generative adversarial nets"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.003247110405936837,
+        "extra": {
+          "expand": "not expand"
+        }
+      }
+    ],
+    "Effects of reinforcement learning on supervised fine-tuned language models": [
+      {
+        "title": "Prompt-Based Length Controlled Generation with Reinforcement Learning",
+        "arxiv_id": "2308.12030",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Large language models (LLMs) like ChatGPT and GPT-4 have attracted great attention given their surprising performance on a wide range of NLP tasks. Length controlled generation of LLMs emerges as an important topic, which enables users to fully leverage the capability of LLMs in more real-world scenarios like generating a proper answer or essay of a desired length. In addition, the autoregressive generation in LLMs is extremely time-consuming, while the ability of controlling this generated length can reduce the inference cost by limiting the length. Therefore, we propose a prompt-based length control method to achieve high-accuracy length controlled generation. In particular, we adopt reinforcement learning with the reward signal given by either trainable or rule-based reward models, which further enhances the length-control ability of LLMs by rewarding outputs that follows pre-defined control instruction. To enable rule-based inference, we also introduce standard prompt extractor to collect the standard control information from users\u2019 input. Experiments show that our method significantly improves the accuracy of prompt-based length control for summarization task on popular datasets like CNNDM and NYT. Both the standard prompt extractor and the RL-tuned model have show strong generalization ability to unseen control prompt templates.  ",
+        "sections": {},
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.00033706435351632535,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Fine-Tuning Large Vision-Language Models as Decision-Making Agents via Reinforcement Learning",
+        "arxiv_id": "2405.10292",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract Large vision-language models (VLMs) fine-tuned on specialized visual instruction-following data have exhibited impressive language reasoning capabilities across various scenarios. However, this fine-tuning paradigm may not be able to efficiently learn optimal decision-making agents in multi-step goal-directed tasks from interactive environments. To address this challenge, we propose an algorithmic framework that fine-tunes VLMs with reinforcement learning (RL). Specifically, our framework provides a task description and then prompts the VLM to generate chain-of-thought (CoT) reasoning, enabling the VLM to efficiently explore intermediate reasoning steps that lead to the final text-based action. Next, the open-ended text output is parsed into an executable action to interact with the environment to obtain goal-directed task rewards. Finally, our framework uses these task rewards to fine-tune the entire VLM with RL. Empirically, we demonstrate that our proposed framework enhances the decision-making capabilities of VLM agents across various tasks, enabling 7b models to outperform commercial models such as GPT4-V or Gemini. Furthermore, we find that CoT reasoning is a crucial component for performance improvement, as removing the CoT reasoning results in a significant decrease in the overall performance of our method.",
+        "sections": {
+          "1 Introduction": [
+            "On the opportunities and risks of foundation models",
+            "Introducing gemini: our largest and most capable ai model",
+            "Chain-of-thought prompting elicits reasoning in large language models",
+            "Gpt-4v",
+            "Llava-next: Improved reasoning, ocr, and world knowledge",
+            "Offline RL for natural language generation with implicit language q learning",
+            "Visual instruction tuning",
+            "Human-level control through deep reinforcement learning.",
+            "ALFWorld: Aligning text and embodied environments for interactive learning",
+            "Visual instruction tuning towards general-purpose multimodal model: A survey"
+          ],
+          "2 Related Work Training LLMs or VLMs with RL.": [
+            "Is reinforcement learning (not) for natural language processing: Benchmarks, baselines, and building blocks for natural language policy optimization",
+            "Fine-tuning language models from human preferences",
+            "Large multimodal models: Notes on cvpr 2023 tutorial"
+          ],
+          "2 Related Work Adopting LLMs and VLMs as decision-making agents.": [
+            "Embodiedgpt: Vision-language pre-training via embodied chain of thought",
+            "Chain-of-thought prompting elicits reasoning in large language models",
+            "Vision-language models provide promptable representations for reinforcement learning",
+            "A survey for in-context learning",
+            "Autonomous evaluation and refinement of digital agents"
+          ],
+          "2 Related Work Evaluating VLMs as decision-making agents.": [
+            "Habitat: A Platform for Embodied AI Research",
+            "Vqa: Visual question answering",
+            "Textworld: A learning environment for text-based games",
+            "Openai gym",
+            "ALFWorld: Aligning text and embodied environments for interactive learning"
+          ],
+          "2 Related Work CoT prompting.": [
+            "Chain-of-thought prompting elicits reasoning in large language models",
+            "Training verifiers to solve math word problems",
+            "Large language models are zero-shot reasoners",
+            "Self-consistency improves chain of thought reasoning in language models"
+          ],
+          "3 Preliminaries Standard RL terminologies.": [
+            "Reinforcement learning: An introduction"
+          ],
+          "3 Preliminaries Adapting the RL formalism to VLMs.": [
+            "Lmrl gym: Benchmarks for multi-turn reinforcement learning with language models"
+          ],
+          "4 Training VLMs with RL": [
+            "Trust region policy optimization"
+          ],
+          "4 Training VLMs with RL 4.2 Post-Processing Open-Ended Text for Legal Actions": [
+            "ALFWorld: Aligning text and embodied environments for interactive learning"
+          ],
+          "4 Training VLMs with RL 4.3 Estimating Action Probabilities of VLM Policies": [
+            "Proximal policy optimization algorithms"
+          ],
+          "5 Evaluation Tasks": [
+            "The arcade learning environment: An evaluation platform for general agents",
+            "Openai gym",
+            "ALFWorld: Aligning text and embodied environments for interactive learning",
+            "Open rl benchmark: Comprehensive tracked experiments for reinforcement learning."
+          ],
+          "5 Evaluation Tasks 5.2 ALFWorld": [
+            "ALFWorld: Aligning text and embodied environments for interactive learning",
+            "Textworld: A learning environment for text-based games",
+            "Alfred: A benchmark for interpreting grounded instructions for everyday tasks"
+          ],
+          "6 Experimental Results 6.1 Improving VLM Decision-Making Capabilities": [
+            "Training language models to follow instructions with human feedback",
+            "Llava-next: Improved reasoning, ocr, and world knowledge",
+            "Roberta: A robustly optimized bert pretraining approach"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.0021677527111023664,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Language Model Self-improvement by Reinforcement Learning Contemplation",
+        "arxiv_id": "2305.14483",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Large Language Models (LLMs) have exhibited remarkable performance across various natural language processing (NLP) tasks. However, fine-tuning these models often necessitates substantial supervision, which can be expensive and time-consuming to obtain. This paper introduces a novel unsupervised method called Language Model Self-Improvement by Reinforcement Learning Contemplation (SIRLC) that improves LLMs without reliance on external labels. Our approach is grounded in the observation that it is simpler for language models to assess text quality than to generate text. Building on this insight, SIRLC\u00a0assigns LLMs dual roles as both student and teacher. As a student, the LLM generates answers to unlabeled questions, while as a teacher, it evaluates the generated text and assigns scores accordingly. The model parameters are updated using reinforcement learning to maximize the evaluation score. We demonstrate that SIRLC\u00a0can be applied to various NLP tasks, such as reasoning problems, text generation, and machine translation. Our experiments show that SIRLC\u00a0effectively improves LLM performance without external supervision, resulting in a 5.6% increase in answering accuracy for reasoning tasks and a rise in BERTScore from 0.82 to 0.86 for translation tasks. Furthermore, SIRLC\u00a0can be applied to models of different sizes, showcasing its broad applicability. ",
+        "sections": {
+          "1 Introduction": [
+            "GPT-4 technical report",
+            "Fine-tuning language models from human preferences",
+            "Large language models can self-improve",
+            "Self-consistency improves chain of thought reasoning in language models",
+            "A survey of large language models",
+            "Chain-of-thought prompting elicits reasoning in large language models",
+            "Training language models to follow instructions with human feedback",
+            "Language models are few-shot learners."
+          ],
+          "2 Related Work": [
+            "Automatic adaptation of object detectors to new domains using self-training",
+            "Large language models can self-improve",
+            "Fine-tuning language models from human preferences",
+            "Self-consistency improves chain of thought reasoning in language models",
+            "Towards coherent and cohesive long-form text generation",
+            "Learning to summarize with human feedback",
+            "Large language models are reasoners with self-verification",
+            "PaLM: Scaling language modeling with pathways",
+            "Generate & rank: A multi-task framework for math word problems",
+            "Google\u2019s neural machine translation system: Bridging the gap between human and machine translation.",
+            "Learning to extract coherent summary via deep reinforcement learning",
+            "Planning with large language models via corrective re-prompting"
+          ],
+          "3 Preliminary": [
+            "Markov Decision Processes: Discrete Stochastic Dynamic Programming"
+          ],
+          "4 Large Language Models are Good at  Self-evaluation 4.1 Comparison of Text Generation and Self-evaluation": [
+            "Commongen: A constrained text generation challenge for generative commonsense reasoning",
+            "Scaling instruction-finetuned language models"
+          ],
+          "4 Large Language Models are Good at  Self-evaluation 4.2 Correlation Between Self-evaluation and Established Metrics": [
+            "Abstractive text summarization using sequence-to-sequence rnns and beyond",
+            "Overview of the IWSLT 2017 evaluation campaign",
+            "Bertscore: Evaluating text generation with BERT",
+            "ROUGE: A package for automatic evaluation of summaries",
+            "Bleu: a method for automatic evaluation of machine translation"
+          ],
+          "4 Large Language Models are Good at  Self-evaluation 4.3 Potential for Self-improvement": [
+            "Automated news summarization using transformers",
+            "Beyond the imitation game: Quantifying and extrapolating the capabilities of language models."
+          ],
+          "5 Self-improvement by Reinforcement Learning Contemplation": [
+            "The 37 implementation details of proximal policy optimization",
+            "Self-consistency improves chain of thought reasoning in language models",
+            "Proximal policy optimization algorithms"
+          ],
+          "6 Experiment 6.1 Experiment Setup": [
+            "Large language models can self-improve",
+            "Abstractive text summarization using sequence-to-sequence rnns and beyond",
+            "Beyond the imitation game: Quantifying and extrapolating the capabilities of language models.",
+            "Self-consistency improves chain of thought reasoning in language models",
+            "Automated news summarization using transformers",
+            "Transformer reinforcement learning X",
+            "Overview of the IWSLT 2017 evaluation campaign"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.0009047951898537576,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Reinforcement Learning from LLM Feedback to Counteract Goal Misgeneralization",
+        "arxiv_id": "2401.07181",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract We introduce a method to address goal misgeneralization in reinforcement learning (RL), leveraging Large Language Model (LLM) feedback during training. Goal misgeneralization, a type of robustness failure in RL occurs when an agent retains its capabilities out-of-distribution yet pursues a proxy rather than the intended one. Our approach utilizes LLMs to analyze an RL agent\u2019s policies during training and identify potential failure scenarios. The RL agent is then deployed in these scenarios, and a reward model is learnt through the LLM preferences and feedback. This LLM-informed reward model is used to further train the RL agent on the original dataset. We apply our method to a maze navigation task, and show marked improvements in goal generalization, especially in cases where true and proxy goals are somewhat distinguishable and behavioral biases are pronounced. This study demonstrates how the LLM, despite its lack of task proficiency, can efficiently supervise RL agents, providing scalable oversight and valuable insights for enhancing goal-directed learning in RL through the use of LLMs. ",
+        "sections": {
+          "1 Introduction": [
+            "Interpretability in the wild: a circuit for indirect object identification in gpt-2 small",
+            "Reward learning from human preferences and demonstrations in atari",
+            "The effects of reward misspecification: Mapping and mitigating misaligned models, Specification gaming: the flip side of AI ingenuity.",
+            "The effects of reward misspecification: Mapping and mitigating misaligned models",
+            "Learning to summarize from human feedback",
+            "Fine-tuning language models from human preferences",
+            "Measuring progress on scalable oversight for large language models",
+            "Towards monosemanticity: Decomposing language models with dictionary learning",
+            "Learning from human preferences",
+            "Harms from increasingly agentic algorithmic systems",
+            "Dermatologist-level classification of skin cancer with deep neural networks",
+            "Highly accurate protein structure prediction with alphafold",
+            "Reinforcement learning with a corrupted reward channel",
+            "Artificial intelligence, values, and alignment",
+            "Locating and editing factual associations in gpt",
+            "Grandmaster level in starcraft ii using multi-agent reinforcement learning",
+            "Ai safety gridworlds",
+            "Deep reinforcement learning from human preferences",
+            "Concrete problems in AI safety",
+            "Superintelligence: Paths, dangers, strategies",
+            "Defining and characterizing reward gaming",
+            "Aligning ai with shared human values",
+            "Proximal policy optimization algorithms",
+            "Mastering the game of Go with deep neural networks and tree search"
+          ],
+          "2 Preliminaries": [
+            "Goal misgeneralization in deep reinforcement learning"
+          ],
+          "2 Preliminaries 2.1 Goal Misgeneralization": [
+            "Goal misgeneralization in deep reinforcement learning"
+          ],
+          "2 Preliminaries 2.2 Reward modeling": [
+            "Deep reinforcement learning from human preferences"
+          ],
+          "4 Dataset and experiment details 4.1 Dataset": [
+            "Leveraging procedural generation to benchmark reinforcement learning"
+          ],
+          "4 Dataset and experiment details 4.2 Goal Misgeneralization in Procgen Maze Game": [
+            "Goal misgeneralization in deep reinforcement learning"
+          ],
+          "4 Dataset and experiment details 4.3 RLAIF training on the Procgen Maze game": [
+            "Large language models sensitivity to the order of options in multiple-choice questions.",
+            "Rlaif: Scaling reinforcement learning from human feedback with ai feedback",
+            "Goal misgeneralization in deep reinforcement learning"
+          ],
+          "6 Related Work Instances of Goal Misgeneralization and potential mitigations": [
+            "Constructing unrestricted adversarial examples with generative models",
+            "Adversarial training for high-stakes reliability",
+            "Goal misgeneralization in deep reinforcement learning",
+            "An exploration of goal misgeneralization",
+            "Red teaming language models with language models"
+          ],
+          "6 Related Work Scalable oversight": [
+            "Scalable agent alignment via reward modeling: a research direction",
+            "Self-critiquing models for assisting human evaluators",
+            "Concrete problems in AI safety",
+            "Measuring progress on scalable oversight for large language models",
+            "Ai safety via debate",
+            "An overview of 11 proposals for building safe advanced ai"
+          ],
+          "6 Related Work RLHF & RLAIF.": [
+            "Self-critiquing models for assisting human evaluators",
+            "When life gives you lemons, make cherryade: Converting feedback from bad responses into good labels",
+            "Bowman, Zac Hatfield-Dodds, Ben Mann, Dario Amodei, Nicholas Joseph, Sam McCandlish, Tom Brown, and Jared Kaplan",
+            "Training a helpful and harmless assistant with reinforcement learning from human feedback",
+            "Ethical-advice taker: Do language models understand natural language interventions?",
+            "Motif: Intrinsic motivation from artificial intelligence feedback",
+            "Learning to summarize from human feedback",
+            "Rlaif: Scaling reinforcement learning from human feedback with ai feedback",
+            "Deep reinforcement learning from human preferences"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.0012852838262915611,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Understanding the Effects of RLHF on LLM Generalisation and Diversity",
+        "arxiv_id": "2310.06452",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Large language models (LLMs) fine-tuned with reinforcement learning from human feedback (RLHF) have been used in some of the most widely deployed AI models to date, such as OpenAI\u2019s ChatGPT or Anthropic\u2019s Claude. While there has been significant work developing these methods, our understanding of the benefits and downsides of each stage in RLHF is still limited. To fill this gap, we present an extensive analysis of how each stage of the process (i.e.\u00a0supervised fine-tuning (SFT), reward modelling, and RLHF) affects two key properties: out-of-distribution (OOD) generalisation and output diversity. OOD generalisation is crucial given the wide range of real-world scenarios in which these models are being used, while output diversity refers to the model\u2019s ability to generate varied outputs and is important for a variety of use cases. We perform our analysis across two base models on both summarisation and instruction following tasks, the latter being highly relevant for current LLM use cases. We find that RLHF generalises better than SFT to new inputs, particularly as the distribution shift between train and test becomes larger. However, RLHF significantly reduces output diversity compared to SFT across a variety of measures, implying a tradeoff in current LLM fine-tuning methods between generalisation and diversity. Our results provide guidance on which fine-tuning method should be used depending on the application, and show that more research is needed to improve the tradeoff between generalisation and diversity. ",
+        "sections": {
+          "1 Introduction": [
+            "Emergent autonomous scientific research capabilities of large language models",
+            "Bleu: a method for automatic evaluation of machine translation",
+            "Improving alignment of dialogue agents via targeted human judgements",
+            "Proximal Policy Optimization Algorithms",
+            "Mysteries of mode collapse",
+            "Robust Preference Learning for Storytelling via Contrastive Reinforcement Learning",
+            "A distributional approach to controlled text generation",
+            "Deep reinforcement learning from human preferences",
+            "Red teaming language models with language models"
+          ],
+          "2 Background and Related Work Fine-tuning Large Language Models.": [
+            "Offline RL for Natural Language Generation with Implicit Language Q Learning",
+            "Asynchronous methods for deep reinforcement learning",
+            "Proximal Policy Optimization Algorithms",
+            "Open Problems and Fundamental Limitations of Reinforcement Learning from Human Feedback",
+            "AlpacaFarm: A Simulation Framework for Methods that Learn from Human Feedback",
+            "Deep reinforcement learning from human preferences"
+          ],
+          "2 Background and Related Work Generalisation and Diversity in NLP.": [
+            "Abstractive text summarization using sequence-to-sequence RNNs and beyond",
+            "TL;DR: Mining Reddit to learn automatic summarization",
+            "Texygen: A benchmarking platform for text generation models",
+            "Learning to summarize from human feedback",
+            "State-of-the-art generalisation research in NLP: A taxonomy and review",
+            "Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback",
+            "A distributional approach to controlled text generation",
+            "Evaluating the evaluation of diversity in natural language generation"
+          ],
+          "3 Model Training Pretrained Models.": [
+            "OPT: Open Pre-trained Transformer Language Models",
+            "LLaMA: Open and Efficient Foundation Language Models, 2023a",
+            "Learning to summarize from human feedback"
+          ],
+          "3 Model Training Reinforcement Learning from Human Feedback": [
+            "Proximal Policy Optimization Algorithms",
+            "Sequence tutor: Conservative fine-tuning of sequence generation models with kl-control",
+            "Learning to summarize from human feedback",
+            "Scaling Laws for Reward Model Overoptimization"
+          ],
+          "3 Model Training Best-of-N.": [
+            "Direct Preference Optimization: Your Language Model is Secretly a Reward Model",
+            "Teaching language models to support answers with verified quotes"
+          ],
+          "4 Datasets and Tasks Summarisation.": [
+            "Learning to summarize from human feedback",
+            "TL;DR: Mining Reddit to learn automatic summarization"
+          ],
+          "4 Datasets and Tasks Instruction Following": [
+            "AlpacaFarm: A Simulation Framework for Methods that Learn from Human Feedback",
+            "Scaling Instruction-Finetuned Language Models"
+          ],
+          "5 Model Evaluation 5.1 Generalisation Evaluation": [
+            "Direct Preference Optimization: Your Language Model is Secretly a Reward Model",
+            "Abstractive text summarization using sequence-to-sequence RNNs and beyond",
+            "GPT-4 Technical Report",
+            "AlpacaEval: An automatic evaluator of instruction-following models",
+            "Learning to summarize from human feedback",
+            "Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback",
+            "AlpacaFarm: A Simulation Framework for Methods that Learn from Human Feedback"
+          ],
+          "5 Model Evaluation 5.2 Diversity Evaluation": [
+            "Semantic diversity in dialogue with natural language inference",
+            "A diversity-promoting objective function for neural conversation models",
+            "Evaluating the evaluation of diversity in natural language generation",
+            "Rethinking and refining the distinct metric",
+            "Sentence-BERT: Sentence embeddings using Siamese BERT-networks"
+          ],
+          "6 Experimental Results 6.1 Generalisation": [
+            "OPT: Open Pre-trained Transformer Language Models",
+            "Learning to summarize from human feedback",
+            "Llama 2: Open Foundation and Fine-Tuned Chat Models, 2023b.",
+            "AlpacaFarm: A Simulation Framework for Methods that Learn from Human Feedback",
+            "WebGPT: Browser-assisted question-answering with human feedback"
+          ],
+          "6 Experimental Results 6.2 Diversity": [
+            "Mysteries of mode collapse"
+          ],
+          "7 Discussion and Conclusion": [
+            "Training Verifiers to Solve Math Word Problems",
+            "Reinforcement Learning for Language Models",
+            "Diversity is all you need: Learning skills without a reward function",
+            "Introducing ChatGPT",
+            "Robust Preference Learning for Storytelling via Contrastive Reinforcement Learning",
+            "Red teaming language models with language models"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.8193963766098022,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Fine-tuning Large Language Models with Generative Adversarial Feedback",
+        "arxiv_id": "2305.06176",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Reinforcement Learning with Human Feedback (RLHF) has been demonstrated to significantly enhance the performance of large language models (LLMs) by aligning their outputs with desired human values through instruction tuning. However, RLHF is constrained by the expertise and productivity limitations of human evaluators. A response to this downside is to fall back to supervised fine-tuning (SFT) with additional carefully selected expert demonstrations. However, while this method has been proven to be effective, it invariably also leads to increased human-in-the-loop overhead. In this study, we propose another alternative approach: Reinforcement Learning with Generative Adversarial Feedback (RLGAF) to RLHF and SFT, which uses a generative adversarial training style to enable the LLMs to learn useful human expert demonstrations without being directly exposed to the training examples, thus enabling good generalization capabilities while preserving sample efficiency. Our preliminary findings indicate that RLGAF can help align LLMs outputs with competitive performance against RLHF and SFT, while not suffering from their respective inherent restrictions, suggesting promising avenues for further research on automating AI alignment. ",
+        "sections": {
+          "1 Introduction": [
+            "Can we trust the evaluation on chatgpt?",
+            "Lima: Less is more for alignment",
+            "Artificial hallucination: Gpt on lsd?",
+            "Training language models to follow instructions with human feedback",
+            "Perspectives on the social impacts of reinforcement learning with human feedback"
+          ],
+          "2 Preliminaries and Proposed Approach": [
+            "Seqgan: Sequence generative adversarial nets with policy gradient.",
+            "Recent progress on generative adversarial networks (gans): A survey"
+          ],
+          "2 Preliminaries and Proposed Approach 2.1 Policy Gradient": [
+            "A comparative study on transformer vs rnn in speech applications",
+            "Reinforcement learning: An introduction",
+            "Seqgan: Sequence generative adversarial nets with policy gradient.",
+            "Attention is all you need",
+            "Proximal policy optimization algorithms",
+            "Training language models to follow instructions with human feedback"
+          ],
+          "3 Form and Sentiment Alignment Experiments 3.1 Methods": [
+            "Squad: 100,000+ questions for machine comprehension of text"
+          ],
+          "4 Instruction Tuning Experiment 4.1 Methods": [
+            "Openassistant conversations\u2013democratizing large language model alignment",
+            "Qlora: Efficient finetuning of quantized llms",
+            "Lora: Low-rank adaptation of large language models"
+          ],
+          "4 Instruction Tuning Experiment 4.2 Evaluation and Discussion": [
+            "Llama: Open and efficient foundation language models",
+            "Language models are few-shot learners",
+            "Training language models to follow instructions with human feedback",
+            "Sparks of artificial general intelligence: Early experiments with gpt-4"
+          ],
+          "6 Limitations 6.2 Potential Failure Mode of Discriminator": [
+            "Inverse reward design"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.0012627749238163233,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Teaching Large Language Models to Reason with Reinforcement Learning",
+        "arxiv_id": "2403.04642",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Reinforcement Learning from Human Feedback (RLHF) has emerged as a dominant approach for aligning LLM outputs with human preferences. Inspired by the success of RLHF, we study the performance of multiple algorithms that learn from feedback (Expert Iteration, Proximal Policy Optimization (PPO), Return-Conditioned RL) on improving LLM reasoning capabilities. We investigate both sparse and dense rewards provided to the LLM both heuristically and via a learned reward model. We additionally start from multiple model sizes and initializations both with and without supervised fine-tuning (SFT) data. Overall, we find all algorithms perform comparably, with Expert Iteration performing best in most cases. Surprisingly, we find the sample complexity of Expert Iteration is similar to that of PPO, requiring at most on the order of 106superscript10610^{6} samples to converge from a pretrained checkpoint. We investigate why this is the case, concluding that during RL training models fail to explore significantly beyond solutions already produced by SFT models. Additionally, we discuss a trade off between maj@1 and pass@96 metric performance during SFT training and how conversely RL training improves both simultaneously. We then conclude by discussing the implications of our findings for RLHF and the future role of RL in LLM fine-tuning. ",
+        "sections": {
+          "1 Introduction": [
+            "Human-level play in the game of \u00a1i\u00bfdiplomacy\u00a1/i\u00bf by combining language models with strategic reasoning.",
+            "Training verifiers to solve math word problems",
+            "Dota 2 with large scale deep reinforcement learning",
+            "Finetuned language models are zero-shot learners",
+            "Sequence modeling is a robust contender for offline reinforcement learning.",
+            "J",
+            "When does return-conditioned supervised learning work for offline reinforcement learning?",
+            "Mastering chess and shogi by self-play with a general reinforcement learning algorithm",
+            "Tree of thoughts: Deliberate problem solving with large language models",
+            "Czarnecki, Micha\u00ebl Mathieu, Andrew Dudzik, Junyoung Chung, David\u00a0H",
+            "Thinking fast and slow with deep learning and tree search",
+            "Chain of thought prompting elicits reasoning in large language models"
+          ],
+          "2 Related Work": [
+            "Alpacafarm: A simulation framework for methods that learn from human feedback",
+            "Yu, Swayam Singh, Sasha Luccioni, Paulo Villegas, Maxim Kunakov, Fedor Zhdanov, Manuel Romero, Tony Lee, Nadav Timor, Jennifer Ding, Claire Schlesinger, Hailey Schoelkopf, Jana Ebert, Tri Dao, Mayank Mishra, Alexander Gu, Jennifer Robinson, Carolyn\u00a0Jane Anderson, Brendan Dolan-Gavitt, Danish Contractor, Siva Reddy, Daniel Fried, Dzmitry Bahdanau, Yacine Jernite, Carlos\u00a0Mu\u00f1oz Ferrandis, Sean\u00a0M",
+            "Training verifiers to solve math word problems",
+            "Keep calm and explore: Language models for action generation in text-based games",
+            "Dialogue shaping: Empowering agents through npc interaction",
+            "Chain of thought prompting elicits reasoning in large language models",
+            "Coderl: Mastering code generation through pretrained models and deep reinforcement learning",
+            "Raft: Reward ranked finetuning for generative foundation model alignment",
+            "Solving math word problems with process- and outcome-based feedback",
+            "Gpt-4 technical report",
+            "Tree of thoughts: Deliberate problem solving with large language models",
+            "Reinforced self-training (rest) for language modeling",
+            "Wizardmath: Empowering mathematical reasoning for large language models via reinforced evol-instruct",
+            "Measuring mathematical problem solving with the math dataset",
+            "Scaling relationship on learning mathematical reasoning with large language models",
+            "Training language models to follow instructions with human feedback",
+            "Deep reinforcement learning from human preferences",
+            "Large language models can self-improve",
+            "Quark: Controllable text generation with reinforced unlearning",
+            "Program of thoughts prompting: Disentangling computation from reasoning for numerical reasoning tasks",
+            "Toolformer: Language models can teach themselves to use tools",
+            "Pangu-coder2: Boosting large language models for code with ranking feedback"
+          ],
+          "3 Methods": [
+            "Training verifiers to solve math word problems",
+            "Decision transformer: Reinforcement learning via sequence modeling",
+            "Lora: Low-rank adaptation of large language models",
+            "When does return-conditioned supervised learning work for offline reinforcement learning?",
+            "Toolformer: Language models can teach themselves to use tools",
+            "Mastering chess and shogi by self-play with a general reinforcement learning algorithm",
+            "Proximal policy optimization algorithms",
+            "Thinking fast and slow with deep learning and tree search"
+          ],
+          "4 Experiments": [
+            "Are nlp models really able to solve simple math word problems?"
+          ],
+          "4 Experiments 4.1 Results with SFT Initialization": [
+            "A study on improving reasoning in language models",
+            "Star: Bootstrapping reasoning with reasoning"
+          ],
+          "4 Experiments 4.3 Implementation Details": [
+            "Understanding the effects of rlhf on llm generalisation and diversity",
+            "Lora: Low-rank adaptation of large language models",
+            "J",
+            "Learning to summarize from human feedback",
+            "Exploring the impact of low-rank adaptation on the performance, efficiency, and regularization of rlhf"
+          ],
+          "5 Discussion and Conclusions": [
+            "Reinforced self-training (rest) for language modeling",
+            "Evolution through large models",
+            "Scaling laws for reward model overoptimization",
+            "When does return-conditioned supervised learning work for offline reinforcement learning?",
+            "Tree of thoughts: Deliberate problem solving with large language models"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.007892276160418987,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Learning to Generate Better Than Your LLM",
+        "arxiv_id": "2306.11816",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Reinforcement learning (RL) has emerged as a powerful paradigm for fine-tuning Large Language Models (LLMs) for text generation. In particular, recent LLMs such as ChatGPT and GPT-4 can engage in fluent conversations with users after finetuning with RL. Capitalizing on key properties of text generation, we seek to investigate RL algorithms beyond general purpose algorithms like Proximal Policy Optimization (PPO). In particular, we extend RL algorithms to allow them to interact with a dynamic black-box guide LLM and propose RL with guided feedback (RLGF), a suite of RL algorithms for LLM fine-tuning. We provide two ways for the guide LLM to interact with the LLM to be optimized for maximizing rewards. The guide LLM can generate text which serves as additional starting states for the RL optimization procedure. The guide LLM can also be used to complete the partial sentences generated by the LLM that is being optimized, treating the guide LLM as an expert to imitate and surpass eventually. We experiment on the IMDB positive sentiment, CommonGen, and TL;DR summarization tasks. We show that our RL algorithms achieve higher performance than supervised learning (SL) and the RL baseline PPO, demonstrating the benefit of interaction with the guide LLM. On both CommonGen and TL;DR, we not only outperform our SL baselines but also improve upon PPO across a variety of metrics beyond the one we optimized for. Our code can be found at https://github.com/Cornell-RL/tril. ",
+        "sections": {
+          "1 Introduction": [
+            "Harnessing AI so that all students benefit: A nonprofit approach for equal access",
+            "Benefits, Limits, and Risks of GPT-4 as an AI Chatbot for Medicine",
+            "Scheduled Sampling for Sequence Prediction with Recurrent Neural Networks",
+            "Alpacafarm: A simulation framework for methods that learn from human feedback",
+            "Llama 2: Open foundation and fine-tuned chat models",
+            "Inner Monologue: Embodied Reasoning through Planning with Language Models",
+            "A Reduction of Imitation Learning and Structured Prediction to No-regret Online Learning",
+            "News Summarization and Evaluation in the Era of Gpt-3",
+            "Anthropic. https://www.anthropic.com/index/claude-2, 2023.",
+            "Sequence-to-Sequence Learning as Beam-Search Optimization",
+            "Approximately Optimal Approximate Reinforcement Learning",
+            "OpenAI. https://openai.com/blog/chatgpt, 2023.",
+            "Greaselm: Graph reasoning enhanced language models",
+            "CarperAI. https://github.com/carperai/trlx, 2023.",
+            "Is Reinforcement Learning (Not) for Natural Language Processing?: Benchmarks, Baselines, and Building Blocks for Natural Language Policy Optimization",
+            "Sparks of Artificial General Intelligence: Early Experiments with Gpt-4",
+            "Learning monocular reactive uav control in cluttered natural environments",
+            "Github. https://github.com/features/copilot, 2023. Accessed: 2023-May-13."
+          ],
+          "2 Related Work": [
+            "Reinforcement and Imitation Learning via Interactive No-regret Learning",
+            "OpenAI. https://openai.com/blog/chatgpt, 2023.",
+            "Improving multi-step prediction of learned time series models",
+            "Slic-hf: Sequence likelihood calibration with human feedback",
+            "Fine-tuning Language Models from Human Preferences",
+            "Reliability and learnability of human bandit feedback for sequence-to-sequence reinforcement learning",
+            "SEARNN: Training RNNs with Global-local losses",
+            "Search-based Structured Prediction",
+            "Learning to Search Better than your Teacher",
+            "Sequence-level knowledge distillation",
+            "Gpt-4 technical report",
+            "Parallel Scheduled Sampling",
+            "Scheduled Sampling for Sequence Prediction with Recurrent Neural Networks",
+            "Sequence level training with recurrent neural networks",
+            "Model compression",
+            "Orca: Progressive learning from complex explanation traces of gpt-4",
+            "Deeply Aggrevated: Differentiable Imitation Learning for Sequential Prediction",
+            "A Reduction of Imitation Learning and Structured Prediction to No-regret Online Learning",
+            "Minilm: Deep self-attention distillation for task-agnostic compression of pre-trained transformers",
+            "Autoregressive knowledge distillation through imitation learning",
+            "Learning to Summarize with Human Feedback",
+            "Bridging the gap between training and inference for neural machine translation",
+            "Tinybert: Distilling bert for natural language understanding",
+            "Rank analysis of incomplete block designs: I. the method of paired comparisons"
+          ],
+          "3 Preliminaries": [
+            "The curious case of neural text degeneration"
+          ],
+          "4 Reinforcement Learning from Guided Feedback PPO++superscriptPPOabsent\\texttt{PPO}^{++}: Rollin \u03c0gsuperscript\ud835\udf0b\ud835\udc54\\pi^{g} and Rollout \u03c0\u03b8subscript\ud835\udf0b\ud835\udf03\\pi_{\\theta}": [
+            "Approximate Policy Iteration: A Survey and Some New Methods",
+            "Approximately Optimal Approximate Reinforcement Learning"
+          ],
+          "4 Reinforcement Learning from Guided Feedback AggreVaTeD: Rollin \u03c0\u03b8subscript\ud835\udf0b\ud835\udf03\\pi_{\\theta} and Rollout \u03c0gsuperscript\ud835\udf0b\ud835\udc54\\pi^{g}": [
+            "Deeply Aggrevated: Differentiable Imitation Learning for Sequential Prediction",
+            "Reinforcement and Imitation Learning via Interactive No-regret Learning"
+          ],
+          "4 Reinforcement Learning from Guided Feedback D2LOLS: combines PPO++superscriptPPOabsent\\texttt{PPO}^{++}\u00a0and AggreVaTeD": [
+            "Learning to Search Better than your Teacher"
+          ],
+          "5 Theoretical Justification Interactive Imitation Learning: AggreVaTeD": [
+            "Deeply Aggrevated: Differentiable Imitation Learning for Sequential Prediction"
+          ],
+          "5 Theoretical Justification Reinforcement Learning with better restart distribution: PPO++superscriptPPOabsent\\texttt{PPO}^{++}": [
+            "Approximately Optimal Approximate Reinforcement Learning"
+          ],
+          "5 Theoretical Justification Combine Reinforcement Learning and Imitation Learning: D2LOLS": [
+            "Approximately Optimal Approximate Reinforcement Learning",
+            "Trust Region Policy Optimization)",
+            "Fast Policy Learning through Imitation and Reinforcement"
+          ],
+          "6 Experiments": [
+            "Training Language Models to Follow Instructions with Human Feedback"
+          ],
+          "6 Experiments Task Details": [
+            "Learning to Summarize with Human Feedback",
+            "TL;DR: Mining Reddit to learn automatic summarization",
+            "Llama 2: Open foundation and fine-tuned chat models",
+            "Cider: Consensus-based Image Description Evaluation",
+            "Language models are unsupervised multitask learners",
+            "Exploring the limits of transfer learning with a unified text-to-text transformer",
+            "BLEU: A Method for Automatic Evaluation of Machine Translation",
+            "Improved Image Captioning via Policy Gradient Optimization of Spider",
+            "DistilBERT, a Distilled Version of BERT: Smaller, Faster, Cheaper and Lighter",
+            "Lora: Low-rank adaptation of large language models",
+            "Spice: Semantic Propositional Image Caption Evaluation",
+            "CommonGen: A Constrained Text Generation Challenge for Generative Commonsense Reasoning",
+            "Learning Word Vectors for Sentiment Analysis",
+            "Rouge: A package for automatic evaluation of summaries",
+            "Gpt-j-6b: A 6 billion parameter autoregressive language model",
+            "Maskgan: better text generation via filling in the_"
+          ],
+          "6 Experiments 6.1 Experimental Results": [
+            "Alpacafarm: A simulation framework for methods that learn from human feedback"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.0010311175137758255,
+        "extra": {
+          "expand": "not expand"
+        }
+      }
+    ]
+  },
+  "abstract": "",
+  "sections": "",
+  "source": "Root",
+  "select_score": 0.0,
+  "extra": {
+    "touch_ids": [
+      "2401.06081",
+      "2308.12030",
+      "2401.00243",
+      "2405.10292",
+      "2406.10305",
+      "2406.19644",
+      "2305.14483",
+      "2401.07382",
+      "2401.07181",
+      "2406.14532",
+      "2310.06452",
+      "2307.15217",
+      "2305.06176",
+      "2403.04642",
+      "2404.10160",
+      "2306.11816",
+      "2402.01874",
+      "2408.13296",
+      "2404.14367",
+      "2404.08555",
+      "2403.19279",
+      "2409.12917",
+      "2402.05119",
+      "2403.12017"
+    ],
+    "crawler_recall_papers": [
+      "Prompt-Based Length Controlled Generation with Reinforcement Learning",
+      "Fine-Tuning Large Vision-Language Models as Decision-Making Agents via Reinforcement Learning",
+      "Language Model Self-improvement by Reinforcement Learning Contemplation",
+      "Reinforcement Learning from LLM Feedback to Counteract Goal Misgeneralization",
+      "Understanding the Effects of RLHF on LLM Generalisation and Diversity",
+      "Fine-tuning Large Language Models with Generative Adversarial Feedback",
+      "Teaching Large Language Models to Reason with Reinforcement Learning",
+      "Learning to Generate Better Than Your LLM",
+      "Uncertainty-Penalized Reinforcement Learning from Human Feedback with Diverse Reward LoRA Ensembles",
+      "Beyond Human Preferences: Exploring Reinforcement Learning Trajectory Evaluation and Improvement through LLMs",
+      "DRLC: Reinforcement Learning with Dense Rewards from LLM Critic",
+      "RL on Incorrect Synthetic Data Scales the Efficiency of LLM Math Reasoning by Eight-Fold",
+      "Open Problems and Fundamental Limitations of Reinforcement Learning from Human Feedback",
+      "Reinforcement Learning from Multi-role Debates as Feedback for Bias Mitigation in LLMs",
+      "The RL/LLM Taxonomy Tree: Reviewing Synergies Between Reinforcement Learning and Large Language Models",
+      "RLHF Deciphered: A Critical Analysis of Reinforcement Learning from Human Feedback for LLMs",
+      "A Closer Look at the Limitations of Instruction Tuning",
+      "Supervised Fine-Tuning as Inverse Reinforcement Learning",
+      "Improving Large Language Models via Fine-grained Reinforcement Learning with Minimum Editing Constraint",
+      "Unlock the Correlation between Supervised Fine-Tuning and Reinforcement Learning in Training Code Large Language Models",
+      "The Ultimate Guide to Fine-Tuning LLMs from Basics to Breakthroughs: An Exhaustive Review of Technologies, Research, Best Practices, Applied Research Challenges and Opportunities",
+      "Preference Fine-Tuning of LLMs Should Leverage Suboptimal, On-Policy Data",
+      "Fine-Tuning Language Models with Reward Learning on Policy",
+      "Training Language Models to Self-Correct via Reinforcement Learning"
+    ],
+    "recall_papers": [
+      "Understanding the Effects of RLHF on LLM Generalisation and Diversity"
+    ],
+    "answer": [
+      "Understanding the Effects of RLHF on LLM Generalisation and Diversity",
+      "Fundamental Limitations of Alignment in Large Language Models",
+      "Reward Collapse in Aligning Large Language Models",
+      "Discovering Language Model Behaviors with Model-Written Evaluations",
+      "Vanishing gradients in reinforcement finetuning of language models"
+    ]
+  }
+}
