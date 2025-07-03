@@ -1,0 +1,2271 @@
+{
+  "title": "Do you know some papers about using reward shaping methods to train large language model agent.",
+  "arxiv_id": "",
+  "depth": -1,
+  "child": {
+    "Impact of reward shaping on training large language model agent": [
+      {
+        "title": "Beyond Human Preferences: Exploring Reinforcement Learning Trajectory Evaluation and Improvement through LLMs",
+        "arxiv_id": "2406.19644",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract Reinforcement learning (RL) faces challenges in evaluating policy trajectories within intricate game tasks due to the difficulty in designing comprehensive and precise reward functions. This inherent difficulty curtails the broader application of RL within game environments characterized by diverse constraints. Preference-based reinforcement learning (PbRL) presents a pioneering framework that capitalizes on human preferences as pivotal reward signals, thereby circumventing the need for meticulous reward engineering. However, obtaining preference data from human experts is costly and inefficient, especially under conditions marked by complex constraints. To tackle this challenge, we propose a LLM-enabled automatic preference generation framework named LLM4PG which harnesses the capabilities of large language models (LLMs) to abstract trajectories, rank preferences, and reconstruct reward functions to optimize conditioned policies. Experiments on tasks with complex language constraints demonstrated the effectiveness of our LLM-enabled reward functions, accelerating RL convergence and overcoming stagnation caused by slow or absent progress under original reward structures. This approach mitigates the reliance on specialized human knowledge and demonstrates the potential of LLMs to enhance RL\u2019s effectiveness in complex environments in the wild.",
+        "sections": {
+          "1 Introduction": [
+            "Reinforcement learning: An introduction",
+            "Mastering the game of go with deep neural networks and tree search",
+            "Winning the l2rpn challenge: Power grid management via semi-markov afterstate actor-critic",
+            "Navigating occluded intersections with autonomous vehicles using deep reinforcement learning",
+            "Reinforcement learning and the reward engineering principle",
+            "Learning hand-eye coordination for robotic grasping with deep learning and large-scale data collection",
+            "Deep reinforcement learning from human preferences",
+            "Algorithms for inverse reinforcement learning",
+            "Language models are few-shot learners"
+          ],
+          "2 Related Works": [
+            "Reward learning from human preferences and demonstrations in atari",
+            "Learning to summarize with human feedback",
+            "Reward design with language models",
+            "Exploration by random network distillation",
+            "Towards socially and morally aware rl agent: Reward design with llm",
+            "Recursively summarizing books with human feedback",
+            "Eureka: Human-level reward design via coding large language models",
+            "Deep reinforcement learning from human preferences",
+            "Policy invariance under reward transformations: Theory and application to reward shaping",
+            "Algorithms for inverse reinforcement learning",
+            "Sequence modeling of temporal credit assignment for episodic reinforcement learning"
+          ],
+          "3 Methodology 3.3 Policy evaluating and Reward Modeling from LLM Feedback": [
+            "Deep reinforcement learning from human preferences"
+          ],
+          "3 Methodology 3.4 Policy Optimization": [
+            "Proximal policy optimization algorithms"
+          ],
+          "4 Experiments": [
+            "Qwen technical report",
+            "Mixtral of experts",
+            "Minigrid & miniworld: Modular & customizable reinforcement learning environments for goal-oriented tasks"
+          ],
+          "4 Experiments 4.1 Experiments on MiniGrid-Unlock-v0": [
+            "Proximal policy optimization algorithms"
+          ],
+          "4 Experiments 4.2 Experiments on MiniGrid-LavaGapS7-v0": [
+            "Proximal policy optimization algorithms"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.545348584651947,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Assessing the Zero-Shot Capabilities of LLMs for Action Evaluation in RL",
+        "arxiv_id": "2409.12798",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract The temporal credit assignment problem is a central challenge in Reinforcement Learning (RL), concerned with attributing the appropriate influence to each actions in a trajectory for their ability to achieve a goal. However, when feedback is delayed and sparse, the learning signal is poor, and action evaluation becomes harder. Canonical solutions, such as reward shaping and options, require extensive domain knowledge and manual intervention, limiting their scalability and applicability. In this work, we lay the foundations for Credit Assignment with Language Models (CALM), a novel approach that leverages Large Language Models (LLMs) to automate credit assignment via reward shaping and options discovery. CALM uses LLMs to decompose a task into elementary subgoals and assess the achievement of these subgoals in state-action transitions. Every time an option terminates, a subgoal is achieved, and CALM provides an auxiliary reward. This additional reward signal can enhance the learning process when the task reward is sparse and delayed without the need for human-designed rewards. We provide a preliminary evaluation of CALM using a dataset of human-annotated demonstrations from MiniHack, suggesting that LLMs can be effective in assigning credit in zero-shot settings, without examples or LLM fine-tuning. Our preliminary results indicate that the knowledge of LLMs is a promising prior for credit assignment in RL, facilitating the transfer of human knowledge into value functions.",
+        "sections": {},
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.8837257027626038,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Learning Reward for Robot Skills Using Large Language Models via Self-Alignment",
+        "arxiv_id": "2405.07162",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract Learning reward functions remains the bottleneck to equip a robot with a broad repertoire of skills. Large Language Models (LLM) contain valuable task-related knowledge that can potentially aid in the learning of reward functions. However, the proposed reward function can be imprecise, thus ineffective which requires to be further grounded with environment information. We proposed a method to learn rewards more efficiently in the absence of humans. Our approach consists of two components: We first use the LLM to propose features and parameterization of the reward, then update the parameters through an iterative self-alignment process. In particular, the process minimizes the ranking inconsistency between the LLM and the learnt reward functions based on the execution feedback. The method was validated on 9 tasks across 2 simulation environments. It demonstrates a consistent improvement over training efficacy and efficiency, meanwhile consuming significantly fewer GPT tokens compared to the alternative mutation-based method. Project website: https://sites.google.com/view/rewardselfalign.",
+        "sections": {
+          "1 Introduction": [
+            "Reflect: Summarizing robot experiences for failure explanation and correction",
+            "Reward design with language models",
+            "Chain-of-thought prompting elicits reasoning in large language models",
+            "Apprenticeship learning via inverse reinforcement learning",
+            "Solving rubik\u2019s cube with a robot hand",
+            "Code as policies: Language model programs for embodied control",
+            "Eureka: Human-level reward design via coding large language models",
+            "Quadrupedal locomotion on uneven terrain with sensorized feet",
+            "Imitation learning as f-divergence minimization",
+            "Language to rewards for robotic skill synthesis"
+          ],
+          "2 Related Work Inverse Reinforcement Learning from Human Preference": [
+            "Algorithms for inverse reinforcement learning",
+            "Active preference-based learning of reward functions"
+          ],
+          "2 Related Work LLM for robotics reward learning": [
+            "Reward design with language models",
+            "Code as policies: Language model programs for embodied control",
+            "Progprompt: Generating situated robot task plans using large language models",
+            "Language models as zero-shot planners: Extracting actionable knowledge for embodied agents",
+            "Eureka: Human-level reward design via coding large language models",
+            "Language to rewards for robotic skill synthesis"
+          ],
+          "3 Background Boltzmann Rationality": [
+            "Individual Choice Behavior: A Theoretical Analysis"
+          ],
+          "3 Background Reward Learning from Pairwise Preference": [
+            "Active preference-based learning of reward functions",
+            "Rank analysis of incomplete block designs: I. the method of paired comparisons",
+            "Active preference-based gaussian process regression for reward learning and optimization"
+          ],
+          "5 Experiments 5.2 Evaluation Tasks": [
+            "Maniskill2: A unified benchmark for generalizable manipulation skills"
+          ],
+          "5 Experiments 5.3 Baselines": [
+            "Isaac gym: High performance gpu-based physics simulation for robot learning",
+            "Eureka: Human-level reward design via coding large language models",
+            "Text2reward: Automated dense reward function generation for reinforcement learning"
+          ],
+          "5 Experiments 5.4 Training Setup": [
+            "Soft actor-critic: Off-policy maximum entropy deep reinforcement learning with a stochastic actor",
+            "rl-games: A high-performance framework for reinforcement learning",
+            "Proximal policy optimization algorithms",
+            "Active preference-based gaussian process regression for reward learning and optimization",
+            "Stable-baselines3: Reliable reinforcement learning implementations",
+            "Aprel: A library for active preference-based reward learning algorithms"
+          ],
+          "5 Experiments 5.5 Results": [
+            "Tree-planner: Efficient close-loop task planning with large language models"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.07094396650791168,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Comprehensive Overview of Reward Engineering and Shaping in Advancing Reinforcement Learning Applications",
+        "arxiv_id": "2408.10215",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract The aim of Reinforcement Learning (RL) in real-world applications is to create systems capable of making autonomous decisions by learning from their environment through trial and error. This paper emphasizes the importance of reward engineering and reward shaping in enhancing the efficiency and effectiveness of reinforcement learning algorithms. Reward engineering involves designing reward functions that accurately reflect the desired outcomes, while reward shaping provides additional feedback to guide the learning process, accelerating convergence to optimal policies. Despite significant advancements in reinforcement learning, several limitations persist. One key challenge is the sparse and delayed nature of rewards in many real-world scenarios, which can hinder learning progress. Additionally, the complexity of accurately modeling real-world environments and the computational demands of reinforcement learning algorithms remain substantial obstacles. On the other hand, recent advancements in deep learning and neural networks have significantly improved the capability of reinforcement learning systems to handle high-dimensional state and action spaces, enabling their application to complex tasks such as robotics, autonomous driving, and game playing. This paper provides a comprehensive review of the current state of reinforcement learning, focusing on the methodologies and techniques used in reward engineering and reward shaping. It critically analyzes the limitations and recent advancements in the field, offering insights into future research directions and potential applications in various domains.",
+        "sections": {
+          "I Introduction": [
+            "Reinforcement learning: An introduction",
+            "Reinforcement, reward, and intrinsic motivation: A meta-analysis",
+            "Reward shaping for happier autonomous cyber security agents",
+            "Reinforcement learning and the reward engineering principle",
+            "Reinforcement learning with guarantees: a review",
+            "Reinforcement learning: A survey",
+            "Reward function design in reinforcement learning",
+            "Policy invariance under reward transformations: Theory and application to reward shaping",
+            "Theory and application of reward shaping in reinforcement learning"
+          ],
+          "II papers selection process": [
+            "Reinforcement learning and the reward engineering principle",
+            "Updating guidance for reporting systematic reviews: development of the prisma 2020 statement"
+          ],
+          "III Background and Fundamental Concepts": [
+            "Reward is enough",
+            "Scalar reward is not enough: A response to silver, singh, precup and sutton (2021)",
+            "Admissible policy teaching through reward design",
+            "Reinforcement learning and the reward engineering principle"
+          ],
+          "IV Taxonomy of Reward Shaping/Engineering Techniques": [
+            "Intrinsically motivated learning of hierarchical collections of skills",
+            "Intrinsically motivated reinforcement learning: An evolutionary perspective",
+            "Where do rewards come from"
+          ],
+          "IV Taxonomy of Reward Shaping/Engineering Techniques IV-A Policy Gradient Methods": [
+            "Reward design via online gradient ascent",
+            "Natural policy gradients in reinforcement learning explained",
+            "Leveraging demonstrations for deep reinforcement learning on robotics problems with sparse rewards",
+            "On learning intrinsic rewards for policy gradient methods"
+          ],
+          "IV Taxonomy of Reward Shaping/Engineering Techniques IV-B Methods with Robustness and Adaptability": [
+            "Robustness and adaptability of reinforcement learning-based cooperative autonomous driving in mixed-autonomy traffic",
+            "Guaranteeing control requirements via reward shaping in reinforcement learning",
+            "Robust reward design for markov decision processes",
+            "Reinforcement learning with perturbed rewards"
+          ],
+          "IV Taxonomy of Reward Shaping/Engineering Techniques IV-C Exploration Strategies": [
+            "A study of count-based exploration for deep reinforcement learning",
+            "Vime: Variational information maximizing exploration",
+            "Exploration-guided reward shaping for reinforcement learning under sparse rewards",
+            "Reward uncertainty for exploration in preference-based reinforcement learning",
+            "Lesson: learning to integrate exploration strategies for reinforcement learning via an option framework"
+          ],
+          "IV Taxonomy of Reward Shaping/Engineering Techniques IV-D Policy Parameterization": [
+            "Reparameterized policy learning for multimodal trajectory optimization",
+            "Towards generalization and simplicity in continuous control"
+          ],
+          "IV Taxonomy of Reward Shaping/Engineering Techniques IV-E Inverse Reward Design": [
+            "Inverse reward design",
+            "A survey of inverse reinforcement learning: Challenges, methods and progress"
+          ],
+          "IV Taxonomy of Reward Shaping/Engineering Techniques IV-F Reward Horizon": [
+            "The influence of reward on the speed of reinforcement learning: An analysis of shaping"
+          ],
+          "IV Taxonomy of Reward Shaping/Engineering Techniques IV-G Potential Based Methods": [
+            "Reward shaping from hybrid systems models in reinforcement learning",
+            "A new potential-based reward shaping for reinforcement learning agent",
+            "Reward shaping in episodic reinforcement learning",
+            "Potential based reward shaping for hierarchical reinforcement learning",
+            "Potential-based difference rewards for multiagent reinforcement learning",
+            "Theoretical considerations of potential-based reward shaping for multi-agent systems",
+            "Policy invariance under reward transformations: Theory and application to reward shaping",
+            "Expressing arbitrary reward functions as potential-based advice"
+          ],
+          "IV Taxonomy of Reward Shaping/Engineering Techniques IV-H Dynamic Potential-Based Reward Shaping (DPBRS)": [
+            "Dynamic potential-based reward shaping"
+          ],
+          "IV Taxonomy of Reward Shaping/Engineering Techniques IV-I Upper Confidence Bound Value Iteration (UCBVI)": [
+            "Minimax regret bounds for reinforcement learning",
+            "A theoretical analysis of model-based interval estimation",
+            "Unpacking reward shaping: Understanding the benefits of reward engineering on sample complexity"
+          ],
+          "IV Taxonomy of Reward Shaping/Engineering Techniques IV-J Difference Rewards (D)": [
+            "Individual versus difference rewards on reinforcement learning for route choice",
+            "Collective intelligence for control of distributed dynamical systems",
+            "Reward shaping for knowledge-based multi-objective multi-agent reinforcement learning"
+          ],
+          "IV Taxonomy of Reward Shaping/Engineering Techniques IV-K Knowledge-Based Multi-Objective Multi-Agent Reinforcement Learning (MOMARL)": [
+            "Reward shaping for knowledge-based multi-objective multi-agent reinforcement learning"
+          ],
+          "IV Taxonomy of Reward Shaping/Engineering Techniques IV-L Plan Based Methods": [
+            "Plan-based reward shaping for reinforcement learning",
+            "A comparison of plan-based and abstract mdp reward shaping"
+          ],
+          "IV Taxonomy of Reward Shaping/Engineering Techniques IV-M Belief Reward Shaping (BRS)": [
+            "Belief reward shaping in reinforcement learning"
+          ],
+          "IV Taxonomy of Reward Shaping/Engineering Techniques IV-N bi-level optimization of parameterized reward shaping (BiPaRS)": [
+            "Learning to utilize shaping rewards: A new approach of reward shaping"
+          ],
+          "IV Taxonomy of Reward Shaping/Engineering Techniques IV-O Meta-Reward-Net (MRN)": [
+            "Meta-reward-net: Implicitly differentiable reward learning for preference-based reinforcement learning"
+          ],
+          "IV Taxonomy of Reward Shaping/Engineering Techniques IV-P Other Methods": [
+            "Using natural language for reward shaping in reinforcement learning",
+            "Uncertainty-penalized reinforcement learning from human feedback with diverse reward lora ensembles",
+            "Reward planning for underactuated robotic systems: A study on pendubot with parameters uncertainty",
+            "Temporal-logic-based reward shaping for continuing reinforcement learning tasks",
+            "Barrier functions inspired reward shaping for reinforcement learning"
+          ],
+          "V Applications in Robotics and Other Domains V-A Reward Shaping for Safe and Efficient Human-Robot Collaboration": [
+            "Deep reinforcement learning-based safe interaction for industrial human-robot collaboration using intrinsic reward function",
+            "Deep reinforcement learning with interactive feedback in a human\u2013robot environment"
+          ],
+          "VI Sim-to-Real in reward Engineering/Shaping": [
+            "Sim-to-real transfer of deep reinforcement learning agents for online coverage path planning",
+            "Concrete problems in AI safety",
+            "Transferring policy of deep reinforcement learning from simulation to reality for robotics",
+            "Sim-and-real reinforcement learning for manipulation: A consensus-based approach"
+          ],
+          "VIII Open Challenges and Future Directions": [
+            "A survey on deep reinforcement learning algorithms for robotic manipulation",
+            "End-to-end robotic reinforcement learning without reward engineering"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.004802335519343615,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "DRLC: Reinforcement Learning with Dense Rewards from LLM Critic",
+        "arxiv_id": "2401.07382",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Reinforcement learning (RL) can align language models with non-differentiable reward signals, such as human preferences. However, a major challenge arises from the sparsity of these reward signals - typically, there is only one reward for the entire generation. This sparsity of rewards can lead to inefficient and unstable learning. In this paper, we introduce a novel framework leveraging the critique ability of LLMs to produce dense rewards throughout the learning process. Our approach incorporates a critic language model alongside the policy model. This critic is prompted with the task description, question, policy model\u2019s output, and environment\u2019s reward signal as input, and provides token or span-level dense rewards that reflect the quality of each segment of the output. We assess our approach on three text generation tasks: sentiment control, language model detoxification, and summarization. Experimental results show that incorporating artificial dense rewards in training yields consistent performance gains over the PPO baseline with holistic rewards. Furthermore, in a setting where the same model serves as both policy and critic, we demonstrate that \u201cself-critique\u201d rewards also boost learning efficiency.  ",
+        "sections": {
+          "1 Introduction": [
+            "Fine-tuning language models from human preferences",
+            "Hindsight experience replay",
+            "Data-efficient hierarchical reinforcement learning",
+            "Policy invariance under reward transformations: Theory and application to reward shaping",
+            "Unifying count-based exploration and intrinsic motivation",
+            "Fine-grained human feedback gives better rewards for language model training",
+            "Language models are few-shot learners",
+            "Proximal policy optimization algorithms",
+            "Self-refine: Iterative refinement with self-feedback",
+            "Let\u2019s verify step by step"
+          ],
+          "2 Related Work RL for Text Generation.": [
+            "Framework of automatic text summarization using reinforcement learning",
+            "Ask the right questions: Active question reformulation with reinforcement learning",
+            "Reward augmented maximum likelihood for neural structured prediction",
+            "Language models are few-shot learners",
+            "Policy networks with two-stage training for dialogue systems",
+            "Training language models to follow instructions with human feedback"
+          ],
+          "2 Related Work Reward Shaping and Intrinsic Rewards.": [
+            "Policy invariance under reward transformations: Theory and application to reward shaping",
+            "Unifying count-based exploration and intrinsic motivation",
+            "Fine-grained human feedback gives better rewards for language model training",
+            "On learning intrinsic rewards for policy gradient methods",
+            "Curiosity-driven exploration by self-supervised prediction"
+          ],
+          "2 Related Work LLM for Reward Design.": [
+            "Reward design with language models",
+            "The nethack learning environment",
+            "Eureka: Human-level reward design via coding large language models",
+            "Motif: Intrinsic motivation from artificial intelligence feedback",
+            "Guiding pretraining in reinforcement learning with large language models",
+            "Rlaif: Scaling reinforcement learning from human feedback with ai feedback"
+          ],
+          "3 Method 3.1 RL for Text Generation": [
+            "Markov Decision Processes: Discrete Stochastic Dynamic Programming"
+          ],
+          "3 Method 3.2 Policy Gradient based RL & PPO": [
+            "Proximal policy optimization algorithms",
+            "High-dimensional continuous control using generalized advantage estimation",
+            "Policy gradient methods for reinforcement learning with function approximation"
+          ],
+          "3 Method 3.3 Learning with LLM Generated Intrinsic Rewards": [
+            "Fine-tuning language models from human preferences",
+            "Llama 2: Open foundation and fine-tuned chat models, 2023.",
+            "Asynchronous methods for deep reinforcement learning"
+          ],
+          "4 Experiments 4.1 Sentiment Control": [
+            "Ctrl: A conditional transformer language model for controllable generation",
+            "Don\u2019t stop pretraining: Adapt language models to domains and tasks",
+            "A large-scale dataset for empathetic response generation",
+            "Plug and play language models: A simple approach to controlled text generation",
+            "DExperts: Decoding-time controlled text generation with experts and anti-experts",
+            "Systematic rectification of language models via dead-end analysis",
+            "GeDi: Generative discriminator guided sequence generation",
+            "Learning word vectors for sentiment analysis",
+            "Openwebtext corpus"
+          ],
+          "4 Experiments 4.2 Detoxification": [
+            "Systematic rectification of language models via dead-end analysis",
+            "DExperts: Decoding-time controlled text generation with experts and anti-experts",
+            "Semantics derived automatically from language corpora contain human-like biases",
+            "RealToxicityPrompts: Evaluating neural toxic degeneration in language models"
+          ],
+          "4 Experiments 4.3 Summarization": [
+            "Learning to summarize with human feedback",
+            "TL;DR: Mining Reddit to learn automatic summarization"
+          ],
+          "5 Self-Critique": [
+            "LoRA: Low-rank adaptation of large language models"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.9769834876060486,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Large Language Models as Efficient Reward Function Searchers for Custom-Environment Multi-Objective Reinforcement Learning",
+        "arxiv_id": "2409.02428",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract Achieving the effective design and improvement of reward functions in reinforcement learning (RL) tasks with complex custom environments and multiple requirements presents considerable challenges. In this paper, we propose ERFSL, an efficient reward function searcher using LLMs, which enables LLMs to be effective white-box searchers and highlights their advanced semantic understanding capabilities. Specifically, we generate reward components for each numerically explicit user requirement and employ a reward critic to identify the correct code form. Then, LLMs assign weights to the reward components to balance their values and iteratively adjust the weights without ambiguity and redundant adjustments by flexibly adopting directional mutation and crossover strategies, similar to genetic algorithms, based on the context provided by the training log analyzer. We applied the framework to an underwater data collection RL task without direct human feedback or reward examples (zero-shot learning). The reward critic successfully corrects the reward code with only one feedback instance for each requirement, effectively preventing unrectifiable errors. The initialization of weights enables the acquisition of different reward functions within the Pareto solution set without the need for weight search. Even in cases where a weight is 500 times off, on average, only 5.2 iterations are needed to meet user requirements. The ERFSL also works well with most prompts utilizing GPT-4o mini, as we decompose the weight searching process to reduce the requirement for numerical and long-context understanding capabilities1.",
+        "sections": {
+          "I Introduction": [
+            "Large language models as evolutionary optimizers",
+            "Spring: Studying papers and reasoning to play games",
+            "Using large language models for hyperparameter optimization",
+            "Exploring the true potential: Evaluating the black-box optimization capability of large language models",
+            "Roco: Dialectic multi-robot collaboration with large language models",
+            "Eureka: Human-level reward design via coding large language models",
+            "A practical guide to multi-objective reinforcement learning and planning",
+            "Environment- and energy-aware auv-assisted data collection for the internet of underwater things"
+          ],
+          "II Methodology II-B Reward Weight Search": [
+            "Long-context llms struggle with long in-context learning"
+          ],
+          "III Experiments III-A Task Description and Parameters": [
+            "Eureka: Human-level reward design via coding large language models",
+            "Addressing function approximation error in actor-critic methods",
+            "Environment- and energy-aware auv-assisted data collection for the internet of underwater things"
+          ],
+          "III Experiments III-B Main Results and Case Studies": [
+            "Chatgpt\u2019s one-year anniversary: are open-source large language models catching up?"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.29018542170524597,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Reward Design with Language Models",
+        "arxiv_id": "2303.00001",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Reward design in reinforcement learning (RL) is challenging since specifying human notions of desired behavior may be difficult via reward functions or require many expert demonstrations. Can we instead cheaply design rewards using a natural language interface? This paper explores how to simplify reward design by prompting a large language model (LLM) such as GPT-3 as a proxy reward function, where the user provides a textual prompt containing a few examples (few-shot) or a description (zero-shot) of the desired behavior. Our approach leverages this proxy reward function in an RL framework. Specifically, users specify a prompt once at the beginning of training. During training, the LLM\u00a0evaluates an RL agent\u2019s behavior against the desired behavior described by the prompt and outputs a corresponding reward signal. The RL agent then uses this reward to update its behavior. We evaluate whether our approach can train agents aligned with user objectives in the Ultimatum Game, matrix games, and the DealOrNoDeal negotiation task. In all three tasks, we show that RL agents trained with our framework are well-aligned with the user\u2019s objectives and outperform RL agents trained with reward functions learned via supervised learning. Code and prompts can be found here. ",
+        "sections": {
+          "1 Introduction": [
+            "Concrete problems in AI safety",
+            "Language models are few-shot learners.",
+            "Learning from crowdsourced labeled data: a survey"
+          ],
+          "2 Related Work": [
+            "Using natural language for reward shaping in reinforcement learning",
+            "Do as i can, not as i say: Grounding language in robotic affordances",
+            "Learning generalizable robotic reward functions from ",
+            "The unsurprising effectiveness of pre-trained vision models for control",
+            "Training language models to follow instructions with human feedback",
+            "Language models are few-shot learners."
+          ],
+          "4 Experiments": [
+            "Deal or no deal? end-to-end learning for negotiation dialogues"
+          ],
+          "4 Experiments 4.1 Ultimatum Game: Training objective-aligned agents with few-shot prompting": [
+            "Expectations in the ultimatum game: distinct effects of mean and variance of expected offers",
+            "Can language models learn from explanations in context?",
+            "On inequity aversion: A reply to binmore and shaked"
+          ],
+          "4 Experiments 4.2 Matrix Games: Training Objective-Aligned Agents with Zero-shot Prompting": [
+            "Large language models are zero-shot reasoners"
+          ],
+          "4 Experiments 4.3 DealOrNoDeal: Training Objective-Aligned Agents in Multi-Timestep Tasks": [
+            "Calibrate before use: Improving few-shot performance of language models",
+            "Deal or no deal? end-to-end learning for negotiation dialogues",
+            "Benefits of learning in negotiation"
+          ],
+          "6 Limitations & Future Work": [
+            "Flamingo: a visual language model for few-shot learning"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.5745989680290222,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Dense Reward for Free in Reinforcement Learning from Human Feedback",
+        "arxiv_id": "2402.00782",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Reinforcement Learning from Human Feedback (RLHF) has been credited as the key advance that has allowed Large Language Models (LLMs) to effectively follow instructions and produce useful assistance. Classically, this involves generating completions from the LLM in response to a query before using a separate reward model to assign a score to the full completion. As an auto-regressive process, the LLM has to take many \u201cactions\u201d (selecting individual tokens) and only receives a single, sparse reward at the end of an episode, a setup that is known to be difficult to optimise in traditional reinforcement learning. In this work we leverage the fact that the reward model contains more information than just its scalar output, in particular, it calculates an attention map over tokens as part of the transformer architecture. We use these attention weights to redistribute the reward along the whole completion, effectively densifying the signal and highlighting the most important tokens, all without incurring extra computational cost or requiring any additional modelling. We demonstrate that, theoretically, this approach is equivalent to potential-based reward shaping, ensuring that the optimal policy remains unchanged. Empirically, we show that it stabilises training, accelerates the rate of learning, and, in practical cases, may lead to better local optima.  ",
+        "sections": {
+          "1 Introduction": [
+            "Temporal credit assignment in reinforcement learning",
+            "Training verifiers to solve math word problems",
+            "Deep reinforcement learning that matters",
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "On the weaknesses of reinforcement learning for neural machine translation",
+            "Constitutional ai: Harmlessness from ai feedback",
+            "Rank analysis of incomplete block designs: I. the method of paired comparisons",
+            "Vanishing gradients in reinforcement finetuning of language models",
+            "Implementation matters in deep rl: A case study on ppo and trpo",
+            "Deep reinforcement learning from human preferences",
+            "Solving math word problems with process-and outcome-based feedback",
+            "Stabilizing rlhf through advantage model and selective rehearsal",
+            "Toward the fundamental limits of imitation learning",
+            "Recursively summarizing books with human feedback",
+            "Open llm leaderboard",
+            "Gpt-4 technical report",
+            "Proximal policy optimization algorithms",
+            "Reinforcement learning for bandit neural machine translation with simulated human feedback"
+          ],
+          "2 Language Modelling as Sequential Decision Making": [
+            "Is reinforcement learning (not) for natural language processing: Benchmarks, baselines, and building blocks for natural language policy optimization",
+            "Finite-time analysis of the multiarmed bandit problem",
+            "Google\u2019s neural machine translation system: Bridging the gap between human and machine translation",
+            "Deep reinforcement learning from human preferences"
+          ],
+          "2 Language Modelling as Sequential Decision Making 2.1 Large Language Model Training": [
+            "A framework for behavioural cloning",
+            "The flan collection: Designing data and methods for effective instruction tuning",
+            "Deep reinforcement learning from human preferences",
+            "Gpt-4 technical report",
+            "Way off-policy batch deep reinforcement learning of implicit human preferences in dialog",
+            "Rank analysis of incomplete block designs: I. the method of paired comparisons"
+          ],
+          "2 Language Modelling as Sequential Decision Making 2.2 Complications Optimising Reward": [
+            "Slic-hf: Sequence likelihood calibration with human feedback",
+            "Training verifiers to solve math word problems",
+            "Deep reinforcement learning that matters",
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "Vanishing gradients in reinforcement finetuning of language models",
+            "A general theoretical paradigm to understand learning from human preferences.",
+            "Implementation matters in deep rl: A case study on ppo and trpo",
+            "Rrhf: Rank responses to align language models with human feedback without tears",
+            "Playing atari with deep reinforcement learning",
+            "Solving math word problems with process-and outcome-based feedback",
+            "Fine-grained human feedback gives better rewards for language model training.",
+            "Secrets of rlhf in large language models part i: Ppo"
+          ],
+          "3 Redistributing Rewards with Attention Based Credit": [
+            "Attention is all you need"
+          ],
+          "3 Redistributing Rewards with Attention Based Credit 3.2 Preserving the Optimal Policy": [
+            "Policy invariance under reward transformations: Theory and application to reward shaping"
+          ],
+          "4 Related Work 4.1 Credit Assignment and Reward Redistribution": [
+            "A survey of temporal credit assignment in deep reinforcement learning",
+            "Policy invariance under reward transformations: Theory and application to reward shaping",
+            "Rudder: Return decomposition for delayed rewards",
+            "Hindsight credit assignment",
+            "Learning guidance rewards with trajectory-space smoothing",
+            "Self-attentional credit assignment for transfer in reinforcement learning"
+          ],
+          "4 Related Work 4.2 Delayed Reward": [
+            "Stochastic analysis and control of real-time systems with random time delays",
+            "Reinforcement learning with random delays",
+            "Recurrent model-free rl can be a strong baseline for many pomdps.",
+            "Learning long-term reward redistribution via randomized return decomposition"
+          ],
+          "5 Experiments 5.1 Tasks": [
+            "GPT-J-6B: A 6 Billion Parameter Autoregressive Language Model",
+            "Llama: Open and efficient foundation language models",
+            "Raft: Reward ranked finetuning for generative foundation model alignment",
+            "Learning to summarize with human feedback",
+            "Constitutional ai: Harmlessness from ai feedback",
+            "Tl; dr: Mining reddit to learn automatic summarization",
+            "Language models are unsupervised multitask learners",
+            "Neural machine translation of rare words with subword units",
+            "Language models are few-shot learners",
+            "Openllama: An open reproduction of llama",
+            "Qlora: Efficient finetuning of quantized llms",
+            "Lora: Low-rank adaptation of large language models.",
+            "Learning word vectors for sentiment analysis",
+            "Redpajama-data: An open source recipe to reproduce llama training dataset"
+          ],
+          "5 Experiments 5.2 Methods": [
+            "Learning guidance rewards with trajectory-space smoothing",
+            "Transformer reinforcement learning"
+          ],
+          "5 Experiments 5.6 Training a Helpful Assistant": [
+            "Self-instruct: Aligning language model with self generated instructions",
+            "Alpacaeval: An automatic evaluator of instruction-following models."
+          ],
+          "6 Limitations or Future Work Opportunities?": [
+            "Reward model ensembles help mitigate overoptimization.",
+            "Learning important features through propagating activation differences",
+            "Scaling laws for reward model overoptimization"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.995353102684021,
+        "extra": {
+          "expand": "not expand"
+        }
+      }
+    ],
+    "Reward shaping methods in language model agent training": [
+      {
+        "title": "Survey on Large Language Model-Enhanced Reinforcement Learning: Concept, Taxonomy, and Methods",
+        "arxiv_id": "2404.00282",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract With extensive pre-trained knowledge and high-level general capabilities, large language models (LLMs) emerge as a promising avenue to augment reinforcement learning (RL) in aspects such as multi-task learning, sample efficiency, and task planning. In this survey, we provide a comprehensive review of the existing literature in LLM-enhanced RL and summarize its characteristics compared to conventional RL methods, aiming to clarify the research scope and directions for future studies. Utilizing the classical agent-environment interaction paradigm, we propose a structured taxonomy to systematically categorize LLMs\u2019 functionalities in RL, including four roles: information processor, reward designer, decision-maker, and generator. Additionally, for each role, we summarize the methodologies, analyze the specific RL challenges that are mitigated, and provide insights into future directions. Lastly, potential applications, prospective opportunities and challenges of the LLM-enhanced RL are discussed.",
+        "sections": {
+          "I Introduction": [
+            "Reinforcement learning: An introduction",
+            "What matters in learning from offline human demonstrations for robot manipulation",
+            "Human-level control through deep reinforcement learning",
+            "Bert: Pre-training of deep bidirectional transformers for language understanding",
+            "Interactive language: Talking to robots in real time",
+            "Decoupling representation learning from reinforcement learning",
+            "Grounding Large Language Models in Interactive Environments with Online Reinforcement Learning",
+            "What learning algorithm is in-context learning? investigations with linear models",
+            "Reinforcement learning for engineering design automation",
+            "Progprompt: program generation for situated robot task planning using large language models",
+            "Auto mc-reward: Automated dense reward design with large language models for minecraft",
+            "Towards facilitating empathic conversations in online mental health support: A reinforcement learning approach",
+            "Reward (mis) design for autonomous driving",
+            "Goal misgeneralization in deep reinforcement learning",
+            "A generalized algorithm for multi-objective reinforcement learning and policy adaptation",
+            "Large language models in medicine",
+            "Guiding Pretraining in Reinforcement Learning with Large Language Models",
+            "Learning to Model the World with Language",
+            "Code as policies: Language model programs for embodied control",
+            "Towards applicable reinforcement learning: Improving the generalization and sample efficiency with policy ensemble",
+            "Autonomous chemical research with large language models",
+            "Mastering atari, go, chess and shogi by planning with a learned model",
+            "J. Yu, X. Wang, S. Tu, S. Cao, D. Zhang-Li, X. Lv, H. Peng, Z. Yao et al., \u201cKola: Carefully benchmarking world knowledge of large language models,\u201d 2023.",
+            "Learning to summarize from human feedback",
+            "Dota 2 with large scale deep reinforcement learning",
+            "Reinforcement learning in healthcare: A survey",
+            "Larger language models do in-context learning differently",
+            "RE-MOVE: An Adaptive Policy Design for Robotic Navigation Tasks in Dynamic Environments via Language-Based Feedback",
+            "Rebel: A general game playing ai",
+            "Grandmaster level in starcraft ii using multi-agent reinforcement learning",
+            "Mastering the game of go with deep neural networks and tree search",
+            "A survey of reinforcement learning informed by natural language",
+            "Dreamerv2: Mastering atari with discrete world models",
+            "Chatgpt is a knowledgeable but inexperienced solver: An investigation of commonsense problem in large language models",
+            "A Survey of Reinforcement Learning Informed by Natural Language",
+            "Superhuman ai for multiplayer poker",
+            "Towards reasoning in large language models: A survey",
+            "Emergent analogical reasoning in large language models",
+            "How to train your robot with deep reinforcement learning: lessons we have learned",
+            "Natural Language-conditioned Reinforcement Learning with Inside-out Task Language Development and Translation",
+            "The perils of trial-and-error reward design: misdesign through overfitting and invalid task specifications",
+            "Model-free deep reinforcement learning for urban autonomous driving",
+            "Imagenet classification with deep convolutional neural networks"
+          ],
+          "II Background II-A Background of Reinforcement Learning": [
+            "Improving generalization in reinforcement learning with mixture regularization",
+            "Mastering the game of go with deep neural networks and tree search",
+            "Reinforcement learning: An introduction",
+            "Robotic Skill Acquisition via Instruction Augmentation with Vision-Language Models",
+            "Model-based reinforcement learning: A survey",
+            "Human-level control through deep reinforcement learning",
+            "Vision-Language Models are Zero-Shot Reward Models for Reinforcement Learning",
+            "Qt-opt: Scalable deep reinforcement learning for vision-based robotic manipulation",
+            "A Survey of Reinforcement Learning Informed by Natural Language",
+            "Exploration-guided reward shaping for reinforcement learning under sparse rewards",
+            "Decoupling representation learning from reinforcement learning",
+            "End-to-end robotic reinforcement learning without reward engineering",
+            "Inverse reward design",
+            "Learning to combat compounding-error in model-based reinforcement learning",
+            "The perils of trial-and-error reward design: misdesign through overfitting and invalid task specifications",
+            "Plan4mc: Skill reinforcement learning and planning for open-world minecraft tasks"
+          ],
+          "II Background II-B Background of Large Language Models": [
+            "Galactica: A large language model for science",
+            "Attention is all you need",
+            "Talking about large language models",
+            "Graph of thoughts: Solving elaborate problems with large language models",
+            "Training language models to follow instructions with human feedback",
+            "Chain-of-thought prompting elicits reasoning in large language models",
+            "Tree of thoughts: Deliberate problem solving with large language models",
+            "Llama: Open and efficient foundation language models",
+            "Emergent abilities of large language models",
+            "Palm: Scaling language modeling with pathways",
+            "Training compute-optimal large language models",
+            "Scaling laws for neural language models",
+            "Multitask prompted training enables zero-shot task generalization",
+            "Language models are few-shot learners"
+          ],
+          "III Large Language Model-Enhanced Reinforcement Learning III-A Definition": [
+            "Derl: Coupling decomposition in action space for reinforcement learning task",
+            "A survey of visual transformers",
+            "Multitask learning and reinforcement learning for personalized dialog generation: An empirical study",
+            "Deductive reinforcement learning for visual autonomous urban driving navigation",
+            "Visual navigation with multiple goals based on deep reinforcement learning"
+          ],
+          "IV LLM as Information Processor": [
+            "Data-efficient reinforcement learning with self-predictive representations",
+            "CURL: Contrastive Unsupervised Representations for Reinforcement Learning",
+            "Decoupling representation learning from reinforcement learning"
+          ],
+          "IV LLM as Information Processor IV-A Feature Representation Extractor": [
+            "Representation learning with contrastive predictive coding",
+            "ReCoRe: Regularized Contrastive Representation Learning of World Model",
+            "Learning transferable visual models from natural language supervision",
+            "Semantic HELM: A Human-Readable Memory for Reinforcement Learning.",
+            "History Compression via Language Models in Reinforcement Learning",
+            "Efficient Policy Adaptation with Contrastive Prompt Ensemble for Embodied Agents"
+          ],
+          "IV LLM as Information Processor IV-B Language Translator": [
+            "Learning rewards from linguistic feedback",
+            "Informing Reinforcement Learning Agents by Grounding Natural Language to Markov Decision Processes",
+            "Grounding language to non-markovian tasks with no supervision of task specifications.",
+            "Llm-planner: Few-shot grounded planning for embodied agents with large language models",
+            "STARLING: Self-supervised Training of Text-based Reinforcement Learning Agent with Large Language Models",
+            "Code as Policies: Language Model Programs for Embodied Control",
+            "Natural Language-conditioned Reinforcement Learning with Inside-out Task Language Development and Translation"
+          ],
+          "V LLM as Reward Designer": [
+            "Reinforcement learning: An introduction",
+            "Modular multitask reinforcement learning with policy sketches",
+            "Ella: Exploration through learned language abstraction",
+            "Reward function design in reinforcement learning",
+            "The perils of trial-and-error reward design: misdesign through overfitting and invalid task specifications"
+          ],
+          "V LLM as Reward Designer V-A Implicit Reward Model": [
+            "Language Reward Modulation for Pretraining Reinforcement Learning",
+            "Read and Reap the Rewards: Learning to Play Atari with the Help of Instruction Manuals",
+            "Grounding Large Language Models in Interactive Environments with Online Reinforcement Learning",
+            "Reward Design with Language Models",
+            "Accelerating Reinforcement Learning of Robotic Manipulations via Feedback from Large Language Models",
+            "Vision-Language Models are Zero-Shot Reward Models for Reinforcement Learning",
+            "Guide Your Agent with Adaptive Multimodal Rewards"
+          ],
+          "V LLM as Reward Designer V-B Explicit Reward Model": [
+            "Self-Refined Large Language Model as Automated Reward Function Designer for Deep Reinforcement Learning in Robotics",
+            "Eureka: Human-Level Reward Design via Coding Large Language Models",
+            "Self-refine: Iterative refinement with self-feedback",
+            "Language to Rewards for Robotic Skill Synthesis.",
+            "Text2Reward: Reward Shaping with Language Models for Reinforcement Learning"
+          ],
+          "VI LLM as Decision-Maker": [
+            "Improving vision-and-language navigation with image-text pairs from the web",
+            "Unleashing the Power of Pre-trained Language Models for Offline Reinforcement Learning",
+            "Offline reinforcement learning as one big sequence modeling problem",
+            "Prompter: Utilizing large language model prompting for a data efficient embodied instruction following",
+            "Language models are few-shot learners",
+            "Do As I Can, Not As I Say: Grounding Language in Robotic Affordances",
+            "A survey on transformers in reinforcement learning"
+          ],
+          "VI LLM as Decision-Maker VI-A Direct Decision-Maker": [
+            "Think Before You Act: Unified Policy for Interleaving Language Reasoning with Actions",
+            "Can Wikipedia Help Offline Reinforcement Learning?",
+            "AMAGO: Scalable In-Context Reinforcement Learning for Adaptive Agents",
+            "Unleashing the Power of Pre-trained Language Models for Offline Reinforcement Learning",
+            "Pre-Trained Language Models for Interactive Decision-Making",
+            "RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control."
+          ],
+          "VI LLM as Decision-Maker VI-B Indirect Decision-Maker": [
+            "Keep CALM and Explore: Language Models for Action Generation in Text-based Games",
+            "Large Language Model is a Good Policy Teacher for Training Reinforcement Learning Agents",
+            "Language Instructed Reinforcement Learning for Human-AI Coordination",
+            "Do As I Can, Not As I Say: Grounding Language in Robotic Affordances"
+          ],
+          "VI LLM as Decision-Maker VI-C Summarization and Outlook": [
+            "Lora: Low-rank adaptation of large language models"
+          ],
+          "VII LLM as Generator": [
+            "Dream to control: Learning behaviors by latent imagination",
+            "Mastering Atari with Discrete World Models",
+            "Deep learning, reinforcement learning, and world models",
+            "Dream to Control: Learning Behaviors by Latent Imagination"
+          ],
+          "VII LLM as Generator VII-A World Model Simulator": [
+            "Masked World Models for Visual Control",
+            "LanGWM: Language Grounded World Model",
+            "Decision transformer: Reinforcement learning via sequence modeling",
+            "Learning to Model the World with Language",
+            "Transformer-based World Models Are Happy With 100k Interactions",
+            "Transformers are Sample-Efficient World Models",
+            "Reinforcement Learning with Action-Free Pre-Training from Videos",
+            "TransDreamer: Reinforcement Learning with Transformer World Models"
+          ],
+          "VII LLM as Generator VII-B Policy Interpreter": [
+            "State2explanation: Concept-based explanations to benefit agent learning and user understanding",
+            "Understanding Language in the World by Predicting the Future",
+            "A survey of explainable reinforcement learning"
+          ],
+          "VIII Discussion VIII-A Applications of LLM-Enhanced RL": [
+            "Reinforcement learning in healthcare: A survey"
+          ],
+          "VIII Discussion VIII-B Opportunities for LLM-Enhanced RL": [
+            "Think Before You Act: Unified Policy for Interleaving Language Reasoning with Actions",
+            "Language Instructed Reinforcement Learning for Human-AI Coordination",
+            "Grounding Large Language Models in Interactive Environments with Online Reinforcement Learning",
+            "Reward Design with Language Models",
+            "Pre-Trained Language Models for Interactive Decision-Making",
+            "Do As I Can, Not As I Say: Grounding Language in Robotic Affordances"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.03949377313256264,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Guiding Pretraining in Reinforcement Learning with Large Language Models",
+        "arxiv_id": "2302.06692",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Reinforcement learning algorithms typically struggle in the absence of a dense, well-shaped reward function. Intrinsically motivated exploration methods address this limitation by rewarding agents for visiting novel states or transitions, but these methods offer limited benefits in large environments where most discovered novelty is irrelevant for downstream tasks. We describe a method that uses background knowledge from text corpora to shape exploration. This method, called ELLM (Exploring with LLMs) rewards an agent for achieving goals suggested by a language model prompted with a description of the agent\u2019s current state. By leveraging large-scale language model pretraining, ELLM guides agents toward human-meaningful and plausibly useful behaviors without requiring a human in the loop. We evaluate ELLM in the Crafter game environment and the Housekeep robotic simulator, showing that ELLM-trained agents have better coverage of common-sense behaviors during pretraining and usually match or improve performance on a range of downstream tasks. Code available at https://github.com/yuqingd/ellm. ",
+        "sections": {
+          "1 Introduction": [
+            "Semantic exploration from language abstractions and pretrained representations.",
+            "Unifying count-based exploration and intrinsic motivation",
+            "Concrete problems in AI safety",
+            "Exploration by random network distillation"
+          ],
+          "2 Background and Related Work Intrinsically Motivated RL.": [
+            "Investigating human priors for playing video games.",
+            "Active learning of inverse models with intrinsically motivated goal exploration in robots",
+            "Autotelic agents with intrinsically motivated goal-conditioned reinforcement learning: a short survey",
+            "What is intrinsic motivation? a typology of computational approaches",
+            "Curiosity-driven exploration. The Drive for Knowledge: The Science of Human Information Seeking",
+            "A survey on intrinsic motivation in reinforcement learning",
+            "Exploiting open-endedness to solve problems through the search for novelty"
+          ],
+          "2 Background and Related Work Linguistic Goals and Pretrained Language Models.": [
+            "Reward design with language models",
+            "LMPriors: Pre-trained language models as task-specific priors",
+            "A survey of reinforcement learning informed by natural language",
+            "Improving intrinsic exploration with language abstractions",
+            "Housekeep: Tidying virtual households using commonsense reasoning",
+            "Human instruction-following with deep reinforcement learning via transfer-learning from text",
+            "Autotelic agents with intrinsically motivated goal-conditioned reinforcement learning: a short survey",
+            "Keep calm and explore: Language models for action generation in text-based games",
+            "Grounded language learning in a simulated 3d world",
+            "Actrce: Augmenting experience via teacher\u2019s advice for multi-goal reinforcement learning",
+            "Language conditioned imitation learning over unstructured data"
+          ],
+          "3 Structuring Exploration with LLM Priors 3.2 Goal-based Exploration Desiderata": [
+            "Autotelic agents with intrinsically motivated goal-conditioned reinforcement learning: a short survey"
+          ],
+          "3 Structuring Exploration with LLM Priors 3.3 Goal Generation with LLMs (\ud835\udca2)\ud835\udca2\\mathbf{({\\color[rgb]{1,0,0}\\definecolor[named]{pgfstrokecolor}{rgb}{1,0,0}\\mathcal{G}})}": [
+            "Improving language understanding by generative pre-training",
+            "Bert: Pre-training of deep bidirectional transformers for language understanding",
+            "Recent advances in natural language processing via large pre-trained language models: A survey",
+            "Language models are few-shot learners"
+          ],
+          "3 Structuring Exploration with LLM Priors 3.4 Rewarding LLM Goals (\ud835\udc11int)subscript\ud835\udc11int\\mathbf{({\\color[rgb]{0,0,1}\\definecolor[named]{pgfstrokecolor}{rgb}{0,0,1}R_{\\text{int}}})}": [
+            "Language models as zero-shot planners: Extracting actionable knowledge for embodied agents",
+            "Sentence-bert: Sentence embeddings using siamese bert-networks"
+          ],
+          "3 Structuring Exploration with LLM Priors 3.5 Implementation Details": [
+            "Playing atari with deep reinforcement learning",
+            "From show to tell: a survey on deep learning-based image captioning",
+            "Flamingo: a visual language model for few-shot learning",
+            "Human action recognition and prediction: A survey",
+            "A survey of modern deep learning based object detection models"
+          ],
+          "4 Experiments": [
+            "Behavior from the void: Unsupervised active pre-training",
+            "Housekeep: Tidying virtual households using commonsense reasoning",
+            "Benchmarking the spectrum of agent capabilities"
+          ],
+          "4 Experiments 4.1 Crafter": [
+            "Clipcap: Clip prefix for image captioning",
+            "Benchmarking the spectrum of agent capabilities",
+            "Improving intrinsic exploration with language abstractions",
+            "Evaluating large language models trained on code",
+            "Semantic exploration from language abstractions and pretrained representations."
+          ],
+          "4 Experiments 4.2 Housekeep": [
+            "Housekeep: Tidying virtual households using commonsense reasoning",
+            "Training language models to follow instructions with human feedback"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.9405525922775269,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Teaching Large Language Models to Reason with Reinforcement Learning",
+        "arxiv_id": "2403.04642",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Reinforcement Learning from Human Feedback (RLHF) has emerged as a dominant approach for aligning LLM outputs with human preferences. Inspired by the success of RLHF, we study the performance of multiple algorithms that learn from feedback (Expert Iteration, Proximal Policy Optimization (PPO), Return-Conditioned RL) on improving LLM reasoning capabilities. We investigate both sparse and dense rewards provided to the LLM both heuristically and via a learned reward model. We additionally start from multiple model sizes and initializations both with and without supervised fine-tuning (SFT) data. Overall, we find all algorithms perform comparably, with Expert Iteration performing best in most cases. Surprisingly, we find the sample complexity of Expert Iteration is similar to that of PPO, requiring at most on the order of 106superscript10610^{6} samples to converge from a pretrained checkpoint. We investigate why this is the case, concluding that during RL training models fail to explore significantly beyond solutions already produced by SFT models. Additionally, we discuss a trade off between maj@1 and pass@96 metric performance during SFT training and how conversely RL training improves both simultaneously. We then conclude by discussing the implications of our findings for RLHF and the future role of RL in LLM fine-tuning. ",
+        "sections": {
+          "1 Introduction": [
+            "Human-level play in the game of \u00a1i\u00bfdiplomacy\u00a1/i\u00bf by combining language models with strategic reasoning.",
+            "Training verifiers to solve math word problems",
+            "Dota 2 with large scale deep reinforcement learning",
+            "Finetuned language models are zero-shot learners",
+            "Sequence modeling is a robust contender for offline reinforcement learning.",
+            "J",
+            "When does return-conditioned supervised learning work for offline reinforcement learning?",
+            "Mastering chess and shogi by self-play with a general reinforcement learning algorithm",
+            "Tree of thoughts: Deliberate problem solving with large language models",
+            "Czarnecki, Micha\u00ebl Mathieu, Andrew Dudzik, Junyoung Chung, David\u00a0H",
+            "Thinking fast and slow with deep learning and tree search",
+            "Chain of thought prompting elicits reasoning in large language models"
+          ],
+          "2 Related Work": [
+            "Alpacafarm: A simulation framework for methods that learn from human feedback",
+            "Yu, Swayam Singh, Sasha Luccioni, Paulo Villegas, Maxim Kunakov, Fedor Zhdanov, Manuel Romero, Tony Lee, Nadav Timor, Jennifer Ding, Claire Schlesinger, Hailey Schoelkopf, Jana Ebert, Tri Dao, Mayank Mishra, Alexander Gu, Jennifer Robinson, Carolyn\u00a0Jane Anderson, Brendan Dolan-Gavitt, Danish Contractor, Siva Reddy, Daniel Fried, Dzmitry Bahdanau, Yacine Jernite, Carlos\u00a0Mu\u00f1oz Ferrandis, Sean\u00a0M",
+            "Training verifiers to solve math word problems",
+            "Keep calm and explore: Language models for action generation in text-based games",
+            "Dialogue shaping: Empowering agents through npc interaction",
+            "Chain of thought prompting elicits reasoning in large language models",
+            "Coderl: Mastering code generation through pretrained models and deep reinforcement learning",
+            "Raft: Reward ranked finetuning for generative foundation model alignment",
+            "Solving math word problems with process- and outcome-based feedback",
+            "Gpt-4 technical report",
+            "Tree of thoughts: Deliberate problem solving with large language models",
+            "Reinforced self-training (rest) for language modeling",
+            "Wizardmath: Empowering mathematical reasoning for large language models via reinforced evol-instruct",
+            "Measuring mathematical problem solving with the math dataset",
+            "Scaling relationship on learning mathematical reasoning with large language models",
+            "Training language models to follow instructions with human feedback",
+            "Deep reinforcement learning from human preferences",
+            "Large language models can self-improve",
+            "Quark: Controllable text generation with reinforced unlearning",
+            "Program of thoughts prompting: Disentangling computation from reasoning for numerical reasoning tasks",
+            "Toolformer: Language models can teach themselves to use tools",
+            "Pangu-coder2: Boosting large language models for code with ranking feedback"
+          ],
+          "3 Methods": [
+            "Training verifiers to solve math word problems",
+            "Decision transformer: Reinforcement learning via sequence modeling",
+            "Lora: Low-rank adaptation of large language models",
+            "When does return-conditioned supervised learning work for offline reinforcement learning?",
+            "Toolformer: Language models can teach themselves to use tools",
+            "Mastering chess and shogi by self-play with a general reinforcement learning algorithm",
+            "Proximal policy optimization algorithms",
+            "Thinking fast and slow with deep learning and tree search"
+          ],
+          "4 Experiments": [
+            "Are nlp models really able to solve simple math word problems?"
+          ],
+          "4 Experiments 4.1 Results with SFT Initialization": [
+            "A study on improving reasoning in language models",
+            "Star: Bootstrapping reasoning with reasoning"
+          ],
+          "4 Experiments 4.3 Implementation Details": [
+            "Understanding the effects of rlhf on llm generalisation and diversity",
+            "Lora: Low-rank adaptation of large language models",
+            "J",
+            "Learning to summarize from human feedback",
+            "Exploring the impact of low-rank adaptation on the performance, efficiency, and regularization of rlhf"
+          ],
+          "5 Discussion and Conclusions": [
+            "Reinforced self-training (rest) for language modeling",
+            "Evolution through large models",
+            "Scaling laws for reward model overoptimization",
+            "When does return-conditioned supervised learning work for offline reinforcement learning?",
+            "Tree of thoughts: Deliberate problem solving with large language models"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.8202671408653259,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Learning to Play Text-based Adventure Games with Maximum Entropy Reinforcement Learning",
+        "arxiv_id": "2302.10720",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Text-based adventure games are a popular testbed for language based reinforcement learning (RL). In previous work, deep Q-learning is most often used as the learning agent. Q-learning algorithms are difficult to apply to complex real-world domains, for example due to their instability in training. Therefore, we adapt the Soft-Actor-Critic (SAC) algorithm to the domain of text-based adventure games in this paper. To deal with sparse extrinsic rewards from the environment, we combine the SAC with a potential-based reward shaping technique to provide more informative (dense) reward signals to the RL agent. The SAC method achieves higher scores than the Q-learning methods on many games with only half the number of training steps. Additionally, the reward shaping technique helps the agent to learn the policy faster and improve the score for some games. Overall, our findings show that the SAC algorithm is a well-suited approach for text-based games. ",
+        "sections": {
+          "1 Introduction": [
+            "Reinforcement learning: An introduction",
+            "Soft actor-critic: Off-policy maximum entropy deep reinforcement learning with a stochastic actor",
+            "Keep CALM and explore: Language models for action generation in text-based games",
+            "Soft actor-critic for discrete action settings",
+            "Policy invariance under reward transformations: Theory and application to reward shaping",
+            "Playing atari with deep reinforcement learning",
+            "Interactive fiction games: A colossal adventure"
+          ],
+          "2 Related Work": [
+            "Language understanding for text-based games using deep reinforcement learning",
+            "Graph constrained reinforcement learning for natural language action spaces",
+            "Nail: A general interactive fiction agent",
+            "Policy invariance under reward transformations: Theory and application to reward shaping",
+            "Multi-hop knowledge graph reasoning with reward shaping",
+            "Revisiting the roles of \u201ctext\u201d in text games",
+            "Online learning of shaping rewards in reinforcement learning",
+            "Interactive fiction games: A colossal adventure",
+            "Multi-stage episodic control for strategic exploration in text games",
+            "Deep reinforcement learning for dialogue generation",
+            "Reading and acting while blindfolded: The need for semantics in text game agents",
+            "Deep reinforcement learning with a natural language action space",
+            "Expressing arbitrary reward functions as potential-based advice",
+            "Principled methods for advising reinforcement learning agents"
+          ],
+          "3 Problem Setting and Background": [
+            "Interactive fiction games: A colossal adventure"
+          ],
+          "3 Problem Setting and Background 3.1 SAC for Discrete Action Spaces": [
+            "Soft actor-critic for discrete action settings",
+            "Interactive fiction games: A colossal adventure",
+            "Reinforcement learning: An introduction",
+            "Soft actor-critic: Off-policy maximum entropy deep reinforcement learning with a stochastic actor"
+          ],
+          "4 Reward Shaping Method": [
+            "Soft actor-critic for discrete action settings",
+            "Soft actor-critic: Off-policy maximum entropy deep reinforcement learning with a stochastic actor",
+            "Modeling interaction via the principle of maximum causal entropy",
+            "Policy invariance under reward transformations: Theory and application to reward shaping",
+            "Online learning of shaping rewards in reinforcement learning",
+            "Explicable reward design for reinforcement learning agents"
+          ],
+          "5 Experimental Results 5.1 Datasets": [
+            "Interactive fiction games: A colossal adventure"
+          ],
+          "5 Experimental Results 5.2 Experimental Settings": [
+            "Interactive fiction games: A colossal adventure",
+            "Sentencepiece: A simple and language independent subword tokenizer and detokenizer for neural text processing"
+          ],
+          "5 Experimental Results 5.3 Results": [
+            "Interactive fiction games: A colossal adventure",
+            "Reading and acting while blindfolded: The need for semantics in text game agents"
+          ],
+          "6 Limitations and Future Work": [
+            "Reading and acting while blindfolded: The need for semantics in text game agents",
+            "A survey of reinforcement learning informed by natural language.",
+            "Multi-stage episodic control for strategic exploration in text games",
+            "Keep CALM and explore: Language models for action generation in text-based games"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.26517608761787415,
+        "extra": {
+          "expand": "not expand"
+        }
+      }
+    ],
+    "Exploring the use of Q-target in reward shaping for large language model training": [
+      {
+        "title": "From $r$ to $Q^*$: Your Language Model is Secretly a Q-Function",
+        "arxiv_id": "2404.12358",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract Reinforcement Learning From Human Feedback (RLHF) has been a critical to the success of the latest generation of generative AI models. In response to the complex nature of the classical RLHF pipeline, direct alignment algorithms such as Direct Preference Optimization (DPO) have emerged as an alternative approach. Although DPO solves the same objective as the standard RLHF setup, there is a mismatch between the two approaches. Standard RLHF deploys reinforcement learning in a specific token-level MDP, while DPO is derived as a bandit problem in which the whole response of the model is treated as a single arm. In this work we rectify this difference, first we theoretically show that we can derive DPO in the token-level MDP as a general inverse Q-learning algorithm, which satisfies the Bellman equation. Using our theoretical results, we provide three concrete empirical insights. First, we show that because of its token level interpretation, DPO is able to perform some type of credit assignment. Next, we prove that under the token level formulation, classical search-based algorithms, such as MCTS, which have recently been applied to the language generation space, are equivalent to likelihood-based search on a DPO policy. Empirically we show that a simple beam search yields meaningful improvement over the base DPO policy. Finally, we show how the choice of reference policy causes implicit rewards to decline during training. We conclude by discussing applications of our work, including information elicitation in multi-tun dialogue, reasoning, agentic applications and end-to-end training of multi-model systems. \u2020\u2020* Denotes equal contribution",
+        "sections": {
+          "1 Introduction": [
+            "Proximal policy optimization algorithms",
+            "Training language models to follow instructions with human feedback",
+            "Fine-tuning language models from human preferences",
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "Learning to summarize from human feedback",
+            "Slic-hf: Sequence likelihood calibration with human feedback",
+            "Aligning text-to-image models using human feedback",
+            "Beyond hallucinations: Enhancing lvlms through hallucination-aware direct preference optimization"
+          ],
+          "2 Related Work": [
+            "Fine-tuning language models from human preferences",
+            "Contrastive preference learning: Learning from human feedback without reinforcement learning",
+            "Fudge: Controlled text generation with future discriminators",
+            "Training diffusion models with reinforcement learning",
+            "Deep reinforcement learning from human preferences",
+            "Controlled decoding from language models",
+            "Sequencematch: Imitation learning for autoregressive sequence modelling with backtracking",
+            "Offline rl for natural language generation with implicit language q learning",
+            "Star: Bootstrapping reasoning with reasoning",
+            "Maximum entropy inverse reinforcement learning",
+            "Modeling purposeful adaptive behavior with the principle of maximum causal entropy",
+            "Inverse preference learning: Preference-based rl without a reward function",
+            "Preference-based policy learning",
+            "Implementation matters in deep policy gradients: A case study on ppo and trpo",
+            "Training language models to follow instructions with human feedback",
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "Making ppo even better: Value-guided monte-carlo tree search decoding",
+            "Models of human preference for learning reward functions",
+            "Iq-learn: Inverse soft-q learning for imitation",
+            "Critic-guided decoding for controlled text generation"
+          ],
+          "3 Preliminaries 3.1 The Token-level MDP for Large Language Models": [
+            "Fine-tuning language models from human preferences",
+            "Rank analysis of incomplete block designs: I. the method of paired comparisons"
+          ],
+          "3 Preliminaries 3.2 The Classical RLHF Methods": [
+            "Fine-tuning language models from human preferences",
+            "Proximal policy optimization algorithms"
+          ],
+          "3 Preliminaries 3.3 Direct Preference Optimization": [
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "Maximum entropy inverse reinforcement learning"
+          ],
+          "4 Theoretical Insights 4.1 DPO as a Q\ud835\udc44Q-function in the Token Level MDP": [
+            "Modeling purposeful adaptive behavior with the principle of maximum causal entropy",
+            "Inverse preference learning: Preference-based rl without a reward function",
+            "Iq-learn: Inverse soft-q learning for imitation"
+          ],
+          "4 Theoretical Insights 4.2 Token-Level DPO Can Parameterize Any Dense Reward Function.": [
+            "Policy invariance under reward transformations: Theory and application to reward shaping",
+            "Learning optimal advantage from preferences and mistaking it for reward",
+            "Direct preference optimization: Your language model is secretly a reward model"
+          ],
+          "5 Practical Insights": [
+            "Pythia: A suite for analyzing large language models across training and scaling",
+            "Learning to summarize from human feedback"
+          ],
+          "5 Practical Insights 5.1 Does DPO Learn Credit Assignment?": [
+            "Offline reinforcement learning: Tutorial, review, and perspectives on open problems",
+            "Rewardbench: Evaluating reward models for language modeling"
+          ],
+          "5 Practical Insights 5.2 Connecting Guided Decoding and Search to Likelihood-Based DPO Optimization": [
+            "Star: Bootstrapping reasoning with reasoning",
+            "V-star: Training verifiers for self-taught reasoners",
+            "Controlled decoding from language models",
+            "Scaling laws for reward model overoptimization"
+          ],
+          "5 Practical Insights 5.3 Can MaxEnt RL Explain DPO the Phenomenon Of Decreasing Likelihoods?": [
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "Contrastive preference learning: Learning from human feedback without reinforcement learning",
+            "Smaug: Fixing failure modes of preference optimisation with dpo-positive"
+          ],
+          "6 Discussion": [
+            "Webgpt: Browser-assisted question-answering with human feedback",
+            "Improving image generation with better captions",
+            "Trial and error: Exploration-based trajectory optimization for llm agents",
+            "Gaia-1: A generative world model for autonomous driving",
+            "Alpacafarm: A simulation framework for methods that learn from human feedback",
+            "Openassistant conversations \u2013 democratizing large language model alignment",
+            "Star-gate: Teaching language models to ask clarifying questions",
+            "Star: Bootstrapping reasoning with reasoning"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.1486729383468628,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Secrets of RLHF in Large Language Models Part II: Reward Modeling",
+        "arxiv_id": "2401.06080",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Reinforcement Learning from Human Feedback (RLHF) has become a crucial technology for aligning language models with human values and intentions, enabling models to produce more helpful and harmless responses. Reward models are trained as proxies for human preferences to drive reinforcement learning optimization. While reward models are often considered central to achieving high performance, they face the following challenges in practical applications: (1) Incorrect and ambiguous preference pairs in the dataset may hinder the reward model from accurately capturing human intent. (2) Reward models trained on data from a specific distribution often struggle to generalize to examples outside that distribution and are not suitable for iterative RLHF training. In this report, we attempt to address these two issues. (1) From a data perspective, we propose a method to measure the strength of preferences within the data, based on a voting mechanism of multiple reward models. Experimental results confirm that data with varying preference strengths have different impacts on reward model performance. We introduce a series of novel methods to mitigate the influence of incorrect and ambiguous preferences in the dataset and fully leverage high-quality preference data. (2) From an algorithmic standpoint, we introduce contrastive learning to enhance the ability of reward models to distinguish between chosen and rejected responses, thereby improving model generalization. Furthermore, we employ meta-learning to enable the reward model to maintain the ability to differentiate subtle differences in out-of-distribution samples, and this approach can be utilized for iterative RLHF optimization. We have open-sourced the training code used in this report, the Anthropic\u2019s HH-RLHF dataset with preference strength information, and additionally, the validation set cleaned by GPT-4, which is used in our analysis experiments. All of these resources can be found on our project website111\u00a0\u00a0https://github.com/OpenLMLab/MOSS-RLHF. ",
+        "sections": {
+          "1 Introduction": [
+            "Scalable agent alignment via reward modeling: a research direction",
+            "Characterizing the impacts of instances on robustness",
+            "Training a helpful and harmless assistant with reinforcement learning from human feedback",
+            "Constitutional AI: Harmlessness from AI feedback",
+            "Learning to summarize from human feedback",
+            "On the fragility of learned reward functions",
+            "Training language models to follow instructions with human feedback",
+            "The history and risks of reinforcement learning and human feedback"
+          ],
+          "2  How Data Impacts the Modeling of Human Preference?": [
+            "Training a helpful and harmless assistant with reinforcement learning from human feedback",
+            "Training language models to follow instructions with human feedback"
+          ],
+          "2  How Data Impacts the Modeling of Human Preference? 2.1 Preliminaries": [
+            "Fine-tuning language models from human preferences",
+            "Improving alignment of dialogue agents via targeted human judgements",
+            "Preventing reward hacking with occupancy measure regularization",
+            "Learning to summarize from human feedback",
+            "Proximal policy optimization algorithms",
+            "Way off-policy batch deep reinforcement learning of implicit human preferences in dialog",
+            "Training language models to follow instructions with human feedback",
+            "Rank analysis of incomplete block designs: I. the method of paired comparisons"
+          ],
+          "2  How Data Impacts the Modeling of Human Preference? 2.4 Analyze and Leverage Diverse Data to its Fullest Potential": [
+            "Training deep neural networks on noisy labels with bootstrapping",
+            "Llama 2: Open foundation and fine-tuned chat models",
+            "When does label smoothing help?"
+          ],
+          "2  How Data Impacts the Modeling of Human Preference? 2.5 How to Better Model Human Preference?": [
+            "Secrets of rlhf in large language models part i: Ppo",
+            "Training a helpful and harmless assistant with reinforcement learning from human feedback"
+          ],
+          "3 Preference Generalization and Iterated RLHF 3.1 Contrastive Learning for Reward Modeling": [
+            "Simcse: Simple contrastive learning of sentence embeddings",
+            "Unsupervised learning of visual features by contrasting cluster assignments"
+          ],
+          "3 Preference Generalization and Iterated RLHF 3.2 MetaRM: Aligning with Shifted Distributions via Meta Learning": [
+            "Training a helpful and harmless assistant with reinforcement learning from human feedback"
+          ],
+          "4 Related Work": [
+            "Deep reinforcement learning from human preferences",
+            "The history and risks of reinforcement learning and human feedback"
+          ],
+          "4 Related Work Challenges with Human Preference Data in RLHF.": [
+            "On the sensitivity of reward inference to misspecified human models",
+            "Open problems and fundamental limitations of reinforcement learning from human feedback",
+            "Training language models to follow instructions with human feedback"
+          ],
+          "4 Related Work Generalization and Dataset Specificity in Reward Models.": [
+            "Fine-tuning language models from human preferences"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.1478978544473648,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Text2Reward: Automated Dense Reward Function Generation for Reinforcement Learning",
+        "arxiv_id": "2309.11489",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Designing reward functions is a longstanding challenge in reinforcement learning (RL); it requires specialized knowledge or domain data, leading to high costs for development. To address this, we introduce Text2Reward, a data-free framework that automates the generation of dense reward functions based on large language models (LLMs). Given a goal described in natural language, Text2Reward generates dense reward functions as an executable program grounded in a compact representation of the environment. Unlike inverse RL and recent work that uses LLMs to write sparse reward codes, Text2Reward produces interpretable, free-form dense reward codes that cover a wide range of tasks, utilize existing packages, and allow iterative refinement with human feedback. We evaluate Text2Reward on two robotic manipulation benchmarks (ManiSkill2, MetaWorld) and two locomotion environments of MuJoCo. On 13 of the 17 manipulation tasks, policies trained with generated reward codes achieve similar or better task success rates and convergence speed than expert-written reward codes. For locomotion tasks, our method learns six novel locomotion behaviors with a success rate exceeding 94%. Furthermore, we show that the policies trained in the simulator with our method can be deployed in the real world. Finally, Text2Reward further improves the policies by refining their reward functions with human feedback. Video results are available at https://text-to-reward.github.io. ",
+        "sections": {
+          "1 Introduction": [
+            "Language to rewards for robotic skill synthesis",
+            "Maximum entropy inverse reinforcement learning",
+            "Soft actor-critic: Off-policy maximum entropy deep reinforcement learning with a stochastic actor",
+            "Policy invariance under reward transformations: Theory and application to reward shaping",
+            "Maniskill2: A unified benchmark for generalizable manipulation skills",
+            "Openai gym",
+            "Proximal policy optimization algorithms",
+            "Meta-world: A benchmark and evaluation for multi-task and meta reinforcement learning",
+            "Deep reinforcement learning from human preferences"
+          ],
+          "2 Approach 2.1 Background": [
+            "Reinforcement learning: An introduction"
+          ],
+          "2 Approach 2.2 Zero-Shot and Few-Shot Dense Reward Generation": [
+            "Natural language to code translation with execution",
+            "Coderl: Mastering code generation through pretrained models and deep reinforcement learning",
+            "One embedder, any task: Instruction-finetuned text embeddings"
+          ],
+          "3 Experiment Setup 3.1 Manipulation Tasks": [
+            "R3m: A universal visual representation for robot manipulation"
+          ],
+          "3 Experiment Setup 3.2 Locomotion Tasks": [
+            "Deep reinforcement learning from human preferences"
+          ],
+          "3 Experiment Setup 3.3 Real Robot Manipulation": [
+            "Segment anything",
+            "Predictive Sampling: Real-time Behaviour Synthesis with MuJoCo"
+          ],
+          "5 Related Work Reward Shaping": [
+            "Maximum entropy inverse reinforcement learning",
+            "Deep reinforcement learning from human preferences"
+          ],
+          "5 Related Work Language Models in Reinforcement Learning": [
+            "Chain-of-thought prompting elicits reasoning in large language models",
+            "React: Synergizing reasoning and acting in language models",
+            "Grounding large language models in interactive environments with online reinforcement learning"
+          ],
+          "5 Related Work Language Models for Robotics": [
+            "Language to rewards for robotic skill synthesis",
+            "Rt-1: Robotics transformer for real-world control at scale",
+            "Do as i can, not as i say: Grounding language in robotic affordances"
+          ],
+          "7 Limitations and Future Work": [
+            "GPT-4 technical report",
+            "Starcoder: may the source be with you!",
+            "Openai gym",
+            "World of bits: An open-domain platform for web-based agents",
+            "Virtualhome: Simulating household activities via programs",
+            "Maximum entropy deep inverse reinforcement learning"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.2016100138425827,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Revisiting Sparse Rewards for Goal-Reaching Reinforcement Learning",
+        "arxiv_id": "2407.00324",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract Many real-world robot learning problems, such as pick-and-place or arriving at a destination, can be seen as a problem of reaching a goal state as soon as possible. These problems, when formulated as episodic reinforcement learning tasks, can easily be specified to align well with our intended goal: \u221211-1 reward every time step with termination upon reaching the goal state, called minimum-time tasks. Despite this simplicity, such formulations are often overlooked in favor of dense rewards due to their perceived difficulty and lack of informativeness. Our studies contrast the two reward paradigms, revealing that the minimum-time task specification not only facilitates learning higher-quality policies but can also surpass dense-reward-based policies on their own performance metrics. Crucially, we also identify the goal-hit rate of the initial policy as a robust early indicator for learning success in such sparse feedback settings. Finally, using four distinct real-robotic platforms, we show that it is possible to learn pixel-based policies from scratch within two to three hours using constant negative rewards. Our video demo can be found here.111Video demo: https://youtu.be/a6zlVUuKzBc Code for simulation experiments: https://github.com/gauthamvasan/rl_suite Code for robot experiments: https://github.com/rlai-lab/relod",
+        "sections": {
+          "1 Introduction": [
+            "Hindsight experience replay",
+            "Learning by playing solving sparse reward tasks from scratch",
+            "Reinforcement learning in robotics: A survey"
+          ],
+          "2 Related Work": [
+            "Visual reinforcement learning with imagined goals",
+            "Reinforcement learning: An introduction",
+            "Autoregressive policies for continuous control deep reinforcement learning",
+            "Linear systems and optimal control, volume 18",
+            "Learning from demonstration: Teaching a myoelectric prosthesis with an intact limb via reinforcement learning",
+            "Reward functions for accelerated learning",
+            "Hindsight experience replay",
+            "Concrete problems in AI safety",
+            "Learning by playing solving sparse reward tasks from scratch",
+            "Rl-vlm-f: Reinforcement learning from vision language foundation model feedback",
+            "Eureka: Human-level reward design via coding large language models",
+            "Learning minimum-time flight in cluttered environments",
+            "An alternate policy gradient estimator for softmax policies",
+            "Vision-language models are zero-shot reward models for reinforcement learning",
+            "Policy invariance under reward transformations: Theory and application to reward shaping",
+            "The perils of trial-and-error reward design: misdesign through overfitting and invalid task specifications",
+            "Simple sensor intentions for exploration"
+          ],
+          "3 How to Specify Goal-Reaching Tasks in RL?": [
+            "Deepmind control suite",
+            "Openai gym",
+            "Model-free policy learning with reward gradients"
+          ],
+          "4 Which Formulation Achieves the Desired Reaching Behavior?": [
+            "Soft actor-critic: Off-policy maximum entropy deep reinforcement learning with a stochastic actor"
+          ],
+          "5 Does Choice of Time Limit Impact Success in Minimum-Time Tasks?": [
+            "Deepmind control suite",
+            "Openai gym",
+            "Reinforcement learning: An introduction"
+          ],
+          "6 Learning Vision-Based Minimum-Time Tasks on Real Robots": [
+            "Dynamic decision frequency with continuous options",
+            "Real-time reinforcement learning for vision-based robotics utilizing local and remote computers",
+            "Asynchronous reinforcement learning for real-time control of physical robots"
+          ],
+          "6 Learning Vision-Based Minimum-Time Tasks on Real Robots Evaluation of final learned behaviors on the robot arms": [
+            "Madi: Learning to mask distractions for generalization in visual deep reinforcement learning",
+            "Asynchronous reinforcement learning for real-time control of physical robots"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.00020819883502554148,
+        "extra": {
+          "expand": "not expand"
+        }
+      }
+    ],
+    "Studies on reward-based training in large language models": [
+      {
+        "title": "Improving Large Language Models via Fine-grained Reinforcement Learning with Minimum Editing Constraint",
+        "arxiv_id": "2401.06081",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Reinforcement learning (RL) has been widely used in training large language models\u00a0(LLMs) for preventing unexpected outputs, e.g., reducing harmfulness and errors. However, existing RL methods mostly adopt the instance-level reward, which is unable to provide fine-grained supervision for complex reasoning tasks, and can not focus on the few key tokens that lead to the incorrectness. To address it, we propose a new RL method named RLMEC that incorporates a generative model as the reward model, which is trained by the erroneous solution rewriting task under the minimum editing constraint, and can produce token-level rewards for RL training. Based on the generative reward model, we design the token-level RL objective for training and an imitation-based regularization for stabilizing RL process. And the both objectives focus on the learning of the key tokens for the erroneous solution, reducing the effect of other unimportant tokens. The experiment results on mathematical tasks and question-answering tasks have demonstrated the effectiveness of our approach. Our code and data are available at https://github.com/RUCAIBox/RLMEC. ",
+        "sections": {
+          "1 Introduction": [
+            "Training verifiers to solve math word problems",
+            "Explanations for commonsenseqa: New dataset and models",
+            "A survey of large language models",
+            "Wizardmath: Empowering mathematical reasoning for large language models via reinforced evol-instruct",
+            "Deep reinforcement learning from human preferences",
+            "Anthropic. 2023. Claude 2. Anthropic Blog.",
+            "Llama 2: Open foundation and fine-tuned chat models.",
+            "Proximal policy optimization algorithms",
+            "Teaching machines to read and comprehend",
+            "Training language models to follow instructions with human feedback",
+            "Scaling relationship on learning mathematical reasoning with large language models"
+          ],
+          "2 Related Work": [
+            "PAL: program-aided language models",
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "Self-refine: Iterative refinement with self-feedback",
+            "Let\u2019s verify step by step",
+            "Slic-hf: Sequence likelihood calibration with human feedback",
+            "A minimaximalist approach to reinforcement learning from human feedback",
+            "Exchange-of-thought: Enhancing large language model capabilities through cross-model communication",
+            "Graph of thoughts: Solving elaborate problems with large language models",
+            "Chain of hindsight aligns language models with feedback",
+            "Solving math word problems with process- and outcome-based feedback",
+            "Solving quantitative reasoning problems with language models",
+            "Mammoth: Building math generalist models through hybrid instruction tuning",
+            "Tree of thoughts: Deliberate problem solving with large language models",
+            "Successive prompting for decomposing complex questions",
+            "QUARK: controllable text generation with reinforced unlearning",
+            "Tora: A tool-integrated reasoning agent for mathematical problem solving",
+            "Chain-of-thought prompting elicits reasoning in large language models",
+            "Beyond imitation: Leveraging fine-grained quality signals for alignment",
+            "Deep reinforcement learning from human preferences",
+            "Asynchronous methods for deep reinforcement learning",
+            "Proximal policy optimization algorithms"
+          ],
+          "3 Preliminary": [
+            "Chain-of-thought prompting elicits reasoning in large language models",
+            "A multitask, multilingual, multimodal evaluation of chatgpt on reasoning, hallucination, and interactivity",
+            "Proximal policy optimization algorithms"
+          ],
+          "4 Approach 4.1 Generative Reward Model Training": [
+            "Anthropic. 2023. Claude 2. Anthropic Blog.",
+            "Gpt-4 technical report"
+          ],
+          "4 Approach 4.2 RL with Fine-grained Supervision": [
+            "Binary codes capable of correcting deletions, insertions and reversals",
+            "Proximal policy optimization algorithms"
+          ],
+          "5 Experiment 5.1 Experimental Settings": [
+            "Training verifiers to solve math word problems",
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "Measuring mathematical problem solving with the MATH dataset",
+            "Anthropic. 2023. Claude 2. Anthropic Blog.",
+            "Judging llm-as-a-judge with mt-bench and chatbot arena",
+            "QASC: A dataset for question answering via sentence composition",
+            "Secrets of RLHF in large language models part I: PPO",
+            "Statistical rejection sampling improves preference optimization",
+            "Chain of hindsight aligns language models with feedback",
+            "Mammoth: Building math generalist models through hybrid instruction tuning",
+            "Llama 2: Open foundation and fine-tuned chat models.",
+            "Can a suit of armor conduct electricity? A new dataset for open book question answering",
+            "Think you have solved question answering? try arc, the AI2 reasoning challenge",
+            "Beyond imitation: Leveraging fine-grained quality signals for alignment",
+            "Wizardlm: Empowering large language models to follow complex instructions",
+            "Training language models to follow instructions with human feedback",
+            "Explanations for commonsenseqa: New dataset and models",
+            "Are NLP models really able to solve simple math word problems?",
+            "Measuring massive multitask language understanding",
+            "Proximal policy optimization algorithms"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.8936470746994019,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Fine-Tuning Language Models with Reward Learning on Policy",
+        "arxiv_id": "2403.19279",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Reinforcement learning from human feedback (RLHF) has emerged as an effective approach to aligning large language models (LLMs) to human preferences. RLHF contains three steps, i.e., human preference collecting, reward learning, and policy optimization, which are usually performed serially. Despite its popularity, however, (fixed) reward models may suffer from inaccurate off-distribution, since policy optimization continuously shifts LLMs\u2019 data distribution. Repeatedly collecting new preference data from the latest LLMs may alleviate this issue, which unfortunately makes the resulting system more complicated and difficult to optimize. In this paper, we propose reward learning on policy (RLP), an unsupervised framework that refines a reward model using policy samples to keep it on-distribution. Specifically, an unsupervised multi-view learning method is introduced to learn robust representations of policy samples. Meanwhile, a synthetic preference generation approach is developed to simulate high-quality preference data with policy outputs. Extensive experiments on three benchmark datasets show that RLP consistently outperforms the state-of-the-art. Our code is available at https://github.com/AlibabaResearch/DAMO-ConvAI/tree/main/rlp. ",
+        "sections": {
+          "1 Introduction": [
+            "The information bottleneck method",
+            "Fine-tuning language models from human preferences",
+            "Self-consistency improves chain of thought reasoning in language models",
+            "Scaling laws for reward model overoptimization",
+            "Llama 2: Open foundation and fine-tuned chat models",
+            "Semantic uncertainty: Linguistic invariances for uncertainty estimation in natural language generation",
+            "Constitutional ai: Harmlessness from ai feedback",
+            "Open problems and fundamental limitations of reinforcement learning from human feedback",
+            "Generating with confidence: Uncertainty quantification for black-box large language models",
+            "Multi-view learning overview: Recent progress and new challenges",
+            "Gpt-4 technical report",
+            "Language models are few-shot learners",
+            "Learning robust representations via multi-view information bottleneck",
+            "A general language assistant as a laboratory for alignment",
+            "Deep reinforcement learning from human preferences"
+          ],
+          "2 Related Work": [
+            "Language models (mostly) know what they know",
+            "Semantic uncertainty: Linguistic invariances for uncertainty estimation in natural language generation",
+            "Scaling instruction-finetuned language models",
+            "Constitutional ai: Harmlessness from ai feedback",
+            "Constructive large language models alignment with diverse feedback",
+            "Defining and characterizing reward gaming",
+            "Causal confusion and reward misidentification in preference-based reward learning",
+            "Reward model ensembles help mitigate overoptimization",
+            "Cross-task generalization via natural language crowdsourcing instructions",
+            "Rlcd: Reinforcement learning from contrast distillation for language model alignment",
+            "Learning reward functions from diverse sources of human feedback: Optimally integrating demonstrations and preferences",
+            "Prompting gpt-3 to be reliable",
+            "Rlaif: Scaling reinforcement learning from human feedback with ai feedback",
+            "Deep reinforcement learning from human preferences"
+          ],
+          "3 Preliminaries": [
+            "Alpacafarm: A simulation framework for methods that learn from human feedback",
+            "Training language models to follow instructions with human feedback"
+          ],
+          "3 Preliminaries Step 2, Reward learning:": [
+            "Deep reinforcement learning from human preferences"
+          ],
+          "3 Preliminaries Step 3, RL policy optimization:": [
+            "Proximal policy optimization algorithms"
+          ],
+          "4 Reward Learning on Policy 4.1 Overview": [
+            "Alpacafarm: A simulation framework for methods that learn from human feedback",
+            "Training language models to follow instructions with human feedback",
+            "Llama 2: Open foundation and fine-tuned chat models"
+          ],
+          "4 Reward Learning on Policy 4.2 Reward Retraining": [
+            "The information bottleneck method",
+            "Self-consistency improves chain of thought reasoning in language models",
+            "Semantic uncertainty: Linguistic invariances for uncertainty estimation in natural language generation",
+            "Multi-view learning overview: Recent progress and new challenges",
+            "Learning robust representations via multi-view information bottleneck",
+            "Prompting gpt-3 to be reliable"
+          ],
+          "5 Experiments 5.1 Datasets": [
+            "Alpacafarm: A simulation framework for methods that learn from human feedback",
+            "Reasoning or reciting? exploring the capabilities and limitations of language models through counterfactual tasks.",
+            "Koala: A dialogue model for academic research",
+            "Training a helpful and harmless assistant with reinforcement learning from human feedback",
+            "Super-naturalinstructions: Generalization via declarative instructions on 1600+ nlp tasks.",
+            "Stanford alpaca: An instruction-following llama model.",
+            "Evaluating large language models at evaluating instruction following",
+            "Vicuna: An open-source chatbot impressing gpt-4 with 90%* chatgpt quality",
+            "Can large language models be an alternative to human evaluations?",
+            "Training language models to follow instructions with human feedback"
+          ],
+          "5 Experiments 5.2 Metrics and Experimental Setups": [
+            "Alpacafarm: A simulation framework for methods that learn from human feedback"
+          ],
+          "5 Experiments 5.3 Implementation Details": [
+            "Alpacafarm: A simulation framework for methods that learn from human feedback",
+            "Deberta: Decoding-enhanced bert with disentangled attention",
+            "Learning deep representations by mutual information estimation and maximization",
+            "Proximal policy optimization algorithms",
+            "Llama: Open and efficient foundation language models"
+          ],
+          "5 Experiments 5.4 Baselines": [
+            "Learning to summarize with human feedback",
+            "Llama: Open and efficient foundation language models",
+            "Stanford alpaca: An instruction-following llama model.",
+            "Proximal policy optimization algorithms"
+          ],
+          "5 Experiments 5.5 Main Results": [
+            "Alpacafarm: A simulation framework for methods that learn from human feedback",
+            "Measuring massive multitask language understanding"
+          ],
+          "5 Experiments 5.6 Ablation Studies": [
+            "Learning representations by maximizing mutual information across views",
+            "On variational bounds of mutual information",
+            "Rlaif: Scaling reinforcement learning from human feedback with ai feedback",
+            "Unsupervised learning of visual features by contrasting cluster assignments"
+          ],
+          "Limitations": [
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "Llama 2: Open foundation and fine-tuned chat models"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.7123693823814392,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Towards Understanding the Influence of Reward Margin on Preference Model Performance",
+        "arxiv_id": "2404.04932",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract Reinforcement Learning from Human Feedback (RLHF) is a widely used framework for the training of language models. However, the process of using RLHF to develop a language model that is well-aligned presents challenges, especially when it comes to optimizing the reward model. Our research has found that existing reward models, when trained using the traditional ranking objective based on human preference data, often struggle to effectively distinguish between responses that are more or less favorable in real-world scenarios. To bridge this gap, our study introduces a novel method to estimate the preference differences without the need for detailed, exhaustive labels from human annotators. Our experimental results provide empirical evidence that incorporating margin values into the training process significantly improves the effectiveness of reward models. This comparative analysis not only demonstrates the superiority of our approach in terms of reward prediction accuracy but also highlights its effectiveness in practical applications.",
+        "sections": {
+          "1 Introduction": [
+            "Llama 2: Open foundation and fine-tuned chat models",
+            "Scaling laws for reward model overoptimization",
+            "Consequences of misaligned ai",
+            "Training language models to follow instructions with human feedback",
+            "OpenAI. 2023. ChatGPT, Mar 14 version.",
+            "Open problems and fundamental limitations of reinforcement learning from human feedback",
+            "Measuring progress on scalable oversight for large language models",
+            "Deep reinforcement learning from human preferences",
+            "A general language assistant as a laboratory for alignment"
+          ],
+          "2 Related Work 2.1 Reward Modeling": [
+            "OpenAI. 2023. ChatGPT, Mar 14 version.",
+            "Secrets of rlhf in large language models part ii: Reward modeling"
+          ],
+          "2 Related Work 2.2 Reward Hacking": [
+            "Loose lips sink ships: Mitigating length bias in reinforcement learning from human feedback",
+            "Rewarded soups: towards pareto-optimal alignment by interpolating weights fine-tuned on diverse rewards",
+            "Helping or herding? reward model ensembles mitigate but do not eliminate reward hacking",
+            "Scaling laws for reward model overoptimization"
+          ],
+          "3 Preliminaries": [
+            "Fine-tuning language models from human preferences",
+            "Proximal policy optimization algorithms"
+          ],
+          "3 Preliminaries Reward Modeling from Human Preferences": [
+            "Fine-tuning language models from human preferences",
+            "Rank analysis of incomplete block designs: I. the method of paired comparisons"
+          ],
+          "5 Our Methodology": [
+            "Understanding dataset difficulty with \ud835\udcb1\ud835\udcb1\\mathcal{V}-usable information.",
+            "Training a helpful and harmless assistant with reinforcement learning from human feedback"
+          ],
+          "6 Experiment 6.1 Setups": [
+            "Judging llm-as-a-judge with mt-bench and chatbot arena.",
+            "Webgpt: Browser-assisted question-answering with human feedback",
+            "Training a helpful and harmless assistant with reinforcement learning from human feedback",
+            "Learning to summarize from human feedback",
+            "Understanding dataset difficulty with \ud835\udcb1\ud835\udcb1\\mathcal{V}-usable information.",
+            "Openassistant conversations\u2013democratizing large language model alignment"
+          ],
+          "7 Experiment of Best of N": [
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "Scaling laws for reward model overoptimization"
+          ],
+          "7 Experiment of Best of N 7.1 Training Setup and Evaluation": [
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "Scaling laws for reward model overoptimization"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.049868155270814896,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "RewardBench: Evaluating Reward Models for Language Modeling",
+        "arxiv_id": "2403.13787",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Reward models (RMs) are at the crux of successful RLHF to align pretrained models to human preferences, yet there has been relatively little study that focuses on evaluation of those reward models. Evaluating reward models presents an opportunity to understand the opaque technologies used for alignment of language models and which values are embedded in them. To date, very few descriptors of capabilities, training methods, or open-source reward models exist. In this paper, we present\u00a0RewardBench, a benchmark dataset and code-base for evaluation, to enhance scientific understanding of reward models. The RewardBench\u00a0dataset is a collection of prompt-win-lose trios spanning chat, reasoning, and safety, to benchmark how reward models perform on challenging, structured and out-of-distribution queries. We created specific comparison datasets for RMs that have subtle, but verifiable reasons (e.g. bugs, incorrect facts) why one answer should be preferred to another. On the\u00a0RewardBench\u00a0leaderboard, we evaluate reward models trained with a variety of methods, such as the direct MLE training of classifiers and the implicit reward modeling of Direct Preference Optimization (DPO), and on a spectrum of datasets. We present many findings on propensity for refusals, reasoning limitations, and instruction following shortcomings of various reward models towards a better understanding of the RLHF process.    Leaderboard https://hf.co/spaces/allenai/reward-bench    Code https://github.com/allenai/reward-bench    Dataset https://hf.co/datasets/allenai/reward-bench   ",
+        "sections": {
+          "1 Introduction": [
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "Qwen technical report",
+            "Starling-7B: Improving LLM Helpfulness & Harmlessness with RLAIF",
+            "Training a helpful and harmless assistant with reinforcement learning from human feedback",
+            "Understanding dataset difficulty with \ud835\udcb1\ud835\udcb1\\mathcal{V}-usable information.",
+            "Learning to summarize with human feedback",
+            "Let\u2019s Verify Step by Step",
+            "Secrets of rlhf in large language models part ii: Reward modeling",
+            "UltraFeedback: Boosting Language Models with High-quality Feedback",
+            "Camels in a Changing Climate: Enhancing LM Adaptation with T\u00fclu 2",
+            "Stable LM 2 1.6B Technical Report",
+            "ChatGPT: Optimizing Language Models for Dialogue",
+            "Safe RLHF: Safe reinforcement learning from human feedback",
+            "Training language models to follow instructions with human feedback",
+            "Deep reinforcement learning from human preferences",
+            "RAFT: Reward rAnked FineTuning for Generative Foundation Model Alignment",
+            "Zephyr: Direct Distillation of LM Alignment",
+            "A general language assistant as a laboratory for alignment",
+            "Llm-blender: Ensembling large language models with pairwise comparison and generative fusion"
+          ],
+          "2 Related Works 2.1 Reinforcement Learning from Human Feedback": [
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "Training a helpful and harmless assistant with reinforcement learning from human feedback",
+            "Is reinforcement learning (not) for natural language processing?: Benchmarks, baselines, and building blocks for natural language policy optimization",
+            "Scaling laws for reward model overoptimization",
+            "Aligning text-to-image models using human feedback",
+            "Learning to summarize with human feedback",
+            "Constitutional AI: Harmlessness from AI Feedback",
+            "Confronting reward model overoptimization with constrained rlhf",
+            "Reward model ensembles help mitigate overoptimization",
+            "Secrets of rlhf in large language models part ii: Reward modeling",
+            "Glore: When, where, and how to improve llm reasoning via global and local refinements",
+            "Wizardmath: Empowering mathematical reasoning for large language models via reinforced evol-instruct",
+            "ChatGPT: Optimizing Language Models for Dialogue",
+            "Beyond training objectives: Interpreting reward model divergence in large language models",
+            "Llama 2: Open Foundation and Fine-Tuned Chat Models",
+            "Training language models to follow instructions with human feedback",
+            "Deep reinforcement learning from human preferences",
+            "Fine-grained human feedback gives better rewards for language model training",
+            "Warm: On the benefits of weight averaged reward models",
+            "Proximal policy optimization algorithms",
+            "WebGPT: Browser-assisted question-answering with human feedback"
+          ],
+          "2 Related Works 2.2 Reward Model & RLHF Evaluation": [
+            "Alpacafarm: A simulation framework for methods that learn from human feedback",
+            "The trickle-down impact of reward (in-) consistency on rlhf",
+            "A long way to go: Investigating length correlations in rlhf",
+            "Judging LLM-as-a-judge with MT-Bench and Chatbot Arena"
+          ],
+          "3 Background 3.1 Reward Modeling": [
+            "Training a helpful and harmless assistant with reinforcement learning from human feedback",
+            "Training language models to follow instructions with human feedback",
+            "Rank analysis of incomplete block designs: I. the method of paired comparisons"
+          ],
+          "3 Background 3.2 Direct Preference Optimization": [
+            "Direct preference optimization: Your language model is secretly a reward model"
+          ],
+          "4 The RewardBench\u00a0Benchmark 4.1 RewardBench\u00a0Dataset": [
+            "Understanding dataset difficulty with \ud835\udcb1\ud835\udcb1\\mathcal{V}-usable information.",
+            "Evaluating Large Language Models at Evaluating Instruction Following",
+            "OctoPack: Instruction Tuning Code Large Language Models",
+            "AlpacaEval: An Automatic Evaluator of Instruction-following Models",
+            "Learning to summarize with human feedback",
+            "Training a helpful and harmless assistant with reinforcement learning from human feedback",
+            "XSTest: A Test Suite for Identifying Exaggerated Safety Behaviours in Large Language Models",
+            "Let\u2019s Verify Step by Step",
+            "A general language assistant as a laboratory for alignment",
+            "Do-Not-Answer: A Dataset for Evaluating Safeguards in LLMs",
+            "Judging LLM-as-a-judge with MT-Bench and Chatbot Arena"
+          ],
+          "5 Evaluation Results 5.1 Comparing State-of-the-art Reward Models": [
+            "Zephyr: Direct Distillation of LM Alignment"
+          ],
+          "5 Evaluation Results 5.2 Limits of Current Reward Models": [
+            "A long way to go: Investigating length correlations in rlhf"
+          ],
+          "5 Evaluation Results 5.3 Limitations of Prior Test Sets": [
+            "Safe RLHF: Safe reinforcement learning from human feedback",
+            "UltraFeedback: Boosting Language Models with High-quality Feedback",
+            "Starling-7B: Improving LLM Helpfulness & Harmlessness with RLAIF"
+          ],
+          "6 Discussions DPO Models vs Classifiers": [
+            "Zephyr: Direct Distillation of LM Alignment",
+            "Training language models to follow instructions with human feedback"
+          ],
+          "6 Discussions Generative Reward Modeling": [
+            "Tigerscore: Towards building explainable metric for all text generation tasks",
+            "Generative judge for evaluating alignment"
+          ],
+          "6 Discussions Values Represented in Reward Models": [
+            "Moral foundations of large language models",
+            "Towards measuring the representation of subjective global opinions in language models",
+            "Fairness feedback loops: Training on synthetic data amplifies bias",
+            "The history and risks of reinforcement learning and human feedback"
+          ],
+          "6 Discussions Safety In or After RLHF": [
+            "Towards agile text classifiers for everyone"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.0105980783700943,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Self-Rewarding Language Models",
+        "arxiv_id": "2401.10020",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract We posit that to achieve superhuman agents, future models require superhuman feedback in order to provide an adequate training signal. Current approaches commonly train reward models from human preferences, which may then be bottlenecked by human performance level, and secondly these separate frozen reward models cannot then learn to improve during LLM training. In this work, we study Self-Rewarding Language Models, where the language model itself is used via LLM-as-a-Judge prompting to provide its own rewards during training. We show that during Iterative DPO training that not only does instruction following ability improve, but also the ability to provide high-quality rewards to itself. Fine-tuning Llama 2 70B on three iterations of our approach yields a model that outperforms many existing systems on the AlpacaEval 2.0 leaderboard, including Claude 2, Gemini Pro, and GPT-4 0613. While there is much left still to explore, this work opens the door to the possibility of models that can continually improve in both axes. ",
+        "sections": {
+          "1 Introduction": [
+            "A unified architecture for natural language processing: Deep neural networks with multitask learning",
+            "OpenAssistant conversations\u2013democratizing large language model alignment",
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "Llama 2: Open foundation and fine-tuned chat models",
+            "Proximal policy optimization algorithms",
+            "Training language models to follow instructions with human feedback",
+            "Some things are more cringe than others: Preference optimization with the pairwise cringe loss"
+          ],
+          "2 Self-Rewarding Language Models": [
+            "Judging LLM-as-a-judge with MT-bench and chatbot arena",
+            "Training language models to follow instructions with human feedback"
+          ],
+          "2 Self-Rewarding Language Models 2.2 Self-Instruction Creation": [
+            "Self-instruct: Aligning language models with self-generated instructions",
+            "Unnatural instructions: Tuning language models with (almost) no human labor"
+          ],
+          "2 Self-Rewarding Language Models 2.3 Instruction Following Training": [
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "Some things are more cringe than others: Preference optimization with the pairwise cringe loss"
+          ],
+          "2 Self-Rewarding Language Models 2.4 Overall Self-Alignment Algorithm": [
+            "Some things are more cringe than others: Preference optimization with the pairwise cringe loss"
+          ],
+          "3 Experiments 3.1 Experimental Setup": [
+            "GPT-4 technical report",
+            "Think you have solved question answering? Try ARC, the AI2 reasoning challenge.",
+            "Hellaswag: Can a machine really finish your sentence?",
+            "Llama 2: Open foundation and fine-tuned chat models",
+            "Training verifiers to solve math word problems",
+            "Alpacaeval: An automatic evaluator of instruction-following models",
+            "Judging LLM-as-a-judge with MT-bench and chatbot arena",
+            "Natural questions: a benchmark for question answering research",
+            "Measuring massive multitask language understanding",
+            "ROUGE: A package for automatic evaluation of summaries",
+            "Anthropic. Claude 2",
+            "Self-alignment with instruction backtranslation",
+            "Self-instruct: Aligning language models with self-generated instructions",
+            "Socialiqa: Commonsense reasoning about social interactions",
+            "Piqa: Reasoning about physical commonsense in natural language",
+            "Can a suit of armor conduct electricity? a new dataset for open book question answering",
+            "OpenAssistant conversations\u2013democratizing large language model alignment"
+          ],
+          "3 Experiments 3.2 Results": [
+            "Self-alignment with instruction backtranslation",
+            "Training language models to follow instructions with human feedback",
+            "Visualizing data using t-SNE",
+            "Llama 2: Open foundation and fine-tuned chat models"
+          ],
+          "4 Related Work": [
+            "Automatically correcting large language models: Surveying the landscape of diverse self-correction strategies"
+          ],
+          "4 Related Work Reinforcement Learning from Human Feedback (RLHF)": [
+            "Fine-tuning language models from human preferences",
+            "SLiC-HF: Sequence likelihood calibration with human feedback",
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "Proximal policy optimization algorithms",
+            "The CRINGE loss: Learning what language not to model",
+            "Some things are more cringe than others: Preference optimization with the pairwise cringe loss"
+          ],
+          "4 Related Work Reinforcement Learning from AI Feedback (RLAIF)": [
+            "Self-play fine-tuning converts weak language models to strong language models",
+            "Constitutional AI: Harmlessness from AI feedback",
+            "RLAIF: Scaling reinforcement learning from human feedback with ai feedback"
+          ],
+          "4 Related Work Improving LLMs via data augmentation (and curation)": [
+            "Reinforced self-training (rest) for language modeling",
+            "AlpaGasus: Training a better alpaca with fewer data",
+            "Self-alignment with instruction backtranslation",
+            "Self-instruct: Aligning language models with self-generated instructions",
+            "Stanford alpaca: An instruction-following llama model"
+          ],
+          "4 Related Work LLM-as-a-Judge": [
+            "Alpacafarm: A simulation framework for methods that learn from human feedback",
+            "RLAIF: Scaling reinforcement learning from human feedback with ai feedback",
+            "Prometheus: Inducing fine-grained evaluation capability in language models"
+          ],
+          "6 Limitations": [
+            "Llama 2: Open foundation and fine-tuned chat models"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.9329925775527954,
+        "extra": {
+          "expand": "not expand"
+        }
+      }
+    ],
+    "Research on using reward shaping in language model training": [
+      {
+        "title": "A Survey of Reinforcement Learning from Human Feedback",
+        "arxiv_id": "2312.14925",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Reinforcement learning from human feedback (RLHF) is a variant of reinforcement learning (RL) that learns from human feedback instead of relying on an engineered reward function. Building on prior work on the related setting of preference-based reinforcement learning (PbRL), it stands at the intersection of artificial intelligence and human-computer interaction. This positioning offers a promising avenue to enhance the performance and adaptability of intelligent systems while also improving the alignment of their objectives with human values. The training of large language models (LLMs) has impressively demonstrated this potential in recent years, where RLHF played a decisive role in targeting the model\u2019s capabilities toward human objectives. This article provides a comprehensive overview of the fundamentals of RLHF, exploring the intricate dynamics between machine agents and human input. While recent focus has been on RLHF for LLMs, our survey adopts a broader perspective, examining the diverse applications and wide-ranging impact of the technique. We delve into the core principles that underpin RLHF, shedding light on the symbiotic relationship between algorithms and human feedback, and discuss the main research trends in the field. By synthesizing the current landscape of RLHF research, this article aims to provide researchers as well as practitioners with a comprehensive understanding of this rapidly growing field of research. ",
+        "sections": {
+          "1 Introduction": [
+            "Efficient Meta Reinforcement Learning for Preference-based Fast Adaptation",
+            "Aligning Text-to-Image Models Using Human Feedback",
+            "Asking Easy Questions: A User-Friendly Approach to Active Reward Learning",
+            "Rewards Encoding Environment Dynamics Improves Preference-based Reinforcement Learning",
+            "ChatGPT: Optimizing Language Models for Dialogue",
+            "Policy Invariance Under Reward Transformations: Theory and Application to Reward Shaping",
+            "A Survey of Preference-Based Reinforcement Learning Methods",
+            "Deep Reinforcement Learning from Human Preferences",
+            "Reward Learning from Human Preferences and Demonstrations in Atari",
+            "Few-Shot Preference Learning for Human-in-the-Loop RL",
+            "SURF: Semi-supervised Reward Learning with Data Augmentation for Feedback-efficient Preference-based Reinforcement Learning",
+            "Learning Reward Functions by Integrating Human Demonstrations and Preferences",
+            "Learning Human Objectives by Evaluating Hypothetical Behavior",
+            "Defining and Characterizing Reward Gaming"
+          ],
+          "1 Introduction 1.1 Why Human Feedback": [
+            "Do You Want Your Autonomous Car To Drive Like You?",
+            "Improving Multimodal Interactive Agents with Reinforcement Learning from Human Feedback",
+            "Reinforcement Learning: An Introduction",
+            "Researching Alignment Research: Unsupervised Analysis",
+            "Scalable Agent Alignment via Reward Modeling: A Research Direction",
+            "Faulty Reward Functions in the Wild",
+            "Trial without Error: Towards Safe Reinforcement Learning via Human Intervention",
+            "A Survey of Inverse Reinforcement Learning: Challenges, Methods and Progress",
+            "Bentley, Samuel Bernard, Guillaume Beslon, David M",
+            "Artificial Intelligence, Values, and Alignment",
+            "Defining and Characterizing Reward Gaming",
+            "Identifiability in Inverse Reinforcement Learning",
+            "Thoughts on the Impact of RLHF Research",
+            "Concrete Problems in AI Safety"
+          ],
+          "1 Introduction 1.2 The Origins of Reinforcement Learning from Human Feedback": [
+            "A General Language Assistant as a Laboratory for Alignment",
+            "Reward-Rational (Implicit) Choice: A Unifying Formalism for Reward Learning",
+            "A Social Reinforcement Learning Agent",
+            "Concrete Problems in AI Safety",
+            "Preference-Based Policy Iteration: Leveraging Preference Learning for Reinforcement Learning",
+            "Deep Reinforcement Learning from Human Preferences",
+            "The Expertise Problem: Learning from Specialized Feedback",
+            "Preference-Based Policy Learning",
+            "RLHF-Blender: A Configurable Interactive Interface for Learning from Diverse Human Feedback",
+            "Learning from Human-generated Reward",
+            "Semi-Supervised Reinforcement Learning"
+          ],
+          "1 Introduction 1.3 Scope of the Survey": [
+            "A Survey of Preference-Based Reinforcement Learning Methods"
+          ],
+          "1 Introduction 1.4 Prior Surveys": [
+            "A Conceptual Framework for Externally-Influenced Agents: An Assisted Reinforcement Learning Review",
+            "Reinforcement Learning With Human Advice: A Survey",
+            "Recent Advances in Leveraging Human Guidance for Sequential Decision-Making Tasks",
+            "A Survey of Human-in-the-Loop for Machine Learning",
+            "Reward-Rational (Implicit) Choice: A Unifying Formalism for Reward Learning",
+            "A Survey on Interactive Reinforcement Learning: Design Principles and Open Challenges",
+            "Towards Intrinsic Interactive Reinforcement Learning",
+            "An Algorithmic Perspective on Imitation Learning",
+            "Summary of ChatGPT-Related Research and Perspective towards the Future of Large Language Models",
+            "Advances in Preference-based Reinforcement Learning: A Review",
+            "A Survey of Reinforcement Learning Informed by Natural Language",
+            "A Survey of Preference-Based Reinforcement Learning Methods",
+            "A Survey of Inverse Reinforcement Learning: Challenges, Methods and Progress",
+            "Open Problems and Fundamental Limitations of Reinforcement Learning from Human Feedback",
+            "A Review on Interactive Reinforcement Learning From Human Social Feedback",
+            "RLHF-Blender: A Configurable Interactive Interface for Learning from Diverse Human Feedback",
+            "AI Alignment: A Comprehensive Survey"
+          ],
+          "2 Preliminaries 2.1 Reinforcement Learning": [
+            "Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor",
+            "Reinforcement Learning: An Introduction",
+            "Proximal Policy Optimization Algorithms",
+            "Human-Level Control through Deep Reinforcement Learning",
+            "Addressing Function Approximation Error in Actor-Critic Methods"
+          ],
+          "2 Preliminaries 2.2 Preference-Based MDPs": [
+            "Optimizing Quantiles in Preference-Based Markov Decision Processes"
+          ],
+          "2 Preliminaries 2.3 Reward Learning": [
+            "Model-Free Reinforcement Learning with Skew-Symmetric Bilinear Utilities",
+            "Rank Analysis of Incomplete Block Designs: I. The Method of Paired Comparisons",
+            "Information Directed Reward Learning for Reinforcement Learning",
+            "Regret-Based Reward Elicitation for Markov Decision Processes"
+          ],
+          "2 Preliminaries 2.4 Reinforcement Learning from Human Feedback": [
+            "Curriculum Learning for Reinforcement Learning Domains: A Framework and Survey",
+            "Reinforcement Learning with Augmented Data",
+            "Proximal Policy Optimization Algorithms",
+            "DeepMDP: Learning Continuous Latent Space Models for Representation Learning",
+            "Dream to Control: Learning Behaviors by Latent Imagination"
+          ],
+          "2 Preliminaries 2.5 Active Learning": [
+            "A Comprehensive Survey on Deep Active Learning and Its Applications in Medical Image Analysis",
+            "Active Learning"
+          ],
+          "3 Feedback": [
+            "RLHF-Blender: A Configurable Interactive Interface for Learning from Diverse Human Feedback",
+            "Reward-Rational (Implicit) Choice: A Unifying Formalism for Reward Learning"
+          ],
+          "3 Feedback 3.1 Attributes of Feedback Types": [
+            "Literal or Pedagogic Human? Analyzing Human Model Misspecification in Objective Learning",
+            "RLHF-Blender: A Configurable Interactive Interface for Learning from Diverse Human Feedback"
+          ],
+          "3 Feedback 3.2 Common Classes": [
+            "Active Learning of Reward Dynamics from Hierarchical Queries",
+            "The Off-Switch Game",
+            "LaND: Learning to Navigate From Disengagements",
+            "Variational Inverse Control with Events: A General Framework for Data-Driven Reward Definition",
+            "Model-Free Preference-Based Reinforcement Learning",
+            "Coactive Learning",
+            "Assisted Robust Reward Design",
+            "Safe Deep RL in 3D Environments Using Human Feedback",
+            "Learning Preferences for Manipulation Tasks from Online Coactive Feedback",
+            "Improving Multimodal Interactive Agents with Reinforcement Learning from Human Feedback",
+            "Causal Confusion and Reward Misidentification in Preference-Based Reward Learning",
+            "Exploiting Unlabeled Data for Feedback Efficient Human Preference Based Reinforcement Learning",
+            "Active Reward Learning from Critiques",
+            "Widening the Pipeline in Human-Guided Reinforcement Learning with Explanation and Context-Aware Data Augmentation",
+            "Fine-Tuning Language Models from Human Preferences",
+            "Learning Human Objectives from Sequences of Physical Corrections",
+            "Zero-Shot Preference Learning for Offline RL via Optimal Transport",
+            "Inducing Structure in Reward Learning by Learning Features",
+            "Deep Reinforcement Learning from Human Preferences",
+            "Preference-Based Policy Learning",
+            "The Effect of Modeling Human Rationality Level on Learning Rewards from Multiple Feedback Types",
+            "Scaling Data-Driven Robotics with Reward Sketching and Batch Reinforcement Learning",
+            "Learning from Richer Human Guidance: Augmenting Comparison-Based Learning with Feature Queries",
+            "SIRL: Similarity-based Implicit Representation Learning",
+            "Reward Learning from Human Preferences and Demonstrations in Atari",
+            "Learning Multimodal Rewards from Rankings",
+            "FRESH: Interactive Reward Shaping in High-Dimensional State Spaces Using Human Feedback",
+            "Learning Reward Functions from Scale Feedback",
+            "Ratings Are Overrated!",
+            "Physical Interaction as Communication: Learning Robot Objectives Online from Human Corrections",
+            "Safety-Aware Preference-Based Learning for Safety-Critical Control",
+            "Active Inverse Reward Design",
+            "Active Comparison Based Learning Incorporating User Uncertainty and Noise",
+            "Reward-Rational (Implicit) Choice: A Unifying Formalism for Reward Learning",
+            "End-To-End Robotic Reinforcement Learning without Reward Engineering",
+            "GAN-Based Interactive Reinforcement Learning from Demonstration and Human Evaluative Feedback",
+            "Including Uncertainty When Learning from Human Corrections",
+            "Preference-Based Reinforcement Learning: A Formal Framework and a Policy Iteration Algorithm",
+            "Maximizing BCI Human Feedback Using Active Learning",
+            "The EMPATHIC Framework for Task Learning from Implicit Human Feedback"
+          ],
+          "3 Feedback 3.3 Initializations": [
+            "Learning Robust Rewards with Adverserial Inverse Reinforcement Learning",
+            "Extrapolating Beyond Suboptimal Demonstrations via Inverse Reinforcement Learning from Observations",
+            "Few-Shot Goal Inference for Visuomotor Learning and Planning",
+            "A Survey of Inverse Reinforcement Learning: Challenges, Methods and Progress",
+            "Vision-Language Models as Success Detectors"
+          ],
+          "4 Label Collection 4.1 Active Learning": [
+            "Active Reward Learning",
+            "Batch Active Preference-Based Learning of Reward Functions",
+            "Information Directed Reward Learning for Reinforcement Learning",
+            "Asking Easy Questions: A User-Friendly Approach to Active Reward Learning",
+            "Preference-Based Reinforcement Learning with Finite-Time Guarantees",
+            "Learning Human Objectives by Evaluating Hypothetical Behavior",
+            "Safe Deep RL in 3D Environments Using Human Feedback",
+            "INQUIRE: INteractive Querying for User-aware Informative REasoning",
+            "Nonparametric Bayesian Inverse Reinforcement Learning for Multiple Reward Functions",
+            "Actively Learning Costly Reward Functions for Reinforcement Learning",
+            "Active Reward Learning from Online Preferences",
+            "Reinforcement Learning from Diverse Human Preferences",
+            "Deep Reinforcement Learning from Human Preferences",
+            "The Effect of Modeling Human Rationality Level on Learning Rewards from Multiple Feedback Types",
+            "Portfolio Allocation for Bayesian Optimization",
+            "Active Preference Learning Using Maximum Regret",
+            "Preference-Based Learning of Reward Function Features",
+            "Teacher-Aware Active Robot Learning",
+            "Active Inverse Reward Design",
+            "Here\u2019s What I\u2019ve Learned: Asking Questions That Reveal Reward Learning",
+            "PEBBLE: Feedback-Efficient Interactive Reinforcement Learning via Relabeling Experience and Unsupervised Pre-training",
+            "Active Preference-Based Learning of Reward Functions",
+            "The Expertise Problem: Learning from Specialized Feedback"
+          ],
+          "4 Label Collection 4.2 Challenges of Human Labeling": [
+            "Designing Interfaces for Explicit Preference Elicitation: A User-Centered Investigation of Preference Representation and Elicitation Process",
+            "Training Language Models to Follow Instructions with Human Feedback",
+            "Asking Easy Questions: A User-Friendly Approach to Active Reward Learning",
+            "Survey Research Methods",
+            "RLHF-Blender: A Configurable Interactive Interface for Learning from Diverse Human Feedback",
+            "Learning Preferences for Manipulation Tasks from Online Coactive Feedback",
+            "Time-Efficient Reward Learning via Visually Assisted Cluster Ranking",
+            "Improving Multimodal Interactive Agents with Reinforcement Learning from Human Feedback",
+            "Towards Psychology-Aware Preference Construction in Recommender Systems: Overview and Research Issues",
+            "Widening the Pipeline in Human-Guided Reinforcement Learning with Explanation and Context-Aware Data Augmentation",
+            "Fine-Tuning Language Models from Human Preferences",
+            "Deep Reinforcement Learning from Human Preferences",
+            "Humanized Recommender Systems: State-of-the-art and Research Issues",
+            "The Effect of Modeling Human Rationality Level on Learning Rewards from Multiple Feedback Types",
+            "Improving Alignment of Dialogue Agents via Targeted Human Judgements",
+            "\u201cConstitutional AI: Harmlessness from AI Feedback\u201d, 2022",
+            "Active Reward Learning from Multiple Teachers",
+            "Consumer Decision Making in Knowledge-Based Recommendation",
+            "On the Challenges and Practices of Reinforcement Learning from Real Human Feedback",
+            "Preference-Based Learning of Reward Function Features",
+            "The Construction of Preference",
+            "Human Decision Making and Recommender Systems",
+            "Preference Transformer: Modeling Human Preferences Using Transformers for RL",
+            "R. Furr \u201cPsychometrics: An Introduction\u201d",
+            "Learning to Summarize with Human Feedback",
+            "Reward-Rational (Implicit) Choice: A Unifying Formalism for Reward Learning",
+            "Using Discrete Choice Experiments to Value Health and Health Care",
+            "Methodological Reflections for AI Alignment Research Using Human Feedback",
+            "Ordering Effects and Choice Set Awareness in Repeat-Response Stated Preference Studies",
+            "Interaction Algorithm Effect on Human Experience with Reinforcement Learning",
+            "The Expertise Problem: Learning from Specialized Feedback"
+          ],
+          "5 Reward Model Training 5.1 Human Feedback Model": [
+            "The Analysis of Permutations",
+            "Random Choice as Behavioral Optimization",
+            "A Law of Comparative Judgment",
+            "Model-Free Preference-Based Reinforcement Learning",
+            "LESS Is More: Rethinking Probabilistic Models of Human Behavior",
+            "Mastering Diverse Domains through World Models",
+            "Open Problems and Fundamental Limitations of Reinforcement Learning from Human Feedback",
+            "Programming by Feedback",
+            "Models of Human Preference for Learning Reward Functions",
+            "Improving Multimodal Interactive Agents with Reinforcement Learning from Human Feedback",
+            "Discrete Choice Methods with Simulation",
+            "Active Reward Learning from Online Preferences",
+            "Non-Markovian Reward Modelling from Trajectory Labels via Interpretable Multiple Instance Learning",
+            "Statistical Methods for Ranking Data",
+            "Deep Reinforcement Learning from Human Preferences",
+            "Preference-Learning Based Inverse Reinforcement Learning for Dialog Control",
+            "The Effect of Modeling Human Rationality Level on Learning Rewards from Multiple Feedback Types",
+            "Learning Multimodal Rewards from Rankings",
+            "Individual Choice Behavior",
+            "Models for Paired Comparison Data: A Review with Emphasis on Dependent Data",
+            "Preference Transformer: Modeling Human Preferences Using Transformers for RL",
+            "On Huber\u2019s Contaminated Model",
+            "Misspecification in Inverse Reinforcement Learning",
+            "Literal or Pedagogic Human? Analyzing Human Model Misspecification in Objective Learning",
+            "Rank Analysis of Incomplete Block Designs: I. The Method of Paired Comparisons",
+            "Preselection Bandits",
+            "Reward-Rational (Implicit) Choice: A Unifying Formalism for Reward Learning",
+            "Active Comparison Based Learning Incorporating User Uncertainty and Noise",
+            "Humans Are Not Boltzmann Distributions: Challenges and Opportunities for Modelling Human Feedback and Interaction in Reinforcement Learning",
+            "A Bayesian Approach for Policy Learning from Trajectory Preference Queries",
+            "Gibbs Measures and Phase Transitions",
+            "The Expertise Problem: Learning from Specialized Feedback",
+            "Choice Set Misspecification in Reward Inference"
+          ],
+          "5 Reward Model Training 5.2 Utility Learning": [
+            "SLiC-HF: Sequence Likelihood Calibration with Human Feedback",
+            "Explainable Artificial Intelligence (XAI): Concepts, Taxonomies, Opportunities and Challenges toward Responsible AI",
+            "Iterative Interactive Reward Learning",
+            "Explainable Reinforcement Learning: A Survey",
+            "Learning Dynamic Robot-to-Human Object Handover from Human Feedback",
+            "Interpretable Preference-based Reinforcement Learning with Tree-Structured Reward Functions",
+            "On The Fragility of Learned Reward Functions",
+            "Algorithms for Inverse Reinforcement Learning",
+            "Programming by Feedback",
+            "Improving Multimodal Interactive Agents with Reinforcement Learning from Human Feedback",
+            "Learning State Importance for Preference-Based Reinforcement Learning",
+            "Beyond Reward: Offline Preference-guided Policy Optimization",
+            "Attention Is All You Need",
+            "A Survey of Preference-Based Reinforcement Learning Methods",
+            "Deep Reinforcement Learning from Human Preferences",
+            "Active Preference-Based Gaussian Process Regression for Reward Learning",
+            "Direct Preference-based Policy Optimization without Reward Modeling",
+            "Scaling Laws for Reward Model Overoptimization",
+            "Preference-Based Learning of Reward Function Features",
+            "Reward Learning from Human Preferences and Demonstrations in Atari",
+            "Invariance in Policy Optimisation and Partial Identifiability in Reward Learning",
+            "A Survey of Inverse Reinforcement Learning: Challenges, Methods and Progress",
+            "Preference Transformer: Modeling Human Preferences Using Transformers for RL",
+            "Safety-Aware Preference-Based Learning for Safety-Critical Control",
+            "Direct Preference Optimization: Your Language Model Is Secretly a Reward Model",
+            "A Bayesian Approach for Policy Learning from Trajectory Preference Queries",
+            "Active Preference-Based Learning of Reward Functions",
+            "Learning Reward Functions by Integrating Human Demonstrations and Preferences",
+            "A General Theoretical Paradigm to Understand Learning from Human Preferences",
+            "Quantifying Hypothesis Space Misspecification in Learning From Human\u2013Robot Demonstrations and Physical Corrections"
+          ],
+          "5 Reward Model Training 5.3 Evaluating Learned Reward Functions": [
+            "A General Framework for Reward Function Distances",
+            "Doubly Robust Off-policy Value Evaluation for Reinforcement Learning",
+            "Quantifying Differences in Reward Functions",
+            "Eligibility Traces for Off-Policy Policy Evaluation",
+            "Preprocessing Reward Functions for Interpretability",
+            "STARC: A General Framework For Quantifying Differences Between Reward Functions",
+            "Policy Invariance Under Reward Transformations: Theory and Application to Reward Shaping",
+            "Off-Policy Evaluation in Markov Decision Processes",
+            "Dynamics-Aware Comparison of Learned Reward Functions",
+            "Algorithms for Inverse Reinforcement Learning"
+          ],
+          "5 Reward Model Training 5.4 Reward Model Inputs": [
+            "Improving Multimodal Interactive Agents with Reinforcement Learning from Human Feedback",
+            "Deep Reinforcement Learning from Human Preferences",
+            "Training Language Models to Follow Instructions with Human Feedback"
+          ],
+          "5 Reward Model Training 5.5 Increasing Feedback Efficiency": [
+            "Weak Human Preference Supervision for Deep Reinforcement Learning",
+            "Human-Guided Robot Behavior Learning: A GAN-Assisted Preference-Based Reinforcement Learning Approach",
+            "Rewards Encoding Environment Dynamics Improves Preference-based Reinforcement Learning",
+            "Training Language Models to Follow Instructions with Human Feedback",
+            "Learning to Compare for Better Training and Evaluation of Open Domain Natural Language Generation Models",
+            "Vision-Language Models as Success Detectors",
+            "A General Language Assistant as a Laboratory for Alignment",
+            "Few-Shot Goal Inference for Visuomotor Learning and Planning",
+            "A State Augmentation Based Approach to Reinforcement Learning from Human Preferences",
+            "Improving Multimodal Interactive Agents with Reinforcement Learning from Human Feedback",
+            "Zero-Shot Preference Learning for Offline RL via Optimal Transport",
+            "Inducing Structure in Reward Learning by Learning Features",
+            "SURF: Semi-supervised Reward Learning with Data Augmentation for Feedback-efficient Preference-based Reinforcement Learning",
+            "Data Driven Reward Initialization for Preference Based Reinforcement Learning",
+            "Safe Imitation Learning via Fast Bayesian Reward Inference from Preferences",
+            "Efficient Meta Reinforcement Learning for Preference-based Fast Adaptation",
+            "SIRL: Similarity-based Implicit Representation Learning",
+            "Few-Shot Preference Learning for Human-in-the-Loop RL",
+            "Lifelong Inverse Reinforcement Learning",
+            "Data-Efficient Reinforcement Learning with Self-Predictive Representations",
+            "Symbol Guided Hindsight Priors for Reward Learning from Human Preferences",
+            "Extrapolating Beyond Suboptimal Demonstrations via Inverse Reinforcement Learning from Observations",
+            "Reward Uncertainty for Exploration in Preference-based Reinforcement Learning"
+          ],
+          "6 Theory 6.1 Policy Learning": [
+            "Human-in-the-Loop: Provably Efficient Preference-based Reinforcement Learning with General Function Approximation",
+            "Reward Collapse in Aligning Large Language Models: A Prompt-Aware Approach to Preference Rankings",
+            "Making RL with Preference-based Feedback Efficient via Randomization",
+            "Preference-Based Reinforcement Learning with Finite-Time Guarantees",
+            "A Theory of the Learnable",
+            "Generalized Transitivity: A Systematic Comparison of Concepts with an Application to Preferences in the Babington Smith Model",
+            "Dueling Posterior Sampling for Preference-Based Reinforcement Learning",
+            "Online Structured Prediction via Coactive Learning",
+            "Reinforcement Learning with Human Feedback: Learning Dynamic Choices via Pessimism",
+            "Learning Preferences for Manipulation Tasks from Online Coactive Feedback",
+            "Bandit Algorithms",
+            "Bridging the Gap between Regret Minimization and Best Arm Identification, with Application to A/B Tests",
+            "Provably Efficient Reinforcement Learning with Linear Function Approximation",
+            "Training Parsers by Inverse Reinforcement Learning",
+            "Optimal Replacement of GMC Bus Engines: An Empirical Model of Harold Zurcher",
+            "Multi-Dueling Bandits with Dependent Arms",
+            "How to Query Human Feedback Efficiently in RL?",
+            "Provably Feedback-Efficient Reinforcement Learning via Active Reward Learning",
+            "On the Theory of Reinforcement Learning with Once-per-Episode Feedback",
+            "Interactively Optimizing Information Retrieval Systems as a Dueling Bandits Problem",
+            "Optimal Algorithms for Stochastic Contextual Preference Bandits",
+            "Principled Reinforcement Learning with Human Feedback from Pairwise or K-wise Comparisons",
+            "Provable Offline Reinforcement Learning with Human Feedback",
+            "Eluder Dimension and the Sample Complexity of Optimistic Exploration",
+            "A Learning Theory of Ranking Aggregation",
+            "Differentially Private Reward Estimation from Preference Based Feedback",
+            "Differential Privacy: A Survey of Results",
+            "Dueling RL: Reinforcement Learning with Trajectory Preferences",
+            "Stochastic Contextual Dueling Bandits under Linear Stochastic Transitivity Models",
+            "Risk Bounds for Statistical Learning",
+            "Maximum Entropy Inverse Reinforcement Learning"
+          ],
+          "6 Theory 6.2 Preference-Based vs.\u00a0Reward-Based Learning": [
+            "Is RLHF More Difficult than Standard RL? A Theoretical Perspective",
+            "Is Pessimism Provably Efficient for Offline RL?",
+            "Provable Benefits of Policy Learning from Human Preferences in Contextual Bandit Problems",
+            "Principled Reinforcement Learning with Human Feedback from Pairwise or K-wise Comparisons"
+          ],
+          "7 Applications and Benchmarks": [
+            "ChatGPT: Optimizing Language Models for Dialogue"
+          ],
+          "7 Applications and Benchmarks 7.1 Applications": [
+            "Aligning Text-to-Image Models Using Human Feedback",
+            "Learning a Universal Human Prior for Dexterous Manipulation from Human Preference",
+            "Improving Multimodal Interactive Agents with Reinforcement Learning from Human Feedback",
+            "GPT-4 Technical Report",
+            "Fine-Tuning Language Models from Human Preferences",
+            "Preference-Based Image Generation",
+            "APRIL: Interactively Learning to Summarise by Combining Active Preference Learning and Reinforcement Learning",
+            "ChatGPT: Optimizing Language Models for Dialogue",
+            "Towards Solving Fuzzy Tasks with Human Feedback: A Retrospective of the MineRL BASALT 2022 Competition",
+            "WebGPT: Browser-assisted Question-Answering with Human Feedback",
+            "Deep Reinforcement Learning from Human Preferences",
+            "Training Language Models to Follow Instructions with Human Feedback",
+            "Human-in-the-Loop Abstractive Dialogue Summarization",
+            "Learning Dynamic Robot-to-Human Object Handover from Human Feedback",
+            "Tuning Computer Vision Models With Task Rewards",
+            "ImageReward: Learning and Evaluating Human Preferences for Text-to-Image Generation",
+            "Improving Alignment of Dialogue Agents via Targeted Human Judgements",
+            "PrefRec: Recommender Systems with Human Preferences for Reinforcing Long-term User Engagement"
+          ],
+          "7 Applications and Benchmarks 7.2 Supporting Libraries": [
+            "trlX: A Scalable Framework for RLHF",
+            "Deep Reinforcement Learning from Human Preferences",
+            "POLAR: Preference Optimization and Learning Algorithms for Robotics",
+            "APReL: A Library for Active Preference-based Reward Learning Algorithms",
+            "Imitation: Clean Imitation Learning Implementations"
+          ],
+          "7 Applications and Benchmarks 7.3 Benchmarks": [
+            "The MineRL BASALT Competition on Learning from Human Feedback",
+            "Is Reinforcement Learning (Not) for Natural Language Processing: Benchmarks, Baselines, and Building Blocks for Natural Language Policy Optimization",
+            "B-Pref: Benchmarking Preference-Based Reinforcement Learning",
+            "TruthfulQA: Measuring How Models Mimic Human Falsehoods",
+            "DERAIL: Diagnostic Environments for Reward And Imitation Learning"
+          ],
+          "7 Applications and Benchmarks 7.4 Evaluation": [
+            "Do We Use the Right Measure? Challenges in Evaluating Reward Learning Algorithms",
+            "Improving Multimodal Interactive Agents with Reinforcement Learning from Human Feedback",
+            "Deep Reinforcement Learning from Human Preferences",
+            "Training Language Models to Follow Instructions with Human Feedback",
+            "Physical Interaction as Communication: Learning Robot Objectives Online from Human Corrections",
+            "Learning Preferences for Manipulation Tasks from Online Coactive Feedback"
+          ],
+          "8 Discussion and Conclusion": [
+            "The Wisdom of Hindsight Makes Language Models Better Instruction Followers",
+            "Training Language Models to Follow Instructions with Human Feedback",
+            "Making RL with Preference-based Feedback Efficient via Randomization",
+            "Open Problems and Fundamental Limitations of Reinforcement Learning from Human Feedback",
+            "Interpretable Preference-based Reinforcement Learning with Tree-Structured Reward Functions",
+            "Eureka: Human-Level Reward Design via Coding Large Language Models",
+            "Safe RLHF: Safe Reinforcement Learning from Human Feedback",
+            "\u201cConstitutional AI: Harmlessness from AI Feedback\u201d, 2022",
+            "Direct Preference-based Policy Optimization without Reward Modeling",
+            "Reward Is Enough",
+            "Fairness in Preference-based Reinforcement Learning",
+            "Preference-Based Learning of Reward Function Features",
+            "Inverse Preference Learning: Preference-based RL without a Reward Function",
+            "Is RLHF More Difficult than Standard RL? A Theoretical Perspective",
+            "FRESH: Interactive Reward Shaping in High-Dimensional State Spaces Using Human Feedback",
+            "Learning Rewards to Optimize Global Performance Metrics in Deep Reinforcement Learning",
+            "Benchmarks and Algorithms for Offline Preference-Based Reward Learning",
+            "Reward Uncertainty for Exploration in Preference-based Reinforcement Learning",
+            "Reward Is Not Enough"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.012498115189373493,
+        "extra": {
+          "expand": "not expand"
+        }
+      }
+    ]
+  },
+  "abstract": "",
+  "sections": "",
+  "source": "Root",
+  "select_score": 0.0,
+  "extra": {
+    "touch_ids": [
+      "2406.19644",
+      "2409.12798",
+      "2405.07162",
+      "2404.12358",
+      "2408.10215",
+      "2401.06080",
+      "2401.07382",
+      "2401.06081",
+      "2404.00282",
+      "2309.11489",
+      "2409.02428",
+      "2403.19279",
+      "2302.06692",
+      "2303.00001",
+      "2403.04642",
+      "2407.00324",
+      "2404.04932",
+      "2312.14925",
+      "2402.00782",
+      "2302.10720",
+      "2403.13787",
+      "2401.10020"
+    ],
+    "crawler_recall_papers": [
+      "A Survey of Reinforcement Learning from Human Feedback",
+      "From $r$ to $Q^*$: Your Language Model is Secretly a Q-Function",
+      "Secrets of RLHF in Large Language Models Part II: Reward Modeling",
+      "Text2Reward: Automated Dense Reward Function Generation for Reinforcement Learning",
+      "Revisiting Sparse Rewards for Goal-Reaching Reinforcement Learning",
+      "Beyond Human Preferences: Exploring Reinforcement Learning Trajectory Evaluation and Improvement through LLMs",
+      "Assessing the Zero-Shot Capabilities of LLMs for Action Evaluation in RL",
+      "Learning Reward for Robot Skills Using Large Language Models via Self-Alignment",
+      "Comprehensive Overview of Reward Engineering and Shaping in Advancing Reinforcement Learning Applications",
+      "DRLC: Reinforcement Learning with Dense Rewards from LLM Critic",
+      "Large Language Models as Efficient Reward Function Searchers for Custom-Environment Multi-Objective Reinforcement Learning",
+      "Reward Design with Language Models",
+      "Dense Reward for Free in Reinforcement Learning from Human Feedback",
+      "Improving Large Language Models via Fine-grained Reinforcement Learning with Minimum Editing Constraint",
+      "Fine-Tuning Language Models with Reward Learning on Policy",
+      "Towards Understanding the Influence of Reward Margin on Preference Model Performance",
+      "RewardBench: Evaluating Reward Models for Language Modeling",
+      "Self-Rewarding Language Models",
+      "Survey on Large Language Model-Enhanced Reinforcement Learning: Concept, Taxonomy, and Methods",
+      "Guiding Pretraining in Reinforcement Learning with Large Language Models",
+      "Teaching Large Language Models to Reason with Reinforcement Learning",
+      "Learning to Play Text-based Adventure Games with Maximum Entropy Reinforcement Learning"
+    ],
+    "recall_papers": [
+      "Beyond Human Preferences: Exploring Reinforcement Learning Trajectory Evaluation and Improvement through LLMs",
+      "Assessing the Zero-Shot Capabilities of LLMs for Action Evaluation in RL",
+      "DRLC: Reinforcement Learning with Dense Rewards from LLM Critic",
+      "Reward Design with Language Models",
+      "Dense Reward for Free in Reinforcement Learning from Human Feedback",
+      "Improving Large Language Models via Fine-grained Reinforcement Learning with Minimum Editing Constraint",
+      "Fine-Tuning Language Models with Reward Learning on Policy",
+      "Self-Rewarding Language Models",
+      "Guiding Pretraining in Reinforcement Learning with Large Language Models",
+      "Teaching Large Language Models to Reason with Reinforcement Learning"
+    ],
+    "answer": [
+      "Beyond Sparse Rewards: Enhancing Reinforcement Learning with Language   Model Critique in Text Generation",
+      "Retroformer: Retrospective Large Language Agents with Policy Gradient   Optimization",
+      "Reward Design with Language Models",
+      "Quark: Controllable Text Generation with Reinforced Unlearning",
+      "Dense Reward for Free in Reinforcement Learning from Human Feedback",
+      "Language Reward Modulation for Pretraining Reinforcement Learning",
+      "Fine-Grained Human Feedback Gives Better Rewards for Language Model   Training",
+      "Self-Rewarding Language Models",
+      "Auto MC-Reward: Automated Dense Reward Design with Large Language Models for Minecraft",
+      "Token-level Direct Preference Optimization",
+      "Extracting Heuristics from Large Language Models for Reward Shaping in Reinforcement Learning",
+      "Motif: Intrinsic Motivation from Artificial Intelligence Feedback",
+      "Assessing the Zero-Shot Capabilities of LLMs for Action Evaluation in RL",
+      "Simpo: Simple preference optimization with a reference-free reward",
+      "Math-shepherd: Verify and reinforce llms step-by-step without human annotations",
+      "Guiding pretraining in reinforcement learning with large language models"
+    ]
+  }
+}

@@ -1,0 +1,1617 @@
+{
+  "title": "Provide papers demonstrating that the self-correction of LLMs does not enhance their performance.",
+  "arxiv_id": "",
+  "depth": -1,
+  "child": {
+    "Survey papers on self-correction not enhancing LLM performance": [
+      {
+        "title": "Reasoning with Large Language Models, a Survey",
+        "arxiv_id": "2407.11511",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract Scaling up language models to billions of parameters has opened up possibilities for in-context learning, allowing instruction tuning and few-shot learning on tasks that the model was not specifically trained for. This has achieved breakthrough performance on language tasks such as translation, summarization, and question-answering. Furthermore, in addition to these associative \u201cSystem 1\u201d tasks, recent advances in Chain-of-thought prompt learning have demonstrated strong \u201cSystem 2\u201d reasoning abilities, answering a question in the field of artificial general intelligence whether LLMs can reason. The field started with the question whether LLMs can solve grade school math word problems. This paper reviews the rapidly expanding field of prompt-based reasoning with LLMs. Our taxonomy identifies different ways to generate, evaluate, and control multi-step reasoning. We provide an in-depth coverage of core approaches and open problems, and we propose a research agenda for the near future. Finally, we highlight the relation between reasoning and prompt-based learning, and we discuss the relation between reasoning, sequential decision processes, and reinforcement learning. We find that self-improvement, self-reflection, and some metacognitive abilities of the reasoning processes are possible through the judicious use of prompts. True self-improvement and self-reasoning, to go from reasoning with LLMs to reasoning by LLMs, remains future work.",
+        "sections": {
+          "1 Introduction": [
+            "Attention is all you need",
+            "Training language models to follow instructions with human feedback",
+            "Chain-of-thought prompting elicits reasoning in large language models",
+            "Glue: A multi-task benchmark and analysis platform for natural language understanding",
+            "Metacognition",
+            "A survey on hallucination in large language models: Principles, taxonomy, challenges, and open questions",
+            "Emergent abilities of large language models",
+            "Training verifiers to solve math word problems",
+            "Large language models are zero-shot reasoners",
+            "Findings of the 2022 conference on machine translation (wmt22)",
+            "Thinking, fast and slow",
+            "Can ChatGPT replace traditional KBQA models? An in-depth analysis of the question answering performance of the GPT LLM family",
+            "Language models are few-shot learners"
+          ],
+          "2 Background: Reasoning with LLMs": [
+            "Large language models: A survey",
+            "A survey of large language models"
+          ],
+          "2 Background: Reasoning with LLMs 2.1 Training Pipeline Language Model": [
+            "A survey on in-context learning",
+            "Attention is all you need",
+            "A survey on knowledge distillation of large language models",
+            "Training language models to follow instructions with human feedback",
+            "Lora: Low-rank adaptation of large language models",
+            "Large language models: A survey",
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "Quantization and training of neural networks for efficient integer-arithmetic-only inference",
+            "Emergent abilities of large language models",
+            "Mixed precision training",
+            "Language models are few-shot learners"
+          ],
+          "2 Background: Reasoning with LLMs 2.2 In-Context Learning": [
+            "Pre-train, prompt, and predict: A systematic survey of prompting methods in natural language processing",
+            "A survey of deep meta-learning",
+            "Deep learning",
+            "Model-agnostic meta-learning for fast adaptation of deep networks",
+            "Language models are unsupervised multitask learners.",
+            "Language models are few-shot learners",
+            "A survey on in-context learning"
+          ],
+          "2 Background: Reasoning with LLMs 2.3 Reasoning Pipeline": [
+            "Self-refine: Iterative refinement with self-feedback",
+            "Dynamic programming"
+          ],
+          "3 Benchmarks": [
+            "Don\u2019t give me the details, just the summary! topic-aware convolutional neural networks for extreme summarization",
+            "A diverse corpus for evaluating and developing english math word problem solvers",
+            "Are nlp models really able to solve simple math word problems?",
+            "Chain-of-thought prompting elicits reasoning in large language models",
+            "Glue: A multi-task benchmark and analysis platform for natural language understanding",
+            "Bert: Pre-training of deep bidirectional transformers for language understanding",
+            "Commonsenseqa: A question answering challenge targeting commonsense knowledge",
+            "Training verifiers to solve math word problems",
+            "Language models are unsupervised multitask learners.",
+            "Findings of the 2022 conference on machine translation (wmt22)",
+            "Program induction by rationale generation: Learning to solve and explain algebraic word problems",
+            "Mawps: A math word problem repository",
+            "The lambada dataset: Word prediction requiring a broad discourse context"
+          ],
+          "3 Benchmarks GSM8K": [
+            "Training verifiers to solve math word problems"
+          ],
+          "3 Benchmarks ASDiv": [
+            "A diverse corpus for evaluating and developing english math word problem solvers"
+          ],
+          "3 Benchmarks MAWPS": [
+            "Mawps: A math word problem repository"
+          ],
+          "3 Benchmarks SVAMP": [
+            "A diverse corpus for evaluating and developing english math word problem solvers",
+            "Mawps: A math word problem repository",
+            "Are nlp models really able to solve simple math word problems?"
+          ],
+          "3 Benchmarks AQuA": [
+            "Program induction by rationale generation: Learning to solve and explain algebraic word problems"
+          ],
+          "5 Prompt Generation, Evaluation and Control Perform Control of Reasoning Steps": [
+            "Algorithms for sequential decision-making",
+            "Learning to play: reinforcement learning and games",
+            "Reinforcement learning: An introduction"
+          ],
+          "5 Prompt Generation, Evaluation and Control 5.1 Generation of Steps": [
+            "Automatic chain of thought prompting in large language models",
+            "Measuring and narrowing the compositionality gap in language models",
+            "Chain-of-thought prompting elicits reasoning in large language models",
+            "Solving general arithmetic word problems",
+            "Scaling language models: Methods, analysis & insights from training gopher",
+            "Show your work: Scratchpads for intermediate computation with language models",
+            "Complexity-based prompting for multi-step reasoning",
+            "Training verifiers to solve math word problems",
+            "Large language models are zero-shot reasoners",
+            "Program induction by rationale generation: Learning to solve and explain algebraic word problems"
+          ],
+          "5 Prompt Generation, Evaluation and Control 5.2 Evaluation of Steps": [
+            "Program of thoughts prompting: Disentangling computation from reasoning for numerical reasoning tasks",
+            "Large language models can self-improve",
+            "Star: Self-taught reasoner bootstrapping reasoning with reasoning",
+            "Teaching large language models to self-debug",
+            "Refiner: Reasoning feedback on intermediate representations",
+            "Evaluating large language models trained on code",
+            "Inner monologue: Embodied reasoning through planning with language models",
+            "Ul2: Unifying language learning paradigms",
+            "Self-consistency improves chain of thought reasoning in language models",
+            "Chain of tools: Large language model is an automatic multi-tool learner.",
+            "Llamea: A large language model evolutionary algorithm for automatically generating metaheuristics",
+            "Reinforcement learning: A survey",
+            "On the advance of making language models better reasoners",
+            "Large language models are better reasoners with self-verification",
+            "Mathprompter: Mathematical reasoning using large language models",
+            "Language models are few-shot learners",
+            "Learning to predict by the methods of temporal differences",
+            "Training language models to follow instructions with human feedback",
+            "Judging llm-as-a-judge with mt-bench and chatbot arena",
+            "Do as i can, not as i say: Grounding language in robotic affordances",
+            "Mathematical discoveries from program search with large language models",
+            "Generating sequences by learning to self-correct",
+            "Pal: Program-aided language models",
+            "Generate & rank: A multi-task framework for math word problems",
+            "Program induction by rationale generation: Learning to solve and explain algebraic word problems",
+            "Cliport: What and where pathways for robotic manipulation"
+          ],
+          "5 Prompt Generation, Evaluation and Control 5.3 Control of Steps": [
+            "Diversity is all you need: Learning skills without a reward function",
+            "Reinforcement learning: An introduction",
+            "Reflexion: Language agents with verbal reinforcement learning",
+            "Ensemble learning: A survey",
+            "Least-to-most prompting enables complex reasoning in large language models.",
+            "Self-seeding and multi-intent self-instructing llms for generating intent-aware information-seeking dialogs",
+            "Evaluating large language models trained on code",
+            "Tree of thoughts: Deliberate problem solving with large language models",
+            "Chain-of-experts: When llms meet complex operations research problems",
+            "Buffer of thoughts: Thought-augmented reasoning with large language models",
+            "Curriculum learning",
+            "React: Synergizing reasoning and acting in language models",
+            "Self-consistency improves chain of thought reasoning in language models",
+            "Voyager: An open-ended embodied agent with large language models",
+            "Chain-of-thought prompting elicits reasoning in large language models",
+            "Graph of thoughts: Solving elaborate problems with large language models.",
+            "Self-refine: Iterative refinement with self-feedback",
+            "Progressive-hint prompting improves reasoning in large language models",
+            "Large language models are better reasoners with self-verification",
+            "Pal: Program-aided language models",
+            "Self-evaluation guided beam search for reasoning"
+          ],
+          "6 Discussion 6.1 Hallucination, Faithfulness and Scaling": [
+            "Language models don\u2019t always say what they think: unfaithful explanations in chain-of-thought prompting",
+            "Language models are greedy reasoners: A systematic formal analysis of chain-of-thought",
+            "A survey on knowledge distillation of large language models",
+            "Explanations from large language models make small reasoners better",
+            "Promptagator: Few-shot dense retrieval from 8 examples",
+            "Can llm graph reasoning generalize beyond pattern memorization?",
+            "Measuring faithfulness in chain-of-thought reasoning",
+            "Prompt distillation for efficient llm-based recommendation",
+            "Faithful chain-of-thought reasoning",
+            "Distilling system 2 into system 1",
+            "Teaching small language models to reason",
+            "The impact of reasoning step length on large language models",
+            "Scaling laws for neural language models",
+            "Towards understanding chain-of-thought prompting: An empirical study of what matters",
+            "Embodied cot distillation from llm to off-the-shelf agents",
+            "Beyond accuracy: Evaluating the reasoning behavior of large language models\u2013a survey"
+          ],
+          "6 Discussion 6.2 Limitations: What LLMs Can and Cannot do": [
+            "Measuring mathematical problem solving with the math dataset",
+            "Handbook of knowledge representation",
+            "Artificial intelligence search algorithms",
+            "The reversal curse: Llms trained on\u201d a is b\u201d fail to learn\u201d b is a\u201d",
+            "Computer simulation of human thinking: A theory of problem solving expressed as a computer program permits simulation of thinking processes.",
+            "Metacognitive capabilities of llms: An exploration in mathematical problem solving",
+            "Llms can\u2019t plan, but can help planning in llm-modulo frameworks",
+            "Metacognition is all you need? using introspection in generative agents to improve goal-directed behavior",
+            "Machine learning: the art and science of algorithms that make sense of data",
+            "Human-level control through deep reinforcement learning.",
+            "Soft actor-critic: Off-policy maximum entropy deep reinforcement learning with a stochastic actor",
+            "Large language models for mathematical reasoning: Progresses and challenges",
+            "Deep learning",
+            "On the dangers of stochastic parrots: Can language models be too big?",
+            "Algorithms for sequential decision-making",
+            "High-accuracy model-based reinforcement learning, a survey",
+            "Improved prediction of protein-protein interactions using alphafold2",
+            "Metacognitive prompting improves understanding in large language models",
+            "Proximal policy optimization algorithms",
+            "Reasoning or reciting? exploring the capabilities and limitations of language models through counterfactual tasks.",
+            "Strips: A new approach to the application of theorem proving to problem solving",
+            "On the planning abilities of large language models-a critical investigation",
+            "Planning chemical syntheses with deep neural networks and symbolic ai",
+            "Metacognition and learning: Conceptual and methodological considerations"
+          ],
+          "6 Discussion 6.3 Research Agenda": [
+            "Fine-grained affective processing capabilities emerging from large language models",
+            "Is the search engine of the future a chatbot?"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.0008683407795615494,
+        "extra": {
+          "expand": "not expand"
+        }
+      }
+    ],
+    "Studies on the limitations of self-correction in language models": [
+      {
+        "title": "An Empirical Study on Self-correcting Large Language Models for Data Science Code Generation",
+        "arxiv_id": "2408.15658",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract. Large Language Models (LLMs) have recently advanced many applications on software engineering tasks, particularly the potential for code generation. Among contemporary challenges, code generated by LLMs often suffers from inaccuracies and hallucinations, requiring external inputs to correct. One recent strategy to fix these issues is to refine the code generated from LLMs using the input from the model itself (self-augmented). In this work, we proposed a novel method, namely CoT-SelfEvolve. CoT-SelfEvolve iteratively and automatically refines code through a self-correcting process, guided by a chain of thought constructed from real-world programming problem feedback. Focusing on data science code, including Python libraries such as NumPy and Pandas, our evaluations on the DS-1000 dataset demonstrate that CoT-SelfEvolve significantly outperforms existing models in solving complex problems. The framework shows substantial improvements in both initial code generation and subsequent iterations, with the model\u2019s accuracy increasing significantly with each additional iteration. This highlights the effectiveness of using chain-of-thought prompting to address complexities revealed by program executor traceback error messages. We also discuss how CoT-SelfEvolve can be integrated into continuous software engineering environments, providing a practical solution for improving LLM-based code generation.",
+        "sections": {
+          "1. Introduction": [
+            "Selfevolve: A code evolution framework via large language models",
+            "GitHub Copilot AI pair programmer: Asset or Liability?",
+            "Evaluating large language models trained on code",
+            "Lamda: Language models for dialog applications.",
+            "Code Generation Using Machine Learning: A Systematic Review",
+            "Taking Flight with Copilot: Early insights and opportunities of AI-powered pair-programming tools",
+            "Gpt-4 technical report"
+          ],
+          "2. Related Work 2.1. LLMs and Automated Program Repair": [
+            "Catastrophic software errors doomed boeing\u2019s airplanes",
+            "The cost of poor software quality in the US: A 2020 report",
+            "Automatic software repair: A survey",
+            "A survey on software fault localization",
+            "Automated program repair in the era of large pre-trained language models",
+            "A critical review on the evaluation of automated program repair systems",
+            "Automated patch correctness assessment: How far are we?",
+            "Can automated program repair refine fault localization? a unified debugging approach",
+            "NHS WannaCry Ransomware Attack: Technical Explanation of The Vulnerability, Exploitation, and Countermeasures",
+            "Getafix: Learning to fix bugs automatically"
+          ],
+          "2. Related Work 2.2. Improving the performance of LLMs": [
+            "Proximal Policy Optimization Algorithms",
+            "Minimum risk training for neural machine translation",
+            "SimCLS: A simple framework for contrastive learning of abstractive summarization",
+            "Pretraining Language Models with Human Preferences",
+            "Training language models to follow instructions with human feedback",
+            "BERTTune: Fine-tuning neural machine translation with BERTScore",
+            "Chain of hindsight aligns language models with feedback",
+            "Deep reinforcement learning with distributional semantic rewards for abstractive summarization",
+            "Textgail: Generative adversarial imitation learning for text generation",
+            "Improving alignment of dialogue agents via targeted human judgements",
+            "Learning to Generate Better Than Your LLM",
+            "Training Language Models with Language Feedback at Scale",
+            "Continually Improving Extractive QA via Human Feedback",
+            "BLEURT: Learning robust metrics for text generation",
+            "Improving code generation by training with natural language feedback"
+          ],
+          "2. Related Work 2.3. Self-correcting LLMs": [
+            "Selfevolve: A code evolution framework via large language models",
+            "Reflexion: Language agents with verbal reinforcement learning",
+            "Self-refine: Iterative refinement with self-feedback",
+            "Self-Verification Improves Few-Shot Clinical Information Extraction",
+            "Selfee: Iterative self-revising llm empowered by self-feedback generation"
+          ],
+          "2. Related Work 2.4. Self-correcting LLMs in APR": [
+            "Chunqiu Steven Xia and Lingming Zhang. Keep the Conversation Going: Fixing 162 out of 337 bugs for $0.42 each using ChatGPT.",
+            "Automated repair of programs from large language models",
+            "A Systematic Literature Review on Large Language Models for Automated Program Repair"
+          ],
+          "3. Proposed approach": [
+            "Selfevolve: A code evolution framework via large language models"
+          ],
+          "4. Evaluations 4.1. Experimental settings": [
+            "Selfevolve: A code evolution framework via large language models",
+            "Evaluating large language models trained on code",
+            "DS-1000: A natural and reliable benchmark for data science code generation",
+            "Measuring coding challenge competence with apps",
+            "Teaching large language models to self-debug",
+            "Program synthesis with large language models"
+          ],
+          "4. Evaluations 4.2. Results": [
+            "Selfevolve: A code evolution framework via large language models"
+          ],
+          "5. Discussions 5.1. Discussing our findings": [
+            "Selfevolve: A code evolution framework via large language models",
+            "Chain-of-thought prompting elicits reasoning in large language models",
+            "Self-refine: Iterative refinement with self-feedback",
+            "LLMs with Chain-of-Thought Are Non-Causal Reasoners",
+            "Measuring usability: preference vs. performance",
+            "Teaching large language models to self-debug"
+          ],
+          "5. Discussions 5.2. Practical Implications": [
+            "Gemini 1.5: Unlocking multimodal understanding across millions of tokens of context."
+          ],
+          "5. Discussions 5.3. Threats to validity": [
+            "How is ChatGPT\u2019s behavior changing over time?"
+          ],
+          "6. Conclusions": [
+            "Dspy: Compiling declarative language model calls into self-improving pipelines."
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.0028488377574831247,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "LLMs cannot find reasoning errors, but can correct them!",
+        "arxiv_id": "2311.08516",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract While self-correction has shown promise in improving LLM outputs in terms of style and quality (e.g. Chen et\u00a0al., 2023; Madaan et\u00a0al., 2023), recent attempts to self-correct logical or reasoning errors often cause correct answers to become incorrect, resulting in worse performances overall (Huang et\u00a0al., 2023). In this paper, we break down the self-correction process into two core components: mistake finding and output correction. For mistake finding, we release BIG-Bench Mistake, a dataset of logical mistakes in Chain-of-Thought reasoning traces. We provide benchmark numbers for several state-of-the-art LLMs, and demonstrate that LLMs generally struggle with finding logical mistakes. For output correction, we propose a backtracking method which provides large improvements when given information on mistake location. We construe backtracking as a lightweight alternative to reinforcement learning methods, and show that it remains effective with a reward model at 60-70% accuracy. ",
+        "sections": {
+          "1 Introduction": [
+            "React: Synergizing reasoning and acting in language models",
+            "Reflexion: Language agents with verbal reinforcement learning.",
+            "Self-consistency improves chain of thought reasoning in language models",
+            "Chain-of-thought prompting elicits reasoning in large language models",
+            "Large language models cannot self-correct reasoning yet",
+            "Language models can solve computer tasks.",
+            "Automatically correcting large language models: Surveying the landscape of diverse self-correction strategies",
+            "Self-refine: Iterative refinement with self-feedback"
+          ],
+          "2 BIG-Bench Mistake": [
+            "Palm 2 technical report",
+            "Beyond the imitation game: Quantifying and extrapolating the capabilities of language models.",
+            "React: Synergizing reasoning and acting in language models"
+          ],
+          "2 BIG-Bench Mistake 2.1 Annotation": [
+            "Answering the call for a standard reliability measure for coding data",
+            "Let\u2019s verify step by step"
+          ],
+          "3 Benchmark results 3.1 Discussion": [
+            "Large language models cannot self-correct reasoning yet"
+          ],
+          "3 Benchmark results 3.3 Few-shot prompting for mistake location as a proxy for correctness": [
+            "Reflexion: Language agents with verbal reinforcement learning.",
+            "Large language models cannot self-correct reasoning yet",
+            "Language models can solve computer tasks."
+          ],
+          "4 Backtracking": [
+            "Reflexion: Language agents with verbal reinforcement learning.",
+            "Large language models cannot self-correct reasoning yet",
+            "Language models can solve computer tasks.",
+            "Self-refine: Iterative refinement with self-feedback",
+            "Selfcheck: Using llms to zero-shot check their own step-by-step reasoning"
+          ],
+          "5 Related work Datasets": [
+            "Let\u2019s verify step by step"
+          ],
+          "5 Related work Self-correction": [
+            "Large language models can self-improve",
+            "Reflexion: Language agents with verbal reinforcement learning.",
+            "Iterative translation refinement with large language models",
+            "Large language models cannot self-correct reasoning yet",
+            "Language models can solve computer tasks.",
+            "Automatically correcting large language models: Surveying the landscape of diverse self-correction strategies",
+            "Self-refine: Iterative refinement with self-feedback",
+            "Training language models to follow instructions with human feedback"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.3646353483200073,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Training Language Models to Self-Correct via Reinforcement Learning",
+        "arxiv_id": "2409.12917",
+        "depth": 0,
+        "child": {},
+        "abstract": "Self-correction is a highly desirable capability of large language models (LLMs), yet it has consistently been found to be largely ineffective in modern LLMs. Current methods for training self-correction typically depend on either multiple models, a more advanced model, or additional forms of supervision. To address these shortcomings, we develop a multi-turn online reinforcement learning (RL) approach, SCoRe, that significantly improves an LLM's self-correction ability using entirely self-generated data. To build SCoRe, we first show that variants of supervised fine-tuning (SFT) on offline model-generated correction traces are often insufficient for instilling self-correction behavior. In particular, we observe that training via SFT falls prey to either a distribution mismatch between mistakes made by the data-collection policy and the model's own responses, or to behavior collapse, where learning implicitly prefers only a certain mode of correction behavior that is often not effective at self-correction on test problems. SCoRe addresses these challenges by training under the model's own distribution of self-generated correction traces and using appropriate regularization to steer the learning process into learning a self-correction behavior that is effective at test time as opposed to fitting high-reward responses for a given prompt. This regularization process includes an initial phase of multi-turn RL on a base model to generate a policy initialization that is less susceptible to collapse, followed by using a reward bonus to amplify self-correction. With Gemini 1.0 Pro and 1.5 Flash models, we find that SCoRe achieves state-of-the-art self-correction performance, improving the base models' self-correction by 15.6% and 9.1% respectively on MATH and HumanEval.",
+        "sections": null,
+        "source": "Search SearchFrom:arxiv",
+        "select_score": 0.009475458413362503,
+        "extra": {
+          "expand": "get full paper error"
+        }
+      },
+      {
+        "title": "On the Self-Verification Limitations of Large Language Models on Reasoning and Planning Tasks",
+        "arxiv_id": "2402.08115",
+        "depth": 0,
+        "child": {},
+        "abstract": "There has been considerable divergence of opinion on the reasoning abilities of Large Language Models (LLMs). While the initial optimism that reasoning might emerge automatically with scale has been tempered thanks to a slew of counterexamples--ranging from multiplication to simple planning--there persists a wide spread belief that LLMs can self-critique and improve their own solutions in an iterative fashion. This belief seemingly rests on the assumption that verification of correctness should be easier than generation--a rather classical argument from computational complexity--which should be irrelevant to LLMs to the extent that what they are doing is approximate retrieval. In this paper, we set out to systematically investigate the effectiveness of iterative prompting in the context of reasoning and planning. We present a principled empirical study of the performance of GPT-4 in three domains: Game of 24, Graph Coloring, and STRIPS planning. We experiment both with the model critiquing its own answers and with an external correct reasoner verifying proposed solutions. In each case, we analyze whether the content of criticisms actually affects bottom line performance, and whether we can ablate elements of the augmented system without losing performance. We observe significant performance collapse with self-critique and significant performance gains with sound external verification. We also note that merely re-prompting with a sound verifier maintains most of the benefits of more involved setups.",
+        "sections": null,
+        "source": "Search SearchFrom:arxiv",
+        "select_score": 0.9857729077339172,
+        "extra": {
+          "expand": "get full paper error"
+        }
+      },
+      {
+        "title": "When Hindsight is Not 20/20: Testing Limits on Reflective Thinking in Large Language Models",
+        "arxiv_id": "2404.09129",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract Recent studies suggest that self-reflective prompting can significantly enhance the reasoning capabilities of Large Language Models (LLMs). However, the use of external feedback as a stop criterion raises doubts about the true extent of LLMs\u2019 ability to emulate human-like self-reflection. In this paper, we set out to clarify these capabilities under a more stringent evaluation setting in which we disallow any kind of external feedback. Our findings under this setting show a split: while self-reflection enhances performance in TruthfulQA, it adversely affects results in HotpotQA. We conduct follow-up analyses to clarify the contributing factors in these patterns, and find that the influence of self-reflection is impacted both by reliability of accuracy in models\u2019 initial responses, and by overall question difficulty: specifically, self-reflection shows the most benefit when models are less likely to be correct initially, and when overall question difficulty is higher. We also find that self-reflection reduces tendency toward majority voting. Based on our findings, we propose guidelines for decisions on when to implement self-reflection. We release the codebase for reproducing our experiments at https://github.com/yanhong-lbh/LLM-SelfReflection-Eval.",
+        "sections": {
+          "1 Introduction": [
+            "Constitutional ai: Harmlessness from ai feedback",
+            "Large language models cannot self-correct reasoning yet",
+            "Large language models can self-improve",
+            "HotpotQA: A dataset for diverse, explainable multi-hop question answering",
+            "TruthfulQA: Measuring how models mimic human falsehoods.",
+            "Chatgpt"
+          ],
+          "2 Self-Reflection Prompting": [
+            "Large language models cannot self-correct reasoning yet"
+          ],
+          "3 Preliminary Study: Does Self-Reflection Prompting Work Under SR2V?": [
+            "Constitutional ai: Harmlessness from ai feedback"
+          ],
+          "3 Preliminary Study: Does Self-Reflection Prompting Work Under SR2V? Experiment Setup": [
+            "Llama 2: Open foundation and fine-tuned chat models",
+            "Mixtral of experts",
+            "Self-consistency improves chain of thought reasoning in language models."
+          ],
+          "3 Preliminary Study: Does Self-Reflection Prompting Work Under SR2V? Observations": [
+            "Constitutional ai: Harmlessness from ai feedback",
+            "Large language models cannot self-correct reasoning yet"
+          ],
+          "4 Why Self-Reflection May Not Work?": [
+            "Reflection at work\u2013a conceptual model and the meaning of its components in the domain of VET teachers"
+          ],
+          "Limitations": [
+            "Llama 2: Open foundation and fine-tuned chat models",
+            "Mixtral of experts"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.31019291281700134,
+        "extra": {
+          "expand": "not expand"
+        }
+      }
+    ],
+    "Papers showing no performance boost from self-correction in LLMs": [
+      {
+        "title": "On the Intersection of Self-Correction and Trust in Language Models",
+        "arxiv_id": "2311.02801",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Large Language Models (LLMs) have demonstrated remarkable capabilities in performing complex cognitive tasks. However, their complexity and lack of transparency have raised several trustworthiness concerns, including the propagation of misinformation and toxicity. Recent research has explored the self-correction capabilities of LLMs to enhance their performance. In this work, we investigate whether these self-correction capabilities can be harnessed to improve the trustworthiness of LLMs. We conduct experiments focusing on two key aspects of trustworthiness: truthfulness and toxicity. Our findings reveal that self-correction can lead to improvements in toxicity and truthfulness, but the extent of these improvements varies depending on the specific aspect of trustworthiness and the nature of the task. Interestingly, our study also uncovers instances of \"self-doubt\" in LLMs during the self-correction process, introducing a new set of challenges that need to be addressed. ",
+        "sections": {
+          "1 Introduction": [
+            "Large language models are better reasoners with self-verification",
+            "Large language models can self-improve",
+            "A survey of large language models",
+            "Truthfulqa: Measuring how models mimic human falsehoods",
+            "Emergent abilities of large language models",
+            "A survey of safety and trustworthiness of large language models through the lens of verification and validation",
+            "Holistic evaluation of language models",
+            "Self-refine: Iterative refinement with self-feedback",
+            "Survey of hallucination in natural language generation",
+            "Realtoxicityprompts: Evaluating neural toxic degeneration in language models"
+          ],
+          "2 Related Works Trustworthy ML.": [
+            "A survey of large language models",
+            "Trustworthy artificial intelligence: a review",
+            "Trustworthy machine learning",
+            "Diffusion models: A comprehensive survey of methods and applications",
+            "Explainability for large language models: A survey"
+          ],
+          "2 Related Works In-Context Learning.": [
+            "Large language models can self-improve",
+            "A survey of large language models",
+            "Emergent abilities of large language models",
+            "Large language models are zero-shot reasoners",
+            "Self-refine: Iterative refinement with self-feedback",
+            "Chain of thought prompting elicits reasoning in large language models"
+          ],
+          "3 Self-Correction": [
+            "Self-refine: Iterative refinement with self-feedback"
+          ],
+          "3 Self-Correction Start Prompt.": [
+            "Chain of thought prompting elicits reasoning in large language models"
+          ],
+          "3 Self-Correction Self-Correction Prompt.": [
+            "Self-refine: Iterative refinement with self-feedback"
+          ],
+          "4 Experimental Evaluation Datasets.": [
+            "Truthfulqa: Measuring how models mimic human falsehoods",
+            "Realtoxicityprompts: Evaluating neural toxic degeneration in language models",
+            "Holistic evaluation of language models"
+          ],
+          "4 Experimental Evaluation Implementation Details.": [
+            "Decodingtrust: A comprehensive assessment of trustworthiness in gpt models"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.008128643967211246,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Can LLMs Learn from Previous Mistakes? Investigating LLMs\u2019 Errors to Boost for Reasoning",
+        "arxiv_id": "2403.20046",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Large language models\u00a0(LLMs) have demonstrated striking reasoning capability. Recent works have shown the benefits to LLMs from fine-tuning golden-standard Chain-of-Thought (CoT) rationales or using them as correct examples in few-shot prompting. While humans can indeed imitate correct examples, learning from our mistakes is another vital aspect of human cognition. Hence, a question naturally arises: can LLMs learn and benefit from their mistakes, especially for their reasoning?  This study investigates this problem from both the prompting and model-tuning perspectives. We begin by introducing CoTErrorSet, a new benchmark with 609,432 questions, each designed with both correct and error references, and demonstrating the types and reasons for making such mistakes. To explore the effectiveness of those mistakes, we design two methods: (1) Self-rethinking prompting guides LLMs to rethink whether they have made similar previous mistakes; and (2) Mistake tuning involves finetuning models in both correct and incorrect reasoning domains, rather than only tuning models to learn ground truth in traditional methodology. We conduct a series of experiments to prove LLMs can obtain benefits from mistakes in both directions. Our two methods offer potentially cost-effective strategies by leveraging errors to enhance reasoning capabilities, which costs significantly less than creating meticulously hand-crafted golden references. We ultimately make a thorough analysis of the reasons behind LLMs\u2019 errors, which provides directions that future research needs to overcome. CoTErrorSet will be published soon on Anonymity Link. ",
+        "sections": {
+          "1 Introduction": [
+            "Chain-of-thought prompting elicits reasoning in large language models",
+            "Language models are few-shot learners",
+            "Holistic evaluation of language models",
+            "Palm 2 technical report",
+            "Customizing language model responses with contrastive in-context learning",
+            "Talk and the development of reasoning and understanding"
+          ],
+          "2 Related Work": [
+            "Large language models can self-improve",
+            "Training verifiers to solve math word problems",
+            "Self-consistency improves chain of thought reasoning in language models",
+            "Learning from mistakes makes llm better reasoner",
+            "Chain-of-thought prompting elicits reasoning in large language models",
+            "Did aristotle use a laptop? a question answering benchmark with implicit reasoning strategies",
+            "Large language models cannot self-correct reasoning yet",
+            "Automatically correcting large language models: Surveying the landscape of diverse self-correction strategies",
+            "Self-refine: Iterative refinement with self-feedback"
+          ],
+          "3 A Novel Dataset: CoTErrorSet 3.1 Dataset Construction": [
+            "Qasc: A dataset for question answering via sentence composition",
+            "Program induction by rationale generation: Learning to solve and explain algebraic word problems",
+            "Does it make sense? and why? a pilot study for sense making and explanation.",
+            "Training verifiers to solve math word problems",
+            "e-snli: Natural language inference with natural language explanations",
+            "Explanations for commonsenseqa: New dataset and models",
+            "Creak: A dataset for commonsense reasoning over entity knowledge",
+            "Did aristotle use a laptop? a question answering benchmark with implicit reasoning strategies",
+            "Qed: A framework and dataset for explanations in question answering",
+            "The cot collection: Improving zero-shot and few-shot learning of language models via chain-of-thought fine-tuning"
+          ],
+          "5 Our Methodology: Mistake Tuning": [
+            "Pretraining language models with human preferences"
+          ],
+          "6 Experiments 6.1 Experiment Setup": [
+            "Program induction by rationale generation: Learning to solve and explain algebraic word problems",
+            "Training verifiers to solve math word problems",
+            "Self-consistency improves chain of thought reasoning in language models",
+            "Scaling instruction-finetuned language models",
+            "Logiqa: A challenge dataset for machine reading comprehension with logical reasoning",
+            "Language models are few-shot learners",
+            "Gpt-4 technical report",
+            "Mathqa: Towards interpretable math word problem solving with operation-based formalisms",
+            "Eliminating reasoning via inferring with planning: A new framework to guide llms' non-linear thinking",
+            "Palm 2 technical report",
+            "Self-refine: Iterative refinement with self-feedback",
+            "Can a suit of armor conduct electricity? a new dataset for open book question answering"
+          ],
+          "6 Experiments 6.2 Self-rethinking Results": [
+            "Mathqa: Towards interpretable math word problem solving with operation-based formalisms"
+          ],
+          "8 Unveiling LLM\u2019s Reasoning Errors": [
+            "Program of thoughts prompting: Disentangling computation from reasoning for numerical reasoning tasks",
+            "Retrieval augmented language model pre-training"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.0031516007147729397,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Large Language Models Cannot Self-Correct Reasoning Yet",
+        "arxiv_id": "2310.01798",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Large Language Models (LLMs) have emerged as a groundbreaking technology with their unparalleled text generation capabilities across various applications. Nevertheless, concerns persist regarding the accuracy and appropriateness of their generated content. A contemporary methodology, self-correction, has been proposed as a remedy to these issues. Building upon this premise, this paper critically examines the role and efficacy of self-correction within LLMs, shedding light on its true potential and limitations. Central to our investigation is the notion of intrinsic self-correction, whereby an LLM attempts to correct its initial responses based solely on its inherent capabilities, without the crutch of external feedback. In the context of reasoning, our research indicates that LLMs struggle to self-correct their responses without external feedback, and at times, their performance might even degrade post self-correction. Drawing from these insights, we offer suggestions for future research and practical applications in this field. ",
+        "sections": {
+          "1 Introduction": [
+            "Self-consistency improves chain of thought reasoning in language models",
+            "Chain-of-thought prompting elicits reasoning in large language models",
+            "Language models can solve computer tasks.",
+            "Gpt-4 technical report",
+            "Improving factuality and reasoning in language models through multiagent debate",
+            "Self-refine: Iterative refinement with self-feedback",
+            "A multitask, multilingual, multimodal evaluation of chatgpt on reasoning, hallucination, and interactivity."
+          ],
+          "2 Background and Related Work": [
+            "Reinforcement learning: An introduction",
+            "Constitutional ai: Harmlessness from ai feedback",
+            "Shepherd: A critic for language model generation",
+            "Learning representations by back-propagating errors",
+            "Automatically correcting large language models: Surveying the landscape of diverse self-correction strategies",
+            "Training language models to follow instructions with human feedback",
+            "Critic: Large language models can self-correct with tool-interactive critiquing"
+          ],
+          "3 Can Large Language Models Self-Correct Reasoning?": [
+            "Towards reasoning in large language models: A survey"
+          ],
+          "3 Can Large Language Models Self-Correct Reasoning? 3.1 Self-Correction with Oracle Feedback": [
+            "Commonsenseqa: A question answering challenge targeting commonsense knowledge",
+            "Training verifiers to solve math word problems",
+            "Teaching large language models to self-debug",
+            "Reflexion: Language agents with verbal reinforcement learning",
+            "Large language models are zero-shot reasoners",
+            "Language models can solve computer tasks.",
+            "Hotpotqa: A dataset for diverse, explainable multi-hop question answering"
+          ],
+          "3 Can Large Language Models Self-Correct Reasoning? 3.2 Intrinsic Self-Correction": [
+            "Large language models are human-level prompt engineers",
+            "Solving challenging math word problems using gpt-4 code interpreter with code-based self-verification",
+            "True few-shot learning with language models",
+            "Self-refine: Iterative refinement with self-feedback",
+            "Critic: Large language models can self-correct with tool-interactive critiquing"
+          ],
+          "3 Can Large Language Models Self-Correct Reasoning? 3.3 Multi-Agent Debate and Self-Consistency": [
+            "Self-consistency improves chain of thought reasoning in language models",
+            "Improving factuality and reasoning in language models through multiagent debate"
+          ],
+          "4 Self-Correction as Post-Hoc Prompting": [
+            "Constitutional ai: Harmlessness from ai feedback",
+            "Self-refine: Iterative refinement with self-feedback",
+            "True few-shot learning with language models"
+          ],
+          "5 Discussion": [
+            "Training verifiers to solve math word problems",
+            "Self-consistency improves chain of thought reasoning in language models",
+            "Teaching large language models to self-debug",
+            "Constitutional ai: Harmlessness from ai feedback",
+            "Tree of thoughts: Deliberate problem solving with large language models",
+            "Critic: Large language models can self-correct with tool-interactive critiquing"
+          ],
+          "7 Limitations and Broader Impact": [
+            "Large language models are human-level prompt engineers",
+            "Critic: Large language models can self-correct with tool-interactive critiquing"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.9950860142707825,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Are You Sure? Challenging LLMs Leads to Performance Drops in The FlipFlop Experiment",
+        "arxiv_id": "2311.08596",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract The interactive nature of Large Language Models (LLMs) theoretically allows models to refine and improve their answers, yet systematic analysis of the multi-turn behavior of LLMs remains limited. In this paper, we propose the FlipFlop experiment: in the first round of the conversation, an LLM responds to a prompt containing a classification task. In a second round, the LLM is challenged with a follow-up phrase like \u201cAre you sure?\u201d, offering an opportunity for the model to reflect on its initial answer, and decide whether to confirm or flip its answer. A systematic study of nine LLMs on seven classification tasks reveals that models flip their answers on average 46% of the time and that all models see a deterioration of accuracy between their first and final prediction, with an average drop of 17%. The FlipFlop experiment illustrates the universality of sycophantic behavior in LLMs and provides a robust framework to analyze model behavior and evaluate potential solutions. ",
+        "sections": {
+          "1 Introduction": [
+            "Truthfulqa: Measuring how models mimic human falsehoods",
+            "The benefit of a switch: Answer-changing on multiple-choice exams by first-year dental students",
+            "Discovering language model behaviors with model-written evaluations.",
+            "Chain of thought prompting elicits reasoning in large language models"
+          ],
+          "2 Related Work 2.1 Sycophancy in LLMs": [
+            "Simple synthetic data reduces sycophancy in large language models",
+            "Palm: Scaling language modeling with pathways.",
+            "Towards understanding sycophancy in language models",
+            "Discovering language model behaviors with model-written evaluations."
+          ],
+          "2 Related Work 2.2 Self-Critique": [
+            "Self-refine: Iterative refinement with self-feedback",
+            "Large language models cannot self-correct reasoning yet",
+            "Improving factuality and reasoning in language models through multiagent debate",
+            "Chain of thought prompting elicits reasoning in large language models"
+          ],
+          "2 Related Work 2.3 Answer Flipping in Education Research": [
+            "The benefit of a switch: Answer-changing on multiple-choice exams by first-year dental students",
+            "Is that your final answer? the effects of neutral queries on children\u2019s choices",
+            "Answer changing in multiple choice assessment change that answer when in doubt\u2013and spread the word!"
+          ],
+          "3 FlipFlop Experiment 3.1 Design Considerations": [
+            "Measuring massive multitask language understanding"
+          ],
+          "4 Setting Selection 4.1 Model Selection": [
+            "Constitutional ai: Harmlessness from ai feedback",
+            "Palm: Scaling language modeling with pathways.",
+            "Gpt-4 technical report",
+            "Llama 2: Open foundation and fine-tuned chat models.",
+            "Mistral 7b"
+          ],
+          "4 Setting Selection 4.2 Task Selection": [
+            "Crowdsourcing multiple choice science questions.",
+            "Do androids laugh at electric sheep? Humor \u201cunderstanding\u201d benchmarks from The New Yorker Caption Contest",
+            "Llms as factual reasoners: Insights from existing benchmarks and beyond",
+            "Truthfulqa: Measuring how models mimic human falsehoods",
+            "Legalbench: A collaboratively built benchmark for measuring legal reasoning in large language models",
+            "Think you have solved question answering? try arc, the ai2 reasoning challenge",
+            "Understanding factual errors in summarization: Errors, summarizers, datasets, error detectors",
+            "Beyond the imitation game: Quantifying and extrapolating the capabilities of language models"
+          ],
+          "4 Setting Selection 4.3 Challenger Selection": [
+            "Simple synthetic data reduces sycophancy in large language models"
+          ],
+          "5 Results 5.1 Average Accuracy Deterioration": [
+            "Chain of thought prompting elicits reasoning in large language models"
+          ],
+          "6 Discussion Origin of Sycophancy.": [
+            "Towards understanding sycophancy in language models",
+            "Deep reinforcement learning from human preferences"
+          ],
+          "6 Discussion Improving FlipFlop Behavior.": [
+            "Simple synthetic data reduces sycophancy in large language models"
+          ],
+          "8 Limitations": [
+            "Xgen-7b technical report",
+            "Embrace divergence for richer insights: A multi-document summarization benchmark and a case study on summarizing diverse information from news articles.",
+            "Discord questions: A computational approach to diversity analysis in news coverage",
+            "The refinedweb dataset for falcon llm: outperforming curated corpora with web data, and web data only."
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.995029866695404,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Fine-Tuning with Divergent Chains of Thought Boosts Reasoning Through Self-Correction in Language Models",
+        "arxiv_id": "2407.03181",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract Requiring a Large Language Model to generate intermediary reasoning steps has been shown to be an effective way of boosting performance. In fact, it has been found that instruction tuning on these intermediary reasoning steps improves model performance. In this work, we present a novel method of further improving performance by requiring models to compare multiple reasoning chains before generating a solution in a single inference step. We call this method Divergent CoT (DCoT). We find that instruction tuning on DCoT datasets boosts the performance of even smaller, and therefore more accessible, LLMs. Through a rigorous set of experiments spanning a wide range of tasks that require various reasoning types, we show that fine-tuning on DCoT consistently improves performance over the CoT baseline across model families and scales (1.3B to 70B). Through a combination of empirical and manual evaluation, we additionally show that these performance gains stem from models generating multiple divergent reasoning chains in a single inference step, indicative of the enabling of self-correction in language models. Our code and data are publicly available.111https://github.com/UKPLab/arxiv2024-divergent-cot",
+        "sections": {
+          "1 Introduction and Motivation": [
+            "Chain-of-thought prompting elicits reasoning in large language models",
+            "Scaling instruction-finetuned language models",
+            "Creativity: Yesterday, today and tomorrow",
+            "Self-consistency improves chain of thought reasoning in language models"
+          ],
+          "2 Related Works Divergent Prompting.": [
+            "Answering questions by meta-reasoning over multiple chains of thought",
+            "Self-contrast: Better reflection through inconsistent solving perspectives",
+            "Self-consistency improves chain of thought reasoning in language models"
+          ],
+          "2 Related Works Divergent Fine-Tuning.": [
+            "Large language models are reasoning teachers",
+            "The CoT collection: Improving zero-shot and few-shot learning of language models via chain-of-thought fine-tuning",
+            "Distilling step-by-step! outperforming larger language models with less training data and smaller model sizes",
+            "Large language models can self-improve",
+            "Scaling instruction-finetuned language models"
+          ],
+          "2 Related Works Self-Correction.": [
+            "Large language models cannot self-correct reasoning yet",
+            "Reflexion: Language agents with verbal reinforcement learning"
+          ],
+          "3 Methods 3.1 Prompting": [
+            "The CoT collection: Improving zero-shot and few-shot learning of language models via chain-of-thought fine-tuning"
+          ],
+          "3 Methods 3.3 Dataset Generation": [
+            "Thoughtsource: A central hub for large language model reasoning data"
+          ],
+          "3 Methods 3.4 Fine-Tuning Dataset Creation": [
+            "BoardgameQA: A dataset for natural language reasoning with contradictory information",
+            "Haitian Sun, William Cohen, and Ruslan Salakhutdinov. 2022. ConditionalQA: A complex reading comprehension dataset with conditional answers.",
+            "Self-consistency improves chain of thought reasoning in language models"
+          ],
+          "3 Methods 3.5 Models": [
+            "Llama 2: Open foundation and fine-tuned chat models",
+            "Phi-2: The surprising power of small language models",
+            "Textbooks are all you need ii: phi-1.5 technical report"
+          ],
+          "3 Methods 3.6 Evaluation": [
+            "Are NLP models really able to solve simple math word problems?",
+            "SQuAD: 100,000+ questions for machine comprehension of text",
+            "CommonsenseQA: A question answering challenge targeting commonsense knowledge",
+            "Program induction by rationale generation: Learning to solve and explain algebraic word problems",
+            "Challenging BIG-bench tasks and whether chain-of-thought can solve them",
+            "Self-consistency improves chain of thought reasoning in language models"
+          ],
+          "4 Results and Analysis 4.1 DCoT is Beneficial on In-Domain Tasks": [
+            "Llama 2: Open foundation and fine-tuned chat models"
+          ],
+          "4 Results and Analysis 4.2 DCoT is Beneficial on Unseen Tasks": [
+            "Self-consistency improves chain of thought reasoning in language models"
+          ],
+          "4 Results and Analysis 4.3 DCoT is Robust on Tasks where CoT is Detrimental": [
+            "Challenging BIG-bench tasks and whether chain-of-thought can solve them"
+          ],
+          "4 Results and Analysis 4.4 DCoT Benefits from CoT Extensions": [
+            "Self-consistency improves chain of thought reasoning in language models"
+          ],
+          "6 Discussion": [
+            "Are emergent abilities in large language models just in-context learning?"
+          ],
+          "7 Conclusions": [
+            "Code prompting elicits conditional reasoning abilities in text+code llms",
+            "Graph of thoughts: Solving elaborate problems with large language models"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.00317003414966166,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Self-Reflection in LLM Agents: Effects on Problem-Solving Performance",
+        "arxiv_id": "2405.06682",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract In this study, we investigated the effects of self-reflection in large language models (LLMs) on problem-solving performance. We instructed nine popular LLMs to answer a series of multiple-choice questions to provide a performance baseline. For each incorrectly answered question, we instructed eight types of self-reflecting LLM agents to reflect on their mistakes and provide themselves with guidance to improve problem-solving. Then, using this guidance, each self-reflecting agent attempted to re-answer the same questions. Our results indicate that LLM agents are able to significantly improve their problem-solving performance through self-reflection (p<0.001\ud835\udc5d0.001p<0.001). In addition, we compared the various types of self-reflection to determine their individual contribution to performance. All code and data are available on GitHub at https://github.com/matthewrenze/self-reflection",
+        "sections": {
+          "1 Introduction 1.1 Background": [
+            "Reflexion: Language agents with verbal reinforcement learning",
+            "Large language models are zero-shot reasoners",
+            "Survey of hallucination in natural language generation"
+          ],
+          "1 Introduction 1.2 Prior Literature": [
+            "Webgpt: Browser-assisted question-answering with human feedback",
+            "Voyager: An open-ended embodied agent with large language models",
+            "Large language models cannot self-correct reasoning yet",
+            "Automatically correcting large language models: Surveying the landscape of diverse self-correction strategies",
+            "Metacognition is all you need? using introspection in generative agents to improve goal-directed behavior",
+            "Self-refine: Iterative refinement with self-feedback",
+            "Large language models are zero-shot reasoners",
+            "Survey of hallucination in natural language generation",
+            "React: Synergizing reasoning and acting in language models",
+            "Retrieval-augmented generation for knowledge-intensive nlp tasks"
+          ],
+          "2 Methods 2.1 Data": [
+            "Think you have solved question answering? try arc, the ai2 reasoning challenge"
+          ],
+          "2 Methods 2.2 Models": [
+            "Models - openai api",
+            "Introducing the next generation of claude \u00a0anthropic",
+            "Gpt-4 technical report"
+          ],
+          "2 Methods 2.3 Agents": [
+            "The effect of sampling temperature on problem solving in large language models",
+            "Principled instructions are all you need for questioning llama-1/2, gpt-3.5/4"
+          ],
+          "2 Methods 2.6 Analysis": [
+            "Note on the sampling error of the difference between correlated proportions or percentages"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.0035902177914977074,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Small Language Models Need Strong Verifiers to Self-Correct Reasoning",
+        "arxiv_id": "2404.17140",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract Self-correction has emerged as a promising solution to boost the reasoning performance of large language models (LLMs), where LLMs refine their solutions using self-generated critiques that pinpoint the errors. This work explores whether smaller-size (\u226413absent13\\leq 13B) language models (LMs) have the ability of self-correction on reasoning tasks with minimal inputs from stronger LMs. We propose a novel pipeline that prompts smaller LMs to collect self-correction data that supports the training of self-refinement abilities. First, we leverage correct solutions to guide the model in critiquing their incorrect responses. Second, the generated critiques, after filtering, are used for supervised fine-tuning of the self-correcting reasoner through solution refinement. Our experimental results show improved self-correction abilities of two models on five datasets spanning math and commonsense reasoning, with notable performance gains when paired with a strong GPT-4-based verifier, though limitations are identified when using a weak self-verifier for determining when to correct.111Our implementation can be accessed at https://github.com/yunx-z/SCORE",
+        "sections": {
+          "1 Introduction": [
+            "Large language models cannot self-correct reasoning yet",
+            "Automatically correcting large language models: Surveying the landscape of diverse self-correction strategies",
+            "Llama 2: Open foundation and fine-tuned chat models.",
+            "Self-refine: Iterative refinement with self-feedback",
+            "Gemma: Open models based on gemini research and technology",
+            "Training verifiers to solve math word problems",
+            "Teaching language models to self-improve through interactive demonstrations",
+            "Self-critiquing models for assisting human evaluators",
+            "GPT-4 technical report"
+          ],
+          "2 Problem Formulation of Self-Correction Self-Correct := (Self-)Verify + Self-Refine.": [
+            "Teaching language models to self-improve through interactive demonstrations"
+          ],
+          "2 Problem Formulation of Self-Correction Self-Refine := Critique + Correction.": [
+            "Self-critiquing models for assisting human evaluators",
+            "Generating sequences by learning to self-correct"
+          ],
+          "3 The SCORE Method": [
+            "Scaling relationship on learning mathematical reasoning with large language models"
+          ],
+          "3 The SCORE Method 3.1 Generating and Filtering Critiques": [
+            "Let\u2019s verify step by step",
+            "GRACE: Discriminator-guided chain-of-thought reasoning"
+          ],
+          "3 The SCORE Method 3.2 Supervised Fine-tuning of the Refiner": [
+            "Teaching language models to self-improve through interactive demonstrations"
+          ],
+          "4 Experimental Setup Verifiers.": [
+            "Training verifiers to solve math word problems"
+          ],
+          "4 Experimental Setup Benchmarks and Base Models.": [
+            "Riddlesense: Reasoning about riddle questions featuring linguistic creativity and commonsense knowledge",
+            "Measuring mathematical problem solving with the MATH dataset",
+            "Large language models cannot self-correct reasoning yet",
+            "Llama 2: Open foundation and fine-tuned chat models.",
+            "Commonsenseqa: A question answering challenge targeting commonsense knowledge",
+            "Gemma: Open models based on gemini research and technology",
+            "Training verifiers to solve math word problems",
+            "Large language models are zero-shot reasoners",
+            "QASC: A dataset for question answering via sentence composition",
+            "V-star: Training verifiers for self-taught reasoners"
+          ],
+          "4 Experimental Setup Fine-tuning and Evaluation.": [
+            "Lora: Low-rank adaptation of large language models",
+            "Llamafactory: Unified efficient fine-tuning of 100+ language models"
+          ],
+          "5 Results 5.1 Main Findings": [
+            "Self-refine: Iterative refinement with self-feedback",
+            "Large language models cannot self-correct reasoning yet",
+            "Attention satisfies: A constraint-satisfaction lens on factual errors of language models",
+            "Representation engineering: A top-down approach to AI transparency"
+          ],
+          "5 Results 5.2 Analysis of Self-Correction Behaviors": [
+            "Self-refine: Iterative refinement with self-feedback",
+            "Teaching language models to self-improve through interactive demonstrations"
+          ],
+          "6 Related Work Training Small Language Model to Self-Correct.": [
+            "Learning from mistakes makes LLM better reasoner",
+            "REFINER: reasoning feedback on intermediate representations"
+          ],
+          "6 Related Work Bootstrapping Reasoning in Language Models.": [
+            "Large language models can self-improve",
+            "Star: Bootstrapping reasoning with reasoning"
+          ],
+          "6 Related Work Verifying Reasoning.": [
+            "Large language models are better reasoners with self-verification",
+            "A chain-of-thought is as strong as its weakest link: A benchmark for verifiers of reasoning chains",
+            "Training verifiers to solve math word problems",
+            "Direct evaluation of chain-of-thought in multi-hop reasoning with knowledge graphs",
+            "Solving math word problems with process- and outcome-based feedback",
+            "The counterfeit conundrum: Can code language models grasp the nuances of their incorrect generations?",
+            "GRACE: Discriminator-guided chain-of-thought reasoning"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.005094257183372974,
+        "extra": {
+          "expand": "not expand"
+        }
+      }
+    ],
+    "Research on self-correction mechanisms in LLMs and their impact on performance": [
+      {
+        "title": "Large Language Models have Intrinsic Self-Correction Ability",
+        "arxiv_id": "2406.15673",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract Large language models (LLMs) have attracted significant attention for their remarkable abilities in various natural language processing tasks, but they suffer from hallucinations that will cause performance degradation. One promising solution to improve the LLMs\u2019 performance is to ask LLMs to revise their answer after generation, a technique known as self-correction. Among the two types of self-correction, intrinsic self-correction is considered a promising direction because it does not utilize external knowledge. However, recent works doubt the validity of LLM\u2019s ability to conduct intrinsic self-correction. In this paper, we present a novel perspective on the intrinsic self-correction capabilities of LLMs through theoretical analyses and empirical experiments. In addition, we identify two critical factors for successful self-correction: zero temperature and fair prompts. Leveraging these factors, we demonstrate that intrinsic self-correction ability is exhibited across multiple existing LLMs. Our findings offer insights into the fundamental theories underlying the self-correction behavior of LLMs and remark on the importance of unbiased prompts and zero temperature settings in harnessing their full potential.",
+        "sections": {
+          "1 Introduction": [
+            "Large language models are not yet human-level evaluators for abstractive summarization",
+            "Self-verification improves few-shot clinical information extraction",
+            "Leveraging GPT-4 for automatic translation post-editing",
+            "Can large language models be an alternative to human evaluations?",
+            "Large language models cannot self-correct reasoning yet",
+            "Are emergent abilities in large language models just in-context learning?",
+            "Are emergent abilities of large language models a mirage?",
+            "A survey on hallucination in large language models: Principles, taxonomy, challenges, and open questions",
+            "Emergent abilities of large language models",
+            "Self-refine: Iterative refinement with self-feedback",
+            "Survey of hallucination in natural language generation",
+            "Gpt-4 technical report"
+          ],
+          "2 New Perspective on Intrinsic Self Correction 2.1 Preliminary": [
+            "Chain of thought prompting elicits reasoning in large language models",
+            "Gpt-4 technical report",
+            "Large language models are better reasoners with self-verification"
+          ],
+          "2 New Perspective on Intrinsic Self Correction 2.2 Does intrinsic SC exist in LLMs?": [
+            "Chain of thought prompting elicits reasoning in large language models",
+            "Self-verification improves few-shot clinical information extraction",
+            "A survey of chain of thought reasoning: Advances, frontiers and future",
+            "Towards revealing the mystery behind chain of thought: A theoretical perspective"
+          ],
+          "3 Experiment Setup": [
+            "Mistral 7b, 2023.",
+            "Large language models cannot self-correct reasoning yet",
+            "CommonsenseQA: A question answering challenge targeting commonsense knowledge",
+            "Training verifiers to solve math word problems",
+            "Phi-3 technical report: A highly capable language model locally on your phone",
+            "Gpt-4 technical report"
+          ],
+          "4 Increasing Temperature Might Decrease Accuracy During SC": [
+            "Contextual temperature for language modeling",
+            "The effect of sampling temperature on problem solving in large language models",
+            "Distilling the knowledge in a neural network"
+          ],
+          "4 Increasing Temperature Might Decrease Accuracy During SC 4.2 Effect of Temperature on Self-Correction": [
+            "Large language models cannot self-correct reasoning yet",
+            "CommonsenseQA: A question answering challenge targeting commonsense knowledge"
+          ],
+          "5 Designing Fair Prompt for Self-Correction": [
+            "Chain of thought prompting elicits reasoning in large language models",
+            "Large language models cannot self-correct reasoning yet"
+          ],
+          "5 Designing Fair Prompt for Self-Correction 5.1 Theoretical Analysis": [
+            "Large language models cannot self-correct reasoning yet"
+          ],
+          "5 Designing Fair Prompt for Self-Correction 5.2 Intrinsic SC could be achieved with fair prompt under zero temperature": [
+            "Training language models to follow instructions with human feedback",
+            "Large language models cannot self-correct reasoning yet",
+            "CommonsenseQA: A question answering challenge targeting commonsense knowledge",
+            "Training verifiers to solve math word problems",
+            "Large language models are better reasoners with self-verification"
+          ],
+          "8 Related Works": [
+            "Reflexion: language agents with verbal reinforcement learning",
+            "Shepherd: A critic for language model generation",
+            "Large language models cannot self-correct reasoning yet",
+            "Language models can solve computer tasks",
+            "CRITIC: Large language models can self-correct with tool-interactive critiquing",
+            "RARR: Researching and revising what language models say, using language models"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.010534918867051601,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "When Can LLMs Actually Correct Their Own Mistakes? A Critical Survey of Self-Correction of LLMs",
+        "arxiv_id": "2406.01297",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract Self-correction is an approach to improving responses from large language models (LLMs) by refining the responses using LLMs during inference. Prior work has proposed various self-correction frameworks using different sources of feedback, including self-evaluation and external feedback. However, there is still no consensus on the question of when LLMs can correct their own mistakes, as recent studies also report negative results. In this work, we critically survey broad papers and discuss the conditions required for successful self-correction. We first find that prior studies often do not define their research questions in detail and involve impractical frameworks or unfair evaluations that over-evaluate self-correction. To tackle these issues, we categorize research questions in self-correction research and provide a checklist for designing appropriate experiments. Our critical survey based on the newly categorized research questions shows that (1) no prior work demonstrates successful self-correction with feedback from prompted LLMs in general tasks, (2) self-correction works well in tasks that can use reliable external feedback, and (3) large-scale fine-tuning enables self-correction.",
+        "sections": {
+          "1 Introduction": [
+            "Constitutional ai: Harmlessness from ai feedback.",
+            "Large language models cannot self-correct reasoning yet",
+            "Can LLM-generated misinformation be detected?",
+            "RARR: Researching and revising what language models say, using language models",
+            "Generating sequences by learning to self-correct",
+            "Self-critiquing models for assisting human evaluators",
+            "Teaching large language models to self-debug"
+          ],
+          "2 Self-Correction of LLMs": [
+            "Self-refine: Iterative refinement with self-feedback",
+            "Reflexion: language agents with verbal reinforcement learning"
+          ],
+          "2 Self-Correction of LLMs 2.1 Frameworks": [
+            "Encouraging divergent thinking in large language models through multi-agent debate",
+            "REFINER: Reasoning feedback on intermediate representations",
+            "Language models can solve computer tasks",
+            "Generating sequences by learning to self-correct",
+            "Self-critiquing models for assisting human evaluators",
+            "Automatically Correcting Large Language Models: Surveying the Landscape of Diverse Automated Correction Strategies"
+          ],
+          "2 Self-Correction of LLMs 2.2 Sources of Feedback": [
+            "Selfevolve: A code evolution framework via large language models",
+            "A stitch in time saves nine: Detecting and mitigating hallucinations of llms by validating low-confidence generation",
+            "Chain-of-verification reduces hallucination in large language models",
+            "Small language models need strong verifiers to self-correct reasoning",
+            "Language models can solve computer tasks",
+            "INSTRUCTSCORE: Towards explainable text generation evaluation with automatic feedback",
+            "Learning from natural language feedback",
+            "Improving language models via plug-and-play retrieval feedback",
+            "Self-refine: Iterative refinement with self-feedback",
+            "Baldur: Whole-proof generation and repair with large language models",
+            "Check your facts and try again: Improving large language models with external knowledge and automated feedback",
+            "Coderl: Mastering code generation through pretrained models and deep reinforcement learning",
+            "Generating sequences by learning to self-correct",
+            "Active retrieval augmented generation",
+            "Logic-LM: Empowering large language models with symbolic solvers for faithful logical reasoning"
+          ],
+          "2 Self-Correction of LLMs 2.3 Tasks": [
+            "Reflexion: language agents with verbal reinforcement learning",
+            "Selfevolve: A code evolution framework via large language models",
+            "Self-verification improves few-shot clinical information extraction",
+            "Self-Diagnosis and Self-Debiasing: A Proposal for Reducing Corpus-Based Bias in NLP",
+            "Re3: Generating longer stories with recursive reprompting and revision",
+            "Iterative translation refinement with large language models",
+            "Self-refine: Iterative refinement with self-feedback",
+            "Baldur: Whole-proof generation and repair with large language models",
+            "Volcano: mitigating multimodal hallucination through self-feedback guided revision",
+            "Automatic prompt optimization with \u201cgradient descent\u201d and beam search",
+            "Selfee: Iterative self-revising llm empowered by self-feedback generation",
+            "Self-critiquing models for assisting human evaluators",
+            "Logic-LM: Empowering large language models with symbolic solvers for faithful logical reasoning"
+          ],
+          "2 Self-Correction of LLMs 2.4 Differences from Related Approaches": [
+            "Generate & rank: A multi-task framework for math word problems",
+            "Self-consistency improves chain of thought reasoning in language models"
+          ],
+          "3 Research Questions 3.1 RQs in Self-Correction Research": [
+            "Language models can solve computer tasks",
+            "CRITIC: Large language models can self-correct with tool-interactive critiquing"
+          ],
+          "3 Research Questions 3.2 Frameworks for Verifying RQs": [
+            "Large language models cannot self-correct reasoning yet",
+            "Language models can solve computer tasks",
+            "RARR: Researching and revising what language models say, using language models",
+            "Teaching large language models to self-debug"
+          ],
+          "3 Research Questions 3.3 Strong Baselines": [
+            "SelfCheckGPT: Zero-resource black-box hallucination detection for generative large language models",
+            "Solving math word problems with process- and outcome-based feedback",
+            "CRITIC: Large language models can self-correct with tool-interactive critiquing",
+            "Reasoning with language model is planning with world model",
+            "Maieutic prompting: Logically consistent reasoning with recursive explanations",
+            "Training verifiers to solve math word problems",
+            "Self-edit: Fault-aware code editor for code generation",
+            "Natural language to code translation with execution",
+            "Large language models are better reasoners with self-verification",
+            "Self-consistency improves chain of thought reasoning in language models"
+          ],
+          "4 Self-Correction with Prompting": [
+            "Constitutional ai: Harmlessness from ai feedback.",
+            "Language models can solve computer tasks",
+            "Self-refine: Iterative refinement with self-feedback"
+          ],
+          "4 Self-Correction with Prompting Negative Results.": [
+            "Large language models cannot self-correct reasoning yet",
+            "CRITIC: Large language models can self-correct with tool-interactive critiquing",
+            "GPT-4 doesn\u2019t know it\u2019s wrong: An analysis of iterative prompting for reasoning problems",
+            "Investigating the effectiveness of self-critiquing in LLMs solving planning tasks"
+          ],
+          "4 Self-Correction with Prompting Unfair Settings.": [
+            "Reflexion: language agents with verbal reinforcement learning",
+            "Language models can solve computer tasks",
+            "Constitutional ai: Harmlessness from ai feedback.",
+            "Self-refine: Iterative refinement with self-feedback"
+          ],
+          "4 Self-Correction with Prompting Tasks in which Self-Correction is Exceptionally Effective.": [
+            "Chain-of-verification reduces hallucination in large language models",
+            "Tree of thoughts: Deliberate problem solving with large language models"
+          ],
+          "5 Self-Correction with External Tools or Knowledge": [
+            "Teaching large language models to self-debug",
+            "Logic-LM: Empowering large language models with symbolic solvers for faithful logical reasoning",
+            "RARR: Researching and revising what language models say, using language models"
+          ],
+          "5 Self-Correction with External Tools or Knowledge Unfair self-correction with external information.": [
+            "CRITIC: Large language models can self-correct with tool-interactive critiquing",
+            "RARR: Researching and revising what language models say, using language models"
+          ],
+          "6 Self-Correction with Fine-tuning": [
+            "RL4F: Generating natural language feedback with reinforcement learning for repairing model outputs",
+            "REFINER: Reasoning feedback on intermediate representations",
+            "Re3: Generating longer stories with recursive reprompting and revision",
+            "Baldur: Whole-proof generation and repair with large language models",
+            "Generating sequences by learning to self-correct",
+            "Self-edit: Fault-aware code editor for code generation",
+            "Selfee: Iterative self-revising llm empowered by self-feedback generation",
+            "Self-critiquing models for assisting human evaluators"
+          ],
+          "6 Self-Correction with Fine-tuning Unfair Fine-tuning.": [
+            "Generating sequences by learning to self-correct"
+          ],
+          "7 Summary of Our Analysis Bottleneck is in Feedback Generation.": [
+            "Self-critiquing models for assisting human evaluators"
+          ],
+          "7 Summary of Our Analysis Tasks Suitable for Self-Correction.": [
+            "Generating sequences by learning to self-correct"
+          ],
+          "9 Differences from Other Survey": [
+            "Large language models cannot self-correct reasoning yet",
+            "Automatically Correcting Large Language Models: Surveying the Landscape of Diverse Automated Correction Strategies"
+          ],
+          "10 Related Work of Self-Correction Self-Detection": [
+            "How language model hallucinations can snowball",
+            "Characteristics of harmful text: Towards rigorous benchmarking of language models",
+            "Language (technology) is power: A critical survey of \u201cbias\u201d in NLP",
+            "Asking and answering questions to evaluate the factual consistency of summaries"
+          ],
+          "10 Related Work of Self-Correction Editing Human-Written Text": [
+            "The CoNLL-2014 shared task on grammatical error correction",
+            "Deepfix: Fixing common c language errors by deep learning",
+            "Automatic fact-guided sentence modification",
+            "Factual error correction for abstractive summarization models"
+          ],
+          "10 Related Work of Self-Correction Self-Training": [
+            "Generating training data with language models: Towards zero-shot language understanding",
+            "Constitutional ai: Harmlessness from ai feedback.",
+            "Large language models can self-improve",
+            "Language model self-improvement by reinforcement learning contemplation",
+            "Star: Bootstrapping reasoning with reasoning"
+          ],
+          "11 Future Directions Improving Feedback.": [
+            "A stitch in time saves nine: Detecting and mitigating hallucinations of llms by validating low-confidence generation",
+            "Can large language models be an alternative to human evaluations?",
+            "Branch-solve-merge improves large language model evaluation and generation",
+            "Maieutic prompting: Logically consistent reasoning with recursive explanations"
+          ],
+          "11 Future Directions Unexplored Tasks.": [
+            "Self-critiquing models for assisting human evaluators",
+            "Gptscore: Evaluate as you desire"
+          ],
+          "11 Future Directions Fine-tuning with Small Training Data.": [
+            "RL4F: Generating natural language feedback with reinforcement learning for repairing model outputs",
+            "Generating sequences by learning to self-correct"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.4565349817276001,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Intrinsic Self-correction for Enhanced Morality: An Analysis of Internal Mechanisms and the Superficial Hypothesis",
+        "arxiv_id": "2407.15286",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract Large Language Models (LLMs) are capable of producing content that perpetuates stereotypes, discrimination, and toxicity. The recently proposed moral self-correction is a computationally efficient method for reducing harmful content in the responses of LLMs. However, the process of how injecting self-correction instructions can modify the behavior of LLMs remains under-explored. In this paper, we explore the effectiveness of moral self-correction by answering three research questions: (1) In what scenarios does moral self-correction work? (2) What are the internal mechanisms of LLMs, e.g., hidden states, that are influenced by moral self-correction instructions? (3) Is intrinsic moral self-correction actually superficial? We argue that self-correction can help LLMs find a shortcut to more morally correct output, rather than truly reducing the immorality stored in hidden states. Through empirical investigation with tasks of language generation and multi-choice question answering, we conclude: (i) LLMs exhibit good performance across both tasks, and self-correction instructions are particularly beneficial when the correct answer is already top-ranked; (ii) The morality levels in intermediate hidden states are strong indicators as to whether one instruction would be more effective than another; (iii) Based on our analysis of intermediate hidden states and task case studies of self-correction behaviors, we are first to propose the hypothesis that intrinsic moral self-correction is in fact superficial.",
+        "sections": {
+          "1 Introduction": [
+            "The capacity for moral self-correction in large language models",
+            "Gender bias in coreference resolution",
+            "On the intrinsic self-correction capability of llms: Uncertainty and latent concept",
+            "Lima: Less is more for alignment",
+            "Large language models cannot self-correct reasoning yet",
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "Self-refine: Iterative refinement with self-feedback",
+            "Jailbroken: How does llm safety training fail?",
+            "Realtoxicityprompts: Evaluating neural toxic degeneration in language models"
+          ],
+          "2 Related Works": [
+            "The capacity for moral self-correction in large language models",
+            "In-context learning and induction heads",
+            "Self-diagnosis and self-debiasing: A proposal for reducing corpus-based bias in nlp",
+            "Mass-editing memory in a transformer",
+            "Transformer feed-forward layers are key-value memories",
+            "Eliciting latent predictions from transformers with the tuned lens",
+            "Automatically correcting large language models: Surveying the landscape of diverse self-correction strategies",
+            "Exploring the residual stream of transformers",
+            "A mechanistic understanding of alignment algorithms: A case study on dpo and toxicity",
+            "Ethical-advice taker: Do language models understand natural language interventions?",
+            "Exploring the limits of transfer learning with a unified text-to-text transformer",
+            "Language models are unsupervised multitask learners.",
+            "Teaching large language models to self-debug",
+            "Roberta: A robustly optimized bert pretraining approach",
+            "Understanding intermediate layers using linear classifier probes"
+          ],
+          "3 Scenarios for Moral Self-Correction 3.1 Experimental Settings": [
+            "The capacity for moral self-correction in large language models",
+            "Confidence matters: Revisiting intrinsic self-correction capabilities of large language models",
+            "BBQ: A hand-built bias benchmark for question answering",
+            "Gender bias in coreference resolution",
+            "On the intersection of self-correction and trust in language models",
+            "Mistral 7b",
+            "Realtoxicityprompts: Evaluating neural toxic degeneration in language models"
+          ],
+          "3 Scenarios for Moral Self-Correction 3.2 Experimental Results": [
+            "Gpt-4 doesn\u2019t know it\u2019s wrong: An analysis of iterative prompting for reasoning problems"
+          ],
+          "4 Mechanisms of Moral Self-Correction": [
+            "An explanation of in-context learning as implicit bayesian inference",
+            "A data generation perspective to the mechanism of in-context learning",
+            "Understanding intermediate layers using linear classifier probes",
+            "On the origins of linear representations in large language models"
+          ],
+          "4 Mechanisms of Moral Self-Correction 4.1 Experimental Settings": [
+            "Social bias frames: Reasoning about social and power implications of language",
+            "A mechanistic understanding of alignment algorithms: A case study on dpo and toxicity"
+          ],
+          "4 Mechanisms of Moral Self-Correction 4.2 Effects of Layer-wise Hidden States": [
+            "The unlocking spell on base llms: Rethinking alignment via in-context learning",
+            "How do transformers learn in-context beyond simple functions? a case study on learning with representations."
+          ],
+          "4 Mechanisms of Moral Self-Correction 4.3 Effects of Attention and FFLs": [
+            "The heuristic core: Understanding subnetwork generalization in pretrained language models",
+            "Transformer feed-forward layers are key-value memories"
+          ],
+          "4 Mechanisms of Moral Self-Correction 4.4 Effectiveness of Instructions": [
+            "Self-refine: Iterative refinement with self-feedback"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.05805989354848862,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Improving LLM-based Machine Translation with Systematic Self-Correction",
+        "arxiv_id": "2402.16379",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Large Language Models (LLMs) have achieved impressive results in Machine Translation (MT). However, careful evaluations by human reveal that the translations produced by LLMs still contain multiple errors. Importantly, feeding back such error information into the LLMs can lead to self-correction and result in improved translation performance. Motivated by these insights, we introduce a systematic LLM-based self-correcting translation framework, named TER, which stands for Translate, Estimate, and Refine, marking a significant step forward in this direction. Our findings demonstrate that 1) our self-correction framework successfully assists LLMs in improving their translation quality across a wide range of languages, whether it\u2019s from high-resource languages to low-resource ones or whether it\u2019s English-centric or centered around other languages; 2) TER exhibits superior systematicity and interpretability compared to previous methods; 3) different estimation strategies yield varied impacts on AI feedback, directly affecting the effectiveness of the final corrections. We further compare different LLMs and conduct various experiments involving self-correction and cross-model correction to investigate the potential relationship between the translation and evaluation capabilities of LLMs.111We release our data and code at\u00a0https://github.com/fzp0424/self_correct_mt ",
+        "sections": {
+          "1 Introduction": [
+            "Findings of the 2023 conference on machine translation (wmt23): Llms are here but not quite there yet",
+            "Self-critiquing models for assisting human evaluators",
+            "Iterative translation refinement with large language models",
+            "Comet: A neural framework for mt evaluation",
+            "Cometkiwi: Ist-unbabel 2022 submission for the quality estimation shared task",
+            "Gemini: a family of highly capable multimodal models",
+            "Large language models are zero-shot reasoners",
+            "Leveraging gpt-4 for automatic translation post-editing",
+            "Gpt-4 technical report",
+            "Bleurt: Learning robust metrics for text generation",
+            "Anthropic. Model card and evaluations for claude models.",
+            "Experts, errors, and context: A large-scale study of human evaluation for machine translation",
+            "In-context examples selection for machine translation"
+          ],
+          "2 TER Translate": [
+            "In-context examples selection for machine translation"
+          ],
+          "2 TER Estimate": [
+            "Cometkiwi: Ist-unbabel 2022 submission for the quality estimation shared task",
+            "The devil is in the errors: Leveraging large language models for fine-grained machine translation evaluation",
+            "Experts, errors, and context: A large-scale study of human evaluation for machine translation",
+            "xcomet: Transparent machine translation evaluation through fine-grained error detection",
+            "Gemba-mqm: Detecting translation quality error spans with gpt-4"
+          ],
+          "2 TER Refine": [
+            "Iterative translation refinement with large language models",
+            "Leveraging gpt-4 for automatic translation post-editing"
+          ],
+          "3 Experimental Setup Prompting Strategies": [
+            "How good are gpt models at machine translation? a comprehensive evaluation.",
+            "Findings of the 2023 conference on machine translation (wmt23): Llms are here but not quite there yet",
+            "Gemba-mqm: Detecting translation quality error spans with gpt-4"
+          ],
+          "3 Experimental Setup Evaluation methods": [
+            "A call for clarity in reporting BLEU scores",
+            "Cometkiwi: Ist-unbabel 2022 submission for the quality estimation shared task",
+            "Bleurt: Learning robust metrics for text generation",
+            "Comet: A neural framework for mt evaluation"
+          ],
+          "4 Results": [
+            "Leveraging gpt-4 for automatic translation post-editing",
+            "Experts, errors, and context: A large-scale study of human evaluation for machine translation",
+            "Iterative translation refinement with large language models"
+          ],
+          "6 Related Work LLMs for Machine Translation": [
+            "Exploring human-like translation strategy with large language models",
+            "Prompting PaLM for translation: Assessing strategies and performance",
+            "Encouraging divergent thinking in large language models through multi-agent debate",
+            "Improving machine translation with human feedback: An exploration of quality estimation as a reward model",
+            "How good are gpt models at machine translation? a comprehensive evaluation.",
+            "Gemba-mqm: Detecting translation quality error spans with gpt-4",
+            "Adapting large language models for document-level machine translation",
+            "A paradigm shift in machine translation: Boosting translation performance of large language models.",
+            "Bigtranslate: Augmenting large language models with multilingual translation capability over 100 languages"
+          ],
+          "6 Related Work Post-hoc Correction": [
+            "Iterative translation refinement with large language models",
+            "Reflexion: Language agents with verbal reinforcement learning",
+            "Large language models cannot self-correct reasoning yet",
+            "Leveraging gpt-4 for automatic translation post-editing",
+            "Self-refine: Iterative refinement with self-feedback",
+            "Critic: Large language models can self-correct with tool-interactive critiquing"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.001971172634512186,
+        "extra": {
+          "expand": "not expand"
+        }
+      }
+    ],
+    "Impact of self-correction on language model performance": [
+      {
+        "title": "The Capacity for Moral Self-Correction in Large Language Models",
+        "arxiv_id": "2302.07459",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract We test the hypothesis that language models trained with reinforcement learning from human feedback (RLHF) have the capability to \u201cmorally self-correct\u201d\u2014to avoid producing harmful outputs\u2014if instructed to do so. We find strong evidence in support of this hypothesis across three different experiments, each of which reveal different facets of moral self-correction. We find that the capability for moral self-correction emerges at 22B model parameters, and typically improves with increasing model size and RLHF training. We believe that at this level of scale, language models obtain two capabilities that they can use for moral self-correction: (1) they can follow instructions and (2) they can learn complex normative concepts of harm like stereotyping, bias, and discrimination. As such, they can follow instructions to avoid certain kinds of morally harmful outputs. We believe our results are cause for cautious optimism regarding the ability to train language models to abide by ethical principles. ",
+        "sections": {
+          "1 Introduction": [
+            "Inverse scaling can become U-shaped",
+            "Scaling Laws for Neural Language Models",
+            "Race-Aware Algorithms: Fairness, Nondiscrimination and Affirmative Action",
+            "Social Bias Frames: Reasoning about Social and Power Implications of Language",
+            "BBQ: A hand-built bias benchmark for question answering",
+            "Counterfactual Fairness",
+            "Large Language Models are Zero-Shot Reasoners",
+            "Self-Diagnosis and Self-Debiasing: A Proposal for Reducing Corpus-Based Bias in NLP",
+            "Deep Reinforcement Learning from Human Preferences",
+            "Gender Bias in Coreference Resolution",
+            "RealToxicityPrompts: Evaluating Neural Toxic Degeneration in Language Models"
+          ],
+          "2 Related Work": [
+            "Self-Diagnosis and Self-Debiasing: A Proposal for Reducing Corpus-Based Bias in NLP",
+            "Emergent Abilities of Large Language Models",
+            "Language Models are Unsupervised Multitask Learners",
+            "Show Your Work: Scratchpads for Intermediate Computation with Language Models",
+            "UNQOVERing Stereotyping Biases via Underspecified Questions",
+            "RealToxicityPrompts: Evaluating Neural Toxic Degeneration in Language Models",
+            "An Empirical Survey of the Effectiveness of Debiasing Techniques for Pre-trained Language Models",
+            "On Second Thought, Let\u2019s Not Think Step by Step! Bias and Toxicity in Zero-Shot Reasoning",
+            "RoBERTa: A Robustly Optimized BERT Pretraining Approach",
+            "Large Language Models are Zero-Shot Reasoners",
+            "SQuAD: 100,000+ Questions for Machine Comprehension of Text",
+            "Process for Adapting Language Models to Society (PALMS) with Values-Targeted Datasets",
+            "Chain of Thought Prompting Elicits Reasoning in Large Language Models",
+            "Ethical-Advice Taker: Do Language Models Understand Natural Language Interventions?",
+            "StereoSet: Measuring stereotypical bias in pretrained language models",
+            "BBQ: A hand-built bias benchmark for question answering",
+            "Prompting GPT-3 To Be Reliable",
+            "Language Models are Few-Shot Learners",
+            "Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer"
+          ],
+          "3 Methods 3.1 Models": [
+            "A General Language Assistant as a Laboratory for Alignment",
+            "ChatGPT: Optimizing Language Models for Dialogue, Nov. 2022.",
+            "Deep Reinforcement Learning from Human Preferences",
+            "Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback",
+            "Learning to summarize from human feedback",
+            "Perez, S"
+          ],
+          "3 Methods 3.2 Experiments": [
+            "LSAC National Longitudinal Bar Passage Study",
+            "BBQ: A hand-built bias benchmark for question answering",
+            "Counterfactual Fairness",
+            "Liang, R",
+            "Fairness and Machine Learning: Limitations and Opportunities",
+            "The Concept of Discrimination",
+            "Counterfactual Fairness Is Basically Demographic Parity",
+            "Gender Bias in Coreference Resolution",
+            "What is a Stereotype? What is Stereotyping?"
+          ],
+          "4 Results 4.1 Bias Benchmark for QA": [
+            "BBQ: A hand-built bias benchmark for question answering",
+            "Red Teaming Language Models to Reduce Harms: Methods, Scaling Behaviors, and Lessons Learned"
+          ],
+          "4 Results 4.2 Winogender": [
+            "Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback"
+          ],
+          "5 Discussion 5.2 Limitations & Future Work": [
+            "AI and the Everything in the Whole Wide World Benchmark",
+            "The Use and Misuse of Counterfactuals in Ethical Machine Learning",
+            "Artificial Intelligence Act: Council calls for promoting safe AI that respects fundamental rights, Dec.",
+            "Ethical-Advice Taker: Do Language Models Understand Natural Language Interventions?",
+            "Give Me Convenience and Give Her Death: Who Should Decide What Uses of NLP are Appropriate, and on What Basis?",
+            "StereoSet: Measuring stereotypical bias in pretrained language models",
+            "Counterfactual Fairness",
+            "Fairness and Machine Learning: Limitations and Opportunities",
+            "Reducing Sentiment Bias in Language Models via Counterfactual Evaluation",
+            "Bai, S",
+            "Language (Technology) is Power: A Critical Survey of \u201cBias\u201d in NLP",
+            "Characteristics of Harmful Text: Towards Rigorous Benchmarking of Language Models"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.002181108808144927,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "CRITIC: Large Language Models Can Self-Correct with Tool-Interactive Critiquing",
+        "arxiv_id": "2305.11738",
+        "depth": 0,
+        "child": {},
+        "abstract": "Recent developments in large language models (LLMs) have been impressive. However, these models sometimes show inconsistencies and problematic behavior, such as hallucinating facts, generating flawed code, or creating offensive and toxic content. Unlike these models, humans typically utilize external tools to cross-check and refine their initial content, like using a search engine for fact-checking, or a code interpreter for debugging. Inspired by this observation, we introduce a framework called CRITIC that allows LLMs, which are essentially \"black boxes\" to validate and progressively amend their own outputs in a manner similar to human interaction with tools. More specifically, starting with an initial output, CRITIC interacts with appropriate tools to evaluate certain aspects of the text, and then revises the output based on the feedback obtained during this validation process. Comprehensive evaluations involving free-form question answering, mathematical program synthesis, and toxicity reduction demonstrate that CRITIC consistently enhances the performance of LLMs. Meanwhile, our research highlights the crucial importance of external feedback in promoting the ongoing self-improvement of LLMs.",
+        "sections": null,
+        "source": "Search SearchFrom:arxiv",
+        "select_score": 0.005215248093008995,
+        "extra": {
+          "expand": "get full paper error"
+        }
+      },
+      {
+        "title": "Small Language Model Can Self-correct",
+        "arxiv_id": "2401.07301",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Generative Language Models (LMs) such as ChatGPT have exhibited remarkable performance across various downstream tasks. Nevertheless, one of their most prominent drawbacks is generating inaccurate or false information with a confident tone. Previous studies have devised sophisticated pipelines and prompts to induce large LMs to exhibit the capability for self-correction. However, large LMs are explicitly prompted to verify and modify its answers separately rather than completing all steps spontaneously like humans. Moreover, these complex prompts are extremely challenging for small LMs to follow. In this paper, we introduce the Intrinsic Self-Correction (ISC) in generative language models, aiming to correct the initial output of LMs in a self-triggered manner, even for those small LMs with 6 billion parameters. Specifically, we devise a pipeline for constructing self-correction data and propose Partial Answer Masking (PAM), aiming to endow the model with the capability for intrinsic self-correction through fine-tuning. We conduct experiments using LMs with parameters sizes ranging from 6 billion to 13 billion in two tasks, including commonsense reasoning and factual knowledge reasoning. Our experiments demonstrate that the outputs generated using ISC outperform those generated without self-correction. We believe that the output quality of even small LMs can be further improved by empowering them with the ability to intrinsic self-correct. ",
+        "sections": {
+          "Introduction": [
+            "How close is chatgpt to human experts? comparison corpus, evaluation, and detection",
+            "A cognitive process theory of writing",
+            "Selfcheckgpt: Zero-resource black-box hallucination detection for generative large language models",
+            "Finetuned language models are zero-shot learners",
+            "Re3: Generating longer stories with recursive reprompting and revision",
+            "Large language models are reasoners with self-verification",
+            "Peer: A collaborative language model",
+            "Self-refine: Iterative refinement with self-feedback",
+            "The internal state of an llm knows when its lying",
+            "TruthfulQA: Measuring how models mimic human falsehoods"
+          ],
+          "Related Work": [
+            "Scaling laws for reward model overoptimization",
+            "Scaling laws for neural language models",
+            "Chain-of-thought prompting elicits reasoning in large language models",
+            "Learning to summarize with human feedback",
+            "Least-to-most prompting enables complex reasoning in large language models",
+            "Generating sequences by learning to self-correct",
+            "Prefix-tuning: Optimizing continuous prompts for generation",
+            "Large language models are zero-shot reasoners",
+            "Lora: Low-rank adaptation of large language models",
+            "Refiner: Reasoning feedback on intermediate representations",
+            "Large language models are reasoners with self-verification",
+            "Self-refine: Iterative refinement with self-feedback"
+          ],
+          "Methods Self-correction Data": [
+            "The curious case of neural text degeneration"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.005215262994170189,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Physics of Language Models: Part 2.2, How to Learn From Mistakes on Grade-School Math Problems",
+        "arxiv_id": "2408.16293",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract Language models have demonstrated remarkable performance in solving reasoning tasks; however, even the strongest models still occasionally make reasoning mistakes. Recently, there has been active research aimed at improving reasoning accuracy, particularly by using pretrained language models to \u201cself-correct\u201d their mistakes via multi-round prompting. In this paper, we follow this line of work but focus on understanding the usefulness of incorporating \u201cerror-correction\u201d data directly into the pretraining stage. This data consists of erroneous solution steps immediately followed by their corrections. Using a synthetic math dataset, we show promising results: this type of pretrain data can help language models achieve higher reasoning accuracy directly (i.e., through simple auto-regression, without multi-round prompting) compared to pretraining on the same amount of error-free data. We also delve into many details, such as (1) how this approach differs from beam search, (2) how such data can be prepared, (3) whether masking is needed on the erroneous tokens, (4) the amount of error required, (5) whether such data can be deferred to the fine-tuning stage, and many others.",
+        "sections": {
+          "1 Introduction": [
+            "Distribution shifts are bottlenecks: Extensive evaluation for grounding language models to knowledge bases",
+            "Physics of Language Models: Part 2.1, Grade-School Math and the Hidden Reasoning Process",
+            "Automatically correcting large language models: Surveying the landscape of diverse self-correction strategies",
+            "Physics of Language Models: Part 1, Learning Hierarchical Language Structures",
+            "Making language models better reasoners with step-aware verifier",
+            "The llama 3 herd of models",
+            "TinyGSM: achieving >80%absentpercent80>80\\% on GSM8k with small language models.",
+            "Large language models are better reasoners with self-verification"
+          ],
+          "2 Synthetic Math Data From Prior Work": [
+            "Training verifiers to solve math word problems",
+            "Physics of Language Models: Part 2.1, Grade-School Math and the Hidden Reasoning Process"
+          ],
+          "3 Result 0-1: Language Models Can Retry Upon Regret": [
+            "Physics of Language Models: Part 2.1, Grade-School Math and the Hidden Reasoning Process",
+            "Sparks of artificial general intelligence: Early experiments with gpt-4"
+          ],
+          "3 Result 0-1: Language Models Can Retry Upon Regret 3.1 Result 0: Models Can Be \u201cRegretful\u201d After Making Mistakes": [
+            "TinyGSM: achieving >80%absentpercent80>80\\% on GSM8k with small language models.",
+            "Physics of Language Models: Part 2.1, Grade-School Math and the Hidden Reasoning Process"
+          ],
+          "3 Result 0-1: Language Models Can Retry Upon Regret 3.2 Result 1: Let Models Retry Upon Regret": [
+            "Physics of Language Models: Part 2.1, Grade-School Math and the Hidden Reasoning Process",
+            "Physics of Language Models: Part 3.2, Knowledge Manipulation"
+          ],
+          "4 Result 2-6: Pretrain with Retry Data": [
+            "Physics of Language Models: Part 1, Learning Hierarchical Language Structures",
+            "Physics of Language Models: Part 2.1, Grade-School Math and the Hidden Reasoning Process"
+          ],
+          "5 Result 7: Finetune with Retry Data": [
+            "Lora: Low-rank adaptation of large language models",
+            "Physics of Language Models: Part 2.1, Grade-School Math and the Hidden Reasoning Process"
+          ],
+          "7 Conclusion": [
+            "The llama 3 herd of models",
+            "Physics of Language Models: Part 2.1, Grade-School Math and the Hidden Reasoning Process",
+            "Physics of Language Models: Part 3.1, Knowledge Storage and Extraction",
+            "Physics of Language Models: Part 1, Learning Hierarchical Language Structures"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.01655922830104828,
+        "extra": {
+          "expand": "not expand"
+        }
+      }
+    ]
+  },
+  "abstract": "",
+  "sections": "",
+  "source": "Root",
+  "select_score": 0.0,
+  "extra": {
+    "touch_ids": [
+      "2311.02801",
+      "2403.20046",
+      "2310.01798",
+      "2406.15673",
+      "2311.08596",
+      "2406.01297",
+      "2407.03181",
+      "2408.15658",
+      "2407.15286",
+      "2302.07459",
+      "2311.08516",
+      "2405.06682",
+      "2402.16379",
+      "2305.11738",
+      "2409.12917",
+      "2404.17140",
+      "2401.07301",
+      "2402.08115",
+      "2408.16293",
+      "2404.09129",
+      "2407.11511"
+    ],
+    "crawler_recall_papers": [
+      "Large Language Models have Intrinsic Self-Correction Ability",
+      "When Can LLMs Actually Correct Their Own Mistakes? A Critical Survey of Self-Correction of LLMs",
+      "Intrinsic Self-correction for Enhanced Morality: An Analysis of Internal Mechanisms and the Superficial Hypothesis",
+      "Improving LLM-based Machine Translation with Systematic Self-Correction",
+      "On the Intersection of Self-Correction and Trust in Language Models",
+      "Can LLMs Learn from Previous Mistakes? Investigating LLMs\u2019 Errors to Boost for Reasoning",
+      "Large Language Models Cannot Self-Correct Reasoning Yet",
+      "Are You Sure? Challenging LLMs Leads to Performance Drops in The FlipFlop Experiment",
+      "Fine-Tuning with Divergent Chains of Thought Boosts Reasoning Through Self-Correction in Language Models",
+      "Self-Reflection in LLM Agents: Effects on Problem-Solving Performance",
+      "Small Language Models Need Strong Verifiers to Self-Correct Reasoning",
+      "The Capacity for Moral Self-Correction in Large Language Models",
+      "CRITIC: Large Language Models Can Self-Correct with Tool-Interactive Critiquing",
+      "Small Language Model Can Self-correct",
+      "Physics of Language Models: Part 2.2, How to Learn From Mistakes on Grade-School Math Problems",
+      "An Empirical Study on Self-correcting Large Language Models for Data Science Code Generation",
+      "LLMs cannot find reasoning errors, but can correct them!",
+      "Training Language Models to Self-Correct via Reinforcement Learning",
+      "On the Self-Verification Limitations of Large Language Models on Reasoning and Planning Tasks",
+      "When Hindsight is Not 20/20: Testing Limits on Reflective Thinking in Large Language Models",
+      "Reasoning with Large Language Models, a Survey"
+    ],
+    "recall_papers": [
+      "Large Language Models Cannot Self-Correct Reasoning Yet",
+      "Are You Sure? Challenging LLMs Leads to Performance Drops in The FlipFlop Experiment",
+      "On the Self-Verification Limitations of Large Language Models on Reasoning and Planning Tasks"
+    ],
+    "answer": [
+      "Can Large Language Models Really Improve by Self-critiquing Their Own   Plans?",
+      "Are You Sure? Challenging LLMs Leads to Performance Drops in The   FlipFlop Experiment",
+      "A Closer Look at the Self-Verification Abilities of Large Language   Models in Logical Reasoning",
+      "SELF-[IN]CORRECT: LLMs Struggle with Discriminating Self-Generated Responses",
+      "Large Language Models Cannot Self-Correct Reasoning Yet",
+      "Is Self-Repair a Silver Bullet for Code Generation?",
+      "On the Self-Verification Limitations of Large Language Models on Reasoning and Planning Tasks",
+      "The Counterfeit Conundrum: Can Code Language Models Grasp the Nuances of   Their Incorrect Generations?",
+      "When Can LLMs Actually Correct Their Own Mistakes? A Critical Survey of Self-Correction of LLMs",
+      "On the Intrinsic Self-Correction Capability of LLMs: Uncertainty and Latent Concept",
+      "Pride and Prejudice: LLM Amplifies Self-Bias in Self-Refinement",
+      "GPT-4 Doesn't Know It's Wrong: An Analysis of Iterative Prompting for Reasoning Problems"
+    ]
+  }
+}
