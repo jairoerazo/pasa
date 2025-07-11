@@ -14,7 +14,7 @@
 import re
 import json
 import threading
-from paper_node import PaperNode
+from product_node import ProductNode
 from models     import Agent
 from datetime   import datetime
 from utils      import (
@@ -26,7 +26,7 @@ from utils      import (
     search_product_by_asin
 )
 
-class PaperAgent:
+class ProductAgent:
     def __init__(
         self,
         user_query:     str,
@@ -45,7 +45,7 @@ class PaperAgent:
         self.selector   = selector
         self.end_date   = end_date
         self.prompts    = json.load(open(prompts_path))
-        self.root       = PaperNode({
+        self.root       = ProductNode({
             "title": user_query,
             "extra": {
                 "touch_ids": [],
@@ -108,11 +108,11 @@ class PaperAgent:
                     self.root.extra["crawler_recall_papers"].append(prod["title"])
                     if score > 0.5:
                         self.root.extra["recall_papers"].append(prod["title"])
-                    paper_node = PaperNode({
+                    paper_node = ProductNode({
                         "title": prod["title"],
                         "asin": prod["asin"],
                         "depth": 0,
-                        "abstract": " ".join(prod["bullets"]),
+                        "description": " ".join(prod["bullets"]),
                         "sections": "",
                         "source": "Search " + prod["source"],
                         "select_score": score,
@@ -124,49 +124,11 @@ class PaperAgent:
                     self.root.child[query].append(paper_node)
                     self.papers_queue.append(paper_node)
 
-    def search_paper(self, queries):
-        while queries:
-            with self.lock:
-                query, self.root.child[query] = queries.pop(), []
-            pre_arxiv_ids, searched_papers = google_search_arxiv_id(query, self.search_papers, self.end_date), []
-            for arxiv_id in pre_arxiv_ids:
-                arxiv_id = arxiv_id.split('v')[0]
-                self.lock.acquire()
-                if arxiv_id not in self.root.extra["touch_ids"]:
-                    self.root.extra["touch_ids"].append(arxiv_id)
-                    self.lock.release()
-                    paper = search_paper_by_arxiv_id(arxiv_id)
-                    if paper is not None:
-                        searched_papers.append(paper)
-                else:
-                    self.lock.release()
-            
-            select_prompts  = [self.prompts["get_selected"].format(title=paper["title"], abstract=paper["abstract"], user_query=self.user_query) for paper in searched_papers]
-            scores = self.selector.infer_score(select_prompts)
-            with self.lock:
-                for score, paper in zip(scores, searched_papers):
-                    self.root.extra["crawler_recall_papers"].append(paper["title"])
-                    if score > 0.5:
-                        self.root.extra["recall_papers"].append(paper["title"])
-                    paper_node = PaperNode({
-                        "title":        paper["title"],
-                        "arxiv_id":     paper["arxiv_id"],
-                        "depth":        0,
-                        "abstract" :    paper["abstract"],
-                        "sections" :    paper["sections"],
-                        "source":       "Search " + paper["source"],
-                        "select_score": score,
-                        "extra":        {}
-                    })
-                    self.root.child[query].append(paper_node)
-                    self.papers_queue.append(paper_node)
-
     def search(self):
         prompt = self.prompts["generate_query"].format(user_query=self.user_query).strip()
         queries = self.crawler.infer(prompt)
         queries = [q.strip() for q in re.findall(self.templates["search_template"], queries, flags=re.DOTALL)][:self.search_queries]
-        #PaperAgent.do_parallel(self.search_paper, (queries,), len(queries))
-        PaperAgent.do_parallel(self.search_product, (queries,), len(queries))
+        ProductAgent.do_parallel(self.search_product, (queries,), len(queries))
 
     def get_paper_content(self, new_expand, crawl_prompts, have_full_paper):
         while new_expand:
@@ -177,7 +139,7 @@ class PaperAgent:
                     break
             
             if paper.sections == "":
-                paper.sections = search_section_by_arxiv_id(paper.arxiv_id, self.templates["cite_template"])
+                paper.sections = search_section_by_arxiv_id(paper.asin, self.templates["cite_template"])
                 if not paper.sections:
                     paper.extra["expand"] = "get full paper error"
                     continue
@@ -200,10 +162,10 @@ class PaperAgent:
             if searched_paper is None:
                 continue
             
-            arxiv_id = searched_paper["arxiv_id"]
+            asin = searched_paper["asin"]
             with lock:
-                if arxiv_id not in self.root.extra["touch_ids"]:
-                    self.root.extra["touch_ids"].append(arxiv_id)
+                if asin not in self.root.extra["touch_ids"]:
+                    self.root.extra["touch_ids"].append(asin)
                 else:
                     continue
             prompt = self.prompts["get_selected"].format(title=title, abstract=searched_paper["abstract"], user_query=self.user_query)
@@ -228,18 +190,18 @@ class PaperAgent:
                 for ref in paper.sections[section]:
                     section_sources_ori.append([section, ref])
             select_prompts, section_sources, lock = [], [], threading.Lock()
-            PaperAgent.do_parallel(self.search_ref, (section_sources_ori, select_prompts, section_sources, lock), self.threads_num * 3)
+            ProductAgent.do_parallel(self.search_ref, (section_sources_ori, select_prompts, section_sources, lock), self.threads_num * 3)
             scores = self.selector.infer_score(select_prompts)
             for score, (section, ref_paper) in zip(scores, section_sources):
                 self.root.extra["crawler_recall_papers"].append(ref_paper["title"])
                 if score > 0.5:
                     self.root.extra["recall_papers"].append(ref_paper["title"])
-                paper_node = PaperNode({
+                paper_node = ProductNode({
                     "title":        ref_paper["title"],
                     "depth":        depth + 1,
-                    "arxiv_id":     ref_paper["arxiv_id"],
-                    "abstract" :    ref_paper["abstract"],
-                    "sections" :    ref_paper["sections"],
+                    "asin":         ref_paper["asin"],
+                    "description":  ref_paper["description"],
+                    "sections":     ref_paper["sections"],
                     "source":       "Expand " + ref_paper["source"],
                     "select_score": score,
                     "extra":        {}
@@ -259,9 +221,9 @@ class PaperAgent:
             expand_papers = expand_papers[:self.expand_papers]
         self.expand_start = len(self.papers_queue)
         crawl_prompts, have_full_paper = [], []
-        PaperAgent.do_parallel(self.get_paper_content, (expand_papers, crawl_prompts, have_full_paper), self.threads_num)
+        ProductAgent.do_parallel(self.get_paper_content, (expand_papers, crawl_prompts, have_full_paper), self.threads_num)
         crawl_results = self.crawler.batch_infer(crawl_prompts)
-        PaperAgent.do_parallel(self.do_expand, (depth, have_full_paper, crawl_results), self.threads_num)
+        ProductAgent.do_parallel(self.do_expand, (depth, have_full_paper, crawl_results), self.threads_num)
 
     def run(self):
         self.search()
