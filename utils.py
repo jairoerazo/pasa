@@ -35,6 +35,59 @@ arxiv_client = arxiv.Client(delay_seconds = 0.05)
 id2paper     = json.load(open("data/paper_database/id2paper.json"))
 paper_db     = zipfile.ZipFile("data/paper_database/cs_paper_2nd.zip", "r")
 
+def google_search_asin(query: str, num: int = 10) -> list[str]:
+    url = "https://google.serper.dev/search"
+    search_query = f"{query} site:amazon.com"
+    payload = json.dumps({
+        "q": search_query,
+        "num": num,
+        "page": 1,
+    })
+    headers = {
+        'X-API-KEY': GOOGLE_KEY,
+        'Content-Type': 'application/json'
+    }
+    assert headers['X-API-KEY'] != 'your google keys', "add your google search key!!!"
+    for _ in range(3):
+        try:
+            response = requests.request("POST", url, headers=headers, data=payload)
+            if response.status_code == 200:
+                results = json.loads(response.text)
+                asins = []
+                for product in results['organic']:
+                    if re.search(r'/dp/([A-Z0-9]{10})', product["link"]):
+                        asin = re.search(r'/dp/([A-Z0-9]{10})', product["link"]).group(1)
+                        asins.append(asin)
+                return list(set(asins))
+        except:
+            warnings.warn(f"google search failed, query: {query}")
+            continue
+    return []
+
+def search_product_by_asin(asin: str):
+    url   = f"https://www.amazon.com/dp/{asin}"
+    headers  = {
+        "User-Agent": "Mozilla/5.0 (compatible)"
+    }
+    resp  = requests.get(url, headers=headers)
+    if resp.status_code != 200:
+        return None
+
+    soup       = bs4.BeautifulSoup(resp.text, "html.parser")
+    title_tag  = soup.select_one("#productTitle")
+    price_tag  = soup.select_one(".a-price .a-offscreen")
+    bullets    = [li.get_text(strip=True) for li in soup.select("#feature-bullets li")]
+    images     = [img["src"] for img in soup.select("#landingImage, #altImages img")]
+
+    return {
+        "asin":        asin,
+        "title":       title_tag.get_text(strip=True) if title_tag else None,
+        "price":       price_tag.get_text(strip=True) if price_tag else None,
+        "bullets":     bullets,
+        "images":      images,
+        "source":      "SearchFrom:Amazon",
+    }
+
 def google_search_arxiv_id(query, num=10, end_date=None):
     url = "https://google.serper.dev/search"
 

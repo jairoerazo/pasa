@@ -1,0 +1,623 @@
+{
+  "title": "I'm tired of Cuisinart and grey pans, got anything else? Give me a product ID for a different brand and color.",
+  "asin": "",
+  "depth": -1,
+  "child": {
+    "Unique product ID for a colorful pan": [
+      {
+        "title": null,
+        "asin": "B0F5QJP6WP",
+        "depth": 0,
+        "child": {},
+        "description": "",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.17698216438293457,
+        "extra": {
+          "price": null,
+          "images": []
+        }
+      },
+      {
+        "title": null,
+        "asin": "B000VTNUES",
+        "depth": 0,
+        "child": {},
+        "description": "",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.17698216438293457,
+        "extra": {
+          "price": null,
+          "images": []
+        }
+      },
+      {
+        "title": null,
+        "asin": "B00ESDCIBE",
+        "depth": 0,
+        "child": {},
+        "description": "",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.17698216438293457,
+        "extra": {
+          "price": null,
+          "images": []
+        }
+      },
+      {
+        "title": null,
+        "asin": "B0DR7WP2N8",
+        "depth": 0,
+        "child": {},
+        "description": "",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.17698216438293457,
+        "extra": {
+          "price": null,
+          "images": []
+        }
+      },
+      {
+        "title": null,
+        "asin": "B01MSIPAKZ",
+        "depth": 0,
+        "child": {},
+        "description": "",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.17698216438293457,
+        "extra": {
+          "price": null,
+          "images": []
+        }
+      },
+      {
+        "title": null,
+        "asin": "B001IM13U0",
+        "depth": 0,
+        "child": {},
+        "description": "",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.17698216438293457,
+        "extra": {
+          "price": null,
+          "images": []
+        }
+      },
+      {
+        "title": null,
+        "asin": "B07G8RH8GY",
+        "depth": 0,
+        "child": {},
+        "description": "",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.17698216438293457,
+        "extra": {
+          "price": null,
+          "images": []
+        }
+      }
+    ],
+    "Non-grey pan options in the market": [
+      {
+        "title": null,
+        "asin": "B0DB2SN54F",
+        "depth": 0,
+        "child": {},
+        "description": "",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.17698216438293457,
+        "extra": {
+          "price": null,
+          "images": []
+        }
+      },
+      {
+        "title": null,
+        "asin": "B00PVX6SMK",
+        "depth": 0,
+        "child": {},
+        "description": "",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.17698216438293457,
+        "extra": {
+          "price": null,
+          "images": []
+        }
+      },
+      {
+        "title": null,
+        "asin": "B08F7QBZJR",
+        "depth": 0,
+        "child": {},
+        "description": "",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.17698216438293457,
+        "extra": {
+          "price": null,
+          "images": []
+        }
+      },
+      {
+        "title": null,
+        "asin": "B07H3GL65L",
+        "depth": 0,
+        "child": {},
+        "description": "",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.17698216438293457,
+        "extra": {
+          "price": null,
+          "images": []
+        }
+      },
+      {
+        "title": null,
+        "asin": "B08P44SNWJ",
+        "depth": 0,
+        "child": {},
+        "description": "",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.17698216438293457,
+        "extra": {
+          "price": null,
+          "images": []
+        }
+      },
+      {
+        "title": null,
+        "asin": "B08BC4XYYM",
+        "depth": 0,
+        "child": {},
+        "description": "",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.17698216438293457,
+        "extra": {
+          "price": null,
+          "images": []
+        }
+      },
+      {
+        "title": null,
+        "asin": "B0D4PV79J9",
+        "depth": 0,
+        "child": {},
+        "description": "",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.17698216438293457,
+        "extra": {
+          "price": null,
+          "images": []
+        }
+      },
+      {
+        "title": "Martha Stewart Heathland 8 Inch Aluminum Fry Pan Cookware Non-Toxic Premium Ceramic Non Stick Frying Pan, Kitchen Egg Pan, Omelet Pan, Always Pan, Pots and Pans, Linen White, Induction Safe",
+        "asin": "B0DFKM9MRB",
+        "depth": 0,
+        "child": {},
+        "description": "A BOX INCLUDES: One 8-inch ceramic nonstick aluminum frying pan MADE WITHOUT PFOA, PTFE, lead or cadmium: Smooth ceramic nonstick interior takes the stress away from cleaning after every use while maintaining healthier cooking alternatives with less fat or oil. HEAVY-GAUGE ALUMINUM CONSTRUCTION: Durable aluminum frying pan promotes uniform heat distribution to cook any recipe evenly without hotspots, just the good, delicious flavors we all love. Suitable for induction, gas, electric, ceramic, halogen and glass stovetops. TAPERED SHAPE: Tall sidewalls follow a narrow, tapered shape to diffuse heat and regulate the rate of evaporation needed for reducing sauces or braising meat. PORCELAIN ENAMEL EXTERIOR: Glossy porcelain enamel finish resists stains and scratches. Classic linen white color is a pristine choice to match any style of kitchen or table.",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.7919839024543762,
+        "extra": {
+          "price": "$79.03",
+          "images": [
+            "https://m.media-amazon.com/images/I/51lyte7GPOL.__AC_SX300_SY300_QL70_ML2_.jpg",
+            "https://m.media-amazon.com/images/I/31W-B9mpVDL._AC_US100_.jpg",
+            "https://m.media-amazon.com/images/I/410j+pP8AJL._AC_US100_.jpg",
+            "https://m.media-amazon.com/images/I/51xyfkA5f3L._AC_US100_.jpg",
+            "https://m.media-amazon.com/images/I/31oPxfanPoL._AC_US100_.jpg",
+            "https://images-na.ssl-images-amazon.com/images/G/01/x-locale/common/transparent-pixel._V192234675_.gif"
+          ]
+        }
+      },
+      {
+        "title": null,
+        "asin": "B0DS6797HG",
+        "depth": 0,
+        "child": {},
+        "description": "",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.17698216438293457,
+        "extra": {
+          "price": null,
+          "images": []
+        }
+      },
+      {
+        "title": null,
+        "asin": "B0732NXYNS",
+        "depth": 0,
+        "child": {},
+        "description": "",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.17698216438293457,
+        "extra": {
+          "price": null,
+          "images": []
+        }
+      }
+    ],
+    "Multi-cooker alternatives to Cuisinart with unique color options": [
+      {
+        "title": null,
+        "asin": "B0B4PPHG8G",
+        "depth": 0,
+        "child": {},
+        "description": "",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.17698216438293457,
+        "extra": {
+          "price": null,
+          "images": []
+        }
+      },
+      {
+        "title": null,
+        "asin": "B00XUL6K2S",
+        "depth": 0,
+        "child": {},
+        "description": "",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.17698216438293457,
+        "extra": {
+          "price": null,
+          "images": []
+        }
+      },
+      {
+        "title": null,
+        "asin": "B08SQJ415Q",
+        "depth": 0,
+        "child": {},
+        "description": "",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.17698216438293457,
+        "extra": {
+          "price": null,
+          "images": []
+        }
+      },
+      {
+        "title": null,
+        "asin": "B0BN4RDQCY",
+        "depth": 0,
+        "child": {},
+        "description": "",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.17698216438293457,
+        "extra": {
+          "price": null,
+          "images": []
+        }
+      },
+      {
+        "title": null,
+        "asin": "B0CHG93F5D",
+        "depth": 0,
+        "child": {},
+        "description": "",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.17698216438293457,
+        "extra": {
+          "price": null,
+          "images": []
+        }
+      },
+      {
+        "title": null,
+        "asin": "B0777XZBMZ",
+        "depth": 0,
+        "child": {},
+        "description": "",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.17698216438293457,
+        "extra": {
+          "price": null,
+          "images": []
+        }
+      },
+      {
+        "title": null,
+        "asin": "B0CHGQG9N2",
+        "depth": 0,
+        "child": {},
+        "description": "",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.17698216438293457,
+        "extra": {
+          "price": null,
+          "images": []
+        }
+      },
+      {
+        "title": null,
+        "asin": "B082TRTFKF",
+        "depth": 0,
+        "child": {},
+        "description": "",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.17698216438293457,
+        "extra": {
+          "price": null,
+          "images": []
+        }
+      },
+      {
+        "title": null,
+        "asin": "B09Y5ZRLSQ",
+        "depth": 0,
+        "child": {},
+        "description": "",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.17698216438293457,
+        "extra": {
+          "price": null,
+          "images": []
+        }
+      },
+      {
+        "title": null,
+        "asin": "B06Y1MP2PY",
+        "depth": 0,
+        "child": {},
+        "description": "",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.17698216438293457,
+        "extra": {
+          "price": null,
+          "images": []
+        }
+      }
+    ],
+    "Different brands from Cuisinart for cookware": [
+      {
+        "title": null,
+        "asin": "B005H05SXM",
+        "depth": 0,
+        "child": {},
+        "description": "",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.17698216438293457,
+        "extra": {
+          "price": null,
+          "images": []
+        }
+      },
+      {
+        "title": null,
+        "asin": "B003IKMR96",
+        "depth": 0,
+        "child": {},
+        "description": "",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.17698216438293457,
+        "extra": {
+          "price": null,
+          "images": []
+        }
+      },
+      {
+        "title": null,
+        "asin": "B005H8KD3E",
+        "depth": 0,
+        "child": {},
+        "description": "",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.17698216438293457,
+        "extra": {
+          "price": null,
+          "images": []
+        }
+      }
+    ],
+    "Product ID for a non-Cuisinart cookware set": [
+      {
+        "title": null,
+        "asin": "B076H4YDB3",
+        "depth": 0,
+        "child": {},
+        "description": "",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.17698216438293457,
+        "extra": {
+          "price": null,
+          "images": []
+        }
+      },
+      {
+        "title": "Cuisinart 66-10 Chef's Classic 10-Piece Cookware Set Nonstick-Hard-Anodized",
+        "asin": "B0001LO5I6",
+        "depth": 0,
+        "child": {},
+        "description": "SET INCLUDES: 1.5-quart saucepan with cover, 3-quart saucepan with cover, 3.5-quart saucepan, 3.5-quart saute pan with helper handle and cover, 8-inch skillet, 10-inch skillet, 8-quart stockpot with cover EXCEPTIONAL DESIGN: Enjoy professional performance with hard anodized exterior, unsurpassed heat distribution and quantanium nonstick for professional results PREMIUM COOKING: Constructed to last. Drip-free pouring\u2013 Flavor Lock Lid EXCEPTIONAL HANDLING: Cool grip handles are solid stainless steel riveted handles that stay cool on the stove top and provide a safe a solid grip LIMITED-LIFETIME WARRANTY: Refer to user manual for troubleshooting steps and questions surrounding warranty policies \u2013 this product is BPA free",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.08444807678461075,
+        "extra": {
+          "price": "$299.99",
+          "images": [
+            "https://m.media-amazon.com/images/I/5190n5B51US.__AC_SY300_SX300_QL70_ML2_.jpg",
+            "https://m.media-amazon.com/images/I/31T5euIfKDS._AC_US100_.jpg",
+            "https://m.media-amazon.com/images/I/31wbMGIJhsS._AC_US100_.jpg",
+            "https://m.media-amazon.com/images/I/31D--jx8P9S._AC_US100_.jpg",
+            "https://m.media-amazon.com/images/I/31lidf1IiGS._AC_US100_.jpg",
+            "https://m.media-amazon.com/images/I/31r8Ac8x3tS._AC_US100_.jpg",
+            "https://m.media-amazon.com/images/I/31B5ihgogVS._AC_US100_.jpg",
+            "https://m.media-amazon.com/images/I/51GY8d3hZ+L.SS125_PKplay-button-mb-image-grid-small_.jpg",
+            "https://images-na.ssl-images-amazon.com/images/G/01/x-locale/common/transparent-pixel._V192234675_.gif"
+          ]
+        }
+      },
+      {
+        "title": null,
+        "asin": "B005H05TAO",
+        "depth": 0,
+        "child": {},
+        "description": "",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.17698216438293457,
+        "extra": {
+          "price": null,
+          "images": []
+        }
+      },
+      {
+        "title": null,
+        "asin": "B01LFDA3ZC",
+        "depth": 0,
+        "child": {},
+        "description": "",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.17698216438293457,
+        "extra": {
+          "price": null,
+          "images": []
+        }
+      },
+      {
+        "title": null,
+        "asin": "B09H5CVQKG",
+        "depth": 0,
+        "child": {},
+        "description": "",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.17698216438293457,
+        "extra": {
+          "price": null,
+          "images": []
+        }
+      },
+      {
+        "title": null,
+        "asin": "B009JXPS6U",
+        "depth": 0,
+        "child": {},
+        "description": "",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.17698216438293457,
+        "extra": {
+          "price": null,
+          "images": []
+        }
+      }
+    ]
+  },
+  "description": "",
+  "sections": "",
+  "source": "Root",
+  "select_score": 0.0,
+  "extra": {
+    "touch_ids": [
+      "B0B4PPHG8G",
+      "B00XUL6K2S",
+      "B08SQJ415Q",
+      "B005H05SXM",
+      "B0BN4RDQCY",
+      "B0DB2SN54F",
+      "B003IKMR96",
+      "B0CHG93F5D",
+      "B00PVX6SMK",
+      "B005H8KD3E",
+      "B0777XZBMZ",
+      "B08F7QBZJR",
+      "B0CHGQG9N2",
+      "B07H3GL65L",
+      "B0F5QJP6WP",
+      "B08P44SNWJ",
+      "B082TRTFKF",
+      "B076H4YDB3",
+      "B000VTNUES",
+      "B08BC4XYYM",
+      "B09Y5ZRLSQ",
+      "B0001LO5I6",
+      "B00ESDCIBE",
+      "B06Y1MP2PY",
+      "B0D4PV79J9",
+      "B0DR7WP2N8",
+      "B0DFKM9MRB",
+      "B01MSIPAKZ",
+      "B001IM13U0",
+      "B07G8RH8GY",
+      "B005H05TAO",
+      "B01LFDA3ZC",
+      "B0DS6797HG",
+      "B09H5CVQKG",
+      "B0732NXYNS",
+      "B009JXPS6U"
+    ],
+    "crawler_recall_papers": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      "Martha Stewart Heathland 8 Inch Aluminum Fry Pan Cookware Non-Toxic Premium Ceramic Non Stick Frying Pan, Kitchen Egg Pan, Omelet Pan, Always Pan, Pots and Pans, Linen White, Induction Safe",
+      null,
+      null,
+      null,
+      "Cuisinart 66-10 Chef's Classic 10-Piece Cookware Set Nonstick-Hard-Anodized",
+      null,
+      null,
+      null,
+      null
+    ],
+    "recall_papers": [
+      "Martha Stewart Heathland 8 Inch Aluminum Fry Pan Cookware Non-Toxic Premium Ceramic Non Stick Frying Pan, Kitchen Egg Pan, Omelet Pan, Always Pan, Pots and Pans, Linen White, Induction Safe"
+    ]
+  }
+}

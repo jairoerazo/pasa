@@ -1,0 +1,498 @@
+{
+  "title": "DDR3 is a no-go for me and I'm trying to keep my spending under a hundred. Show me the cheapest non-DDR3 motherboard in that price range.",
+  "arxiv_id": "",
+  "depth": -1,
+  "child": {
+    "Cheapest non-DDR3 motherboard under $100": [
+      {
+        "title": "MACHINIST H61 LGA 1155 (Intel 2th/3th Gen) Gaming Motherboard, Flex-ATX Computer Motherboards Support PCIe 2.0, 100M LAN, DDR3, SATA M.2 for Intel i3,i5,i7/Xeon E3 V2/Pentium",
+        "arxiv_id": "",
+        "depth": 0,
+        "child": {},
+        "abstract": "Intel LGA 1155 Socket: Supports Intel Core i3/i5/i7 2th or 3th generation processors, as well as Xeon E3 v2, Pentium and other series processors. (Eg Intel xeon E3-1280 V2, Intel Core i7-3770K, Intel Core i5-2500K, Pentium G620, G840, etc.) Dual-channel DDR3 Memory Slots: 2 DDR3 non-ECC desktop memory slots, unbuffered, support effective frequencies of 1280/1333/1600/1866MHz, and a maximum capacity of 32GB NVME/SATA M.2 SSD Interface: This H61 gaming motherboard is equipped with an M.2 interface, which can be converted between NVME and NGFF after debugging. NVME M.2 is transmitted through the PCI_E channel, with a maximum rate of 1535M/s (actual data). Also supports 2242, 2260 and 2280 M.2 SSDs VGA and High Definition Multimedia Interface: It can support 1080P high-definition video output without a graphics card. Note: To use these two interfaces, your CPU needs to support integrated graphics The package includes: 1*H61 motherboard, 1*SATA cable, 1*I/O baffle. User manual is not included in the package, you can download the user manual file on the product details page. The CR2032 battery on the motherboard has been removed. It is not included in the package. Please purchase it yourself. If you need to download the driver, it is recommended to download: Driver Talent, or use Win 10 system Tip 1: The CPUs of Intel Xeon E3 V1 and V2 series are server CPUs, and most of them do not have integrated graphics. Generally, only the CPU models with the suffix \"5\" have integrated graphics. For example: E3-1245, E3-1235 V2, E3-1275 V2 and other CPUs support integrated display. The Intel Core i3, i5 and i7 series processors almost all support integrated display, only the CPU model with the suffix \"F\" letter has no integrated display function, which is \"ix-xxxxF\". Pentium and Celeron \"G\" All series of CPUs support integrated display, such as \"G840\", \"G630\" and so on Tip 2: If the system won't power on and the fans don't spin, verify the motherboard power and CPU power connections, confirm CPU and memory model compatibility and condition, and ensure the memory modules are properly seated; if the issue persists after checking these, clear the CMOS Tip 3: If there's no display (fans spin but keyboard lights remain unresponsive when pressing Caps Lock), verify the motherboard and CPU power connections, ensure memory modules are properly seated, and confirm CPU/memory model compatibility and condition; if issues persist after these checks, clear CMOS Tip 4: If there's no display (fans are spinning and the Caps Lock indicator lights up when pressing Caps Lock), verify the monitor is powered on and the display data cable is securely connected; if no external graphics card GPU is installed, confirm CPU support for integrated graphics; if an external graphics card GPU is installed, ensure the data cable is connected to its output port; check the condition of the display cable, GPU, and monitor; if the issue persists after these checks, clear CMOS",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.0009921588934957981,
+        "extra": {
+          "price": "$9000",
+          "images": [
+            "https://m.media-amazon.com/images/I/411T2Ab94QL._AC_US40_.jpg",
+            "https://m.media-amazon.com/images/I/51NHji+G-2L._AC_US40_.jpg",
+            "https://m.media-amazon.com/images/I/51vWB5ZNTLL._AC_US40_.jpg",
+            "https://m.media-amazon.com/images/I/51DSsJr-JGL._AC_US40_.jpg",
+            "https://m.media-amazon.com/images/I/51F32d7trEL._AC_US40_.jpg",
+            "https://m.media-amazon.com/images/I/51ks6OFDWtL._AC_US40_.jpg",
+            "https://m.media-amazon.com/images/I/51iipceycgL._AC_US40_.jpg",
+            "https://images-na.ssl-images-amazon.com/images/G/01/x-locale/common/transparent-pixel._V192234675_.gif",
+            "https://m.media-amazon.com/images/I/710Q0hUnXnL.__AC_SX300_SY300_QL70_ML2_.jpg"
+          ]
+        }
+      },
+      {
+        "title": null,
+        "arxiv_id": "",
+        "depth": 0,
+        "child": {},
+        "abstract": "",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.014629459008574486,
+        "extra": {
+          "price": null,
+          "images": []
+        }
+      },
+      {
+        "title": null,
+        "arxiv_id": "",
+        "depth": 0,
+        "child": {},
+        "abstract": "",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.014629459008574486,
+        "extra": {
+          "price": null,
+          "images": []
+        }
+      }
+    ],
+    "Affordable non-DDR3 motherboard options": [
+      {
+        "title": null,
+        "arxiv_id": "",
+        "depth": 0,
+        "child": {},
+        "abstract": "",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.014629457145929337,
+        "extra": {
+          "price": null,
+          "images": []
+        }
+      },
+      {
+        "title": null,
+        "arxiv_id": "",
+        "depth": 0,
+        "child": {},
+        "abstract": "",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.014629457145929337,
+        "extra": {
+          "price": null,
+          "images": []
+        }
+      },
+      {
+        "title": null,
+        "arxiv_id": "",
+        "depth": 0,
+        "child": {},
+        "abstract": "",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.014629457145929337,
+        "extra": {
+          "price": null,
+          "images": []
+        }
+      },
+      {
+        "title": null,
+        "arxiv_id": "",
+        "depth": 0,
+        "child": {},
+        "abstract": "",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.014629457145929337,
+        "extra": {
+          "price": null,
+          "images": []
+        }
+      },
+      {
+        "title": null,
+        "arxiv_id": "",
+        "depth": 0,
+        "child": {},
+        "abstract": "",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.014629457145929337,
+        "extra": {
+          "price": null,
+          "images": []
+        }
+      },
+      {
+        "title": null,
+        "arxiv_id": "",
+        "depth": 0,
+        "child": {},
+        "abstract": "",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.014629457145929337,
+        "extra": {
+          "price": null,
+          "images": []
+        }
+      },
+      {
+        "title": null,
+        "arxiv_id": "",
+        "depth": 0,
+        "child": {},
+        "abstract": "",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.014629457145929337,
+        "extra": {
+          "price": null,
+          "images": []
+        }
+      },
+      {
+        "title": null,
+        "arxiv_id": "",
+        "depth": 0,
+        "child": {},
+        "abstract": "",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.01294845249503851,
+        "extra": {
+          "price": null,
+          "images": []
+        }
+      },
+      {
+        "title": null,
+        "arxiv_id": "",
+        "depth": 0,
+        "child": {},
+        "abstract": "",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.01463286578655243,
+        "extra": {
+          "price": null,
+          "images": []
+        }
+      },
+      {
+        "title": null,
+        "arxiv_id": "",
+        "depth": 0,
+        "child": {},
+        "abstract": "",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.01463286578655243,
+        "extra": {
+          "price": null,
+          "images": []
+        }
+      }
+    ],
+    "Budget non-DDR3 motherboard": [
+      {
+        "title": null,
+        "arxiv_id": "",
+        "depth": 0,
+        "child": {},
+        "abstract": "",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.014629459008574486,
+        "extra": {
+          "price": null,
+          "images": []
+        }
+      },
+      {
+        "title": null,
+        "arxiv_id": "",
+        "depth": 0,
+        "child": {},
+        "abstract": "",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.014629459008574486,
+        "extra": {
+          "price": null,
+          "images": []
+        }
+      },
+      {
+        "title": null,
+        "arxiv_id": "",
+        "depth": 0,
+        "child": {},
+        "abstract": "",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.014629459008574486,
+        "extra": {
+          "price": null,
+          "images": []
+        }
+      },
+      {
+        "title": null,
+        "arxiv_id": "",
+        "depth": 0,
+        "child": {},
+        "abstract": "",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.014629459008574486,
+        "extra": {
+          "price": null,
+          "images": []
+        }
+      },
+      {
+        "title": null,
+        "arxiv_id": "",
+        "depth": 0,
+        "child": {},
+        "abstract": "",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.014629459008574486,
+        "extra": {
+          "price": null,
+          "images": []
+        }
+      },
+      {
+        "title": "ASUS Q87M-E/CSM DDR3 1600 LGA 1150 Motherboard",
+        "arxiv_id": "",
+        "depth": 0,
+        "child": {},
+        "abstract": "Asus Digi+ Vrm - Digital Power Design Asus Exclusive Usb 3.0 Boost Asus Fan Xpert 2",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.00041420949855819345,
+        "extra": {
+          "price": "$409.99",
+          "images": [
+            "https://m.media-amazon.com/images/I/51wDTVGwjUL._AC_US40_.jpg",
+            "https://images-na.ssl-images-amazon.com/images/G/01/x-locale/common/transparent-pixel._V192234675_.gif",
+            "https://m.media-amazon.com/images/I/81zkbghznQL.__AC_SY300_SX300_QL70_ML2_.jpg"
+          ]
+        }
+      },
+      {
+        "title": null,
+        "arxiv_id": "",
+        "depth": 0,
+        "child": {},
+        "abstract": "",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.01463286578655243,
+        "extra": {
+          "price": null,
+          "images": []
+        }
+      },
+      {
+        "title": null,
+        "arxiv_id": "",
+        "depth": 0,
+        "child": {},
+        "abstract": "",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.01463286578655243,
+        "extra": {
+          "price": null,
+          "images": []
+        }
+      }
+    ],
+    "Non-DDR3 motherboard under 100 dollars": [
+      {
+        "title": null,
+        "arxiv_id": "",
+        "depth": 0,
+        "child": {},
+        "abstract": "",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.014629459008574486,
+        "extra": {
+          "price": null,
+          "images": []
+        }
+      },
+      {
+        "title": null,
+        "arxiv_id": "",
+        "depth": 0,
+        "child": {},
+        "abstract": "",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.014629459008574486,
+        "extra": {
+          "price": null,
+          "images": []
+        }
+      },
+      {
+        "title": null,
+        "arxiv_id": "",
+        "depth": 0,
+        "child": {},
+        "abstract": "",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.014629459008574486,
+        "extra": {
+          "price": null,
+          "images": []
+        }
+      },
+      {
+        "title": null,
+        "arxiv_id": "",
+        "depth": 0,
+        "child": {},
+        "abstract": "",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.014629459008574486,
+        "extra": {
+          "price": null,
+          "images": []
+        }
+      },
+      {
+        "title": null,
+        "arxiv_id": "",
+        "depth": 0,
+        "child": {},
+        "abstract": "",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.014629459008574486,
+        "extra": {
+          "price": null,
+          "images": []
+        }
+      },
+      {
+        "title": null,
+        "arxiv_id": "",
+        "depth": 0,
+        "child": {},
+        "abstract": "",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.014629459008574486,
+        "extra": {
+          "price": null,
+          "images": []
+        }
+      },
+      {
+        "title": "Desktop Motherboard, Micro ATX Gaming Motherboard, LGA 1155 I3/I5/I7 Motherboard, Dual Channel DDR3, M.2 NVMe NGFF, PCIe, HDMI VGA Ouput, USB 2.0, 10/100Mbps LAN, 3 Phase Power",
+        "arxiv_id": "",
+        "depth": 0,
+        "child": {},
+        "abstract": "LGA 1155 CPU Slot: This desktop motherboard adopts LGA 1155 2nd Gen slot that supports i3/i5/i7, suitable for , and for Celeron series processors. (For example, i7 2600k, i5 2500s, i5 2400s, i3 2130, for G530/G630/G860, etc.) Channel DDR3: This Micro ATX motherboard supports 2 8GB DDR3 Non ECC memory and 1066/1333/1600MHz active frequency standard, with a maximum memory capacity of 16GB. M.2 NVMe NGFF: This LGA 1151 motherboard with high speed M.2 hard disk interface, with jumper wire, support mode NVME NGFF, can freely choose high or low speed PCIe hard disk switch and SATA2.0 channel. 3 Phase Power: This M ATX motherboard adopts 3 phase power supply, all solidstate capacitor design, and 24+4pin power socket to ensure the stable of the motherboard accessories. HD VGA Ouput: This DDR3 motherboard supports VGA and HD Multimedia Interface output. Designed with PCIe X16 graphics card slot, 1 PCIeX1 slot, 6 USB 2.0, 3 SATA2.0, 1 M.2 hard disk interface.",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.0005516055389307439,
+        "extra": {
+          "price": null,
+          "images": [
+            "https://m.media-amazon.com/images/I/51xugSRyUlL._AC_US40_.jpg",
+            "https://m.media-amazon.com/images/I/51E84RCMCxL._AC_US40_.jpg",
+            "https://m.media-amazon.com/images/I/51zyupuTKuL._AC_US40_.jpg",
+            "https://m.media-amazon.com/images/I/51tcEdXtMpL._AC_US40_.jpg",
+            "https://m.media-amazon.com/images/I/51A3rthccQL._AC_US40_.jpg",
+            "https://m.media-amazon.com/images/I/51x52RhpIXL._AC_US40_.jpg",
+            "https://m.media-amazon.com/images/I/51M3Z5K04PL._AC_US40_.jpg",
+            "https://images-na.ssl-images-amazon.com/images/G/01/x-locale/common/transparent-pixel._V192234675_.gif",
+            "https://m.media-amazon.com/images/I/71Vgxs8MWiL.__AC_SX300_SY300_QL70_ML2_.jpg"
+          ]
+        }
+      }
+    ]
+  },
+  "abstract": "",
+  "sections": "",
+  "source": "Root",
+  "select_score": 0.0,
+  "extra": {
+    "touch_ids": [
+      "B00HFZY5B8",
+      "B007R9CRGW",
+      "B08G1WN595",
+      "B0CT5PGB92",
+      "B0CR5TCXMX",
+      "B0C89RGMFN",
+      "B00GZZ4D6Q",
+      "B0CMQFDSHV",
+      "B00IZHHBR0",
+      "B00GWAHVNG",
+      "B0C1FYS2BF",
+      "B09DVCV3LT",
+      "B08G1YG1CR",
+      "B09CV4JTFR",
+      "B0B7WFYGJV",
+      "B00HG06N76",
+      "B016YK1B6G",
+      "B00CRJSW7A",
+      "B0CGJC76BY",
+      "B0CD86PRCH",
+      "B08G1X8KDP",
+      "B0CHMRS63T",
+      "B08G1XBSL7",
+      "B00GS9K6YW",
+      "B0C9CJ49HJ",
+      "B0DHH5MRYJ",
+      "B00K23BW70",
+      "B07W7SWGZZ"
+    ],
+    "crawler_recall_papers": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      "MACHINIST H61 LGA 1155 (Intel 2th/3th Gen) Gaming Motherboard, Flex-ATX Computer Motherboards Support PCIe 2.0, 100M LAN, DDR3, SATA M.2 for Intel i3,i5,i7/Xeon E3 V2/Pentium",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      "Desktop Motherboard, Micro ATX Gaming Motherboard, LGA 1155 I3/I5/I7 Motherboard, Dual Channel DDR3, M.2 NVMe NGFF, PCIe, HDMI VGA Ouput, USB 2.0, 10/100Mbps LAN, 3 Phase Power",
+      null,
+      null,
+      null,
+      null,
+      null,
+      "ASUS Q87M-E/CSM DDR3 1600 LGA 1150 Motherboard",
+      null,
+      null
+    ],
+    "recall_papers": []
+  }
+}
