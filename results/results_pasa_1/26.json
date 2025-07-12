@@ -1,0 +1,1156 @@
+{
+  "title": "Scaling Laws for Fine-Grained Mixture of Experts.",
+  "arxiv_id": "",
+  "depth": -1,
+  "child": {
+    "Examination of the impact of the number of expert models on the scalability of Fine-Grained Mixture of Experts": [],
+    "Optimization of mixture of experts model using scaling laws": [
+      {
+        "title": "1 Introduction",
+        "arxiv_id": "2205.01848",
+        "depth": 0,
+        "child": {},
+        "abstract": "",
+        "sections": {},
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.008726907894015312,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Data Mixing Laws: Optimizing Data Mixtures by Predicting Language Modeling Performance",
+        "arxiv_id": "2403.16952",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Pretraining data of large language models composes multiple domains (e.g., web texts, academic papers, codes), whose mixture proportions crucially impact the competence of outcome models. While existing endeavors rely on heuristics or qualitative strategies to tune the proportions, we discover the quantitative predictability of model performance regarding the mixture proportions in function forms, which we refer to as the data mixing laws. Fitting such functions on sample mixtures unveils model performance on unseen mixtures before actual runs, thus guiding the selection of an ideal data mixture. Furthermore, we propose nested use of the scaling laws of training steps, model sizes, and our data mixing law to enable predicting the performance of large models trained on massive data under various mixtures with only small-scale training. Moreover, experimental results verify that our method effectively optimizes the training mixture of a 1B model trained for 100B tokens in RedPajama, reaching a performance comparable to the one trained for 48% more steps on the default mixture. Extending the application of data mixing laws to continual training accurately predicts the critical mixture proportion that avoids catastrophic forgetting and outlooks the potential for dynamic data schedules.111Codes and data are available at: https://github.com/yegcjs/mixinglaws. ",
+        "sections": {
+          "1 Introduction": [
+            "A primer on pretrained multilingual language models",
+            "Scaling laws for neural language models",
+            "Anygpt: Unified multimodal llm with discrete sequence modeling",
+            "Galactica: A large language model for science",
+            "The pile: An 800gb dataset of diverse text for language modeling",
+            "Sample relationship from learning dynamics matters for generalisation",
+            "Catastrophic forgetting in connectionist networks"
+          ],
+          "2 Background Pretraining large language models.": [
+            "Improving language understanding with unsupervised learning"
+          ],
+          "2 Background Scaling laws.": [
+            "Scaling data-constrained language models",
+            "Scaling laws for neural language models",
+            "Training compute-optimal large language models",
+            "Revisiting neural scaling laws in language and vision",
+            "Scaling laws for sparsely-connected foundation models",
+            "Scaling laws for transfer"
+          ],
+          "3 The proportions of data mixtures influence model losses in a quantitatively predictable way 3.1 Pilot Study on Domain Losses under Two-domain Mixtures": [
+            "Pattern recognition and machine learning",
+            "Don't stop pretraining: Adapt language models to domains and tasks",
+            "The pile: An 800gb dataset of diverse text for language modeling"
+          ],
+          "4 Nested scaling laws predict losses trained on various mixtures using only small-scale experiments 4.1 A Pipeline for Loss Predictions": [
+            "Scaling laws for neural language models",
+            "Gpt-4 technical report",
+            "Model performance scaling with multiple data sources",
+            "Decomposition of prediction error"
+          ],
+          "4 Nested scaling laws predict losses trained on various mixtures using only small-scale experiments 4.2 Experiment": [
+            "Llama: Open and efficient foundation language models"
+          ],
+          "5 Application to Continual Pretraining Outlooks Data Schedule Driven by Data Mixing Laws": [
+            "Sparse upcycling: Training mixture-of-experts from dense checkpoints",
+            "Efficient online data mixing for language model pre-training",
+            "Skill-it! a data-driven skills framework for understanding and training language models",
+            "Don't stop pretraining: Adapt language models to domains and tasks"
+          ],
+          "6 Related Work Curating pretraining data for LLMs.": [
+            "Scaling language models: Methods, analysis & insights from training gopher",
+            "Glam: Efficient scaling of language models with mixture-of-experts",
+            "Lima: Less is more for alignment",
+            "Ccnet: Extracting high quality monolingual datasets from web crawl data",
+            "Language models are few-shot learners",
+            "Prioritized training on points that are learnable, worth learning, and not yet learnt",
+            "A pretrainer\u2019s guide to training data: Measuring the effects of data age, domain coverage, quality, & toxicity"
+          ],
+          "6 Related Work Scaling laws": [
+            "Scaling laws for transfer",
+            "Scaling laws literature review",
+            "Scaling laws for neural language models",
+            "Broken neural scaling laws",
+            "Explaining neural scaling laws",
+            "Model performance scaling with multiple data sources",
+            "Language models are few-shot learners",
+            "Attention is all you need",
+            "On the uniform convergence of relative frequencies of events to their probabilities",
+            "Deep learning scaling is predictable, empirically"
+          ],
+          "7 Discussions On the clarification of domains.": [
+            "Scaling expert language models with unsupervised domain discovery",
+            "Doremi: Optimizing data mixtures speeds up language model pretraining"
+          ],
+          "7 Discussions On the error analyses.": [
+            "Unraveling the mystery of scaling laws: Part i",
+            "The design of experiments: statistical principles for practical applications"
+          ],
+          "7 Discussions On joint laws of multiple factors.": [
+            "Deep learning scaling is predictable, empirically"
+          ],
+          "7 Discussions On dynamic data curating.": [
+            "Efficient online data mixing for language model pre-training",
+            "Skill-it! a data-driven skills framework for understanding and training language models"
+          ],
+          "7 Discussions On theoretical understandings.": [
+            "Towards optimal learning of language models",
+            "Sample relationship from learning dynamics matters for generalisation"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.03231578320264816,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Unraveling the Mystery of Scaling Laws: Part \\@slowromancapi@",
+        "arxiv_id": "2403.06563",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Scaling law principles indicate a power-law correlation between loss and variables such as model size, dataset size, and computational resources utilized during training. These principles play a vital role in optimizing various aspects of model pre-training, ultimately contributing to the success of large language models such as GPT-4, Llama and Gemini. However, the original scaling law paper by OpenAI did not disclose the complete details necessary to derive the precise scaling law formulas, and their conclusions are only based on models containing up to 1.5 billion parameters. Though some subsequent works attempt to unveil these details and scale to larger models, they often neglect the training dependency of important factors such as the learning rate, context length and batch size, leading to their failure to establish a reliable formula for predicting the test loss trajectory. In this technical report, we confirm that the scaling law formulations proposed in the original OpenAI paper remain valid when scaling the model size up to 33 billion, but the constant coefficients in these formulas vary significantly with the experiment setup\u00a0111Experiments on models with larger parameters are ongoing, and we will provide the results once they are done.. We meticulously identify influential factors and provide transparent, step-by-step instructions to estimate all constant terms in scaling-law formulas by training on models with only 1M\u223csimilar-to\\sim60M parameters. Using these estimated formulas, we showcase the capability to accurately predict various attributes for models with up to 33B parameters before their training, including (1) the minimum possible test loss; (2) the minimum required training steps and processed tokens to achieve a specific loss; (3) the critical batch size with an optimal time/computation trade-off at any loss value; and (4) the complete test loss trajectory with arbitrary batch size. We further illustrate how scaling laws can aid in determining the most suitable batch/model size, dataset mix ratio and training duration under fixed computational constraints in a principled way. Our research represents a significant shift from theoretical comprehension of scaling laws to their practical derivation and application, with the aim of advancing the development of large-scale language models. ",
+        "sections": {
+          "1 Introduction": [
+            "Scaling laws for neural language models",
+            "Unified scaling laws for routed language models",
+            "Deepseek llm: Scaling open-source language models with longtermism",
+            "Training compute-optimal large language models",
+            "Scale efficiently: Insights from pretraining and finetuning transformers",
+            "Gpt-4 technical report",
+            "Deep learning scaling is predictable, empirically"
+          ],
+          "2 Preliminary": [
+            "Scaling laws for neural language models",
+            "Scaling laws for autoregressive generative modeling"
+          ],
+          "2 Preliminary Notation": [
+            "Scaling laws for neural language models",
+            "An empirical model of large-batch training"
+          ],
+          "2 Preliminary Assumption": [
+            "Curriculum learning",
+            "Gemini: a family of highly capable multimodal models",
+            "Language models are few-shot learners",
+            "Attention is all you need",
+            "Llama: Open and efficient foundation language models"
+          ],
+          "3 Deriving Scaling Laws 3.1 Predicting L\u200b(N)\ud835\udc3f\ud835\udc41L(N)": [
+            "Scaling laws for neural language models"
+          ],
+          "3 Deriving Scaling Laws 3.2 Predicting L\u200b(N,Sm\u200bi\u200bn)\ud835\udc3f\ud835\udc41subscript\ud835\udc46\ud835\udc5a\ud835\udc56\ud835\udc5bL(N,S_{min})": [
+            "Scaling laws for neural language models",
+            "An empirical model of large-batch training"
+          ],
+          "3 Deriving Scaling Laws 3.3 Predicting L\u200b(N,S,B)\ud835\udc3f\ud835\udc41\ud835\udc46\ud835\udc35L(N,S,B)": [
+            "Scaling laws for neural language models",
+            "An empirical model of large-batch training"
+          ],
+          "4 Experiments": [
+            "Attention is all you need"
+          ],
+          "4 Experiments 4.1 Scaling with C4 Dataset": [
+            "Scaling laws for neural language models",
+            "Scaling laws from the data manifold dimension",
+            "Exploring the limits of transfer learning with a unified text-to-text transformer"
+          ],
+          "5 Discussions Determining B\ud835\udc35B": [
+            "Measuring the effects of data parallelism on neural network training",
+            "Deep learning tuning playbook"
+          ],
+          "5 Discussions Determining N\ud835\udc41N and S\ud835\udc46S": [
+            "Scaling laws for neural language models"
+          ],
+          "5 Discussions Determining Data Mix Ratio": [
+            "Welm: A well-read pre-trained language model for chinese",
+            "Doremi: Optimizing data mixtures speeds up language model pretraining"
+          ],
+          "5 Discussions Context Length": [
+            "Scaling laws for neural language models"
+          ],
+          "5 Discussions Mixture-of-Experts": [
+            "Unified scaling laws for routed language models",
+            "Deep sequential neural network",
+            "Mixtral of experts"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.025646133348345757,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Toward Inference-optimal Mixture-of-Expert Large Language Models",
+        "arxiv_id": "2404.02852",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract Mixture-of-Expert (MoE) based large language models (LLMs), such as the recent Mixtral and DeepSeek-MoE, have shown great promise in scaling model size without suffering from the quadratic growth of training cost of dense transformers. Like dense models, training MoEs requires answering the same question: given a training budget, what is the optimal allocation on the model size and number of tokens? We study the scaling law of MoE-based LLMs regarding the relations between the model performance, model size, dataset size, and the expert degree. Echoing previous research studying MoE in different contexts, we observe the diminishing return of increasing the number of experts, but this seems to suggest we should scale the number of experts until saturation, as the training cost would remain constant, which is problematic during inference time. We propose to amend the scaling law of MoE by introducing inference efficiency as another metric besides the validation loss. We find that MoEs with a few (4/8) experts are the most serving efficient solution under the same performance, but costs 2.5-3.5x more in training. On the other hand, training a (16/32) expert MoE much smaller (70-85%) than the loss-optimal solution, but with a larger training dataset is a promising setup under a training budget.",
+        "sections": {
+          "1 Introduction": [
+            "Mixtral of experts",
+            "Hechtman, Trevor Cai, Sebastian Borgeaud, George van\u00a0den Driessche, Eliza Rutherford, Tom Hennigan, Matthew\u00a0J",
+            "Deepseekmoe: Towards ultimate expert specialization in mixture-of-experts language models",
+            "Scaling laws for neural language models"
+          ],
+          "2 Background 2.1 Mixture of Expert Model": [
+            "Adaptive mixtures of local experts"
+          ],
+          "2 Background 2.2 Scaling Law": [
+            "Hechtman, Trevor Cai, Sebastian Borgeaud, George van\u00a0den Driessche, Eliza Rutherford, Tom Hennigan, Matthew\u00a0J",
+            "Scaling laws for neural language models"
+          ],
+          "3 Method: Scaling law of MoE model": [
+            "Hechtman, Trevor Cai, Sebastian Borgeaud, George van\u00a0den Driessche, Eliza Rutherford, Tom Hennigan, Matthew\u00a0J"
+          ],
+          "3 Method: Scaling law of MoE model 3.1 Experiment setup": [
+            "SlimPajama: A 627B token cleaned and deduplicated version of RedPajama"
+          ],
+          "3 Method: Scaling law of MoE model 3.2 Formulate the scaling law for MoE": [
+            "Hechtman, Trevor Cai, Sebastian Borgeaud, George van\u00a0den Driessche, Eliza Rutherford, Tom Hennigan, Matthew\u00a0J",
+            "Scaling laws for neural language models"
+          ],
+          "4 Method: Estimating inference cost for MoE 4.1 Inference cost estimation": [
+            "Cheaply estimating inference efficiency metrics for autoregressive transformer models"
+          ],
+          "4 Method: Estimating inference cost for MoE 4.2 MoE inference cost": [
+            "Efficient memory management for large language model serving with pagedattention"
+          ],
+          "6 Related Work Scaling laws": [
+            "Scaling data-constrained language models",
+            "Scaling laws for sparsely-connected foundation models",
+            "Training compute-optimal large language models",
+            "Scaling laws for neural language models",
+            "Hechtman, Trevor Cai, Sebastian Borgeaud, George van\u00a0den Driessche, Eliza Rutherford, Tom Hennigan, Matthew\u00a0J"
+          ],
+          "6 Related Work MoE pre-training practice": [
+            "Gshard: Scaling giant models with conditional computation and automatic sharding",
+            "Deepseekmoe: Towards ultimate expert specialization in mixture-of-experts language models",
+            "Designing effective sparse expert models"
+          ],
+          "6 Related Work Budget allocation with inference cost": [
+            "Beyond chinchilla-optimal: Accounting for inference in language model scaling laws"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.869185745716095,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Scaling physics-informed hard constraints with mixture-of-experts",
+        "arxiv_id": "2402.13412",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Imposing known physical constraints, such as conservation laws, during neural network training introduces an inductive bias that can improve accuracy, reliability, convergence, and data efficiency for modeling physical dynamics. While such constraints can be softly imposed via loss function penalties, recent advancements in differentiable physics and optimization improve performance by incorporating PDE-constrained optimization as individual layers in neural networks. This enables a stricter adherence to physical constraints. However, imposing hard constraints significantly increases computational and memory costs, especially for complex dynamical systems. This is because it requires solving an optimization problem over a large number of points in a mesh, representing spatial and temporal discretizations, which greatly increases the complexity of the constraint. To address this challenge, we develop a scalable approach to enforce hard physical constraints using Mixture-of-Experts (MoE), which can be used with any neural network architecture. Our approach imposes the constraint over smaller decomposed domains, each of which is solved by an \u201cexpert\u201d through differentiable optimization. During training, each expert independently performs a localized backpropagation step by leveraging the implicit function theorem; the independence of each expert allows for parallelization across multiple GPUs. Compared to standard differentiable optimization, our scalable approach achieves greater accuracy in the neural PDE solver setting for predicting the dynamics of challenging non-linear systems. We also improve training stability and require significantly less computation time during both training and inference stages. ",
+        "sections": {
+          "1 Introduction": [
+            "Learning differentiable solvers for systems with hard constraints",
+            "OptNet: Differentiable Optimization as a Layer in Neural Networks",
+            "Partial Differential Equations in Fluid Dynamics",
+            "Characterizing possible failure modes in physics-informed neural networks"
+          ],
+          "2 Related Work Constraints in Neural Networks.": [
+            "Learning Differential Equations that are Easy to Solve",
+            "Physics-informed neural networks with hard constraints for inverse design",
+            "Learned turbulence modelling with differentiable fluid solvers: physics-based loss functions and optimisation horizons",
+            "Characteristics-informed neural networks for forward and inverse hyperbolic problems",
+            "Spectral Normalization for Generative Adversarial Networks",
+            "Neural conservation laws: A divergence-free perspective",
+            "Learning neural constitutive laws from motion observations for generalizable pde dynamics",
+            "Physics-enhanced deep surrogates for partial differential equations",
+            "Guiding continuous operator learning through Physics-based boundary constraints",
+            "Physics Constrained Learning for Data-driven Inverse Modeling from Sparse Observations",
+            "Neural spectral methods: Self-supervised learning in the spectral domain",
+            "Neural fields with hard constraints of arbitrary differential order",
+            "Control-oriented model-based reinforcement learning with implicit differentiation",
+            "Learning differentiable solvers for systems with hard constraints",
+            "Boundary Graph Neural Networks for 3D Simulations",
+            "Implicit layers for implicit representations",
+            "Exact imposition of boundary conditions with distance functions in physics-informed deep neural networks",
+            "Input convex neural networks",
+            "Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations"
+          ],
+          "2 Related Work Differentiable Optimization.": [
+            "DC3: A learning method for optimization with hard constraints",
+            "OptNet: Differentiable Optimization as a Layer in Neural Networks",
+            "Sequential quadratic optimization for nonlinear equality constrained stochastic optimization",
+            "Efficient and Modular Implicit Differentiation",
+            "Theseus: A Library for Differentiable Nonlinear Optimization"
+          ],
+          "2 Related Work Differentiable Physics.": [
+            "End-to-end differentiable physics for learning and control",
+            "Scalable Differentiable Physics for Learning and Control",
+            "Fluidlab: A differentiable environment for benchmarking complex fluid manipulation",
+            "Differentiable Physics: A Position Piece"
+          ],
+          "2 Related Work Mixture-of-Experts.": [
+            "Language Models are Few-Shot Learners",
+            "Scaling Vision with Sparse Mixture of Experts",
+            "Outrageously large neural networks: The sparsely-gated mixture-of-experts layer"
+          ],
+          "3 Methods Enforcing Physics-Informed Hard Constraints in Neural Networks.": [
+            "End-to-end differentiable physics for learning and control",
+            "Learning differentiable solvers for systems with hard constraints",
+            "Introduction to Optimization and Data Fitting"
+          ],
+          "3 Methods Physics-Informed Hard Constraints with Implicit Differentiation.": [
+            "Efficient and Modular Implicit Differentiation"
+          ],
+          "3 Methods Physics-Informed Hard Constraints with Mixture-of-Experts (MoE).": [
+            "Fourier Neural Operator for Parametric Partial Differential Equations",
+            "Don't decay the learning rate, increase the batch size"
+          ],
+          "4 Results 4.1 1D Diffusion-sorption": [
+            "PDEBench: An Extensive Benchmark for Scientific Machine Learning"
+          ],
+          "4 Results 4.2 2D Navier-Stokes": [
+            "Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations",
+            "Introduction to Theory and Applications of Turbulent Flows",
+            "Physics-informed neural operator for learning partial differential equations"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.24486911296844482,
+        "extra": {
+          "expand": "not expand"
+        }
+      }
+    ],
+    "Impact of parameter scaling on Fine-Grained Mixture of Experts performance": [
+      {
+        "title": "Mixture of A Million Experts",
+        "arxiv_id": "2407.04153",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract The feedforward (FFW) layers in standard transformer architectures incur a linear increase in computational costs and activation memory as the hidden layer width grows. Sparse mixture-of-experts (MoE) architectures have emerged as a viable approach to address this issue by decoupling model size from computational cost. The recent discovery of the fine-grained MoE scaling law shows that higher granularity leads to better performance. However, existing MoE models are limited to a small number of experts due to computational and optimization challenges. This paper introduces PEER (parameter efficient expert retrieval), a novel layer design that utilizes the product key technique for sparse retrieval from a vast pool of tiny experts (over a million). Experiments on language modeling tasks demonstrate that PEER layers outperform dense FFWs and coarse-grained MoEs in terms of performance-compute trade-off. By enabling efficient utilization of a massive number of experts, PEER unlocks the potential for further scaling of transformer models while maintaining computational efficiency.",
+        "sections": {
+          "1 Introduction": [
+            "Lifelong language pretraining with distribution-specialized experts",
+            "Expert gate: Lifelong learning with a network of experts",
+            "Transformer feed-forward layers are key-value memories",
+            "Outrageously large neural networks: The sparsely-gated mixture-of-experts layer",
+            "Unified scaling laws for routed language models",
+            "Large memory layers with product keys",
+            "The case for learned index structures",
+            "Never-ending learning",
+            "Scaling laws for neural language models",
+            "Memory augmented language models through mixture of word experts",
+            "Scaling laws for fine-grained mixture of experts"
+          ],
+          "2 Method": [
+            "Large memory layers with product keys"
+          ],
+          "2 Method Product Key Retrieval": [
+            "Large memory layers with product keys"
+          ],
+          "2 Method Parameter Efficient Experts and Multi-Head Retrieval": [
+            "Glu variants improve transformer"
+          ],
+          "2 Method Why A Large Number of Small Experts?": [
+            "Scaling laws for fine-grained mixture of experts"
+          ],
+          "3 Experiments 3.1 Pretraining isoFLOP Analysis": [
+            "Large memory layers with product keys",
+            "Improving language models by retrieving from trillions of tokens",
+            "Exploring the limits of transfer learning with a unified text-to-text transformer",
+            "Mixture-of-experts with expert choice routing"
+          ],
+          "3 Experiments 3.2 Evaluation on Language Modeling Datasets": [
+            "The LAMBADA dataset: Word prediction requiring a broad discourse context",
+            "Curation",
+            "The Pile: An 800gb dataset of diverse text for language modeling",
+            "Pointer sentinel mixture models"
+          ],
+          "3 Experiments 3.3 Ablations": [
+            "Large memory layers with product keys"
+          ],
+          "4 Related Works Mixture of Expert": [
+            "AdaMix: Mixture-of-adaptations for parameter-efficient model tuning",
+            "Outrageously large neural networks: The sparsely-gated mixture-of-experts layer",
+            "Unified scaling laws for routed language models",
+            "On the benefits of learning to route in mixture-of-experts models",
+            "Mixture-of-experts with expert choice routing",
+            "Switch transformers: Scaling to trillion parameter models with simple and efficient sparsity",
+            "Hash layers for large sparse models"
+          ],
+          "4 Related Works Retrieval-Augmented Models": [
+            "Retrieval-augmented generation for large language models: A survey",
+            "Generalization through memorization: Nearest neighbor language models",
+            "Improving language models by retrieving from trillions of tokens",
+            "Knowledge graph-augmented language models for knowledge-grounded dialogue generation"
+          ],
+          "4 Related Works Efficient Feedforward Layers": [
+            "Deep learning of representations: Looking forward",
+            "Approximating two-layer feedforward networks for efficient transformers",
+            "Large memory layers with product keys",
+            "Fast feedforward networks",
+            "Conditional computation in neural networks for faster models",
+            "Low-rank approximations for conditional feedforward computation in deep neural networks"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.9407903552055359,
+        "extra": {
+          "expand": "not expand"
+        }
+      }
+    ],
+    "Innovative approaches for fine-grained mixture of experts scaling": [
+      {
+        "title": "Scaling Laws for Fine-Grained Mixture of Experts",
+        "arxiv_id": "2402.07871",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Mixture of Experts (MoE) models have emerged as a primary solution for reducing the computational cost of Large Language Models. In this work, we analyze their scaling properties, incorporating an expanded range of variables. Specifically, we introduce a new hyperparameter, granularity, whose adjustment enables precise control over the size of the experts. Building on this, we establish scaling laws for fine-grained MoE, taking into account the number of training tokens, model size, and granularity. Leveraging these laws, we derive the optimal training configuration for a given computational budget. Our findings not only show that MoE models consistently outperform dense Transformers but also highlight that the efficiency gap between dense and MoE models widens as we scale up the model size and training budget. Furthermore, we demonstrate that the common practice of setting the size of experts in MoE to mirror the feed-forward layer is not optimal at almost any computational budget. \u2020\u2020Contributions: Jakub implemented fine-grained MoE, ran experiments, and oversaw the course of the project. Jan designed and implemented the scaling laws, also optimized and tuned the fine-grained MoE implementation. Kamil A. provided significant advice on many aspects of the project. Maciej experimented with the block design and, with Micha\u0142, provided considerable technical support. Szymon, Kamil C., Krystian, and Tomasz contributed to the project and the engineering in various ways. Marek, along with Piotr, provided high-level scientific advice. Sebastian came up with the initial idea, started the project, and supervised it while setting the research direction and leading experiments and analyses. Correspondence to <s.jaszczur@uw.edu.pl>. \u2217\u00a0Equal contribution.  ",
+        "sections": {
+          "1 Introduction": [
+            "Unified scaling laws for routed language models",
+            "Efficient large scale language modeling with mixtures of experts",
+            "Dai, Thanumalayan\u00a0Sankaranarayana Pillai, Marie Pellat, Aitor Lewkowycz, Erica Moreira, Rewon Child, Oleksandr Polozov, Katherine Lee, Zongwei Zhou, Xuezhi Wang, Brennan Saeta, Mark Diaz, Orhan Firat, Michele Catasta, Jason Wei, Kathy Meier-Hellstern, Douglas Eck, Jeff Dean, Slav Petrov, and Noah Fiedel",
+            "Switch transformers: Scaling to trillion parameter models with simple and efficient sparsity",
+            "Llmcarbon: Modeling the end-to-end carbon footprint of large language models",
+            "Llama 2: Open foundation and fine-tuned chat models, 2023b.",
+            "Mixtral of experts",
+            "Rush, Stella Biderman, Albert Webson, Pawan\u00a0Sasanka Ammanamanchi, Thomas Wang, Beno\u00eet Sagot, Niklas Muennighoff, Albert\u00a0Villanova del Moral, Olatunji Ruwase, Rachel Bawden, Stas Bekman, Angelina McMillan-Major, Iz\u00a0Beltagy, Huu Nguyen, Lucile Saulnier, Samson Tan, Pedro\u00a0Ortiz Suarez, Victor Sanh, Hugo Lauren\u00e7on, Yacine Jernite, Julien Launay, Margaret Mitchell, Colin Raffel, Aaron Gokaslan, Adi Simhi, Aitor Soroa, Alham\u00a0Fikri Aji, Amit Alfassy, Anna Rogers, Ariel\u00a0Kreisberg Nitzav, Canwen Xu, Chenghao Mou, Chris Emezue, Christopher Klamm, Colin Leong, Daniel van Strien, David\u00a0Ifeoluwa Adelani, Dragomir Radev, Eduardo\u00a0Gonz\u00e1lez Ponferrada, Efrat Levkovizh, Ethan Kim, Eyal\u00a0Bar Natan, Francesco\u00a0De Toni, G\u00e9rard Dupont, Germ\u00e1n Kruszewski, Giada Pistilli, Hady Elsahar, Hamza Benyamina, Hieu Tran, Ian Yu, Idris Abdulmumin, Isaac Johnson, Itziar Gonzalez-Dios, Javier de\u00a0la Rosa, Jenny Chim, Jesse Dodge, Jian Zhu, Jonathan Chang, J\u00f6rg Frohberg, Joseph Tobing, Joydeep Bhattacharjee, Khalid Almubarak, Kimbo Chen, Kyle Lo, Leandro\u00a0Von Werra, Leon Weber, Long Phan, Loubna\u00a0Ben allal, Ludovic Tanguy, Manan Dey, Manuel\u00a0Romero Mu\u00f1oz, Maraim Masoud, Mar\u00eda Grandury, Mario \u0160a\u0161ko, Max Huang, Maximin Coavoux, Mayank Singh, Mike Tian-Jian Jiang, Minh\u00a0Chien Vu, Mohammad\u00a0A"
+          ],
+          "2 Related Work": [
+            "Mesh-tensorflow: Deep learning for supercomputers",
+            "From sparse to soft mixtures of experts",
+            "Deepseekmoe: Towards ultimate expert specialization in mixture-of-experts language models",
+            "Base layers: Simplifying training of large, sparse models",
+            "Mixture-of-experts with expert choice routing",
+            "Scaling laws for neural language models",
+            "Training compute-optimal large language models",
+            "Towards a unified view of sparse feed-forward network in pretraining large language model",
+            "Scaling laws for autoregressive generative modeling",
+            "Switch transformers: Scaling to trillion parameter models with simple and efficient sparsity",
+            "Hash layers for large sparse models",
+            "Scaling laws for sparsely-connected foundation models",
+            "Unified scaling laws for routed language models",
+            "Outrageously large neural networks: The sparsely-gated mixture-of-experts layer",
+            "Gshard: Scaling giant models with conditional computation and automatic sharding",
+            "Scaling laws for neural machine translation",
+            "Long short-term memory"
+          ],
+          "3 Background 3.1 Model Architecture": [
+            "Improving language understanding by generative pre-training",
+            "Switch transformers: Scaling to trillion parameter models with simple and efficient sparsity"
+          ],
+          "3 Background 3.2 Scaling Laws": [
+            "Unified scaling laws for routed language models",
+            "Training compute-optimal large language models",
+            "Scaling laws for neural language models"
+          ],
+          "5 Scaling Laws": [
+            "Unified scaling laws for routed language models"
+          ],
+          "5 Scaling Laws 5.2 Scaling the Model and Dataset Size": [
+            "Scaling laws for neural language models"
+          ],
+          "5 Scaling Laws 5.3 The Form of the Joint Scaling Law": [
+            "Robust Estimation of a Location Parameter",
+            "Training compute-optimal large language models"
+          ],
+          "6 Optimal Allocation of Computational Budget 6.1 Computational Cost of Granularity": [
+            "Scaling laws for neural language models",
+            "Training compute-optimal large language models"
+          ],
+          "6 Optimal Allocation of Computational Budget 6.2 Compute Optimal Formula": [
+            "Training compute-optimal large language models",
+            "An algorithm with guaranteed convergence for finding a zero of a function"
+          ],
+          "6 Optimal Allocation of Computational Budget 6.3 MoE is Always More Efficient": [
+            "Unified scaling laws for routed language models"
+          ],
+          "7 Discussion Extreme Granularity.": [
+            "Training compute-optimal large language models"
+          ],
+          "7 Discussion Varying Expansion Rate.": [
+            "Unified scaling laws for routed language models",
+            "Glam: Efficient scaling of language models with mixture-of-experts",
+            "Switch transformers: Scaling to trillion parameter models with simple and efficient sparsity"
+          ],
+          "7 Discussion Modeling the cost of granularity.": [
+            "Scaling laws for neural language models"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.9992709755897522,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "DeepSeekMoE: Towards Ultimate Expert Specialization in Mixture-of-Experts Language Models",
+        "arxiv_id": "2401.06066",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract In the era of large language models, Mixture-of-Experts (MoE) is a promising architecture for managing computational costs when scaling up model parameters. However, conventional MoE architectures like GShard, which activate the top-K\ud835\udc3eK out of N\ud835\udc41N experts, face challenges in ensuring expert specialization, i.e. each expert acquires non-overlapping and focused knowledge. In response, we propose the DeepSeekMoE architecture towards ultimate expert specialization. It involves two principal strategies: (1) finely segmenting the experts into m\u200bN\ud835\udc5a\ud835\udc41mN ones and activating m\u200bK\ud835\udc5a\ud835\udc3emK from them, allowing for a more flexible combination of activated experts; (2) isolating Kssubscript\ud835\udc3e\ud835\udc60K_{s} experts as shared ones, aiming at capturing common knowledge and mitigating redundancy in routed experts. Starting from a modest scale with 2B parameters, we demonstrate that DeepSeekMoE 2B achieves comparable performance with GShard 2.9B, which has 1.5\u00d7\\times expert parameters and computation. In addition, DeepSeekMoE 2B nearly approaches the performance of its dense counterpart with the same number of total parameters, which set the upper bound of MoE models. Subsequently, we scale up DeepSeekMoE to 16B parameters and show that it achieves comparable performance with LLaMA2 7B, with only about 40% of computations. Further, our preliminary efforts to scale up DeepSeekMoE to 145B parameters consistently validate its substantial advantages over the GShard architecture, and show its performance comparable with DeepSeek 67B, using only 28.5% (maybe even 18.2%) of computations. ",
+        "sections": {
+          "1 Introduction": [
+            "Adaptive mixtures of local experts",
+            "DeepSeek-AI. Deepseek llm: Scaling open-source language models with longtermism",
+            "Switch transformers: Scaling to trillion parameter models with simple and efficient sparsity",
+            "Touvron, L",
+            "Attention is all you need",
+            "Gshard: Scaling giant models with conditional computation and automatic sharding",
+            "Language models are few-shot learners."
+          ],
+          "2 Preliminaries: Mixture-of-Experts for Transformers": [
+            "Gshard: Scaling giant models with conditional computation and automatic sharding",
+            "Switch transformers: Scaling to trillion parameter models with simple and efficient sparsity"
+          ],
+          "3 DeepSeekMoE Architecture 3.2 Shared Expert Isolation": [
+            "Deepspeed-moe: Advancing mixture-of-experts inference and training to power next-generation AI scale"
+          ],
+          "3 DeepSeekMoE Architecture 3.3 Load Balance Consideration": [
+            "Outrageously large neural networks: The sparsely-gated mixture-of-experts layer"
+          ],
+          "4 Validation Experiments 4.1 Experimental Setup": [
+            "The Pile: An 800GB dataset of diverse text for language modeling",
+            "Triton: An intermediate language and compiler for tiled neural network computations",
+            "Think you have solved question answering? try arc, the AI2 reasoning challenge",
+            "Decoupled weight decay regularization",
+            "Program synthesis with large language models.",
+            "High-Flyer. Hai-llm: An efficient and lightweight tool for training large models",
+            "PIQA: reasoning about physical commonsense in natural language",
+            "HellaSwag: Can a machine really finish your sentence?",
+            "RACE: large-scale reading comprehension dataset from examinations",
+            "triviaqa: A Large Scale Distantly Supervised Challenge Dataset for Reading Comprehension",
+            "Neural machine translation of rare words with subword units",
+            "Pipedream: Fast and efficient pipeline parallel DNN training",
+            "Chen, J",
+            "Gshard: Scaling giant models with conditional computation and automatic sharding",
+            "Natural questions: a benchmark for question answering research",
+            "Megatron-lm: Training multi-billion parameter language models using model parallelism",
+            "Zero: memory optimizations toward training trillion parameter models"
+          ],
+          "4 Validation Experiments 4.2 Evaluations": [
+            "Switch transformers: Scaling to trillion parameter models with simple and efficient sparsity",
+            "Gshard: Scaling giant models with conditional computation and automatic sharding",
+            "Hash layers for large sparse models"
+          ],
+          "5 Scaling up to DeepSeekMoE 16B 5.1 Experimental Setup": [
+            "Winogrande: An adversarial winograd schema challenge at scale",
+            "The Pile: An 800GB dataset of diverse text for language modeling",
+            "C-Eval: A multi-level multi-discipline chinese evaluation suite for foundation models",
+            "Training verifiers to solve math word problems",
+            "Think you have solved question answering? try arc, the AI2 reasoning challenge",
+            "Chid: A large-scale chinese idiom dataset for cloze test",
+            "Truthfulqa: Measuring how models mimic human falsehoods",
+            "Decoupled weight decay regularization",
+            "CMMLU: Measuring massive multitask language understanding in Chinese",
+            "Xu, H",
+            "Measuring massive multitask language understanding",
+            "Measuring mathematical problem solving with the math dataset",
+            "HellaSwag: Can a machine really finish your sentence?",
+            "DROP: A reading comprehension benchmark requiring discrete reasoning over paragraphs"
+          ],
+          "5 Scaling up to DeepSeekMoE 16B 5.2 Evaluations": [
+            "GPT-J-6B: A 6 Billion Parameter Autoregressive Language Model",
+            "Opt: Open pre-trained transformer language models",
+            "Fast transformer decoding: One write-head is all you need",
+            "X. Geng and H. Liu. Openllama: An open reproduction of llama, May 2023.",
+            "Pythia: A suite for analyzing large language models across training and scaling",
+            "DeepSeek-AI. Deepseek llm: Scaling open-source language models with longtermism",
+            "Falcon-40B: an open large language model with state-of-the-art performance",
+            "GPT-Neo: Large Scale Autoregressive Language Modeling with Mesh-Tensorflow",
+            "L",
+            "Touvron, L",
+            "Knowledge neurons in pretrained transformers",
+            "Llama: Open and efficient foundation language models",
+            "Redpajama-data: An open source recipe to reproduce llama training dataset"
+          ],
+          "6 Alignment for DeepSeekMoE 16B": [
+            "Flan-moe: Scaling instruction-finetuned language models with sparse mixture of experts",
+            "Switch transformers: Scaling to trillion parameter models with simple and efficient sparsity"
+          ],
+          "6 Alignment for DeepSeekMoE 16B 6.1 Experimental Setup": [
+            "Decoupled weight decay regularization",
+            "The Pile: An 800GB dataset of diverse text for language modeling",
+            "Challenging big-bench tasks and whether chain-of-thought can solve them",
+            "Chid: A large-scale chinese idiom dataset for cloze test"
+          ],
+          "6 Alignment for DeepSeekMoE 16B 6.2 Evaluations": [
+            "Touvron, L"
+          ],
+          "7 DeepSeekMoE 145B Ongoing 7.1 Experimental Setup": [
+            "Decoupled weight decay regularization"
+          ],
+          "7 DeepSeekMoE 145B Ongoing 7.2 Evaluations": [
+            "DeepSeek-AI. Deepseek llm: Scaling open-source language models with longtermism"
+          ],
+          "8 Related Work": [
+            "Stablemoe: Stable routing strategy for mixture of experts",
+            "Adaptive mixtures of local experts",
+            "Mixture-of-experts with expert choice routing",
+            "M6: A chinese multimodal pretrainer",
+            "Switch transformers: Scaling to trillion parameter models with simple and efficient sparsity",
+            "Hash layers for large sparse models",
+            "Designing effective sparse expert models",
+            "Outrageously large neural networks: The sparsely-gated mixture-of-experts layer",
+            "Gshard: Scaling giant models with conditional computation and automatic sharding",
+            "Long short-term memory"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.761996865272522,
+        "extra": {
+          "expand": "not expand"
+        }
+      }
+    ],
+    "Survey papers on Scaling Laws for Fine-Grained Mixture of Experts": [
+      {
+        "title": "A Survey on Mixture of Experts",
+        "arxiv_id": "2407.06204",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract. Large language models (LLMs) have garnered unprecedented advancements across diverse fields, ranging from natural language processing to computer vision and beyond. The prowess of LLMs is underpinned by their substantial model size, extensive and diverse datasets, and the vast computational power harnessed during training, all of which contribute to the emergent abilities of LLMs (e.g., in-context learning) that are not present in small models. Within this context, the mixture of experts (MoE) has emerged as an effective method for substantially scaling up model capacity with minimal computation overhead, gaining significant attention from academia and industry. Despite its growing prevalence, there lacks a systematic and comprehensive review of the literature on MoE. This survey seeks to bridge that gap, serving as an essential resource for researchers delving into the intricacies of MoE. We first briefly introduce the structure of the MoE layer, followed by proposing a new taxonomy of MoE. Next, we overview the core designs for various MoE models including both algorithmic and systemic aspects, alongside collections of available open-source implementations, hyperparameter configurations and empirical evaluations. Furthermore, we delineate the multifaceted applications of MoE in practice, and outline some potential directions for future research. To facilitate ongoing updates and the sharing of cutting-edge developments in MoE research, we have established a resource repository accessible at https://github.com/withinmiaov/A-Survey-on-Mixture-of-Experts.",
+        "sections": {
+          "1. Introduction": [
+            "From Sparse to Soft Mixtures of Experts",
+            "Snowflake AI Research Team. Snowflake Arctic: The Best LLM for Enterprise AI \u2014 Efficiently Intelligent, Truly Open.",
+            "Vilbert: Pretraining task-agnostic visiolinguistic representations for vision-and-language tasks",
+            "Attention is all you need",
+            "Sparse Upcycling: Training Mixture-of-Experts from Dense Checkpoints",
+            "Lifelong language pretraining with distribution-specialized experts",
+            "Adaptive mixtures of local experts",
+            "Outrageously large neural networks: The sparsely-gated mixture-of-experts layer",
+            "Mixtral of experts",
+            "A review of sparse expert models in deep learning",
+            "Grok-1",
+            "AdaMix: Mixture-of-Adaptations for Parameter-efficient Model Tuning",
+            "Gshard: Scaling giant models with conditional computation and automatic sharding",
+            "A parallel mixture of SVMs for very large scale problems",
+            "DeepSeek-AI. DeepSeek-V2: A Strong, Economical, and Efficient Mixture-of-Experts Language Model.",
+            "Scaling laws for neural language models",
+            "Introducing DBRX: A New State-of-the-Art Open LLM",
+            "Scaling vision with sparse mixture of experts"
+          ],
+          "2. Background on Mixture of Experts": [
+            "Outrageously large neural networks: The sparsely-gated mixture-of-experts layer",
+            "Palm: Scaling language modeling with pathways"
+          ],
+          "2. Background on Mixture of Experts 2.1. Dense MoE": [
+            "Dense Training, Sparse Inference: Rethinking Training of Mixture-of-Experts Language Models",
+            "Adaptive mixtures of local experts",
+            "Evomoe: An evolutional mixture-of-experts training framework via dense-to-sparse gate",
+            "MoLE: Mixture of LoRA Experts",
+            "Loramoe: Revolutionizing mixture of experts for maintaining world knowledge in language model alignment."
+          ],
+          "2. Background on Mixture of Experts 2.2. Sparse MoE": [
+            "Outrageously large neural networks: The sparsely-gated mixture-of-experts layer",
+            "Switch transformers: Scaling to trillion parameter models with simple and efficient sparsity",
+            "Gshard: Scaling giant models with conditional computation and automatic sharding",
+            "Scaling vision with sparse mixture of experts"
+          ],
+          "3. Taxonomy of Mixture of Experts": [
+            "Llama 2: Open foundation and fine-tuned chat models",
+            "Chatgpt: Optimizing language models for dialogue",
+            "Qwen1.5-MoE: Matching 7B Model Performance with 1/3 Activated Parameters",
+            "A review of sparse expert models in deep learning",
+            "Mixtral of experts",
+            "Introducing Qwen1.5",
+            "Mistral 7B",
+            "Deepseekmoe: Towards ultimate expert specialization in mixture-of-experts language models",
+            "Deepseek llm: Scaling open-source language models with longtermism"
+          ],
+          "4. Algorithm Design of Mixture of Experts 4.1. Gating Function": [
+            "Glam: Efficient scaling of language models with mixture-of-experts",
+            "Learning factored representations in a deep mixture of experts",
+            "Eliciting and Understanding Cross-task Skills with Task-level Mixture-of-Experts",
+            "Unified scaling laws for routed language models",
+            "DEMix Layers: Disentangling Domains for Modular Language Modeling",
+            "Moduleformer: Learning modular large language models from uncurated data",
+            "Gshard: Scaling giant models with conditional computation and automatic sharding",
+            "Omni-SMoLA: Boosting Generalist Multimodal Models with Soft Mixture of Low-rank Experts",
+            "Pangu-{{\\{\\\\backslashSigma}}}: Towards trillion parameter language model with sparse heterogeneous computing.",
+            "Openmoe: An early effort on open mixture-of-experts language models",
+            "Yuan 2.0-M32: Mixture of Experts with Attention Router",
+            "HOMOE: A Memory-Based and Composition-Aware Framework for Zero-Shot Learning with Hopfield Network and Soft Mixture of Experts",
+            "Lory: Fully Differentiable Mixture-of-Experts for Autoregressive Language Model Pre-training",
+            "Brainformers: Trading simplicity for efficiency",
+            "Dense Training, Sparse Inference: Rethinking Training of Mixture-of-Experts Language Models",
+            "M6-t: Exploring sparse expert models and beyond",
+            "Mod-squad: Designing mixtures of experts as modular multi-task learners",
+            "Sparse Upcycling: Training Mixture-of-Experts from Dense Checkpoints",
+            "Mixture-of-experts with expert choice routing",
+            "Switch transformers: Scaling to trillion parameter models with simple and efficient sparsity",
+            "Estimating or propagating gradients through stochastic neurons for conditional computation",
+            "Taming Sparsely Activated Transformer with Stochastic Experts",
+            "From Sparse to Soft Mixtures of Experts",
+            "Outrageously large neural networks: The sparsely-gated mixture-of-experts layer",
+            "No language left behind: Scaling human-centered machine translation",
+            "Skywork-MoE: A Deep Dive into Training Techniques for Mixture-of-Experts Language Models.",
+            "Soft merging of experts with adaptive routing",
+            "StableMoE: Stable Routing Strategy for Mixture of Experts",
+            "On the representation collapse of sparse mixture of experts",
+            "Scalable and efficient moe training for multitask multilingual models",
+            "MoLE: Mixture of LoRA Experts",
+            "Dselect-k: Differentiable selection in the mixture of experts with applications to multi-task learning",
+            "Deepseekmoe: Towards ultimate expert specialization in mixture-of-experts language models",
+            "Beyond Distillation: Task-level Mixture-of-Experts for Efficient Inference",
+            "Beyond english-centric multilingual machine translation",
+            "Uni-perceiver-moe: Learning sparse generalist models with conditional moes",
+            "Pushing mixture of experts to the limit: Extremely parameter efficient moe for instruction tuning",
+            "St-moe: Designing stable and transferable sparse expert models",
+            "Exploring the limits of transfer learning with a unified text-to-text transformer",
+            "Base layers: Simplifying training of large, sparse models",
+            "Hash layers for large sparse models",
+            "Scaling vision with sparse mixture of experts"
+          ],
+          "4. Algorithm Design of Mixture of Experts 4.2. Experts": [
+            "Glam: Efficient scaling of language models with mixture-of-experts",
+            "Mixture of Attention Heads: Selecting Attention Heads Per Token",
+            "Bert: Pre-training of deep bidirectional transformers for language understanding",
+            "Gaussian error linear units (gelus)",
+            "Moduleformer: Learning modular large language models from uncurated data",
+            "Gshard: Scaling giant models with conditional computation and automatic sharding",
+            "Shortcut-connected Expert Parallelism for Accelerating Mixture-of-Experts",
+            "Openmoe: An early effort on open mixture-of-experts language models",
+            "Qwen1.5-MoE: Matching 7B Model Performance with 1/3 Activated Parameters",
+            "Brainformers: Trading simplicity for efficiency",
+            "Dense Training, Sparse Inference: Rethinking Training of Mixture-of-Experts Language Models",
+            "LoRA: Low-Rank Adaptation of Large Language Models",
+            "Patch-level routing in mixture-of-experts is provably sample-efficient for convolutional neural networks",
+            "Switch transformers: Scaling to trillion parameter models with simple and efficient sparsity",
+            "Roformer: Enhanced transformer with rotary position embedding",
+            "Language models are few-shot learners.",
+            "Jamba: A hybrid transformer-mamba language model.",
+            "Llama 2: Open foundation and fine-tuned chat models",
+            "Deepspeed-moe: Advancing mixture-of-experts inference and training to power next-generation ai scale",
+            "JetMoE: Reaching Llama2 Performance with 0.1 M Dollars",
+            "Outrageously large neural networks: The sparsely-gated mixture-of-experts layer",
+            "GQA: Training Generalized Multi-Query Transformer Models from Multi-Head Checkpoints",
+            "No language left behind: Scaling human-centered machine translation",
+            "Mixture of cluster-conditional lora experts for vision-language instruction tuning",
+            "MoEfication: Transformer Feed-forward Layers are Mixtures of Experts",
+            "Mamba: Linear-time sequence modeling with selective state spaces",
+            "Branch-Train-MiX: Mixing Expert LLMs into a Mixture-of-Experts LLM",
+            "Moe-llava: Mixture of experts for large vision-language models",
+            "Glu variants improve transformer",
+            "Deepseekmoe: Towards ultimate expert specialization in mixture-of-experts language models",
+            "LLaMA-MoE: Building Mixture-of-Experts from LLaMA with Continual Pre-training",
+            "Snowflake AI Research Team. Snowflake Arctic: The Best LLM for Enterprise AI \u2014 Efficiently Intelligent, Truly Open.",
+            "Efficient large scale language modeling with mixtures of experts",
+            "Mixtral of experts",
+            "Deep sparse rectifier neural networks",
+            "St-moe: Designing stable and transferable sparse expert models",
+            "Root mean square layer normalization",
+            "Exploring the limits of transfer learning with a unified text-to-text transformer",
+            "Introducing DBRX: A New State-of-the-Art Open LLM",
+            "Scaling vision with sparse mixture of experts"
+          ],
+          "4. Algorithm Design of Mixture of Experts 4.3. Mixture of Parameter-Efficient Experts": [
+            "Delta tuning: A comprehensive study of parameter efficient methods for pre-trained language models.",
+            "Scaling down to scale up: A guide to parameter-efficient fine-tuning",
+            "Mixture of Attention Heads: Selecting Attention Heads Per Token",
+            "Sparse MoE as the New Dropout: Scaling Dense and Self-Slimmable Transformers",
+            "AdaMix: Mixture-of-Adaptations for Parameter-efficient Model Tuning",
+            "Omni-SMoLA: Boosting Generalist Multimodal Models with Soft Mixture of Low-rank Experts",
+            "LoRA: Low-Rank Adaptation of Large Language Models",
+            "A Case Study of Instruction Tuning with Mixture of Parameter-Efficient Experts",
+            "Moelora: An moe-based parameter efficient fine-tuning method for multi-task medical applications",
+            "Prefix-Tuning: Optimizing Continuous Prompts for Generation",
+            "Loramoe: Revolutionizing mixture of experts for maintaining world knowledge in language model alignment.",
+            "MixLoRA: Enhancing Large Language Models Fine-Tuning with LoRA based Mixture of Experts",
+            "Mixture-of-Domain-Adapters: Decoupling and Injecting Domain Knowledge to Pre-trained Language Models\u2019 Memories",
+            "Sira: Sparse mixture of low rank adaptation",
+            "Mixture of LoRA Experts",
+            "Mixture of cluster-conditional lora experts for vision-language instruction tuning",
+            "Few-shot parameter-efficient fine-tuning is better and cheaper than in-context learning",
+            "UniPELT: A Unified Framework for Parameter-Efficient Language Model Tuning",
+            "Higher Layers Need More LoRA Experts",
+            "Moelora: Contrastive learning guided mixture of experts on parameter-efficient fine-tuning for large language models.",
+            "Parameter-efficient fine-tuning for large models: A comprehensive survey",
+            "Pushing mixture of experts to the limit: Extremely parameter efficient moe for instruction tuning",
+            "Llava-mole: Sparse mixture of lora experts for mitigating data conflicts in instruction finetuning mllms",
+            "Parameter-efficient transfer learning for NLP"
+          ],
+          "4. Algorithm Design of Mixture of Experts 4.4. Training & Inference Scheme": [
+            "Mixture of Attention Heads: Selecting Attention Heads Per Token",
+            "Sparse MoE as the New Dropout: Scaling Dense and Self-Slimmable Transformers",
+            "Evomoe: An evolutional mixture-of-experts training framework via dense-to-sparse gate",
+            "Moduleformer: Learning modular large language models from uncurated data",
+            "Sparse Upcycling: Training Mixture-of-Experts from Dense Checkpoints",
+            "Dense Training, Sparse Inference: Rethinking Training of Mixture-of-Experts Language Models",
+            "One student knows all experts know: From sparse to dense",
+            "Switch transformers: Scaling to trillion parameter models with simple and efficient sparsity",
+            "Experts weights averaging: A new general training scheme for vision transformers.",
+            "Deepspeed-moe: Advancing mixture-of-experts inference and training to power next-generation ai scale",
+            "Branch-Train-Merge: Embarrassingly Parallel Training of Expert Language Models",
+            "Outrageously large neural networks: The sparsely-gated mixture-of-experts layer",
+            "Skywork-MoE: A Deep Dive into Training Techniques for Mixture-of-Experts Language Models.",
+            "MoEfication: Transformer Feed-forward Layers are Mixtures of Experts",
+            "Residual mixture of experts",
+            "Branch-Train-MiX: Mixing Expert LLMs into a Mixture-of-Experts LLM",
+            "Moe-llava: Mixture of experts for large vision-language models",
+            "Tricks for Training Sparse Translation Models",
+            "MoEBERT: from BERT to Mixture-of-Experts via Importance-Guided Adaptation",
+            "LLaMA-MoE: Building Mixture-of-Experts from LLaMA with Continual Pre-training",
+            "Fusing Models with Complementary Expertise",
+            "Skywork: A more open bilingual foundation model",
+            "Task-specific expert pruning for sparse mixture-of-experts"
+          ],
+          "4. Algorithm Design of Mixture of Experts 4.5. Derivatives": [
+            "Lifelong language pretraining with distribution-specialized experts",
+            "Mixture-of-Depths: Dynamically allocating compute in transformer-based language models",
+            "Outrageously large neural networks: The sparsely-gated mixture-of-experts layer",
+            "Mixture of Tokens: Efficient LLMs through Cross-Example Aggregation",
+            "Overcoming catastrophic forgetting in neural networks",
+            "Go wider instead of deeper",
+            "Sparse Universal Transformer",
+            "SMoP: Towards Efficient and Effective Prompt Tuning with Sparse Mixture-of-Prompts"
+          ],
+          "5. System Design of Mixture of Experts": [
+            "Skywork-MoE: A Deep Dive into Training Techniques for Mixture-of-Experts Language Models.",
+            "Zero: Memory optimizations toward training trillion parameter models",
+            "Gshard: Scaling giant models with conditional computation and automatic sharding",
+            "Switch transformers: Scaling to trillion parameter models with simple and efficient sparsity",
+            "Fastermoe: modeling and optimizing training of large-scale dynamic pre-trained models",
+            "Gpipe: Efficient training of giant neural networks using pipeline parallelism",
+            "Sequence parallelism: Long sequence training from system perspective",
+            "Megatron-lm: Training multi-billion parameter language models using model parallelism"
+          ],
+          "5. System Design of Mixture of Experts 5.1. Computation": [
+            "HetuMoE: An efficient trillion-scale mixture-of-expert distributed training system",
+            "Deepspeed-moe: Advancing mixture-of-experts inference and training to power next-generation ai scale",
+            "Pit: Optimization of dynamic sparse deep learning models via permutation invariant transformation",
+            "Flexmoe: Scaling large-scale sparse pre-trained model training via dynamic device placement",
+            "Megablocks: Efficient sparse training with mixture-of-experts",
+            "Efficiently Training {Sparsely-Activated} Models through Combining Offline and Online Parallelization",
+            "Tutel: Adaptive mixture-of-experts at scale",
+            "Fastermoe: modeling and optimizing training of large-scale dynamic pre-trained models",
+            "Scattered Mixture-of-Experts Implementation",
+            "Se-moe: A scalable and efficient mixture-of-experts distributed training and inference system.",
+            "Fastmoe: A fast mixture-of-expert training system"
+          ],
+          "5. System Design of Mixture of Experts 5.2. Communication": [
+            "Lancet: Accelerating Mixture-of-Experts Training via Whole Graph Computation-Communication Overlapping",
+            "HetuMoE: An efficient trillion-scale mixture-of-expert distributed training system",
+            "Snowflake AI Research Team. Snowflake Arctic: The Best LLM for Enterprise AI \u2014 Efficiently Intelligent, Truly Open.",
+            "Deepspeed-moe: Advancing mixture-of-experts inference and training to power next-generation ai scale",
+            "Exploiting Inter-Layer Expert Affinity for Accelerating Mixture-of-Experts Model Inference",
+            "Fastermoe: modeling and optimizing training of large-scale dynamic pre-trained models",
+            "Tutel: Adaptive mixture-of-experts at scale",
+            "Gpipe: Efficient training of giant neural networks using pipeline parallelism",
+            "Shortcut-connected Expert Parallelism for Accelerating Mixture-of-Experts",
+            "Se-moe: A scalable and efficient mixture-of-experts distributed training and inference system.",
+            "Ta-moe: Topology-aware large scale mixture-of-expert training",
+            "MPMoE: Memory Efficient MoE for Pre-trained Models with Adaptive Pipeline Parallelism"
+          ],
+          "5. System Design of Mixture of Experts 5.3. Storage": [
+            "Edgemoe: Fast on-device inference of moe-based large language models",
+            "Pre-gated MoE: An Algorithm-System Co-Design for Fast and Scalable Mixture-of-Expert Inference",
+            "MPMoE: Memory Efficient MoE for Pre-trained Models with Adaptive Pipeline Parallelism",
+            "Se-moe: A scalable and efficient mixture-of-experts distributed training and inference system."
+          ],
+          "6. Applications of Mixture of Experts Models": [
+            "Glam: Efficient scaling of language models with mixture-of-experts",
+            "Progressive layered extraction (ple): A novel multi-task learning (mtl) model for personalized recommendations",
+            "Multimodal machine learning: A survey and taxonomy",
+            "Tutel: Adaptive mixture-of-experts at scale",
+            "Swin transformer: Hierarchical vision transformer using shifted windows",
+            "Scaling vision-language models with sparse mixture of experts",
+            "LoRA: Low-Rank Adaptation of Large Language Models",
+            "Multimodal contrastive learning with limoe: the language-image mixture of experts",
+            "Patch-level routing in mixture-of-experts is provably sample-efficient for convolutional neural networks",
+            "Modeling task relationships in multi-task learning with multi-gate mixture-of-experts",
+            "AdaMCT: adaptive mixture of CNN-transformer for sequential recommendation",
+            "Uni-MoE: Scaling Unified Multimodal LLMs with Mixture of Experts",
+            "Outrageously large neural networks: The sparsely-gated mixture-of-experts layer",
+            "A review of sparse expert models in deep learning",
+            "Mixture of cluster-conditional lora experts for vision-language instruction tuning",
+            "A survey of recommender systems with multi-objective optimization",
+            "Moe-llava: Mixture of experts for large vision-language models",
+            "Deepseekmoe: Towards ultimate expert specialization in mixture-of-experts language models",
+            "Multimodal deep learning",
+            "Mixtral of experts",
+            "Llava-mole: Sparse mixture of lora experts for mitigating data conflicts in instruction finetuning mllms",
+            "Robust Mixture-of-Expert Training for Convolutional Neural Networks",
+            "An image is worth 16x16 words: Transformers for image recognition at scale",
+            "Scaling vision with sparse mixture of experts"
+          ],
+          "7. Challenges & Opportunities": [
+            "Qwen1.5-MoE: Matching 7B Model Performance with 1/3 Activated Parameters",
+            "Flashattention: Fast and memory-efficient exact attention with io-awareness",
+            "Brainformers: Trading simplicity for efficiency",
+            "Deepspeed-moe: Advancing mixture-of-experts inference and training to power next-generation ai scale",
+            "Parameter-efficient fine-tuning for large models: A comprehensive survey",
+            "Mixture of Attention Heads: Selecting Attention Heads Per Token",
+            "Outrageously large neural networks: The sparsely-gated mixture-of-experts layer",
+            "Mixture-of-experts with expert choice routing",
+            "Gshard: Scaling giant models with conditional computation and automatic sharding",
+            "Fastermoe: modeling and optimizing training of large-scale dynamic pre-trained models",
+            "St-moe: Designing stable and transferable sparse expert models",
+            "Shortcut-connected Expert Parallelism for Accelerating Mixture-of-Experts",
+            "Switch transformers: Scaling to trillion parameter models with simple and efficient sparsity",
+            "Patch-level routing in mixture-of-experts is provably sample-efficient for convolutional neural networks",
+            "Loramoe: Revolutionizing mixture of experts for maintaining world knowledge in language model alignment.",
+            "Deepseekmoe: Towards ultimate expert specialization in mixture-of-experts language models",
+            "Mixture-of-experts meets instruction tuning: A winning combination for large language models."
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.006972634233534336,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Mixtures of Experts Unlock Parameter Scaling for Deep RL",
+        "arxiv_id": "2402.08609",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract The recent rapid progress in (self) supervised learning models is in large part predicted by empirical scaling laws: a model\u2019s performance scales proportionally to its size. Analogous scaling laws remain elusive for reinforcement learning domains, however, where increasing the parameter count of a model often hurts its final performance. In this paper, we demonstrate that incorporating Mixture-of-Expert (MoE) modules, and in particular Soft MoEs (Puigcerver et\u00a0al., 2023), into value-based networks results in more parameter-scalable models, evidenced by substantial performance increases across a variety of training regimes and model sizes. This work thus provides strong empirical evidence towards developing scaling laws for reinforcement learning. ",
+        "sections": {
+          "1 Introduction": [
+            "Rigging the lottery: Making all tickets winners",
+            "From sparse to soft mixtures of experts",
+            "Proto-value networks: Scaling representation learning with auxiliary tasks",
+            "Scaling laws for neural language models",
+            "Parameter-efficient transfer learning for NLP",
+            "Switch transformers: Scaling to trillion parameter models with simple and efficient sparsity",
+            "Implicit under-parameterization inhibits data-efficient deep reinforcement learning",
+            "Human-level control through deep reinforcement learning",
+            "Attention is all you need",
+            "Outrageously large neural networks: The sparsely-gated mixture-of-experts layer",
+            "The difficulty of passive learning in deep reinforcement learning",
+            "The dormant neuron phenomenon in deep reinforcement learning"
+          ],
+          "2 Preliminaries 2.1 Reinforcement Learning": [
+            "Rainbow: Combining improvements in deep reinforcement learning",
+            "Visual feature extraction by a multilayered network of analog threshold elements",
+            "Impala: Scalable distributed deep-rl with importance weighted actor-learner architectures",
+            "Human-level control through deep reinforcement learning",
+            "Introduction to Reinforcement Learning"
+          ],
+          "2 Preliminaries 2.2 Mixtures of Experts": [
+            "From sparse to soft mixtures of experts",
+            "Attention is all you need",
+            "Switch transformers: Scaling to trillion parameter models with simple and efficient sparsity",
+            "Outrageously large neural networks: The sparsely-gated mixture-of-experts layer"
+          ],
+          "3  Mixture of Experts for Deep RL What is a token?": [
+            "An image is worth 16x16 words: Transformers for image recognition at scale",
+            "Decision transformer: Reinforcement learning via sequence modeling",
+            "Switch transformers: Scaling to trillion parameter models with simple and efficient sparsity",
+            "Outrageously large neural networks: The sparsely-gated mixture-of-experts layer"
+          ],
+          "3  Mixture of Experts for Deep RL What flavour of MoE to use?": [
+            "From sparse to soft mixtures of experts",
+            "Switch transformers: Scaling to trillion parameter models with simple and efficient sparsity",
+            "Outrageously large neural networks: The sparsely-gated mixture-of-experts layer"
+          ],
+          "4 Empirical evaluation": [
+            "Revisiting the arcade learning environment: evaluation protocols and open problems for general agents",
+            "Deep reinforcement learning at the edge of the statistical precipice",
+            "Rainbow: Combining improvements in deep reinforcement learning",
+            "Impala: Scalable distributed deep-rl with importance weighted actor-learner architectures",
+            "Human-level control through deep reinforcement learning",
+            "The arcade learning environment: An evaluation platform for general agents",
+            "Dopamine: A Research Framework for Deep Reinforcement Learning",
+            "The state of sparse training in deep reinforcement learning"
+          ],
+          "4 Empirical evaluation 4.1 Soft MoE Helps Parameter Scalability": [
+            "Sample-efficient reinforcement learning by breaking the replay ratio barrier",
+            "Proto-value networks: Scaling representation learning with auxiliary tasks"
+          ],
+          "4 Empirical evaluation 4.2 Impact of Design Choices": [
+            "Switch transformers: Scaling to trillion parameter models with simple and efficient sparsity",
+            "Impala: Scalable distributed deep-rl with importance weighted actor-learner architectures",
+            "Revisiting fundamentals of experience replay",
+            "Human-level control through deep reinforcement learning",
+            "Scaling vision with sparse mixture of experts",
+            "Outrageously large neural networks: The sparsely-gated mixture-of-experts layer"
+          ],
+          "4 Empirical evaluation 4.3 Additional Analysis": [
+            "Implicit under-parameterization inhibits data-efficient deep reinforcement learning",
+            "Learning dynamics and generalization in deep reinforcement learning",
+            "The dormant neuron phenomenon in deep reinforcement learning"
+          ],
+          "5 Future directions 5.1 Offline RL": [
+            "An optimistic perspective on offline reinforcement learning",
+            "Offline q-learning on diverse multi-task data both scales and generalizes",
+            "Dr3: Value-based deep reinforcement learning requires explicit regularization",
+            "Conservative q-learning for offline reinforcement learning"
+          ],
+          "5 Future directions 5.2 Agent Variants For Low-Data Regimes": [
+            "When to use parametric models in reinforcement learning?",
+            "Image augmentation is all you need: Regularizing deep reinforcement learning from pixels",
+            "Model based reinforcement learning for atari"
+          ],
+          "5 Future directions 5.3 Expert Variants": [
+            "From sparse to soft mixtures of experts"
+          ],
+          "6 Related Work Mixture of Experts": [
+            "Deep mixture of experts via shallow embedding",
+            "Adaptive mixtures of local experts",
+            "M3vit: Mixture-of-experts vision transformer for efficient multi-task learning with model-accelerator co-design",
+            "Multi-task reinforcement learning with mixture of orthogonal experts",
+            "Scalable transfer learning with expert models",
+            "Probabilistic mixture-of-experts for efficient deep reinforcement learning",
+            "Scaling vision with sparse mixture of experts",
+            "Gshard: Scaling giant models with conditional computation and automatic sharding",
+            "A neural dirichlet process mixture model for task-free continual learning",
+            "Dselect-k: Differentiable selection in the mixture of experts with applications to multi-task learning"
+          ],
+          "6 Related Work Parameter Scalability and Efficiency in Deep RL": [
+            "Rlx2: Training a sparse deep reinforcement learning model from scratch",
+            "An empirical study of implicit regularization in deep offline rl",
+            "Proto-value networks: Scaling representation learning with auxiliary tasks",
+            "Single-shot pruning for offline reinforcement learning",
+            "The primacy bias in deep reinforcement learning",
+            "The dormant neuron phenomenon in deep reinforcement learning"
+          ],
+          "7 Discussion and Conclusion": [
+            "The state of sparse training in deep reinforcement learning",
+            "Revisiting rainbow: Promoting more insightful and inclusive deep reinforcement learning research",
+            "The dormant neuron phenomenon in deep reinforcement learning"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.6344196796417236,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Performance Law of Large Language Models",
+        "arxiv_id": "2408.09895",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract Guided by the belief of the scaling law, large language models (LLMs) have achieved impressive performance in recent years. However, scaling law only gives a qualitative estimation of loss, which is influenced by various factors such as model architectures, data distributions, tokenizers, and computation precision. Thus, estimating the real performance of LLMs with different training settings rather than loss may be quite useful in practical development. In this article, we present an empirical equation named \u201cPerformance Law\u201d to directly predict the MMLU score of an LLM, which is a widely used metric to indicate the general capability of LLMs in real-world conversations and applications. Based on only a few key hyperparameters of the LLM architecture and the size of training data, we obtain a quite accurate MMLU prediction of various LLMs with diverse sizes and architectures developed by different organizations in different years. Performance law can be used to guide the choice of LLM architecture and the effective allocation of computational resources without extensive experiments.",
+        "sections": {
+          "1 Introduction": [
+            "A brief overview of ChatGPT: The history, status quo and potential future development",
+            "Length-controlled alpacaeval: A simple way to debias automatic evaluators",
+            "How Predictable Are Large Language Model Capabilities? A Case Study on BIG-bench",
+            "Llama: Open and efficient foundation language models",
+            "Training compute-optimal large language models",
+            "Scaling laws for neural language models",
+            "Measuring massive multitask language understanding",
+            "To FP8 and Back Again: Quantifying the Effects of Reducing Precision on LLM Training Stability"
+          ],
+          "2 Performance Law 2.1 Formulation of Performance Law": [
+            "Spike No More: Stabilizing the Pre-training of Large Language Models",
+            "Beyond the imitation game: Quantifying and extrapolating the capabilities of language models.",
+            "Mmlu-pro: A more robust and challenging multi-task language understanding benchmark"
+          ],
+          "2 Performance Law 2.3 Results and Insights": [
+            "LLaMA-MoE: Building Mixture-of-Experts from LLaMA with Continual Pre-training",
+            "GQA: Training Generalized Multi-Query Transformer Models from Multi-Head Checkpoints",
+            "L",
+            "Scaling laws for neural language models",
+            "Glu variants improve transformer",
+            "Gemma 2: Improving open language models at a practical size."
+          ],
+          "4 Discussions 4.1 Reasons Behind Prediction Errors": [
+            "Scaling Laws with Vocabulary: Larger Models Deserve Larger Vocabularies"
+          ],
+          "4 Discussions 4.2 Are We Really Making Much Progress in These Years?": [
+            "Millions of research papers at risk of disappearing from the Internet"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.0034053116105496883,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Beyond Chinchilla-Optimal: Accounting for Inference in Language Model Scaling Laws",
+        "arxiv_id": "2401.00448",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Large language model (LLM) scaling laws are empirical formulas that estimate changes in model quality as a result of increasing parameter count and training data. However, these formulas, including the popular DeepMind Chinchilla scaling laws, neglect to include the cost of inference. We modify the Chinchilla scaling laws to calculate the optimal LLM parameter count and pre-training data size to train and deploy a model of a given quality and inference demand. We conduct our analysis both in terms of a compute budget and real-world costs and find that LLM researchers expecting reasonably large inference demand (~1B requests) should train models smaller and longer than Chinchilla-optimal. ",
+        "sections": {
+          "1 Introduction": [
+            "Scaling laws for neural language models",
+            "Openai\u2019s ceo says the age of giant ai models is already over",
+            "Training compute-optimal large language models",
+            "Gpt-3 powers the next generation of apps",
+            "Go smol or go home",
+            "Touvron, L",
+            "Llama: Open and efficient foundation language models",
+            "Trading off compute in training and inference",
+            "Cerebras-gpt: Open compute-optimal language models trained on the cerebras wafer-scale cluster"
+          ],
+          "2 Computational Optimality": [
+            "Scaling laws for neural language models",
+            "Training compute-optimal large language models",
+            "Exploring the limits of transfer learning with a unified text-to-text transformer",
+            "Cerebras-gpt: Open compute-optimal language models trained on the cerebras wafer-scale cluster",
+            "W"
+          ],
+          "3 Estimating Real-World Cost Optimality": [
+            "Efficiently scaling transformer inference",
+            "Gptq: Accurate post-training quantization for generative pre-trained transformers",
+            "Reducing activation recomputation in large transformer models"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.0027017213869839907,
+        "extra": {
+          "expand": "not expand"
+        }
+      }
+    ]
+  },
+  "abstract": "",
+  "sections": "",
+  "source": "Root",
+  "select_score": 0.0,
+  "extra": {
+    "touch_ids": [
+      "2407.06204",
+      "2402.08609",
+      "2407.04153",
+      "2402.07871",
+      "2408.09895",
+      "2401.06066",
+      "2401.00448",
+      "2205.01848",
+      "2403.16952",
+      "2403.06563",
+      "2404.02852",
+      "2402.13412"
+    ],
+    "crawler_recall_papers": [
+      "Mixture of A Million Experts",
+      "Scaling Laws for Fine-Grained Mixture of Experts",
+      "DeepSeekMoE: Towards Ultimate Expert Specialization in Mixture-of-Experts Language Models",
+      "A Survey on Mixture of Experts",
+      "Mixtures of Experts Unlock Parameter Scaling for Deep RL",
+      "Performance Law of Large Language Models",
+      "Beyond Chinchilla-Optimal: Accounting for Inference in Language Model Scaling Laws",
+      "1 Introduction",
+      "Data Mixing Laws: Optimizing Data Mixtures by Predicting Language Modeling Performance",
+      "Unraveling the Mystery of Scaling Laws: Part \\@slowromancapi@",
+      "Toward Inference-optimal Mixture-of-Expert Large Language Models",
+      "Scaling physics-informed hard constraints with mixture-of-experts"
+    ],
+    "recall_papers": [
+      "Mixture of A Million Experts",
+      "Scaling Laws for Fine-Grained Mixture of Experts",
+      "DeepSeekMoE: Towards Ultimate Expert Specialization in Mixture-of-Experts Language Models",
+      "Mixtures of Experts Unlock Parameter Scaling for Deep RL",
+      "Toward Inference-optimal Mixture-of-Expert Large Language Models"
+    ],
+    "answer": [
+      "Scaling Laws for Fine-Grained Mixture of Experts",
+      "Mixture of A Million Experts"
+    ]
+  }
+}

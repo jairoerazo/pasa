@@ -1,0 +1,2474 @@
+{
+  "title": "DPO training for large-scale vision-language models.",
+  "arxiv_id": "",
+  "depth": -1,
+  "child": {
+    "Challenges in DPO training for large-scale vision-language models": [
+      {
+        "title": "Continual Learning for Large Language Models: A Survey",
+        "arxiv_id": "2402.01364",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Large language models (LLMs) are not amenable to frequent re-training, due to high training costs arising from their massive scale. However, updates are necessary to endow LLMs with new skills and keep them up-to-date with rapidly evolving human knowledge. This paper surveys recent works on continual learning for LLMs. Due to the unique nature of LLMs, we catalog continue learning techniques in a novel multi-staged categorization scheme, involving continual pretraining, instruction tuning, and alignment. We contrast continual learning for LLMs with simpler adaptation methods used in smaller models, as well as with other enhancement strategies like retrieval-augmented generation and model editing. Moreover, informed by a discussion of benchmarks and evaluation, we identify a number of challenges and future work directions for this crucial task. ",
+        "sections": {
+          "1 Introduction": [
+            "How do large language models capture the ever-changing world knowledge? A review of recent advances.",
+            "Retrieval-augmented generation for knowledge-intensive NLP tasks",
+            "Lifelong pretraining: Continually adapting language models to emerging corpora",
+            "Editing large language models: Problems, methods, and opportunities",
+            "Copf: Continual learning human preference through optimal policy fitting",
+            "Citb: A benchmark for continual instruction tuning",
+            "Continual lifelong learning in natural language processing: A survey"
+          ],
+          "2 Preliminary and Categorization 2.1 Large Language Model": [
+            "Llama: Open and efficient foundation language models",
+            "Unified language model pre-training for natural language understanding and generation",
+            "Aligning large language models with human: A survey",
+            "Instruction tuning for large language models: A survey"
+          ],
+          "2 Preliminary and Categorization 2.2 Continual Learning": [
+            "Overcoming catastrophic forgetting in neural networks",
+            "Piggyback: Adapting a single network to multiple tasks by learning to mask weights",
+            "On tiny episodic memories in continual learning",
+            "Continual lifelong learning in natural language processing: A survey",
+            "Continual multimodal knowledge graph construction"
+          ],
+          "3 Continual Pre-training (CPT)": [
+            "Learning to solve NLP tasks in an incremental number of languages",
+            "Continual pre-training of language models",
+            "Temporalwiki: A lifelong benchmark for training and evaluating ever-evolving language models.",
+            "Exploring continual learning for code generation models"
+          ],
+          "3 Continual Pre-training (CPT) 3.1 CPT for Updating Facts": [
+            "Continual pre-training mitigates forgetting in language and vision",
+            "ERNIE 2.0: A continual pre-training framework for language understanding",
+            "Temporalwiki: A lifelong benchmark for training and evaluating ever-evolving language models.",
+            "Towards continual knowledge learning of language models"
+          ],
+          "3 Continual Pre-training (CPT) 3.2 CPT for Updating Domains": [
+            "Efficient continual pre-training for building domain specific large language models",
+            "Ecomgpt-ct: Continual pre-training of e-commerce large language models with semi-structured data",
+            "Continual pre-training mitigates forgetting in language and vision",
+            "Recyclable tuning for continual pre-training",
+            "Continual pre-training of language models"
+          ],
+          "3 Continual Pre-training (CPT) 3.3 CPT for Language Expansion": [
+            "CERT: continual pre-training on sketches for library-oriented code generation",
+            "Exploring continual learning for code generation models",
+            "Learning to solve NLP tasks in an incremental number of languages",
+            "A study of continual learning under language shift"
+          ],
+          "4 Continual Instruction Tuning (CIT)": [
+            "Citb: A benchmark for continual instruction tuning"
+          ],
+          "4 Continual Instruction Tuning (CIT) 4.1 Task-incremental CIT": [
+            "Trace: A comprehensive benchmark for continual learning in large language models",
+            "Exploring the benefits of training expert language models over instruction tuning",
+            "Orthogonal subspace learning for language model continual learning",
+            "Understanding catastrophic forgetting in language models via implicit inference",
+            "Continual learning with deep generative replay",
+            "Fine-tuned language models are continual learners",
+            "Rationale-enhanced language models are better continual relation learners.",
+            "Large-scale lifelong learning of in-context instructions and how to tackle it",
+            "Scalable language model with generalized continual learning",
+            "Llama pro: Progressive llama with block expansion",
+            "Contintin: Continual learning from task instructions",
+            "Don't stop pretraining: Adapt language models to domains and tasks",
+            "Dapt: A dual attention framework for parameter-efficient continual learning of large language models",
+            "Progressive prompts: Continual learning for language models"
+          ],
+          "4 Continual Instruction Tuning (CIT) 4.2 Domain-incremental CIT": [
+            "Adapting large language models via reading comprehension",
+            "Reformulating domain adaptation of large language models as adapt-retrieve-revise",
+            "How abilities in large language models are affected by supervised fine-tuning data composition",
+            "Conpet: Continual parameter-efficient tuning for large language models",
+            "Don't stop pretraining: Adapt language models to domains and tasks",
+            "Language model with plug-in knowledge memory"
+          ],
+          "4 Continual Instruction Tuning (CIT) 4.3 Tool-incremental CIT": [
+            "Taskmatrix.ai: Completing tasks by connecting foundation models with millions of apis",
+            "Toolllm: Facilitating large language models to master 16000+ real-world apis",
+            "Toolkengpt: Augmenting frozen language models with massive tools via tool embeddings",
+            "Llemma: An open language model for mathematics"
+          ],
+          "5 Continual Alignment (CA) 5.1 Continual Value Alignment": [
+            "Editing large language models: Problems, methods, and opportunities"
+          ],
+          "5 Continual Alignment (CA) 5.2 Continual Preference Alignment": [
+            "Copf: Continual learning human preference through optimal policy fitting",
+            "CPPO: Continual learning for reinforcement learning with human feedback",
+            "Proximal policy optimization algorithms",
+            "Direct preference optimization: Your language model is secretly a reward model"
+          ],
+          "6 Benchmarks 6.1 Benchmarks for CPT": [
+            "Towards continual knowledge learning of language models",
+            "Trace: A comprehensive benchmark for continual learning in large language models",
+            "Drinking from a firehose: Continual learning with web-scale natural language",
+            "Temporalwiki: A lifelong benchmark for training and evaluating ever-evolving language models."
+          ],
+          "6 Benchmarks 6.2 Benchmarks for CIT": [
+            "Contintin: Continual learning from task instructions",
+            "Citb: A benchmark for continual instruction tuning"
+          ],
+          "6 Benchmarks 6.3 Benmarks for CA": [
+            "Copf: Continual learning human preference through optimal policy fitting",
+            "Training a helpful and harmless assistant with reinforcement learning from human feedback",
+            "Understanding dataset difficulty with V-usable information"
+          ],
+          "7 Evaluation 7.1 Evaluation for Target Task Sequence": [
+            "Gradient episodic memory for continual learning"
+          ],
+          "7 Evaluation 7.2 Evaluation for Cross-stage Forgetting": [
+            "Fine-tuning aligned language models compromises safety, even when users do not intend to!",
+            "Trace: A comprehensive benchmark for continual learning in large language models",
+            "Speciality vs generality: An empirical study on catastrophic forgetting in fine-tuning foundation models"
+          ],
+          "8 Challenges and Future Works Computation-efficient Continual Learning": [
+            "Continual learning: Applications and the road forward"
+          ],
+          "8 Challenges and Future Works Social Good Continual Learning": [
+            "Artificial Intelligence, Values, and Alignment"
+          ],
+          "8 Challenges and Future Works Automatic Continual Learning": [
+            "Autoact: Automatic agent learning from scratch via self-planning"
+          ],
+          "8 Challenges and Future Works Continual Learning with Controllable Forgetting": [
+            "Fine-tuning aligned language models compromises safety, even when users do not intend to!",
+            "Trace: A comprehensive benchmark for continual learning in large language models",
+            "Unlearn what you want to forget: Efficient unlearning for llms"
+          ],
+          "8 Challenges and Future Works Continual Learning with History Tracking": [
+            "Augmented language models: a survey"
+          ],
+          "8 Challenges and Future Works Theoretical insights on LLM in Continual Learning.": [
+            "Fine-tuning aligned language models compromises safety, even when users do not intend to!",
+            "Speciality vs generality: An empirical study on catastrophic forgetting in fine-tuning foundation models"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.00014226547500584275,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Best Practices and Lessons Learned on Synthetic Data",
+        "arxiv_id": "2404.07503",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract The success of AI models relies on the availability of large, diverse, and high-quality datasets, which can be challenging to obtain due to data scarcity, privacy concerns, and high costs. Synthetic data has emerged as a promising solution by generating artificial data that mimics real-world patterns. This paper provides an overview of synthetic data research, discussing its applications, challenges, and future directions. We present empirical evidence from prior art to demonstrate its effectiveness and highlight the importance of ensuring its factuality, fidelity, and unbiasedness. We emphasize the need for responsible use of synthetic data to build more powerful, inclusive, and trustworthy language models.",
+        "sections": {
+          "1 Introduction": [
+            "Synthetic data for social good",
+            "Neural machine translation of low-resource and similar languages with backtranslation",
+            "Large language models encode clinical knowledge.",
+            "Synsys: A synthetic data generation system for healthcare applications",
+            "A methodology for controlling bias and fairness in synthetic data generation",
+            "Seeds: Emulation of weather forecast ensembles with diffusion models",
+            "Synthetic data, real errors: how (not) to publish and use synthetic data",
+            "Language models are realistic tabular data generators.",
+            "Analysing mathematical reasoning abilities of neural models",
+            "Synthetic data for deep learning, volume 174",
+            "Privacy preserving synthetic data release using deep learning",
+            "Chatgpt outperforms crowd workers for text-annotation tasks",
+            "Generative agent-based modeling with actions grounded in physical, social, or digital space using concordia",
+            "Data scarcity, robustness and extreme multi-label classification",
+            "The ai economist: Taxation policy design via two-level deep multiagent reinforcement learning",
+            "Fake it till you make it: face analysis in the wild using synthetic data alone",
+            "The real deal about synthetic data",
+            "Will we run out of data? an analysis of the limits of scaling datasets in machine learning."
+          ],
+          "2 Synthetic Data in Training 2.1 Reasoning": [
+            "Deepseekmath: Pushing the limits of mathematical reasoning in open language models",
+            "Magicoder: Source code is all you need",
+            "Llemma: An open language model for mathematics",
+            "Language models can teach themselves to program better",
+            "Wizardmath: Empowering mathematical reasoning for large language models via reinforced evol-instruct",
+            "Metamath: Bootstrap your own mathematical questions for large language models",
+            "Solving quantitative reasoning problems with language models",
+            "Reflexion: Language agents with verbal reinforcement learning",
+            "Mujoco: A physics engine for model-based control",
+            "Openwebmath: An open dataset of high-quality mathematical web text",
+            "Solving olympiad geometry without human demonstrations",
+            "Symbol tuning improves in-context learning in language models.",
+            "Generative ai for math: Abel",
+            "Self-consistency improves chain of thought reasoning in language models",
+            "Llama 2: Open foundation and fine-tuned chat models",
+            "Star: Bootstrapping reasoning with reasoning",
+            "Intercode: Standardizing and benchmarking interactive coding with execution feedback",
+            "Augmenting math word problems via iterative question composing",
+            "Common 7b language models already possess strong math capabilities",
+            "Learning performance-improving code edits",
+            "Coderl: Mastering code generation through pretrained models and deep reinforcement learning",
+            "Mind\u2019s eye: Grounded language model reasoning through simulation",
+            "Wizardcoder: Empowering code large language models with evol-instruct"
+          ],
+          "2 Synthetic Data in Training 2.2 Tool-using and Planning": [
+            "Galactica: A large language model for science",
+            "Toolalpaca: Generalized tool learning for language models with 3000 simulated cases",
+            "Generative agents: Interactive simulacra of human behavior",
+            "Voyager: An open-ended embodied agent with large language models",
+            "Llms can\u2019t plan, but can help planning in llm-modulo frameworks.",
+            "A path towards autonomous machine intelligence version 0.9",
+            "Vima: General robot manipulation with multimodal prompts",
+            "Do as i can, not as i say: Grounding language in robotic affordances",
+            "Inner monologue: Embodied reasoning through planning with language models.",
+            "Thoppilan, D",
+            "Toolformer: Language models can teach themselves to use tools"
+          ],
+          "2 Synthetic Data in Training 2.3 Multimodality": [
+            "Pix2struct: Screenshot parsing as pretraining for visual language understanding",
+            "Design2code: How far are we from automating front-end engineering?",
+            "UniChart: A universal vision-language pretrained model for chart comprehension and reasoning",
+            "Learning transferable visual models from natural language supervision",
+            "Scaling up visual and vision-language representation learning with noisy text supervision",
+            "Unity perception: Generate synthetic data for computer vision",
+            "Visual instruction tuning",
+            "Llavar: Enhanced visual instruction tuning for text-rich image understanding",
+            "Matcha: Enhancing visual language pretraining with math reasoning and chart derendering",
+            "Svit: Scaling up visual instruction tuning",
+            "Unlocking the conversion of web screenshots into html code with the websight dataset",
+            "Deplot: One-shot visual language reasoning by plot-to-table translation"
+          ],
+          "2 Synthetic Data in Training 2.4 Multilingual": [
+            "One question answering model for many languages with cross-lingual dense passage retrieval",
+            "On synthetic data for back translation",
+            "Towards zero-shot multilingual synthetic question and answer generation for cross-lingual reading comprehension",
+            "Improving back-translation with iterative filtering and data selection for sinhala-english nmt",
+            "mt5: A massively multilingual pre-trained text-to-text transformer",
+            "Cross-lingual training for automatic question generation",
+            "Improving neural machine translation models with monolingual data"
+          ],
+          "2 Synthetic Data in Training 2.5 Alignment": [
+            "Mitigating political bias in language models through reinforced calibration",
+            "Is chatgpt better than human annotators? potential and limitations of chatgpt in explaining implicit hate speech.",
+            "Gender bias in coreference resolution: Evaluation and debiasing methods",
+            "Scaling laws for reward model overoptimization",
+            "Towards understanding sycophancy in language models",
+            "Discovering language model behaviors with model-written evaluations",
+            "Orca: Progressive learning from complex explanation traces of gpt-4",
+            "Ultrafeedback: Boosting language models with high-quality feedback",
+            "Fine-tuning language models for factuality",
+            "Constitutional ai: Harmlessness from ai feedback",
+            "Finetuned language models are zero-shot learners",
+            "Enhancing chat language models by scaling high-quality instructional conversations",
+            "What makes good data for alignment? a comprehensive study of automatic data selection in instruction tuning",
+            "Simple synthetic data reduces sycophancy in large language models, 2023b",
+            "TruthfulQA: Measuring how models mimic human falsehoods",
+            "A general language assistant as a laboratory for alignment",
+            "Gpt-4 technical report",
+            "Symbol tuning improves in-context learning in language models.",
+            "The effects of reward misspecification: Mapping and mitigating misaligned models",
+            "Self-consistency improves chain of thought reasoning in language models",
+            "Out of one, many: Using language models to simulate human samples",
+            "Teaching language models to hallucinate less with synthetic tasks",
+            "Toolsword: Unveiling safety issues of large language models in tool learning across three stages.",
+            "Scalable agent alignment via reward modeling: a research direction",
+            "Stanford alpaca: An instruction-following llama model",
+            "Self-instruct: Aligning language models with self-generated instructions",
+            "Training socially aligned language models in simulated human society",
+            "Normbank: A knowledge bank of situational social norms",
+            "Scaling relationship on learning mathematical reasoning with large language models.",
+            "Wizardlm: Empowering large language models to follow complex instructions.",
+            "Siren\u2019s song in the ai ocean: A survey on hallucination in large language models",
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "Meta. Meta and microsoft introduce the next generation of llama.",
+            "Red teaming language models with language models"
+          ],
+          "3 Synthetic Data in Evaluation Factuality.": [
+            "Ranking generated summaries by correctness: An interesting but challenging application for natural language inference",
+            "FactKB: Generalizable factuality evaluation using language models enhanced with factual knowledge",
+            "Long-form factuality in large language models",
+            "Factscore: Fine-grained atomic evaluation of factual precision in long form text generation",
+            "Survey of hallucination in natural language generation",
+            "q2superscript\ud835\udc5e2q^{2}: Evaluating factual consistency in knowledge-grounded dialogues via question generation and question answering",
+            "Handling divergent reference texts when evaluating table-to-text generation"
+          ],
+          "3 Synthetic Data in Evaluation Safety.": [
+            "Red teaming language models to reduce harms: Methods, scaling behaviors, and lessons learned.",
+            "Red teaming deep neural networks with feature synthesis tools",
+            "Discovering language model behaviors with model-written evaluations",
+            "Red teaming language models with language models",
+            "Measuring progress on scalable oversight for large language models",
+            "Sleeper agents: Training deceptive llms that persist through safety training."
+          ],
+          "3 Synthetic Data in Evaluation Assisting human evaluation.": [
+            "Alpacaeval: An automatic evaluator of instruction-following models",
+            "Codemind: A framework to challenge large language models for code reasoning",
+            "Judging llm-as-a-judge with mt-bench and chatbot arena",
+            "Chatgpt outperforms crowd workers for text-annotation tasks",
+            "Cruxeval: A benchmark for code reasoning, understanding and execution"
+          ],
+          "4 Challenges and Limitations of Synthetic Data Misuse of synthetic data might proliferate misinformation.": [
+            "Photorealistic text-to-image diffusion models with deep language understanding",
+            "Deepfake detection by human crowds, machines, and machine-informed crowds",
+            "Deepfakes and international conflict",
+            "Gemini 1.5: Unlocking multimodal understanding across millions of tokens of context."
+          ],
+          "4 Challenges and Limitations of Synthetic Data Synthetic data might cause ambiguity in AI alignment.": [
+            "Constitutional ai: Harmlessness from ai feedback",
+            "From pretraining data to language models to downstream tasks: Tracking the trails of political biases leading to unfair nlp models",
+            "Is this the real life? is this just fantasy? the misleading success of simulating social interactions with llms.",
+            "Universal and transferable adversarial attacks on aligned language models",
+            "Mind\u2019s eye: Grounded language model reasoning through simulation",
+            "Ethical and social risks of harm from language models",
+            "Let\u2019s verify step by step. ArXiv preprint"
+          ],
+          "4 Challenges and Limitations of Synthetic Data Training with synthetic data makes evaluation decontamination harder.": [
+            "An empirical analysis of compute-optimal large language model training",
+            "Detecting pretraining data from large language models",
+            "Proving test set contamination in black box language models"
+          ],
+          "5 Directions for Future Work Synthetic data scaling.": [
+            "Scaling data-constrained language models",
+            "Gemma: Open models based on gemini research and technology.",
+            "Scaling language models: Methods, analysis & insights from training gopher, 2021.",
+            "Mistral 7b",
+            "Large language model as attributed training data generator: A tale of diversity and bias"
+          ],
+          "5 Directions for Future Work Further improving quality and diversity of synthetic data.": [
+            "Out of one, many: Using language models to simulate human samples",
+            "Synthetic data augmentation using gan for improved liver lesion classification",
+            "Generating synthetic data in finance: opportunities, challenges and pitfalls",
+            "Generative adversarial networks",
+            "The ai economist: Taxation policy design via two-level deep multiagent reinforcement learning",
+            "Denoising diffusion probabilistic models",
+            "Retrieval-augmented generation for knowledge-intensive NLP tasks"
+          ],
+          "5 Directions for Future Work Towards high-fidelity and more efficient scalable oversight.": [
+            "Aligning large multimodal models with factually augmented rlhf",
+            "Is this the real life? is this just fantasy? the misleading success of simulating social interactions with llms.",
+            "Concrete problems in AI safety",
+            "Exploring collaboration mechanisms for llm agents: A social psychology view",
+            "Scalable agent alignment via reward modeling: a research direction",
+            "Training socially aligned language models in simulated human society",
+            "A general language assistant as a laboratory for alignment",
+            "CoMPosT: Characterizing and evaluating caricature in LLM simulations"
+          ],
+          "5 Directions for Future Work The emergent self-improvement capability.": [
+            "Weak-to-strong generalization: Eliciting strong capabilities with weak supervision",
+            "Self-play fine-tuning converts weak language models to strong language models",
+            "A path towards autonomous machine intelligence version 0.9"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.000200939059141092,
+        "extra": {
+          "expand": "not expand"
+        }
+      }
+    ],
+    "Comparative studies on DPO and other methods for training large-scale vision-language models": [
+      {
+        "title": "A Comprehensive Overview of Large Language Models",
+        "arxiv_id": "2307.06435",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Large Language Models (LLMs) have recently demonstrated remarkable capabilities in natural language processing tasks and beyond. This success of LLMs has led to a large influx of research contributions in this direction. These works encompass diverse topics such as architectural innovations, better training strategies, context length improvements, fine-tuning, multi-modal LLMs, robotics, datasets, benchmarking, efficiency, and more. With the rapid development of techniques and regular breakthroughs in LLM research, it has become considerably challenging to perceive the bigger picture of the advances in this direction. Considering the rapidly emerging plethora of literature on LLMs, it is imperative that the research community is able to benefit from a concise yet comprehensive overview of the recent developments in this field. This article provides an overview of the existing literature on a broad range of LLM-related concepts. Our self-contained comprehensive overview of LLMs discusses relevant background concepts along with covering the advanced topics at the frontier of research in LLMs. This review article is intended to not only provide a systematic survey but also a quick comprehensive reference for the researchers and practitioners to draw insights from extensive informative summaries of the existing works to advance the LLM research. ",
+        "sections": {
+          "I Introduction": [
+            "Do large language models understand us?",
+            "Llm-pruner: On the structural pruning of large language models",
+            "Prompt Engineering Guide",
+            "A survey for in-context learning",
+            "Scaling instruction-finetuned language models",
+            "Palm: Scaling language modeling with pathways",
+            "Exploring the limits of transfer learning with a unified text-to-text transformer",
+            "A survey of large language models",
+            "A comprehensive survey on word representation models: From classical to state-of-the-art word representation language models",
+            "Language models are unsupervised multitask learners",
+            "Giraffe: Adventures in expanding context lengths in llms",
+            "Smoothquant: Accurate and efficient post-training quantization for large language models",
+            "Transformers:\u201cthe end of history\u201d for natural language processing?",
+            "mt5: A massively multilingual pre-trained text-to-text transformer",
+            "Training language models to follow instructions with human feedback",
+            "Deepspeed: System optimizations enable training deep learning models with over 100 billion parameters",
+            "Superglue: A stickier benchmark for general-purpose language understanding systems",
+            "Emergent abilities of large language models",
+            "Few-shot learning with retrieval augmented language models",
+            "Language models are few-shot learners",
+            "Towards a unified view of parameter-efficient transfer learning",
+            "Bert: Pre-training of deep bidirectional transformers for language understanding"
+          ],
+          "II Background II-A Tokenization": [
+            "Between words and characters: A brief history of open-vocabulary modeling and tokenization in nlp",
+            "Neural machine translation of rare words with subword units",
+            "Tokenization as the initial phase in nlp",
+            "Subword regularization: Improving neural network translation models with multiple subword candidates",
+            "Japanese and korean voice search"
+          ],
+          "II Background II-B Encoding Positions": [
+            "Roformer: Enhanced transformer with rotary position embedding",
+            "Train short, test long: Attention with linear biases enables input length extrapolation",
+            "Attention is all you need"
+          ],
+          "II Background II-C Attention in LLMs": [
+            "Flashattention: Fast and memory-efficient exact attention with io-awareness",
+            "Attention is all you need",
+            "Generating long sequences with sparse transformers"
+          ],
+          "II Background II-D Activation Functions": [
+            "Rectified linear units improve restricted boltzmann machines",
+            "Glu variants improve transformer",
+            "Gaussian error linear units (gelus)",
+            "Language modeling with gated convolutional networks",
+            "Multilayer feedforward networks are universal approximators",
+            "Zoneout: Regularizing rnns by randomly preserving hidden activations",
+            "Dropout: a simple way to prevent neural networks from overfitting"
+          ],
+          "II Background II-E Layer Normalization": [
+            "Adaptive input representations for neural language modeling",
+            "Deepnet: Scaling transformers to 1,000 layers",
+            "Attention is all you need",
+            "Root mean square layer normalization",
+            "Layer normalization"
+          ],
+          "II Background II-F Distributed LLM Training": [
+            "Bloom: A 176b-parameter open-access multilingual language model",
+            "Zero: Memory optimizations toward training trillion parameter models"
+          ],
+          "II Background II-G Libraries": [
+            "Fastmoe: A fast mixture-of-expert training system",
+            "bmtrain: Efficient training for big models.",
+            "Deepspeed: System optimizations enable training deep learning models with over 100 billion parameters",
+            "Tensorflow: a system for large-scale machine learning.",
+            "Transformers: State-of-the-art natural language processing",
+            "Pytorch: An imperative style, high-performance deep learning library",
+            "Colossal-ai: A unified deep learning system for large-scale parallel training",
+            "Mxnet: A flexible and efficient machine learning library for heterogeneous distributed systems",
+            "Huawei mindspore ai development framework",
+            "Jax: composable transformations of python+ numpy programs",
+            "Megatron-lm: Training multi-billion parameter language models using model parallelism"
+          ],
+          "II Background II-J Pre-Training Objectives": [
+            "What language model architecture and pretraining objective works best for zero-shot generalization?",
+            "Unified language model pre-training for natural language understanding and generation"
+          ],
+          "II Background II-K LLMs Adaptation Stages": [
+            "Prompt Engineering Guide",
+            "Fine-tuning language models from human preferences",
+            "Towards reasoning in large language models: A survey",
+            "Self-consistency improves chain of thought reasoning in language models",
+            "A survey for in-context learning",
+            "Scaling instruction-finetuned language models",
+            "Language models are few-shot learners",
+            "A general language assistant as a laboratory for alignment",
+            "Exploring the limits of transfer learning with a unified text-to-text transformer",
+            "Tree of thoughts: Deliberate problem solving with large language models",
+            "Training language models to follow instructions with human feedback"
+          ],
+          "III Large Language Models III-A Pre-Trained LLMs": [
+            "Transformer-xl: Attentive language models beyond a fixed-length context",
+            "Ernie 3.0 titan: Exploring larger-scale knowledge enhanced pre-training for language understanding and generation",
+            "Bloom: A 176b-parameter open-access multilingual language model",
+            "Mixed precision training",
+            "Lamda: Language models for dialog applications",
+            "Llama 2: Open foundation and fine-tuned chat models",
+            "Starcoder: may the source be with you!",
+            "Parameter-efficient transfer learning for nlp",
+            "Transcending scaling laws with 0.1% extra compute",
+            "Evaluating large language models trained on code",
+            "Ul2: Unifying language learning paradigms",
+            "Gpt-j-6b: A 6 billion parameter autoregressive language model",
+            "Glm: General language model pretraining with autoregressive blank infilling",
+            "Roformer: Enhanced transformer with rotary position embedding",
+            "Using deepspeed and megatron to train megatron-turing nlg 530b, a large-scale generative language model",
+            "Fairscale: A general purpose modular pytorch library for high performance and large scale training",
+            "Palm 2 technical report",
+            "Jurassic-1: Technical details and evaluation",
+            "Fast transformer decoding: One write-head is all you need",
+            "Galactica: A large language model for science",
+            "Self-attention does not need o(n2) memory",
+            "Training compute-optimal large language models",
+            "Generating long sequences with sparse transformers",
+            "Competition-level code generation with alphacode",
+            "Wudaocorpora: A super large-scale chinese corpora for pre-training language models",
+            "Codet5: Identifier-aware unified pre-trained encoder-decoder models for code understanding and generation",
+            "Attention is all you need",
+            "Palm: Scaling language modeling with pathways",
+            "Exploring the limits of transfer learning with a unified text-to-text transformer",
+            "Ren, P",
+            "What changes can large-scale language models bring? intensive study on hyperclova: Billions-scale korean generative pretrained transformers",
+            "Codet5+: Open code large language models for code understanding and generation",
+            "Opt: Open pre-trained transformer language models",
+            "Bloomberggpt: A large language model for finance",
+            "Glm-130b: An open bilingual pre-trained model",
+            "Codegen: An open large language model for code with multi-turn program synthesis",
+            "Language models are unsupervised multitask learners",
+            "Ernie 3.0: Large-scale knowledge enhanced pre-training for language understanding and generation",
+            "Softmax tempering for training neural machine translation models",
+            "Outrageously large neural networks: The sparsely-gated mixture-of-experts layer",
+            "Cpm-2: Large-scale cost-effective pre-trained language models",
+            "mt5: A massively multilingual pre-trained text-to-text transformer",
+            "Reducing activation recomputation in large transformer models",
+            "An empirical model of large-batch training",
+            "Alexatm 20b: Few-shot learning using a large-scale multilingual seq2seq model",
+            "Text generation by learning from demonstrations",
+            "Yuan 1.0: Large-scale pre-trained language model in zero-shot and few-shot learning",
+            "Scaling language models: Methods, analysis & insights from training gopher",
+            "Glam: Efficient scaling of language models with mixture-of-experts",
+            "Limits to depth efficiencies of self-attention",
+            "Gpt-neox-20b: An open-source autoregressive language model",
+            "The power of scale for parameter-efficient prompt tuning",
+            "Language models are few-shot learners",
+            "Xuanyuan 2.0: A large chinese financial chat model with hundreds of billions parameters",
+            "Llama: Open and efficient foundation language models",
+            "Zeng, X"
+          ],
+          "III Large Language Models III-B Fine-Tuned LLMs": [
+            "Wizardcoder: Empowering code large language models with evol-instruct",
+            "Fine-tuned language models are continual learners",
+            "Instruction tuned models are quick learners",
+            "Crosslingual generalization through multitask finetuning",
+            "Multitask prompted training enables zero-shot task generalization",
+            "Instruction tuning with gpt-4",
+            "Scaling instruction-finetuned language models",
+            "Lima: Less is more for alignment",
+            "Super-naturalinstructions: Generalization via declarative instructions on 1600+ nlp tasks",
+            "The cot collection: Improving zero-shot and few-shot learning of language models via chain-of-thought fine-tuning",
+            "Maybe only 0.5% data is needed: A preliminary exploration of low training data instruction tuning",
+            "Self-instruct: Aligning language model with self generated instructions",
+            "Llama-adapter v2: Parameter-efficient visual instruction model",
+            "Goat: Fine-tuned llama outperforms gpt-4 on arithmetic tasks",
+            "Openai. gpt-4 technical report",
+            "Wizardlm: Empowering large language models to follow complex instructions",
+            "Vicuna: An open-source chatbot impressing gpt-4 with 90%* chatgpt quality",
+            "Stanford alpaca: An instruction-following llama model",
+            "Training language models to follow instructions with human feedback",
+            "From zero to hero: Examining the power of symbolic tasks in instruction tuning",
+            "Dynosaur: A dynamic growth paradigm for instruction-tuning data curation",
+            "Huatuo: Tuning llama model with chinese medical knowledge",
+            "Opt-iml: Scaling language model instruction meta learning through the lens of generalization",
+            "Language models are few-shot learners",
+            "Don't stop pretraining? make prompt-based fine-tuning powerful learner"
+          ],
+          "III Large Language Models III-C Increasing Context Window": [
+            "Colt5: Faster long-range transformers with conditional computation",
+            "Longt5: Efficient text-to-text transformer for long sequences",
+            "Yarn: Efficient context window extension of large language models",
+            "Exploring the limits of transfer learning with a unified text-to-text transformer",
+            "Parallel context windows for large language models",
+            "Giraffe: Adventures in expanding context lengths in llms",
+            "Lm-infinite: Simple on-the-fly length generalization for large language models",
+            "Train short, test long: Attention with linear biases enables input length extrapolation",
+            "Roformer: Enhanced transformer with rotary position embedding",
+            "Longnet: Scaling transformers to 1,000,000,000 tokens",
+            "Extending context window of large language models via positional interpolation",
+            "Longlora: Efficient fine-tuning of long-context large language models"
+          ],
+          "III Large Language Models III-D Augmented LLMs": [
+            "Mot: Pre-thinking and recalling enable chatgpt to self-improve with memory-of-thoughts",
+            "Augmenting language models with long-term memory",
+            "Repocoder: Repository-level code completion through iterative retrieval and generation",
+            "Gpt4tools: Teaching large language model to use tools via self-instruction",
+            "Talm: Tool augmented language models",
+            "Chatdb: Augmenting llms with databases as their symbolic memory",
+            "Assistgpt: A general multi-modal assistant that can plan, execute, inspect, and learn",
+            "Learning to retrieve in-context examples for large language models",
+            "Long time no see! open-domain conversation with long-term persona memory",
+            "Active retrieval augmented generation",
+            "A survey for in-context learning",
+            "Long-range language modeling with self-retrieval",
+            "Art: Automatic multi-step reasoning and tool-use for large language models",
+            "Toolllm: Facilitating large language models to master 16000+ real-world apis",
+            "Reflexion: Language agents with verbal reinforcement learning",
+            "The probabilistic relevance framework: Bm25 and beyond",
+            "Fid-light: Efficient and effective retrieval-augmented text generation",
+            "Gorilla: Large language model connected with massive apis",
+            "Exploring the limits of transfer learning with a unified text-to-text transformer",
+            "Restgpt: Connecting large language models with real-world applications via restful apis",
+            "Memorybank: Enhancing large language models with long-term memory",
+            "In-context retrieval-augmented language models",
+            "Self-instruct: Aligning language model with self generated instructions",
+            "Tool documentation enables zero-shot tool-usage with large language models",
+            "Replug: Retrieval-augmented black-box language models",
+            "Toolkengpt: Augmenting frozen language models with massive tools via tool embeddings",
+            "What makes good in-context examples for gpt-333?",
+            "Vipergpt: Visual inference via python execution for reasoning",
+            "Improving language models by retrieving from trillions of tokens",
+            "Few-shot learning with retrieval augmented language models",
+            "Language models are few-shot learners",
+            "Internet-augmented dialogue generation",
+            "Shall we pretrain autoregressive language models with retrieval? a comprehensive study",
+            "Bert: Pre-training of deep bidirectional transformers for language understanding"
+          ],
+          "III Large Language Models III-E LLMs-Powered Agents": [
+            "Language to rewards for robotic skill synthesis",
+            "Webgpt: Browser-assisted question-answering with human feedback",
+            "Talm: Tool augmented language models",
+            "Do as i can, not as i say: Grounding language in robotic affordances",
+            "Self-consistency improves chain of thought reasoning in language models",
+            "Inner monologue: Embodied reasoning through planning with language models",
+            "Language models as zero-shot planners: Extracting actionable knowledge for embodied agents",
+            "Metagpt: Meta programming for multi-agent collaborative framework",
+            "Reflexion: Language agents with verbal reinforcement learning",
+            "Alphablock: Embodied finetuning for vision-language reasoning in robot manipulation",
+            "Tree of thoughts: Deliberate problem solving with large language models",
+            "Chain-of-thought prompting elicits reasoning in large language models",
+            "The rise and potential of large language model based agents: A survey",
+            "Deep blue",
+            "Retroformer: Retrospective large language agents with policy gradient optimization",
+            "Saynav: Grounding large language models for dynamic planning to navigation in new environments",
+            "Hugginggpt: Solving ai tasks with chatgpt and its friends in huggingface",
+            "Reasoning with language model is planning with world model",
+            "Task and motion planning with large language models for object rearrangement",
+            "Advanced user assistance systems",
+            "Palm-e: An embodied multimodal language model"
+          ],
+          "III Large Language Models III-F Efficient LLMs": [
+            "Alphatuning: Quantization-aware parameter-efficient adaptation of large-scale pre-trained language models",
+            "Parameter-efficient transfer learning for nlp",
+            "Adamix: Mixture-of-adapter for parameter-efficient tuning of large language models",
+            "Bitfit: Simple parameter-efficient fine-tuning for transformer-based masked language-models",
+            "Llm-pruner: On the structural pruning of large language models",
+            "Towards adaptive prefix tuning for parameter-efficient language model fine-tuning",
+            "Outlier weighed layerwise sparsity (owl): A missing secret sauce for pruning llms to high sparsity",
+            "Structured pruning for efficient generative pre-trained language models",
+            "Network sketching: Exploiting binary structure in deep cnns",
+            "Lora: Low-rank adaptation of large language models",
+            "P-tuning: Prompt tuning can be comparable to fine-tuning across scales and tasks",
+            "Qlora: Efficient finetuning of quantized llms",
+            "Llm-qat: Data-free quantization aware training for large language models",
+            "Gptq: Accurate post-training quantization for generative pre-trained transformers",
+            "Revisiting parameter-efficient tuning: Are we really there yet?",
+            "Outlier suppression+: Accurate quantization of large language models by equivalent and optimal shifting and scaling",
+            "Smoothquant: Accurate and efficient post-training quantization for large language models",
+            "Progressive prompts: Continual learning for language models",
+            "Compression of generative pre-trained language models via quantization",
+            "Memory-efficient fine-tuning of compressed large language models via sub-4-bit integer quantization",
+            "A simple and effective pruning approach for large language models",
+            "The power of scale for parameter-efficient prompt tuning",
+            "Prefix-tuning: Optimizing continuous prompts for generation",
+            "Structured pruning of large language models",
+            "Gpt understands, too",
+            "Owq: Lessons learned from activation outliers for weight quantization in large language models",
+            "Optimal brain compression: A framework for accurate post-training quantization and pruning",
+            "Towards a unified view of parameter-efficient transfer learning",
+            "From dense to sparse: Contrastive pruning for better pre-trained language model compression",
+            "Llm. int8 (): 8-bit matrix multiplication for transformers at scale"
+          ],
+          "III Large Language Models III-G Multimodal LLMs": [
+            "Llama-adapter: Efficient fine-tuning of language models with zero-init attention",
+            "Chain of thought prompt tuning in vision language models",
+            "Visual programming: Compositional visual reasoning without training",
+            "Minigpt-4: Enhancing vision-language understanding with advanced large language models",
+            "Idealgpt: Iteratively decomposing vision and language reasoning via large language models",
+            "Gpt4tools: Teaching large language model to use tools via self-instruction",
+            "Robust speech recognition via large-scale weak supervision",
+            "Blip-2: Bootstrapping language-image pre-training with frozen image encoders and large language models",
+            "Flamingo: a visual language model for few-shot learning",
+            "Dynamic fusion with intra-and inter-modality attention flow for visual question answering",
+            "Scaling instruction-finetuned language models",
+            "Lora: Low-rank adaptation of large language models",
+            "An image is worth 16x16 words: Transformers for image recognition at scale",
+            "Macaw-llm: Multi-modal language modeling with image, audio, video, and text integration",
+            "Cheap and quick: Efficient vision-language instruction tuning for large language models",
+            "Instructblip: Towards general-purpose vision-language models with instruction tuning",
+            "Wavcaps: A chatgpt-assisted weakly-labelled audio captioning dataset for audio-language multimodal research",
+            "Self-instruct: Aligning language model with self generated instructions",
+            "Chain-of-thought prompting elicits reasoning in large language models",
+            "Caption anything: Interactive image description with diverse multimodal controls",
+            "Multimodal chain-of-thought reasoning in language models",
+            "Vicuna: An open-source chatbot impressing gpt-4 with 90%* chatgpt quality",
+            "Training language models to follow instructions with human feedback",
+            "A survey on multimodal large language models",
+            "Pointclip v2: Adapting clip for powerful 3d open-world learning",
+            "Visual chatgpt: Talking, drawing and editing with visual foundation models",
+            "Videochat: Chat-centric video understanding"
+          ],
+          "III Large Language Models III-H Summary and Discussion": [
+            "Bloom: A 176b-parameter open-access multilingual language model",
+            "Ernie 3.0 titan: Exploring larger-scale knowledge enhanced pre-training for language understanding and generation",
+            "Mixed precision training",
+            "Ul2: Unifying language learning paradigms",
+            "Using deepspeed and megatron to train megatron-turing nlg 530b, a large-scale generative language model",
+            "Transformers without tears: Improving the normalization of self-attention",
+            "Mesh-transformer-jax: Model-parallel implementation of transformer language model with jax",
+            "Roberta: A robustly optimized bert pretraining approach",
+            "Galactica: A large language model for science",
+            "Scaling instruction-finetuned language models",
+            "Generating long sequences with sparse transformers",
+            "Bert: Pre-training of deep bidirectional transformers for language understanding",
+            "Palm: Scaling language modeling with pathways",
+            "Ren, P",
+            "Exploring the limits of transfer learning with a unified text-to-text transformer",
+            "Codet5+: Open code large language models for code understanding and generation",
+            "Opt: Open pre-trained transformer language models",
+            "Zero: Memory optimizations toward training trillion parameter models",
+            "Glm-130b: An open bilingual pre-trained model",
+            "Codegen: An open large language model for code with multi-turn program synthesis",
+            "Llama-adapter v2: Parameter-efficient visual instruction model",
+            "Outrageously large neural networks: The sparsely-gated mixture-of-experts layer",
+            "Alexatm 20b: Few-shot learning using a large-scale multilingual seq2seq model",
+            "Glam: Efficient scaling of language models with mixture-of-experts",
+            "Gpt-neox-20b: An open-source autoregressive language model",
+            "Language models are few-shot learners",
+            "Zeng, X"
+          ],
+          "V Datasets and Evaluation V-B Evaluation Datasets and Tasks": [
+            "Glue: A multi-task benchmark and analysis platform for natural language understanding",
+            "The winograd schema challenge",
+            "Xcopa: A multilingual dataset for causal commonsense reasoning",
+            "Training verifiers to solve math word problems",
+            "Know what you don't know: Unanswerable questions for squad",
+            "Evaluating large language models trained on code",
+            "Pointer sentinel mixture models",
+            "Think you have solved question answering? try arc, the ai2 reasoning challenge",
+            "Wic: 10,000 example pairs for evaluating context-sensitive representations",
+            "Measuring coding challenge competence with apps",
+            "Commonsenseqa: A question answering challenge targeting commonsense knowledge",
+            "A corpus and evaluation framework for deeper understanding of commonsense stories",
+            "Xnli: Evaluating cross-lingual sentence representations",
+            "Triviaqa: A large scale distantly supervised challenge dataset for reading comprehension",
+            "Paws-x: A cross-lingual adversarial dataset for paraphrase identification",
+            "The pascal recognising textual entailment challenge",
+            "Ethos: an online hate speech detection dataset",
+            "Exploring the limits of transfer learning with a unified text-to-text transformer",
+            "A broad-coverage challenge corpus for sentence understanding through inference",
+            "Webqa: Multihop and multimodal qa",
+            "Boolq: Exploring the surprising difficulty of natural yes/no questions",
+            "The lambada dataset: Word prediction requiring a broad discourse context",
+            "Compressive transformers for long-range sequence modelling",
+            "Deep neural solver for math word problems",
+            "Did aristotle use a laptop? a question answering benchmark with implicit reasoning strategies",
+            "Coqa: A conversational question answering challenge",
+            "Lcqmc: A large-scale chinese question matching corpus",
+            "Piqa: Reasoning about physical commonsense in natural language",
+            "Winogrande: An adversarial winograd schema challenge at scale",
+            "Hellaswag: Can a machine really finish your sentence?",
+            "Truthfulqa: Measuring how models mimic human falsehoods",
+            "Superglue: A stickier benchmark for general-purpose language understanding systems",
+            "Measuring massive multitask language understanding",
+            "Race: Large-scale reading comprehension dataset from examinations",
+            "A span-extraction dataset for chinese machine reading comprehension",
+            "Squad: 100,000+ questions for machine comprehension of text",
+            "Adversarial nli: A new benchmark for natural language understanding",
+            "Stereoset: Measuring stereotypical bias in pretrained language models",
+            "Drop: A reading comprehension benchmark requiring discrete reasoning over paragraphs",
+            "Quac: Question answering in context",
+            "PAWS: Paraphrase adversaries from word scrambling",
+            "Beyond the imitation game: Quantifying and extrapolating the capabilities of language models"
+          ],
+          "VI Applications": [
+            "Investigating openai\u2019s chatgpt potentials in generating chatbot\u2019s dialogue for english as a foreign language learning",
+            "Can llm already serve as a database interface? a big bench for large-scale database grounded text-to-sqls",
+            "Data decentralisation of llm-based chatbot systems in chronic disease self-management",
+            "Chatgpt and the rise of large language models: the new ai-driven infodemic threat in public health",
+            "Legalbench: A collaboratively built benchmark for measuring legal reasoning in large language models",
+            "Does chatgpt help us understand the medical literature?",
+            "Automating customer service using langchain: Building custom open-source gpt chatbot for organizations",
+            "Do as i can, not as i say: Grounding language in robotic affordances",
+            "Large language models: a comprehensive survey of its applications, challenges, limitations, and future prospects",
+            "Alphablock: Embodied finetuning for vision-language reasoning in robot manipulation",
+            "Evaluating chatgpt as an adjunct for radiologic decision-making",
+            "Large language models in finance: A survey",
+            "Tidybot: Personalized robot assistance with large language models",
+            "Transparency guidance for chatgpt usage in scientific writing",
+            "Leandojo: Theorem proving with retrieval-augmented language models",
+            "Chatlaw: Open-source legal large language model with integrated external knowledge bases",
+            "Mathprompter: Mathematical reasoning using large language models",
+            "Large language models for scientific synthesis, inference and explanation",
+            "Summary of chatgpt-related research and perspective towards the future of large language models",
+            "Using large language models to support thematic analysis in empirical legal studies",
+            "Large language models in medical education: Opportunities, challenges, and future directions",
+            "Is chatGPT a general-purpose natural language processing task solver?",
+            "Explaining legal concepts with augmented large language models (gpt-4)",
+            "Contribution and performance of chatgpt and other large language models (llm) for scientific and research advancements: a double-edged sword",
+            "Hugginggpt: Solving ai tasks with chatgpt and its friends in huggingface",
+            "Towards next-generation intelligent assistants leveraging llm techniques",
+            "Can large language models provide feedback to students? a case study on chatgpt",
+            "Exploring the impacts of chatgpt on future scientific work",
+            "Chatgpt for good? on opportunities and challenges of large language models for education",
+            "Progprompt: Generating situated robot task plans using large language models",
+            "Fingpt: Open-source financial large language models",
+            "Task and motion planning with large language models for object rearrangement",
+            "Artificial intelligence and public health: Evaluating chatgpt responses to vaccination myths and misconceptions",
+            "Bloomberggpt: A large language model for finance",
+            "Large language models as zero-shot human models for human-robot interaction"
+          ],
+          "VII Challenges and Future Directions": [
+            "Memorisation versus generalisation in pre-trained language models",
+            "Discriminating systems",
+            "Large language models still can\u2019t plan (a benchmark for llms on planning and reasoning about change)",
+            "Olive: Accelerating large language models via hardware-friendly outlier-victim pair quantization",
+            "Ethical considerations and policy implications for large language models: Guiding responsible development and deployment",
+            "The imperative for regulatory oversight of large language models (or generative ai) in healthcare",
+            "On second thought, let\u2019s not think step by step! bias and toxicity in zero-shot reasoning",
+            "Adversarial training for large neural language models",
+            "Understanding deep learning (still) requires rethinking generalization",
+            "Survey of vulnerabilities in large language models revealed by adversarial attacks",
+            "Energy and policy considerations for deep learning in nlp",
+            "In-context retrieval-augmented language models",
+            "On the dangers of stochastic parrots: Can language models be too big?",
+            "Auditing large language models: a three-layered approach",
+            "Real-time execution of large-scale language models on mobile",
+            "An llm can fool itself: A prompt-based adversarial attack",
+            "Openai. gpt-4 technical report",
+            "Explainability for large language models: A survey",
+            "Do prompt-based models really understand the meaning of their prompts?",
+            "What does it mean for a language model to preserve privacy?",
+            "Siren\u2019s song in the ai ocean: A survey on hallucination in large language models",
+            "Improving language models by retrieving from trillions of tokens",
+            "Language models are few-shot learners"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.00033719357452355325,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Silkie: Preference Distillation for Large Visual Language Models",
+        "arxiv_id": "2312.10665",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract This paper explores preference distillation for large vision language models\u00a0(LVLMs), improving their ability to generate helpful and faithful responses anchoring the visual context. We first build a vision-language feedback\u00a0(VLFeedback) dataset utilizing AI annotation. Specifically, responses are generated by models sampled from 12 LVLMs, conditioned on multi-modal instructions sourced from various datasets. We adopt GPT-4V to assess the generated outputs regarding helpfulness, visual faithfulness, and ethical considerations. Furthermore, the preference supervision is distilled into Qwen-VL-Chat through the direct preference optimization\u00a0(DPO) method. The resulting model Silkie, achieves 6.9% and 9.5% relative improvement on the MME benchmark regarding the perception and cognition capabilities, respectively. Silkie also demonstrates reduced hallucination by setting a new state-of-the-art score of 3.02 on the MMHal-Bench benchmark. Further analysis shows that DPO with our VLFeedback dataset mainly boosts the fine-grained perception and complex cognition abilities of LVLMs, leading to more comprehensive improvements compared to human-annotated preference datasets. Project page: https://vlf-silkie.github.io. ",
+        "sections": {
+          "1 Introduction": [
+            "Gpt-4v(ision) system card",
+            "Rlhf-v: Towards trustworthy mllms via behavior alignment from fine-grained correctional human feedback",
+            "Svit: Scaling up visual instruction tuning",
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "The dawn of lmms: Preliminary explorations with gpt-4v (ision)",
+            "Visual instruction tuning",
+            "Pmc-vqa: Visual instruction tuning for medical visual question answering",
+            "Zephyr: Direct distillation of lm alignment",
+            "Blip-2: Bootstrapping language-image pre-training with frozen image encoders and large language models",
+            "Introducing our multimodal models",
+            "Aligning large multimodal models with factually augmented rlhf",
+            "Mme: A comprehensive evaluation benchmark for multimodal large language models",
+            "What makes for good visual instructions? synthesizing complex visual reasoning instructions for visual instruction tuning",
+            "Evaluating object hallucination in large vision-language models",
+            "Flamingo: a visual language model for few-shot learning",
+            "M3IT: A large-scale dataset towards multi-modal multilingual instruction tuning",
+            "Qwen-vl: A frontier large vision-language model with versatile abilities"
+          ],
+          "2 Visual-Language Feedback Dataset 2.1 Instruction Source": [
+            "Llavar: Enhanced visual instruction tuning for text-rich image understanding",
+            "Svit: Scaling up visual instruction tuning",
+            "Visual instruction tuning",
+            "Pmc-vqa: Visual instruction tuning for medical visual question answering",
+            "Aligning large multi-modal model with robust instruction tuning",
+            "What makes for good visual instructions? synthesizing complex visual reasoning instructions for visual instruction tuning",
+            "Llava-med: Training a large language-and-vision assistant for biomedicine in one day",
+            "M3IT: A large-scale dataset towards multi-modal multilingual instruction tuning",
+            "Towards end-to-end embodied decision making via multi-modal large language model: Explorations with gpt4-vision and beyond"
+          ],
+          "2 Visual-Language Feedback Dataset 2.2 Model Pool": [
+            "Gpt-4v(ision) system card",
+            "The dawn of lmms: Preliminary explorations with gpt-4v (ision)",
+            "Instructblip: Towards general-purpose vision-language models with instruction tuning",
+            "Introducing our multimodal models",
+            "Mmicl: Empowering vision-language model with multi-modal in-context learning",
+            "Obelics: An open web-scale filtered dataset of interleaved image-text documents",
+            "Aligning large multimodal models with factually augmented rlhf",
+            "Glm: General language model pretraining with autoregressive blank infilling",
+            "Blip-2: Bootstrapping language-image pre-training with frozen image encoders and large language models",
+            "Flamingo: a visual language model for few-shot learning",
+            "Improved baselines with visual instruction tuning",
+            "Qwen-vl: A frontier large vision-language model with versatile abilities"
+          ],
+          "2 Visual-Language Feedback Dataset 2.3 GPT-4V Aided Preference Annotation": [
+            "Constitutional ai: Harmlessness from ai feedback"
+          ],
+          "2 Visual-Language Feedback Dataset 2.4 Preference Statistics": [
+            "Large language models are not fair evaluators",
+            "Red teaming language models with language models"
+          ],
+          "3 Preference Distillation for LVLMs": [
+            "Direct preference optimization: Your language model is secretly a reward model"
+          ],
+          "3 Preference Distillation for LVLMs Task Formulation": [
+            "Training language models to follow instructions with human feedback"
+          ],
+          "3 Preference Distillation for LVLMs Preference Alignment Optimization": [
+            "Learning to summarize with human feedback",
+            "Proximal policy optimization algorithms",
+            "Rank analysis of incomplete block designs: I. the method of paired comparisons"
+          ],
+          "4 Experiments 4.1 Experimental Settings": [
+            "Decoupled weight decay regularization",
+            "Lora: Low-rank adaptation of large language models",
+            "Visual instruction tuning",
+            "Aligning large multimodal models with factually augmented rlhf",
+            "Vicuna: An open-source chatbot impressing gpt-4 with 90%* chatgpt quality",
+            "Improved baselines with visual instruction tuning",
+            "Qwen-vl: A frontier large vision-language model with versatile abilities"
+          ],
+          "4 Experiments 4.2 Results": [
+            "Sharegpt4v: Improving large multi-modal models with better captions",
+            "Loose lips sink ships: Mitigating length bias in reinforcement learning from human feedback"
+          ],
+          "4 Experiments 4.3 Analysis": [
+            "Rlhf-v: Towards trustworthy mllms via behavior alignment from fine-grained correctional human feedback"
+          ],
+          "5 Related Works Large Vision Language Models": [
+            "A survey on multimodal large language models",
+            "A survey for in-context learning",
+            "Minigpt-4: Enhancing vision-language understanding with advanced large language models",
+            "Visual instruction tuning",
+            "Lora: Low-rank adaptation of large language models",
+            "Introducing our multimodal models",
+            "Obelics: An open web-scale filtered dataset of interleaved image-text documents",
+            "Flamingo: a visual language model for few-shot learning",
+            "Blip-2: Bootstrapping language-image pre-training with frozen image encoders and large language models",
+            "mplug-owl: Modularization empowers large language models with multimodality",
+            "Mmicl: Empowering vision-language model with multi-modal in-context learning",
+            "Instructblip: Towards general-purpose vision-language models with instruction tuning",
+            "Qwen-vl: A frontier large vision-language model with versatile abilities"
+          ],
+          "5 Related Works Preference Alignment": [
+            "Rlhf-v: Towards trustworthy mllms via behavior alignment from fine-grained correctional human feedback",
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "Constitutional ai: Harmlessness from ai feedback",
+            "Learning to summarize with human feedback",
+            "Cross-task generalization via natural language crowdsourcing instructions",
+            "Aligning large multimodal models with factually augmented rlhf",
+            "Proximal policy optimization algorithms",
+            "Super-NaturalInstructions: Generalization via declarative instructions on 1600+ NLP tasks.",
+            "Introducing chatgpt"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.9980974793434143,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "A Survey on Evaluation of Multimodal Large Language Models",
+        "arxiv_id": "2408.15769",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract Multimodal Large Language Models (MLLMs) mimic human perception and reasoning system by integrating powerful Large Language Models (LLMs) with various modality encoders (e.g., vision, audio), positioning LLMs as the \u201dbrain\u201d and various modality encoders as sensory organs. This framework endows MLLMs with human-like capabilities, and suggests a potential pathway towards achieving artificial general intelligence (AGI). With the emergence of all-round MLLMs like GPT-4V and Gemini, a multitude of evaluation methods have been developed to assess their capabilities across different dimensions. This paper presents a systematic and comprehensive review of MLLM evaluation methods, covering the following key aspects: (1) the background of MLLMs and their evaluation; (2) \u201cwhat to evaluate\u201d that reviews and categorizes existing MLLM evaluation tasks based on the capabilities assessed, including general multimodal recognition, perception, reasoning and trustworthiness, and domain-specific applications such as socioeconomic, natural sciences and engineering, medical usage, AI agent, remote sensing, video and audio processing, 3D point cloud analysis, and others; (3) \u201cwhere to evaluate\u201d that summarizes MLLM evaluation benchmarks into general and specific benchmarks; (4) \u201chow to evaluate\u201d that reviews and illustrates MLLM evaluation steps and metrics; Our overarching goal is to provide valuable insights for researchers in the field of MLLM evaluation, thereby facilitating the development of more capable and reliable MLLMs. We emphasize that evaluation should be regarded as a critical discipline, essential for advancing the field of MLLMs.",
+        "sections": {
+          "1 Introduction": [
+            "Large language models: A survey",
+            "Seed-bench: Benchmarking multimodal llms with generative comprehension",
+            "Vision-language models for vision tasks: A survey",
+            "Mmrel: A relation understanding dataset and benchmark in the mllm era."
+          ],
+          "2 Background 2.1 Multimodal Large Language Model": [
+            "Pointnet: Deep learning on point sets for 3d classification and segmentation",
+            "Aligning large multimodal models with factually augmented rlhf",
+            "Attention is all you need",
+            "Valley: Video assistant with large language model enhanced ability",
+            "Learning transferable visual models from natural language supervision",
+            "Bubogpt: Enabling visual grounding in multi-modal llms",
+            "Llama: Open and efficient foundation language models",
+            "Qlora: Efficient finetuning of quantized llms",
+            "Judging llm-as-a-judge with mt-bench and chatbot arena",
+            "Visual spatial reasoning",
+            "Point-bert: Pre-training 3d point cloud transformers with masked point modeling",
+            "Robust speech recognition via large-scale weak supervision",
+            "Learning the user\u2019s deeper preferences for multi-modal recommendation systems"
+          ],
+          "3 What to evaluation 3.1 Multi-modal understanding": [
+            "Pandagpt: One model to instruction-follow them all",
+            "WeMM. Wemm",
+            "When and why vision-language models behave like bags-of-words, and what to do about it?",
+            "Visual instruction tuning",
+            "Blip-2: Bootstrapping language-image pre-training with frozen image encoders and large language models",
+            "Osprey: Pixel understanding with visual instruction tuning",
+            "Multi-grained vision language pre-training: Aligning texts with visual concepts",
+            "Gmai-mmbench: A comprehensive multimodal evaluation benchmark towards general medical ai",
+            "Gemini 1.5: Unlocking multimodal understanding across millions of tokens of context",
+            "Towards vqa models that can read",
+            "Cider: Consensus-based image description evaluation",
+            "Instructblip: Towards general-purpose vision-language models with instruction tuning",
+            "Xtuner: A toolkit for efficiently fine-tuning llm",
+            "V?: Guided visual search as a core mechanism in multimodal llms",
+            "Learning transferable visual models from natural language supervision",
+            "Infmllm: A unified framework for visual-language tasks",
+            "What matters in training a gpt4-style language model with multimodal inputs?",
+            "Vl-checklist: Evaluating pre-trained vision-language models with objects, attributes and relations",
+            "mplug-owl2: Revolutionizing multi-modal large language model with modality collaboration",
+            "Openflamingo: An open-source framework for training large autoregressive vision-language models.",
+            "Microsoft coco: Common objects in context",
+            "Gpt-4 technical report",
+            "From image descriptions to visual denotations: New similarity metrics for semantic inference over event descriptions",
+            "Mmbench: Is your multi-modal model an all-around player?",
+            "Draw-and-understand: Leveraging visual prompts to enable mllms to comprehend what you want",
+            "Chain-of-thought prompting elicits reasoning in large language models",
+            "Llama-adapter v2: Parameter-efficient visual instruction model",
+            "Ferret: Refer and ground anything anywhere at any granularity",
+            "Mm-react: Prompting chatgpt for multimodal reasoning and action",
+            "Llava-next: Improved reasoning, ocr, and world knowledge",
+            "Mm-vet: Evaluating large multimodal models for integrated capabilities",
+            "Visual cot: Unleashing chain-of-thought reasoning in multi-modal language models",
+            "Touchstone: Evaluating vision-language models by language models",
+            "Empirical study towards building an effective multi-modal large language model",
+            "Mme: A comprehensive evaluation benchmark for multimodal large language models",
+            "Qwen-vl: A versatile vision-language model for understanding, localization, text reading, and beyond.",
+            "Vilt: Vision-and-language transformer without convolution or region supervision",
+            "Lxmert: Learning cross-modality encoder representations from transformers",
+            "Ii-bench: An image implication understanding benchmark for multimodal large language models",
+            "J. Chen et al. Plug-and-play grounding of reasoning in multimodal large language models.",
+            "Seed-bench: Benchmarking multimodal llms with generative comprehension",
+            "Internlm-xcomposer2: Mastering free-form text-image composition and comprehension in vision-language large model"
+          ],
+          "3 What to evaluation 3.2 Multi-modal Trustworthiness": [
+            "Chef: A comprehensive evaluation framework for standardized assessment of multimodal large language models.",
+            "Visual instruction tuning",
+            "Evaluating object hallucination in large vision-language models",
+            "Blip-2: Bootstrapping language-image pre-training with frozen image encoders and large language models",
+            "Osprey: Pixel understanding with visual instruction tuning",
+            "Instructblip: Towards general-purpose vision-language models with instruction tuning",
+            "Mm-spubench: Towards better understanding of spurious biases in multimodal llms",
+            "Benchmarking trustworthiness of multimodal large language models: A comprehensive study",
+            "Minigpt-4: Enhancing vision-language understanding with advanced large language models",
+            "Hallusionbench: an advanced diagnostic suite for entangled language hallucination and visual illusion in large vision-language models.",
+            "Single image unlearning: Efficient machine unlearning in multimodal large language models",
+            "Mm-safetybench: A benchmark for safety evaluation of multimodal large language models",
+            "Improved baselines with visual instruction tuning",
+            "Mitigating hallucination in large multi-modal models via robust instruction tuning",
+            "Jailbreakv-28k: A benchmark for assessing the robustness of multimodal large language models against jailbreak attacks.",
+            "Gpt-4 technical report",
+            "Draw-and-understand: Leveraging visual prompts to enable mllms to comprehend what you want",
+            "Ferret: Refer and ground anything anywhere at any granularity",
+            "Seeing clearly, answering incorrectly: A multimodal robustness benchmark for evaluating mllms on leading questions.",
+            "Llava-next: Improved reasoning, ocr, and world knowledge",
+            "Obelics: An open web-scale filtered dataset of interleaved image-text documents",
+            "Red teaming visual language models",
+            "Qwen-vl: A versatile vision-language model for understanding, localization, text reading, and beyond."
+          ],
+          "3 What to evaluation 3.3 Socioeconomics": [
+            "Instructblip: Towards general-purpose vision-language models with instruction tuning",
+            "Cvqa: Culturally-diverse multilingual visual question answering benchmark",
+            "Codis: Benchmarking context-dependent visual comprehension for multimodal large language models",
+            "Visual instruction tuning",
+            "Transportation games: Benchmarking transportation knowledge of (multimodal) large language models",
+            "Qwen-vl: A versatile vision-language model for understanding, localization, text reading, and beyond.",
+            "Improved baselines with visual instruction tuning",
+            "Mm-soc: Benchmarking multimodal large language models in social media platforms.",
+            "Gemini 1.5: Unlocking multimodal understanding across millions of tokens of context",
+            "Gpt-4 technical report",
+            "Internlm-xcomposer2: Mastering free-form text-image composition and comprehension in vision-language large model"
+          ],
+          "3 What to evaluation 3.4 Natural Science and Engineering": [
+            "Instructblip: Towards general-purpose vision-language models with instruction tuning",
+            "M3exam: A multilingual, multimodal, multilevel benchmark for examining large language models.",
+            "Designqa: A multimodal benchmark for evaluating large language models\u2019 understanding of engineering documentation.",
+            "Pandagpt: One model to instruction-follow them all",
+            "Scemqa: A scientific college entrance level multimodal question answering benchmark",
+            "Llava-next: Improved reasoning, ocr, and world knowledge",
+            "Qwen-vl: A versatile vision-language model for understanding, localization, text reading, and beyond.",
+            "Visual instruction tuning",
+            "Muirbench: A comprehensive benchmark for robust multi-image understanding",
+            "Are we on the right way for evaluating large vision-language models?",
+            "Touchstone: Evaluating vision-language models by language models",
+            "Mmmu: A massive multi-discipline multimodal understanding and reasoning benchmark for expert agi.",
+            "Gpt-4 technical report",
+            "M3cot: A novel benchmark for multi-domain multi-step multi-modal chain-of-thought"
+          ],
+          "3 What to evaluation 3.5 Medical analysis": [
+            "Instructblip: Towards general-purpose vision-language models with instruction tuning",
+            "M3d: Advancing 3d medical image analysis with multi-modal large language models",
+            "Llava-next: Improved reasoning, ocr, and world knowledge",
+            "Qwen-vl: A versatile vision-language model for understanding, localization, text reading, and beyond.",
+            "Gmai-mmbench: A comprehensive multimodal evaluation benchmark towards general medical ai",
+            "Mmmu: A massive multi-discipline multimodal understanding and reasoning benchmark for expert agi.",
+            "Gpt-4 technical report"
+          ],
+          "3 What to evaluation 3.6 AI Agent": [
+            "Instructblip: Towards general-purpose vision-language models with instruction tuning",
+            "Towards end-to-end embodied decision making via multi-modal large language model: Explorations with gpt4-vision and beyond.",
+            "Visualagentbench: Towards large multimodal models as visual foundation agents",
+            "Llava-next: Improved reasoning, ocr, and world knowledge",
+            "Qwen-vl: A versatile vision-language model for understanding, localization, text reading, and beyond.",
+            "Gpt-4 technical report",
+            "Egoplan-bench: Benchmarking multimodal large language models for human-level planning"
+          ],
+          "3 What to evaluation 3.7 Other Applications": [
+            "Mvbench: A comprehensive multi-modal video understanding benchmark",
+            "Lamm: Language-assisted multi-modal instruction-tuning dataset, framework, and benchmark",
+            "Air-bench: Benchmarking large audio-language models via generative comprehension",
+            "Dynamic-superb: Towards a dynamic, collaborative, and comprehensive instruction-tuning benchmark for speech",
+            "Cross-city matters: A multimodal remote sensing benchmark dataset for cross-city semantic segmentation using high-resolution domain adaptation networks.",
+            "Rsgpt: A remote sensing vision language model and benchmark",
+            "Muchomusic: Evaluating music understanding in multimodal audio-language models",
+            "M3dbench: Let\u2019s instruct large models with multi-modal 3d prompts.",
+            "Sok-bench: A situated video reasoning benchmark with aligned open-world knowledge",
+            "Mdas: A new multimodal benchmark dataset for remote sensing",
+            "Scanqa: 3d question answering for spatial scene understanding",
+            "Mmbench-video: A long-form multi-shot benchmark for holistic video understanding"
+          ],
+          "4 Where to evaluate 4.1 General benchmarks": [
+            "Mmbench: Is your multi-modal model an all-around player?",
+            "Benchmarking trustworthiness of multimodal large language models: A comprehensive study",
+            "Chef: A comprehensive evaluation framework for standardized assessment of multimodal large language models.",
+            "Logicvista: Multimodal llm logical reasoning benchmark in visual contexts.",
+            "Mm-vet: Evaluating large multimodal models for integrated capabilities",
+            "Evaluating object hallucination in large vision-language models",
+            "Are we on the right way for evaluating large vision-language models?",
+            "Touchstone: Evaluating vision-language models by language models",
+            "Seed-bench: Benchmarking multimodal llms with generative comprehension",
+            "Mme: A comprehensive evaluation benchmark for multimodal large language models"
+          ],
+          "4 Where to evaluate 4.2 Specific benchmarks": [
+            "Cvqa: Culturally-diverse multilingual visual question answering benchmark",
+            "Mathverse: Does your multi-modal llm truly see the diagrams in visual math problems?",
+            "Learn to explain: Multimodal reasoning via thought chains for science question answering",
+            "Transportation games: Benchmarking transportation knowledge of (multimodal) large language models",
+            "Gmai-mmbench: A comprehensive multimodal evaluation benchmark towards general medical ai"
+          ],
+          "5 How to Evaluate 5.1 Human Evaluation": [
+            "Visual instruction tuning"
+          ],
+          "5 How to Evaluate 5.2 GPT-4 Evaluation": [
+            "Gpt-4 technical report",
+            "Visual instruction tuning"
+          ],
+          "5 How to Evaluate 5.3 Metric evaluation": [
+            "Scannet: Richly-annotated 3d reconstructions of indoor scenes",
+            "Seed-bench: Benchmarking multimodal llms with generative comprehension",
+            "Audiocaps: Generating captions for audios in the wild"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.0002304125519003719,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Is DPO Superior to PPO for LLM Alignment? A Comprehensive Study",
+        "arxiv_id": "2404.10719",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract Reinforcement Learning from Human Feedback (RLHF) is currently the most widely used method to align large language models (LLMs) with human preferences. Existing RLHF methods can be roughly categorized as either reward-based or reward-free. Novel applications such as ChatGPT and Claude leverage reward-based methods that first learn a reward model and apply actor-critic algorithms, such as Proximal Policy Optimization (PPO). However, in academic benchmarks, the state-of-the-art results are often achieved via reward-free methods, such as Direct Preference Optimization (DPO). Is DPO truly superior to PPO? Why does PPO perform poorly on these benchmarks? In this paper, we first conduct both theoretical and empirical studies on the algorithmic properties of DPO and show that DPO may have fundamental limitations. Moreover, we also comprehensively examine PPO and reveal the key factors for the best performances of PPO in fine-tuning LLMs. Finally, we benchmark DPO and PPO across a collection of RLHF testbeds, ranging from dialogue to code generation. Experiment results demonstrate that PPO is able to surpass other alignment methods in all cases and achieve state-of-the-art results in challenging code competitions.",
+        "sections": {
+          "1 Introduction": [
+            "Competition-level code generation with alphacode",
+            "B., Mann, B., Ryder, N., Subbiah, M., Kaplan, J., Dhariwal, P., Neelakantan, A., Shyam, P., Sastry, G., Askell, A., Agarwal, S., Herbert-Voss, A., Krueger, G., Henighan, T., Child, R., Ramesh, A., Ziegler, D",
+            "Preference ranking optimization for human alignment",
+            "Training language models to follow instructions with human feedback",
+            "Antropic. Claude, Jul 2023. URL https://claude.ai/chats.",
+            "Fine-tuning language models from human preferences",
+            "Do language models know when they\u2019re hallucinating references?",
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "Instruction tuning with GPT-4",
+            "Introducing chatgpt",
+            "RRHF: rank responses to align language models with human feedback without tears"
+          ],
+          "2 Related Work": [
+            "S., Lachaux, M., Lavril, T., Lee, J., Liskovich, D., Lu, Y., Mao, Y., Martinet, X., Mihaylov, T., Mishra, P., Molybog, I., Nie, Y., Poulton, A., Reizenstein, J., Rungta, R., Saladi, K., Schelten, A., Silva, R., Smith, E",
+            "B., Mann, B., Ryder, N., Subbiah, M., Kaplan, J., Dhariwal, P., Neelakantan, A., Shyam, P., Sastry, G., Askell, A., Agarwal, S., Herbert-Voss, A., Krueger, G., Henighan, T., Child, R., Ramesh, A., Ziegler, D",
+            "Proximal policy optimization algorithms",
+            "Secrets of RLHF in large language models part I: PPO",
+            "Scaling laws for reward model overoptimization",
+            "RLAIF: scaling reinforcement learning from human feedback with AI feedback",
+            "Artificial Intelligence: A Modern Approach (4th Edition)",
+            "Language models are unsupervised multitask learners",
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "Mistral 7B \u2014 mistral.ai",
+            "Warm: On the benefits of weight averaged reward models",
+            "Implementation matters in deep RL: A case study on PPO and TRPO",
+            "Deepspeed-chat: Easy, fast and affordable RLHF training of chatgpt-like models at all scales.",
+            "RRHF: rank responses to align language models with human feedback without tears",
+            "Policy optimization in rlhf: The impact of out-of-preference data"
+          ],
+          "3 Preliminary": [
+            "Iterative preference learning from human feedback: Bridging theory and practice for rlhf under kl-constraint",
+            "Proximal policy optimization algorithms",
+            "Fine-tuning language models from human preferences",
+            "Bertscore: Evaluating text generation with BERT",
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "Rank analysis of incomplete block designs: I. the method of paired comparisons",
+            "Asynchronous methods for deep reinforcement learning"
+          ],
+          "4 Understanding the Limitation of DPO 4.1 Theoretical Analysis": [
+            "A long way to go: Investigating length correlations in rlhf",
+            "Deal or no deal? end-to-end learning for negotiation dialogues"
+          ],
+          "4 Understanding the Limitation of DPO 4.3 Experiments on Real Preference Datasets": [
+            "Safe rlhf: Safe reinforcement learning from human feedback",
+            "Stanford alpaca: An instruction-following llama model"
+          ],
+          "5 Key Factors to PPO for RLHF": [
+            "Training language models to follow instructions with human feedback",
+            "The surprising effectiveness of PPO in cooperative multi-agent games",
+            "Stable-baselines3: Reliable reinforcement learning implementations"
+          ],
+          "5 Key Factors to PPO for RLHF Implementation Details.": [
+            "Competition-level code generation with alphacode",
+            "Training a helpful and harmless assistant with reinforcement learning from human feedback",
+            "High-dimensional continuous control using generalized advantage estimation",
+            "Measuring coding challenge competence with apps",
+            "The surprising effectiveness of PPO in cooperative multi-agent games",
+            "Deepspeed-chat: Easy, fast and affordable RLHF training of chatgpt-like models at all scales."
+          ],
+          "6 Benchmark Results": [
+            "Competition-level code generation with alphacode",
+            "Preference ranking optimization for human alignment",
+            "Training a helpful and harmless assistant with reinforcement learning from human feedback",
+            "Safe rlhf: Safe reinforcement learning from human feedback",
+            "Measuring coding challenge competence with apps",
+            "RRHF: rank responses to align language models with human feedback without tears"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.0014739924808964133,
+        "extra": {
+          "expand": "not expand"
+        }
+      }
+    ],
+    "Applications of DPO training in large-scale vision-language models": [
+      {
+        "title": "Refined Direct Preference Optimization with Synthetic Data for Behavioral Alignment of LLMs",
+        "arxiv_id": "2402.08005",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract In this paper, we introduce refined Direct Preference Optimization (rDPO), a method for improving the behavioral alignment of Large Language Models (LLMs) without the need for human-annotated data. The method involves creating synthetic data using self-critique prompting by a teacher LLM and then utilising an generalized DPO loss function to distil to a student LLM. The loss function incorporates an additional external reward model to improve the quality of synthetic data, making rDPO robust to potential noise in the synthetic dataset. rDPO is shown to be effective in a diverse set of behavioural alignment tasks, such as improved safety, robustness against role-playing, and reduced sycophancy. Code to be released at github.com/vicgalle/refined-dpo. ",
+        "sections": {
+          "1 Introduction": [
+            "Fine-tuning language models from human preferences",
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "Scaling instruction-finetuned language models",
+            "Distilling the knowledge in a neural network",
+            "Zephyr: Direct distillation of lm alignment"
+          ],
+          "2 Related Work Behavioral alignment.": [
+            "Fine-tuning language models from human preferences",
+            "Statistical rejection sampling improves preference optimization",
+            "Constitutional ai: Harmlessness from ai feedback",
+            "Raft: Reward ranked finetuning for generative foundation model alignment",
+            "Proximal policy optimization algorithms",
+            "Rlaif: Scaling reinforcement learning from human feedback with ai feedback"
+          ],
+          "2 Related Work Synthetic data for LLMs.": [
+            "Grath: Gradual self-truthifying for large language models",
+            "Self-rewarding language models",
+            "Code llama: Open foundation models for code",
+            "Language models are unsupervised multitask learners.",
+            "Rephrase and respond: Let large language models ask better questions for themselves",
+            "Exploiting asymmetry for synthetic training data generation: SynthIE and the case of information extraction",
+            "Distilled self-critique of llms with synthetic data: a bayesian perspective"
+          ],
+          "3 Framework 3.1 Synthetic data generation": [
+            "Chain-of-thought prompting elicits reasoning in large language models",
+            "Self-refine: Iterative refinement with self-feedback"
+          ],
+          "3 Framework 3.2 Data scoring and distillation": [
+            "Direct preference optimization: Your language model is secretly a reward model"
+          ],
+          "4 Experiments": [
+            "Self-refine: Iterative refinement with self-feedback",
+            "Mixtral of experts",
+            "Distilled self-critique of llms with synthetic data: a bayesian perspective",
+            "Direct preference optimization: Your language model is secretly a reward model"
+          ],
+          "4 Experiments 4.1 Safety": [
+            "\u201dDo Anything Now\u201d: Characterizing and Evaluating In-The-Wild Jailbreak Prompts on Large Language Models.",
+            "Universal and transferable adversarial attacks on aligned language models",
+            "A general language assistant as a laboratory for alignment"
+          ],
+          "4 Experiments 4.3 Sycophancy": [
+            "System 2 attention (is something you might need too)",
+            "Discovering language model behaviors with model-written evaluations"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.0030063753947615623,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Using Human Feedback to Fine-tune Diffusion Models without Any Reward Model",
+        "arxiv_id": "2311.13231",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Using reinforcement learning with human feedback (RLHF) has shown significant promise in fine-tuning diffusion models. Previous methods start by training a reward model that aligns with human preferences, then leverage RL techniques to fine-tune the underlying models. However, crafting an efficient reward model demands extensive datasets, optimal architecture, and manual hyperparameter tuning, making the process both time and cost-intensive. The direct preference optimization (DPO) method, effective in fine-tuning large language models, eliminates the necessity for a reward model. However, the extensive GPU memory requirement of the diffusion model\u2019s denoising process hinders the direct application of the DPO method. To address this issue, we introduce the Direct Preference for Denoising Diffusion Policy Optimization (D3PO) method to directly fine-tune diffusion models. The theoretical analysis demonstrates that although D3PO omits training a reward model, it effectively functions as the optimal reward model trained using human feedback data to guide the learning process. This approach requires no training of a reward model, proving to be more direct, cost-effective, and minimizing computational overhead. In experiments, our method uses the relative scale of objectives as a proxy for human preference, delivering comparable results to methods using ground-truth rewards. Moreover, D3PO demonstrates the ability to reduce image distortion rates and generate safer images, overcoming challenges lacking robust reward models. Our code is publicly available in https://github.com/yk7333/D3PO/tree/main ",
+        "sections": {
+          "1 Introduction": [
+            "Pixel recurrent neural networks",
+            "Imagereward: Learning and evaluating human preferences for text-to-image generation",
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "Aligning text-to-image models using human feedback",
+            "Deep reinforcement learning from human preferences",
+            "Variational inference with normalizing flows",
+            "Language models are few-shot learners",
+            "Zero-shot text-to-image generation",
+            "Training diffusion models with reinforcement learning",
+            "Generative adversarial nets",
+            "Glide: Towards photorealistic image generation and editing with text-guided diffusion models"
+          ],
+          "2 Related Work": [
+            "The k-armed dueling bandits problem",
+            "Adding conditional control to text-to-image diffusion models",
+            "Llama 2: Open foundation and fine-tuned chat models",
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "Training a helpful and harmless assistant with reinforcement learning from human feedback",
+            "Fine-tuning language models from human preferences",
+            "Imagereward: Learning and evaluating human preferences for text-to-image generation",
+            "Aligning text-to-image models using human feedback",
+            "Denoising diffusion probabilistic models",
+            "Learning to summarize with human feedback",
+            "Gpt-4 technical report",
+            "Zero-shot text-to-image generation",
+            "Planning with diffusion for flexible behavior synthesis",
+            "Imagen video: High definition video generation with diffusion models",
+            "Compositional visual generation with composable diffusion models",
+            "Preference-based reinforcement learning: evolutionary direct policy search using a preference-based racing algorithm",
+            "Dpok: Reinforcement learning for fine-tuning text-to-image diffusion models",
+            "Data generation as sequential decision making",
+            "Deep unsupervised learning using nonequilibrium thermodynamics",
+            "Classifier-free diffusion guidance",
+            "Deep reinforcement learning from human preferences",
+            "Diffusion models beat gans on image synthesis",
+            "Bard",
+            "Hierarchical text-conditional image generation with clip latents",
+            "Optimizing ddpm sampling with shortcut fine-tuning",
+            "Anthropic. Introducing claude",
+            "Training diffusion models with reinforcement learning"
+          ],
+          "3 Preliminaries": [
+            "Denoising diffusion probabilistic models",
+            "A bayesian approach for policy learning from trajectory preference queries",
+            "Introduction to reinforcement learning",
+            "Rank analysis of incomplete block designs: I. the method of paired comparisons"
+          ],
+          "4 Method 4.1 Denoising process as a multi-step MDP": [
+            "Training diffusion models with reinforcement learning"
+          ],
+          "4 Method 4.2 Direct Preference Optimization for MDP": [
+            "Continuous control with deep reinforcement learning",
+            "Lora: Low-rank adaptation of large language models"
+          ],
+          "4 Method 4.3 Direct preference for Denoising Diffusion Policy Optimization": [
+            "Mastering the game of go with deep neural networks and tree search"
+          ],
+          "5 Experiment": [
+            "High-resolution image synthesis with latent diffusion models"
+          ],
+          "5 Experiment 5.1 Pre-defined Quantifiable Objectives Experiments": [
+            "Laion-5b: An open large-scale dataset for training next generation image-text models",
+            "Training diffusion models with reinforcement learning"
+          ],
+          "5 Experiment 5.2 Experiments without Any Reward Model": [
+            "Blip: Bootstrapping language-image pre-training for unified vision-language understanding and generation",
+            "Imagereward: Learning and evaluating human preferences for text-to-image generation",
+            "Learning transferable visual models from natural language supervision"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.039956845343112946,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Enhancing Large Vision Language Models with Self-Training on Image Comprehension",
+        "arxiv_id": "2405.19716",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract Large vision language models (LVLMs) integrate large language models (LLMs) with pre-trained vision encoders, thereby activating the perception capability of the model to understand image inputs for different queries and conduct subsequent reasoning. Improving this capability requires high-quality vision-language data, which is costly and labor-intensive to acquire. Self-training approaches have been effective in single-modal settings to alleviate the need for labeled data by leveraging model\u2019s own generation. However, effective self-training remains a challenge regarding the unique visual perception and reasoning capability of LVLMs. To address this, we introduce Self-Training on Image Comprehension (STIC), which emphasizes a self-training approach specifically for image comprehension. First, the model self-constructs a preference dataset for image descriptions using unlabeled images. Preferred responses are generated through a step-by-step prompt, while dis-preferred responses are generated from either corrupted images or misleading prompts. To further self-improve reasoning on the extracted visual information, we let the model reuse a small portion of existing instruction-tuning data and append its self-generated image descriptions to the prompts. We validate the effectiveness of STIC across seven different benchmarks, demonstrating substantial performance gains of 4.0%percent4.04.0\\% on average while using 70%percent7070\\% less supervised fine-tuning data than the current method. Further studies investigate various components of STIC and highlight its potential to leverage vast quantities of unlabeled images for self-training. Code and data are made publicly available.",
+        "sections": {
+          "1 Introduction": [
+            "Learn to explain: Multimodal reasoning via thought chains for science question answering",
+            "Visual instruction tuning",
+            "Towards vqa models that can read",
+            "Learning transferable visual models from natural language supervision",
+            "Vicuna: An open-source chatbot impressing gpt-4 with 90%* chatgpt quality.",
+            "Improved baselines with visual instruction tuning",
+            "Microsoft coco: Common objects in context",
+            "Llama 2: Open foundation and fine-tuned chat models",
+            "Mmbench: Is your multi-modal model an all-around player?",
+            "Aligning modalities in vision large language models via preference fine-tuning",
+            "Llama-adapter v2: Parameter-efficient visual instruction model",
+            "Chartqa: A benchmark for question answering about charts with visual and logical reasoning",
+            "Mm-vet: Evaluating large multimodal models for integrated capabilities",
+            "Gpt-4 technical report.",
+            "Mathvista: Evaluating mathematical reasoning of foundation models in visual contexts",
+            "Gpt-4v(ision) system card.",
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "Self-play fine-tuning converts weak language models to strong language models",
+            "Llava-next: Improved reasoning, ocr, and world knowledge."
+          ],
+          "2 Related Work Vision language models (VLMs).": [
+            "Llama 2: Open foundation and fine-tuned chat models",
+            "Instructblip: Towards general-purpose vision-language models with instruction tuning",
+            "Learning transferable visual models from natural language supervision",
+            "Grok-1.5 vision preview",
+            "Llama-adapter v2: Parameter-efficient visual instruction model",
+            "LXMERT: Learning cross-modality encoder representations from transformers",
+            "Visual instruction tuning",
+            "Vicuna: An open-source chatbot impressing gpt-4 with 90%* chatgpt quality.",
+            "Qwen-vl: A versatile vision-language model for understanding, localization, text reading, and beyond.",
+            "Anthropic (2024). The claude 3 model family: Opus, sonnet, haiku.",
+            "Mm1: Methods, analysis & insights from multimodal llm pre-training",
+            "Internvl: Scaling up vision foundation models and aligning for generic visual-linguistic tasks",
+            "Sphinx-x: Scaling data and parameters for a family of multi-modal large language models",
+            "Gpt-4v(ision) system card."
+          ],
+          "2 Related Work Alignment fine-tuning.": [
+            "The cringe loss: Learning what language not to model",
+            "Aligning large multimodal models with factually augmented rlhf",
+            "Proximal policy optimization algorithms",
+            "Aligning modalities in vision large language models via preference fine-tuning",
+            "Training a helpful and harmless assistant with reinforcement learning from human feedback",
+            "Training language models to follow instructions with human feedback",
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "Slic-hf: Sequence likelihood calibration with human feedback"
+          ],
+          "2 Related Work Self-improving language models.": [
+            "Exploiting asymmetry for synthetic training data generation: Synthie and the case of information extraction",
+            "Solar 10.7 b: Scaling large language models with simple yet effective depth up-scaling",
+            "Self-play fine-tuning converts weak language models to strong language models",
+            "Rephrase and respond: Let large language models ask better questions for themselves"
+          ],
+          "3 Problem Setting and Preliminaries Alignment fine-tuning.": [
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "Training a helpful and harmless assistant with reinforcement learning from human feedback"
+          ],
+          "3 Problem Setting and Preliminaries Self-play fine-tuning.": [
+            "Self-play fine-tuning converts weak language models to strong language models"
+          ],
+          "4 Our Method: STIC": [
+            "Aligning large multimodal models with factually augmented rlhf",
+            "Llava-next: Improved reasoning, ocr, and world knowledge."
+          ],
+          "4 Our Method: STIC Stage 1: Image comprehension self-training.": [
+            "Iterative reasoning preference optimization",
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "Understanding transferable representation learning and zero-shot transfer in clip",
+            "Large-margin contrastive learning with distance polarization regularizer"
+          ],
+          "5 Experiments 5.1 Experiment Setup": [
+            "Mmbench: Is your multi-modal model an all-around player?",
+            "Aligning modalities in vision large language models via preference fine-tuning",
+            "Lora: Low-rank adaptation of large language models",
+            "Learn to explain: Multimodal reasoning via thought chains for science question answering",
+            "Chartqa: A benchmark for question answering about charts with visual and logical reasoning",
+            "Vicuna: An open-source chatbot impressing gpt-4 with 90%* chatgpt quality.",
+            "Mm-vet: Evaluating large multimodal models for integrated capabilities",
+            "Improved baselines with visual instruction tuning",
+            "Microsoft coco: Common objects in context",
+            "Towards vqa models that can read",
+            "Mathvista: Evaluating mathematical reasoning of foundation models in visual contexts"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.004831227008253336,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "CLIP-DPO: Vision-Language Models as a Source of Preference for Fixing Hallucinations in LVLMs",
+        "arxiv_id": "2408.10433",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract Despite recent successes, LVLMs or Large Vision Language Models are prone to hallucinating details like objects and their properties or relations, limiting their real-world deployment. To address this and improve their robustness, we present CLIP-DPO, a preference optimization method that leverages contrastively pre-trained Vision-Language (VL) embedding models, such as CLIP, for DPO-based optimization of LVLMs. Unlike prior works tackling LVLM hallucinations, our method does not rely on paid-for APIs, and does not require additional training data or the deployment of other external LVLMs. Instead, starting from the initial pool of supervised fine-tuning data, we generate a diverse set of predictions, which are ranked based on their CLIP image-text similarities, and then filtered using a robust rule-based approach to obtain a set of positive and negative pairs for DPO-based training. We applied CLIP-DPO fine-tuning to the MobileVLM-v2 family of models and to LlaVA-1.5, in all cases observing significant improvements in terms of hallucination reduction over baseline models. We also observe better performance for zero-shot classification, suggesting improved grounding capabilities, and verify that the original performance on standard LVLM benchmarks is overall preserved.",
+        "sections": {
+          "1 Introduction": [
+            "An LLM-free multi-dimensional benchmark for MLLMs hallucination evaluation",
+            "Blip: Bootstrapping language-image pre-training for unified vision-language understanding and generation",
+            "Beyond hallucinations: Enhancing LVLMs through hallucination-aware direct preference optimization",
+            "Learning transferable visual models from natural language supervision",
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "Visual instruction tuning",
+            "Silkie: Preference distillation for large visual language models",
+            "Qwen-VL: A versatile vision-language model for understanding, localization, text reading, and beyond.",
+            "Introducing chatgpt",
+            "Gpt-4v(ision) system card"
+          ],
+          "2 Related work": [
+            "An LLM-free multi-dimensional benchmark for MLLMs hallucination evaluation",
+            "Detecting and preventing hallucinations in large vision language models",
+            "LLaVA-phi: Efficient multi-modal assistant with small language model",
+            "Learning to summarize with human feedback",
+            "Gemini: a family of highly capable multimodal models",
+            "Visual instruction tuning",
+            "mplug-owl: Modularization empowers large language models with multimodality",
+            "Gpt-4v(ision) system card",
+            "A general theoretical paradigm to understand learning from human preferences.",
+            "Multi-modal preference alignment remedies regression of visual instruction tuning on language model",
+            "Learning transferable visual models from natural language supervision",
+            "Lima: Less is more for alignment",
+            "Vicuna: An open-source chatbot impressing gpt-4 with 90%* chatgpt quality.",
+            "Qwen-VL: A versatile vision-language model for understanding, localization, text reading, and beyond.",
+            "Vcoder: Versatile vision encoders for multimodal large language models",
+            "BLIP-2: Bootstrapping language-image pre-training with frozen image encoders and large language models",
+            "Simple statistical gradient-following algorithms for connectionist reinforcement learning",
+            "LoRA: Low-rank adaptation of large language models",
+            "Beyond hallucinations: Enhancing LVLMs through hallucination-aware direct preference optimization",
+            "Ciem: Contrastive instruction evaluation method for better instruction tuning",
+            "Silkie: Preference distillation for large visual language models",
+            "Sharegpt4v: Improving large multi-modal models with better captions",
+            "InstructBLIP: Towards general-purpose vision-language models with instruction tuning",
+            "Language models are few-shot learners",
+            "Proximal policy optimization algorithms",
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "MobileVLM: A fast, reproducible and strong vision language assistant for mobile devices.",
+            "Llama: Open and efficient foundation language models",
+            "Evaluation and analysis of hallucination in large vision-language models",
+            "Grounding language models to images for multimodal inputs and outputs",
+            "Textbooks are all you need ii: phi-1.5 technical report",
+            "MobileVLM V2: Faster and stronger baseline for vision language model",
+            "Scaling instruction-finetuned language models"
+          ],
+          "3 Preliminaries 3.1 The Effectiveness of CLIP in Reducing Hallucinations": [
+            "Detailed caption dataset.",
+            "Improved baselines with visual instruction tuning",
+            "Gpt-4 technical report"
+          ],
+          "3 Preliminaries 3.2 Direct Preference Optimization": [
+            "Silkie: Preference distillation for large visual language models",
+            "Direct preference optimization: Your language model is secretly a reward model"
+          ],
+          "4 Method 4.1 Data Generation": [
+            "MobileVLM V2: Faster and stronger baseline for vision language model",
+            "Mistral 7b"
+          ],
+          "5 Implementation details": [
+            "Data filtering networks",
+            "Learning transferable visual models from natural language supervision",
+            "MobileVLM: A fast, reproducible and strong vision language assistant for mobile devices.",
+            "Visual instruction tuning",
+            "Vicuna: An open-source chatbot impressing gpt-4 with 90%* chatgpt quality.",
+            "Automatic differentiation in pytorch",
+            "MobileVLM V2: Faster and stronger baseline for vision language model",
+            "Decoupled weight decay regularization",
+            "Zero-infinity: Breaking the gpu memory wall for extreme scale deep learning"
+          ],
+          "6 Results": [
+            "An LLM-free multi-dimensional benchmark for MLLMs hallucination evaluation",
+            "LLaVA-phi: Efficient multi-modal assistant with small language model"
+          ],
+          "6 Results 6.1 Evaluation on hallucinations": [
+            "An LLM-free multi-dimensional benchmark for MLLMs hallucination evaluation",
+            "Qwen-VL: A versatile vision-language model for understanding, localization, text reading, and beyond.",
+            "Beyond hallucinations: Enhancing LVLMs through hallucination-aware direct preference optimization"
+          ],
+          "6 Results 6.2 Zero-shot image classification": [
+            "Automated flower classification over a large number of classes",
+            "Sun database: Large-scale scene recognition from abbey to zoo",
+            "Cats and dogs",
+            "Learning transferable visual models from natural language supervision",
+            "Learning generative visual models from few training examples: An incremental Bayesian approach tested on 101 object categories",
+            "ImageNet: A large-scale hierarchical image database",
+            "Food-101\u2013mining discriminative components with random forests",
+            "EuroSAT: A novel dataset and deep learning benchmark for land use and land cover classification",
+            "Ucf101: A dataset of 101 human actions classes from videos in the wild",
+            "3D object representations for fine-grained categorization",
+            "Sigmoid loss for language image pre-training"
+          ],
+          "6 Results 6.3 Additional evaluations": [
+            "MMBench: Is your multi-modal model an all-around player?",
+            "Learn to explain: Multimodal reasoning via thought chains for science question answering",
+            "Mme: A comprehensive evaluation benchmark for multimodal large language models.",
+            "Improved baselines with visual instruction tuning",
+            "Gqa: A new dataset for real-world visual reasoning and compositional question answering",
+            "Sharegpt4v: Improving large multi-modal models with better captions",
+            "Towards VQA models that can read"
+          ],
+          "7 Ablation studies 7.1 Effect of DPO loss variant": [
+            "Kto: Model alignment as prospect theoretic optimization",
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "Statistical rejection sampling improves preference optimization",
+            "A note on dpo with noisy preferences & relationship to ipo",
+            "A general theoretical paradigm to understand learning from human preferences."
+          ],
+          "7 Ablation studies 7.2 Effect of CLIP scorer": [
+            "Data filtering networks",
+            "Sigmoid loss for language image pre-training",
+            "Learning transferable visual models from natural language supervision"
+          ],
+          "8 Conclusions": [
+            "Learning transferable visual models from natural language supervision"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.9955398440361023,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Direct Preference Optimization of Video Large Multimodal Models from Language Model Reward",
+        "arxiv_id": "2404.01258",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract Preference modeling techniques, such as direct preference optimization (DPO), has shown effective in enhancing the generalization abilities of large language model (LLM). However, in tasks involving video instruction-following, providing informative feedback, especially for detecting hallucinations in generated responses, remains a significant challenge. Previous studies have explored using large large multimodal models (LMMs) as reward models to guide preference modeling, but their ability to accurately assess the factuality of generated responses compared to corresponding videos has not been conclusively established. This paper introduces a novel framework that utilizes detailed video captions as a proxy of video content, enabling language models to incorporate this information as supporting evidence for scoring video Question Answering (QA) predictions. Our approach demonstrates robust alignment with OpenAI GPT-4V model\u2019s reward mechanism, which directly takes video frames as input. Furthermore, we show that applying this tailored reward through DPO significantly improves the performance of video LMMs on video QA tasks.",
+        "sections": {
+          "1 Introduction": [
+            "Aligning large multimodal models with factually augmented rlhf",
+            "Training language models to follow instructions with human feedback",
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "Visual instruction tuning",
+            "Silkie: Preference distillation for large visual language models",
+            "Tuning large multimodal models for videos using reinforcement learning from ai feedback"
+          ],
+          "2 Related Work 2.1 Large Multi-Modal Models": [
+            "Visual instruction tuning",
+            "Video-llava: Learning united visual representation by alignment before projection"
+          ],
+          "2 Related Work 2.2 Video-text Datasets": [
+            "Howtocaption: Prompting llms to transform video annotations at scale",
+            "Videochat: Chat-centric video understanding",
+            "Frozen in time: A joint video and image encoder for end-to-end retrieval"
+          ],
+          "2 Related Work 2.3 Preference Modeling for LMMs": [
+            "Aligning large multimodal models with factually augmented rlhf",
+            "Silkie: Preference distillation for large visual language models",
+            "Beyond hallucinations: Enhancing lvlms through hallucination-aware direct preference optimization",
+            "Tuning large multimodal models for videos using reinforcement learning from ai feedback"
+          ],
+          "3 Method 3.2 SFT with Generated Video Instruction Data from Detailed Caption": [
+            "Videochat: Chat-centric video understanding"
+          ],
+          "3 Method 3.3 DPO with Feedback from Language Model as Reward": [
+            "Aligning large multimodal models with factually augmented rlhf",
+            "Silkie: Preference distillation for large visual language models"
+          ],
+          "4 Assessment of Evaluator with GPT-4V Caption as Evidence": [
+            "Sotopia: Interactive evaluation for social intelligence in language agents"
+          ],
+          "5 Experimental Results 5.1 Model Architecture, Image Data Mix-up and Training Pipelines": [
+            "Camels in a changing climate: Enhancing lm adaptation with tulu 2",
+            "Vicuna: An open-source chatbot impressing gpt-4 with 90%* chatgpt quality.",
+            "Video-llava: Learning united visual representation by alignment before projection",
+            "Languagebind: Extending video-language pretraining to n-modality by language-based semantic alignment",
+            "Allava: Harnessing gpt4v-synthesized data for a lite vision-language model"
+          ],
+          "5 Experimental Results 5.2 Existing Benchmark Evaluation": [
+            "Videochat: Chat-centric video understanding",
+            "Zero-shot video question answering via frozen bidirectional language models",
+            "Llama-vid: An image is worth 2 tokens in large language models",
+            "Video-llava: Learning united visual representation by alignment before projection",
+            "Video-llama: An instruction-tuned audio-visual language model for video understanding",
+            "Msr-vtt: A large video description dataset for bridging video and language",
+            "Chat-univi: Unified visual representation empowers large language models with image and video understanding.",
+            "Tgif-qa: Toward spatio-temporal reasoning in visual question answering",
+            "Video-chatgpt: Towards detailed video understanding via large vision and language models",
+            "Collecting highly parallel data for paraphrase evaluation"
+          ],
+          "5 Experimental Results 5.3 Proposed Benchmark Evaluation with GPT-4V Caption as Supporting Evidence": [
+            "V-star: Training verifiers for self-taught reasoners",
+            "Self-play fine-tuning converts weak language models to strong language models"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.9743337035179138,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Large Language Models for Data Annotation: A Survey",
+        "arxiv_id": "2402.13446",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Data annotation is the labeling or tagging of raw data with relevant information, essential for improving the efficacy of machine learning models. The process, however, is labor-intensive and expensive. The emergence of advanced Large Language Models (LLMs), exemplified by GPT-4, presents an unprecedented opportunity to revolutionize and automate the intricate process of data annotation. While existing surveys have extensively covered LLM architecture, training, and general applications, this paper uniquely focuses on their specific utility for data annotation. This survey contributes to three core aspects: LLM-Based Data Annotation, Assessing LLM-generated Annotations, and Learning with LLM-generated annotations. Furthermore, the paper includes an in-depth taxonomy of methodologies employing LLMs for data annotation, a comprehensive review of learning strategies for models incorporating LLM-generated annotations, and a detailed discussion on primary challenges and limitations associated with using LLMs for data annotation. As a key guide, this survey aims to direct researchers and practitioners in exploring the potential of the latest LLMs for data annotation, fostering future advancements in this critical domain. We provide a comprehensive papers list at https://github.com/Zhen-Tan-dmml/LLM4Annotation.git. ",
+        "sections": {
+          "1 Introduction": [
+            "Llama 2: Open foundation and fine-tuned chat models",
+            "Visual instruction tuning",
+            "Temporal data meets llm\u2013explainable financial time series forecasting",
+            "Automatic chain of thought prompting in large language models",
+            "Gemini: a family of highly capable multimodal models",
+            "Preference ranking optimization for human alignment",
+            "A survey on evaluation of large language models.",
+            "Aligning large language models with human: A survey",
+            "Gpt-4 technical report",
+            "Large language models are zero-shot rankers for recommender systems",
+            "Revisiting relation extraction in the era of large language models",
+            "Large language models meet nl2code: A survey",
+            "Teaching models to express their uncertainty in words",
+            "A survey of large language models.",
+            "Semantic role labeling with pretrained language models for known and unknown predicates",
+            "Generate rather than retrieve: Large language models are strong context generators",
+            "Recent advances in natural language processing via large pre-trained language models: A survey",
+            "Knowledge editing for large language models: A survey",
+            "Large language models in medicine",
+            "Trustworthy llms: a survey and guideline for evaluating large language models\u2019 alignment"
+          ],
+          "2 Notations and Preliminaries 2.1 Problem framework": [
+            "Llama: Open and efficient foundation language models",
+            "Gpt-4 technical report",
+            "Bert: Pre-training of deep bidirectional transformers for language understanding"
+          ],
+          "2 Notations and Preliminaries 2.3 Prompt & Tuning Techniques for LLMs": [
+            "Alpacafarm: A simulation framework for methods that learn from human feedback",
+            "Large language models are zero-shot reasoners"
+          ],
+          "3 LLM-Based Data Annotation 3.1 Manually Engineered Prompts": [
+            "Constrained language models yield few-shot semantic parsers",
+            "Zerogen: Efficient zero-shot learning via dataset generation",
+            "Raft: Reward ranked finetuning for generative foundation model alignment",
+            "Pre-train, prompt, and predict: A systematic survey of prompting methods in natural language processing",
+            "Learning to retrieve prompts for in-context learning",
+            "Small models are valuable plug-ins for large language models"
+          ],
+          "3 LLM-Based Data Annotation 3.2 Alignment via Pairwise Feedback": [
+            "Fine-tuning language models from human preferences",
+            "Fine-tuning language models to find agreement among humans with diverse preferences",
+            "A survey of large language models.",
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "Learning to summarize with human feedback",
+            "Why can gpt learn in-context? language models secretly perform gradient descent as meta-optimizers.",
+            "Improving alignment of dialogue agents via targeted human judgements",
+            "A general language assistant as a laboratory for alignment",
+            "Teaching language models to support answers with verified quotes"
+          ],
+          "4 Assessing LLM-Generated Annotations 4.1 Evaluating LLM-Generated Annotations": [
+            "Lmturk: Few-shot learners as crowdsourcing workers in a language-model-as-a-service framework",
+            "Disco: Distilling counterfactuals with large language models",
+            "Codegen: An open large language model for code with multi-turn program synthesis",
+            "Open-source large language models outperform crowd workers and approach chatgpt in text-annotation tasks",
+            "Unnatural instructions: Tuning language models with (almost) no human labor",
+            "Squad: 100,000+ questions for machine comprehension of text",
+            "The turking test: Can language models understand instructions?",
+            "Newsqa: A machine comprehension dataset",
+            "A large annotated corpus for learning natural language inference"
+          ],
+          "4 Assessing LLM-Generated Annotations 4.2 Data Selection via Active Learning": [
+            "Active learning for sequence tagging with deep pre-trained models and bayesian uncertainty estimates",
+            "Large language models as annotators: Enhancing generalization of nlp models at minimal cost",
+            "Prefer to classify: Improving text classifiers via auxiliary preference learning"
+          ],
+          "5 Learning with LLM-Generated Annotations 5.1 Target Domain Inference: Direct Utilization of Annotations": [
+            "An information-theoretic approach to prompt engineering without ground truth labels",
+            "Emergent abilities of large language models",
+            "Interpreting pretrained language models via concept bottlenecks",
+            "Learning transferable visual models from natural language supervision"
+          ],
+          "5 Learning with LLM-Generated Annotations 5.2 Knowledge Distillation: Bridging LLM and task-specific models": [
+            "Distilling large language models for biomedical knowledge extraction: A case study on adverse drug events",
+            "Web content filtering through knowledge distillation of large language models",
+            "Teaching small language models to reason",
+            "Distilling step-by-step! outperforming larger language models with less training data and smaller model sizes",
+            "Textbooks are all you need.",
+            "Lion: Adversarial distillation of closed-source large language model",
+            "Stanford alpaca: An instruction-following llama model",
+            "Large language model distillation doesn\u2019t need a teacher",
+            "Gpt4all: Training an assistant-style chatbot with large scale data distillation from gpt-3.5-turbo",
+            "Gkd: A general knowledge distillation framework for large-scale pre-trained language model",
+            "Specializing smaller language models towards multi-step reasoning",
+            "Knowledge distillation of large language models"
+          ],
+          "5 Learning with LLM-Generated Annotations 5.3 Harnessing LLM Annotations for Fine-Tuning and Prompting": [
+            "Offline rl for natural language generation with implicit language q learning",
+            "Stanford alpaca: An instruction-following llama model.",
+            "Selective annotation makes language models better few-shot learners",
+            "Is prompt all you need? no. a comprehensive and broader view of instruction learning",
+            "Multitask prompted training enables zero-shot task generalization",
+            "Rlaif: Scaling reinforcement learning from human feedback with ai feedback",
+            "Ctrl: A conditional transformer language model for controllable generation",
+            "Fine-tuning language models from human preferences",
+            "Commonsenseqa: A question answering challenge targeting commonsense knowledge",
+            "Automatic chain of thought prompting in large language models",
+            "A survey for in-context learning",
+            "Scott: Self-consistent chain-of-thought distillation",
+            "Improving in-context few-shot learning via self-supervised training",
+            "Scaling instruction-finetuned language models",
+            "Super-naturalinstructions: Generalization via declarative instructions on 1600+ nlp tasks.",
+            "Rationale-augmented ensembles in language models",
+            "Gpt-4 technical report",
+            "Instruction induction: From few examples to natural language task descriptions",
+            "Active learning principles for in-context learning with large language models",
+            "Self-instruct: Aligning language model with self generated instructions",
+            "Chain-of-thought prompting elicits reasoning in large language models",
+            "Large language models are zero-shot reasoners",
+            "A diverse corpus for evaluating and developing english math word problem solvers",
+            "Training language models to follow instructions with human feedback",
+            "Teaching language models to support answers with verified quotes",
+            "Deep reinforcement learning from human preferences",
+            "A survey of large language models.",
+            "Synthetic prompting: Generating chain-of-thought demonstrations for large language models",
+            "Language models are few-shot learners",
+            "Proximal policy optimization algorithms",
+            "Can large language models be an alternative to human evaluations?",
+            "Llama: Open and efficient foundation language models",
+            "Specializing smaller language models towards multi-step reasoning"
+          ],
+          "6 Challenges": [
+            "Bloomberggpt: A large language model for finance",
+            "Chatlaw: Open-source legal large language model with integrated external knowledge bases",
+            "The curse of recursion: Training on generated data makes models forget",
+            "Gpts are gpts: An early look at the labor market impact potential of large language models",
+            "Ai transparency in the age of llms: A human-centered research roadmap",
+            "Fingpt: Open-source financial large language models",
+            "Artificial hallucinations in chatgpt: implications in scientific writing",
+            "Can ai language models replace human participants?",
+            "Is chatgpt good at search? investigating large language models as re-ranking agent",
+            "Disinformation detection: An evolving challenge in the age of llms",
+            "The false promise of imitating proprietary llms",
+            "Self-consuming generative models go mad"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.00015929857909213752,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Smaug: Fixing Failure Modes of Preference Optimisation with DPO-Positive",
+        "arxiv_id": "2402.13228",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Direct Preference Optimisation (DPO) is effective at significantly improving the performance of large language models (LLMs) on downstream tasks such as reasoning, summarisation, and alignment. Using pairs of preferred and dispreferred data, DPO models the relative probability of picking one response over another. In this work, first we show theoretically that the standard DPO loss can lead to a reduction of the model\u2019s likelihood of the preferred examples, as long as the relative probability between the preferred and dispreferred classes increases. We then show empirically that this phenomenon occurs when fine-tuning LLMs on common datasets, especially datasets in which the edit distance between pairs of completions is low. Using these insights, we design DPO-Positive (DPOP), a new loss function and training procedure which avoids this failure mode. Surprisingly, we also find that DPOP significantly outperforms DPO across a wide variety of datasets and downstream tasks, including datasets with high edit distances between completions. By fine-tuning with DPOP, we create and release Smaug-34B and Smaug-72B, which achieve state-of-the-art open-source performance. Notably, Smaug-72B is nearly 2% better than any other open-source model on the HuggingFace Open LLM Leaderboard and becomes the first open-source LLM to surpass an average accuracy of 80%. ",
+        "sections": {
+          "1 Introduction": [
+            "Measuring coding challenge competence with apps",
+            "Training verifiers to solve math word problems",
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "Making large language models better reasoners with alignment",
+            "Think you have solved question answering? try arc, the ai2 reasoning challenge",
+            "Open llm leaderboard",
+            "HellaSwag: Can a machine really finish your sentence?",
+            "Judging llm-as-a-judge with mt-bench and chatbot arena",
+            "Metamath: Bootstrap your own mathematical questions for large language models",
+            "Deep reinforcement learning from human preferences"
+          ],
+          "2 Background and Related Work": [
+            "Reliability and learnability of human bandit feedback for sequence-to-sequence reinforcement learning",
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "Scaling instruction-finetuned language models",
+            "Learning to summarize with human feedback",
+            "Language models are unsupervised multitask learners.",
+            "Zephyr: Direct distillation of lm alignment",
+            "Training language models to follow instructions with human feedback"
+          ],
+          "2 Background and Related Work RLHF": [
+            "Rank analysis of incomplete block designs: I. the method of paired comparisons"
+          ],
+          "2 Background and Related Work DPO": [
+            "The analysis of permutations",
+            "Direct preference optimization: Your language model is secretly a reward model"
+          ],
+          "2 Background and Related Work IPO": [
+            "A general theoretical paradigm to understand learning from human preferences"
+          ],
+          "3 Failure Mode of DPO": [
+            "Alpaca: A strong, replicable instruction-following model",
+            "Camels in a changing climate: Enhancing lm adaptation with tulu 2"
+          ],
+          "4 DPOP Connection to Contrastive Loss": [
+            "Representation learning with contrastive predictive coding"
+          ],
+          "5 DPOP Datasets & Experiments 5.1 Dataset Creation": [
+            "Training verifiers to solve math word problems",
+            "Learning from mistakes makes llm better reasoner",
+            "Think you have solved question answering? try arc, the ai2 reasoning challenge",
+            "Palm: Scaling language modeling with pathways",
+            "HellaSwag: Can a machine really finish your sentence?",
+            "Metamath: Bootstrap your own mathematical questions for large language models"
+          ],
+          "5 DPOP Datasets & Experiments 5.2 Experiments": [
+            "Mistral 7b, 2023.",
+            "A framework for few-shot language model evaluation"
+          ],
+          "6 Smaug 6.1 Smaug-34B and Smaug-72B": [
+            "Training verifiers to solve math word problems",
+            "Qwen technical report",
+            "Llama 2: Open foundation and fine-tuned chat models",
+            "01.AI. Yi-34b-200k, 2024",
+            "Think you have solved question answering? try arc, the ai2 reasoning challenge",
+            "Open llm leaderboard",
+            "Judging llm-as-a-judge with mt-bench and chatbot arena",
+            "Measuring coding challenge competence with apps",
+            "Orca-chat",
+            "Truthy dpo",
+            "Gpt-4 technical report",
+            "Z. Sharegpt_vicuna_unfiltered, 2024",
+            "Metamath: Bootstrap your own mathematical questions for large language models",
+            "Ultrafeedback binarized clean",
+            "Bagel-34b-v0.2",
+            "Decoupled weight decay regularization",
+            "A framework for few-shot language model evaluation",
+            "HellaSwag: Can a machine really finish your sentence?",
+            "Winogrande: An adversarial winograd schema challenge at scale",
+            "Orca dpo pairs",
+            "Truthfulqa: Measuring how models mimic human falsehoods",
+            "Momo-72b-lora-1.8.7-dpo, 2024"
+          ],
+          "6 Smaug 6.2 Comparison using 7B Model": [
+            "Llama 2: Open foundation and fine-tuned chat models"
+          ],
+          "7 Conclusion, Limitations, and Impact": [
+            "Gpt-4 technical report"
+          ],
+          "7 Conclusion, Limitations, and Impact Broader Impact": [
+            "Gpt-4 technical report",
+            "A survey of safety and trustworthiness of large language models through the lens of verification and validation"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.014645437709987164,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Beyond Hallucinations: Enhancing LVLMs through Hallucination-Aware Direct Preference Optimization",
+        "arxiv_id": "2311.16839",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Multimodal large language models have made significant advancements in recent years, yet they still suffer from a common issue known as the \u201challucination problem\u201d, in which the models generate textual descriptions that inaccurately depict or entirely fabricate content from associated images. This paper introduces a novel solution, Hallucination-Aware Direct Preference Optimization (HA-DPO), which reframes the hallucination problem as a preference selection task. The model is trained to favor the non-hallucinating response when presented with two responses of the same image (one accurate and one hallucinatory). Furthermore, this paper proposes an efficient pipeline for constructing positive\u00a0(non-hallucinatory) and negative\u00a0(hallucinatory) sample pairs, ensuring a high-quality, style-consistent dataset for robust preference learning. When applied to three mainstream multimodal models, HA-DPO significantly reduced hallucination issues and amplified the models\u2019 generalization capabilities. Notably, the MiniGPT-4 model, when enhanced with HA-DPO, demonstrated a substantial improvement: POPE accuracy rose from 51.13% to 86.13% (an absolute improvement of 35%), and the MME score surged from 932.00 to 1326.46 (a relative improvement of 42.32%). The codes, models, and datasets are made accessible at https://opendatalab.github.io/HA-DPO. ",
+        "sections": {
+          "1 Introduction": [
+            "Woodpecker: Hallucination correction for multimodal large language models",
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "Object hallucination in image captioning",
+            "Training a helpful and harmless assistant with reinforcement learning from human feedback",
+            "Minigpt-4: Enhancing vision-language understanding with advanced large language models",
+            "Analyzing and mitigating object hallucination in large vision-language models",
+            "Aligning large multi-modal model with robust instruction tuning",
+            "Evaluating object hallucination in large vision-language models"
+          ],
+          "2 Related Work 2.1 Hallucination in LLMs": [
+            "GPT-4 technical report",
+            "LIMA: less is more for alignment",
+            "Investigating the factual knowledge boundary of large language models with retrieval augmentation",
+            "Llama 2: Open foundation and fine-tuned chat models.",
+            "Sources of hallucination by large language models on inference tasks",
+            "The refinedweb dataset for falcon LLM: outperforming curated corpora with web data, and web data only.",
+            "Training language models to follow instructions with human feedback"
+          ],
+          "2 Related Work 2.2 Hallucination in LVLMs": [
+            "VIGC: visual instruction generation and correction",
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "Aligning large multimodal models with factually augmented RLHF",
+            "Aligning large multi-modal model with robust instruction tuning",
+            "Evaluating object hallucination in large vision-language models",
+            "Instructblip: Towards general-purpose vision-language models with instruction tuning",
+            "Deep reinforcement learning from human preferences"
+          ],
+          "2 Related Work 2.3 Human-preference Learning": [
+            "GPT-4 technical report",
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "Training a helpful and harmless assistant with reinforcement learning from human feedback",
+            "Proximal policy optimization algorithms",
+            "Training language models to follow instructions with human feedback",
+            "Language models are few-shot learners."
+          ],
+          "3 Our Method 3.1 Multimodal Hallucination-Aware DPO": [
+            "Training language models to follow instructions with human feedback"
+          ],
+          "3 Our Method 3.2 Dataset Construction with Style Consistency": [
+            "Visual genome: Connecting language and vision using crowdsourced dense image annotations"
+          ],
+          "3 Our Method 3.3 Style Consistency Analysis": [
+            "Direct preference optimization: Your language model is secretly a reward model"
+          ],
+          "4 Sentencel-level Hallucination Ratio\u00a0(SHR) 4.1 Benchmark Details": [
+            "Evaluating object hallucination in large vision-language models"
+          ],
+          "5 Experiments 5.1 Data and Evaluation": [
+            "Visual genome: Connecting language and vision using crowdsourced dense image annotations"
+          ],
+          "5 Experiments 5.2 Implementation Details": [
+            "Improved baselines with visual instruction tuning",
+            "Instructblip: Towards general-purpose vision-language models with instruction tuning",
+            "Minigpt-4: Enhancing vision-language understanding with advanced large language models",
+            "Lora: Low-rank adaptation of large language models"
+          ],
+          "5 Experiments 5.4 Main Results": [
+            "MME: A comprehensive evaluation benchmark for multimodal large language models"
+          ],
+          "7 Dataset": [
+            "Visual genome: Connecting language and vision using crowdsourced dense image annotations"
+          ],
+          "10 Additional Style-consistency Analysis": [
+            "Direct preference optimization: Your language model is secretly a reward model"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.9889318943023682,
+        "extra": {
+          "expand": "not expand"
+        }
+      }
+    ],
+    "Effects of DPO training on large-scale vision-language models": [
+      {
+        "title": "Mitigating Multilingual Hallucination in Large Vision-Language Models",
+        "arxiv_id": "2408.00550",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract While Large Vision-Language Models (LVLMs) have exhibited remarkable capabilities across a wide range of tasks, they suffer from hallucination problems, where models generate plausible yet incorrect answers given the input image-query pair. This hallucination phenomenon is even more severe when querying the image in non-English languages, while existing methods for mitigating hallucinations in LVLMs only consider the English scenarios. In this paper, we make the first attempt to mitigate this important multilingual hallucination in LVLMs. With thorough experiment analysis, we found that multilingual hallucination in LVLMs is a systemic problem that could arise from deficiencies in multilingual capabilities or inadequate multimodal abilities. To this end, we propose a two-stage Multilingual Hallucination Removal (MHR) framework for LVLMs, aiming to improve resistance to hallucination for both high-resource and low-resource languages. Specifically, in the first stage, considering that most non-English languages can not follow instructions well and output non-sense answers given the input image, we boost multilingual instruction following ability with a multilingual supervised fine-tuning. The second phase is aimed at enhancing the LVLM\u2019s ability to diminish multilingual hallucinations. Instead of relying on the intricate manual annotations of multilingual resources, we fully leverage the inherent capabilities of the LVLM and propose a novel cross-lingual alignment method, which generates multiple responses for each image-query input and then identifies the hallucination-aware pairs for each language. These data pairs are finally used for direct preference optimization to prompt the LVLMs to favor non-hallucinating responses. Experimental results show that our MHR achieves a substantial reduction in hallucination generation for LVLMs. Notably, on our extended multilingual POPE benchmark, our framework delivers an average increase of 19.0% in accuracy across 13 different languages. Our code and model weights are available at https://github.com/ssmisya/MHR.",
+        "sections": {
+          "I Introduction": [
+            "Beyond hallucinations: Enhancing lvlms through hallucination-aware direct preference optimization",
+            "Lm-nav: Robotic navigation with large pre-trained models of language, vision, and action",
+            "Mitigating hallucination in large multi-modal models via robust instruction tuning",
+            "Visual instruction tuning"
+          ],
+          "II Related Work II-A Large Visual-Language Models": [
+            "Llama 2: Open foundation and fine-tuned chat models",
+            "Instructblip: Towards general-purpose vision-language models with instruction tuning",
+            "Minigpt-4: Enhancing vision-language understanding with advanced large language models",
+            "Timo: Towards better temporal reasoning for language models",
+            "Visual instruction tuning",
+            "Vicuna: An open-source chatbot impressing gpt-4 with 90%* chatgpt quality",
+            "Cogvlm: Visual expert for pretrained language models"
+          ],
+          "II Related Work II-B Hallucination in LVLMs": [
+            "Rlhf-v: Towards trustworthy mllms via behavior alignment from fine-grained correctional human feedback",
+            "Aligning large multimodal models with factually augmented rlhf",
+            "Mitigating hallucination in large multi-modal models via robust instruction tuning",
+            "Beyond hallucinations: Enhancing lvlms through hallucination-aware direct preference optimization"
+          ],
+          "II Related Work II-C Multilingual Large Vision-Language Models": [
+            "Llama 2: Open foundation and fine-tuned chat models",
+            "Visual instruction tuning",
+            "Palo: A polyglot large multimodal model for 5b people",
+            "Blip-2: Bootstrapping language-image pre-training with frozen image encoders and large language models",
+            "mblip: Efficient bootstrapping of multilingual vision-llms"
+          ],
+          "III Method III-A Multilingual Supervised Fine-tuning": [
+            "Palo: A polyglot large multimodal model for 5b people"
+          ],
+          "III Method III-B Construct Hallucination-Aware Data": [
+            "No language left behind: Scaling human-centered machine translation",
+            "Beyond hallucinations: Enhancing lvlms through hallucination-aware direct preference optimization",
+            "Bleu: a method for automatic evaluation of machine translation"
+          ],
+          "IV Experiment IV-A Evaluation Metrics": [
+            "A-okvqa: A benchmark for visual question answering using world knowledge",
+            "Evaluating object hallucination in large vision-language models",
+            "An llm-free multi-dimensional benchmark for mllms hallucination evaluation",
+            "Gqa: A new dataset for real-world visual reasoning and compositional question answering",
+            "Microsoft coco: Common objects in context",
+            "Mitigating object hallucinations in large vision-language models through visual contrastive decoding",
+            "Object hallucination in image captioning",
+            "Mme: A comprehensive evaluation benchmark for multimodal large language models"
+          ],
+          "IV Experiment IV-B Implementation Details": [
+            "Cogvlm: Visual expert for pretrained language models",
+            "Beyond hallucinations: Enhancing lvlms through hallucination-aware direct preference optimization",
+            "Palo: A polyglot large multimodal model for 5b people",
+            "Decoupled weight decay regularization"
+          ],
+          "IV Experiment IV-C Main Results": [
+            "Multilingual instruction tuning with just a pinch of multilinguality",
+            "mblip: Efficient bootstrapping of multilingual vision-llms"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.008830082602798939,
+        "extra": {
+          "expand": "not expand"
+        }
+      }
+    ],
+    "Survey papers on DPO training for vision-language models": [
+      {
+        "title": "Provably Robust DPO: Aligning Language Models with Noisy Feedback",
+        "arxiv_id": "2403.00409",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Learning from preference-based feedback has recently gained traction as a promising approach to align language models with human interests. While these aligned generative models have demonstrated impressive capabilities across various tasks, their dependence on high-quality human preference data poses a bottleneck in practical applications. Specifically, noisy (incorrect and ambiguous) preference pairs in the dataset might restrict the language models from capturing human intent accurately. While practitioners have recently proposed heuristics to mitigate the effect of noisy preferences, a complete theoretical understanding of their workings remain elusive. In this work, we aim to bridge this gap by by introducing a general framework for policy optimization in the presence of random preference flips. We focus on the direct preference optimization (DPO) algorithm in particular since it assumes that preferences adhere to the Bradley-Terry-Luce (BTL) model, raising concerns about the impact of noisy data on the learned policy. We design a novel loss function, which de-bias the effect of noise on average, making a policy trained by minimizing that loss robust to the noise. Under log-linear parameterization of the policy class and assuming good feature coverage of the SFT policy, we prove that the sub-optimality gap of the proposed robust DPO (rDPO) policy compared to the optimal policy is of the order O\u200b(11\u22122\u200b\u03b5\u200bdn)\ud835\udc42112\ud835\udf00\ud835\udc51\ud835\udc5bO(\\frac{1}{1-2\\varepsilon}\\sqrt{\\frac{d}{n}}), where \u03b5<1/2\ud835\udf0012\\varepsilon<1/2 is flip rate of labels, d\ud835\udc51d is policy parameter dimension and n\ud835\udc5bn is size of dataset. Our experiments on IMDb sentiment generation and Anthropic\u2019s helpful-harmless dataset shows that rDPO is robust to noise in preference labels compared to vanilla DPO and other heuristics proposed by practitioners. ",
+        "sections": {
+          "1 Introduction": [
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "A note on dpo with noisy preferences and relationship to ipo",
+            "Training a helpful and harmless assistant with reinforcement learning from human feedback",
+            "A survey of reinforcement learning from human feedback",
+            "Secrets of rlhf in large language models part ii: Reward modeling",
+            "Secrets of rlhf in large language models part i: Ppo",
+            "Learning word vectors for sentiment analysis",
+            "Deep reinforcement learning from human preferences",
+            "The history and risks of reinforcement learning and human feedback"
+          ],
+          "1 Introduction 1.1 Related Work": [
+            "Slic-hf: Sequence likelihood calibration with human feedback",
+            "Learning with noisy labels",
+            "Statistical rejection sampling improves preference optimization",
+            "A general theoretical paradigm to understand learning from human preferences.",
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "Rrhf: Rank responses to align language models with human feedback without tears",
+            "Iterative data smoothing: Mitigating reward overfitting and overoptimization in rlhf",
+            "When does label smoothing help?",
+            "Making deep neural networks robust to label noise: A loss correction approach",
+            "Dueling rl: reinforcement learning with trajectory preferences"
+          ],
+          "2 Background and Problem Setup": [
+            "Learning with noisy labels",
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "Proximal policy optimization algorithms",
+            "Principled reinforcement learning with human feedback from pairwise or k\ud835\udc58k-wise comparisons",
+            "Rank analysis of incomplete block designs: I. the method of paired comparisons"
+          ],
+          "3 Our Approach: Robust DPO": [
+            "A note on dpo with noisy preferences and relationship to ipo",
+            "Secrets of rlhf in large language models part ii: Reward modeling",
+            "When does label smoothing help?"
+          ],
+          "3 Our Approach: Robust DPO 3.1 An Unbiased Loss Function": [
+            "Direct preference optimization: Your language model is secretly a reward model"
+          ],
+          "4 Theoretical Analysis": [
+            "Statistical rejection sampling improves preference optimization"
+          ],
+          "4 Theoretical Analysis 4.1 Estimation Error": [
+            "On the theory of policy gradient methods: Optimality, approximation, and distribution shift",
+            "Direct preference optimization: Your language model is secretly a reward model"
+          ],
+          "4 Theoretical Analysis 4.2 Performance Bounds of Learned Policy": [
+            "On the theory of policy gradient methods: Optimality, approximation, and distribution shift",
+            "What are the statistical limits of offline rl with linear function approximation?",
+            "Transformer reinforcement learning"
+          ],
+          "5 Generalizations and Extensions": [
+            "Slic-hf: Sequence likelihood calibration with human feedback",
+            "How to analyze paired comparison data",
+            "A general theoretical paradigm to understand learning from human preferences.",
+            "The analysis of permutations",
+            "Proximal policy optimization algorithms",
+            "A law of comparative judgment"
+          ],
+          "6 Experiments": [
+            "Learning word vectors for sentiment analysis",
+            "Training a helpful and harmless assistant with reinforcement learning from human feedback",
+            "Secrets of rlhf in large language models part ii: Reward modeling",
+            "Direct preference optimization: Your language model is secretly a reward model"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.0023710448294878006,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "A Survey on Hallucination in Large Vision-Language Models",
+        "arxiv_id": "2402.00253",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Recent development of Large Vision-Language Models (LVLMs) has attracted growing attention within the AI landscape for its practical implementation potential. However, \u201challucination\u201d, or more specifically, the misalignment between factual visual content and corresponding textual generation, poses a significant challenge of utilizing LVLMs. In this comprehensive survey, we dissect LVLM-related hallucinations in an attempt to establish an overview and facilitate future mitigation. Our scrutiny starts with a clarification of the concept of hallucinations in LVLMs, presenting a variety of hallucination symptoms and highlighting the unique challenges inherent in LVLM hallucinations. Subsequently, we outline the benchmarks and methodologies tailored specifically for evaluating hallucinations unique to LVLMs. Additionally, we delve into an investigation of the root causes of these hallucinations, encompassing insights from the training data and model components. We also critically review existing methods for mitigating hallucinations. The open questions and future directions pertaining to hallucinations within LVLMs are discussed to conclude this survey. ",
+        "sections": {
+          "1 Introduction": [
+            "Llama 2: Open foundation and fine-tuned chat models",
+            "Object hallucination in image captioning",
+            "A survey on hallucination in large language models: Principles, taxonomy, challenges, and open questions",
+            "Minigpt-4: Enhancing vision-language understanding with advanced large language models",
+            "Visual instruction tuning",
+            "Gpt-4 technical report",
+            "Llama: Open and efficient foundation language models",
+            "Improved baselines with visual instruction tuning"
+          ],
+          "2 Hallucination in the Era of LVLM 2.1 Large Vision-Language Models": [
+            "Llama-adapter v2: Parameter-efficient visual instruction model",
+            "Visual instruction tuning",
+            "Blip-2: Bootstrapping language-image pre-training with frozen image encoders and large language models",
+            "Flamingo: a visual language model for few-shot learning",
+            "Vision-and-language pretrained models: A survey",
+            "Learning transferable visual models from natural language supervision"
+          ],
+          "2 Hallucination in the Era of LVLM 2.3 Unique Challenges regarding Hallucination in LVLMs": [
+            "Hallucination augmented contrastive learning for multimodal large language model",
+            "Qwen-vl: A frontier large vision-language model with versatile abilities.",
+            "Ciem: Contrastive instruction evaluation method for better instruction tuning",
+            "Mitigating hallucination in large multi-modal models via robust instruction tuning",
+            "Halle-switch: Rethinking and controlling object existence hallucinations in large vision language models for detailed caption"
+          ],
+          "3 Evaluation Methods and Benchmarks 3.1 Evaluation on Non-Hallucinatory Generation": [
+            "Evaluation and analysis of hallucination in large vision-language models",
+            "Object hallucination in image captioning",
+            "Neural baby talk",
+            "Detecting and preventing hallucinations in large vision language models",
+            "Lora: Low-rank adaptation of large language models",
+            "Faithscore: Evaluating hallucinations in large vision-language models",
+            "Mitigating hallucination in large multi-modal models via robust instruction tuning",
+            "Halle-switch: Rethinking and controlling object existence hallucinations in large vision language models for detailed caption"
+          ],
+          "3 Evaluation Methods and Benchmarks 3.2 Evaluation on Hallucination Discrimination": [
+            "Evaluating object hallucination in large vision-language models",
+            "Holy Lovenia, Wenliang Dai, Samuel Cahyawijaya, et\u00a0al. Negative object presence evaluation (nope) to measure object hallucination in vision-language models.",
+            "Ciem: Contrastive instruction evaluation method for better instruction tuning"
+          ],
+          "3 Evaluation Methods and Benchmarks 3.3 Evaluation Benchmarks": [
+            "An llm-free multi-dimensional benchmark for mllms hallucination evaluation",
+            "Detecting and preventing hallucinations in large vision language models",
+            "Holy Lovenia, Wenliang Dai, Samuel Cahyawijaya, et\u00a0al. Negative object presence evaluation (nope) to measure object hallucination in vision-language models.",
+            "Evaluating object hallucination in large vision-language models",
+            "Ciem: Contrastive instruction evaluation method for better instruction tuning"
+          ],
+          "4 Causes of LVLM Hallucinations 4.1 Hallucinations from Data": [
+            "Ferret: Refer and ground anything anywhere at any granularity",
+            "Ciem: Contrastive instruction evaluation method for better instruction tuning",
+            "Mitigating hallucination in large multi-modal models via robust instruction tuning"
+          ],
+          "4 Causes of LVLM Hallucinations 4.2 Hallucinations from Vision Encoder": [
+            "Vcoder: Versatile vision encoders for multimodal large language models",
+            "Halle-switch: Rethinking and controlling object existence hallucinations in large vision language models for detailed caption"
+          ],
+          "4 Causes of LVLM Hallucinations 4.3 Hallucinations from Modality Aligning": [
+            "Hallucination augmented contrastive learning for multimodal large language model",
+            "A survey on multimodal large language models",
+            "Improved baselines with visual instruction tuning",
+            "Aligning large multimodal models with factually augmented rlhf"
+          ],
+          "4 Causes of LVLM Hallucinations 4.4 Hallucinations from LLM": [
+            "Dola: Decoding by contrasting layers improves factuality in large language models",
+            "Evaluation and analysis of hallucination in large vision-language models",
+            "A survey on hallucination in large language models: Principles, taxonomy, challenges, and open questions",
+            "Vigc: Visual instruction generation and correction",
+            "Opera: Alleviating hallucination in multi-modal large language models via over-trust penalty and retrospection-allocation",
+            "The curious case of neural text degeneration",
+            "Survey of hallucination in natural language generation"
+          ],
+          "5 Mitigation of LVLM Hallucination 5.1 Mitigation for Data": [
+            "Ferret: Refer and ground anything anywhere at any granularity",
+            "Recognize anything: A strong image tagging model",
+            "Detecting and preventing hallucinations in large vision language models",
+            "Evaluation and mitigation of agnosia in multimodal large language models",
+            "Ciem: Contrastive instruction evaluation method for better instruction tuning",
+            "Mitigating hallucination in large multi-modal models via robust instruction tuning",
+            "Halle-switch: Rethinking and controlling object existence hallucinations in large vision language models for detailed caption"
+          ],
+          "5 Mitigation of LVLM Hallucination 5.2 Mitigation for Vision Encoder": [
+            "Vcoder: Versatile vision encoders for multimodal large language models",
+            "Enhancing the spatial awareness capability of multi-modal large language model",
+            "Qwen-vl: A frontier large vision-language model with versatile abilities.",
+            "Monkey: Image resolution and text label are important things for large multi-modal models.",
+            "Internvl: Scaling up vision foundation models and aligning for generic visual-linguistic tasks"
+          ],
+          "5 Mitigation of LVLM Hallucination 5.3 Mitigation for Connection Module": [
+            "Hallucination augmented contrastive learning for multimodal large language model",
+            "Learning to summarize with human feedback",
+            "Aligning large multimodal models with factually augmented rlhf",
+            "Internvl: Scaling up vision foundation models and aligning for generic visual-linguistic tasks"
+          ],
+          "5 Mitigation of LVLM Hallucination 5.4 Mitigation for LLM": [
+            "Beyond hallucinations: Enhancing lvlms through hallucination-aware direct preference optimization",
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "Detecting and preventing hallucinations in large vision language models",
+            "Aligning large multimodal models with factually augmented rlhf",
+            "Opera: Alleviating hallucination in multi-modal large language models via over-trust penalty and retrospection-allocation",
+            "Mitigating object hallucinations in large vision-language models through visual contrastive decoding"
+          ],
+          "5 Mitigation of LVLM Hallucination 5.5 Mitigation via Post-processing": [
+            "Woodpecker: Hallucination correction for multimodal large language models",
+            "Analyzing and mitigating object hallucination in large vision-language models"
+          ],
+          "6 Future Directions Supervision Objective": [
+            "Position-enhanced visual instruction tuning for multimodal large language models",
+            "Plausible may not be faithful: Probing object hallucination in vision-language pre-training",
+            "Blip-2: Bootstrapping language-image pre-training with frozen image encoders and large language models"
+          ],
+          "6 Future Directions Enriching Modalities": [
+            "Imagebind-llm: Multi-modality instruction tuning",
+            "Video-llava: Learning united visual representation by alignment before projection",
+            "Imagebind one embedding space to bind them all"
+          ],
+          "6 Future Directions LVLMs as Agent": [
+            "Llava-plus: Learning to use tools for creating multimodal agents"
+          ],
+          "6 Future Directions Delving into Interpretability": [
+            "Can we edit multimodal large language models?"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.00020576656970661134,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Iterative Length-Regularized Direct Preference Optimization: A Case Study on Improving 7B Language Models to GPT-4 Level",
+        "arxiv_id": "2406.11817",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract Direct Preference Optimization (DPO), a standard method for aligning language models with human preferences, is traditionally applied to offline preferences. Recent studies show that DPO benefits from iterative training with online preferences labeled by a trained reward model. In this work, we identify a pitfall of vanilla iterative DPO - improved response quality can lead to increased verbosity. To address this, we introduce iterative length-regularized DPO (iLR-DPO) to penalize response length. Our empirical results show that iLR-DPO can enhance a 7B model to perform on par with GPT-4 without increasing verbosity. Specifically, our 7B model achieves a 50.5%percent50.550.5\\% length-controlled win rate against GPT-4 Preview on AlpacaEval 2.0, and excels across standard benchmarks including MT-Bench, Arena-Hard and OpenLLM Leaderboard. These results demonstrate the effectiveness of iterative DPO in aligning language models with human feedback.",
+        "sections": {
+          "1 Introduction": [
+            "Learning to summarize with human feedback",
+            "Disentangling length from quality in direct preference optimization",
+            "Training language models to follow instructions with human feedback",
+            "Beyond one-preference-for-all: Multi-objective direct preference optimization",
+            "Some things are more cringe than others: Preference optimization with the pairwise cringe loss",
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "Length-controlled alpacaeval: A simple way to debias automatic evaluators",
+            "Judging llm-as-a-judge with mt-bench and chatbot arena",
+            "From live data to high-quality benchmarks: The Arena-Hard pipeline.",
+            "Open llm leaderboard"
+          ],
+          "2 Iterative Length-Regularized DPO (iLR-DPO) 2.2 Length-Regularized DPO (LR-DPO)": [
+            "Beyond one-preference-for-all: Multi-objective direct preference optimization",
+            "Disentangling length from quality in direct preference optimization"
+          ],
+          "3 Experiments 3.1 Experimental Setup": [
+            "Openchat: Advancing open-source language models with mixed-quality data",
+            "Starling-7b: Improving llm helpfulness and harmlessness with rlaif",
+            "Length-controlled alpacaeval: A simple way to debias automatic evaluators",
+            "Judging llm-as-a-judge with mt-bench and chatbot arena",
+            "Open llm leaderboard",
+            "From live data to high-quality benchmarks: The Arena-Hard pipeline.",
+            "Mistral 7b"
+          ],
+          "3 Experiments 3.3 Experimental Results": [
+            "Simpo: Simple preference optimization with a reference-free reward"
+          ],
+          "4 Related Work Learn from Reward Model.": [
+            "Starling-7b: Improving llm helpfulness and harmlessness with rlaif",
+            "Rewardbench: Evaluating reward models for language modeling",
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "Robust preference optimization through reward model distillation"
+          ],
+          "4 Related Work Iterative DPO.": [
+            "Direct language model alignment from online ai feedback",
+            "Some things are more cringe than others: Preference optimization with the pairwise cringe loss"
+          ],
+          "4 Related Work Length Regularized Alignment.": [
+            "Beyond one-preference-for-all: Multi-objective direct preference optimization",
+            "Disentangling length from quality in direct preference optimization",
+            "Simpo: Simple preference optimization with a reference-free reward"
+          ],
+          "5 Conclusion Limitations.": [
+            "Beyond one-preference-for-all: Multi-objective direct preference optimization"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.002685756655409932,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Step-aware Preference Optimization: Aligning Preference with Denoising Performance at Each Step",
+        "arxiv_id": "2406.04314",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract Recently, Direct Preference Optimization (DPO) has extended its success from aligning large language models (LLMs) to aligning text-to-image diffusion models with human preferences. Unlike most existing DPO methods that assume all diffusion steps share a consistent preference order with the final generated images, we argue that this assumption neglects step-specific denoising performance and that preference labels should be tailored to each step\u2019s contribution. To address this limitation, we propose Step-aware Preference Optimization (SPO), a novel post-training approach that independently evaluates and adjusts the denoising performance at each step, using a step-aware preference model and a step-wise resampler to ensure accurate step-aware supervision. Specifically, at each denoising step, we sample a pool of images, find a suitable win-lose pair, and, most importantly, randomly select a single image from the pool to initialize the next denoising step. This step-wise resampler process ensures the next win-lose image pair comes from the same image, making the win-lose comparison independent of the previous step. To assess the preferences at each step, we train a separate step-aware preference model that can be applied to both noisy and clean images. Our experiments with Stable Diffusion v1.5 and SDXL demonstrate that SPO significantly outperforms the latest Diffusion-DPO in aligning generated images with complex, detailed prompts and enhancing aesthetics, while also achieving more than 20\u00d720\\times times faster in training efficiency. Code and model: {https://rockeycoss.github.io/spo.github.io/}",
+        "sections": {
+          "1 Introduction": [
+            "Diffusion model alignment using direct preference optimization",
+            "Sdxl: Improving latent diffusion models for high-resolution image synthesis",
+            "High-resolution image synthesis with latent diffusion models",
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "Prompt-to-prompt image editing with cross attention control",
+            "Using human feedback to fine-tune diffusion models without any reward model"
+          ],
+          "2 Related Work": [
+            "Proximal policy optimization algorithms",
+            "Diffusion model alignment using direct preference optimization",
+            "Training language models to follow instructions with human feedback",
+            "Pick-a-pic: An open dataset of user preferences for text-to-image generation",
+            "Aligning text-to-image diffusion models with reward backpropagation",
+            "A dense reward view on aligning text-to-image diffusion with preference",
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "Directly fine-tuning diffusion models on differentiable rewards",
+            "Enhancing diffusion models with text-encoder reinforcement learning",
+            "Training diffusion models with reinforcement learning",
+            "Aligning text-to-image models using human feedback",
+            "Using human feedback to fine-tune diffusion models without any reward model",
+            "Imagereward: Learning and evaluating human preferences for text-to-image generation",
+            "Reinforcement learning for fine-tuning text-to-image diffusion models"
+          ],
+          "3 Direct Preference Optimization (DPO) Revisit": [
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "Using human feedback to fine-tune diffusion models without any reward model",
+            "Diffusion model alignment using direct preference optimization"
+          ],
+          "4 Proposed Approach 4.2 Step-aware Preference Model: Align the Preference with the Denoising Performance": [
+            "Pick-a-pic: An open dataset of user preferences for text-to-image generation",
+            "Diffusion models beat gans on image synthesis",
+            "Scalable diffusion models with transformers"
+          ],
+          "5 Experiments 5.1 Experimental Setup": [
+            "Scalable diffusion models with transformers",
+            "Learning transferable visual models from natural language supervision",
+            "Lora: Low-rank adaptation of large language models",
+            "Pick-a-pic: An open dataset of user preferences for text-to-image generation",
+            "Classifier-free diffusion guidance",
+            "Denoising diffusion implicit models"
+          ],
+          "5 Experiments 5.2 Comparison with the State-of-the-art Methods": [
+            "Human preference score v2: A solid benchmark for evaluating human preferences of text-to-image synthesis.",
+            "Diffusion model alignment using direct preference optimization",
+            "Pick-a-pic: An open dataset of user preferences for text-to-image generation",
+            "Laion-aesthetics",
+            "Imagereward: Learning and evaluating human preferences for text-to-image generation"
+          ],
+          "7 Supplementary 7.2 Application to Design Image Generation": [
+            "Glyph-byt5: A customized text encoder for accurate visual text rendering."
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.02217734605073929,
+        "extra": {
+          "expand": "not expand"
+        }
+      }
+    ]
+  },
+  "abstract": "",
+  "sections": "",
+  "source": "Root",
+  "select_score": 0.0,
+  "extra": {
+    "touch_ids": [
+      "2402.08005",
+      "2311.13231",
+      "2405.19716",
+      "2408.10433",
+      "2403.00409",
+      "2404.01258",
+      "2307.06435",
+      "2402.00253",
+      "2402.13446",
+      "2312.10665",
+      "2402.01364",
+      "2406.11817",
+      "2402.13228",
+      "2408.15769",
+      "2404.07503",
+      "2408.00550",
+      "2311.16839",
+      "2404.10719",
+      "2406.04314"
+    ],
+    "crawler_recall_papers": [
+      "Mitigating Multilingual Hallucination in Large Vision-Language Models",
+      "Continual Learning for Large Language Models: A Survey",
+      "Best Practices and Lessons Learned on Synthetic Data",
+      "Provably Robust DPO: Aligning Language Models with Noisy Feedback",
+      "A Survey on Hallucination in Large Vision-Language Models",
+      "Iterative Length-Regularized Direct Preference Optimization: A Case Study on Improving 7B Language Models to GPT-4 Level",
+      "Step-aware Preference Optimization: Aligning Preference with Denoising Performance at Each Step",
+      "Refined Direct Preference Optimization with Synthetic Data for Behavioral Alignment of LLMs",
+      "Using Human Feedback to Fine-tune Diffusion Models without Any Reward Model",
+      "Enhancing Large Vision Language Models with Self-Training on Image Comprehension",
+      "CLIP-DPO: Vision-Language Models as a Source of Preference for Fixing Hallucinations in LVLMs",
+      "Direct Preference Optimization of Video Large Multimodal Models from Language Model Reward",
+      "Large Language Models for Data Annotation: A Survey",
+      "Smaug: Fixing Failure Modes of Preference Optimisation with DPO-Positive",
+      "Beyond Hallucinations: Enhancing LVLMs through Hallucination-Aware Direct Preference Optimization",
+      "A Comprehensive Overview of Large Language Models",
+      "Silkie: Preference Distillation for Large Visual Language Models",
+      "A Survey on Evaluation of Multimodal Large Language Models",
+      "Is DPO Superior to PPO for LLM Alignment? A Comprehensive Study"
+    ],
+    "recall_papers": [
+      "CLIP-DPO: Vision-Language Models as a Source of Preference for Fixing Hallucinations in LVLMs",
+      "Direct Preference Optimization of Video Large Multimodal Models from Language Model Reward",
+      "Beyond Hallucinations: Enhancing LVLMs through Hallucination-Aware Direct Preference Optimization",
+      "Silkie: Preference Distillation for Large Visual Language Models"
+    ],
+    "answer": [
+      "mDPO: Conditional Preference Optimization for Multimodal Large Language   Models",
+      "Beyond Hallucinations: Enhancing LVLMs through Hallucination-Aware\n  Direct Preference Optimization",
+      "Mitigating Multilingual Hallucination in Large Vision-Language Models",
+      "Detecting and Preventing Hallucinations in Large Vision Language Models",
+      "Silkie: Preference Distillation for Large Visual Language Models",
+      "Detecting and Mitigating Hallucination in Large Vision Language Models   via Fine-Grained AI Feedback",
+      "Multi-modal preference alignment remedies regression of visual\n  instruction tuning on language model",
+      "Aligning Modalities in Vision Large Language Models via Preference\n  Fine-tuning",
+      "Enhancing Large Vision Language Models with Self-Training on Image   Comprehension",
+      "Direct Preference Optimization of Video Large Multimodal Models from   Language Model Reward",
+      "STLLaVA-Med: Self-Training Large Language and Vision Assistant for   Medical Question-Answering",
+      "CLIP-DPO: Vision-Language Models as a Source of Preference for Fixing   Hallucinations in LVLMs",
+      "Diffusion Model Alignment Using Direct Preference Optimization",
+      "Multi-Modal Hallucination Control by Visual Information Grounding",
+      "Automated Multi-level Preference for MLLMs"
+    ]
+  }
+}

@@ -1,0 +1,230 @@
+{
+  "title": "I ain't paying more than 10 dollars and I only want either a black or green one. Give me the pan that matches these specifics.",
+  "arxiv_id": "",
+  "depth": -1,
+  "child": {
+    "Green pan within budget": [
+      {
+        "title": null,
+        "arxiv_id": "",
+        "depth": 0,
+        "child": {},
+        "abstract": "",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.004498776514083147,
+        "extra": {
+          "price": null,
+          "images": []
+        }
+      },
+      {
+        "title": null,
+        "arxiv_id": "",
+        "depth": 0,
+        "child": {},
+        "abstract": "",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.004498776514083147,
+        "extra": {
+          "price": null,
+          "images": []
+        }
+      },
+      {
+        "title": null,
+        "arxiv_id": "",
+        "depth": 0,
+        "child": {},
+        "abstract": "",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.004498776514083147,
+        "extra": {
+          "price": null,
+          "images": []
+        }
+      },
+      {
+        "title": null,
+        "arxiv_id": "",
+        "depth": 0,
+        "child": {},
+        "abstract": "",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.004498776514083147,
+        "extra": {
+          "price": null,
+          "images": []
+        }
+      },
+      {
+        "title": null,
+        "arxiv_id": "",
+        "depth": 0,
+        "child": {},
+        "abstract": "",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.004498776514083147,
+        "extra": {
+          "price": null,
+          "images": []
+        }
+      },
+      {
+        "title": null,
+        "arxiv_id": "",
+        "depth": 0,
+        "child": {},
+        "abstract": "",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.004498776514083147,
+        "extra": {
+          "price": null,
+          "images": []
+        }
+      },
+      {
+        "title": null,
+        "arxiv_id": "",
+        "depth": 0,
+        "child": {},
+        "abstract": "",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.004498776514083147,
+        "extra": {
+          "price": null,
+          "images": []
+        }
+      },
+      {
+        "title": null,
+        "arxiv_id": "",
+        "depth": 0,
+        "child": {},
+        "abstract": "",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.004498783964663744,
+        "extra": {
+          "price": null,
+          "images": []
+        }
+      },
+      {
+        "title": null,
+        "arxiv_id": "",
+        "depth": 0,
+        "child": {},
+        "abstract": "",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.004498760681599379,
+        "extra": {
+          "price": null,
+          "images": []
+        }
+      },
+      {
+        "title": null,
+        "arxiv_id": "",
+        "depth": 0,
+        "child": {},
+        "abstract": "",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.004498760681599379,
+        "extra": {
+          "price": null,
+          "images": []
+        }
+      }
+    ],
+    "Black pan under 10 dollars": [
+      {
+        "title": null,
+        "arxiv_id": "",
+        "depth": 0,
+        "child": {},
+        "abstract": "",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.004498776514083147,
+        "extra": {
+          "price": null,
+          "images": []
+        }
+      },
+      {
+        "title": null,
+        "arxiv_id": "",
+        "depth": 0,
+        "child": {},
+        "abstract": "",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.004498776514083147,
+        "extra": {
+          "price": null,
+          "images": []
+        }
+      },
+      {
+        "title": null,
+        "arxiv_id": "",
+        "depth": 0,
+        "child": {},
+        "abstract": "",
+        "sections": "",
+        "source": "Search SearchFrom:Amazon",
+        "select_score": 0.004498776514083147,
+        "extra": {
+          "price": null,
+          "images": []
+        }
+      }
+    ]
+  },
+  "abstract": "",
+  "sections": "",
+  "source": "Root",
+  "select_score": 0.0,
+  "extra": {
+    "touch_ids": [
+      "B074RPCNMX",
+      "B0047T6L0I",
+      "B0CLCTSXMT",
+      "B07X4B7J39",
+      "B07YD2KF4W",
+      "B0DZ5M2JB4",
+      "B07X279LBY",
+      "B0CHS94F9D",
+      "B0D47W19PB",
+      "B0DDLCLQR9",
+      "B0CVNP8X9Y",
+      "B01N5TVVY9",
+      "B0DFPK5D4K"
+    ],
+    "crawler_recall_papers": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "recall_papers": []
+  }
+}

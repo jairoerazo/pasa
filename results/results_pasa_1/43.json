@@ -1,0 +1,2265 @@
+{
+  "title": "AI for Science papers, especially protein design and DPO of antibody design.",
+  "arxiv_id": "",
+  "depth": -1,
+  "child": {
+    "Influence of AI in scientific research papers": [
+      {
+        "title": "Integrating New Technologies into Science: The case of AI1footnote 11footnote 1The research leading to the results of this paper has received financial support from the French National Research Agency [reference: SEED -ANR-22-CE26-0013-01].",
+        "arxiv_id": "2312.09843",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract New technologies have the power to revolutionize science. It has happened in the past and is happening again with the emergence of new computational tools, such as Artificial Intelligence (AI) and Machine Learning (ML). Despite the documented impact of these technologies, there remains a significant gap in understanding the process of their adoption within the scientific community. In this paper, we draw on theories of scientific and technical human capital (STHC) to study the integration of AI in scientific research, focusing on the human capital of scientists and the external resources available within their network of collaborators and institutions. We validate our hypotheses on a large sample of publications from OpenAlex, covering all sciences from 1980 to 2020. We find that the diffusion of AI is strongly driven by social mechanisms that organize the deployment and creation of human capital that complements the technology. Our results suggest that AI is pioneered by domain scientists with a \u2018taste for exploration\u2019 and who are embedded in a network rich of computer scientists, experienced AI scientists and early-career researchers; they also come from institutions with high citation impact and a relatively strong publication history on AI. The pattern is similar across scientific disciplines, the exception being access to high-performance computing (HPC), which is important in chemistry and the medical sciences but less so in other fields. Once AI is integrated into research, most adoption factors continue to influence its subsequent reuse. Implications for the organization and management of science in the evolving era of AI-driven discovery are discussed. ",
+        "sections": {
+          "1 Introduction": [
+            "The connectome of an insect brain",
+            "Learning to predict the cosmological structure formation",
+            "Scientific discovery in the age of artificial intelligence.",
+            "Highly accurate protein structure prediction with alphafold",
+            "Magnetic control of tokamak plasmas through deep reinforcement learning.",
+            "Scientific instrumentation and university research",
+            "Gender, environmental milieu, and productivity in science",
+            "Finding needles in haystacks: Artificial intelligence and recombinant growth",
+            "Ai and science: What 1,600 researchers think",
+            "Role of machine and organizational structure in science",
+            "Scientific and technical human capital: an alternative model for research evaluation",
+            "Computational power and the social impact of artificial intelligence",
+            "Scientists' collaboration strategies: implications for scientific and technical human capital"
+          ],
+          "2 STHC endowment and AI adoption 2.1 External resources": [
+            "Social capital and value creation: The role of intrafirm networks",
+            "The iron cage revisited: Institutional isomorphism and collective rationality in organizational fields",
+            "What is an emerging technology?",
+            "Choosing your mentor: A letter to creative minds",
+            "The burden of knowledge and the \u201cdeath of the renaissance man\u201d: Is innovation getting harder?",
+            "Compute trends across three eras of machine learning",
+            "Social capital in the creation of human capital",
+            "The de-democratization of ai: Deep learning and the compute divide in artificial intelligence research",
+            "Connective knowledge: what we need to know about other fields to \u2018envision\u2019cross-disciplinary collaboration",
+            "Work groups, structural diversity, and knowledge sharing in a global organization",
+            "A blueprint for building national compute capacity for artificial intelligence",
+            "Review of ai and compute",
+            "What is research collaboration?"
+          ],
+          "2 STHC endowment and AI adoption 2.2 Internal resources": [
+            "The specificity of the scientific field and the social conditions of the progress of reason",
+            "The psychology of curiosity: A review and reinterpretation",
+            "The structure of scientific revolutions",
+            "Detrimental collaborations in creative work: Evidence from economics",
+            "Measures of curiosity: A literature review",
+            "Scientific and technical human capital: an alternative model for research evaluation",
+            "Exploration and exploitation in organizational learning",
+            "Tradition and innovation in scientists\u2019 research strategies"
+          ],
+          "3 Data, variables and methods 3.1 Data": [
+            "Identifying and measuring developments in artificial intelligence: Making the impossible possible",
+            "Imagenet classification with deep convolutional neural networks",
+            "Artificial intelligence in science: An emerging general method of invention"
+          ],
+          "3 Data, variables and methods 3.2 Measures": [
+            "Efficient estimation of word representations in vector space",
+            "What is research collaboration?",
+            "Creativity in scientific teams: Unpacking novelty and impact"
+          ],
+          "4 Empirical analysis 4.1 Main trends on AI adoption in science": [
+            "Trends in the use of AI in science : a bibliometric analysis"
+          ],
+          "4 Empirical analysis 4.2 Econometric results": [
+            "Ties that last: Tie formation and persistence in research collaborations over time",
+            "Interdisciplinarity as teamwork: How the science of teams can inform team science"
+          ],
+          "5 Discussion and conclusion": [
+            "Knowledge-sharing dilemmas",
+            "Knowledge sharing: A review and directions for future research",
+            "Compute trends across three eras of machine learning",
+            "A blueprint for building national compute capacity for artificial intelligence",
+            "Exploring trade-offs in the organization of scientific work: Collaboration and scientific reward",
+            "Funding risky research"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.0004677397955674678,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "The AI Scientist: Towards Fully Automated Open-Ended Scientific Discovery",
+        "arxiv_id": "2408.06292",
+        "depth": 0,
+        "child": {},
+        "abstract": "One of the grand challenges of artificial general intelligence is developing agents capable of conducting scientific research and discovering new knowledge. While frontier models have already been used as aides to human scientists, e.g. for brainstorming ideas, writing code, or prediction tasks, they still conduct only a small part of the scientific process. This paper presents the first comprehensive framework for fully automatic scientific discovery, enabling frontier large language models to perform research independently and communicate their findings. We introduce The AI Scientist, which generates novel research ideas, writes code, executes experiments, visualizes results, describes its findings by writing a full scientific paper, and then runs a simulated review process for evaluation. In principle, this process can be repeated to iteratively develop ideas in an open-ended fashion, acting like the human scientific community. We demonstrate its versatility by applying it to three distinct subfields of machine learning: diffusion modeling, transformer-based language modeling, and learning dynamics. Each idea is implemented and developed into a full paper at a cost of less than $15 per paper. To evaluate the generated papers, we design and validate an automated reviewer, which we show achieves near-human performance in evaluating paper scores. The AI Scientist can produce papers that exceed the acceptance threshold at a top machine learning conference as judged by our automated reviewer. This approach signifies the beginning of a new era in scientific discovery in machine learning: bringing the transformative benefits of AI agents to the entire research process of AI itself, and taking us closer to a world where endless affordable creativity and innovation can be unleashed on the world's most challenging problems. Our code is open-sourced at https://github.com/SakanaAI/AI-Scientist",
+        "sections": null,
+        "source": "Search SearchFrom:arxiv",
+        "select_score": 0.0012114456621930003,
+        "extra": {
+          "expand": "get full paper error"
+        }
+      },
+      {
+        "title": "AI empowering research: 10 ways how science can benefit from AI",
+        "arxiv_id": "2307.10265",
+        "depth": 0,
+        "child": {},
+        "abstract": "This article explores the transformative impact of artificial intelligence (AI) on scientific research. It highlights ten ways in which AI is revolutionizing the work of scientists, including powerful referencing tools, improved understanding of research problems, enhanced research question generation, optimized research design, stub data generation, data transformation, advanced data analysis, and AI-assisted reporting. While AI offers numerous benefits, challenges such as bias, privacy concerns, and the need for human-AI collaboration must be considered. The article emphasizes that AI can augment human creativity in science but not replace it.",
+        "sections": null,
+        "source": "Search SearchFrom:arxiv",
+        "select_score": 0.0015550595708191395,
+        "extra": {
+          "expand": "get full paper error"
+        }
+      },
+      {
+        "title": "Control Risk for Potential Misuse of Artificial Intelligence in Science",
+        "arxiv_id": "2312.06632",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract The expanding application of Artificial Intelligence (AI) in scientific fields presents unprecedented opportunities for discovery and innovation. However, this growth is not without risks. AI models in science, if misused, can amplify risks like creation of harmful substances, or circumvention of established regulations. In this study, we aim to raise awareness of the dangers of AI misuse in science, and call for responsible AI development and use in this domain. We first itemize the risks posed by AI in scientific contexts, then demonstrate the risks by highlighting real-world examples of misuse in chemical science. These instances underscore the need for effective risk management strategies. In response, we propose a system called SciGuard to control misuse risks for AI models in science. We also propose a red-teaming benchmark SciMT-Safety to assess the safety of different systems. Our proposed SciGuard shows the least harmful impact in the assessment without compromising performance in benign tests. Finally, we highlight the need for a multidisciplinary and collaborative effort to ensure the safe and ethical use of AI models in science. We hope that our study can spark productive discussions on using AI ethically in science among researchers, practitioners, policymakers, and the public, to maximize benefits and minimize the risks of misuse. ",
+        "sections": {
+          "1 Introduction": [
+            "Dual use of artificial-intelligence-powered drug discovery",
+            "Scientific discovery in the age of artificial intelligence",
+            "Emergence of simple-cell receptive field properties by learning a sparse code for natural images",
+            "Artificial intelligence foundation for therapeutic science",
+            "Evolutionary-scale prediction of atomic-level protein structure with a language model",
+            "Pseudo-label: The simple and efficient semi-supervised learning method for deep neural networks.",
+            "Chemical pollution imposes limitations to the ecological status of european surface waters"
+          ],
+          "2 Risks of Misuse for Artificial Intelligence in Science 2.1 Potential Risks": [
+            "Privacy-preserving artificial intelligence techniques in biomedicine",
+            "Dual use of artificial-intelligence-powered drug discovery",
+            "Artificial intelligence and biological misuse: Differentiating risks of language models and biological design tools",
+            "Extraction of chemical structures and reactions from the literature",
+            "Supermarket AI meal planner app suggests recipe that would create chlorine gas.",
+            "Sex and gender differences and biases in artificial intelligence for biomedicine and healthcare"
+          ],
+          "2 Risks of Misuse for Artificial Intelligence in Science 2.2 Demonstration for Risks of AI Models in Chemical Science": [
+            "",
+            "The impact of large language models on scientific discovery: a preliminary study using gpt-4",
+            "HuggingGPT: Solving AI Tasks with ChatGPT and its Friends in Hugging Face",
+            "Ni-mediated generation of \u201ccn\u201d unit from formamide and its catalysis in the cyanation reactions.",
+            "Admetlab 2.0: an integrated online platform for accurate and comprehensive predictions of admet properties",
+            "The manufacture of hydrocyanic acid by the andrussow process",
+            "GPT-4 Technical Report",
+            "Chemcrow: Augmenting large-language models with chemistry tools",
+            "Synthetic organic chemistry driven by artificial intelligence.",
+            "Artificial intelligence and biological misuse: Differentiating risks of language models and biological design tools",
+            "Neural network and deep-learning algorithms used in qsar studies: merits and drawbacks",
+            "Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback",
+            "Deep retrosynthetic reaction prediction using local reactivity and global attention",
+            "U.S. National Library of Medicine"
+          ],
+          "3 Control the Risks of AI Models in Science 3.1 The Imperative of Building Safeguarded Systems for Scientific AI Models": [
+            "From instructions to intrinsic human values\u2013a survey of alignment goals for big models"
+          ],
+          "3 Control the Risks of AI Models in Science 3.2 SciGuard: A System for Controlling the Risks of Misuse for AI Models in Science": [
+            "Chain-of-thought prompting elicits reasoning in large language models",
+            "MRKL Systems: A modular, neuro-symbolic architecture that combines large language models, external knowledge sources and discrete reasoning"
+          ],
+          "3 Control the Risks of AI Models in Science 3.3 SciMT-Safety: A Scientific AI System Safety Benchmark Dataset": [
+            "Bbq: A hand-built bias benchmark for question answering",
+            "Red-Teaming Large Language Models using Chain of Utterances for Safety-Alignment",
+            "Safetybench: Evaluating the safety of large language models with multiple choice questions",
+            "A general language assistant as a laboratory for alignment",
+            "U.S. National Library of Medicine"
+          ],
+          "3 Control the Risks of AI Models in Science 3.4 Results": [
+            "",
+            "GPT-4 Technical Report",
+            "Chemcrow: Augmenting large-language models with chemistry tools",
+            "Vicuna: An Open-Source Chatbot Impressing GPT-4 with 90(2023)",
+            "Language models are few-shot learners",
+            "Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback",
+            "A general language assistant as a laboratory for alignment",
+            "Judging llm-as-a-judge with mt-bench and chatbot arena",
+            "Mistral 7B (2023)"
+          ],
+          "5 Discussion": [
+            "Defending chatgpt against jailbreak attack via self-reminder"
+          ],
+          "6 Related Works 6.1 Scientific AI Models and Associated Risks": [
+            "Accurate clinical toxicity prediction using multi-task deep neural nets and contrastive molecular explanations",
+            "Admetlab 2.0: an integrated online platform for accurate and comprehensive predictions of admet properties",
+            "Dual use of artificial-intelligence-powered drug discovery",
+            "Learning retrosynthetic planning through simulated experience"
+          ],
+          "6 Related Works 6.2 Large Language Models in Science: Lowering Barriers and Increasing Risks": [
+            "The impact of large language models on scientific discovery: a preliminary study using gpt-4",
+            "Large language models encode clinical knowledge.",
+            "Foundation models for generalist medical artificial intelligence",
+            "Chatgpt: five priorities for research",
+            "GPT-4 Technical Report",
+            "Chemcrow: Augmenting large-language models with chemistry tools",
+            "Artificial intelligence and biological misuse: Differentiating risks of language models and biological design tools",
+            "Will releasing the weights of large language models grant widespread access to pandemic agents?"
+          ],
+          "6 Related Works 6.3 Collaborative Efforts for Controlling Risks in AI": [
+            "FACT SHEET: Biden-Harris Administration Announces New Actions to Promote Responsible AI Innovation that Protects Americans\u2019 Rights and Safety",
+            "Anthropic: Frontier Threats Red Teaming for AI Safety",
+            "Introducing Superalignment",
+            "Artificial Intelligence and Machine Learning (AI/ML) for Drug Development"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.00032532692421227694,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "The Impact of AI on Academic Research and Publishing",
+        "arxiv_id": "2406.06009",
+        "depth": 0,
+        "child": {},
+        "abstract": "Generative artificial intelligence (AI) technologies like ChatGPT, have significantly impacted academic writing and publishing through their ability to generate content at levels comparable to or surpassing human writers. Through a review of recent interdisciplinary literature, this paper examines ethical considerations surrounding the integration of AI into academia, focusing on the potential for this technology to be used for scholarly misconduct and necessary oversight when using it for writing, editing, and reviewing of scholarly papers. The findings highlight the need for collaborative approaches to AI usage among publishers, editors, reviewers, and authors to ensure that this technology is used ethically and productively.",
+        "sections": null,
+        "source": "Search SearchFrom:arxiv",
+        "select_score": 0.00013892613060306758,
+        "extra": {
+          "expand": "get full paper error"
+        }
+      },
+      {
+        "title": "The Impact of Responsible AI Research on Innovation and Development",
+        "arxiv_id": "2407.15647",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract Translational research, especially in the fast-evolving field of Artificial Intelligence (AI), is key to converting scientific findings into practical innovations. In Responsible AI (RAI) research, translational impact is often viewed through various pathways, including research papers, blogs, news articles, and the drafting of forthcoming AI legislation (e.g., the EU AI Act). However, the real-world impact of RAI research remains an underexplored area. Our study aims to capture it through two pathways: patents and code repositories, both of which provide a rich and structured source of data. Using a dataset of 200,000 papers from 1980 to 2022 in AI and related fields, including Computer Vision, Natural Language Processing, and Human-Computer Interaction, we developed a Sentence-Transformers Deep Learning framework to identify RAI papers. This framework calculates the semantic similarity between paper abstracts and a set of RAI keywords, which are derived from the NIST\u2019s AI Risk Management Framework; a framework that aims to enhance trustworthiness considerations in the design, development, use, and evaluation of AI products, services, and systems. We identified 1,747 RAI papers published in top venues such as CHI, CSCW, NeurIPS, FAccT, and AIES between 2015 and 2022. By analyzing these papers, we found that a small subset that goes into patents or repositories is highly cited, with the translational process taking between 1 year for repositories and up to 8 years for patents. Interestingly, impactful RAI research is not limited to top U.S. institutions, but significant contributions come from European and Asian institutions. Finally, the multidisciplinary nature of RAI papers, often incorporating knowledge from diverse fields of expertise, was evident as these papers tend to build on unconventional combinations of prior knowledge.",
+        "sections": {
+          "Introduction": [
+            "Translational research in health technologies: A scoping review",
+            "Accelerators: sparking innovation and transdisciplinary team science in disparities research",
+            "Four Years of FAccT: A Reflexive, Mixed-Methods Analysis of Research Contributions, Shortcomings, and Future Prospects",
+            "The dual frontier: Patented inventions and prior scientific advance",
+            "NIST. AI RISK MANAGEMENT FRAMEWORK.",
+            "Human-Centered Responsible Artificial Intelligence: Current & Future Trends",
+            "Breaking Out of the Ivory Tower: A Large-scale Analysis of Patent Citations to HCI Research",
+            "Act, E.\u00a0A. Proposal for a Regulation of the European Parliament and of the Council laying down harmonised rules on Artificial Intelligence (Artificial Intelligence Act) and amending certain Union legislative acts.",
+            "Translatability Analysis of National Institutes of Health\u2013Funded Biomedical Research That Applies Artificial Intelligence",
+            "Understanding the societal impacts of machine translation: a critical review of the literature on medical and legal use cases"
+          ],
+          "Related Work Responsible AI Research Impact": [
+            "Fairness and abstraction in sociotechnical systems",
+            "Building trust in artificial intelligence, machine learning, and robotics",
+            "Responsible research and innovation: From science in society to science for society, with society",
+            "Algorithmic impact assessments and accountability: The co-construction of impacts",
+            "Responsible AI Systems: Who are the Stakeholders?",
+            "Act, E.\u00a0A. Proposal for a Regulation of the European Parliament and of the Council laying down harmonised rules on Artificial Intelligence (Artificial Intelligence Act) and amending certain Union legislative acts.",
+            "Model Cards for Model Reporting",
+            "Four Years of FAccT: A Reflexive, Mixed-Methods Analysis of Research Contributions, Shortcomings, and Future Prospects",
+            "Social data: Biases, methodological pitfalls, and ethical boundaries",
+            "The emerging concept of responsible innovation. Three reasons why it is questionable and calls for a radical transformation of the concept of innovation.",
+            "Artificial intelligence and responsible innovation",
+            "Roles of Artificial Intelligence (AI) on COVID-19 pandemic crisis management policies",
+            "Reasons, Values, Stakeholders: A Philosophical Framework for Explainable Artificial Intelligence",
+            "Responsible AI Research Needs Impact Statements Too",
+            "Developing a framework for responsible innovation",
+            "A guide to writing the NeurIPS impact statement",
+            "Datasheets for Datasets",
+            "Ethics guidelines for trustworthy AI.",
+            "Artificial intelligence in healthcare: Proposals for policy development in South Africa",
+            "Where responsible AI meets reality: Practitioner perspectives on enablers for shifting organizational practices",
+            "The design of human oversight in autonomous weapon systems",
+            "Roles for computing in social change",
+            "WEIRD FAccTs: How Western, Educated, Industrialized, Rich, and Democratic is FAccT?"
+          ],
+          "Related Work Measuring Research Impact on Innovation": [
+            "Science of science",
+            "The dual frontier: Patented inventions and prior scientific advance",
+            "Global and domestic utilization of industrial relevant science: patent citation analysis of science\u2013technology interactions and knowledge flows.",
+            "Breaking Out of the Ivory Tower: A Large-scale Analysis of Patent Citations to HCI Research",
+            "Papers and patents are becoming less disruptive over time.",
+            "Early identification of important patents: Design and validation of citation network metrics",
+            "Urban economic fitness and complexity from patent data",
+            "The impact of technology transfer and knowledge spillover from Big Science: a literature review",
+            "Mapping the global influence of published research on industry and innovation"
+          ],
+          "Related Work Measuring Research Impact on Development": [
+            "Employing contribution and quality metrics for quantifying the software development process",
+            "Tracing known security vulnerabilities in software repositories\u2013A Semantic Web enabled modeling approach",
+            "Which metrics should researchers use to collect repositories: An empirical study",
+            "Predicting the popularity of github repositories",
+            "An analysis of GitLab\u2019s users and projects networks",
+            "Measuring user influence in GitHub: the million follower fallacy",
+            "From academia to software development: publication citations in source code comments"
+          ],
+          "Methodology": [
+            "Breaking Out of the Ivory Tower: A Large-scale Analysis of Patent Citations to HCI Research"
+          ],
+          "Methodology Data Processing": [
+            "Sentence-T5: Scalable sentence encoders from pre-trained text-to-text models",
+            "NIST. AI RISK MANAGEMENT FRAMEWORK.",
+            "Deep learning",
+            "Zhang, M. Google Photos Tags Two African-Americans As Gorillas Through Facial Recognition Software.",
+            "Recovering Lexically and Semantically Reused Texts",
+            "Principled artificial intelligence: Mapping consensus in ethical and rights-based approaches to principles for AI",
+            "Energy and Policy Considerations for Deep Learning in NLP",
+            "Why IBM is no longer interested in breaking patent records\u2013and how it plans to measure innovation in the age of open source and quantum computing.",
+            "Reliance on science by inventors: Hybrid extraction of in-text patent-to-article citations"
+          ],
+          "Methodology Limitations: Data, Metrics, and Analysis": [
+            "AIID. AI Incident Database.",
+            "Breaking Out of the Ivory Tower: A Large-scale Analysis of Patent Citations to HCI Research",
+            "Structural Scaffolds for Citation Intent Classification in Scientific Publications",
+            "Searching relevant papers for software engineering secondary studies: Semantic Scholar coverage and identification role",
+            "WEIRD FAccTs: How Western, Educated, Industrialized, Rich, and Democratic is FAccT?",
+            "Reliance on science by inventors: Hybrid extraction of in-text patent-to-article citations"
+          ],
+          "Methodology Metrics": [
+            "An introduction to survival statistics: Kaplan-Meier analysis",
+            "Atypical combinations and scientific impact"
+          ],
+          "Methodology Author Positionality and Ethical Considerations": [
+            "Responsible AI Research Needs Impact Statements Too"
+          ],
+          "Results Q1: Which Types of RAI Papers Go Into Patents and Repositories?": [
+            "Energy and Policy Considerations for Deep Learning in NLP",
+            "Hidden technical debt in machine learning systems"
+          ],
+          "Results Q2: How Long Does It Take for RAI Papers To Go Into Patents or Repositories?": [
+            "Breaking Out of the Ivory Tower: A Large-scale Analysis of Patent Citations to HCI Research",
+            "The USPTO Patent Examination Research Dataset: A Window on the Process of Patent Examination"
+          ],
+          "Results Q3: Which Institutions Produce RAI Papers That Go Into Patents or Repositories?": [
+            "Entropy and diversity",
+            "Li, D.; Tong W., T.; and Xiao, Y. Is China Emerging as the Global Leader in AI?"
+          ],
+          "Results Q4: How Does Combining Conventional and Unconventional Knowledge in RAI Papers Affect Their Impact?": [
+            "Alleviating privacy attacks via causal learning",
+            "Data-centric explanations: explaining training data of machine learning systems to promote transparency",
+            "Amortized generation of sequential algorithmic recourses for black-box models",
+            "Practical One-Shot Federated Learning for Cross-Silo Setting"
+          ],
+          "Discussion Implications": [
+            "Fairness and abstraction in sociotechnical systems",
+            "An approach to measuring and encouraging research translation and research impact",
+            "The state of AI in 2022\u2014and a half decade in review.",
+            "AI and Disaster Risk: A Practitioner Perspective",
+            "Where responsible AI meets reality: Practitioner perspectives on enablers for shifting organizational practices",
+            "Breaking Out of the Ivory Tower: A Large-scale Analysis of Patent Citations to HCI Research",
+            "Roles for computing in social change",
+            "The fallacy of AI functionality",
+            "Interdisciplinary research and academic sustainability: managing knowledge in an age of accountability",
+            "Intersectional AI: A study of how information science students think about ethics and their impact",
+            "Digital innovation: The hackathon phenomenon."
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.00032924642437137663,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Quantifying the Benefit of Artificial Intelligence for Scientific Research",
+        "arxiv_id": "2304.10578",
+        "depth": 0,
+        "child": {},
+        "abstract": "The ongoing artificial intelligence (AI) revolution has the potential to change almost every line of work. As AI capabilities continue to improve in accuracy, robustness, and reach, AI may outperform and even replace human experts across many valuable tasks. Despite enormous effort devoted to understanding the impact of AI on labor and the economy and AI's recent successes in accelerating scientific discovery and progress, we lack a systematic understanding of how AI advances may benefit scientific research across disciplines and fields. Here, drawing from the literature on the future of work and the science of science, we develop a measurement framework to estimate both the direct use of AI and the potential benefit of AI in scientific research, applying natural language processing techniques to 74.6 million publications and 7.1 million patents. We find that the use of AI in research is widespread throughout the sciences, growing especially rapidly since 2015, and papers that use AI exhibit a citation premium, more likely to be highly cited both within and outside their disciplines. Moreover, our analysis reveals considerable potential for AI to benefit numerous scientific fields, yet a notable disconnect exists between AI education and its research applications, highlighting a mismatch between the supply of AI expertise and its demand in research. Lastly, we examine demographic disparities in AI's benefits across scientific disciplines and find that disciplines with a higher proportion of women or Black scientists tend to be associated with less benefit, suggesting that AI's growing impact on research may further exacerbate existing inequalities in science. As the connection between AI and scientific research deepens, our findings may become increasingly important, with implications for the equity and sustainability of the research enterprise.",
+        "sections": null,
+        "source": "Search SearchFrom:arxiv",
+        "select_score": 0.0013725216267630458,
+        "extra": {
+          "expand": "get full paper error"
+        }
+      },
+      {
+        "title": "Experimental Evidence on Negative Impact of Generative AI on Scientific Learning Outcomes",
+        "arxiv_id": "2311.05629",
+        "depth": 0,
+        "child": {},
+        "abstract": "In this study, I explored the impact of Generative AI on learning efficacy in academic reading materials using experimental methods. College-educated participants engaged in three cycles of reading and writing tasks. After each cycle, they responded to comprehension questions related to the material. After adjusting for background knowledge and demographic factors, complete reliance on AI for writing tasks led to a 25.1% reduction in accuracy. In contrast, AI-assisted reading resulted in a 12% decline. Interestingly, using AI for summarization significantly improved both quality and output. Accuracy exhibited notable variance in the AI-assisted section. Further analysis revealed that individuals with a robust background in the reading topic and superior reading/writing skills benefitted the most. I conclude the research by discussing educational policy implications, emphasizing the need for educators to warn students about the dangers of over-dependence on AI and provide guidance on its optimal use in educational settings.",
+        "sections": null,
+        "source": "Search SearchFrom:arxiv",
+        "select_score": 8.475947106489912e-05,
+        "extra": {
+          "expand": "get full paper error"
+        }
+      }
+    ],
+    "Survey papers on protein design using AI": [
+      {
+        "title": "Generative artificial intelligence for de novo protein design",
+        "arxiv_id": "2310.09685",
+        "depth": 0,
+        "child": {},
+        "abstract": "Engineering new molecules with desirable functions and properties has the potential to extend our ability to engineer proteins beyond what nature has so far evolved. Advances in the so-called \"de novo\" design problem have recently been brought forward by developments in artificial intelligence. Generative architectures, such as language models and diffusion processes, seem adept at generating novel, yet realistic proteins that display desirable properties and perform specified functions. State-of-the-art design protocols now achieve experimental success rates nearing 20%, thus widening the access to de novo designed proteins. Despite extensive progress, there are clear field-wide challenges, for example in determining the best in silico metrics to prioritise designs for experimental testing, and in designing proteins that can undergo large conformational changes or be regulated by post-translational modifications and other cellular processes. With an increase in the number of models being developed, this review provides a framework to understand how these tools fit into the overall process of de novo protein design. Throughout, we highlight the power of incorporating biochemical knowledge to improve performance and interpretability.",
+        "sections": null,
+        "source": "Search SearchFrom:arxiv",
+        "select_score": 0.906203031539917,
+        "extra": {
+          "expand": "get full paper error"
+        }
+      },
+      {
+        "title": "SurfPro: Functional Protein Design Based on Continuous Surface",
+        "arxiv_id": "2405.06693",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract How can we design proteins with desired functions? We are motivated by a chemical intuition that both geometric structure and biochemical properties are critical to a protein\u2019s function. In this paper, we propose SurfPro, a new method to generate functional proteins given a desired surface and its associated biochemical properties. SurfPro comprises a hierarchical encoder that progressively models the geometric shape and biochemical features of a protein surface, and an autoregressive decoder to produce an amino acid sequence. We evaluate SurfPro on a standard inverse folding benchmark CATH 4.2 and two functional protein design tasks: protein binder design and enzyme design. Our SurfPro consistently surpasses previous state-of-the-art inverse folding methods, achieving a recovery rate of 57.78% on CATH 4.2 and higher success rates in terms of protein-protein binding and enzyme-substrate interaction scores.",
+        "sections": {
+          "1 Introduction": [
+            "Protein design with deep learning",
+            "Structure-informed language models are protein designers",
+            "Improving de novo protein binder design with deep learning",
+            "De novo design of protein interactions with learned surface fingerprints",
+            "Z. Pifold: Toward effective and efficient protein inverse folding",
+            "Highly accurate protein structure prediction with alphafold",
+            "The coming of age of de novo protein design",
+            "A general model to predict small molecule substrates of enzymes based on machine and deep learning.",
+            "Robust deep learning\u2013based protein sequence design using proteinmpnn"
+          ],
+          "2 Related Work": [
+            "Structure-informed language models are protein designers",
+            "Solvent-accessible surfaces of proteins and nucleic acids",
+            "Model-based reinforcement learning for biological sequence design",
+            "Protgpt2 is a deep unsupervised language model for protein design",
+            "Boss: Bayesian optimization over string spaces",
+            "Biological structure and function emerge from scaling unsupervised learning to 250 million protein sequences",
+            "Design by directed evolution",
+            "Language models enable zero-shot prediction of the effects of mutations on protein function",
+            "Large language models generate functional protein sequences across diverse families.",
+            "De novo design of protein interactions with learned surface fingerprints",
+            "Deciphering interaction fingerprints from protein molecular surfaces using geometric deep learning",
+            "Rosettascripts: a scripting language interface to the rosetta macromolecular modeling suite",
+            "Fast end-to-end learning on protein surfaces",
+            "Design by adaptive sampling"
+          ],
+          "3 Proposed Method: SurfPro 3.1 Surface Generation": [
+            "Octree-based point-cloud compression",
+            "Msms: a coalescent simulation program including recombination, demographic structure and selection at a single locus",
+            "The approximation power of moving least-squares",
+            "Point set surfaces"
+          ],
+          "3 Proposed Method: SurfPro 3.2 Hierarchical Surface Encoder": [
+            "Sigmoid-weighted linear units for neural network function approximation in reinforcement learning",
+            "equivariant graph neural networks",
+            "Frame averaging for invariant and equivariant network design"
+          ],
+          "3 Proposed Method: SurfPro 3.3 Autoregressive Protein Decoder": [
+            "Attention is all you need"
+          ],
+          "4 Experiments 4.1 Implementation Details": [
+            "A method for stochastic optimization"
+          ],
+          "4 Experiments 4.2 Inverse Folding": [
+            "Learning from protein structure with geometric vector perceptrons",
+            "Generative models for graph-based protein design",
+            "Robust deep learning\u2013based protein sequence design using proteinmpnn"
+          ],
+          "4 Experiments 4.3 Protein Binder Design": [
+            "Evolutionary-scale prediction of atomic-level protein structure with a language model",
+            "Improving de novo protein binder design with deep learning"
+          ],
+          "4 Experiments 4.4 Enzyme Design": [
+            "A general model to predict small molecule substrates of enzymes based on machine and deep learning.",
+            "Biological structure and function emerge from scaling unsupervised learning to 250 million protein sequences"
+          ],
+          "5 Analysis: Diving Deep into SurfPro 5.2 Can SurfPro Design Novel and Diverse Proteins?": [
+            "Improving de novo protein binder design with deep learning"
+          ],
+          "5 Analysis: Diving Deep into SurfPro 5.4 Case Study": [
+            "Improving de novo protein binder design with deep learning"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.9051570296287537,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Controllable Protein Design with Language Models",
+        "arxiv_id": "2201.07338",
+        "depth": 0,
+        "child": {},
+        "abstract": "The 21st century is presenting humankind with unprecedented environmental and medical challenges. The ability to design novel proteins tailored for specific purposes could transform our ability to respond timely to these issues. Recent advances in the field of artificial intelligence are now setting the stage to make this goal achievable. Protein sequences are inherently similar to natural languages: Amino acids arrange in a multitude of combinations to form structures that carry function, the same way as letters form words and sentences that carry meaning. Therefore, it is not surprising that throughout the history of Natural Language Processing (NLP), many of its techniques have been applied to protein research problems. In the last few years, we have witnessed revolutionary breakthroughs in the field of NLP. The implementation of Transformer pre-trained models has enabled text generation with human-like capabilities, including texts with specific properties such as style or subject. Motivated by its considerable success in NLP tasks, we expect dedicated Transformers to dominate custom protein sequence generation in the near future. Finetuning pre-trained models on protein families will enable the extension of their repertoires with novel sequences that could be highly divergent but still potentially functional. The combination of control tags such as cellular compartment or function will further enable the controllable design of novel protein functions. Moreover, recent model interpretability methods will allow us to open the 'black box' and thus enhance our understanding of folding principles. While early initiatives show the enormous potential of generative language models to design functional sequences, the field is still in its infancy. We believe that protein language models are a promising and largely unexplored field and discuss their foreseeable impact on protein design.",
+        "sections": null,
+        "source": "Search SearchFrom:arxiv",
+        "select_score": 0.8187073469161987,
+        "extra": {
+          "expand": "get full paper error"
+        }
+      },
+      {
+        "title": "RITA: a Study on Scaling Up Generative Protein Sequence Models",
+        "arxiv_id": "2205.05789",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract In this work we introduce RITA: a suite of autoregressive generative models for protein sequences, with up to 1.2 billion parameters, trained on over 280 million protein sequences belonging to the UniRef-100 database. Such generative models hold the promise of greatly accelerating protein design. We conduct the first systematic study of how capabilities evolve with model size for autoregressive transformers in the protein domain: we evaluate RITA models in next amino acid prediction, zero-shot fitness, and enzyme function prediction, showing benefits from increased scale. We release the RITA models openly, to the benefit of the research community. ",
+        "sections": {
+          "1 Introduction": [
+            "Biological structure and function emerge from scaling unsupervised learning to 250 million protein sequences",
+            "Design by directed evolution",
+            "Deep neural language modeling enables functional protein generation across families.",
+            "Scaling laws for neural language models",
+            "Highly accurate protein structure prediction with alphafold",
+            "Transformer protein language models are unsupervised structure learners",
+            "ProGen: Language Modeling for Protein Generation",
+            "The coming of age of de novo protein design",
+            "Alphafold2 can also predict heterocomplexes.",
+            "Predictability and surprise in large generative models"
+          ],
+          "2 Related Work 2.1 Language models for natural language processing": [
+            "Scaling laws for neural language models"
+          ],
+          "2 Related Work 2.2 Protein Sequence Models": [
+            "Deep generative models of genetic variation capture mutation effects.",
+            "Low-n protein engineering with data-efficient deep learning",
+            "Language models enable zero-shot prediction of the effects of mutations on protein function.",
+            "Unified rational protein engineering with sequence-only deep representation learning.",
+            "Evaluating protein transfer learning with tape",
+            "Generative models for graph-based protein design",
+            "ProGen: Language Modeling for Protein Generation",
+            "Using alphafold for rapid and accurate fixed backbone protein design",
+            "Design in the dark: Learning deep generative models for de novo protein design",
+            "Attention is all you need",
+            "Single-sequence protein structure prediction using language models from deep learning"
+          ],
+          "3 Methods 3.1 Model Architecture": [
+            "Language models are few-shot learners",
+            "Train short, test long: Attention with linear biases enables input length extrapolation",
+            "Roformer: Enhanced transformer with rotary position embedding",
+            "Controllable neural text generation"
+          ],
+          "3 Methods 3.2 Data": [
+            "UniProt: the universal protein knowledgebase in 2021",
+            "Clustering huge protein sequence sets in linear time",
+            "Mgnify: the microbiome analysis resource in 2020"
+          ],
+          "3 Methods 3.3 Training": [
+            "A method for stochastic optimization"
+          ],
+          "4 Evaluation 4.1 Perplexity evaluation": [
+            "A deep unsupervised language model for protein design",
+            "ProGen: Language Modeling for Protein Generation"
+          ],
+          "4 Evaluation 4.2 Scaling Laws": [
+            "Scaling laws for neural language models",
+            "Training compute-optimal large language models"
+          ],
+          "4 Evaluation 4.3 Mutation Effects Prediction": [
+            "MSA Transformer",
+            "Language models enable zero-shot prediction of the effects of mutations on protein function.",
+            "Disease variant prediction with deep generative models of evolutionary data",
+            "Protein design and variant prediction using autoregressive generative models.",
+            "Tranception: protein fitness prediction with autoregressive transformers and inference-time retrieval"
+          ],
+          "4 Evaluation 4.4 Enzyme Function Prediction": [
+            "Proteinfer: deep networks for protein functional inference",
+            "The swiss-prot protein sequence database and its supplement trembl in 2000"
+          ],
+          "4 Evaluation 4.5 Prompt Tuning": [
+            "The power of scale for parameter-efficient prompt tuning"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.7326411008834839,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Advances of Deep Learning in Protein Science: A Comprehensive Survey",
+        "arxiv_id": "2403.05314",
+        "depth": 0,
+        "child": {},
+        "abstract": "Protein representation learning plays a crucial role in understanding the structure and function of proteins, which are essential biomolecules involved in various biological processes. In recent years, deep learning has emerged as a powerful tool for protein modeling due to its ability to learn complex patterns and representations from large-scale protein data. This comprehensive survey aims to provide an overview of the recent advances in deep learning techniques applied to protein science. The survey begins by introducing the developments of deep learning based protein models and emphasizes the importance of protein representation learning in drug discovery, protein engineering, and function annotation. It then delves into the fundamentals of deep learning, including convolutional neural networks, recurrent neural networks, attention models, and graph neural networks in modeling protein sequences, structures, and functions, and explores how these techniques can be used to extract meaningful features and capture intricate relationships within protein data. Next, the survey presents various applications of deep learning in the field of proteins, including protein structure prediction, protein-protein interaction prediction, protein function prediction, etc. Furthermore, it highlights the challenges and limitations of these deep learning techniques and also discusses potential solutions and future directions for overcoming these challenges. This comprehensive survey provides a valuable resource for researchers and practitioners in the field of proteins who are interested in harnessing the power of deep learning techniques. By consolidating the latest advancements and discussing potential avenues for improvement, this review contributes to the ongoing progress in protein research and paves the way for future breakthroughs in the field.",
+        "sections": {
+          "1 Introduction": [
+            "Gene ontology: tool for the unification of biology",
+            "Protein structure determination in living cells",
+            "Protein structure prediction using deep learning distance and hydrogen\u2010bonding restraints in CASP14",
+            "Critical assessment of methods of protein structure prediction (CASP)\u2014Round XIII",
+            "Protein bioinformatics: from sequence to function",
+            "Learning functional properties of proteins with language models",
+            "Nucleic Acids Research, 2019, 47: D520\u2013D528",
+            "De novo sequencing and homology searching",
+            "Protein representation learning by geometric structure pretraining",
+            "Language models of protein sequences at the scale of evolution enable accurate structure prediction",
+            "Representation learning applications in biological sequence analysis",
+            "Highly accurate protein structure prediction with AlphaFold",
+            "Prottrans: Towards cracking the language of lifes code through self-supervised deep learning and high performance computing",
+            "Integrated NMR and cryo-EM atomic-resolution structure determination of a half-megadalton enzyme complex",
+            "Ontoprotein: Protein pretraining with gene ontology embedding",
+            "Lipase engineering database: understanding and exploiting sequence\u2013structure\u2013function relationships",
+            "End-to-end differentiable learning of protein structure",
+            "Update on activities at the Universal Protein Resource (UniProt) in 2013"
+          ],
+          "2 Definitions, Notations, and Terms 2.2 Notations and Terms": [
+            "Bidirectional Language Modeling: A Systematic Literature Review",
+            "Protein secondary structure prediction using deep convolutional neural fields",
+            "Learning the protein language: Evolution, structure, and function",
+            "Knowledge distillation: A survey",
+            "Practical aspects of protein co-evolution",
+            "Predicting protein quaternary structure by pseudo amino acid composition",
+            "Orthologs, paralogs, and evolutionary genomics",
+            "A structured self-attentive sentence embedding",
+            "Identity mappings in deep residual networks",
+            "Deep generative modelling: A comparative review of VAEs, GANs, normalizing flows, energy-based and autoregressive models",
+            "A benchmark study of sequence alignment methods for protein clustering",
+            "High gc content causes orphan proteins to be intrinsically disordered",
+            "Guide to Biochemistry",
+            "Cross-modal learning",
+            "The arrangement of amino acids in proteins",
+            "Generative topic embedding: a continuous representation of documents",
+            "Conformational space sampling method using multi-subpopulation differential evolution for de novo protein structure prediction",
+            "A survey of transfer learning",
+            "Protein contact maps: a binary depiction of protein 3D structures"
+          ],
+          "3 Basic Neural Networks in Protein Modeling": [
+            "Bert: Pre-training of deep bidirectional transformers for language understanding",
+            "Improving language understanding by generative pre-training",
+            "Attention is all you need"
+          ],
+          "3 Basic Neural Networks in Protein Modeling 3.1 Convolution Neural Networks": [
+            "Convolutional neural networks as a model of the visual system: Past, present, and future",
+            "Deep learning: a primer for radiologists",
+            "Deep neural networks: a new framework for modeling biological vision and brain information processing",
+            "Continuous-Discrete Convolution for Geometry-Sequence Modeling in Proteins"
+          ],
+          "3 Basic Neural Networks in Protein Modeling 3.2 Recurrent Neural Networks and Long Short-term Memory": [
+            "Scaling hidden markov language models",
+            "First links in the Markov chain",
+            "Maximum likelihood alignment of dna sequences",
+            "Attention is all you need",
+            "Evolino: Hybrid neuroevolution/optimal linear search for sequence prediction",
+            "Short-term traffic flow prediction for urban road sections based on time series analysis and LSTM_BILSTM method",
+            "Griffin: Mixing Gated Linear Recurrences with Local Attention for Efficient Language Models",
+            "Generative recurrent networks for de novo drug design",
+            "Neural architectures for named entity recognition",
+            "Untersuchungen zu dynamischen neuronalen netzen",
+            "Fast model-based protein homology detection without alignment",
+            "A novel connectionist system for improved unconstrained handwriting recognition",
+            "Nature Machine Intelligence, 2022, 1-12"
+          ],
+          "3 Basic Neural Networks in Protein Modeling 3.3 Attention Mechanism and Transformer": [
+            "Neural machine translation by jointly learning to align and translate",
+            "Attention is all you need",
+            "Learning to generate reviews and discovering sentiment"
+          ],
+          "3 Basic Neural Networks in Protein Modeling 3.4 Graph Neural Networks": [
+            "Introduction: what is a knowledge graph?",
+            "Graph neural networks in recommender systems: a survey",
+            "Semi-supervised classification with graph convolutional networks",
+            "Advancing graphsage with a data-driven node sampling",
+            "Artificial intelligence in drug discovery: applications and techniques",
+            "Graph attention networks",
+            "Deep representation learning for social network analysis"
+          ],
+          "3 Basic Neural Networks in Protein Modeling 3.5 Language Models": [
+            "Finbert: Financial sentiment analysis with pre-trained language models",
+            "Bert: Pre-training of deep bidirectional transformers for language understanding",
+            "The Implications of OpenAI\u2019s Assistant for Legal Services and Society",
+            "Scaling laws for neural language models",
+            "Improving language understanding by generative pre-training",
+            "Pre-trained models: Past, present and future",
+            "Roberta: A robustly optimized bert pretraining approach"
+          ],
+          "4 Protein Foundations 4.1 Protein and Language": [
+            "Funnels, pathways, and the energy landscape of protein folding: a synthesis",
+            "Automatically Extracting Challenge Sets for Non local Phenomena in Neural Machine Translation",
+            "Unified rational protein engineering with sequence-based deep representation learning",
+            "Protein folding funnels: a kinetic approach to the sequence-structure relationship",
+            "Recent trends in deep learning based natural language processing",
+            "Nature Machine Intelligence, 2022, 1-12"
+          ],
+          "4 Protein Foundations 4.2 Protein Physicochemical Properties": [
+            "Identification of protein-protein binding sites by incorporating the physicochemical properties and stationary wavelet transforms into pseudo amino acid composition",
+            "Hierarchical graph learning for protein\u2013protein interaction",
+            "OPUS-Rota4: a gradient-based protein side-chain modeling framework assisted by deep learning-based predictors"
+          ],
+          "4 Protein Foundations 4.3 Motifs, Regions, and Domains": [
+            "A Multimodal Protein Representation Framework for Quantifying Transferability Across Biochemical Downstream Tasks",
+            "Favorable domain size in proteins",
+            "Defining and searching for structural motifs using DeepView/Swiss-PdbViewer"
+          ],
+          "4 Protein Foundations 4.4 Protein Structure Geometries": [
+            "Multi-level Protein Structure Pre-training via Prompt Learning",
+            "Improved protein structure prediction using predicted inter-residue orientations",
+            "Learning hierarchical protein representations via complete 3d graph networks",
+            "Lehninger principles of biochemistry",
+            "The Peptide Bond",
+            "Highly accurate protein structure prediction with AlphaFold",
+            "Generative models for graph-based protein design"
+          ],
+          "4 Protein Foundations 4.5 Structure Properties": [
+            "Symmetry-Informed Geometric Representation for Molecules, Proteins, and Crystalline Materials",
+            "Se (3)-transformers: 3d roto-translation equivariant attention networks",
+            "PeSTo: parameter-free geometric deep learning for accurate prediction of protein binding interfaces",
+            "Spherical message passing for 3d molecular graphs",
+            "Learning from protein structure with geometric vector perceptrons",
+            "SE (3) Equivalent Graph Attention Network as an Energy-Based Model for Protein Side Chain Conformation",
+            "Learning Complete Protein Representation by Deep Coupling of Sequence and Structure"
+          ],
+          "4 Protein Foundations 4.6 Biology Knowledge": [
+            "Ontoprotein: Protein pretraining with gene ontology embedding",
+            "Protst: Multi-modality learning of protein sequences and biomedical texts"
+          ],
+          "5 Deep Learning based Protein Models 5.1 Protein Language Models": [
+            "Deepprime2sec: Deep learning for protein secondary structure prediction from the primary sequences",
+            "Biological structure and function emerge from scaling unsupervised learning to 250 million protein sequences",
+            "xTrimoPGLM: unified 100B-scale pre-trained transformer for deciphering the language of protein",
+            "The language of proteins: NLP, machine learning & protein sequences",
+            "SPOT-1D-Single: improving the single-sequence-based prediction of protein secondary structure, backbone angles, solvent accessibility and half-sphere exposures using a large training set and ensembled deep learning",
+            "Tm-align: a protein structure alignment algorithm based on the tm-score",
+            "ProGen2: exploring the boundaries of protein language models",
+            "Variational auto-encoding of protein sequences",
+            "Transformer-xl: Attentive language models beyond a fixed-length context",
+            "Netsurfp-2.0: improved prediction of protein structural features by integrated deep learning",
+            "Msa transformer",
+            "Multiplicative LSTM for sequence modelling",
+            "Graphical models of residue coupling in protein families",
+            "Language models of protein sequences at the scale of evolution enable accurate structure prediction",
+            "Electra: Pre-training text encoders as discriminators rather than generators",
+            "Xlnet: Generalized autoregressive pretraining for language understanding",
+            "Evaluating protein transfer learning with TAPE",
+            "Bert: Pre-training of deep bidirectional transformers for language understanding",
+            "Exploring the limits of transfer learning with a unified text-to-text transformer",
+            "Unified rational protein engineering with sequence-based deep representation learning",
+            "Highly accurate protein structure prediction with AlphaFold",
+            "Prottrans: Towards cracking the language of lifes code through self-supervised deep learning and high performance computing",
+            "Albert: A lite bert for self-supervised learning of language representations"
+          ],
+          "5 Deep Learning based Protein Models 5.2 Protein Structure Models": [
+            "Gbpnet: Universal geometric representation learning on protein structures",
+            "Fast end-to-end learning on protein surfaces",
+            "Protein contact map refinement for improving structure prediction using generative adversarial networks",
+            "Intrinsic-extrinsic convolution and pooling for learning on 3d protein structures",
+            "Learning the protein language: Evolution, structure, and function",
+            "Protein representation learning by geometric structure pretraining",
+            "Learning hierarchical protein representations via complete 3d graph networks",
+            "Semi-supervised classification with graph convolutional networks",
+            "Directed weight neural networks for protein structure representation learning",
+            "Deep convolutional networks for quality assessment of protein folds",
+            "Reconstruction of 3D Structures From Protein Contact Maps",
+            "Spherical message passing for 3d molecular graphs",
+            "Learning from protein structure with geometric vector perceptrons",
+            "Struct2GO: protein function prediction based on graph pooling algorithm and AlphaFold2 structure information",
+            "Atomic protein structure refinement using all-atom graph representations and SE (3)-equivariant graph neural networks",
+            "Symmetry-Informed Geometric Representation for Molecules, Proteins, and Crystalline Materials",
+            "Advancing graphsage with a data-driven node sampling",
+            "Highly accurate protein structure prediction with AlphaFold",
+            "Graph attention networks",
+            "Learning Complete Protein Representation by Deep Coupling of Sequence and Structure",
+            "E (n) equivariant graph neural networks"
+          ],
+          "5 Deep Learning based Protein Models 5.3 Protein Multimodal Methods": [
+            "Multimodal Distillation of Protein Sequence, Structure, and Function",
+            "A Multimodal Protein Representation Framework for Quantifying Transferability Across Biochemical Downstream Tasks",
+            "LM-GVP: A Generalizable Deep Learning Framework for Protein Property Prediction from Sequence and Structure",
+            "Protein Representation Learning via Knowledge Enhanced Primary Structure Modeling",
+            "ProteinBERT: A universal deep-learning model of protein sequence and function",
+            "Injecting Multimodal Information into Rigid Protein Docking via Bi-level Optimization",
+            "Learning the protein language: Evolution, structure, and function",
+            "DSR: Dynamical Surface Representation as Implicit Neural Networks for Protein",
+            "Protein representation learning by geometric structure pretraining",
+            "Fast and accurate protein structure search with Foldseek",
+            "SaProt: Protein Language Modeling with Structure-aware Vocabulary",
+            "Reaching alignment-profile-based accuracy in predicting protein secondary and tertiary structural properties without alignment",
+            "Neural Discrete Representation Learning",
+            "Ontoprotein: Protein pretraining with gene ontology embedding",
+            "Domain-PFP allows protein function prediction using function-aware domain embedding representations",
+            "Bidirectional learning for offline model-based biological sequence design"
+          ],
+          "5 Deep Learning based Protein Models 5.4 Assessment of Pre-training Methods for Protein Representation Learning": [
+            "Protst: Multi-modality learning of protein sequences and biomedical texts",
+            "LM-GVP: A Generalizable Deep Learning Framework for Protein Property Prediction from Sequence and Structure",
+            "Intrinsic-extrinsic convolution and pooling for learning on 3d protein structures",
+            "Non-homologous isofunctional enzymes: a systematic analysis of alternative solutions in enzyme evolution",
+            "Structure-based protein function prediction using graph convolutional networks",
+            "Protein representation learning by geometric structure pretraining",
+            "SaProt: Protein Language Modeling with Structure-aware Vocabulary",
+            "Pre-training Sequence, Structure, and Surface Features for Comprehensive Protein Representation Learning",
+            "SCOPe: manual curation and artifact removal in the structural classification of proteins\u2013extended database",
+            "Continuous-Discrete Convolution for Geometry-Sequence Modeling in Proteins"
+          ],
+          "6 Pretext Task 6.1 Self-supervised Pretext Task": [
+            "Fast protein structure comparison through effective representation learning with contrastive graph neural networks",
+            "A survey on protein representation learning: Retrospect and prospect",
+            "Contrastive representation learning for 3d protein structures",
+            "Protein representation learning by geometric structure pretraining",
+            "Pre-training Sequence, Structure, and Surface Features for Comprehensive Protein Representation Learning",
+            "xTrimoPGLM: unified 100B-scale pre-trained transformer for deciphering the language of protein",
+            "Structure-aware protein self-supervised learning",
+            "High-resolution de novo structure prediction from primary sequence",
+            "Pre-training co-evolutionary protein representation via a pairwise masked language model",
+            "Continual Pre-training of Language Models"
+          ],
+          "6 Pretext Task 6.2 Supervised Pretext Task": [
+            "Multi-level Protein Structure Pre-training via Prompt Learning",
+            "Learning the protein language: Evolution, structure, and function",
+            "K-bert: Enabling language representation with knowledge graph",
+            "Pre-training of deep bidirectional protein sequence representations with structural information"
+          ],
+          "7 Downstream Tasks 7.1 Protein Structure Prediction": [
+            "E2Efold-3D: End-to-End Deep Learning Method for accurate de novo RNA 3D Structure Prediction",
+            "Accurate prediction of protein structures and interactions using a three-track neural network",
+            "Se (3)-transformers: 3d roto-translation equivariant attention networks",
+            "RaptorX-Single: single-sequence protein structure prediction by integrating protein language models",
+            "AlphaFold encodes the principles to identify high affinity peptide binders",
+            "Protein complex prediction with AlphaFold-Multimer",
+            "Improved protein structure prediction using predicted inter-residue orientations",
+            "Deep Manifold Transformation for Protein Representation Learning",
+            "Fast, accurate antibody structure prediction from deep learning on massive set of natural antibodies",
+            "Language models of protein sequences at the scale of evolution enable accurate structure prediction",
+            "Accurate de novo prediction of protein contact map by ultra-deep learning model",
+            "Highly accurate protein structure prediction with AlphaFold",
+            "SPEACH_AF: Sampling protein ensembles and conformational heterogeneity with Alphafold2",
+            "High-resolution de novo structure prediction from primary sequence",
+            "Accurate prediction of inter-protein residue\u2013residue contacts for homo-oligomeric protein complexes",
+            "Study of real-valued distance prediction for protein structure prediction with deep learning"
+          ],
+          "7 Downstream Tasks 7.2 Protein Design": [
+            "Few-shot learning of accurate folding landscape for protein structure prediction",
+            "End-to-End Full-Atom Antibody Design",
+            "Learning inverse folding from millions of predicted structures",
+            "Progen: Language modeling for protein generation",
+            "Protein Sequence and Structure Co-Design with Equivariant Translation",
+            "Importance Weighted Expectation-Maximization for Protein Sequence Design",
+            "PiFold: Toward effective and efficient protein inverse folding",
+            "Full-Atom Protein Pocket Design via Iterative Refinement"
+          ],
+          "7 Downstream Tasks 7.3 Protein Property Prediction": [
+            "Evaluating protein transfer learning with TAPE",
+            "Protein representation learning by geometric structure pretraining",
+            "ProteinGym: Large-Scale Benchmarks for Protein Design and Fitness Prediction",
+            "Predicting mutational effects on protein-protein binding via a side-chain diffusion probabilistic model",
+            "Study of real-valued distance prediction for protein structure prediction with deep learning"
+          ],
+          "8 Discussion: Insights and Future Outlooks Towards a Generalizable Large-Scale Biological Model": [
+            "A structural biology community assessment of alphafold2 applications",
+            "State-of-the-Art estimation of protein model accuracy using AlphaFold",
+            "The Implications of OpenAI\u2019s Assistant for Legal Services and Society",
+            "Exploring evolution-based &-free protein language models as protein function predictors",
+            "Evidence for and Applications of Physics-Based Reasoning in AlphaFold",
+            "Pre-trained language models in biomedical domain: A systematic survey"
+          ],
+          "8 Discussion: Insights and Future Outlooks Case by Case": [
+            "xTrimoPGLM: unified 100B-scale pre-trained transformer for deciphering the language of protein",
+            "Language models of protein sequences at the scale of evolution enable accurate structure prediction"
+          ],
+          "8 Discussion: Insights and Future Outlooks Expanding Multimodal Representation Learning": [
+            "Learning the protein language: Evolution, structure, and function",
+            "Language models of protein sequences at the scale of evolution enable accurate structure prediction"
+          ],
+          "8 Discussion: Insights and Future Outlooks Practical Utility Across Domains": [
+            "Predicting mutational effects on protein-protein binding via a side-chain diffusion probabilistic model",
+            "High-resolution de novo structure prediction from primary sequence",
+            "Predicting drug\u2013protein interaction using quasi-visual question answering system",
+            "Extrapolative Controlled Sequence Generation via Iterative Refinement"
+          ],
+          "8 Discussion: Insights and Future Outlooks Unified Benchmarks and Evaluation Protocols": [
+            "OpenProteinSet: Training data for structural biology at scale",
+            "Evaluating protein transfer learning with TAPE",
+            "ProteinShake: Building datasets and benchmarks for deep learning on protein structures",
+            "A survey on protein representation learning: Retrospect and prospect",
+            "Evaluating Representation Learning on the Protein Structure Universe",
+            "ProteinGym: Large-Scale Benchmarks for Protein Design and Fitness Prediction",
+            "PEER: A Comprehensive and Multi-Task Benchmark for Protein Sequence Understanding",
+            "ProteinInvBench: Benchmarking Protein Inverse Folding on Diverse Tasks, Models, and Metrics"
+          ],
+          "8 Discussion: Insights and Future Outlooks Protein Structure Prediction in Post-AF2 Era": [
+            "Recent Advances and Challenges in Protein Structure Prediction",
+            "I-TASSER: a unified platform for automated protein structure and function prediction",
+            "Highly accurate protein structure prediction for the human proteome"
+          ],
+          "8 Discussion: Insights and Future Outlooks Boundary of Large Language Models in Proteins": [
+            "ProtChatGPT: Towards Understanding Proteins with Large Language Models, 2023",
+            "Language models are unsupervised multitask learners",
+            "Language models are few-shot learners",
+            "The Implications of OpenAI\u2019s Assistant for Legal Services and Society",
+            "Language models of protein sequences at the scale of evolution enable accurate structure prediction",
+            "Evolutionary-scale prediction of atomic-level protein structure with a language model",
+            "A deep unsupervised language model for protein design"
+          ]
+        },
+        "source": "Search SearchFrom:arxiv",
+        "select_score": 0.21533925831317902,
+        "extra": {
+          "expand": "not expand"
+        }
+      }
+    ],
+    "Application of AI in protein science": [
+      {
+        "title": "AlphaFold Accelerates Artificial Intelligence Powered Drug Discovery: Efficient Discovery of a Novel Cyclin-dependent Kinase 20 (CDK20) Small Molecule Inhibitor",
+        "arxiv_id": "2201.09647",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract The AlphaFold computer program predicted protein structures for the whole human genome, which has been considered as a remarkable breakthrough both in artificial intelligence (AI) application and structure biology. Despite the varying confidence level, these predicted structures still could significantly contribute to structure-based drug design of novel targets, especially the ones with no or limited structural information. In this work, we successfully applied AlphaFold in our end-to-end AI-powered drug discovery engines constituted of a biocomputational platform PandaOmics and a generative chemistry platform Chemistry42, to identify a first-in-class hit molecule of a novel target without an experimental structure starting from target selection towards hit identification in a cost- and time-efficient manner. PandaOmics provided the targets of interest and Chemistry42 generated the molecules based on the AlphaFold predicted structure, and the selected molecules were synthesized and tested in biological assays. Through this approach, we identified a small molecule hit compound for CDK20 with a Kd value of 8.9 \u00b1plus-or-minus\\pm 1.6 \u03bc\ud835\udf07\\muM (n=4\ud835\udc5b4n=4) within 30 days from target selection and after only synthesizing 7 compounds. Based on the available data, a second round of AI-powered compound generation was conducted and through which, a more potent hit molecule, ISM042-2-048, was discovered with a Kd value of 210.0 \u00b1plus-or-minus\\pm 42.4 nM (n=2\ud835\udc5b2n=2), within 30 days and after synthesizing 6 compounds from the discovery of the first hit ISM042-2-001. To the best of our knowledge, this is the first reported small molecule targeting CDK20 and more importantly, this work is the first demonstration of AlphaFold application in hit identification process in early drug discovery. ",
+        "sections": {
+          "Introduction": [
+            "A structural biology community assessment of AlphaFold 2 applications",
+            "Applying and improving AlphaFold at CASP14",
+            "Appris: selecting functionally important isoforms",
+            "Whole Exome Sequencing Identifies a Novel Homozygous Missense Mutation in the CSB Protein-Encoding ERCC6 Gene in a Taiwanese Boy with Cockayne Syndrome",
+            "Mapping of a N-terminal \u03b1\ud835\udefc\\alpha-helix domain required for human PINK1 stabilisation, Serine228 autophosphorylation and activation in cell.",
+            "The structure of HiSiaQM defines the architecture of tripartite ATP-independent periplasmic (TRAP) transporters.",
+            "The science news that shaped 2021: Nature\u2019s picks.",
+            "UniProt Database",
+            "AlphaFold heralds a data-driven revolution in biology and medicine",
+            "Therapeutic target database update 2022: facilitating drug discovery with enriched comparative data of targeted agents.",
+            "Accurate prediction of protein structures and interactions using a 3-track network",
+            "AlphaFold Protein Structure Database",
+            "Highly accurate protein structure prediction with AlphaFold",
+            "AlphaDesign: A de novo protein design framework based on AlphaFold",
+            "Computed structures of core eukaryotic protein complexes",
+            "Crystallographic molecular replacement using an in silico-generated search model of SARS-CoV-2 ORF8",
+            "A Structure-Based Drug Discovery Paradigm",
+            "Chemistry42: An ai-based platform for de novo molecular design.",
+            "Science\u2019s 2021 Breakthrough of the Year: AI brings protein structures to all"
+          ],
+          "Target Selection and Identification": [
+            "In silico Pathway Activation Network Decomposition Analysis (iPANDA) as a method for biomarker development",
+            "A Structure-Based Drug Discovery Paradigm"
+          ],
+          "CDK20 as a Promising Target for Cancer Treatment": [
+            "Hepatoma-intrinsic CCRK inhibition diminishes myeloid-derived suppressor cell immunosuppression and enhances immune-checkpoint blockade efficacy.",
+            "CCRK is a novel signalling hub exploitable in cancer immunotherapy.",
+            "Cell cycle\u2013related kinase is a direct androgen receptor\u2013regulated gene that drives \u03b2\ud835\udefd\beta-catenin/T cell factor\u2013dependent hepatocarcinogenesis.",
+            "CDK20 interacts with KEAP1 to activate NRF2 and promotes radiochemoresistance in lung cancer cells.",
+            "Tissue-based map of the human proteome",
+            "Functional characterisation of cell cycle-related kinase (CCRK) in colorectal cancer carcinogenesis"
+          ],
+          "Generation of Novel Hits Targeting CDK20 by using AlphaFold Predicted Structure": [
+            "Chemistry42: An ai-based platform for de novo molecular design."
+          ],
+          "Materials and Methods": [
+            "Radiology data from the cancer genome atlas liver hepatocellular carcinoma [TCGA-LIHC] collection",
+            "New insights into diagnosis and therapeutic options for proliferative hepatoblastoma",
+            "Expression of Pregnancy Up-regulated Non-ubiquitous Calmodulin Kinase (PNCK) in Hepatocellular Carcinoma",
+            "Plasmalemmal Vesicle Associated Protein (PLVAP) as a therapeutic target for treatment of hepatocellular carcinoma",
+            "Epigenetic footprint enables molecular risk stratification of hepatoblastoma with clinical implications",
+            "Fatty Acid Binding Protein 4 (FABP4) Overexpression in Intratumoral Hepatic Stellate Cells within Hepatocellular Carcinoma with Metabolic Risk Factors.",
+            "Intratumoral heterogeneity and clonal evolution in liver cancer"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.0317637138068676,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "A Survey on Protein Representation Learning: Retrospect and Prospect",
+        "arxiv_id": "2301.00813",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Proteins are fundamental biological entities that play a key role in life activities. The amino acid sequences of proteins can be folded into stable 3D structures in the real physicochemical world, forming a special kind of sequence-structure data. With the development of Artificial Intelligence (AI) techniques, Protein Representation Learning (PRL) has recently emerged as a promising research topic for extracting informative knowledge from massive protein sequences or structures. To pave the way for AI researchers with little bioinformatics background, we present a timely and comprehensive review of PRL formulations and existing PRL methods from the perspective of model architectures, pretext tasks, and downstream applications. We first briefly introduce the motivations for protein representation learning and formulate it in a general and unified framework. Next, we divide existing PRL methods into three main categories: sequence-based, structure-based, and sequence-structure co-modeling. Finally, we discuss some technical challenges and potential directions for improving protein representation learning. The latest advances in PRL methods are summarized in a GitHub repository https://github.com/LirongWu/awesome-protein-representation-learning. ",
+        "sections": {
+          "1 Introduction": [
+            "Representation learning applications in biological sequence analysis",
+            "Highly accurate protein structure prediction with alphafold",
+            "Molecular dynamics simulations: advances and applications",
+            "Protein structure prediction using rosetta"
+          ],
+          "3 Model Architectures 3.1 Sequence-based Encoder": [
+            "Variational auto-encoding of protein sequences",
+            "High-resolution de novo structure prediction from primary sequence",
+            "Convolutional networks for images, speech, and time series",
+            "Highly accurate protein structure prediction with alphafold",
+            "Deep residual learning for image recognition",
+            "Language modelling for biological sequences\u2013curated datasets and baselines",
+            "Attention is all you need",
+            "Deepprime2sec: deep learning for protein secondary structure prediction from the primary sequences",
+            "A high efficient biological language model for predicting protein\u2013protein interactions",
+            "Identification of direct residue contacts in protein\u2013protein interaction by message passing",
+            "Bert: Pre-training of deep bidirectional transformers for language understanding",
+            "Long short-term memory",
+            "Msa transformer"
+          ],
+          "3 Model Architectures 3.2 Structure-based Encoder": [
+            "Inductive representation learning on large graphs",
+            "Computational geometry: an introduction",
+            "Fast end-to-end learning on protein surfaces",
+            "Contrastive representation learning for 3d protein structures",
+            "Deep convolutional networks for quality assessment of protein folds",
+            "Protein representation learning by geometric structure pretraining",
+            "How powerful are graph neural networks?",
+            "Semi-supervised classification with graph convolutional networks",
+            "Directed weight neural networks for protein structure representation learning",
+            "Learning from protein structure with geometric vector perceptrons",
+            "Gbpnet: Universal geometric representation learning on protein structures",
+            "Intrinsic-extrinsic convolution and pooling for learning on 3d protein structures",
+            "A novel side-chain orientation dependent potential derived from random-walk reference state for protein fold selection and structure prediction"
+          ],
+          "3 Model Architectures 3.3 Sequence-structure Encoder": [
+            "Cross-modality and self-supervised protein embedding for compound\u2013protein affinity and contact prediction",
+            "Structure-based protein function prediction using graph convolutional networks",
+            "Lm-gvp: A generalizable deep learning framework for protein property prediction from sequence and structure."
+          ],
+          "4 Pretext Task 4.1 Sequence-based Pretext Task": [
+            "Evaluating protein transfer learning with tape",
+            "Profile prediction: An alignment-based pre-training task for protein sequence models",
+            "Pre-training co-evolutionary protein representation via a pairwise masked language model",
+            "Self-supervised contrastive learning of protein representations by mutual information maximization",
+            "Unified rational protein engineering with sequence-based deep representation learning",
+            "Progen: Language modeling for protein generation",
+            "Adversarial contrastive pre-training for protein sequences",
+            "Bert: Pre-training of deep bidirectional transformers for language understanding",
+            "Pre-training of deep bidirectional protein sequence representations with structural information"
+          ],
+          "4 Pretext Task 4.2 Structure-based Pretext Task": [
+            "Self-supervised learning on graphs: Contrastive, generative, or predictive",
+            "Cross-modality and self-supervised protein embedding for compound\u2013protein affinity and contact prediction",
+            "Contrastive representation learning for 3d protein structures",
+            "Protein representation learning by geometric structure pretraining",
+            "Structure-aware protein self-supervised learning"
+          ],
+          "4 Pretext Task 4.3 Sequence-structure Pretext Task": [
+            "Exploring evolution-based &-free protein language models as protein function predictors",
+            "Highly accurate protein structure prediction with alphafold",
+            "Masked inverse folding with sequence transfer for protein representation learning"
+          ],
+          "5 Downstream Tasks (Applications) 5.1 Protein Property Prediction": [
+            "Language models enable zero-shot prediction of the effects of mutations on protein function",
+            "Evaluating protein transfer learning with tape",
+            "Graphqa: protein model quality assessment using graph convolutional networks",
+            "A high efficient biological language model for predicting protein\u2013protein interactions"
+          ],
+          "5 Downstream Tasks (Applications) 5.2 Protein (Complex) Structure Prediction": [
+            "Proteinsgm: Score-based generative modeling for de novo protein design",
+            "Highly accurate protein structure prediction with alphafold",
+            "Accurate prediction of protein structures and interactions using a three-track neural network",
+            "Improved protein structure refinement guided by deep learning based accuracy estimation",
+            "Attnpacker: An end-to-end deep learning method for rotamer-free protein side-chain packing"
+          ],
+          "5 Downstream Tasks (Applications) 5.3 Protein Design": [
+            "The coming of age of de novo protein design",
+            "Generative models for graph-based protein design",
+            "Automatic generation of primary sequence patterns from sets of related protein sequences"
+          ],
+          "5 Downstream Tasks (Applications) 5.4 Structure-Based Drug Design": [
+            "Generating 3d molecules for target protein binding",
+            "Highly accurate protein structure prediction with alphafold",
+            "Learning from protein structure with geometric vector perceptrons",
+            "Diffbp: Generative diffusion of 3d molecules for target protein binding",
+            "Exploiting edge features for graph neural networks",
+            "A 3D generative model for structure-based drug design",
+            "Structure-based strategies for drug design and discovery"
+          ],
+          "6 Deep Insights and Future Outlooks 6.2 Future Outlooks": [
+            "Evaluating protein transfer learning with tape",
+            "Highly accurate protein structure prediction with alphafold",
+            "A comprehensive survey on transfer learning"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.010538844391703606,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "ProtAgents: Protein discovery via large language model multi-agent collaborations combining physics and machine learning Citation: A. Ghafarollahi, M.J. Buehler. arXiv, DOI:000000/11111., 2024",
+        "arxiv_id": "2402.04268",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Designing de novo proteins beyond those found in nature holds significant promise for advancements in both scientific and engineering applications. Current methodologies for protein design often rely on AI-based models, such as surrogate models that address end-to-end problems by linking protein structure to material properties or vice versa. However, these models frequently focus on specific material objectives or structural properties, limiting their flexibility when incorporating out-of-domain knowledge into the design process or comprehensive data analysis is required. In this study, we introduce ProtAgents, a platform for de novo protein design based on Large Language Models (LLMs), where multiple AI agents with distinct capabilities collaboratively address complex tasks within a dynamic environment. The versatility in agent development allows for expertise in diverse domains, including knowledge retrieval, protein structure analysis, physics-based simulations, and results analysis. The dynamic collaboration between agents, empowered by LLMs, provides a versatile approach to tackling protein design and analysis problems, as demonstrated through diverse examples in this study. The problems of interest encompass designing new proteins, analyzing protein structures and obtaining new first-principles data \u2013 natural vibrational frequencies \u2013 via physics simulations. The concerted effort of the system allows for powerful automated and synergistic design of de novo proteins with targeted mechanical properties. The flexibility in designing the agents, on one hand, and their capacity in autonomous collaboration through the dynamic LLM-based multi-agent environment on the other hand, unleashes great potentials of LLMs in addressing multi-objective materials problems and opens up new avenues for autonomous materials discovery and design. ",
+        "sections": {
+          "1 Introduction": [
+            "Retrieval-augmented generation for knowledge-intensive nlp tasks",
+            "Rapid prediction of protein natural frequencies using graph neural networks",
+            "Evaluating large language models trained on code.",
+            "Generative retrieval-augmented ontologic graph and multi-agent strategies for interpretive large language model-based materials design",
+            "Mechagents: Large language model multi-agent collaborations can solve mechanics problems, generate new data, and integrate knowledge.",
+            "Artificial intelligence and machine learning in design of mechanical materials",
+            "Gpt-4 technical report.",
+            "Mechgpt, a language-based strategy for mechanics and materials modeling that connects knowledge across scales, disciplines and modalities.",
+            "Program synthesis with large language models",
+            "Melm, a generative pretrained language modeling framework that solves forward and inverse mechanics problems",
+            "The coming of age of de novo protein design",
+            "End-to-end protein normal mode frequency predictions using language and graph models and application to sonification",
+            "Attention is all you need",
+            "Highly accurate protein structure prediction with alphafold",
+            "Tranception: Protein fitness prediction with autoregressive transformers and inference-time retrieval",
+            "End-to-end prediction of multimaterial stress fields and fracture patterns using cycle-consistent adversarial and transformer neural networks",
+            "Sparks of Artificial General Intelligence: Early experiments with GPT-4",
+            "A survey of convolutional neural networks: Analysis, applications, and prospects",
+            "Improving the prediction of protein secondary structure in three and eight classes using recurrent neural networks and profiles",
+            "End-to-end deep learning model to predict and design secondary structure content of structural proteins",
+            "Emergent abilities of large language models",
+            "14 examples of how LLMs can transform materials science and chemistry: a reflection on a large language model hackathon."
+          ],
+          "2 Results and Discussion": [
+            "Gpt-4 technical report.",
+            "Openai api"
+          ],
+          "2 Results and Discussion 2.2 Experiment II: De novo protein design using Chroma": [
+            "Illuminating protein space with a programmable generative model",
+            "Protein structure generation via folding diffusion"
+          ],
+          "2 Results and Discussion 2.3 Experiment III: Protein design conditioned on the protein CATH class": [
+            "Illuminating protein space with a programmable generative model",
+            "Hierarchies, multiple energy barriers, and robustness govern the fracture mechanics of \u03b1\ud835\udefc\\alpha-helical and \u03b2\ud835\udefd\\beta-sheet protein domains.",
+            "Mechanical strength of 17 134 model proteins and cysteine slipknots",
+            "Nanomechanics of functional and pathological amyloid materials"
+          ],
+          "3 Conclusions": [
+            "End-to-end protein normal mode frequency predictions using language and graph models and application to sonification",
+            "Highly accurate protein structure prediction with alphafold",
+            "Artificial neural networks for solving ordinary and partial differential equations"
+          ],
+          "4 Materials and Methods Agent design": [
+            "Autogen: An automated dynamic model generation framework for recommender system"
+          ],
+          "4 Materials and Methods Autoregressive transformer model to predict protein unfolding force-extension from sequences": [
+            "Forcegen: End-to-end de novo protein generation based on nonlinear mechanical unfolding responses using a protein language diffusion model",
+            "Roformer: Enhanced transformer with rotary position embedding"
+          ],
+          "4 Materials and Methods Software versions and hardware": [
+            "Autogen: Enabling next-gen LLM applications via multi-agent conversation"
+          ],
+          "4 Materials and Methods Visualization": [
+            "3dmol.js: molecular visualization with webgl"
+          ],
+          "4 Materials and Methods Secondary Structure Analysis": [
+            "Biopython: freely available python tools for computational molecular biology and bioinformatics",
+            "Dictionary of protein secondary structure: Pattern recognition of hydrogen-bonded and geometrical features"
+          ],
+          "4 Materials and Methods Natural Vibrational Frequency Calculations": [
+            "Anisotropy of fluctuation dynamics of proteins with an elastic network model",
+            "Prody: Protein dynamics inferred from theory and experiments"
+          ],
+          "4 Materials and Methods Retrieval Augmented Generation": [
+            "Mechanical strength of 17 134 model proteins and cysteine slipknots",
+            "LlamaIndex (formerly GPT index), a data framework for LLM applications."
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.8365637063980103,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Artificial intelligence for science: The easy and hard problems",
+        "arxiv_id": "2408.14508",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract A suite of impressive scientific discoveries have been driven by recent advances in artificial intelligence (AI). These almost all result from training flexible algorithms to solve difficult optimization problems specified in advance by teams of domain scientists and engineers with access to large amounts of data. Although extremely useful, this kind of problem solving only corresponds to one part of science\u2014the \u201ceasy problem.\u201d The other part of scientific research is coming up with the problem itself\u2014the \u201chard problem.\u201d Solving the hard problem is beyond the capacities of current algorithms for scientific discovery because it requires continual conceptual revision based on poorly defined constraints. We can make progress on understanding how humans solve the hard problem by studying the cognitive science of scientists, and then use the results to design new computational agents that automatically infer and update their scientific paradigms.",
+        "sections": {
+          "The easy problem": [
+            "Scientific discovery in the age of artificial intelligence"
+          ],
+          "The hard problem": [
+            "The structure of scientific revolutions"
+          ],
+          "The problem with optimization": [
+            "Does scientific discovery have a logic?",
+            "The four-color problem and its philosophical significance",
+            "Discovering governing equations from data by sparse identification of nonlinear dynamical systems",
+            "The logic of scientific discovery",
+            "Ai feynman: A physics-inspired method for symbolic regression",
+            "Distilling free-form natural laws from experimental data",
+            "Highly accurate protein structure prediction with alphafold",
+            "Studies of scientific discovery: Complementary approaches and convergent findings",
+            "Chemical discovery as belief revision",
+            "High-level perception, representation, and analogy: A critique of artificial intelligence methodology"
+          ],
+          "Problem representation": [
+            "Integrality versus separability of stimulus dimensions: From an early convergence of evidence to a proposed theoretical basis"
+          ],
+          "Case study 1: The discovery of oxygen": [
+            "An account of further discoveries in air",
+            "Elements of Chemistry in New Systematic Order, Containing All Modern Discoveries"
+          ],
+          "Case study 1: The discovery of oxygen STAHLp": [
+            "Does scientific discovery have a logic?",
+            "Chemical discovery as belief revision"
+          ],
+          "Case study 1: The discovery of oxygen STAHLp: Analysis": [
+            "Lavoisier\u2014the crucial year: the background and origin of his first experiments on combustion in 1772",
+            "Zuf\u00e4llige Gedanken und n\u00fctzliche Bedencken \u00fcber den Streit, von dem sogenannten Sulphure",
+            "Fundamenta chymiae dogmaticae & experimentalis"
+          ],
+          "Case study 1: The discovery of oxygen Historical perspective: Lavoisier and the discovery of oxygen": [
+            "Semantic and conceptual development: An ontological perspective",
+            "Antoine Lavoisier: The Next Crucial Year: Or, the Sources of His Quantitative Method in Chemistry"
+          ],
+          "Case Study 2: The electromagnetic field": [
+            "On lines of magnetic force: their definite character and their distribution within a magnet and through space",
+            "On the physical character of the lines of magnetic force",
+            "Ai feynman: A physics-inspired method for symbolic regression"
+          ],
+          "Case Study 2: The electromagnetic field AI Feynman: Analysis": [
+            "Discovering governing equations from data by sparse identification of nonlinear dynamical systems",
+            "Fractional diffusion models of cardiac electrical propagation: role of structural heterogeneity in dispersion of repolarization",
+            "On the newtonian constant of gravitation",
+            "Ai feynman: A physics-inspired method for symbolic regression"
+          ],
+          "Case Study 2: The electromagnetic field Historical perspective: Maxwell and the electromagnetic field concept": [
+            "On physical lines of force",
+            "Ai feynman: A physics-inspired method for symbolic regression",
+            "On faraday\u2019s lines of force",
+            "Creating scientific concepts",
+            "Maxwell and \u201cthe method of physical analogy\u201d: Model-based reasoning, generic abstraction, and conceptual change"
+          ],
+          "Case Study 3: Protein folding": [
+            "Principles that govern the folding of protein chains",
+            "Competitive inhibition by substrate during enzyme action. evidence for the induced-fit theory1, 2",
+            "Structure and function of haemoglobin: Ii. some relations between polypeptide chain configuration and amino acid sequence",
+            "A three-dimensional model of the myoglobin molecule obtained by x-ray analysis",
+            "The amino-acid sequence in the phenylalanyl chain of insulin. 1. the identification of lower peptides from partial hydrolysates."
+          ],
+          "Case Study 3: Protein folding AlphaFold2": [
+            "Highly accurate protein structure prediction with alphafold",
+            "Attention is all you need"
+          ],
+          "Case Study 3: Protein folding AlphaFold2: Analysis": [
+            "Theory change in science: Strategies from Mendelian genetics",
+            "The usefulness of amino acid and nucleotide sequences in evolutionary studies",
+            "Application of a theory of enzyme specificity to protein synthesis",
+            "Discovering complexity: Decomposition and localization as strategies in scientific research"
+          ],
+          "Understanding the hard problem": [
+            "The cognitive science of science: Explanation, discovery, and conceptual change",
+            "Connecting internal and external representations: Spatial transformations of scientific visualizations",
+            "In vitro analogies: Simulation modeling in bioengineering sciences",
+            "Manifesto for a new (computational) cognitive revolution",
+            "Creating scientific concepts",
+            "People construct simplified mental representations to plan.",
+            "Mechanical reasoning by mental simulation"
+          ],
+          "Towards scalable AI scientists that solve the hard problem": [
+            "Antoine Lavoisier: The Next Crucial Year: Or, the Sources of His Quantitative Method in Chemistry",
+            "Progress and its problems",
+            "On crashing the barrier of meaning in artificial intelligence",
+            "The ai scientist: Towards fully automated open-ended scientific discovery"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.0013973554596304893,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Beating the Best: Improving on AlphaFold2 at Protein Structure Prediction",
+        "arxiv_id": "2301.07568",
+        "depth": 0,
+        "child": {},
+        "abstract": "The goal of Protein Structure Prediction (PSP) problem is to predict a protein's 3D structure (confirmation) from its amino acid sequence. The problem has been a 'holy grail' of science since the Noble prize-winning work of Anfinsen demonstrated that protein conformation was determined by sequence. A recent and important step towards this goal was the development of AlphaFold2, currently the best PSP method. AlphaFold2 is probably the highest profile application of AI to science. Both AlphaFold2 and RoseTTAFold (another impressive PSP method) have been published and placed in the public domain (code & models). Stacking is a form of ensemble machine learning ML in which multiple baseline models are first learnt, then a meta-model is learnt using the outputs of the baseline level model to form a model that outperforms the base models. Stacking has been successful in many applications. We developed the ARStack PSP method by stacking AlphaFold2 and RoseTTAFold. ARStack significantly outperforms AlphaFold2. We rigorously demonstrate this using two sets of non-homologous proteins, and a test set of protein structures published after that of AlphaFold2 and RoseTTAFold. As more high quality prediction methods are published it is likely that ensemble methods will increasingly outperform any single method.",
+        "sections": null,
+        "source": "Search SearchFrom:arxiv",
+        "select_score": 0.12037473917007446,
+        "extra": {
+          "expand": "get full paper error"
+        }
+      },
+      {
+        "title": "ExplainableFold: Understanding AlphaFold Prediction with Explainable AI",
+        "arxiv_id": "2301.11765",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract. This paper presents ExplainableFold (x\ud835\udc65xFold), which is an Explainable AI framework for protein structure prediction. Despite the success of AI-based methods such as AlphaFold (\u03b1\ud835\udefc\\alphaFold) in this field, the underlying reasons for their predictions remain unclear due to the black-box nature of deep learning models. To address this, we propose a counterfactual learning framework inspired by biological principles to generate counterfactual explanations for protein structure prediction, enabling a dry-lab experimentation approach. Our experimental results demonstrate the ability of ExplainableFold to generate high-quality explanations for AlphaFold\u2019s predictions, providing near-experimental understanding of the effects of amino acids on 3D protein structure. This framework has the potential to facilitate a deeper understanding of protein structures. Source code and data of the ExplainableFold project are available at https://github.com/rutgerswiselab/ExplainableFold. ",
+        "sections": {
+          "1. Introduction": [
+            "Protein structure determination by x-ray crystallography",
+            "The effect of amino acid deletions and substitutions in the longest loop of gfp",
+            "Highly accurate protein structure prediction with alphafold",
+            "Chemical protein synthesis: advances, challenges, and outlooks",
+            "Machine learning in protein structure prediction",
+            "The protein folding problem",
+            "Random single amino acid deletion sampling unveils structural tolerance and the benefits of helical registry shift on gfp folding and structure.",
+            "Creating the next generation of protein therapeutics through rational drug design",
+            "Selective chemical protein modification",
+            "Sickle cell disease",
+            "Learning and evaluating graph neural network explanations based on counterfactual and factual reasoning",
+            "Counterfactual visual explanations",
+            "Counterfactual explanations for natural language interfaces",
+            "Suggestions for \u201csafe\u201d residue substitutions in site-directed mutagenesis",
+            "Counterfactual explainable recommendation",
+            "Mutagenesis at a specific position in a dna sequence",
+            "From Kepler to Newton: Explainable AI for Science Discovery"
+          ],
+          "2. Related Work 2.1. Residue Effect Analysis by Site-directed Mutagenesis": [
+            "Provean web server: a tool to predict the functional effect of amino acid substitutions and indels",
+            "Propagated perturbations from a peripheral mutation show interactions supporting ww domain thermostability",
+            "The effect of amino acid deletions and substitutions in the longest loop of gfp",
+            "Residue mutations and their impact on protein structure and function: detecting beneficial and pathogenic changes",
+            "Chapter 5.6 Nucleic Acids in Biotechnology",
+            "Analysis by systematic deletion of amino acids of the action of the ribotoxin restrictocin",
+            "A simple and efficient seamless dna cloning method using slice from escherichia coli laboratory strains and its application to slip site-directed mutagenesis",
+            "Protein tolerance to random amino acid change",
+            "Random single amino acid deletion sampling unveils structural tolerance and the benefits of helical registry shift on gfp folding and structure.",
+            "The human gene mutation database: towards a comprehensive repository of inherited mutation data for medical research, genetic diagnosis and next-generation sequencing studies.",
+            "Use of mutagenesis to probe igf-binding protein structure/function relationships",
+            "Accurate prediction of stability changes in protein mutants by combining machine learning with structure based computational mutagenesis",
+            "Mutagenesis at a specific position in a dna sequence"
+          ],
+          "2. Related Work 2.2. Counterfactual Reasoning for Explainable AI": [
+            "Generating plausible counterfactual explanations for deep transformers in financial text classification",
+            "Counterfactual explanations for models of code",
+            "Learning and evaluating graph neural network explanations based on counterfactual and factual reasoning",
+            "Counterfactual explanations without opening the black box: Automated decisions and the gdpr",
+            "Counterfactual explainable recommendation",
+            "Counterfactual visual explanations"
+          ],
+          "3. Problem Formulation": [
+            "Multiple sequence alignment",
+            "Improved protein structure prediction using potentials from deep learning.",
+            "Scoring function for automated assessment of protein structure template quality",
+            "The protein folding problem"
+          ],
+          "4. The ExplainableFold Framework": [
+            "Provean web server: a tool to predict the functional effect of amino acid substitutions and indels"
+          ],
+          "4. The ExplainableFold Framework 4.1. The Residue Deletion Approach": [
+            "Factual and counterfactual explanations for black box decision making",
+            "Random single amino acid deletion sampling unveils structural tolerance and the benefits of helical registry shift on gfp folding and structure.",
+            "Occam\u2019s razor",
+            "Decoding by linear programming",
+            "Rectifier nonlinearities improve neural network acoustic models",
+            "Scoring function for automated assessment of protein structure template quality",
+            "Counterfactual visual explanations"
+          ],
+          "4. The ExplainableFold Framework 4.2. The Residue Substitution Approach": [
+            "The effect of amino acid deletions and substitutions in the longest loop of gfp",
+            "Rates of conservative and radical nonsynonymous nucleotide substitutions in mammalian nuclear genes"
+          ],
+          "5. Experiments 5.1. Datasets": [
+            "Highly accurate protein structure prediction with alphafold",
+            "Critical assessment of techniques for protein structure prediction, fourteenth round. CASP 14 Abstract Book."
+          ],
+          "5. Experiments 5.2. Implementation Details": [
+            "Adam: A method for stochastic optimization",
+            "Highly accurate protein structure prediction with alphafold",
+            "Training deep nets with sublinear memory cost",
+            "Openfold: Retraining alphafold2 yields new insights into its learning mechanisms and capacity for generalization."
+          ],
+          "5. Experiments 5.3. Evaluation of the Deletion Approach": [
+            "Occam\u2019s razor",
+            "Causal inference in statistics: A primer",
+            "Computational mutagenesis studies of protein structure-function correlations",
+            "Learning and evaluating graph neural network explanations based on counterfactual and factual reasoning"
+          ],
+          "5. Experiments 5.4. Evaluation of the Substitution Approach": [
+            "The exchangeability of amino acids in proteins",
+            "Pearson correlation coefficient",
+            "Rates of conservative and radical nonsynonymous nucleotide substitutions in mammalian nuclear genes",
+            "Non-randomness of ammo-acid changes in the evolution of homologous proteins",
+            "Two types of amino acid substitutions in protein evolution",
+            "Suggestions for \u201csafe\u201d residue substitutions in site-directed mutagenesis"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.10269331187009811,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "The perpetual motion machine of AI-generated data and the distraction of ChatGPT-as-scientist",
+        "arxiv_id": "2312.00818",
+        "depth": 0,
+        "child": {},
+        "abstract": "Since ChatGPT works so well, are we on the cusp of solving science with AI? Is not AlphaFold2 suggestive that the potential of LLMs in biology and the sciences more broadly is limitless? Can we use AI itself to bridge the lack of data in the sciences in order to then train an AI? Herein we present a discussion of these topics.",
+        "sections": null,
+        "source": "Search SearchFrom:arxiv",
+        "select_score": 0.006533563137054443,
+        "extra": {
+          "expand": "get full paper error"
+        }
+      }
+    ],
+    "Research on DPO in antibody design": [
+      {
+        "title": "Diffusion Language Models Are Versatile Protein Learners",
+        "arxiv_id": "2402.18567",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract This paper introduces diffusion protein language model (DPLM), a versatile protein language model that demonstrates strong generative and predictive capabilities for protein sequences. We first pre-train scalable DPLMs from evolutionary-scale protein sequences within a generative self-supervised discrete diffusion probabilistic framework, which generalizes language modeling for proteins in a principled way. After pre-training, DPLM exhibits the ability to generate structurally plausible, novel and diverse protein sequences for unconditional generation. We further demonstrate the proposed diffusion generative pre-training make DPLM possess a better understanding of proteins, making it a superior representation learner, which can be fine-tuned for various predictive tasks, comparing favorably to ESM2\u00a0(Lin et\u00a0al., 2022). Moreover, DPLM can be tailored for various needs, which showcases its prowess of conditional generation in several ways: (1) conditioning on partial peptide sequences, e.g., generating scaffolds for functional motifs with high success rate; (2) incorporating other modalities as conditioner, e.g., structure-conditioned generation for inverse folding; and (3) steering sequence generation towards desired properties, e.g., satisfying specified secondary structures, through a plug-and-play classifier guidance. ",
+        "sections": {
+          "1 Introduction": [
+            "High-resolution image synthesis with latent diffusion models",
+            "Stacked denoising autoencoders: Learning useful representations in a deep network with a local denoising criterion",
+            "Progen2: exploring the boundaries of protein language models",
+            "Improving language understanding by generative pre-training",
+            "Denoising diffusion probabilistic models",
+            "BERT: Pre-training of deep bidirectional transformers for language understanding",
+            "Prottrans: Toward understanding the language of life through self-supervised learning",
+            "Deconstructing denoising diffusion models for self-supervised learning",
+            "Language models of protein sequences at the scale of evolution enable accurate structure prediction.",
+            "Biological structure and function emerge from scaling unsupervised learning to 250 million protein sequences.",
+            "Machine-learning-guided directed evolution for protein engineering",
+            "Attention is all you need",
+            "Se (3) diffusion model with application to protein backbone generation",
+            "Joint generation of protein sequence and structure with rosettafold sequence space diffusion"
+          ],
+          "2 Preliminaries 2.1 Language Modeling for Protein": [
+            "Gpt-4 technical report",
+            "BERT: Pre-training of deep bidirectional transformers for language understanding",
+            "Biological structure and function emerge from scaling unsupervised learning to 250 million protein sequences.",
+            "Attention is all you need"
+          ],
+          "2 Preliminaries 2.2 Diffusion Probabilistic Models": [
+            "Denoising diffusion probabilistic models",
+            "Deep unsupervised learning using nonequilibrium thermodynamics"
+          ],
+          "3 DPLM: A Versatile Protein LM Motivation.": [
+            "High-resolution image synthesis with latent diffusion models",
+            "Diffusion-lm improves controllable text generation",
+            "Riemannian score-based generative modelling",
+            "Dinoiser: Diffused conditional sequence learning by manipulating noises",
+            "Argmax flows and multinomial diffusion: Learning categorical distributions",
+            "De novo design of protein structure and function with rfdiffusion"
+          ],
+          "3 DPLM: A Versatile Protein LM 3.1 Protein Language Modeling w/ Discrete Diffusion": [
+            "Mask-predict: Parallel decoding of conditional masked language models",
+            "Structured denoising diffusion models in discrete state-spaces",
+            "Language models of protein sequences at the scale of evolution enable accurate structure prediction.",
+            "A reparameterized discrete diffusion model for text generation",
+            "Argmax flows and multinomial diffusion: Learning categorical distributions",
+            "Uniref clusters: a comprehensive and scalable alternative for improving sequence similarity searches"
+          ],
+          "3 DPLM: A Versatile Protein LM 3.2 Conditioning": [
+            "Atomic context-conditioned protein sequence design using ligandmpnn",
+            "Digress: Discrete denoising diffusion for graph generation",
+            "Structure-informed language models are protein designers",
+            "Generative modeling by estimating gradients of the data distribution",
+            "Robust deep learning\u2013based protein sequence design using proteinmpnn",
+            "Diffusion models beat gans on image synthesis"
+          ],
+          "3 DPLM: A Versatile Protein LM 3.3 Comparisons with The Most Related Work": [
+            "BERT has a mouth, and it must speak: BERT as a Markov random field language model",
+            "Protein generation with evolutionary diffusion: sequence is all you need",
+            "Language models generalize beyond natural proteins.",
+            "Autoregressive diffusion models",
+            "BERT: Pre-training of deep bidirectional transformers for language understanding",
+            "Biological structure and function emerge from scaling unsupervised learning to 250 million protein sequences.",
+            "Generating novel protein sequences using gibbs sampling of masked language models",
+            "Msa transformer"
+          ],
+          "4 Experiments 4.1 Evaluation of Unconditional Generation": [
+            "Language models of protein sequences at the scale of evolution enable accurate structure prediction.",
+            "The protein data bank"
+          ],
+          "4 Experiments 4.2 Evaluation of Protein Representation Learning on Downstream Predictive Tasks": [
+            "Fast and accurate protein structure search with foldseek",
+            "Evaluating protein transfer learning with tape",
+            "Highly accurate protein structure prediction with alphafold",
+            "Saprot: Protein language modeling with structure-aware vocabulary"
+          ],
+          "4 Experiments 4.3 Evaluation of Conditional Generation": [
+            "Cath\u2013a hierarchic classification of protein domain structures",
+            "High-resolution de novo structure prediction from primary sequence",
+            "Learning inverse folding from millions of predicted structures",
+            "Protein generation with evolutionary diffusion: sequence is all you need",
+            "Structure-informed language models are protein designers",
+            "De novo design of protein structure and function with rfdiffusion"
+          ],
+          "5 Discussions": [
+            "Illuminating protein space with a programmable generative model",
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "Emergent abilities of large language models",
+            "Highly accurate protein structure prediction with alphafold",
+            "Generalized biomolecular modeling and design with rosettafold all-atom",
+            "Language models of protein sequences at the scale of evolution enable accurate structure prediction.",
+            "Extending context window of large language models via positional interpolation",
+            "Self-play fine-tuning converts weak language models to strong language models",
+            "Performance and structural coverage of the latest, in-development alphafold model",
+            "Training language models to follow instructions with human feedback",
+            "De novo design of protein structure and function with rfdiffusion"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.8521757125854492,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Antigen-Specific Antibody Design via Direct Energy-based Preference Optimization",
+        "arxiv_id": "2403.16576",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Antibody design, a crucial task with significant implications across various disciplines such as therapeutics and biology, presents considerable challenges due to its intricate nature. In this paper, we tackle antigen-specific antibody design as a protein sequence-structure co-design problem, considering both rationality and functionality. Leveraging a pre-trained conditional diffusion model that jointly models sequences and structures of complementarity-determining regions (CDR) in antibodies with equivariant neural networks, we propose direct energy-based preference optimization to guide the generation of antibodies with both rational structures and considerable binding affinities to given antigens. Our method involves fine-tuning the pre-trained diffusion model using a residue-level decomposed energy preference. Additionally, we employ gradient surgery to address conflicts between various types of energy, such as attraction and repulsion. Experiments on RAbD benchmark show that our approach effectively optimizes the energy of generated antibodies and achieves state-of-the-art performance in designing high-quality antibodies with low total energy and high binding affinity, demonstrating the superiority of our approach. ",
+        "sections": {
+          "1 Introduction": [
+            "Janeway\u2019s immunobiology",
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "Rosettaantibodydesign (rabd): A general framework for computational antibody design",
+            "Replacing the complementarity-determining regions in a human antibody with those from a mouse",
+            "Unified rational protein engineering with sequence-based deep representation learning",
+            "Iterative refinement graph neural network for antibody sequence-structure co-design",
+            "Germinal centers",
+            "Self-play fine-tuning converts weak language models to strong language models"
+          ],
+          "2 Related Work": [
+            "Stabilizing policy gradients for stochastic differential equations via consistency with perturbation process",
+            "Antigen-specific antibody design and optimization with diffusion-based generative models for protein structures",
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "Abdiffuser: full-atom generation of in-vitro functioning antibodies",
+            "Structure-informed language models are protein designers",
+            "Conditional antibody design as 3d equivariant graph translation",
+            "A hierarchical training paradigm for antibody structure-sequence co-design",
+            "Rlaif: Scaling reinforcement learning from human feedback with ai feedback",
+            "Iterative refinement graph neural network for antibody sequence-structure co-design",
+            "Diffusion model alignment using direct preference optimization",
+            "Antibody-antigen docking and design via hierarchical structure refinement",
+            "Antibody complementarity determining region design using high-capacity machine learning",
+            "Reinforcement learning for fine-tuning text-to-image diffusion models",
+            "Training language models to follow instructions with human feedback",
+            "Training diffusion models with reinforcement learning",
+            "End-to-end full-atom antibody design"
+          ],
+          "3 Method 3.1 Preliminaries": [
+            "Computing exponentials of skew-symmetric matrices and logarithms of orthogonal matrices",
+            "Denoising diffusion probabilistic models on so (3) for rotational alignment",
+            "Antigen-specific antibody design and optimization with diffusion-based generative models for protein structures",
+            "Diversity in the cdr3 region of vh is sufficient for most antibody specificities",
+            "Denoising diffusion probabilistic models",
+            "Learning from protein structure with geometric vector perceptrons",
+            "Roto-translated local coordinate frames for interacting dynamical systems"
+          ],
+          "3 Method 3.2 Direct Energy-based Preference Optimization": [
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "The rosetta all-atom energy function for macromolecular modeling and design",
+            "Diffusion model alignment using direct preference optimization",
+            "Training language models to follow instructions with human feedback",
+            "Rank analysis of incomplete block designs: I. the method of paired comparisons"
+          ],
+          "3 Method 3.3 Energy Decomposition and Conflict Mitigation": [
+            "Gradient surgery for multi-task learning"
+          ],
+          "4 Experiments 4.1 Experimental Setup": [
+            "Imgt unique numbering for immunoglobulin and t cell receptor variable domains and ig superfamily v-like domains",
+            "Antigen-specific antibody design and optimization with diffusion-based generative models for protein structures",
+            "Mmseqs2 enables sensitive protein sequence searching for the analysis of massive data sets",
+            "Rosettaantibodydesign (rabd): A general framework for computational antibody design",
+            "The rosetta all-atom energy function for macromolecular modeling and design",
+            "Conditional antibody design as 3d equivariant graph translation",
+            "Sabdab: the structural antibody database",
+            "Antibody-antigen docking and design via hierarchical structure refinement",
+            "PyRosetta: a script-based interface for implementing molecular modeling algorithms using Rosetta",
+            "End-to-end full-atom antibody design"
+          ],
+          "4 Experiments 4.3 Ablation Studies": [
+            "Diffusion model alignment using direct preference optimization"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.9973708391189575,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Preference optimization of protein language models as a multi-objective binder design paradigm",
+        "arxiv_id": "2403.04187",
+        "depth": 0,
+        "child": {},
+        "abstract": "We present a multi-objective binder design paradigm based on instruction fine-tuning and direct preference optimization (DPO) of autoregressive protein language models (pLMs). Multiple design objectives are encoded in the language model through direct optimization on expert curated preference sequence datasets comprising preferred and dispreferred distributions. We show the proposed alignment strategy enables ProtGPT2 to effectively design binders conditioned on specified receptors and a drug developability criterion. Generated binder samples demonstrate median isoelectric point (pI) improvements by $17\\%-60\\%$.",
+        "sections": {
+          "1 Introduction": [
+            "Language models of protein sequences at the scale of evolution enable accurate structure prediction.",
+            "Solubility-aware protein binding peptide design using alphafold",
+            "Helixdiff: Hotspot-specific full-atom design of peptides using diffusion models.",
+            "Prottrans: Toward understanding the language of life through self-supervised learning.",
+            "Peptide therapeutics: current status and future directions",
+            "Pairing interacting protein sequences using masked language modeling.",
+            "Pepmlm: Target sequence-conditioned generation of peptide binders via masked language modeling.",
+            "Language models are unsupervised multitask learners.",
+            "Protgpt2 is a deep unsupervised language model for protein design.",
+            "Iglm: Infilling language modeling for antibody sequence design.",
+            "Deep reinforcement learning from human preferences.",
+            "Preference optimization for molecular language models.",
+            "Protein generation with evolutionary diffusion: sequence is all you need.",
+            "Generative antibody design for complementary chain pairing sequences through encoder-decoder language model.",
+            "Protein structure and sequence generation with equivariant denoising diffusion probabilistic models.",
+            "Direct preference optimization: Your language model is secretly a reward model.",
+            "Revolutionizing peptide-based drug discovery: Advances in the post-alphafold era",
+            "Progen2: exploring the boundaries of protein language models."
+          ],
+          "2 Methods": [
+            "Training language models to follow instructions with human feedback."
+          ],
+          "2 Methods 2.1 Supervised fine-tuning (SFT) for protein-peptide binders": [
+            "Neural machine translation of rare words with subword units.",
+            "Qlora: Efficient finetuning of quantized llms.",
+            "Chatml documentation"
+          ],
+          "2 Methods 2.2 Direct preference optimization (DPO) for multi-objective design": [
+            "Rank analysis of incomplete block designs: I. the method of paired comparisons.",
+            "Proximal policy optimization algorithms."
+          ],
+          "2 Methods 2.3 Preference datasets: specificity & isoelectric points": [
+            "Mmseqs2 enables sensitive protein sequence searching for the analysis of massive data sets.",
+            "Pepmlm: Target sequence-conditioned generation of peptide binders via masked language modeling.",
+            "Pepnn: a deep attention model for the identification of peptide binding sites.",
+            "Propedia v2. 3: A novel representation approach for the peptide-protein interaction database using graph-based structural signatures."
+          ],
+          "3 Results": [
+            "Perplexity\u2014a measure of the difficulty of speech recognition tasks."
+          ]
+        },
+        "source": "Search SearchFrom:arxiv",
+        "select_score": 0.9236101508140564,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Efficient Knowledge Infusion via KG-LLM Alignment",
+        "arxiv_id": "2406.03746",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract To tackle the problem of domain-specific knowledge scarcity within large language models (LLMs), knowledge graph-retrieval-augmented method has been proven to be an effective and efficient technique for knowledge infusion. However, existing approaches face two primary challenges: knowledge mismatch between public available knowledge graphs and the specific domain of the task at hand, and poor information compliance of LLMs with knowledge graphs. In this paper, we leverage a small set of labeled samples and a large-scale corpus to efficiently construct domain-specific knowledge graphs by an LLM, addressing the issue of knowledge mismatch. Additionally, we propose a three-stage KG-LLM alignment strategy to enhance the LLM\u2019s capability to utilize information from knowledge graphs. We conduct experiments with a limited-sample setting on two biomedical question-answering datasets, and the results demonstrate that our approach outperforms existing baselines.",
+        "sections": {
+          "1 Introduction": [
+            "Disc-medllm: Bridging general large language models and real-world medical consultation.",
+            "LoRA: Low-rank adaptation of large language models",
+            "Chatgpt: Optimizing language models for dialogue.",
+            "SKILL: Structured knowledge infusion for large language models",
+            "Overview of BioASQ 2022: The tenth BioASQ challenge on large-scale biomedical semantic indexing and question answering",
+            "Few-shot knowledge graph-to-text generation with pretrained language models",
+            "Improving language models by retrieving from trillions of tokens",
+            "Retrieval-augmented generation for knowledge-intensive nlp tasks",
+            "Chinese medical question answer matching based on interactive sentence representation learning"
+          ],
+          "2 Related Works": [
+            "Llms for knowledge graph construction and reasoning: Recent capabilities and future opportunities.",
+            "Leveraging passage retrieval with generative models for open domain question answering",
+            "COMET: commonsense transformers for automatic knowledge graph construction",
+            "Search-in-the-chain: Towards the accurate, credible and traceable content generation for complex knowledge-intensive tasks.",
+            "Pive: Prompting with iterative verification improving graph-based generative capability of llms.",
+            "Autokg: Constructing virtual knowledge graphs from unstructured documents for question answering.",
+            "Commonsense knowledge graph completion via contrastive pretraining and node clustering",
+            "Webbrain: Learning to generate factually correct articles for queries by grounding on large web corpus."
+          ],
+          "3 Methodology 3.1 Efficient construction of domain KGs": [
+            "Span-based joint entity and relation extraction with transformer pre-training"
+          ],
+          "3 Methodology 3.3 SFT with KG retrieval": [
+            "Retrieval-augmented generation for knowledge-intensive nlp tasks"
+          ],
+          "3 Methodology 3.4 AKGF": [
+            "Distance between sets",
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "Fine-tuning language models from human preferences."
+          ],
+          "4 Experimental Settings and Results 4.1 Datasets": [
+            "Overview of BioASQ 2022: The tenth BioASQ challenge on large-scale biomedical semantic indexing and question answering",
+            "Chinese medical question answer matching based on interactive sentence representation learning"
+          ],
+          "4 Experimental Settings and Results 4.4 Baselines": [
+            "Llama 2: Open foundation and fine-tuned chat models.",
+            "GAP: A graph-aware language model framework for knowledge graph-to-text generation",
+            "Retrieval-augmented generation for knowledge-intensive nlp tasks",
+            "GLM-130B: an open bilingual pre-trained model."
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.0003234182368032634,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Assessing the Solid Protocol in Relation to Security & Privacy Obligations",
+        "arxiv_id": "2210.08270",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract. The Solid specification aims to empower data subjects by giving them direct access control over their data across multiple applications. As governments are manifesting their interest in this framework for citizen empowerment and e-government services, security and privacy represent pivotal issues to be addressed. By analyzing the relevant legislation, notably GDPR, and international standards, namely ISO/IEC 27001:2011 and 15408, we formulate the primary security and privacy requirements for such a framework. Furthermore, we survey the current Solid protocol specifications regarding how they cover the highlighted requirements, and draw attention to potential gaps between the specifications and requirements. We also point out the contribution of recent academic work presenting novel approaches to increase the security and privacy degree provided by the Solid project. This paper has a twofold contribution to improve user awareness of how Solid can help protect their data and to present possible future research lines on Solid security and privacy enhancements.  ",
+        "sections": {
+          "1. Introduction": [
+            "User Access Privacy in OAuth 2.0 and OpenID Connect",
+            "Electronic identity services as sociotechnical and political-economic constructs",
+            "Solid: A platform for decentralized social applications based on Linked Data"
+          ],
+          "2. Background on Solid": [
+            "Enhancing privacy and dynamic federation in IdM for consumer Cloud computing",
+            "Access Control Policy (ACP)",
+            "Linked Data Platform 1.0",
+            "OpenID Connect Core 1.0",
+            "Above the Clouds: A Berkeley View of Cloud Computing",
+            "COVID-19 antibody test/vaccination certification: there\u2019s an app for that",
+            "Access control for Web of building data: Challenges and directions",
+            "Solid: A platform for decentralized social applications based on Linked Data",
+            "An access control framework for the Web of Data",
+            "Decentralized semantic identity",
+            "Towards a personal data vault society: an interplay between technological and business perspectives",
+            "A demonstration of the Solid platform for social Web applications"
+          ],
+          "3. Security & Privacy Requirements": [
+            "ISO/IEC 27701 Standard: Threats and Opportunities for GDPR Certification",
+            "Supporting verification and validation of security targets with ISO/IEC 15408",
+            "EU GDPR A Pocket Guide",
+            "Privacy as contextual integrity",
+            "Side-Channel Leaks in Web Applications: a Reality Today, a Challenge Tomorrow",
+            "Privacy by design",
+            "The EU e-Privacy directive and consent to cookies",
+            "Common Criteria for information technology security evaluation",
+            "EN DIN. ISO/IEC 27001: 2017-06"
+          ],
+          "4. Security & Privacy Assessment 4.1. Ensure access to authorised users (Req_01)": [
+            "Solid Protocol",
+            "SOLID-OIDC",
+            "Decentralized Identifiers (DIDs) v1.0 Core architecture, data model, and representations",
+            "Electronic identity services as sociotechnical and political-economic constructs",
+            "Analysing the Security of Google\u2019s Implementation of OpenID Connect"
+          ],
+          "4. Security & Privacy Assessment 4.2. Effective use of cryptography (Req_02)": [
+            "Raccoon Attack: Finding and Exploiting Most-Significant-Bit-Oracles in TLS-DH(E)",
+            "Handshake Privacy for TLS 1.3 - Technical report",
+            "TLS 1.3 in Practice:How TLS 1.3 Contributes to the Internet"
+          ],
+          "4. Security & Privacy Assessment 4.5. Identification of Eventual Legal Basis (Req_05)": [
+            "Greater Control and Transparency in Personal Data Processing"
+          ],
+          "4. Security & Privacy Assessment 4.6. Event Logs (Req_06 and Req_07)": [
+            "Access Control Policy (ACP)"
+          ],
+          "4. Security & Privacy Assessment 4.7. Data Protection Officer and Logs (Req_07)": [
+            "A Policy-Oriented Architecture for Enforcing Consent in Solid",
+            "Data Privacy Vocabulary (DPV) version 0.6"
+          ],
+          "4. Security & Privacy Assessment 4.9. Unlinkability to Personal Identities (Req_09)": [
+            "A Policy-Oriented Architecture for Enforcing Consent in Solid",
+            "SPRESSO: A Secure, Privacy-Respecting Single Sign-On System for the Web",
+            "Side-Channel Leaks in Web Applications: a Reality Today, a Challenge Tomorrow",
+            "Privacy-Preserving OpenID Connect"
+          ],
+          "4. Security & Privacy Assessment 4.11. Notification of Data Breaches (Req_11)": [
+            "Preventing active re-identification attacks on social graphs via Sybil subgraph obfuscation"
+          ],
+          "5. Conclusion with Recommendation": [
+            "FIDOnuous: a FIDO2/WebAuthn extension to support continuous web authentication",
+            "Design pattern as a service for blockchain-based self-sovereign identity"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 8.679561142344028e-05,
+        "extra": {
+          "expand": "not expand"
+        }
+      }
+    ],
+    "AI tools for protein design": [
+      {
+        "title": "Model-based reinforcement learning for protein backbone design",
+        "arxiv_id": "2405.01983",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract Designing protein nanomaterials of predefined shape and characteristics has the potential to dramatically impact the medical industry. Machine learning (ML) has proven successful in protein design, reducing the need for expensive wet lab experiment rounds. However, challenges persist in efficiently exploring the protein fitness landscapes to identify optimal protein designs. In response, we propose the use of AlphaZero to generate protein backbones, meeting shape and structural scoring requirements. We extend an existing Monte Carlo tree search (MCTS) framework by incorporating a novel threshold-based reward and secondary objectives to improve design precision. This innovation considerably outperforms existing approaches, leading to protein backbones that better respect structural scores. The application of AlphaZero is novel in the context of protein backbone design and demonstrates promising performance. AlphaZero consistently surpasses baseline MCTS by more than 100% in top-down protein design tasks. Additionally, our application of AlphaZero with secondary objectives uncovers further promising outcomes, indicating the potential of model-based reinforcement learning (RL) in navigating the intricate and nuanced aspects of protein design.",
+        "sections": {
+          "1 Introduction": [
+            "Deep reinforcement learning: A brief survey",
+            "Recent advances in (therapeutic protein) drug development",
+            "Reinforcement learning: An introduction",
+            "Mastering the game of go with deep neural networks and tree search",
+            "Model-based reinforcement learning for biological sequence design",
+            "Ranked reward: Enabling self-play reinforcement learning for combinatorial optimization",
+            "Self-play reinforcement learning guides protein engineering",
+            "Determination of protein structural ensembles using cryo-electron microscopy",
+            "Multifunctional materials through modular protein engineering",
+            "Learning combinatorial optimization algorithms over graphs",
+            "Optimization of protein models",
+            "Top-down design of protein architectures with reinforcement learning",
+            "Enzyme discovery and engineering for sustainable plastic recycling",
+            "Reinforcement learning for combinatorial optimization: A survey",
+            "Protein 3d structure computed from evolutionary sequence variation",
+            "Highly accurate protein structure prediction with alphafold",
+            "Robust deep learning\u2013based protein sequence design using proteinmpnn"
+          ],
+          "2 Methods 2.1 Markov Decision Process": [
+            "Top-down design of protein architectures with reinforcement learning"
+          ],
+          "2 Methods 2.2 AlphaZero for protein backbone design": [
+            "A general reinforcement learning algorithm that masters chess, shogi, and go through self-play"
+          ],
+          "3 Results 3.1 Benchmark of MCTS against AlphaZero": [
+            "Top-down design of protein architectures with reinforcement learning"
+          ],
+          "4 Discussion": [
+            "Curriculum learning for reinforcement learning domains: A framework and survey",
+            "Se (3) diffusion model with application to protein backbone generation",
+            "Top-down design of protein architectures with reinforcement learning"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.8012955188751221,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "AlphaDesign: A graph protein design method and benchmark on AlphaFoldDB",
+        "arxiv_id": "2202.01079",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract While DeepMind has tentatively solved protein folding, its inverse problem \u2013 protein design which predicts protein sequences from their 3D structures \u2013 still faces significant challenges. Particularly, the lack of large-scale standardized benchmark and poor accuray hinder the research progress. In order to standardize comparisons and draw more research interest, we use AlphaFold DB, one of the world\u2019s largest protein structure databases, to establish a new graph-based benchmark \u2013 AlphaDesign. Based on AlphaDesign, we propose a new method called ADesign to improve accuracy by introducing protein angles as new features, using a simplified graph transformer encoder (SGT), and proposing a confidence-aware protein decoder (CPD). Meanwhile, SGT and CPD also improve model efficiency by simplifying the training and testing procedures. Experiments show that ADesign significantly outperforms previous graph models, e.g., the average accuracy is improved by 8%, and the inference speed is 40+ times faster than before. ",
+        "sections": {
+          "1 Introduction": [
+            "Molecular technology: designing proteins and peptides",
+            "Spin2: Predicting sequence profiles from protein structures using deep neural networks.",
+            "Generative models for graph-based protein design",
+            "Highly accurate protein structure prediction with alphafold",
+            "Learning from protein structure with geometric vector perceptrons",
+            "Conversion of proteins into biofuels by engineering nitrogen flux",
+            "Direct prediction of profiles of sequences compatible with a protein structure by neural networks with fragment-based local and energy-based nonlocal profiles.",
+            "Densecpd: improving the accuracy of neural-network-based computational protein sequence design with densenet",
+            "Alphafold protein structure database: Massively expanding the structural coverage of protein-sequence space with high-accuracy models"
+          ],
+          "2 Related work Problem definition": [
+            "The limits of protein sequence comparison?"
+          ],
+          "2 Related work MLP-based models": [
+            "Spin2: Predicting sequence profiles from protein structures using deep neural networks.",
+            "Direct prediction of profiles of sequences compatible with a protein structure by neural networks with fragment-based local and energy-based nonlocal profiles.",
+            "Computational protein design with deep learning neural networks"
+          ],
+          "2 Related work CNN-based models": [
+            "Densely connected convolutional networks",
+            "Prodconn: Protein design using a convolutional neural network",
+            "To improve protein sequence profile prediction through image captioning on pairwise residue distance map",
+            "Densecpd: improving the accuracy of neural-network-based computational protein sequence design with densenet"
+          ],
+          "2 Related work Graph-based models": [
+            "Fast and flexible protein design using deep graph neural networks",
+            "Convolutional neural networks on graphs with fast localized spectral filtering",
+            "Generative models for graph-based protein design",
+            "Learning from protein structure with geometric vector perceptrons"
+          ],
+          "3 Methods 3.2 Graph encoder": [
+            "Generative models for graph-based protein design",
+            "Se (3)-transformers: 3d roto-translation equivariant attention networks"
+          ],
+          "3 Methods 3.3 Sequence decoder": [
+            "Generative models for graph-based protein design"
+          ],
+          "4 Experiments 4.1 Benchmark comparation (Q1)": [
+            "Generative models for graph-based protein design",
+            "Highly accurate protein structure prediction with alphafold",
+            "Learning from protein structure with geometric vector perceptrons",
+            "High-accuracy protein structure prediction in casp14",
+            "Rcsb protein data bank: powerful new tools for exploring 3d structures of biological macromolecules for basic and applied research and education in fundamental biology, biomedicine, biotechnology, bioengineering and energy sciences.",
+            "Direct prediction of profiles of sequences compatible with a protein structure by neural networks with fragment-based local and energy-based nonlocal profiles.",
+            "To improve protein sequence profile prediction through image captioning on pairwise residue distance map",
+            "\u2019it will change everything\u2019: Deepmind\u2019s ai makes gigantic leap in solving protein structures",
+            "Alphafold protein structure database: Massively expanding the structural coverage of protein-sequence space with high-accuracy models"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.7817303538322449,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "A Text-guided Protein Design Framework",
+        "arxiv_id": "2302.04611",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Current AI-assisted protein design mainly utilizes protein sequential and structural information. Meanwhile, there exists tremendous knowledge curated by humans in the text format describing proteins\u2019 high-level functionalities. Yet, whether the incorporation of such text data can help protein design tasks has not been explored. To bridge this gap, we propose ProteinDT, a multi-modal framework that leverages textual descriptions for protein design. ProteinDT consists of three subsequent steps: ProteinCLAP which aligns the representation of two modalities, a facilitator that generates the protein representation from the text modality, and a decoder that creates the protein sequences from the representation. To train ProteinDT, we construct a large dataset, SwissProtCLAP, with 441K text and protein pairs. We quantitatively verify the effectiveness of ProteinDT on three challenging tasks: (1) over 90% accuracy for text-guided protein generation; (2) best hit ratio on 10 zero-shot text-guided protein editing tasks; (3) superior performance on four out of six protein property prediction benchmarks. ",
+        "sections": {
+          "Results Dataset Construction and Two Modalities": [
+            "Plant Bioinformatics",
+            "Semantic scholar",
+            "The universal protein resource (UniProt)",
+            "UniProt \u201cUniProtKG/Swiss-Prot\u201d",
+            "Introduction to protein structure",
+            "Attention is all you need",
+            "Protein-level assembly increases protein sequence recovery from metagenomic samples manyfold",
+            "Bert: Pre-training of deep bidirectional transformers for language understanding"
+          ],
+          "Results Downstream Task: Text-to-Protein Generation": [
+            "Galactica: A large language model for science",
+            "Difformer: Empowering Diffusion Model on Embedding Space for Text Generation"
+          ],
+          "Results Downstream Task: Zero-shot Text-guided Protein Editing": [
+            "Highly accurate protein structure prediction with AlphaFold",
+            "The protein data bank",
+            "Language models enable zero-shot prediction of the effects of mutations on protein function",
+            "Dictionary of protein secondary structure: pattern recognition of hydrogen-bonded and geometrical features"
+          ],
+          "Results Downstream Task: Protein Property Prediction": [
+            "NetSurfP-2.0: Improved prediction of protein structural features by integrated deep learning",
+            "Proceedings of the IEEE conference on computer vision and pattern recognition",
+            "Gene Ontology: tool for the unification of biology",
+            "International Conference on Machine Learning",
+            "Long short-term memory",
+            "Local fitness landscape of the green fluorescent protein",
+            "Protein-level assembly increases protein sequence recovery from metagenomic samples manyfold",
+            "DeepSF: deep convolutional neural network for mapping protein sequences to folds",
+            "ProteinNet: a standardized data set for machine learning of protein structure"
+          ],
+          "Discussion": [
+            "Dual use of artificial-intelligence-powered drug discovery",
+            "PubTator central",
+            "Proceedings of the 39th International Conference on Machine Learning",
+            "Low-N protein engineering with data-efficient deep learning",
+            "Neural networks to learn protein sequence\u2013function relationships from deep mutational scanning data"
+          ],
+          "Method Backgrounds on Generative Models": [
+            "Denoising diffusion probabilistic models",
+            "Score-based generative modeling through stochastic differential equations",
+            "Language models are unsupervised multitask learners",
+            "A connection between score matching and denoising autoencoders"
+          ],
+          "Method ProteinCLAP Model": [
+            "A tutorial on energy-based learning",
+            "Learning deep representations by mutual information estimation and maximization",
+            "Supervised contrastive learning",
+            "Representation learning with contrastive predictive coding",
+            "International Conference on Learning Representations"
+          ],
+          "Method ProteinFacilitator Model": [
+            "International Conference on Learning Representations"
+          ],
+          "Method Protein Decoding": [
+            "Exploring the limits of transfer learning with a unified text-to-text transformer.",
+            "Attention is all you need",
+            "Generative modeling by estimating gradients of the data distribution",
+            "Bert: Pre-training of deep bidirectional transformers for language understanding",
+            "Argmax flows and multinomial diffusion: Learning categorical distributions",
+            "Interspeech 2020, 21st Annual Conference of the International Speech Communication Association, Virtual Event, Shanghai, China, 25-29 October 2020",
+            "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics, ACL 2020, Online, July 5-10, 2020"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.915324866771698,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Protein Design by Integrating Machine Learning with Quantum Annealing and Quantum-inspired Optimization",
+        "arxiv_id": "2407.07177",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract The protein design problem involves finding polypeptide sequences folding into a given three-dimensional structure. Its rigorous algorithmic solution is computationally demanding, involving a nested search in sequence and structure spaces. Structure searches can now be bypassed thanks to recent machine learning breakthroughs, which have enabled accurate and rapid structure predictions. Similarly, sequence searches might be entirely transformed by the advent of quantum annealing machines and by the required new encodings of the search problem, which could be performative even on classical machines. In this work, we introduce a general protein design scheme where algorithmic and technological advancements in machine learning and quantum-inspired algorithms can be integrated, and an optimal physics-based scoring function is iteratively learned. In this first proof-of-concept application, we apply the iterative method to a lattice protein model amenable to exhaustive benchmarks, finding that it can rapidly learn a physics-based scoring function and achieve promising design performances. Strikingly, our quantum-inspired reformulation outperforms conventional sequence optimization even when adopted on classical machines. The scheme is general and can easily extended, e.g., to encompass off-lattice models, and it can integrate progress on various computational platforms, thus representing a new paradigm approach for protein design.",
+        "sections": {},
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.8372657299041748,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Generative AI for Controllable Protein Sequence Design: A Survey",
+        "arxiv_id": "2402.10516",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract The design of novel protein sequences with targeted functionalities underpins a central theme in protein engineering, impacting diverse fields such as drug discovery and enzymatic engineering. However, navigating this vast combinatorial search space remains a severe challenge due to time and financial constraints. This scenario is rapidly evolving as the transformative advancements in AI, particularly in the realm of generative models and optimization algorithms, have been propelling the protein design field towards an unprecedented revolution. In this survey, we systematically review recent advances in generative AI for controllable protein sequence design. To set the stage, we first outline the foundational tasks in protein sequence design in terms of the constraints involved and present key generative models and optimization algorithms. We then offer in-depth reviews of each design task and discuss the pertinent applications. Finally, we identify the unresolved challenges and highlight research opportunities that merit deeper exploration. ",
+        "sections": {
+          "1 Introduction": [
+            "Design by directed evolution",
+            "Controllable protein design with language models",
+            "Protein sequence design with deep generative models"
+          ],
+          "2 Preliminaries 2.1 Problem Formulation": [
+            "Introduction to protein structure"
+          ],
+          "2 Preliminaries 2.2 Deep Generative Models": [
+            "Diffusion-lm improves controllable text generation",
+            "Structured denoising diffusion models in discrete state-spaces",
+            "Deep unsupervised learning using nonequilibrium thermodynamics",
+            "Auto-encoding variational bayes",
+            "Generative adversarial networks",
+            "A neural probabilistic language model"
+          ],
+          "2 Preliminaries 2.3 Optimization algorithms": [
+            "Reinforcement learning: An introduction",
+            "Automatic chemical design using a data-driven continuous representation of molecules",
+            "Taking the human out of the loop: A review of bayesian optimization",
+            "Flow network based generative models for non-iterative diverse candidate generation",
+            "Biological sequence design with gflownets"
+          ],
+          "3 Distribution Learning of Natural Sequences 3.1 Local Sequence Space": [
+            "An evolution-based model for designing chorismate mutase enzymes",
+            "Expanding functional protein sequence spaces using generative adversarial networks",
+            "Generating functional protein variants with variational autoencoders"
+          ],
+          "3 Distribution Learning of Natural Sequences 3.2 Global Sequence Space": [
+            "Progen2: exploring the boundaries of protein language models",
+            "Scaling laws for neural language models",
+            "Protein generation with evolutionary diffusion: sequence is all you need",
+            "unified 100b-scale pre-trained transformer for deciphering the language of protein",
+            "Protgpt2 is a deep unsupervised language model for protein design",
+            "Structured denoising diffusion models in discrete state-spaces",
+            "Autoregressive diffusion models",
+            "Rita: a study on scaling up generative protein sequence models",
+            "Language models are few-shot learners",
+            "Attention is all you need"
+          ],
+          "3 Distribution Learning of Natural Sequences 3.3 Databases": [
+            "Uniprot: a worldwide hub of protein knowledge",
+            "Observed antibody space: A diverse database of cleaned, annotated, and translated unpaired and paired antibody sequences."
+          ],
+          "4 Controllable Protein Sequence Design 4.1 Structure-to-sequence Design": [
+            "Cath\u2013a hierarchic classification of protein domain structures",
+            "Knowledge-design: Pushing the limit of protein deign via knowledge refinement",
+            "Learning inverse folding from millions of predicted structures",
+            "Structure-informed language models are protein designers",
+            "Generative models for graph-based protein design",
+            "Structured denoising diffusion models in discrete state-spaces",
+            "De novo protein design using geometric vector field networks",
+            "Learning from protein structure with geometric vector perceptrons",
+            "Graph denoising diffusion for inverse protein folding",
+            "Biological structure and function emerge from scaling unsupervised learning to 250 million protein sequences.",
+            "Pifold: Toward effective and efficient protein inverse folding",
+            "Robust deep learning\u2013based protein sequence design using proteinmpnn",
+            "Direct prediction of profiles of sequences compatible with a protein structure by neural networks with fragment-based local and energy-based nonlocal profiles.",
+            "Proteininvbench: Benchmarking protein inverse folding on diverse tasks, models, and metrics"
+          ],
+          "4 Controllable Protein Sequence Design 4.2 Function-to-sequence Design": [
+            "Ctrl: A conditional transformer language model for controllable generation",
+            "Adalead: A simple and robust adaptive greedy search algorithm for sequence design",
+            "Self-play reinforcement learning guides protein engineering",
+            "Amortized bayesian optimization over discrete spaces",
+            "Generative power of a protein language model trained on multiple sequence alignments",
+            "Large language models generate functional protein sequences across diverse families.",
+            "Transformer-based protein generation with regularized latent space optimization",
+            "Model-based reinforcement learning for biological sequence design",
+            "Protein design with guided discrete diffusion",
+            "Proximal exploration for model-guided protein sequence design",
+            "Diffusion models beat gans on image synthesis",
+            "Proteinrl: Reinforcement learning with generative protein language models for property-directed sequence design",
+            "Biological sequence design with gflownets",
+            "Accelerating bayesian optimization for biological sequence design with denoising autoencoders",
+            "Msa transformer"
+          ],
+          "4 Controllable Protein Sequence Design 4.3 High-level constraints": [
+            "A text-guided protein design framework",
+            "Protein design with guided discrete diffusion",
+            "Disentangled wasserstein autoencoder for t-cell receptor engineering",
+            "Instructprotein: Aligning human and protein language via knowledge instruction"
+          ],
+          "5 Applications 5.1 Peptide": [
+            "Accelerated antimicrobial discovery via deep generative models and molecular dynamics simulations",
+            "Signal peptides generated by attention-based neural networks"
+          ],
+          "5 Applications 5.2 Antibody": [
+            "Protein design with guided discrete diffusion"
+          ],
+          "5 Applications 5.3 Enzyme": [
+            "Self-play reinforcement learning guides protein engineering",
+            "Expanding functional protein sequence spaces using generative adversarial networks"
+          ],
+          "6 Challenges and Opportunities 6.2 Opportunities": [
+            "Proteininvbench: Benchmarking protein inverse folding on diverse tasks, models, and metrics"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.7338400483131409,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Deep Generative Modeling for Protein Design",
+        "arxiv_id": "2109.13754",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Deep learning approaches have produced substantial breakthroughs in fields such as image classification and natural language processing and are making rapid inroads in the area of protein design. Many generative models of proteins have been developed that encompass all known protein sequences, model specific protein families, or extrapolate the dynamics of individual proteins. Those generative models can learn protein representations that are often more informative of protein structure and function than hand-engineered features. Furthermore, they can be used to quickly propose millions of novel proteins that resemble the native counterparts in terms of expression level, stability, or other attributes. The protein design process can further be guided by discriminative oracles to select candidates with the highest probability of having the desired properties. In this review, we discuss five classes of generative models that have been most successful at modeling proteins and provide a framework for model guided protein design. ",
+        "sections": {
+          "1 Introduction": [
+            "The coming of age of de novo protein design",
+            "Highly accurate protein structure prediction with AlphaFold,",
+            "Deep Learning in Protein Structural Modeling and Design"
+          ],
+          "2 Generative models of protein sequences and structures": [
+            "Deep Generative Modelling: A Comparative Review of VAEs, GANs, Normalizing Flows, Energy-Based and Autoregressive Models"
+          ],
+          "2 Generative models of protein sequences and structures 2.1 Autoregressive models": [
+            "Combining Contextualized Language Models and Graph Neural Networks to Predict Effects of Mutations",
+            "MSA Transformer",
+            "Biological structure and function emerge from scaling unsupervised learning to 250 million protein sequences",
+            "Language models enable zero-shot prediction of the effects of mutations on protein function",
+            "Evaluating Protein Transfer Learning with TAPE",
+            "ProGen: Language Modeling for Protein Generation",
+            "Attention is All you Need",
+            "Unified rational protein engineering with sequence-based deep representation learning",
+            "Protein design and variant prediction using autoregressive generative models",
+            "SE(3)-Transformers: 3D Roto-Translation Equivariant Attention Networks",
+            "Generative Models for Graph-Based Protein Design",
+            "Fast and Flexible Protein Design Using Deep Graph Neural Networks",
+            "Macromolecular modeling and design in Rosetta: Recent methods and frameworks,"
+          ],
+          "2 Generative models of protein sequences and structures 2.2 Variational autoencoders (VAEs)": [
+            "Deep generative models of genetic variation capture the effects of mutations",
+            "IG-VAE: Generative Modeling of Immunoglobulin Proteins by Direct 3D Coordinate Generation",
+            "Design of metalloproteins and novel protein folds using variational autoencoders",
+            "Accelerated antimicrobial discovery via deep generative models and molecular dynamics simulations",
+            "Generating functional protein variants with variational autoencoders"
+          ],
+          "2 Generative models of protein sequences and structures 2.3 Normalizing flows (NFs)": [
+            "Boltzmann generators: Sampling equilibrium states of many-body systems with deep learning"
+          ],
+          "2 Generative models of protein sequences and structures 2.4 Energy-based models (EBMs)": [
+            "Deciphering interaction fingerprints from protein molecular surfaces using geometric deep learning",
+            "Fast end-to-end learning on protein surfaces",
+            "Continuous Distributed Representation of Biological Sequences for Deep Proteomics and Genomics",
+            "Energy-based models for atomic-resolution protein conformations",
+            "Macromolecular modeling and design in Rosetta: Recent methods and frameworks,",
+            "Protein Sequence Design with a Learned Potential"
+          ],
+          "2 Generative models of protein sequences and structures 2.5 Generative adversarial networks (GANs)": [
+            "Fully differentiable full-atom protein backbone generation",
+            "De Novo Protein Design for Novel Folds Using Guided Conditional Wasserstein Generative Adversarial Networks",
+            "Generative modeling for protein structures",
+            "Expanding functional protein sequence spaces using generative adversarial networks",
+            "Protein contact map refinement for improving structure prediction using generative adversarial networks"
+          ],
+          "3 Model guided protein design": [
+            "Boltzmann generators: Sampling equilibrium states of many-body systems with deep learning",
+            "ProGen: Language Modeling for Protein Generation",
+            "Generative Models for Graph-Based Protein Design",
+            "Toward machine-guided design of proteins",
+            "Protein contact map refinement for improving structure prediction using generative adversarial networks",
+            "Low- N protein engineering with data-efficient deep learning"
+          ],
+          "4 Conclusions": [
+            "MSA Transformer",
+            "Graphein - a Python Library for Geometric Deep Learning and Network Analysis on Protein Structures",
+            "Fast and Flexible Protein Design Using Deep Graph Neural Networks",
+            "Generative Models for Graph-Based Protein Design",
+            "UniProt: The universal protein knowledgebase in 2021"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.8195620179176331,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Leveraging Deep Generative Model For Computational Protein Design And Optimization",
+        "arxiv_id": "2408.17241",
+        "depth": 0,
+        "child": {},
+        "abstract": "Proteins are the fundamental macromolecules that play diverse and crucial roles in all living matter and have tremendous implications in healthcare, manufacturing, and biotechnology. Their functions are largely determined by the sequences of amino acids that compose them and their unique three-dimensional structures when folded. The recent surge in highly accurate computational protein structure prediction tools has equipped scientists with the means to derive preliminary structural insights without the onerous costs of experimental structure determination. These breakthroughs hold profound promise for building robust and efficient in silico protein design systems.   While the prospect of designing de novo proteins with precise computational accuracy remains a grand challenge in biochemical engineering, conventional assembly-based and rational design methods often grapple with the expansive design space, resulting in suboptimal design success rates. Despite recently emerged deep learning-based models have shown promise in improving the efficiency of the computational protein design process, a significant gap persists between current design paradigms and their experimental realization. This thesis will investigate the potential of deep generative models in refining protein structure and sequence design methods, aiming to develop frameworks capable of crafting novel protein sequences with predetermined structures or specific functionalities. By harnessing extensive protein databases and cutting-edge neural architectures, this research aims to enhance precision and robustness in current protein design paradigms, potentially paving the way for advancements across various scientific fields.",
+        "sections": null,
+        "source": "Search SearchFrom:arxiv",
+        "select_score": 0.9327605962753296,
+        "extra": {
+          "expand": "get full paper error"
+        }
+      }
+    ]
+  },
+  "abstract": "",
+  "sections": "",
+  "source": "Root",
+  "select_score": 0.0,
+  "extra": {
+    "touch_ids": [
+      "2310.09685",
+      "2312.09843",
+      "2408.06292",
+      "2402.18567",
+      "2403.16576",
+      "2403.04187",
+      "2201.09647",
+      "2301.00813",
+      "2402.04268",
+      "2408.14508",
+      "2301.07568",
+      "2405.01983",
+      "2202.01079",
+      "2302.04611",
+      "2407.07177",
+      "2402.10516",
+      "2109.13754",
+      "2408.17241",
+      "2405.06693",
+      "2201.07338",
+      "2205.05789",
+      "2403.05314",
+      "2301.11765",
+      "2312.00818",
+      "2307.10265",
+      "2312.06632",
+      "2406.06009",
+      "2407.15647",
+      "2304.10578",
+      "2311.05629",
+      "2406.03746",
+      "2210.08270"
+    ],
+    "crawler_recall_papers": [
+      "Generative artificial intelligence for de novo protein design",
+      "SurfPro: Functional Protein Design Based on Continuous Surface",
+      "Controllable Protein Design with Language Models",
+      "RITA: a Study on Scaling Up Generative Protein Sequence Models",
+      "Advances of Deep Learning in Protein Science: A Comprehensive Survey",
+      "AlphaFold Accelerates Artificial Intelligence Powered Drug Discovery: Efficient Discovery of a Novel Cyclin-dependent Kinase 20 (CDK20) Small Molecule Inhibitor",
+      "A Survey on Protein Representation Learning: Retrospect and Prospect",
+      "ProtAgents: Protein discovery via large language model multi-agent collaborations combining physics and machine learning Citation: A. Ghafarollahi, M.J. Buehler. arXiv, DOI:000000/11111., 2024",
+      "Artificial intelligence for science: The easy and hard problems",
+      "Beating the Best: Improving on AlphaFold2 at Protein Structure Prediction",
+      "ExplainableFold: Understanding AlphaFold Prediction with Explainable AI",
+      "The perpetual motion machine of AI-generated data and the distraction of ChatGPT-as-scientist",
+      "Model-based reinforcement learning for protein backbone design",
+      "AlphaDesign: A graph protein design method and benchmark on AlphaFoldDB",
+      "A Text-guided Protein Design Framework",
+      "Protein Design by Integrating Machine Learning with Quantum Annealing and Quantum-inspired Optimization",
+      "Generative AI for Controllable Protein Sequence Design: A Survey",
+      "Deep Generative Modeling for Protein Design",
+      "Leveraging Deep Generative Model For Computational Protein Design And Optimization",
+      "Integrating New Technologies into Science: The case of AI1footnote 11footnote 1The research leading to the results of this paper has received financial support from the French National Research Agency [reference: SEED -ANR-22-CE26-0013-01].",
+      "The AI Scientist: Towards Fully Automated Open-Ended Scientific Discovery",
+      "AI empowering research: 10 ways how science can benefit from AI",
+      "Control Risk for Potential Misuse of Artificial Intelligence in Science",
+      "The Impact of AI on Academic Research and Publishing",
+      "The Impact of Responsible AI Research on Innovation and Development",
+      "Quantifying the Benefit of Artificial Intelligence for Scientific Research",
+      "Experimental Evidence on Negative Impact of Generative AI on Scientific Learning Outcomes",
+      "Diffusion Language Models Are Versatile Protein Learners",
+      "Antigen-Specific Antibody Design via Direct Energy-based Preference Optimization",
+      "Preference optimization of protein language models as a multi-objective binder design paradigm",
+      "Efficient Knowledge Infusion via KG-LLM Alignment",
+      "Assessing the Solid Protocol in Relation to Security & Privacy Obligations"
+    ],
+    "recall_papers": [
+      "Generative artificial intelligence for de novo protein design",
+      "SurfPro: Functional Protein Design Based on Continuous Surface",
+      "Controllable Protein Design with Language Models",
+      "RITA: a Study on Scaling Up Generative Protein Sequence Models",
+      "ProtAgents: Protein discovery via large language model multi-agent collaborations combining physics and machine learning Citation: A. Ghafarollahi, M.J. Buehler. arXiv, DOI:000000/11111., 2024",
+      "Model-based reinforcement learning for protein backbone design",
+      "AlphaDesign: A graph protein design method and benchmark on AlphaFoldDB",
+      "A Text-guided Protein Design Framework",
+      "Protein Design by Integrating Machine Learning with Quantum Annealing and Quantum-inspired Optimization",
+      "Generative AI for Controllable Protein Sequence Design: A Survey",
+      "Deep Generative Modeling for Protein Design",
+      "Leveraging Deep Generative Model For Computational Protein Design And Optimization",
+      "Diffusion Language Models Are Versatile Protein Learners",
+      "Antigen-Specific Antibody Design via Direct Energy-based Preference Optimization",
+      "Preference optimization of protein language models as a multi-objective binder design paradigm"
+    ],
+    "answer": [
+      "Generative AI for Controllable Protein Sequence Design: A Survey",
+      "Graph Denoising Diffusion for Inverse Protein Folding",
+      "Protein Design with Guided Discrete Diffusion",
+      "Fold2Seq: A Joint Sequence(1D)-Fold(3D) Embedding-based Generative Model\n  for Protein Design",
+      "Diffusion Language Models Are Versatile Protein Learners",
+      "Protein structure generation via folding diffusion",
+      "A Text-guided Protein Design Framework",
+      "Protein Structure and Sequence Generation with Equivariant Denoising\n  Diffusion Probabilistic Models",
+      "Protein sequence design with deep generative models",
+      "How to Hallucinate Functional Proteins",
+      "PiFold: Toward effective and efficient protein inverse folding",
+      "ProGen: Language Modeling for Protein Generation",
+      "Protein Design by Integrating Machine Learning with Quantum Annealing   and Quantum-inspired Optimization",
+      "Decomposed Direct Preference Optimization for Structure-Based Drug   Design",
+      "A framework for conditional diffusion modelling with applications in motif scaffolding for protein design",
+      "Fast protein backbone generation with SE(3) flow matching",
+      "SE(3) diffusion model with application to protein backbone generation",
+      "AlphaDesign: A graph protein design method and benchmark on AlphaFoldDB",
+      "Structure-informed Language Models Are Protein Designers",
+      "Preference optimization of protein language models as a multi-objective\n  binder design paradigm",
+      "Deep Generative Modeling for Protein Design",
+      "Antigen-Specific Antibody Design via Direct Energy-based Preference\n  Optimization",
+      "Protein Conformation Generation via Force-Guided SE(3) Diffusion Models",
+      "Generative De Novo Protein Design with Global Context",
+      "Leveraging Deep Generative Model For Computational Protein Design And Optimization",
+      "PDB-Struct: A Comprehensive Benchmark for Structure-based Protein Design",
+      "Controllable Protein Design with Language Models",
+      "Generative artificial intelligence for de novo protein design"
+    ]
+  }
+}

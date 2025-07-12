@@ -1,0 +1,1662 @@
+{
+  "title": "Show me cutting edge research works on neural network based quantum Monte Carlo.",
+  "arxiv_id": "",
+  "depth": -1,
+  "child": {
+    "State-of-the-art research in neural network quantum Monte Carlo": [
+      {
+        "title": "Efficient optimization of deep neural quantum states toward machine precision",
+        "arxiv_id": "2302.01941",
+        "depth": 0,
+        "child": {},
+        "abstract": "Neural quantum states (NQSs) have emerged as a novel promising numerical method to solve the quantum many-body problem. However, it has remained a central challenge to train modern large-scale deep network architectures to desired quantum state accuracy, which would be vital in utilizing the full power of NQSs and making them competitive or superior to conventional numerical approaches. Here, we propose a minimum-step stochastic reconfiguration (MinSR) method that reduces the optimization complexity by orders of magnitude while keeping similar accuracy as compared to conventional stochastic reconfiguration. MinSR allows for accurate training on unprecedentedly deep NQS with up to 64 layers and more than $10^5$ parameters in the spin-1/2 Heisenberg $J_1$-$J_2$ models on the square lattice. We find that this approach yields better variational energies as compared to existing numerical results and we further observe that the accuracy of our ground state calculations approaches different levels of machine precision on modern GPU and TPU hardware. The MinSR method opens up the potential to make NQS superior as compared to conventional computational methods with the capability to address yet inaccessible regimes for two-dimensional quantum matter in the future.",
+        "sections": {},
+        "source": "Search SearchFrom:arxiv",
+        "select_score": 0.16605783998966217,
+        "extra": {
+          "expand": "get full paper error"
+        }
+      },
+      {
+        "title": "Neural-Network Quantum States: A Systematic Review",
+        "arxiv_id": "2204.12966",
+        "depth": 0,
+        "child": {},
+        "abstract": "The so-called contemporary AI revolution has reached every corner of the social, human and natural sciences -- physics included. In the context of quantum many-body physics, its intersection with machine learning has configured a high-impact interdisciplinary field of study; with the arise of recent seminal contributions that have derived in a large number of publications. One particular research line of such field of study is the so-called Neural-Network Quantum States, a powerful variational computational methodology for the solution of quantum many-body systems that has proven to compete with well-established, traditional formalisms. Here, a systematic review of literature regarding Neural-Network Quantum States is presented.",
+        "sections": {
+          "Introduction": [
+            "Barker \u201cA quantum-statistical Monte Carlo method; path integrals with boundary conditions\u201d In The Journal of Chemical Physics 70.6, 1979, pp",
+            "\u201cQuantum Neural Network States: A Brief Review of Methods and Applications\u201d Number: 7-8 _eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1002/qute.201800077 In Advanced Quantum Technologies 2.7-8, 2019, pp",
+            "137\u2013144 DOI: 10.2307/3609461",
+            "\u201cMachine learning and the physical sciences\u201d Number: 4 Publisher: American Physical Society In Reviews of Modern Physics 91.4, 2019, pp",
+            "040201 DOI: 10.1103/PRXQuantum.2.040201",
+            "Melko, G",
+            "\u201cDeep Autoregressive Models for the Efficient Variational Simulation of Many-Body Quantum Systems\u201d Publisher: American Physical Society _eprint: 1902.04057 In Physical Review Letters 124.2, 2020 DOI: 10.1103/physrevlett.124.020503",
+            "Dunjko and H.J",
+            "Carrasquilla \u201cMachine Learning for Quantum Matter\u201d In arXiv:2003.11040 [cond-mat, physics:physics, physics:quant-ph] 5.1, 2020 DOI: 10.1080/23746149.2020.1797528",
+            "Yang, H.X",
+            "McMillan \u201cGround state of liquid He4\u201d In Physical Review 138.2A, 1965, pp",
+            "White \u201cDensity matrix formulation for quantum renormalization groups\u201d In Physical Review Letters 69.19, 1992, pp",
+            "602\u2013606 DOI: 10.1126/science.aag2302",
+            "\u201cNeural-network quantum state tomography\u201d Publisher: Nature Publishing Group In Nature Physics 14.5, 2018, pp"
+          ],
+          "Methodology and systematic search of literature": [
+            "602\u2013606 DOI: 10.1126/science.aag2302"
+          ],
+          "State of the art": [
+            "",
+            "Nomura, A.S",
+            "Carleo, L",
+            "Morningstar and R.G",
+            "\u201cInformation Processing in Dynamical Systems: Foundations of Harmony Theory\u201d",
+            "McBrian, G",
+            "Pilati and P",
+            "Lu, X",
+            "Kingma and Max Welling \u201cAuto-Encoding Variational Bayes\u201d arXiv: 1312.6114 In arXiv:1312.6114 [cs, stat], 2014 URL: http://arxiv.org/abs/1312.6114",
+            "Sorella \u201cGreen function monte carlo with stochastic reconfiguration\u201d In Physical Review Letters 80.20, 1998, pp",
+            "214306 DOI: 10.1103/physrevb.99.214306",
+            "050601 DOI: 10.1103/PhysRevLett.127.050601",
+            "Hartmann and G",
+            "L\u00f3pez-Guti\u00e9rrez and C.B",
+            "\u201cLearnability scaling of quantum states: Restricted Boltzmann machines\u201d Publisher: American Physical Society _eprint: 1908.07532 In Physical Review B 100.19, 2019 DOI: 10.1103/physrevb.100.195125",
+            "Hinton \u201cTraining Products of Experts by Minimizing Contrastive Divergence\u201d _eprint: https://doi.org/10.1162/089976602760128018 In Neural Computation 14.8, 2002, pp",
+            "Xin et al",
+            "\u201cConditional Image Generation with PixelCNN Decoders\u201d arXiv: 1606.05328 In arXiv:1606.05328 [cs], 2016 URL: http://arxiv.org/abs/1606.05328",
+            "Zhang et al",
+            "\u201cFinding Quantum Critical Points with Neural-Network Quantum States\u201d arXiv: 2002.02618 In arXiv:2002.02618 [cond-mat, physics:physics, physics:quant-ph], 2020 URL: http://arxiv.org/abs/2002.02618",
+            "\u201cDeep Autoregressive Models for the Efficient Variational Simulation of Many-Body Quantum Systems\u201d Publisher: American Physical Society _eprint: 1902.04057 In Physical Review Letters 124.2, 2020 DOI: 10.1103/physrevlett.124.020503",
+            "Yang, H.X",
+            "Cai and J",
+            "Saito \u201cMethod to solve quantum few-body problems with artificial neural networks\u201d In Journal of the Physical Society of Japan 87.7, 2018 DOI: 10.7566/jpsj.87.074002",
+            "Vargas-Calder\u00f3n, H",
+            "Schmitt and M",
+            "Feiguin \u201cMachine learning approach to dynamical properties of quantum many-body systems\u201d Number: 24 Publisher: American Physical Society In Physical Review B 100.24, 2019, pp",
+            "16667 DOI: 10.1038/s41598-021-95523-4",
+            "\u201cA Neural-Network Variational Quantum Algorithm for Many-Body Dynamics\u201d",
+            "Barrett, Aleksei Malyshev and A.",
+            "Frank and Michael J",
+            "Carleo, Y",
+            "Yang, C",
+            "104205 DOI: 10.1103/PhysRevB.104.104205",
+            "Van Nieuwenburg, Y.-H",
+            "\u201cIntegrating Neural Networks with a Quantum Simulator for State Reconstruction\u201d Number: 23 Publisher: American Physical Society In Physical Review Letters 123.23, 2019, pp",
+            "MacDonald \u201cGroup Convolutional Neural Networks Improve Quantum State Accuracy\u201d arXiv: 2104.05085 In arXiv:2104.05085 [cond-mat, physics:quant-ph], 2021 URL: http://arxiv.org/abs/2104.05085",
+            "\u201cRecurrent neural network wave functions\u201d Number: 2 Publisher: American Physical Society In Physical Review Research 2.2, 2020, pp",
+            "Jahromi and R",
+            "Torlai, G",
+            "\u201cNeural Autoregressive Distribution Estimation\u201d arXiv: 1605.02226 In arXiv:1605.02226 [cs], 2016 URL: http://arxiv.org/abs/1605.02226",
+            "\u201cCalculating Renyi Entropies with Neural Autoregressive Quantum States\u201d",
+            "Melko and Leandro Aolita \u201cReconstructing quantum states with generative models\u201d Number: 3 Publisher: Nature Publishing Group In Nature Machine Intelligence 1.3, 2019, pp",
+            "Kingma and Jimmy Ba \u201cAdam: A Method for Stochastic Optimization\u201d arXiv: 1412.6980 In arXiv:1412.6980 [cs], 2017 URL: http://arxiv.org/abs/1412.6980",
+            "\u201cLearning ground states of quantum Hamiltonians with graph networks\u201d arXiv: 2110.06390 In arXiv:2110.06390 [cond-mat, physics:quant-ph], 2021 URL: http://arxiv.org/abs/2110.06390",
+            "602\u2013606 DOI: 10.1126/science.aag2302",
+            "147 DOI: 10.21468/SciPostPhys.10.6.147",
+            "Rocchetto et al",
+            "\u201cGauge Invariant Autoregressive Neural Networks for Quantum Lattice Models\u201d arXiv: 2101.07243 In arXiv:2101.07243 [cond-mat, physics:hep-lat, physics:quant-ph], 2021 URL: http://arxiv.org/abs/2101.07243",
+            "Saito \u201cSolving the Bose\u2013Hubbard model with machine learning\u201d In Journal of the Physical Society of Japan 86.9, 2017 DOI: 10.7566/jpsj.86.093001",
+            "Clark \u201cAutoregressive Neural Network for Simulating Open Quantum Systems via a Probabilistic Formulation\u201d arXiv: 2009.05580 In arXiv:2009.05580 [cond-mat, physics:physics, physics:quant-ph], 2020 URL: http://arxiv.org/abs/2009.05580",
+            "Beach and Roger G",
+            "Melko \u201cLearning thermodynamics with Boltzmann machines\u201d Publisher: American Physical Society In Physical Review B 94.16, 2016, pp",
+            "Carleo et al",
+            "Melko \u201cMachine learning phases of matter\u201d Publisher: Nature Publishing Group _eprint: 1605.01735 In Nature Physics 13.5, 2017, pp",
+            "Kaubruegger, L",
+            "Neuscamman, C.J",
+            "Shi, X.-Y",
+            "\u201cNeural-network quantum state tomography\u201d Publisher: Nature Publishing Group In Nature Physics 14.5, 2018, pp",
+            "Glasser et al",
+            "Gao and L.-M",
+            "\u201cDeep learning and quantum entanglement: Fundamental connections with implications to network design\u201d"
+          ],
+          "Final Remarks and Perspectives": [
+            "\u201cAttention Is All You Need\u201d arXiv: 1706.03762 In arXiv:1706.03762 [cs], 2017 URL: http://arxiv.org/abs/1706.03762",
+            "Pawlowski, Thomas Gasenzer and Martin G\u00e4rttner \u201cSampling scheme for neuromorphic simulation of entangled quantum systems\u201d _eprint: 1907.12844 In Physical Review B 100.19, 2019 DOI: 10.1103/physrevb.100.195120",
+            "\u201cRecurrent neural network wave functions\u201d Number: 2 Publisher: American Physical Society In Physical Review Research 2.2, 2020, pp",
+            "Teng \u201cMachine-learning quantum mechanics: Solving quantum mechanics problems using radial basis function networks\u201d In Physical Review E 98.3, 2018 DOI: 10.1103/physreve.98.033305",
+            "Scheurer \u201cGenerative models for sampling and phase transition indication in spin systems\u201d arXiv: 2006.11868 In arXiv:2006.11868 [cond-mat], 2020 URL: http://arxiv.org/abs/2006.11868"
+          ]
+        },
+        "source": "Search SearchFrom:arxiv",
+        "select_score": 0.0034260153770446777,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Variational Monte Carlo with Large Patched Transformers",
+        "arxiv_id": "2306.03921",
+        "depth": 0,
+        "child": {},
+        "abstract": "Large language models, like transformers, have recently demonstrated immense powers in text and image generation. This success is driven by the ability to capture long-range correlations between elements in a sequence. The same feature makes the transformer a powerful wavefunction ansatz that addresses the challenge of describing correlations in simulations of qubit systems. Here we consider two-dimensional Rydberg atom arrays to demonstrate that transformers reach higher accuracies than conventional recurrent neural networks for variational ground state searches. We further introduce large, patched transformer models, which consider a sequence of large atom patches, and show that this architecture significantly accelerates the simulations. The proposed architectures reconstruct ground states with accuracies beyond state-of-the-art quantum Monte Carlo methods, allowing for the study of large Rydberg systems in different phases of matter and at phase transitions. Our high-accuracy ground state representations at reasonable computational costs promise new insights into general large-scale quantum many-body systems.",
+        "sections": {
+          "I Results I.1 Rydberg atom arrays": [
+            "Endres, H",
+            "Ebadi, T.T",
+            "Bravyi, D.P",
+            "Jaksch, J.I"
+          ],
+          "I Results I.2 Recurrent neural networks and transformers": [
+            "Melko, G",
+            "Hibat-Allah, M",
+            "Vaswani, N",
+            "Merali, I.J.S",
+            "Cha, P",
+            "Ebadi, T.T",
+            "Cho, B"
+          ],
+          "I Results I.3 Patched inputs": [
+            "Becca\u00a0and\u00a0S",
+            "Sharir, G.K.-L",
+            "Dosovitskiy, L"
+          ],
+          "I Results I.4 Large, patched transformers": [
+            "Morin\u00a0and\u00a0Y",
+            "Hibat-Allah, M",
+            "Merali, I.J.S"
+          ],
+          "I Results I.5 Phases of matter in Rydberg atom arrays": [
+            "Samajdar, W.W",
+            "Ebadi, T.T",
+            "Merali, I.J.S"
+          ],
+          "II Discussion": [
+            "Hibat-Allah, M",
+            "Zhai, A",
+            "Dosovitskiy, L",
+            "Czischek, M.S",
+            "Vaswani, N",
+            "Merali, I.J.S"
+          ],
+          "III Methods III.1 Rydberg atom arrays": [
+            "Endres, H",
+            "Samajdar, W.W",
+            "Hibat-Allah, M",
+            "Jaksch, J.I"
+          ],
+          "III Methods III.2 Recurrent neural network quantum states": [
+            "Hibat-Allah, M",
+            "Hochreiter\u00a0and\u00a0J",
+            "Cho, B"
+          ],
+          "III Methods III.3 Transformer quantum states": [
+            "Vaswani, N",
+            "Cha, P"
+          ],
+          "III Methods III.6 Implementation details": [
+            "Paszke, S",
+            "Hibat-Allah, M",
+            "Harris, K.J",
+            "Hunter,\u00a0\u201cMatplotlib: A 2d graphics environment,\u201d\u00a0Comput Sci Eng\u00a09,\u00a090\u201395 (2007)."
+          ]
+        },
+        "source": "Search SearchFrom:arxiv",
+        "select_score": 0.8834044337272644,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Neural network wave functions and the sign problem",
+        "arxiv_id": "2002.04613",
+        "depth": 0,
+        "child": {},
+        "abstract": "Neural quantum states (NQS) are a promising approach to study many-body quantum physics. However, they face a major challenge when applied to lattice models: Convolutional networks struggle to converge to ground states with a nontrivial sign structure. We tackle this problem by proposing a neural network architecture with a simple, explicit, and interpretable phase ansatz, which can robustly represent such states and achieve state-of-the-art variational energies for both conventional and frustrated antiferromagnets. In the latter case, our approach uncovers low-energy states that exhibit the Marshall sign rule and are therefore inconsistent with the expected ground state. Such states are the likely cause of the obstruction for NQS-based variational Monte Carlo to access the true ground states of these systems. We discuss the implications of this observation and suggest potential strategies to overcome the problem.",
+        "sections": {
+          "I Introduction": [
+            "Choo, G",
+            "Liang, W.-Y",
+            "Choo, T",
+            "Hu, F",
+            "Or\u00fas,\u00a0Nat",
+            "Thibaut, T",
+            "Marshall\u00a0and\u00a0R",
+            "Carleo\u00a0and\u00a0M",
+            "d\u2019Ascoli, L",
+            "G",
+            "Cybenko,\u00a0Math",
+            "Becca\u00a0and\u00a0S",
+            "Zen, L",
+            "Le\u00a0Roux\u00a0and\u00a0Y",
+            "Li\u00a0and\u00a0H",
+            "Westerhout, N",
+            "Carleo, I",
+            "Goodfellow, Y",
+            "Kaubruegger, L",
+            "M"
+          ],
+          "II Our approach": [
+            "Becca\u00a0and\u00a0S",
+            "Westerhout, N",
+            "Marshall\u00a0and\u00a0R",
+            "Goodfellow, Y",
+            "Carleo, K",
+            "Park\u00a0and\u00a0M"
+          ],
+          "III Numerical experiments": [
+            "Mezzacapo, N",
+            "Marshall\u00a0and\u00a0R",
+            "Hu, F",
+            "Richter, N",
+            "Troyer\u00a0and\u00a0U",
+            "Ferrari, F",
+            "Choo, T"
+          ],
+          "IV Discussion": [
+            "Sehayek, A",
+            "Zen, L",
+            "Choo, G",
+            "Westerhout, N",
+            "Levine, O",
+            "Hu, F",
+            "d\u2019Ascoli, L",
+            "W",
+            "Or\u00fas,\u00a0Nat",
+            "Schollw\u00f6ck,\u00a0Rev",
+            "Choo, T"
+          ]
+        },
+        "source": "Search SearchFrom:arxiv",
+        "select_score": 0.8042686581611633,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Message-Passing Neural Quantum States for the Homogeneous Electron Gas",
+        "arxiv_id": "2305.07240",
+        "depth": 0,
+        "child": {},
+        "abstract": "We introduce a message-passing-neural-network-based wave function Ansatz to simulate extended, strongly interacting fermions in continuous space. Symmetry constraints, such as continuous translation symmetries, can be readily embedded in the model. We demonstrate its accuracy by simulating the ground state of the homogeneous electron gas in three spatial dimensions at different densities and system sizes. With orders of magnitude fewer parameters than state-of-the-art neural-network wave functions, we demonstrate better or comparable ground-state energies. Reducing the parameter complexity allows scaling to $N=128$ electrons, previously inaccessible to neural-network wave functions in continuous space, enabling future work on finite-size extrapolations to the thermodynamic limit. We also show the Ansatz's capability of quantitatively representing different phases of matter.",
+        "sections": {
+          "I Introduction": [
+            "Toulouse\u00a0and\u00a0C",
+            "Lin, F",
+            "Deng, X",
+            "Pfau, J",
+            "Adams, G",
+            "Carleo\u00a0and\u00a0M",
+            "Luo\u00a0and\u00a0B",
+            "Fore, J",
+            "Gilmer, S",
+            "Pescia, J",
+            "J",
+            "M"
+          ],
+          "II Methods II.1 Exact Backflow Transformations": [
+            "P",
+            "Kwon, D",
+            "M",
+            "Taddei, M"
+          ],
+          "II Methods II.2 Message-Passing Neural Quantum States": [
+            "Vaswani, N",
+            "Gilmer, S",
+            "Hendrycks\u00a0and\u00a0K",
+            "He, X"
+          ],
+          "II Methods II.3 Electron Gas": [
+            "Kwon, D",
+            "P",
+            "Pines,\u00a0Elementary excitations in solids, edited by jd jackson and d",
+            "Pescia, J",
+            "Sorella,\u00a0Green function monte carlo with stochastic reconfiguration,\u00a0Phys",
+            "Wigner,\u00a0On the interaction of electrons in metals,\u00a0Phys"
+          ],
+          "III Results": [
+            "Wilson, S",
+            "Liao, T",
+            "Cassella, H",
+            "L\u00f3pez\u00a0R\u00edos, A"
+          ],
+          "III Results III.1 Small Systems.\u2013": [
+            "Cassella, H"
+          ],
+          "III Results III.2 Large Systems.\u2013": [
+            "Liao, T",
+            "Li, Z",
+            "Drummond, Z"
+          ],
+          "IV Conclusions.\u2013": [
+            "Carleo, K",
+            "Li, Z",
+            "M",
+            "Cassella, H"
+          ]
+        },
+        "source": "Search SearchFrom:arxiv",
+        "select_score": 0.08835150301456451,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Neural network quantum state with proximal optimization: a ground-state searching scheme based on variational Monte Carlo",
+        "arxiv_id": "2210.16493",
+        "depth": 0,
+        "child": {},
+        "abstract": "Neural network quantum states (NQS), incorporating with variational Monte Carlo (VMC) method, are shown to be a promising way to investigate quantum many-body physics. Whereas vanilla VMC methods perform one gradient update per sample, we introduce a novel objective function with proximal optimization (PO) that enables multiple updates via reusing the mismatched samples. Our VMC-PO method keeps the advantage of the previous importance sampling gradient optimization algorithm [L. Yang, {\\it et al}, Phys. Rev. Research {\\bf 2}, 012039(R)(2020)] that efficiently uses sampled states. PO mitigates the numerical instabilities during network updates, which is similar to stochastic reconfiguration (SR) methods, but achieves an alternative and simpler implement with lower computational complexity. We investigate the performance of our VMC-PO algorithm for ground-state searching with a 1-dimensional transverse-field Ising model and 2-dimensional Heisenberg antiferromagnet on a square lattice, and demonstrate that the reached ground-state energies are comparable to state-of-the-art results.",
+        "sections": {
+          "I Introduction": [
+            "Schollw\u00f6ck,\u00a0The density-matrix renormalization group in the age of matrix product states,\u00a0Annals of Physics\u00a0326,\u00a096 (2011),\u00a0january 2011 Special Issue.",
+            "Rocchetto, E",
+            "Carleo, I",
+            "Chen, S",
+            "Sharir, Y",
+            "Carleo\u00a0and\u00a0M",
+            "Georges, G",
+            "W",
+            "H",
+            "I",
+            "Yang, Z",
+            "Sorella,\u00a0Green function monte carlo with stochastic reconfiguration,\u00a0Phys",
+            "Choo, T"
+          ],
+          "II Network architectures": [
+            "Cohen\u00a0and\u00a0M",
+            "Yang, Z",
+            "Carleo\u00a0and\u00a0M",
+            "Bukov, M"
+          ],
+          "III optimization approaches": [
+            "Sorella,\u00a0Generalized lanczos algorithm for variational quantum monte carlo,\u00a0Phys",
+            "Becca\u00a0and\u00a0S",
+            "P",
+            "Amari,\u00a0Natural Gradient Works Efficiently in Learning,\u00a0Neural Computation\u00a010,\u00a0251 (1998),\u00a0https://direct.mit.edu/neco/article-pdf/10/2/251/813415/089976698300017746.pdf .",
+            "Yang, Z",
+            "Schulman, F"
+          ],
+          "IV numerical results IV.1 1D Transverse Field Ising Model": [
+            "Horn\u00a0and\u00a0C"
+          ],
+          "IV numerical results IV.2 Heisenberg Model": [
+            "Marshall,\u00a0Antiferromagnetism,\u00a0Proceedings of the Royal Society of London"
+          ],
+          "V discusion and outlook": [
+            "Yang, Z",
+            "Schulman, F"
+          ]
+        },
+        "source": "Search SearchFrom:arxiv",
+        "select_score": 0.9840244650840759,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Neural-network quantum states for many-body physics",
+        "arxiv_id": "2402.11014",
+        "depth": 0,
+        "child": {},
+        "abstract": "Variational quantum calculations have borrowed many tools and algorithms from the machine learning community in the recent years. Leveraging great expressive power and efficient gradient-based optimization, researchers have shown that trial states inspired by deep learning problems can accurately model many-body correlated phenomena in spin, fermionic and qubit systems. In this review, we derive the central equations of different flavors variational Monte Carlo (VMC) approaches, including ground state search, time evolution and overlap optimization, and discuss data-driven tasks like quantum state tomography. An emphasis is put on the geometry of the variational manifold as well as bottlenecks in practical implementations. An overview of recent results of first-principles ground-state and real-time calculations is provided.",
+        "sections": {
+          "I Introduction": [
+            "& Heyl, M",
+            "et\u00a0al",
+            "S., Yamaji, Y",
+            "& Cirac, J",
+            "Solving the quantum many-body problem with artificial neural networks.",
+            "Unbiasing time-dependent variational monte carlo by projected quantum evolution (2023).",
+            "& Torlai, G",
+            "& Carleo, G",
+            "Approximation by superpositions of a sigmoidal function",
+            "From architectures to applications: A review of neural quantum states (2024).",
+            "& Duan, L.-M",
+            "Modern applications of machine learning in quantum sciences (2022).",
+            "R"
+          ],
+          "II Neural networks and Monte Carlo II.1 Variational quantum state definition": [
+            "Deep Learning (MIT Press, 2016).",
+            "Approximation by superpositions of a sigmoidal function",
+            "& Benjamin, S",
+            "Quantum Many-particle Systems (Westview Press, 1998)."
+          ],
+          "II Neural networks and Monte Carlo II.2 Estimation of expectation values: the local observable trick": [
+            "& Sorella, S"
+          ],
+          "II Neural networks and Monte Carlo II.3 Sampling": [
+            "A conceptual introduction to hamiltonian monte carlo (2017).",
+            "Collective monte carlo updating for spin systems.",
+            "Equation of state calculations by fast computing machines.",
+            "E., Melko, R",
+            "Handbook of Markov Chain Monte Carlo (Chapman and Hall/CRC, 2011).",
+            "& Meng, X.-L",
+            "D., Malyshev, A",
+            "& Barkema, G"
+          ],
+          "II Neural networks and Monte Carlo II.4 Stochastic optimization": [
+            "Adam: A method for stochastic optimization (2014).",
+            "Geometry of variational methods: dynamics of closed quantum systems.",
+            "Optimizing neural networks with kronecker-factored approximate curvature (2015).",
+            "Unbiasing time-dependent variational monte carlo by projected quantum evolution (2023).",
+            "Efficient optimization of deep neural quantum states toward machine precision (2023).",
+            "Neural tangent kernel: Convergence and generalization in neural networks (2018).",
+            "I",
+            "Green function monte carlo with stochastic reconfiguration",
+            "Generating sequences with recurrent neural networks (2013).",
+            "Deep Learning (MIT Press, 2016).",
+            "Coefficients for the study of runge-kutta integration processes.",
+            "et\u00a0al"
+          ],
+          "II Neural networks and Monte Carlo II.5 Time-dependent Variational Monte Carlo": [
+            "& Fabrizio, M",
+            "& Sorella, S",
+            "Unbiasing time-dependent variational monte carlo by projected quantum evolution (2023).",
+            "& Heyl, M"
+          ],
+          "II Neural networks and Monte Carlo II.6 Overlap optimization": [
+            "Unbiasing time-dependent variational monte carlo by projected quantum evolution (2023).",
+            "& Carleo, G"
+          ],
+          "II Neural networks and Monte Carlo II.7 Maximum likelihood estimation": [
+            "Deep Learning (MIT Press, 2016).",
+            "& Melko, R",
+            "et\u00a0al"
+          ],
+          "II Neural networks and Monte Carlo II.8 Symmetries": [
+            "Helping restricted boltzmann machines with quantum-state representation by restoring symmetry",
+            "& Neupert, T",
+            "& Carleo, G",
+            "& MacDonald, A",
+            "et\u00a0al",
+            "& Stokes, J",
+            "& G\u00e4rttner, M"
+          ],
+          "III Applications III.1 Ground-state properties of spin systems": [
+            "& Das\u00a0Sarma, S",
+            "& Cirac, J",
+            "Solving the quantum many-body problem with artificial neural networks.",
+            "H",
+            "& Carleo, G",
+            "E., Melko, R",
+            "J",
+            "& Duan, L.-M",
+            "Neural network approach to quasiparticle dispersions in doped antiferromagnets (2023).",
+            "et\u00a0al",
+            "& Xiang, T"
+          ],
+          "III Applications III.2 Ground-state properties of fermionic systems": [
+            "S., Yamaji, Y",
+            "A",
+            "On the eigenfunctions of many-particle systems in quantum mechanics",
+            "& Holzmann, M",
+            "Message-passing neural quantum states for the homogeneous electron gas (2023).",
+            "D., Malyshev, A",
+            "& Pederiva, F",
+            "& Wang, L",
+            "Neural network approach to quasiparticle dispersions in doped antiferromagnets (2023).",
+            "& Motome, Y",
+            "Quantum machine learning for electronic structure calculations 9, 4195 (2018).",
+            "Mott transition and volume law entanglement with neural quantum states (2023).",
+            "Unbiasing time-dependent variational monte carlo by projected quantum evolution (2023).",
+            "& Carleo, G",
+            "Neural-network quantum states for ultra-cold fermi gases (2023).",
+            "New method for the anderson model 6, 1375\u20131383 (1976).",
+            "Natural quantum monte carlo computation of excited states (2023).",
+            "& Clark, B",
+            "& No\u00e9, F",
+            "S., Matthews, A",
+            "& Rocco, N",
+            "Many-body problem with strong forces",
+            "Artificial intelligence for artificial materials: Moir\u00e9 atom (2023).",
+            "F., Becca, F., Parola, A",
+            "& Sorella, S",
+            "Stability conditions and nuclear rotations in the hartree-fock theory",
+            "& Wigner, E",
+            "S",
+            "H",
+            "Enhancing the expressivity of variational neural, and hardware-efficient quantum states through orbital rotations (2023).",
+            "& Flowers, B",
+            "& Booth, G",
+            "& Nori, F",
+            "et\u00a0al",
+            "& Stokes, J",
+            "T., Sch\u00e4tzle, Z., Erdman, P"
+          ],
+          "III Applications III.3 Unitary operations": [
+            "& Fabrizio, M",
+            "Adam: A method for stochastic optimization (2014).",
+            "& Heyl, M",
+            "& Hinton, G",
+            "Possible new effects in superconductive tunnelling.",
+            "& Sels, D",
+            "A quantum approximate optimization algorithm (2014).",
+            "& Imada, M",
+            "Many-body problem with strong forces",
+            "Unbiasing time-dependent variational monte carlo by projected quantum evolution (2023).",
+            "& Carleo, G",
+            "& DiVincenzo, D",
+            "& Smola, A",
+            "& Browaeys, A",
+            "et\u00a0al",
+            "Quantum Computation and Quantum Information (Cambridge University Press, 2012).",
+            "L"
+          ],
+          "III Applications III.4 Quantum state tomography and reconstruction": [
+            "R., Hopfmueller, F., Kulchytskyy, B., Carrasquilla, J",
+            "Attention is all you need (2017).",
+            "et\u00a0al",
+            "S., Radzihovsky, M., Merali, E"
+          ],
+          "IV Concluding remarks and outlook": [
+            "& Nooijen, M",
+            "& Sels, D",
+            "& Halverson, J",
+            "Unbiasing time-dependent variational monte carlo by projected quantum evolution (2023).",
+            "Efficient optimization of deep neural quantum states toward machine precision (2023).",
+            "Modern applications of machine learning in quantum sciences (2022).",
+            "Enhancing the expressivity of variational neural, and hardware-efficient quantum states through orbital rotations (2023)."
+          ]
+        },
+        "source": "Search SearchFrom:arxiv",
+        "select_score": 0.8962321877479553,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Deep learning quantum Monte Carlo for solids",
+        "arxiv_id": "2407.00707",
+        "depth": 0,
+        "child": {},
+        "abstract": "Deep learning has deeply changed the paradigms of many research fields. At the heart of chemical and physical sciences is the accurate ab initio calculation of many-body wavefunction, which has become one of the most notable examples to demonstrate the power of deep learning in science. In particular, the introduction of deep learning into quantum Monte Carlo (QMC) has significantly advanced the frontier of ab initio calculation, offering a universal tool to solve the electronic structure of materials and molecules. Deep learning QMC architectures were initial designed and tested on small molecules, focusing on comparisons with other state-of-the-art ab initio methods. Methodological developments, including extensions to real solids and periodic models, have been rapidly progressing and reported applications are fast expanding. This review covers the theoretical foundation of deep learning QMC for solids, the neural network wavefunction ansatz, and various of other methodological developments. Applications on computing energy, electron density, electric polarization, force and stress of real solids are also reviewed. The methods have also been extended to other periodic systems and finite temperature calculations. The review highlights the potentials and existing challenges of deep learning QMC in materials chemistry and condensed matter physics.",
+        "sections": null,
+        "source": "Search SearchFrom:arxiv",
+        "select_score": 0.9889427423477173,
+        "extra": {
+          "expand": "get full paper error"
+        }
+      },
+      {
+        "title": "Dynamics with autoregressive neural quantum states: application to critical quench dynamics",
+        "arxiv_id": "2209.03241",
+        "depth": 0,
+        "child": {},
+        "abstract": "Despite very promising results, capturing the dynamics of complex quantum systems with neural-network ans\\\"atze has been plagued by several problems, one of which being stochastic noise that makes the dynamics unstable and highly dependent on some regularization hyperparameters. We present an alternative general scheme that enables one to capture long-time dynamics of quantum systems in a stable fashion, provided the neural-network ansatz is normalized, which can be ensured by the autoregressive property of the chosen ansatz. We then apply the scheme to time-dependent quench dynamics by investigating the Kibble-Zurek mechanism in the two-dimensional quantum Ising model. We find an excellent agreement with exact dynamics for small systems and are able to recover scaling laws in agreement with other variational methods.",
+        "sections": {
+          "I Introduction": [
+            "Becca\u00a0and\u00a0S",
+            "Eisert\u00a0and\u00a0T",
+            "Deng, X",
+            "Wu, R",
+            "Sharir, Y",
+            "Carleo\u00a0and\u00a0M",
+            "Hibat-Allah, M",
+            "Cheneau, P",
+            "Hofmann, G",
+            "Vicentini, A",
+            "J\u00f3nsson, B",
+            "Schmitt, M",
+            "Torlai, G",
+            "Park\u00a0and\u00a0M",
+            "Choo, T",
+            "Schmitt\u00a0and\u00a0M"
+          ],
+          "II Time-evolution of Neural Quantum States II.1 Autoregressive neural quantum states": [
+            "Sharir, Y"
+          ],
+          "II Time-evolution of Neural Quantum States II.2 Issues with t-VMC": [
+            "Becca\u00a0and\u00a0S",
+            "Goodfellow, Y",
+            "Carleo\u00a0and\u00a0M",
+            "Hofmann, G",
+            "W",
+            "Yuan, S",
+            "Schauss,\u00a0Quantum simulation of transverse Ising models with Rydberg atoms,\u00a0Quantum Science and Technology\u00a03,\u00a0023001 (2018).",
+            "Stokes, J"
+          ],
+          "IV Application: critical quenches IV.1 The Kibble-Zurek mechanism": [
+            "Schmitt, M",
+            "H",
+            "Puebla, O",
+            "W"
+          ],
+          "IV Application: critical quenches IV.3 Error analysis": [
+            "Lin\u00a0and\u00a0F",
+            "L"
+          ],
+          "V Conclusion": [
+            "Donatella, Z",
+            "Dong\u00a0and\u00a0I",
+            "Li, S",
+            "J",
+            "Carmichael,\u00a0An Open Systems Approach to Quantum Optics: Lectures Presented at the Universit\u00e9 Libre de Bruxelles, October 28 to November 4, 1991,\u00a0Lecture Notes in Physics Monographs\u00a0(Springer-Verlag,\u00a0Berlin Heidelberg,\u00a01993)."
+          ]
+        },
+        "source": "Search SearchFrom:arxiv",
+        "select_score": 0.04042026400566101,
+        "extra": {
+          "expand": "not expand"
+        }
+      }
+    ],
+    "Application of neural networks in Monte Carlo methods for quantum physics": [
+      {
+        "title": "Variational Quantum Monte Carlo Method with a Neural-Network Ansatz for Open Quantum Systems",
+        "arxiv_id": "1902.09483",
+        "depth": 0,
+        "child": {},
+        "abstract": "The possibility to simulate the properties of many-body open quantum systems with a large number of degrees of freedom is the premise to the solution of several outstanding problems in quantum science and quantum information. The challenge posed by this task lies in the complexity of the density matrix increasing exponentially with the system size. Here, we develop a variational method to efficiently simulate the non-equilibrium steady state of Markovian open quantum systems based on variational Monte Carlo and on a neural network representation of the density matrix. Thanks to the stochastic reconfiguration scheme, the application of the variational principle is translated into the actual integration of the quantum master equation. We test the effectiveness of the method by modeling the two-dimensional dissipative XYZ spin model on a lattice.",
+        "sections": {
+          "Neural Network Representation of the Density Matrix": [
+            "Carleo\u00a0and\u00a0M"
+          ],
+          "Stochastic Reconfiguration for Open Quantum Systems": [
+            "Carleo\u00a0and\u00a0M",
+            "Sorella, M"
+          ],
+          "Stochastic Sampling": [
+            "Metropolis, A"
+          ],
+          "Detail on numerical approach": [
+            "Choi, C"
+          ]
+        },
+        "source": "Search SearchFrom:arxiv",
+        "select_score": 0.9950867295265198,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Interatomic force from neural network based variational quantum Monte Carlo",
+        "arxiv_id": "2207.07810",
+        "depth": 0,
+        "child": {},
+        "abstract": "Accurate ab initio calculations are of fundamental importance in physics, chemistry, biology, and materials science, which have witnessed rapid development in the last couple of years with the help of machine learning computational techniques such as neural networks. Most of the recent efforts applying neural networks to ab initio calculation have been focusing on the energy of the system. In this study, we take a step forward and look at the interatomic force obtained with neural network wavefunction methods by implementing and testing several commonly used force estimators in variational quantum Monte Carlo (VMC). Our results show that neural network ansatz can improve the calculation of interatomic force upon traditional VMC. The relation between the force error and the quality of neural network, the contribution of different force terms, and the computational cost of each term are also discussed to provide guidelines for future applications. Our work demonstrates that it is promising to apply neural network wavefunction methods in simulating structures/dynamics of molecules/materials and provide training data for developing accurate force fields.",
+        "sections": {
+          "I Introduction": [
+            "van Rhijn, C",
+            "Pfau, J",
+            "Assaraf\u00a0and\u00a0M",
+            "Needs, M",
+            "A",
+            "Filippi\u00a0and\u00a0C",
+            "Kohn,\u00a0Rev",
+            "Hermann, Z",
+            "Han, L",
+            "M"
+          ],
+          "II Methods and computational details II.1 FermiNet-VMC method": [
+            "Martens\u00a0and\u00a0R"
+          ],
+          "II Methods and computational details II.2 Force estimators": [
+            "J",
+            "Sorella\u00a0and\u00a0L",
+            "Assaraf\u00a0and\u00a0M",
+            "Filippi\u00a0and\u00a0C"
+          ],
+          "II Methods and computational details II.3 Implementation": [
+            "",
+            "Attaccalite\u00a0and\u00a0S",
+            "Nakano, C",
+            "Pfau, J"
+          ],
+          "II Methods and computational details II.4 Computational settings": [
+            "Pfau, J"
+          ],
+          "III Results and discussion III.1 Interatomic force from well converged neural network": [
+            "J",
+            "Assaraf\u00a0and\u00a0M"
+          ],
+          "III Results and discussion III.2 Dependence on the quality of neural network": [
+            "Wolff,\u00a0Computer Physics Communications\u00a0156,\u00a0143 (2004).",
+            "Hesse,\u00a0\u201cAnalysis of Monte Carlo data,\u201d\u00a0 (2021)."
+          ],
+          "III Results and discussion III.5 Time per step": [
+            "Sorella\u00a0and\u00a0L",
+            "Pfau, J"
+          ],
+          "IV Conclusions": [
+            "J",
+            "Assaraf\u00a0and\u00a0M"
+          ]
+        },
+        "source": "Search SearchFrom:arxiv",
+        "select_score": 0.9821116924285889,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Deep Learning-Enhanced Variational Monte Carlo Method for Quantum Many-Body Physics",
+        "arxiv_id": "1905.10730",
+        "depth": 0,
+        "child": {},
+        "abstract": "Artificial neural networks have been successfully incorporated into variational Monte Carlo method (VMC) to study quantum many-body systems. However, there have been few systematic studies of exploring quantum many-body physics using deep neural networks (DNNs), despite of the tremendous success enjoyed by DNNs in many other areas in recent years. One main challenge of implementing DNN in VMC is the inefficiency of optimizing such networks with large number of parameters. We introduce an importance sampling gradient optimization (ISGO) algorithm, which significantly improves the computational speed of training DNN in VMC. We design an efficient convolutional DNN architecture to compute the ground state of a one-dimensional (1D) SU($N$) spin chain. Our numerical results of the ground-state energies with up to 16 layers of DNN show excellent agreement with the Bethe-Ansatz exact solution. Furthermore, we also calculate the loop correlation function using the wave function obtained. Our work demonstrates the feasibility and advantages of applying DNNs to numerical quantum many-body calculations.",
+        "sections": {
+          "I Bethe Ansatz Solution for Ground-State Energy of SU(N\ud835\udc41N) Spin Chain": [
+            "",
+            "Sutherland,\u00a0Phys"
+          ],
+          "III More Numerical Details and Results": [
+            "Dufour, P"
+          ],
+          "IV Comparison with Restricted Boltzmann Machines": [
+            "Carleo\u00a0and\u00a0M",
+            "Choo, G"
+          ]
+        },
+        "source": "Search SearchFrom:arxiv",
+        "select_score": 0.9670899510383606,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Variational Monte Carlo with Neural Network Quantum States for Yang-Mills Matrix Model",
+        "arxiv_id": "2409.00398",
+        "depth": 0,
+        "child": {},
+        "abstract": "We apply the variational Monte Carlo method based on neural network quantum states, using a neural autoregressive flow architecture as our ansatz, to determine the ground state wave function of the bosonic SU($N$) Yang-Mills-type two-matrix model at strong coupling. Previous literature hinted at the inaccuracy of such an approach at strong coupling. In this work, the accuracy of the results is tested using lattice Monte Carlo simulations: we benchmark the expectation value of the energy of the ground state for system sizes $N$ that are beyond brute-force exact diagonalization methods. We observe that the variational method with neural network states reproduces the right ground state energy when the width of the network employed in this work is sufficiently large. We confirm that the correct result is obtained for $N=2$ and $3$, while obtaining a precise value for $N=4$ requires more resources than the amount available for this work.",
+        "sections": null,
+        "source": "Search SearchFrom:arxiv",
+        "select_score": 0.9476472735404968,
+        "extra": {
+          "expand": "get full paper error"
+        }
+      },
+      {
+        "title": "Second-order optimisation strategies for neural network quantum states",
+        "arxiv_id": "2401.17550",
+        "depth": 0,
+        "child": {},
+        "abstract": "The Variational Monte Carlo method has recently seen important advances through the use of neural network quantum states. While more and more sophisticated ans\\\"atze have been designed to tackle a wide variety of quantum many-body problems, modest progress has been made on the associated optimisation algorithms. In this work, we revisit the Kronecker Factored Approximate Curvature, an optimiser that has been used extensively in a variety of simulations. We suggest improvements on the scaling and the direction of this optimiser, and find that they substantially increase its performance at a negligible additional cost. We also reformulate the Variational Monte Carlo approach in a game theory framework, to propose a novel optimiser based on decision geometry. We find that, on a practical test case for continuous systems, this new optimiser consistently outperforms any of the KFAC improvements in terms of stability, accuracy and speed of convergence. Beyond Variational Monte Carlo, the versatility of this approach suggests that decision geometry could provide a solid foundation for accelerating a broad class of machine learning algorithms.",
+        "sections": {
+          "1 Introduction": [
+            "2022 Neural-network quantum states for periodic systems in continuous space",
+            "2016 A Kronecker-factored approximate Fisher matrix for convolution layers",
+            "2023 Ab initio quantum chemistry with neural-network wavefunctions",
+            "2023 Message-Passing Neural Quantum States for the Homogeneous Electron Gas",
+            "2015 Quantum Monte Carlo methods for nuclear physics",
+            "2015 Optimizing neural networks with Kronecker-factored approximate curvature",
+            "2023 Solving the nuclear pairing model with neural network quantum states",
+            "2023 Dilute neutron star matter from neural-network quantum states",
+            "2015 Adam: A Method for Stochastic Optimization",
+            "2017 Quantum Monte Carlo Approaches for Correlated Systems",
+            "2021 Variational Monte Carlo Calculations of A\u22644\ud835\udc344A\\leq 4 Nuclei with an Artificial Neural-Network Correlator Ansatz",
+            "2014 Coupled-cluster computations of atomic nuclei",
+            "2018 Automatic differentiation in machine learning: a survey",
+            "2017 Solving the quantum many-body problem with artificial neural networks",
+            "1983 A foundation of information geometry",
+            "2005 The geometry of decision theory",
+            "2020 Machine learning the deuteron",
+            "2020 Ab initio solution of the many-electron Schr\u00f6dinger equation with deep neural networks"
+          ],
+          "2 Quantum many-body model 2.1 System and Hamiltonian": [
+            "2020 Static and Dynamic Properties of a Few Spin 1/2 Interacting Fermions Trapped in a Harmonic Potential",
+            "2023 Machine learning one-dimensional spinless trapped fermionic systems with neural-network quantum states",
+            "1934 On the interaction of electrons in metals",
+            "2003 Fermi-Bose mapping and N-particle ground state of spin-polarized fermions in tight atom waveguides"
+          ],
+          "2 Quantum many-body model 2.2 The Variational Monte Carlo method": [
+            "2006 Numerical optimization",
+            "2017 Quantum Monte Carlo Approaches for Correlated Systems"
+          ],
+          "2 Quantum many-body model 2.3 Neural Quantum States and Monte Carlo sampling": [
+            "2023 Machine learning one-dimensional spinless trapped fermionic systems with neural-network quantum states",
+            "2021 Simulations of state-of-the-art fermionic neural network wave functions with diffusion Monte Carlo",
+            "2022 Neural Network Solutions to the Fermionic Schr\u00f6dinger Equation",
+            "1949 The Monte Carlo method",
+            "2020 Ab initio solution of the many-electron Schr\u00f6dinger equation with deep neural networks"
+          ],
+          "3 KFAC within a Variational Monte Carlo framework 3.1 General optimisation strategy": [
+            "2006 Numerical optimization",
+            "1987 Stable Solution of Inverse Problems"
+          ],
+          "3 KFAC within a Variational Monte Carlo framework 3.2 Natural Gradient Descent": [
+            "1998 Natural Gradient Works Efficiently in Learning",
+            "2015 Optimizing neural networks with Kronecker-factored approximate curvature",
+            "2020 New insights and perspectives on the natural gradient method",
+            "2005 Wave function optimization in the variational Monte Carlo method",
+            "1983 A foundation of information geometry"
+          ],
+          "3 KFAC within a Variational Monte Carlo framework 3.3 KFAC algorithm": [
+            "2006 The Levenberg-Marquardt algorithm: implementation and theory",
+            "2023 A simple linear algebra identity to optimize large-scale neural network quantum states",
+            "2023 Machine learning one-dimensional spinless trapped fermionic systems with neural-network quantum states",
+            "2015 Optimizing neural networks with Kronecker-factored approximate curvature"
+          ],
+          "3 KFAC within a Variational Monte Carlo framework 3.4 Improving the scaling estimation": [
+            "2016 A Kronecker-factored approximate Fisher matrix for convolution layers",
+            "2006 Reducing the dimensionality of data with neural networks",
+            "2015 Optimizing neural networks with Kronecker-factored approximate curvature",
+            "2020 New insights and perspectives on the natural gradient method",
+            "2020 Ab initio solution of the many-electron Schr\u00f6dinger equation with deep neural networks"
+          ],
+          "3 KFAC within a Variational Monte Carlo framework 3.5 Improving the direction estimation": [
+            "2016 A Kronecker-factored approximate Fisher matrix for convolution layers",
+            "2015 Optimizing neural networks with Kronecker-factored approximate curvature",
+            "1981 The vec-permutation matrix, the vec operator and Kronecker products: A review",
+            "1975 Solution of sparse indefinite systems of linear equations",
+            "2012 Training deep and recurrent networks with hessian-free optimization"
+          ],
+          "4 Decisional gradient descent 4.1 Failure of information geometry": [
+            "2012 Training deep and recurrent networks with hessian-free optimization",
+            "2020 Ab initio solution of the many-electron Schr\u00f6dinger equation with deep neural networks"
+          ],
+          "4 Decisional gradient descent 4.2 Decision geometry": [
+            "2005 Estimation of Non-Normalized Statistical Models by Score Matching",
+            "1967 Mathematical Statistics: A Decision Theoretic Approach",
+            "2007 The geometry of proper scoring rules",
+            "2007 Strictly proper scoring rules, prediction, and estimation",
+            "2024 A decisional step in Variational Monte Carlo",
+            "2004 Game theory, maximum entropy, minimum discrepancy and robust Bayesian decision theory",
+            "1979 Information-theoretical optimization techniques"
+          ],
+          "4 Decisional gradient descent 4.3 Application to VMC": [
+            "2020 New insights and perspectives on the natural gradient method",
+            "2015 Adam: A Method for Stochastic Optimization",
+            "2023 Machine learning one-dimensional spinless trapped fermionic systems with neural-network quantum states",
+            "2023 Transfer Learning For Many-Body Systems"
+          ],
+          "5 Conclusion and outlook": [
+            "2020 Ab initio solution of the many-electron Schr\u00f6dinger equation with deep neural networks",
+            "2023 Machine learning one-dimensional spinless trapped fermionic systems with neural-network quantum states",
+            "2024 A decisional step in Variational Monte Carlo",
+            "2024 Quantum natural gradient without monotonicity",
+            "2023 Efficient optimization of deep neural quantum states toward machine precision",
+            "2012 Training deep and recurrent networks with hessian-free optimization"
+          ]
+        },
+        "source": "Search SearchFrom:arxiv",
+        "select_score": 0.8406281471252441,
+        "extra": {
+          "expand": "not expand"
+        }
+      }
+    ],
+    "Survey papers on neural network based quantum Monte Carlo": [
+      {
+        "title": "Explicitly antisymmetrized neural network layers for variational Monte Carlo simulation",
+        "arxiv_id": "2112.03491",
+        "depth": 0,
+        "child": {},
+        "abstract": "The combination of neural networks and quantum Monte Carlo methods has arisen as a path forward for highly accurate electronic structure calculations. Previous proposals have combined equivariant neural network layers with an antisymmetric layer to satisfy the antisymmetry requirements of the electronic wavefunction. However, to date it is unclear if one can represent antisymmetric functions of physical interest, and it is difficult to measure the expressiveness of the antisymmetric layer. This work attempts to address this problem by introducing explicitly antisymmetrized universal neural network layers as a diagnostic tool. We first introduce a generic antisymmetric (GA) layer, which we use to replace the entire antisymmetric layer of the highly accurate ansatz known as the FermiNet. We demonstrate that the resulting FermiNet-GA architecture can yield effectively the exact ground state energy for small systems. We then consider a factorized antisymmetric (FA) layer which more directly generalizes the FermiNet by replacing products of determinants with products of antisymmetrized neural networks. Interestingly, the resulting FermiNet-FA architecture does not outperform the FermiNet. This suggests that the sum of products of antisymmetries is a key limiting aspect of the FermiNet architecture. To explore this further, we investigate a slight modification of the FermiNet called the full determinant mode, which replaces each product of determinants with a single combined determinant. The full single-determinant FermiNet closes a large part of the gap between the standard single-determinant FermiNet and FermiNet-GA. Surprisingly, on the nitrogen molecule at a dissociating bond length of 4.0 Bohr, the full single-determinant FermiNet can significantly outperform the standard 64-determinant FermiNet, yielding an energy within 0.4 kcal/mol of the best available computational benchmark.",
+        "sections": {
+          "I Introduction": [
+            "Szabo\u00a0and\u00a0N",
+            "S",
+            "Pfau, J",
+            "P",
+            "Han, Y",
+            "Carleo\u00a0and\u00a0M",
+            "Luo\u00a0and\u00a0B",
+            "Zaheer, S",
+            "Hutter,\u00a0On Representing (Anti)Symmetric Functions,\u00a0Tech",
+            "Hermann, Z",
+            "Han, L",
+            "M"
+          ],
+          "II Preliminaries II.1 Many-body electron problem": [
+            "M"
+          ],
+          "III Architectures III.1 Permutation equivariant features in FermiNet": [
+            "P",
+            "Zaheer, S",
+            "Hutter,\u00a0On Representing (Anti)Symmetric Functions,\u00a0Tech",
+            "He, X",
+            "Kato,\u00a0On the eigenfunctions of many-particle systems in quantum mechanics,\u00a0Commun"
+          ],
+          "III Architectures III.2 Antisymmetric layer in FermiNet": [
+            "S",
+            "Pfau, J"
+          ],
+          "III Architectures III.3 Generic antisymmetric neural network layer": [
+            "W",
+            "R"
+          ],
+          "III Architectures III.4 Factorized antisymmetric neural network layer": [
+            "Hutter,\u00a0On Representing (Anti)Symmetric Functions,\u00a0Tech"
+          ],
+          "III Architectures III.5 Jastrow factors": [
+            "Hendrycks\u00a0and\u00a0K",
+            "Gubernatis, N"
+          ],
+          "III Architectures III.6 Full determinant FermiNet": [
+            "Pfau, J"
+          ],
+          "IV Optimization IV.1 Gradient calculation": [
+            "J",
+            "Pfau, J",
+            "Bressanini\u00a0and\u00a0P",
+            "L"
+          ],
+          "IV Optimization IV.2 Optimizer": [
+            "Amari\u00a0and\u00a0H",
+            "Becca\u00a0and\u00a0S",
+            "Pfau, J",
+            "Umrigar\u00a0and\u00a0C",
+            "Martens\u00a0and\u00a0R",
+            "P",
+            "Amari,\u00a0Natural gradient works efficiently in learning,\u00a0Neural Computation\u00a010,\u00a0251 (1998).",
+            "Stokes, J"
+          ],
+          "V Numerical Experiments": [
+            "Lin, G",
+            "S",
+            "Bradbury, R"
+          ],
+          "V Numerical Experiments V.1 Performance: atomic systems": [
+            "Pfau, J"
+          ],
+          "V Numerical Experiments V.2 Performance: square H4 model": [
+            "Jankowski\u00a0and\u00a0J"
+          ],
+          "V Numerical Experiments V.3 Comparison of nodal surfaces": [
+            "M",
+            "Hutter,\u00a0On Representing (Anti)Symmetric Functions,\u00a0Tech"
+          ],
+          "V Numerical Experiments V.4 Nitrogen molecule: Performance of the full determinant FermiNet": [
+            "J",
+            "Pfau, J"
+          ],
+          "VI Discussion": [
+            "S",
+            "Pfau, J",
+            "W",
+            "J",
+            "Lin, G",
+            "Bradbury, R"
+          ]
+        },
+        "source": "Search SearchFrom:arxiv",
+        "select_score": 0.9713529348373413,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Improved Optimization for the Neural-network Quantum States and Tests on the Chromium Dimer",
+        "arxiv_id": "2404.09280",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract The advent of Neural-network Quantum States (NQS) has significantly advanced wave function ansatz research, sparking a resurgence in orbital space variational Monte Carlo (VMC) exploration. This work introduces three algorithmic enhancements to reduce computational demands of VMC optimization using NQS: an adaptive learning rate algorithm, constrained optimization, and block optimization. We evaluate the refined algorithm on complex multireference bond stretches of H2\u200bOsubscriptH2O\\rm H_{2}O and N2subscriptN2\\rm N_{2} within the cc-pVDZ basis set and calculate the ground-state energy of the strongly correlated chromium dimer (Cr2subscriptCr2\\rm Cr_{2}) in the Ahlrichs SV basis set. Our results achieve superior accuracy compared to coupled cluster theory at a relatively modest CPU cost. This work demonstrates how to enhance optimization efficiency and robustness using these strategies, opening a new path to optimize large-scale Restricted Boltzmann Machine (RBM)-based NQS more effectively and marking a substantial advancement in NQS\u2019s practical quantum chemistry applications.",
+        "sections": {
+          "I Introduction": [
+            "Nat. Mach. Intell.",
+            "J. Chem. Phys.",
+            "Physica Scripta",
+            "Chem. Phys.",
+            "Ann. Phys.",
+            "J. Chem. Theory Comput.",
+            "G. Carleo and M. Troyer",
+            "Nat. Rev. Phys.",
+            "Nat. Chem.",
+            "Mach. Learn.: Sci. and Technol.",
+            "Commun. Phys.",
+            "J. Phys. Chem.",
+            "Chem. Rev.",
+            "Nat. Commun.",
+            "Neural network backflow for ab-initio quantum chemistry"
+          ],
+          "II Theory and Methods II.1 Overview": [
+            "Nat. Mach. Intell.",
+            "J. Chem. Phys.",
+            "J. Chem. Theory Comput.",
+            "Phys. Rev. Lett.",
+            "Phys. Rev. B"
+          ],
+          "II Theory and Methods II.2 Adaptive learning rate": [
+            "Proceedings of the 33rd International Conference on Neural Information Processing Systems",
+            "J. Toulouse and C. J. Umrigar, J. Chem. Phys. 126, 084102 (2007).",
+            "J. Chem. Theory Comput.",
+            "Phys. Chem. Chem. Phys.",
+            "Proceedings of the 12th USENIX Conference on Operating Systems Design and Implementation, OSDI'16",
+            "Phys. Rev. Lett.",
+            "Adam: A method for stochastic optimization"
+          ],
+          "II Theory and Methods II.4 Block optimization for the restricted Boltzmann machine": [
+            "Proceedings of the 32nd International Conference on International Conference on Machine Learning - Volume 37",
+            "Phys. Rev. Res."
+          ],
+          "III Results and Discussion": [
+            "J. Chem. Theory Comput.",
+            "J. Chem. Phys.",
+            "WIREs Comput. Mol. Sci."
+          ],
+          "III Results and Discussion III.2 Performance of constrained optimization": [
+            "J. Chem. Theory Comput.",
+            "Phys. Rev. Res."
+          ],
+          "III Results and Discussion III.4 Dissociation curves for \ud835\udc07\ud835\udfd0\u200b\ud835\udc0esubscript\ud835\udc072\ud835\udc0e\\mathbf{H_{2}O} and \ud835\udc0d\ud835\udfd0subscript\ud835\udc0d2\\mathbf{N_{2}}": [
+            "J. Chem. Theory Comput."
+          ],
+          "III Results and Discussion III.5 Ground-state energy of \ud835\udc02\ud835\udc2b\ud835\udfd0subscript\ud835\udc02\ud835\udc2b2\\mathbf{Cr_{2}}": [
+            "J. Chem. Phys.",
+            "J. Am. Chem. Soc."
+          ],
+          "IV Conclusion": [
+            "Neural network backflow for ab-initio quantum chemistry"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.8051897883415222,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Ab-initio quantum chemistry with neural-network wavefunctions",
+        "arxiv_id": "2208.12590",
+        "depth": 0,
+        "child": {},
+        "abstract": "Machine learning and specifically deep-learning methods have outperformed human capabilities in many pattern recognition and data processing problems, in game playing, and now also play an increasingly important role in scientific discovery. A key application of machine learning in the molecular sciences is to learn potential energy surfaces or force fields from ab-initio solutions of the electronic Schr\\\"odinger equation using datasets obtained with density functional theory, coupled cluster, or other quantum chemistry methods. Here we review a recent and complementary approach: using machine learning to aid the direct solution of quantum chemistry problems from first principles. Specifically, we focus on quantum Monte Carlo (QMC) methods that use neural network ansatz functions in order to solve the electronic Schr\\\"odinger equation, both in first and second quantization, computing ground and excited states, and generalizing over multiple nuclear configurations. Compared to existing quantum chemistry methods, these new deep QMC methods have the potential to generate highly accurate solutions of the Schr\\\"odinger equation at relatively modest computational cost.",
+        "sections": null,
+        "source": "Search SearchFrom:arxiv",
+        "select_score": 0.9987115859985352,
+        "extra": {
+          "expand": "get full paper error"
+        }
+      },
+      {
+        "title": "Neural Network Analytic Continuation for Monte Carlo: Improvement by Statistical Errors",
+        "arxiv_id": "2302.11317",
+        "depth": 0,
+        "child": {},
+        "abstract": "This study explores the use of neural network-based analytic continuation to extract spectra from Monte Carlo data. We apply this technique to both synthetic and Monte Carlo-generated data. The training sets for neural networks are carefully synthesized without ``data leakage\". We found that the training set should match the input correlation functions in terms of statistical error properties, such as noise level, noise dependence on imaginary time, and imaginary time-displaced correlations. We have developed a systematic method to synthesize such training datasets. Our improved algorithm outperform the widely used maximum entropy method in highly noisy situations. As an example, our method successfully extracted the dynamic structure factor of the spin-1/2 Heisenberg chain from quantum Monte Carlo simulations.",
+        "sections": {
+          "1 Introduction": [
+            "An introduction to neural networks.",
+            "Monte carlo study of a two-dimensional quantum ferromagnet.",
+            "Analytic continuation via domain knowledge free machine learning.",
+            "Monte carlo calculation of dynamical properties of the two-dimensional hubbard model.",
+            "Machine learning: Trends, perspectives, and prospects.",
+            "Leakage in data mining: Formulation, detection, and avoidance.",
+            "Projected regression method for solving fredholm integral equations arising in the analytic continuation problem of quantum physics.",
+            "Learning, invariance, and generalization in high-order neural networks.",
+            "Stochastic method for analytic continuation of quantum monte carlo data.",
+            "Noise enhanced neural networks for analytic continuation.",
+            "Artificial neural network approach to the analytic continuation problem.",
+            "Maximum-entropy method for analytic continuation of quantum monte carlo data."
+          ],
+          "2 NNAC on Synthetic Datasets 2.2 Training Framework": [
+            "Adam: A method for stochastic optimization.",
+            "Deep residual learning for image recognition.",
+            "Kullback-leibler divergence.",
+            "TensorFlow: Large-scale machine learning on heterogeneous systems, 2015.",
+            "Dropout: a simple way to prevent neural networks from overfitting.",
+            "Keras.",
+            "Deep layer aggregation.",
+            "Understanding of a convolutional neural network.",
+            "Deep learning for robot perception and cognition, 2022.",
+            "Searching for activation functions.",
+            "Deep learning using rectified linear units (relu)."
+          ],
+          "2 NNAC on Synthetic Datasets 2.4 Comparison with Maxent": [
+            "Algorithms for optimized maximum entropy and diagnostic tools for analytic continuation.",
+            "Maximum entropy formalism for the analytic continuation of matrix-valued green\u2019s functions.",
+            "Maximum-entropy method for analytic continuation of quantum monte carlo data."
+          ],
+          "2 NNAC on Synthetic Datasets 2.5 Influence of Noise Dependency on Imaginary Time": [
+            "Permutation importance: a corrected feature importance measure."
+          ],
+          "3 NNAC on Heisenberg Chain": [
+            "Accuracy of the microcanonical lanczos method to compute real-frequency dynamical spectral functions of quantum models at finite temperatures.",
+            "Stochastic series expansion method with operator-loop update."
+          ],
+          "4 Conclusions": [
+            "A survey on transfer learning."
+          ]
+        },
+        "source": "Search SearchFrom:arxiv",
+        "select_score": 0.5792009830474854,
+        "extra": {
+          "expand": "not expand"
+        }
+      }
+    ],
+    "Recent advancements in quantum Monte Carlo using neural networks": [
+      {
+        "title": "Sorting Out Quantum Monte Carlo",
+        "arxiv_id": "2311.05598",
+        "depth": 0,
+        "child": {},
+        "abstract": "Molecular modeling at the quantum level requires choosing a parameterization of the wavefunction that both respects the required particle symmetries, and is scalable to systems of many particles. For the simulation of fermions, valid parameterizations must be antisymmetric with respect to the exchange of particles. Typically, antisymmetry is enforced by leveraging the anti-symmetry of determinants with respect to the exchange of matrix rows, but this involves computing a full determinant each time the wavefunction is evaluated. Instead, we introduce a new antisymmetrization layer derived from sorting, the $\\textit{sortlet}$, which scales as $O(N \\log N)$ with regards to the number of particles -- in contrast to $O(N^3)$ for the determinant. We show numerically that applying this anti-symmeterization layer on top of an attention based neural-network backbone yields a flexible wavefunction parameterization capable of reaching chemical accuracy when approximating the ground state of first-row atoms and small molecules.",
+        "sections": {
+          "1 Introduction 1.1 Overview": [
+            "Pfau, J",
+            "H",
+            "S",
+            "Dushman"
+          ],
+          "1 Introduction 1.2 Our Contribution": [
+            "Pfau, J",
+            "von Glehn, J",
+            "Luo and B",
+            "Thiede, C",
+            "Pang, S",
+            "Ammar, E"
+          ],
+          "1 Introduction 1.3 Where did the determinants come from anyway?": [
+            "J",
+            "P",
+            "von Glehn, J"
+          ],
+          "2 Variational Quantum Monte Carlo": [
+            "Becca and S",
+            "M"
+          ],
+          "2 Variational Quantum Monte Carlo 2.1 The Born-Oppenheimer Hamiltonian": [
+            "Pfau, J"
+          ],
+          "2 Variational Quantum Monte Carlo 2.4 Derivatives of the Energy Functional": [
+            "W",
+            "Pfau, J"
+          ],
+          "3 The Sortlet Ansatz 3.1 The Sortlet Ansatz": [
+            "Sch\u00e4tzle, P"
+          ],
+          "3 The Sortlet Ansatz 3.2 Properties of the Sortlet Ansatz": [
+            "von Glehn, J"
+          ],
+          "4 Numerical Experiments 4.1 Evaluation on first row atoms and small molecules": [
+            "Pang, S"
+          ],
+          "4 Numerical Experiments 4.3 Reproduction of H4subscript\ud835\udc3b4H_{4} potential energy curve": [
+            "Pfau, J"
+          ],
+          "5 Comparison with other Pairwise Constructions and Universality": [
+            "Pang, S",
+            "Acevedo, M",
+            "Pfau, J"
+          ],
+          "5 Comparison with other Pairwise Constructions and Universality 5.1 Non-smooth universality": [
+            "Pang, S",
+            "M"
+          ],
+          "5 Comparison with other Pairwise Constructions and Universality 5.2 Comparison with the Vandermonde Ansatz": [
+            "Bressanini",
+            "Pang, S",
+            "A",
+            "Mitas",
+            "Solving many-electron schr\u00f6dinger equation using deep neural networks.",
+            "M"
+          ],
+          "5 Comparison with other Pairwise Constructions and Universality 5.3 Advantages of the Sortlet Ansatz against the Vandermonde Ansatz": [
+            "Ammar, E",
+            "Mitas",
+            "Pfau, J"
+          ],
+          "6 Related Work": [
+            "Pfau, J",
+            "von Glehn, J",
+            "Generalizing neural wave functions.",
+            "Solving the quantum many-body problem with artificial neural networks.",
+            "Thiede, C",
+            "Gold-standard solutions to the schr\u00f6dinger equation using deep learning: How much physics do we need?",
+            "Wasserstein quantum monte carlo: A novel approach for solving the quantum many-body schr\\\\\\backslash\" odinger equation.",
+            "Solving many-electron schr\u00f6dinger equation using deep neural networks.",
+            "Deep-neural-network solution of the electronic schr\u00f6dinger equation.",
+            "Method to solve quantum few-body problems with artificial neural networks."
+          ]
+        },
+        "source": "Search SearchFrom:arxiv",
+        "select_score": 0.5470384359359741,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Recent Advances for Quantum Neural Networks in Generative Learning",
+        "arxiv_id": "2206.03066",
+        "depth": 0,
+        "child": {},
+        "abstract": "Quantum computers are next-generation devices that hold promise to perform calculations beyond the reach of classical computers. A leading method towards achieving this goal is through quantum machine learning, especially quantum generative learning. Due to the intrinsic probabilistic nature of quantum mechanics, it is reasonable to postulate that quantum generative learning models (QGLMs) may surpass their classical counterparts. As such, QGLMs are receiving growing attention from the quantum physics and computer science communities, where various QGLMs that can be efficiently implemented on near-term quantum machines with potential computational advantages are proposed. In this paper, we review the current progress of QGLMs from the perspective of machine learning. Particularly, we interpret these QGLMs, covering quantum circuit born machines, quantum generative adversarial networks, quantum Boltzmann machines, and quantum autoencoders, as the quantum extension of classical generative learning models. In this context, we explore their intrinsic relation and their fundamental differences. We further summarize the potential applications of QGLMs in both conventional machine learning tasks and quantum physics. Last, we discuss the challenges and further research directions for QGLMs.",
+        "sections": null,
+        "source": "Search SearchFrom:arxiv",
+        "select_score": 0.0007990316371433437,
+        "extra": {
+          "expand": "get full paper error"
+        }
+      },
+      {
+        "title": "Towards Neural Variational Monte Carlo That Scales Linearly with System Size",
+        "arxiv_id": "2212.11296",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Quantum many-body problems are some of the most challenging problems in science and are central to demystifying some exotic quantum phenomena, e.g., high-temperature superconductors. The combination of neural networks (NN) for representing quantum states, coupled with the Variational Monte Carlo (VMC) algorithm, has been shown to be a promising method for solving such problems. However, the run-time of this approach scales quadratically with the number of simulated particles, constraining the practically usable NN to \u2014 in machine learning terms \u2014 minuscule sizes (<10M parameters). Considering the many breakthroughs brought by extreme NN in the +1B parameters scale to other domains, lifting this constraint could significantly expand the set of quantum systems we can accurately simulate on classical computers, both in size and complexity. We propose a NN architecture called Vector-Quantized Neural Quantum States (VQ-NQS) that utilizes vector-quantization techniques to leverage redundancies in the local-energy calculations of the VMC algorithm\u00a0\u2013\u00a0the source of the quadratic scaling. In our preliminary experiments, we demonstrate VQ-NQS ability to reproduce the ground state of the 2D Heisenberg model across various system sizes, while reporting a significant reduction of about \u00d710absent10{\\times}10 in the number of FLOPs in the local-energy calculation. ",
+        "sections": {
+          "1 Introduction": [
+            "Neural-network quantum states, string-bond states, and chiral topological states",
+            "Neural discrete representation learning",
+            "Neural tensor contractions and the expressive power of deep neural quantum states",
+            "Hierarchical text-conditional image generation with clip latents",
+            "Switch transformers: Scaling to trillion parameter models with simple and efficient sparsity",
+            "Ground State of Liquid He4",
+            "Solving the quantum many-body problem with artificial neural networks",
+            "Deep Autoregressive Models for the Efficient Variational Simulation of Many-Body Quantum Systems",
+            "Attention is all you need",
+            "Ab initio solution of the many-electron Schr\"odinger equation with deep neural networks",
+            "Density matrix formulation for quantum renormalization groups"
+          ],
+          "2 Variational Monte Carlo, Neural Quantum States, and the Local Energy Bottleneck": [
+            "Solving the quantum many-body problem with artificial neural networks",
+            "Deep Autoregressive Models for the Efficient Variational Simulation of Many-Body Quantum Systems"
+          ],
+          "3 Vector-Quantized Neural Quantum States 3.1 Architecture": [
+            "Neural discrete representation learning",
+            "Nwt: Towards natural audio-to-video generation with representation learning",
+            "Attention is all you need",
+            "An image is worth 16x16 words: Transformers for image recognition at scale"
+          ],
+          "4 Experiments": [
+            "Deep Autoregressive Models for the Efficient Variational Simulation of Many-Body Quantum Systems",
+            "Mlp-mixer: An all-mlp architecture for vision"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.9944961667060852,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Synergy between deep neural networks and the variational Monte Carlo method for small $^4He_N$ clusters",
+        "arxiv_id": "2302.00599",
+        "depth": 0,
+        "child": {},
+        "abstract": "We introduce a neural network-based approach for modeling wave functions that satisfy Bose-Einstein statistics. Applying this model to small $^4He_N$ clusters (with N ranging from 2 to 14 atoms), we accurately predict ground state energies, pair density functions, and two-body contact parameters $C^{(N)}_2$ related to weak unitarity. The results obtained via the variational Monte Carlo method exhibit remarkable agreement with previous studies using the diffusion Monte Carlo method, which is considered exact within its statistical uncertainties. This indicates the effectiveness of our neural network approach for investigating many-body systems governed by Bose-Einstein statistics.",
+        "sections": {
+          "": [
+            "Nonlinear network description for many-body quantum systems in continuous space",
+            "Solving the quantum many-body problem with artificial neural networks",
+            "On scientific understanding with artificial intelligence",
+            "J",
+            "Deep learning-enhanced variational Monte Carlo method for quantum many-body physics"
+          ],
+          "Methods": [
+            "FermiNet, 2020.",
+            "E",
+            "P",
+            "NetKet 3: Machine learning toolbox for many-body quantum systems",
+            "Aziz, Frederick\u00a0R.W",
+            "Neural-network quantum states for periodic systems in continuous space",
+            "Grosse",
+            "Spencer, Alexander G",
+            "J",
+            "M",
+            "L"
+          ],
+          "Results": [
+            "General relations for quantum gases in two and three dimensions",
+            "Energetics of a strongly correlated Fermi gas",
+            "Miller",
+            "Bazak, M",
+            "Imaging the He2 quantum halo state using a free electron laser",
+            "J",
+            "Przybytek, W",
+            "L"
+          ],
+          "Final comments": [
+            "J"
+          ]
+        },
+        "source": "Search SearchFrom:arxiv",
+        "select_score": 0.5500070452690125,
+        "extra": {
+          "expand": "not expand"
+        }
+      }
+    ],
+    "Neural network based quantum Monte Carlo techniques": [
+      {
+        "title": "Neural Quantum States in Variational Monte Carlo Method: A Brief Summary",
+        "arxiv_id": "2406.01017",
+        "depth": 0,
+        "child": {},
+        "abstract": "In this note, variational Monte Carlo method based on neural quantum states for spin systems is reviewed. Using a neural network as the wave function allows for a more generalized expression of various types of interactions, including highly non-local interactions, which are closely related to its non-linear activation functions. Additionally, neural networks can represent relatively complex wave functions with relatively small computational resources when dealing with higher-dimensional systems, which is undoubtedly a \"flattening\" advantage. In quantum-state tomography, the representation method of neural quantum states has already achieved significant results, hinting at its potential in handling larger-sized systems.",
+        "sections": {
+          "1 Overview of the Variational Monte Carlo Method 1.2 Importance Sampling Using Markov Chains": [
+            "OLLE, Finite Markov Chains and Algorithmic Applications (2000)"
+          ],
+          "1 Overview of the Variational Monte Carlo Method 1.3 Stochastic Reconfiguration": [
+            "Sorella, Green function monte carlo with stochastic reconfiguration, Phys"
+          ],
+          "2 Nural Quantum States 2.1 Introduction to NQS": [
+            "\u00d6stlund, S",
+            "Biamonte, Lectures on quantum tensor networks (2020)",
+            "R"
+          ],
+          "2 Nural Quantum States 2.2 Working Principle and Basic Architectures of Neural Networks": [
+            "Marquardt, Machine learning and quantum devices, SciPost Phys",
+            "H",
+            "Cire\u015fan, U",
+            "Rosenblatt, The perceptron: a probabilistic model for information storage and organization in the brain., Psychological review 65 6 (1958) 386\u2013408",
+            "J",
+            "Fischer, C"
+          ],
+          "3 Neural Quantum State in Variational Monte Carlo 3.1 Supervised & Unsupervised Learning, and Reinforcement Learning": [
+            "Carleo, K",
+            "Torlai, G",
+            "F",
+            "Vicentini, D"
+          ],
+          "3 Neural Quantum State in Variational Monte Carlo 3.2 Spin Models and Restricted Boltzmann Machines": [
+            "Carleo, M",
+            "Norouzi, M",
+            "H",
+            "Sohn, H",
+            "N",
+            "Yang, R",
+            "Peierls, On ising\u2019s model of ferromagnetism, Mathematical Proceedings of the Cambridge Philosophical Society 32\u00a0(3) (1936) 477\u2013481",
+            "D",
+            "Zhang, Exact solution of two-dimensional (2d) ising model with a transverse field: A low-dimensional quantum spin system, Physica E: Low-dimensional Systems and Nanostructures 128 (2021) 114632",
+            "Dauphin, R",
+            "Vojta, Quantum phase transitions, Reports on Progress in Physics 66\u00a0(12) (2003) 2069\u20132110"
+          ],
+          "3 Neural Quantum State in Variational Monte Carlo 3.3 Spin Models and Convolutional Neural Networks": [
+            "Klambauer, T",
+            "C",
+            "Morita, R",
+            "E",
+            "S",
+            "Luo, G",
+            "Capriotti, F",
+            "Sachdev, R",
+            "Senthil, A",
+            "W",
+            "Jiang, H",
+            "Roth, A",
+            "Choo, T"
+          ],
+          "4 Further": [
+            "Takai, K"
+          ]
+        },
+        "source": "Search SearchFrom:arxiv",
+        "select_score": 0.5204550623893738,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Forward Laplacian: A New Computational Framework for Neural Network-based Variational Monte Carlo",
+        "arxiv_id": "2307.08214",
+        "depth": 0,
+        "child": {},
+        "abstract": "Neural network-based variational Monte Carlo (NN-VMC) has emerged as a promising cutting-edge technique of ab initio quantum chemistry. However, the high computational cost of existing approaches hinders their applications in realistic chemistry problems. Here, we report the development of a new NN-VMC method that achieves a remarkable speed-up by more than one order of magnitude, thereby greatly extending the applicability of NN-VMC to larger systems. Our key design is a novel computational framework named Forward Laplacian, which computes the Laplacian associated with neural networks, the bottleneck of NN-VMC, through an efficient forward propagation process. We then demonstrate that Forward Laplacian is not only versatile but also facilitates more developments of acceleration methods across various aspects, including optimization for sparse derivative matrix and efficient neural network design. Empirically, our approach enables NN-VMC to investigate a broader range of atoms, molecules and chemical reactions for the first time, providing valuable references to other ab initio methods. The results demonstrate a great potential in applying deep learning methods to solve general quantum mechanical problems.",
+        "sections": {
+          "1 Main": [
+            "Matthews, A.G., Foulkes, W.M.C.: Ab-initio solution of the many-electron schr\u00f6dinger equation with deep neural networks",
+            "The Journal of Chemical Physics 152(15), 154106 (2020) https://doi.org/10.1063/1.5144288",
+            "Nature Chemistry 12(10), 891\u2013897 (2020)",
+            "In: The Eleventh International Conference on Learning Representations (2023)"
+          ],
+          "2 Results 2.1 Forward Laplacian Framework": [
+            "Matthews, A.G., Foulkes, W.M.C.: Ab-initio solution of the many-electron schr\u00f6dinger equation with deep neural networks"
+          ],
+          "2 Results 2.2 Accelerating NN-VMC using the Forward Laplacian Framework": [
+            "Physical Review B 70, 235119 (2004) https://doi.org/10.1103/PhysRevB.70.235119"
+          ],
+          "2 Results 2.3 Efficiency and Performance": [
+            "Matthews, A.G., Foulkes, W.M.C.: Ab-initio solution of the many-electron schr\u00f6dinger equation with deep neural networks",
+            "In: The Eleventh International Conference on Learning Representations (2023)",
+            "Spencer, D.P., Contributors, F.: FermiNet"
+          ],
+          "2 Results 2.4 Pushing the Limits of Relative Energy": [
+            "Physical Chemistry Chemical Physics 8(17), 1985\u20131993 (2006)",
+            "The Journal of Chemical Physics 136(12) (2012) https://doi.org/10.1063/1.3697678",
+            "Nature Communications 14(1), 1860 (2023) https://doi.org/10.1038/s41467-023-37609-3",
+            "Nature Communications 12(1), 3927 (2021)",
+            "Physical Chemistry Chemical Physics 19, 32184\u201332215 (2017) https://doi.org/10.1039/C7CP04913G",
+            "Matthews, A.G., Foulkes, W.M.C.: Ab-initio solution of the many-electron schr\u00f6dinger equation with deep neural networks",
+            "Scientific Data 9(1), 417 (2022) https://doi.org/10.1038/s41597-022-01529-6",
+            "Journal of Physical and Chemical Reference Data 14(Suppl"
+          ],
+          "3 Discussion": [
+            "The Journal of Chemical Physics 157(16), 164104 (2022)",
+            "",
+            "https://doi.org/10.5281/zenodo.7503172",
+            "https://openreview.net/forum?id=cy1TKLRAEML",
+            "Phys",
+            "Nature Communications 14(1), 1860 (2023) https://doi.org/10.1038/s41467-023-37609-3",
+            "Nature Computational Science (2022) https://doi.org/10.1038/s43588-022-00228-x",
+            "Matthews, A.G., Foulkes, W.M.C.: Ab-initio solution of the many-electron schr\u00f6dinger equation with deep neural networks",
+            "Nature Communications 14(1), 274 (2023) https://doi.org/10.1038/s41467-022-35534-5",
+            "Physical Review Research 4, 013021 (2022) https://doi.org/10.1103/PhysRevResearch.4.013021",
+            "Nature Communications 13(1), 7895 (2022)"
+          ],
+          "4 Methods 4.1 Wavefunction Optimization": [
+            "Matthews, A.G., Foulkes, W.M.C.: Ab-initio solution of the many-electron schr\u00f6dinger equation with deep neural networks",
+            "i"
+          ],
+          "4 Methods 4.2 Forward Laplacian Method for General Neural Networks": [
+            "",
+            "PhD thesis, UCL (University College London) (2020)",
+            "In: Osdi, vol",
+            "http://github.com/google/jax"
+          ],
+          "4 Methods 4.3 LapNet Ansatz": [
+            "The Journal of Chemical Physics 126(22), 224110 (2007) https://doi.org/10.1063/1.2743972",
+            "In: The Eleventh International Conference on Learning Representations (2023)",
+            "Physical Review B 70, 235119 (2004) https://doi.org/10.1103/PhysRevB.70.235119",
+            "arXiv preprint arXiv:1206.6464 (2012)"
+          ]
+        },
+        "source": "Search SearchFrom:arxiv",
+        "select_score": 0.9982818365097046,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Real time evolution with neural-network quantum states",
+        "arxiv_id": "1912.08831",
+        "depth": 0,
+        "child": {},
+        "abstract": "A promising application of neural-network quantum states is to describe the time dynamics of many-body quantum systems. To realize this idea, we employ neural-network quantum states to approximate the implicit midpoint rule method, which preserves the symplectic form of Hamiltonian dynamics. We ensure that our complex-valued neural networks are holomorphic functions, and exploit this property to efficiently compute gradients. Application to the transverse-field Ising model on a one- and two-dimensional lattice exhibits an accuracy comparable to the stochastic configuration method proposed in [Carleo and Troyer, Science 355, 602-606 (2017)], but does not require computing the (pseudo-)inverse of a matrix.",
+        "sections": {
+          "1 Introduction": [
+            "Poulin, A",
+            "Glasser, N",
+            "Carleo and M",
+            "Carleo, F",
+            "Hairer, C",
+            "Sorella",
+            "Calabrese and J",
+            "Gao and L.-M",
+            "R"
+          ],
+          "2 Time evolution method": [
+            "Carleo, F",
+            "Hairer, C",
+            "Schmitt and M",
+            "Liesen and P"
+          ],
+          "3 Application to the Ising chain": [
+            "Adam: A method for stochastic optimization.",
+            "Carleo and M",
+            "Borin and D",
+            "Suzuki, J",
+            "W"
+          ],
+          "4 Application to the Ising model on a square lattice": [
+            "Czischek, M",
+            "Schmitt and M"
+          ],
+          "5 Conclusion": [
+            "Schmitt and M",
+            "Shrestha and A"
+          ]
+        },
+        "source": "Search SearchFrom:arxiv",
+        "select_score": 0.22152327001094818,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "A Score-Based Model for Learning Neural Wavefunctions",
+        "arxiv_id": "2305.16540",
+        "depth": 0,
+        "child": {},
+        "abstract": "Quantum Monte Carlo coupled with neural network wavefunctions has shown success in computing ground states of quantum many-body systems. Existing optimization approaches compute the energy by sampling local energy from an explicit probability distribution given by the wavefunction. In this work, we provide a new optimization framework for obtaining properties of quantum many-body ground states using score-based neural networks. Our new framework does not require explicit probability distribution and performs the sampling via Langevin dynamics. Our method is based on the key observation that the local energy is directly related to scores, defined as the gradient of the logarithmic wavefunction. Inspired by the score matching and diffusion Monte Carlo methods, we derive a weighted score matching objective to guide our score-based models to converge correctly to ground states. We first evaluate our approach with experiments on quantum harmonic traps, and results show that it can accurately learn ground states of atomic systems. By implicitly modeling high-dimensional data distributions, our work paves the way toward a more efficient representation of quantum systems.",
+        "sections": {
+          "1 Introduction": [
+            "Schnet: A continuous-filter convolutional neural network for modeling quantum interactions.",
+            "Auto-encoding variational bayes.",
+            "Solving the quantum many-body problem with artificial neural networks.",
+            "Generative modeling by estimating gradients of the data distribution.",
+            "Pfau, J.S"
+          ],
+          "2 Background and related work 2.2 Variational Monte Carlo": [
+            "Explicitly antisymmetrized neural network layers for variational monte carlo simulation.",
+            "Monte carlo simulation of a many-fermion study."
+          ],
+          "2 Background and related work 2.3 Related work": [
+            "Towards the ground state of molecules via diffusion monte carlo on neural networks.",
+            "Simulations of state-of-the-art fermionic neural network wave functions with diffusion monte carlo.",
+            "Generative adversarial nets.",
+            "Deep unsupervised learning using nonequilibrium thermodynamics.",
+            "Auto-encoding variational bayes.",
+            "Generalizing neural wave functions.",
+            "Solving the quantum many-body problem with artificial neural networks.",
+            "Ab-initio potential energy surfaces by pairing gnns with neural wave functions.",
+            "Generative modeling by estimating gradients of the data distribution.",
+            "Gold-standard solutions to the schr\u00f6dinger equation using deep learning: How much physics do we need?",
+            "Introduction to the variational and diffusion monte carlo methods.",
+            "Ground state of the electron gas by a stochastic method.",
+            "Learning ground states of quantum hamiltonians with graph networks.",
+            "Solving many-electron schr\u00f6dinger equation using deep neural networks.",
+            "Deep-neural-network solution of the electronic schr\u00f6dinger equation.",
+            "Pfau, J.S",
+            "Electronic excited states in deep variational monte carlo."
+          ],
+          "3 Method": [
+            "Estimation of non-normalized statistical models by score matching."
+          ],
+          "3 Method 3.1 Score-based neural wavefunction ansatz": [
+            "Deep sets."
+          ],
+          "3 Method 3.2 Sampling via Langevin dynamics": [
+            "Generative modeling by estimating gradients of the data distribution."
+          ],
+          "3 Method 3.3 Neural wavefunction optimization": [
+            "Categorical reparameterization with gumbel-softmax.",
+            "Estimation of non-normalized statistical models by score matching."
+          ],
+          "4 Experiments 4.1 Wavefunction ansatz for bosons and fermions": [
+            "Pfau, J.S",
+            "A diffusion monte carlo algorithm with very small time-step errors.",
+            "Fermion nodes.",
+            "Deep sets."
+          ],
+          "4 Experiments 4.2 2D quantum harmonic trap": [
+            "Theory of bose-einstein condensation in trapped gases."
+          ],
+          "4 Experiments 4.3 Atomic systems": [
+            "Explicitly antisymmetrized neural network layers for variational monte carlo simulation.",
+            "Pfau, J.S",
+            "Optimizing neural networks with kronecker-factored approximate curvature."
+          ]
+        },
+        "source": "Search SearchFrom:arxiv",
+        "select_score": 0.9964794516563416,
+        "extra": {
+          "expand": "not expand"
+        }
+      }
+    ]
+  },
+  "abstract": "",
+  "sections": "",
+  "source": "Root",
+  "select_score": 0.0,
+  "extra": {
+    "touch_ids": [
+      "2406.01017",
+      "2112.03491",
+      "2311.05598",
+      "2302.01941",
+      "1902.09483",
+      "2204.12966",
+      "2306.03921",
+      "2002.04613",
+      "2305.07240",
+      "2210.16493",
+      "2404.09280",
+      "2208.12590",
+      "2402.11014",
+      "2302.11317",
+      "2407.00707",
+      "2209.03241",
+      "2207.07810",
+      "1905.10730",
+      "2409.00398",
+      "2401.17550",
+      "2307.08214",
+      "1912.08831",
+      "2305.16540",
+      "2206.03066",
+      "2212.11296",
+      "2302.00599"
+    ],
+    "crawler_recall_papers": [
+      "Explicitly antisymmetrized neural network layers for variational Monte Carlo simulation",
+      "Improved Optimization for the Neural-network Quantum States and Tests on the Chromium Dimer",
+      "Ab-initio quantum chemistry with neural-network wavefunctions",
+      "Neural Network Analytic Continuation for Monte Carlo: Improvement by Statistical Errors",
+      "Efficient optimization of deep neural quantum states toward machine precision",
+      "Neural-Network Quantum States: A Systematic Review",
+      "Variational Monte Carlo with Large Patched Transformers",
+      "Neural network wave functions and the sign problem",
+      "Message-Passing Neural Quantum States for the Homogeneous Electron Gas",
+      "Neural network quantum state with proximal optimization: a ground-state searching scheme based on variational Monte Carlo",
+      "Neural-network quantum states for many-body physics",
+      "Deep learning quantum Monte Carlo for solids",
+      "Dynamics with autoregressive neural quantum states: application to critical quench dynamics",
+      "Variational Quantum Monte Carlo Method with a Neural-Network Ansatz for Open Quantum Systems",
+      "Interatomic force from neural network based variational quantum Monte Carlo",
+      "Deep Learning-Enhanced Variational Monte Carlo Method for Quantum Many-Body Physics",
+      "Variational Monte Carlo with Neural Network Quantum States for Yang-Mills Matrix Model",
+      "Second-order optimisation strategies for neural network quantum states",
+      "Neural Quantum States in Variational Monte Carlo Method: A Brief Summary",
+      "Forward Laplacian: A New Computational Framework for Neural Network-based Variational Monte Carlo",
+      "Real time evolution with neural-network quantum states",
+      "A Score-Based Model for Learning Neural Wavefunctions",
+      "Sorting Out Quantum Monte Carlo",
+      "Recent Advances for Quantum Neural Networks in Generative Learning",
+      "Towards Neural Variational Monte Carlo That Scales Linearly with System Size",
+      "Synergy between deep neural networks and the variational Monte Carlo method for small $^4He_N$ clusters"
+    ],
+    "recall_papers": [
+      "Explicitly antisymmetrized neural network layers for variational Monte Carlo simulation",
+      "Improved Optimization for the Neural-network Quantum States and Tests on the Chromium Dimer",
+      "Ab-initio quantum chemistry with neural-network wavefunctions",
+      "Neural Network Analytic Continuation for Monte Carlo: Improvement by Statistical Errors",
+      "Variational Monte Carlo with Large Patched Transformers",
+      "Neural network wave functions and the sign problem",
+      "Neural network quantum state with proximal optimization: a ground-state searching scheme based on variational Monte Carlo",
+      "Neural-network quantum states for many-body physics",
+      "Deep learning quantum Monte Carlo for solids",
+      "Variational Quantum Monte Carlo Method with a Neural-Network Ansatz for Open Quantum Systems",
+      "Interatomic force from neural network based variational quantum Monte Carlo",
+      "Deep Learning-Enhanced Variational Monte Carlo Method for Quantum Many-Body Physics",
+      "Variational Monte Carlo with Neural Network Quantum States for Yang-Mills Matrix Model",
+      "Second-order optimisation strategies for neural network quantum states",
+      "Neural Quantum States in Variational Monte Carlo Method: A Brief Summary",
+      "Forward Laplacian: A New Computational Framework for Neural Network-based Variational Monte Carlo",
+      "A Score-Based Model for Learning Neural Wavefunctions",
+      "Sorting Out Quantum Monte Carlo",
+      "Towards Neural Variational Monte Carlo That Scales Linearly with System Size",
+      "Synergy between deep neural networks and the variational Monte Carlo method for small $^4He_N$ clusters"
+    ],
+    "answer": [
+      "Neural-network quantum state study of the long-range antiferromagnetic\n  Ising chain",
+      "Universal Performance Gap of Neural Quantum States Applied to the Hofstadter-Bose-Hubbard Model",
+      "Variational Quantum Monte Carlo Method with a Neural-Network Ansatz for\n  Open Quantum Systems",
+      "Discovering Quantum Phase Transitions with Fermionic Neural Networks",
+      "Ab-initio quantum chemistry with neural-network wavefunctions",
+      "Second-order optimisation strategies for neural network quantum states",
+      "NetKet 3: Machine Learning Toolbox for Many-Body Quantum Systems",
+      "Deep learning quantum Monte Carlo for solids",
+      "Neural network quantum state with proximal optimization: a ground-state\n  searching scheme based on variational Monte Carlo",
+      "Variational Monte Carlo with Neural Network Quantum States for Yang-Mills Matrix Model",
+      "Natural Quantum Monte Carlo Computation of Excited States",
+      "Neural Quantum States in Variational Monte Carlo Method: A Brief Summary",
+      "Forward Laplacian: A New Computational Framework for Neural\n  Network-based Variational Monte Carlo",
+      "Solving the nuclear pairing model with neural network quantum states",
+      "Highly Accurate Real-space Electron Densities with Neural Networks",
+      "Penalty and auxiliary wave function methods for electronic Excitation in neural network variational Monte Carlo"
+    ]
+  }
+}

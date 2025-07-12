@@ -1,0 +1,1759 @@
+{
+  "title": "Papers that explore using large language models for mining factors in stock exchange analysis.",
+  "arxiv_id": "",
+  "depth": -1,
+  "child": {
+    "Survey papers on stock exchange analysis using large language models": [
+      {
+        "title": "Large Language Models in Finance: A Survey",
+        "arxiv_id": "2311.10723",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract. Recent advances in large language models (LLMs) have opened new possibilities for artificial intelligence applications in finance. In this paper, we provide a practical survey focused on two key aspects of utilizing LLMs for financial tasks: existing solutions and guidance for adoption. First, we review current approaches employing LLMs in finance, including leveraging pretrained models via zero-shot or few-shot learning, fine-tuning on domain-specific data, and training custom LLMs from scratch. We summarize key models and evaluate their performance improvements on financial natural language processing tasks. Second, we propose a decision framework to guide financial professionals in selecting the appropriate LLM solution based on their use case constraints around data, compute, and performance needs. The framework provides a pathway from lightweight experimentation to heavy investment in customized LLMs. Lastly, we discuss limitations and challenges around leveraging LLMs in financial applications. Overall, this survey aims to synthesize the state-of-the-art and provide a roadmap for responsibly applying LLMs to advance financial AI. ",
+        "sections": {
+          "1. Introduction": [
+            "GPT-4 Technical Report"
+          ],
+          "2. Basics of Language Models": [
+            "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+            "Markov models applications in natural language processing: a survey",
+            "Attention Is All You Need",
+            "Generating Sequences With Recurrent Neural Networks",
+            "Language Models are Few-Shot Learners",
+            "Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation",
+            "A neural probabilistic language model",
+            "Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer"
+          ],
+          "3. Overview of AI Applications in Finance 3.1. Current AI Applications in Finance": [
+            "Aiding Long-Term Investment Decisions with XGBoost Machine Learning Model",
+            "Deep Learning for Portfolio Optimization",
+            "Machine Learning for Financial Risk Management: A Survey",
+            "A Deep Neural-Network Based Stock Trading System Based on Evolutionary Optimized Technical Analysis Parameters",
+            "Chatbots in customer service: Their relevance and impact on service quality",
+            "Using Financial News Sentiment for Stock Price Direction Prediction",
+            "Artificial intelligence and machine learning in finance: Identifying foundations, themes, and research clusters from bibliometric analysis",
+            "Financial time series forecasting using support vector machines",
+            "A deep learning approach for credit scoring using credit default swaps",
+            "Deep Learning for Financial Applications : A Survey",
+            "Chatbots in consumer finance",
+            "Transformers in Time Series: A Survey",
+            "V. FinAID, A Financial Advisor Application using AI.",
+            "Deep learning detecting fraud in credit card transactions",
+            "JPMorgan is developing a CHATGPT-like A.I. service that gives investment advice.",
+            "Dynamic Portfolio Management with Reinforcement Learning",
+            "Comprehensive review of text-mining applications in finance",
+            "Bankruptcy prediction in firms with statistical and intelligent techniques and a comparison of evolutionary computation approaches"
+          ],
+          "3. Overview of AI Applications in Finance 3.2. Advancements of LLMs in Finance": [
+            "Semantic Kernel",
+            "A Practical Survey on Zero-shot Prompt Design for In-context Learning",
+            "Language Models are Few-Shot Learners",
+            "LangChain",
+            "Auto-GPT: An Autonomous GPT-4 Experiment",
+            "Auto-GPT for finance - an exploratory guide",
+            "Sentiment Analysis in the Era of Large Language Models: A Reality Check"
+          ],
+          "4. LLM Solutions for Finance 4.1. Utilizing Few-shot/Zero-shot Learning in Finance Applications": [
+            "Rush, Stella Biderman, Albert Webson, Pawan\u00a0Sasanka Ammanamanchi, Thomas Wang, Beno\u00eet Sagot, Niklas Muennighoff, Albert\u00a0Villanova del Moral, Olatunji Ruwase, Rachel Bawden, Stas Bekman, Angelina McMillan-Major, Iz Beltagy, Huu Nguyen, Lucile Saulnier, Samson Tan, Pedro\u00a0Ortiz Suarez, Victor Sanh, Hugo Lauren\u00e7on, Yacine Jernite, Julien Launay, Margaret Mitchell, Colin Raffel, Aaron Gokaslan, Adi Simhi, Aitor Soroa, Alham\u00a0Fikri Aji, Amit Alfassy, Anna Rogers, Ariel\u00a0Kreisberg Nitzav, Canwen Xu, Chenghao Mou, Chris Emezue, Christopher Klamm, Colin Leong, Daniel van Strien, David\u00a0Ifeoluwa Adelani, Dragomir Radev, Eduardo\u00a0Gonz\u00e1lez Ponferrada, Efrat Levkovizh, Ethan Kim, Eyal\u00a0Bar Natan, Francesco\u00a0De Toni, G\u00e9rard Dupont, Germ\u00e1n Kruszewski, Giada Pistilli, Hady Elsahar, Hamza Benyamina, Hieu Tran, Ian Yu, Idris Abdulmumin, Isaac Johnson, Itziar Gonzalez-Dios, Javier de\u00a0la Rosa, Jenny Chim, Jesse Dodge, Jian Zhu, Jonathan Chang, J\u00f6rg Frohberg, Joseph Tobing, Joydeep Bhattacharjee, Khalid Almubarak, Kimbo Chen, Kyle Lo, Leandro\u00a0Von Werra, Leon Weber, Long Phan, Loubna\u00a0Ben allal, Ludovic Tanguy, Manan Dey, Manuel\u00a0Romero Mu\u00f1oz, Maraim Masoud, Mar\u00eda Grandury, Mario \u0160a\u0161ko, Max Huang, Maximin Coavoux, Mayank Singh, Mike Tian-Jian Jiang, Minh\u00a0Chien Vu, Mohammad\u00a0A",
+            "LLaMA: Open and Efficient Foundation Language Models",
+            "GPT-4 for Financial Statements: Building an AI Analyst",
+            "Scaling Instruction-Finetuned Language Models"
+          ],
+          "4. LLM Solutions for Finance 4.2. Fine-tuning a Model": [
+            "OPT: Open Pre-trained Transformer Language Models",
+            "GLM-130B: An Open Bilingual Pre-trained Model",
+            "BloombergGPT: A Large Language Model for Finance",
+            "LoRA: Low-Rank Adaptation of Large Language Models",
+            "PIXIU: A Large Language Model, Instruction Data and Evaluation Benchmark for Finance",
+            "A Survey of Quantization Methods for Efficient Neural Network Inference",
+            "A Study of BFLOAT16 for Deep Learning Training",
+            "FinGPT: Open-Source Financial Large Language Models",
+            "Training language models to follow instructions with human feedback",
+            "Instruct-FinGPT: Financial Sentiment Analysis by Instruction Tuning of General-Purpose Large Language Models"
+          ],
+          "4. LLM Solutions for Finance 4.3. Pretrain from Scratch": [
+            "BBT-Fin: Comprehensive Construction of Chinese Financial Domain Pre-trained Language Model, Corpus and Benchmark",
+            "Dai, Thanumalayan\u00a0Sankaranarayana Pillai, Marie Pellat, Aitor Lewkowycz, Erica Moreira, Rewon Child, Oleksandr Polozov, Katherine Lee, Zongwei Zhou, Xuezhi Wang, Brennan Saeta, Mark Diaz, Orhan Firat, Michele Catasta, Jason Wei, Kathy Meier-Hellstern, Douglas Eck, Jeff Dean, Slav Petrov, and Noah Fiedel",
+            "XuanYuan 2.0: A Large Chinese Financial Chat Model with Hundreds of Billions Parameters"
+          ],
+          "5. Decision Process in Applying LLM to Financial Applications 5.1. Determining the Need for a LLM": [
+            "Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond",
+            "LangChain",
+            "GPT-4 Technical Report",
+            "Emergent Abilities of Large Language Models"
+          ],
+          "5. Decision Process in Applying LLM to Financial Applications 5.2. A general decision guidance for applying LLMs on finance tasks": [
+            "Stanford Alpaca: An Instruction-following LLaMA model",
+            "LLaMA: Open and Efficient Foundation Language Models",
+            "OpenLLaMA: An Open Reproduction of LLaMA",
+            "Vicuna: An Open-Source Chatbot Impressing GPT-4 with 90%* ChatGPT Quality",
+            "Language Models are Few-Shot Learners"
+          ],
+          "5. Decision Process in Applying LLM to Financial Applications 5.3. Evaluation": [
+            "Manning, Christopher R\u00e9, Diana Acosta-Navas, Drew\u00a0A",
+            "Natural language based financial forecasting: a survey"
+          ],
+          "5. Decision Process in Applying LLM to Financial Applications 5.4. Limitations": [
+            "Chain of Thought Prompting Elicits Reasoning in Large Language Models",
+            "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+            "Tree of Thoughts: Deliberate Problem Solving with Large Language Models",
+            "Understanding the Capabilities, Limitations, and Societal Impact of Large Language Models"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.005908094812184572,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Large Language Model Agent in Financial Trading: A Survey",
+        "arxiv_id": "2408.06361",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract. Trading is a highly competitive task that requires a combination of strategy, knowledge, and psychological fortitude. With the recent success of large language models(LLMs), it is appealing to apply the emerging intelligence of LLM agents in this competitive arena and understanding if they can outperform professional traders. In this survey, we provide a comprehensive review of the current research on using LLMs as agents in financial trading. We summarize the common architecture used in the agent, the data inputs, and the performance of LLM trading agents in backtesting as well as the challenges presented in these research. This survey aims to provide insights into the current state of LLM-based financial trading agents and outline future research directions in this field.",
+        "sections": {
+          "1. Introduction": [
+            "A survey on large language model based autonomous agents",
+            "Simulating Classroom Education with LLM-Empowered Agents",
+            "Large Language Models in Finance: A Survey",
+            "Evaluating large language models as agents in the clinic"
+          ],
+          "2. Architecture": [
+            "FinVerse: An Autonomous Agent System for Versatile Financial Analysis",
+            "LLMs for Financial Advisement: A Fairness and Efficacy Study in Personal Decision Making"
+          ],
+          "2. Architecture 2.1. LLM as a Trader": [
+            "Baichuan 2: Open Large-scale Language Models",
+            "Fidelity. [n.\u2009d.]. Relative Strength Index (RSI).",
+            "LLMFactor: Extracting Profitable Factors through Prompts for Explainable Stock Movement Prediction",
+            "Memory: enduring traces of perceptual and reflective attention",
+            "Towards Mitigating Hallucination in Large Language Models via Self-Reflection",
+            "Can Large Language Models Beat Wall Street? Unveiling the Potential of AI in Stock Selection",
+            "Unveiling the Potential of Sentiment: Can Large Language Models Predict Chinese Stock Price Movements?",
+            "A Practical Survey on Zero-shot Prompt Design for In-context Learning",
+            "MACD (Moving Average Convergence Divergence)",
+            "Proximal Policy Optimization Algorithms",
+            "GPT-4 Technical Report",
+            "RLAIF: Scaling Reinforcement Learning from Human Feedback with AI Feedback",
+            "FinMem: A Performance-Enhanced LLM Trading Agent with Layered Memory and Character Design",
+            "Learning to Generate Explainable Stock Predictions using Self-Reflective Large Language Models",
+            "Integrating Stock Features and Global Information via Large Language Models for Enhanced Stock Return Prediction",
+            "TradingGPT: Multi-Agent System with Layered Memory and Distinct Characters for Enhanced Financial Trading Performance",
+            "Designing Heterogeneous LLM Agents for Financial Sentiment Analysis",
+            "A Multimodal Foundation Agent for Financial Trading: Tool-Augmented, Diversified, and Generalist",
+            "Can ChatGPT Forecast Stock Price Movements? Return Predictability and Large Language Models",
+            "A Deep Reinforcement Learning Framework for the Financial Portfolio Management Problem",
+            "Training language models to follow instructions with human feedback",
+            "Generative Agents: Interactive Simulacra of Human Behavior",
+            "Qwen Technical Report"
+          ],
+          "2. Architecture 2.2. LLM as an Alpha Miner": [
+            "QuantAgent: Seeking Holy Grail in Trading by Self-Improving Large Language Model",
+            "Alpha-gpt: Human-ai interactive alpha mining for quantitative investment."
+          ],
+          "3. Dataset 3.1. Numerical Data": [
+            "QuantAgent: Seeking Holy Grail in Trading by Self-Improving Large Language Model",
+            "Measuring Mathematical Problem Solving With the MATH Dataset",
+            "A Multimodal Foundation Agent for Financial Trading: Tool-Augmented, Diversified, and Generalist",
+            "Value and Momentum Everywhere"
+          ],
+          "3. Dataset 3.2. Textual Data": [
+            "Learning to Generate Explainable Stock Predictions using Self-Reflective Large Language Models",
+            "FinMem: A Performance-Enhanced LLM Trading Agent with Layered Memory and Character Design",
+            "TradingGPT: Multi-Agent System with Layered Memory and Distinct Characters for Enhanced Financial Trading Performance",
+            "A Multimodal Foundation Agent for Financial Trading: Tool-Augmented, Diversified, and Generalist",
+            "Predicting Stock Market Indicators Through Twitter \u201cI hope it is not as bad as I fear\u201d"
+          ],
+          "3. Dataset 3.3. Visual Data": [
+            "GPT-4V(ision) System Card",
+            "Visual Instruction Tuning",
+            "A Multimodal Foundation Agent for Financial Trading: Tool-Augmented, Diversified, and Generalist"
+          ],
+          "3. Dataset 3.4. Simulated Data": [
+            "When AI Meets Finance (StockAgent): Large Language Model- based Stock Trading in Simulated Real-world Environments",
+            "Large Language Models can Strategically Deceive their Users when Put Under Pressure"
+          ],
+          "4. Evaluation 4.1. Trading Strategy": [
+            "Sentiment trading with large language models",
+            "FinMem: A Performance-Enhanced LLM Trading Agent with Layered Memory and Character Design",
+            "Can ChatGPT Forecast Stock Price Movements? Return Predictability and Large Language Models",
+            "Unveiling the Potential of Sentiment: Can Large Language Models Predict Chinese Stock Price Movements?",
+            "FinLlama: Financial Sentiment Classification for Algorithmic Trading Applications",
+            "A Multimodal Foundation Agent for Financial Trading: Tool-Augmented, Diversified, and Generalist",
+            "Portfolio Performance Based on LLM News Scores and Related Economical Analysis"
+          ],
+          "4. Evaluation 4.2. Metrics": [
+            "Sentiment trading with large language models",
+            "Unveiling the Potential of Sentiment: Can Large Language Models Predict Chinese Stock Price Movements?",
+            "QuantAgent: Seeking Holy Grail in Trading by Self-Improving Large Language Model",
+            "How can we use ChatGPT better: A research of API-Enhanced ChatGPT in stock prediction",
+            "Can Large Language Models Beat Wall Street? Unveiling the Potential of AI in Stock Selection",
+            "Information Coefficient as a Performance Measure of Stock Selection Models",
+            "Mutual Fund Performance"
+          ],
+          "4. Evaluation 4.3. Backtest Setting": [
+            "FinMem: A Performance-Enhanced LLM Trading Agent with Layered Memory and Character Design",
+            "S&P 500 Index",
+            "Ethereum: A Decentralized Platform",
+            "CSI 300 Index",
+            "A Multimodal Foundation Agent for Financial Trading: Tool-Augmented, Diversified, and Generalist",
+            "How can we use ChatGPT better: A research of API-Enhanced ChatGPT in stock prediction"
+          ],
+          "4. Evaluation 4.4. Baseline and Performance": [
+            "FinMem: A Performance-Enhanced LLM Trading Agent with Layered Memory and Character Design",
+            "Playing Atari with Deep Reinforcement Learning",
+            "Understanding Random Forests: From Theory to Practice",
+            "LightGBM: A Highly Efficient Gradient Boosting Decision Tree",
+            "A General Framework on Enhancing Portfolio Management with Reinforcement Learning",
+            "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+            "Proximal Policy Optimization Algorithms",
+            "Long Short-Term Memory"
+          ],
+          "5. Limitation and Future Direction": [
+            "Learning to Generate Explainable Stock Predictions using Self-Reflective Large Language Models",
+            "The Antisocial Network: The GameStop Short Squeeze and the Ragtag Group of Amateur Traders That Brought Wall Street to Its Knees"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.007846780121326447,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "A Survey of Large Language Models for Financial Applications: Progress, Prospects and Challenges",
+        "arxiv_id": "2406.11903",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract Recent advances in large language models (LLMs) have unlocked novel opportunities for machine learning applications in the financial domain. These models have demonstrated remarkable capabilities in understanding context, processing vast amounts of data, and generating human-preferred contents. In this survey, we explore the application of LLMs on various financial tasks, focusing on their potential to transform traditional practices and drive innovation. We provide a discussion of the progress and advantages of LLMs in financial contexts, analyzing their advanced technologies as well as prospective capabilities in contextual understanding, transfer learning flexibility, complex emotion detection, etc. We then highlight this survey for categorizing the existing literature into key application areas, including linguistic tasks, sentiment analysis, financial time series, financial reasoning, agent-based modeling, and other applications. For each application area, we delve into specific methodologies, such as textual analysis, knowledge-based analysis, forecasting, data augmentation, planning, decision support, and simulations. Furthermore, a comprehensive collection of datasets, model assets, and useful codes associated with mainstream applications are presented as resources for the researchers and practitioners. Finally, we outline the challenges and opportunities for future research, particularly emphasizing a number of distinctive aspects in this field. We hope our work can help facilitate the adoption and further development of LLMs in the financial sector.",
+        "sections": {
+          "1 Introduction": [
+            "A survey of large language models in finance (FinLLMs)",
+            "Revolutionizing finance with LLMs: An overview of applications and insights",
+            "A scoping review of ChatGPT research in accounting and finance",
+            "Applications of machine learning in wealth management",
+            "Large language models in finance: A survey"
+          ],
+          "2 Models 2.1 Collections of Models": [
+            "SilverSight: A multi-task Chinese financial large language model based on adaptive semantic space learning",
+            "BERT: Pre-training of deep bidirectional transformers for language understanding",
+            "FinBERT: A pre-trained financial language representation model for financial text mining",
+            "Mengzi: Towards lightweight yet ingenious pre-trained models for Chinese",
+            "Language models are unsupervised multitask learners",
+            "RoBERTa: A robustly optimized bert pretraining approach",
+            "Visual instruction tuning",
+            "A medical multimodal large language model for future pandemics",
+            "InvestLM: A large language model for investment using financial domain instruction tuning",
+            "BBT-Fin: Comprehensive construction of Chinese financial domain pre-trained language model, corpus and benchmark",
+            "FinVis-GPT: A multimodal large language model for financial chart analysis",
+            "J. Bai, S. Bai, Y. Chu, Z. Cui, K. Dang, X. Deng, Y. Fan, W. Ge, Y. Han, F. Huang et al., \u201cQwen technical report,\u201d arXiv preprint arXiv:2309.16609, 2023.",
+            "Fin-LLAMA: Efficient finetuning of quantized LLMs for finance",
+            "Cornucopia-LLaMA-Fin-Chinese",
+            "DISC-FinLLM: A Chinese financial large language model based on multiple experts fine-tuning",
+            "FinBERT: Financial sentiment analysis with pre-trained language models",
+            "BLOOM: A 176B-parameter open-access multilingual language model",
+            "J. Achiam, S. Adler, S. Agarwal, L. Ahmad, I. Akkaya, F. L. Aleman, D. Almeida, J. Altenschmidt, S. Altman, S. Anadkat et al., \u201cGPT-4 technical report,\u201d",
+            "CFGPT: Chinese financial assistant with large language model",
+            "FinGPT: Open-source financial large language models",
+            "FinLlama: Financial sentiment classification for algorithmic trading applications",
+            "Introducing Meta Llama 3: The most capable openly available LLM to date",
+            "GreedLlama: Performance of financial value-aligned large language models in moral reasoning",
+            "FinBERT: A pretrained language model for financial communications",
+            "Language models are few-shot learners",
+            "ELECTRA: Pre-training text encoders as discriminators rather than generators",
+            "XuanYuan 2.0: A large Chinese financial chat model with hundreds of billions parameters",
+            "LLaMA: Open and efficient foundation language models",
+            "WHEN FLUE MEETS FLANG: Benchmarks and large pre-trained language model for financial domain",
+            "Large language models for education: A survey and outlook",
+            "FinTral: A family of GPT-4 level multimodal financial large language models",
+            "PIXIU: A large language model, instruction data and evaluation benchmark for finance",
+            "Improving language understanding by generative pre-training",
+            "InternLM",
+            "Ploutos: Towards interpretable stock movement prediction with financial large language model",
+            "BloombergGPT: A large language model for finance",
+            "Exploring the limits of transfer learning with a unified text-to-text transformer",
+            "Mistral 7B",
+            "Instruct-FinGPT: Financial sentiment analysis by instruction tuning of general-purpose large language models",
+            "Baichuan-13B",
+            "LLAMA 2: Open foundation and fine-tuned chat models"
+          ],
+          "2 Models 2.2 Zero-shot vs Fine-tuning": [
+            "Linking microblogging sentiments to stock price movement: An application of GPT-4",
+            "Finetuned language models are zero-shot learners",
+            "LoRA: Low-rank adaptation of large language models",
+            "QLoRA: Efficient finetuning of quantized LLMs",
+            "The era of 1-bit LLMs: All large language models are in 1.58 bits",
+            "Neural network is heterogeneous: Phase matters more",
+            "FinGPT-HPC: Efficient pretraining and finetuning large language models for financial applications with high-performance computing",
+            "What do LLMs know about financial markets? a case study on Reddit market sentiment analysis",
+            "Energy efficiency of microring resonator (MRR)-based binary decision diagram (BDD) circuits",
+            "Enhancing financial sentiment analysis via retrieval augmented large language models",
+            "A novel time efficient machine learning-based traffic flow prediction method for large scale road network",
+            "Large language model adaptation for financial sentiment analysis",
+            "Large language models in finance: A survey",
+            "Emergent abilities of large language models",
+            "Instruct-FinGPT: Financial sentiment analysis by instruction tuning of general-purpose large language models",
+            "Financial news analytics using fine-tuned Llama 2 GPT model",
+            "FinBERT: Financial sentiment analysis with pre-trained language models"
+          ],
+          "2 Models 2.3 Why Applying LLMs in Finance?": [
+            "(Re-) Imag (in) ing price trends",
+            "SST: A simplified swin transformer-based model for taxi destination prediction based on existing trajectory"
+          ],
+          "3 Applications 3.1 Linguistic Tasks": [
+            "Financial text categorisation with FinBERT on key audit matters",
+            "Knowledge graphs for financial services: The path to unlock new insights from your data",
+            "Large language models and knowledge graphs: Opportunities and challenges",
+            "ESG information extraction with cross-sectoral and multi-source adaptation based on domain-tuned language models",
+            "Company similarity using large language models",
+            "Extracting financial data from unstructured sources: Leveraging large language models",
+            "Making LLMs worth every penny: Resource-limited text classification in banking",
+            "Towards reducing hallucination in extracting information from financial reports using large language models",
+            "Hidden markov models",
+            "Domain-specific large language model finetuning using a model assistant for financial text summarization",
+            "Fin-EMRC: An efficient machine reading comprehension framework for financial entity-relation extraction",
+            "A Chinese event relation extraction model based on BERT",
+            "GPT-FinRE: In-context learning for financial relation extraction using large language models",
+            "Query-specific knowledge graphs for complex finance topics",
+            "Transformer-based models for long document summarisation in financial domain",
+            "A named entity recognition model based on BERT model and lexical fusion in the financial regulation field",
+            "CFERE: Multi-type Chinese financial event relation extraction",
+            "Named entity recognition using GPT for identifying comparable companies",
+            "Enriching BERT with knowledge graph embedding for industry classification",
+            "Induction of decision trees",
+            "Comparative analysis of NLP-based models for company classification",
+            "Generative AI approach to distributed summarization of financial narratives",
+            "DiMSum: Distributed and multilingual summarization of financial narratives",
+            "Constructing and analyzing domain-specific language model for financial text mining",
+            "Context-NER: Contextual phrase generation at scale",
+            "FinTree: Financial dataset pretrain transformer encoder for relation extraction",
+            "Large language models: a comprehensive survey of its applications, challenges, limitations, and future prospects",
+            "REFinD: Relation extraction financial dataset",
+            "A named entity extraction system for historical financial data",
+            "Aligning large language models to a domain-specific graph database",
+            "End-to-end training for financial report summarization",
+            "An exploration of automatic text summarization of financial reports",
+            "A review on large language models: Architectures, applications, taxonomies, open issues and challenges",
+            "KPI-BERT: A joint named entity recognition and relation extraction model for financial reports",
+            "Knowledge graph prompting for multi-document question answering",
+            "A comparison of pre-trained language models for multi-class text classification in the financial domain",
+            "Multilingual text summarization on financial documents",
+            "Leveraging LLMs for KPIs retrieval from hybrid long-document: A comprehensive framework and dataset",
+            "Domain adaption of named entity recognition to support credit risk assessment",
+            "A relation extraction model based on BERT model in the financial regulation field",
+            "Named entity recognition and classification in historical documents: A survey",
+            "FinDKG: Dynamic knowledge graph with large language models for global finance",
+            "The mask one at a time framework for detecting the relationship between financial entities",
+            "A critical review of recurrent neural networks for sequence learning",
+            "WeaverBird: Empowering financial decision-making with large language model, knowledge base, and search engine",
+            "Unified text structuralization with instruction-tuned language models",
+            "FETILDA: An effective framework for fin-tuned embeddings for long financial text documents",
+            "Financial report chunking for effective retrieval augmented generation",
+            "A unified model for financial event classification, detection and summarization",
+            "Longformer: The long-document transformer",
+            "FiNER: Financial numeric entity recognition for XBRL tagging",
+            "A survey of named entity recognition and classification",
+            "A BERT based sentiment analysis and key entity detection approach for online financial texts",
+            "On the evolution of knowledge graphs: A survey and perspective",
+            "Unifying large language models and knowledge graphs: A roadmap",
+            "Comprehensive overview of named entity recognition: Models, domain-specific applications and challenges",
+            "Democratizing financial knowledge graph construction by mining massive brokerage research reports.",
+            "ESG impact type classification: Leveraging strategic prompt engineering and LLM fine-tuning",
+            "Large-scale news classification using BERT language model: Spark NLP approach",
+            "Joint abstractive and extractive method for long financial document summarization",
+            "Understanding LSTM\u2013a tutorial into long short-term memory recurrent neural networks",
+            "Using a large language model for accounting topic classification",
+            "A survey on deep learning for named entity recognition",
+            "ESGBERT: Language model to help with classification tasks related to companies environmental, social, and governance practices",
+            "Summarizing financial reports with positional language model",
+            "Enhancing knowledge graph construction using large language models",
+            "DocLLM: A layout-aware generative language model for multimodal document understanding",
+            "Support vector machines",
+            "Modal-adaptive knowledge-enhanced graph-based financial prediction from monetary policy conference calls with LLM",
+            "UniversalNER: Targeted distillation from large language models for open named entity recognition",
+            "GPT-InvestAR: Enhancing stock investment strategies through annual report analysis with large language models"
+          ],
+          "3 Applications 3.2 Sentiment Analysis": [
+            "Sentiment spin: Attacking financial sentiment with GPT-3",
+            "EmTract: Extracting emotions from social media",
+            "What do LLMs know about financial markets? a case study on Reddit market sentiment analysis",
+            "LLMs analyzing the analysts: Do BERT and GPT extract more value from financial analyst reports?",
+            "Sentiment analysis of investor opinions on Twitter",
+            "Sentiment analysis and machine learning in finance: a comparison of methods and models on one million messages",
+            "Central bank policies and financial markets: Lessons from the euro crisis",
+            "A cross-country analysis of macroeconomic responses to COVID-19 pandemic using Twitter sentiments",
+            "Sentiment analysis of news headlines for stock price prediction",
+            "GloVe: Global vectors for word representation",
+            "Expected returns and large language models",
+            "Potential of ChatGPT in predicting stock market trends based on Twitter sentiment analysis",
+            "A survey of sentiment analysis: Approaches, datasets, and future research",
+            "Challenges of sentiment analysis for dynamic events",
+            "The financial market effect of FOMC minutes",
+            "Bloated disclosures: can ChatGPT help investors process information?",
+            "Does more complex language in FOMC decisions impact financial markets?",
+            "Bank deposits and textual sentiment: When an European Central Bank president\u2019s speech is not just a speech",
+            "Price movement prediction of cryptocurrencies using sentiment analysis and machine learning",
+            "Linking microblogging sentiments to stock price movement: An application of GPT-4",
+            "Shifts in ECB communication: A textual analysis of the press conference",
+            "A sentiment analysis-based machine learning approach for financial market prediction via news disclosures",
+            "How capable are state-of-the-art language models to cope with sarcasm?",
+            "How to talk when a machine is listening: Corporate disclosure in the age of AI",
+            "Sentiment analysis of financial news using unsupervised approach",
+            "When is a liability not a liability? textual analysis, dictionaries, and 10-Ks",
+            "Trillion dollar words: A new financial dataset, task & market analysis",
+            "Transforming sentiment analysis in the financial domain with ChatGPT",
+            "Scope of sentiment analysis on news articles regarding stock market and GDP in struggling economic condition",
+            "Evaluation of sentiment analysis in finance: from lexicons to transformers",
+            "Measuring news sentiment",
+            "Distributed representations of sentences and documents",
+            "Linguistic inquiry and word count: LIWC 2001",
+            "Efficacy of news sentiment for stock market prediction",
+            "Improving portfolio performance via natural language processing methods.",
+            "BioFinBERT: Finetuning large language models (LLMs) to analyze sentiment of press releases and financial text around inflection points of biotech stocks",
+            "Real-time investors' sentiment analysis from newspaper articles",
+            "The general inquirer: A computer approach to content analysis.",
+            "Evaluating local language models: An application to financial earnings calls",
+            "Pre-trained large language models for financial sentiment analysis",
+            "The ECB press conference statement: deriving a new sentiment indicator for the euro area",
+            "Detecting formal thought disorder by deep contextualized word representations",
+            "Fine-grained, aspect-based sentiment analysis on economic and financial lexicon",
+            "Understanding emojis for financial sentiment analysis",
+            "Efficient estimation of word representations in vector space",
+            "Big data: Deep learning for financial sentiment analysis",
+            "Enriching word vectors with subword information",
+            "Fine-tuning and utilization methods of domain-specific LLMs",
+            "Analyzing FOMC minutes: Accuracy and constraints of language models",
+            "Sentiment analysis: A survey on design framework, applications and future scopes",
+            "LLaMA: Open and efficient foundation language models",
+            "Financial sentiment lexicon analysis",
+            "Let\u2019s face it: Quantifying the impact of nonverbal communication in FOMC press conferences",
+            "FinTral: A family of GPT-4 level multimodal financial large language models",
+            "Can large language models beat wall street? unveiling the potential of AI in stock selection",
+            "Financial markets sentiment analysis: Developing a specialized lexicon",
+            "Can ChatGPT forecast stock price movements? return predictability and large language models",
+            "BloombergGPT: A large language model for finance",
+            "FinBERT-FOMC: Fine-tuned FinBERT model with sentiment focus method for enhancing sentiment analysis of FOMC minutes",
+            "Lexicon-based methods for sentiment analysis"
+          ],
+          "3 Applications 3.3 Financial Time Series Analysis": [
+            "ST-GIN: An uncertainty quantification approach in traffic data imputation with spatio-temporal graph attention and bidirectional recurrent united neural networks",
+            "The wall street neophyte: A zero-shot analysis of ChatGPT over multimodal stock movement prediction challenges",
+            "Leveraging vision-language models for granular market change prediction",
+            "Large language models for mobility in transportation systems: A survey on forecasting tasks",
+            "Empowering time series analysis with large language models: A survey",
+            "S2IP-LLM: Semantic space informed prompt learning with LLM for time series forecasting",
+            "Structural knowledge informed continual multivariate time series forecasting",
+            "Data augmentation using LLMs: Data perspectives, learning paradigms and challenges",
+            "One fits all: Power general time series analysis by pretrained LM",
+            "A survey of credit card fraud detection techniques: data and technique oriented perspective",
+            "Anomaly detection in financial time series by principal component analysis and neural networks",
+            "ST-MLP: A cascaded spatio-temporal linear framework with channel-independence strategy for traffic forecasting",
+            "A survey of large language models",
+            "Generative AI for end-to-end limit order book modelling: A token-level autoregressive generative model of message flow using a deep state space network",
+            "A novel mixed method of machine learning based models in vehicular traffic flow prediction",
+            "MiniGPT-4: Enhancing vision-language understanding with advanced large language models",
+            "Time-LLM: Time series forecasting by reprogramming large language models",
+            "FEDformer: Frequency enhanced decomposed transformer for long-term series forecasting",
+            "Time-conditioned dances with simplicial complexes: Zigzag filtration curve based supra-hodge convolution networks for time-series forecasting",
+            "Position paper: What can large language models tell us about time series analysis",
+            "Anomaly detection: A survey",
+            "A time series is worth 64 words: Long-term forecasting with transformers",
+            "Large language models are zero-shot time series forecasters",
+            "ChatGPT informed graph neural network for stock movement prediction",
+            "Temporal data meets LLM\u2013explainable financial time series forecasting",
+            "Large models for time series and spatio-temporal data: A survey and outlook",
+            "Enhancing anomaly detection in financial markets with an LLM-based multi-agent framework",
+            "Detecting \u201dPump & Dump Schemes\u201d on cryptocurrency market using an improved Apriori Algorithm",
+            "Time-series forecasting with deep learning: a survey",
+            "RiskLabs: Predicting financial risk using large language model based on multi-sources data",
+            "Meta-Transformer: A unified framework for multimodal learning",
+            "Transformers in time series: A survey",
+            "Can ChatGPT forecast stock price movements? return predictability and large language models",
+            "Do LLMs understand visual anomalies? uncovering LLM capabilities in zero-shot anomaly detection",
+            "Regime-aware factor allocation with optimal feature selection",
+            "Deep learning for time series anomaly detection: A survey",
+            "Foundation models for time series analysis: A tutorial and survey"
+          ],
+          "3 Applications 3.4 Financial Reasoning": [
+            "Streamlining financial planning with ChatGPT: A collaborative approach between technology and human expertise: AI likely won\u2019t replace your job anytime soon, but those who successfully utilize it are bound to have an advantage over those who don\u2019t.",
+            "Generative pretraining at scale: Transformer-based encoding of transactional behavior for fraud detection",
+            "Towards automated regulatory compliance verification in financial auditing with large language models",
+            "Buy Tesla, Sell Ford: Assessing implicit stock market preference in pre-trained language models",
+            "Generative AI and the future of financial advice regulation",
+            "Generative AI for business strategy: Using foundation models to create business strategy tools",
+            "Evaluating LLMs in financial tasks-code generation in trading strategies",
+            "Research on generative artificial intelligence for virtual financial robo-advisor",
+            "LLMs for financial advisement: A fairness and efficacy study in personal decision making",
+            "Can LLMs be good financial advisors?: An initial study in personal decision making for optimized outcomes",
+            "Empowering many, biasing a few: Generalist credit scoring through large language models",
+            "Assessing LLMs' mathematical reasoning in financial document question answering",
+            "Cogniwealth: Revolutionizing finance, empowering investors, and shaping the future of wealth management",
+            "Uncovering inconsistencies and contradictions in financial reports using large language models",
+            "GPTQuant\u2019s Conversational AI: Simplifying investment research for all",
+            "Can ChatGPT improve investment decisions? from a portfolio management perspective",
+            "Multi-purpose NLP chatbot: Design, methodology & conclusion",
+            "Numerical reasoning for financial reports",
+            "Firm-level tax audits: A Generative AI-based measurement",
+            "ChatGPT, Generative AI, and Investment Advisory",
+            "Generative AI based virtual assistant for reconciliation research",
+            "WeaverBird: Empowering financial decision-making with large language model, knowledge base, and search engine",
+            "Optimized financial planning: Integrating individual and cooperative budgeting models with LLM recommendations",
+            "BreakGPT: A large language model with multi-stage structure for financial breakout detection",
+            "Improving zero-shot text matching for financial auditing with large language models",
+            "RiskLabs: Predicting financial risk using large language model based on multi-sources data",
+            "Large language model in financial regulatory interpretation",
+            "Zero-shot question answering over financial documents using large language models",
+            "GPT has become financially literate: Insights from financial literacy tests of GPT and a preliminary test of how people use it as a source of advice",
+            "The future of tax planning: Leveraging generative AI in high-net-worth contexts: Artifical intelligence could help planers optimize their HNW clients\u2019 complex tax planning needs.",
+            "Financial statement analysis with large language models",
+            "Accounting fraud detection using contextual language learning",
+            "GPT-InvestAR: Enhancing stock investment strategies through annual report analysis with large language models",
+            "FinChain-BERT: A high-accuracy automatic fraud detection model based on NLP methods for financial scenarios"
+          ],
+          "3 Applications 3.5 Agent-based Modeling": [
+            "Agent-based computational economics: A constructive approach to economic theory",
+            "FlowMind: Automatic workflow generation with LLMs",
+            "TrustAgent: Towards safe and trustworthy LLM-based agents through agent constitution",
+            "The rise and potential of large language model based agents: A survey",
+            "FinAgent: A multimodal foundation agent for financial trading: Tool-augmented, diversified, and generalist",
+            "Alpha-GPT 2.0: Human-in-the-Loop AI for quantitative investment",
+            "A survey on the memory mechanism of large language model based agents",
+            "Computational experiments meet large language model based agents: A survey and perspective",
+            "Alpha-GPT: Human-AI interactive alpha mining for quantitative investment",
+            "Macroeconomics and reality",
+            "LLM as a mastermind: A survey of strategic reasoning with large language models",
+            "Agent-based computational models and generative social science",
+            "CompeteAI: Understanding the competition behaviors in large language model-based agents",
+            "Competitive multi-agent reinforcement learning with self-supervised representation",
+            "Investigating agency of LLMs in Human-AI collaboration tasks",
+            "Enhancing anomaly detection in financial markets with an LLM-based multi-agent framework",
+            "Enhancing the efficiency and accuracy of underlying asset reviews in structured finance: The application of multi-agent framework",
+            "Large language models as simulated economic agents: What can we learn from homo silicus?",
+            "An estimated dynamic stochastic general equilibrium model of the euro area",
+            "Learning to generate explainable stock predictions using self-reflective large language models",
+            "The economy needs agent-based modelling",
+            "Large language model-empowered agents for simulating macroeconomic activities",
+            "Put your money where your mouth is: Evaluating strategic planning and execution of LLM agents in an auction arena",
+            "Designing heterogeneous LLM agents for financial sentiment analysis",
+            "When AI Meets Finance (StockAgent): Large language model-based stock trading in simulated real-world environments.",
+            "Multi-agent reasoning with large language models for effective corporate planning",
+            "QuantAgent: Seeking holy grail in trading by self-improving large language model",
+            "Large language model based multi-agents: A survey of progress and challenges",
+            "FinMem: A performance-enhanced LLM trading agent with layered memory and character design",
+            "TradingGPT: Multi-agent system with layered memory and distinct characters for enhanced financial trading performance"
+          ],
+          "3 Applications 3.6 Other Applications": [
+            "Transforming banking in the digital age: The strategic integration of large language models and multi-cloud environments.",
+            "Serverless architecture in LLMs: Transforming the financial industry\u2019s AI landscape."
+          ],
+          "4 Datasets, Code and Benchmark 4.1 Datasets": [
+            "WWW'18 Open Challenge: financial opinion mining and question answering",
+            "FinRED: A dataset for relation extraction in financial domain",
+            "Good debt or bad debt: Detecting semantic orientations in economic texts",
+            "FinSBD-2021: the 3rd shared task on structure boundary detection in unstructured text in the financial domain",
+            "ECTSum: A new benchmark dataset for bullet point summarization of long earnings call transcripts",
+            "FiNER: Financial named entity recognition dataset and weak-supervision model",
+            "REFinD: Relation extraction financial dataset",
+            "Benchmarking large language models on CFLUE\u2013a Chinese financial language understanding evaluation dataset",
+            "FinQA: A dataset of numerical reasoning over financial data"
+          ],
+          "4 Datasets, Code and Benchmark 4.2 Benchmarks and Code": [
+            "R-Judge: Benchmarking safety risk awareness for LLM agents",
+            "D\\'olares or Dollars? unraveling the bilingual prowess of financial LLMs between Spanish and English",
+            "WHEN FLUE MEETS FLANG: Benchmarks and large pre-trained language model for financial domain",
+            "Construction of a Japanese financial benchmark for large language models",
+            "BBT-Fin: Comprehensive construction of Chinese financial domain pre-trained language model, corpus and benchmark",
+            "No language is an island: Unifying Chinese and English in financial large language models, instruction data, and benchmarks",
+            "DocMath-Eval: Evaluating numerical reasoning capabilities of LLMs in understanding long documents with tabular data",
+            "PIXIU: A large language model, instruction data and evaluation benchmark for finance",
+            "BizBench: A quantitative reasoning benchmark for business and finance",
+            "FinEval: A Chinese financial domain knowledge evaluation benchmark for large language models",
+            "Alphafin: Benchmarking financial analysis with retrieval-augmented stock-chain framework",
+            "SuperCLUE-Fin: Graded fine-grained analysis of Chinese LLMs on diverse financial tasks and applications",
+            "EconLogicQA: A question-answering benchmark for evaluating large language models in economic sequential reasoning",
+            "Are ChatGPT and GPT-4 general-purpose solvers for financial text analytics? a study on several typical tasks",
+            "FinanceBench: A new benchmark for financial question answering",
+            "CFBenchmark: Chinese financial assistant benchmark for large language model",
+            "MultiLing 2019: Financial narrative summarisation"
+          ],
+          "5 Challenges and Opportunities 5.2 Modeling Issues": [
+            "Time machine GPT",
+            "Lookahead bias in pretrained language models",
+            "GenAudit: Fixing factual errors in language model outputs with evidence",
+            "Hybrid LLM: Cost-efficient and quality-aware query routing",
+            "Financial statement analysis with large language models"
+          ],
+          "5 Challenges and Opportunities 5.3 Benchmarking": [
+            "Ploutos: Towards interpretable stock movement prediction with financial large language model",
+            "Temporal data meets LLM\u2013explainable financial time series forecasting"
+          ],
+          "5 Challenges and Opportunities 5.4 Ethical Issues": [
+            "A survey on large language model (LLM) security and privacy: The good, the bad, and the ugly",
+            "Regulatory framework for AI",
+            "ACM Code of Ethics and Professional Conduct",
+            "Defending against alignment-breaking attacks via robustly aligned LLM"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.017355743795633316,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "StockTime: A Time Series Specialized Large Language Model Architecture for Stock Price Prediction",
+        "arxiv_id": "2409.08281",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract The stock price prediction task holds a significant role in the financial domain and has been studied for a long time. Recently, large language models (LLMs) have brought new ways to improve these predictions. While recent financial large language models (FinLLMs) have shown considerable progress in financial NLP tasks compared to smaller pre-trained language models (PLMs), challenges persist in stock price forecasting. Firstly, effectively integrating the modalities of time series data and natural language to fully leverage these capabilities remains complex. Secondly, FinLLMs focus more on analysis and interpretability, which can overlook the essential features of time series data. Moreover, due to the abundance of false and redundant information in financial markets, models often produce less accurate predictions when faced with such input data. In this paper, we introduce StockTime, a novel LLM-based architecture designed specifically for stock price data. Unlike recent FinLLMs, StockTime is specifically designed for stock price time series data. It leverages the natural ability of LLMs to predict the next token by treating stock prices as consecutive tokens, extracting textual information such as stock correlations, statistical trends and timestamps directly from these stock prices. StockTime then integrates both textual and time series data into the embedding space. By fusing this multimodal data, StockTime effectively predicts stock prices across arbitrary look-back periods. Our experiments demonstrate that StockTime outperforms recent LLMs, as it gives more accurate predictions while reducing memory usage and runtime costs.",
+        "sections": {
+          "Introduction": [
+            "A survey of large language models in finance (finllms)",
+            "A Time Series is Worth 64 Words: Long-term Forecasting with Transformers",
+            "Stock price pattern recognition-a recurrent neural network approach"
+          ],
+          "Related Work Stock Prediction": [
+            "Deep learning-based stock price prediction using LSTM and bi-directional LSTM model",
+            "Enhancing Stock Movement Prediction with Adversarial Training",
+            "Add: augmented disentanglement distillation framework for improving stock trend forecasting",
+            "AMA-LSTM: Pioneering Robust and Fair Financial Audio Analysis for Stock Volatility Prediction",
+            "Combined deep learning classifiers for stock market prediction: integrating stock price and news sentiments",
+            "ALERTA-Net: A Temporal Distance-Aware Recurrent Networks for Stock Movement and Volatility Prediction",
+            "MASTER: Market-Guided Stock Transformer for Stock Price Forecasting",
+            "Shortlisting machine learning-based stock trading recommendations using candlestick pattern recognition"
+          ],
+          "Related Work Financial LLMs": [
+            "Fingpt: Open-source financial large language models",
+            "Bloomberggpt: A large language model for finance",
+            "Pixiu: A large language model, instruction data and evaluation benchmark for finance",
+            "Ploutos: Towards interpretable stock movement prediction with financial large language model",
+            "Alpha-gpt: Human-ai interactive alpha mining for quantitative investment."
+          ],
+          "Related Work LLMs for Time Series": [
+            "A Time Series is Worth 64 Words: Long-term Forecasting with Transformers",
+            "Large language models are zero-shot time series forecasters",
+            "Lag-llama: Towards foundation models for time series forecasting",
+            "Large language models for time series: A survey",
+            "Time-LLM: Time series forecasting by reprogramming large language models",
+            "Autotimes: Autoregressive time series forecasters via large language models",
+            "One fits all: Power general time series analysis by pretrained lm",
+            "Promptcast: A new prompt-based learning paradigm for time series forecasting"
+          ],
+          "Methodology Patched input": [
+            "StockMixer: A Simple Yet Strong MLP-Based Architecture for Stock Price Forecasting"
+          ],
+          "Experiments Experimental Setup": [
+            "Pytorch: An imperative style, high-performance deep learning library",
+            "The Llama 3 Herd of Models",
+            "Hybrid deep sequential modeling for social text-driven stock prediction",
+            "Accurate stock movement prediction with self-supervised learning from sparse noisy tweets",
+            "Stock movement prediction from tweets and historical prices",
+            "Pixiu: A large language model, instruction data and evaluation benchmark for finance",
+            "Time-LLM: Time series forecasting by reprogramming large language models",
+            "Autotimes: Autoregressive time series forecasters via large language models",
+            "One fits all: Power general time series analysis by pretrained lm",
+            "Mistral 7B",
+            "Stock Movement and Volatility Prediction from Tweets, Macroeconomic Factors and Historical Prices",
+            "Adam: A method for stochastic optimization"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.66008460521698,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Can Large Language Models Beat Wall Street? Unveiling the Potential of AI in Stock Selection",
+        "arxiv_id": "2401.03737",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract In the dynamic and data-driven landscape of financial markets, this paper introduces MarketSenseAI, a novel AI-driven framework leveraging the advanced reasoning capabilities of GPT-4 for scalable stock selection. MarketSenseAI incorporates Chain of Thought and In-Context Learning methodologies to analyze a wide array of data sources, including market price dynamics, financial news, company fundamentals, and macroeconomic reports emulating the decision making process of prominent financial investment teams. The development, implementation, and empirical validation of MarketSenseAI are detailed, with a focus on its ability to provide actionable investment signals (buy, hold, sell) backed by cogent explanations. A notable aspect of this study is the use of GPT-4 not only as a predictive tool but also as an evaluator, revealing the significant impact of the AI-generated explanations on the reliability and acceptance of the suggested investment signals. In an extensive empirical evaluation with S&P 100 stocks, MarketSenseAI outperformed the benchmark index by 13%, achieving returns up to 40%, while maintaining a risk profile comparable to the market. These results demonstrate the efficacy of Large Language Models in complex financial decision-making and mark a significant advancement in the integration of AI into financial analysis and investment strategies. This research contributes to the financial AI field, presenting an innovative approach and underscoring the transformative potential of AI in revolutionizing traditional financial analysis investment methodologies. ",
+        "sections": {
+          "1 Introduction 1.1 Background and motivation": [
+            "Market dysfunction and central bank tools",
+            "Financial institutions, markets, and money",
+            "Fluctuations and response in financial markets: the subtle nature ofrandom\u2019price changes",
+            "Momentum and autocorrelation in stock returns",
+            "Behavioral biases in pension fund trustees\u2019 decision making",
+            "How does zero-day-to-expiry options trading affect the volatility of underlying assets?",
+            "The role of reddit in the gamestop short squeeze",
+            "Value investing: from Graham to Buffett and beyond",
+            "The efficient market hypothesis and its critics",
+            "Passive investing and market liquidity"
+          ],
+          "1 Introduction 1.2 Potential of LLMs in Stock Selection and Financial Analysis": [
+            "How close is chatgpt to human experts? comparison corpus, evaluation, and detection.",
+            "Experimental evidence on the productivity effects of generative artificial intelligence",
+            "Gpt-4 technical report",
+            "Cognitive network science reveals bias in gpt-3, gpt-3.5 turbo, and gpt-4 mirroring math anxiety in high-school students.",
+            "Bloated disclosures: Can chatgpt help investors process information?",
+            "Harnessing the power of chatgpt for automating systematic review process: Methodology, case study, limitations, and future directions",
+            "Jpmorgan ai investment advisor",
+            "Bloomberggpt: A large language model for finance"
+          ],
+          "2 Related Work": [
+            "Deepvar: a framework for portfolio risk assessment leveraging probabilistic deep neural networks",
+            "More than words: Quantifying language to measure firms\u2019 fundamentals",
+            "Bloomberggpt: A large language model for finance",
+            "Artificial intelligence, machine learning and big data in finance: Opportunities, challenges, and implications for policy makers",
+            "Transforming sentiment analysis in the financial domain with chatgpt",
+            "Chatgpt: Unlocking the future of nlp in finance",
+            "Are chatgpt and gpt-4 general-purpose solvers for financial text analytics? an examination on several typical tasks.",
+            "Can chatgpt forecast stock price movements? return predictability and large language models",
+            "The Economic Potential of Generative AI: The Next Productivity Frontier",
+            "Bloated disclosures: Can chatgpt help investors process information?",
+            "Temporal data meets llm\u2013explainable financial time series forecasting",
+            "Deep learning enhancing banking services: a hybrid transaction classification and cash flow prediction approach",
+            "Finbert: Financial sentiment analysis with pre-trained language models",
+            "What\u2019s an \u201calgo wheel?\u201d and why should you care?"
+          ],
+          "3 Methods": [
+            "Gpt-4 technical report",
+            "A survey for in-context learning"
+          ],
+          "3 Methods 3.1 Progressive News Summarizer": [
+            "Impact of news-based equity market volatility on international stock markets",
+            "Estimating the impact of good news on stock market volatility"
+          ],
+          "3 Methods 3.3 Stock Price Dynamics Summarizer": [
+            "Mpnet: Masked and permuted pre-training for language understanding",
+            "Drawdown measures: Are they all the same?"
+          ],
+          "3 Methods 3.4 Macroeconomic Environment Summary": [
+            "Marketdigest"
+          ],
+          "3 Methods 3.5 Signal Generation": [
+            "Chain-of-thought prompting elicits reasoning in large language models",
+            "Can gpt models be financial analysts? an evaluation of chatgpt and gpt-4 on mock cfa exams."
+          ],
+          "4 Experiments 4.1 Data": [
+            "Can anybody beat the market?"
+          ],
+          "4 Experiments 4.2 Evaluation": [
+            "Fusion-eval: Integrating evaluators with llms",
+            "Bootstrap methods for standard errors, confidence intervals, and other measures of statistical accuracy"
+          ],
+          "4 Experiments 4.3 Setup": [
+            "Langchain"
+          ],
+          "5 Results 5.2 Market Performance Evaluation Results": [
+            "Magnificent 7 stocks: What you need to know"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.9796438217163086,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Can ChatGPT Forecast Stock Price Movements? Return Predictability and Large Language Models We are grateful for the comments and feedback from Svetlana Bryzgalova, Andrew Chen, Carter Davis, Ryan Israelsen, Wei Jiang, Andy Naranjo, Nikolai Roussanov, Ben Lee, Holger von Jouanne-Diedrich, Baozhong Yang, Tao Zha, Guofu Zhou, and seminar and conference participants at AllianceBernstein, Bank of Mexico, Bloomberg, CEIBS, Peking University HSBC Business School, University of Florida, the 1st New Finance Conference, and ITAM Alumni Conference. Emails: Alejandro Lopez-Lira: alejandro.lopez-lira@warrington.ufl.edu, and Yuehua Tang: yuehua.tang@warrington.ufl.edu.",
+        "arxiv_id": "2304.07619",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract We examine the potential of ChatGPT and other large language models in predicting stock market returns using news headlines. We use ChatGPT to assess whether each headline is good, bad, or neutral for firms\u2019 stock prices. We document a significantly positive correlation between ChatGPT scores and subsequent daily stock returns. We find that ChatGPT outperforms traditional sentiment analysis methods. More basic models such as GPT-1, GPT-2, and BERT cannot accurately forecast returns, indicating return predictability is an emerging capacity of complex language models. Long-short strategies based on ChatGPT-4 deliver the highest Sharpe ratio. Furthermore, we find predictability in both small and large stocks, suggesting market underreaction to company news. Predictability is stronger among smaller stocks and stocks with bad news, consistent with limits-to-arbitrage also playing an important role. Finally, we propose a new method to evaluate and understand the models\u2019 reasoning capabilities. Overall, our results suggest that incorporating advanced language models into the investment decision-making process can yield more accurate predictions and enhance the performance of quantitative trading strategies. ",
+        "sections": {
+          "1 Introduction": [
+            "Momentum strategies",
+            "All the News That\u2019s Fit to Reprint: Do Investors React to Stale Information?",
+            "More Than Words: Quantifying Language to Measure Firms' Fundamentals",
+            "Man versus Machine Learning: The Term Structure of Earnings Expectations and Conditional Biases",
+            "Pervasive underreaction: Evidence from high-frequency data",
+            "Post-earnings-announcement drift: delayed price response or risk premium?",
+            "When can the market identify old news?",
+            "Giving Content to Investor Sentiment: The Role of Media in the Stock Market",
+            "BloombergGPT: A Large Language Model for Finance"
+          ],
+          "1 Introduction Related Literature": [
+            "Leveraging Text Mining to Extract Insights from Earnings Call Transcripts",
+            "Artificial Intelligence and Jobs: Evidence from Online Vacancies",
+            "Dissecting Characteristics Nonparametrically",
+            "The Wall Street Neophyte: A Zero-Shot Analysis of ChatGPT Over MultiModal Stock Movement Prediction Challenges",
+            "Risk Factors That Matter: Textual Analysis of Risk Disclosures for the Cross-Section of Returns",
+            "Experimental Evidence on the Productivity Effects of Generative Artificial Intelligence",
+            "More Than Words: Quantifying Language to Measure Firms' Fundamentals",
+            "Manager sentiment and stock returns",
+            "Giving Content to Investor Sentiment: The Role of Media in the Stock Market",
+            "How news and its context drive risk and returns around the world",
+            "A Robust Machine Learning Algorithm for Text Analysis",
+            "Measuring economic policy uncertainty",
+            "Text-Based Network Industries and Endogenous Product Differentiation",
+            "Can ChatGPT Decipher Fedspeak?",
+            "Word power: A new approach for content analysis",
+            "Empirical Asset Pricing via Machine Learning",
+            "Risk Fact or Fiction: The Information Content of Risk Factor Disclosures",
+            "Pervasive underreaction: Evidence from high-frequency data",
+            "Diego Garcia \u201cSentiment during Recessions\u201d In The Journal of Finance 68.3",
+            "Transparency and Deliberation Within the FOMC: A Computational Linguistics Approach*",
+            "Business News and Business Cycles",
+            "The Impact of Artificial Intelligence on the Labor Market",
+            "All the News That\u2019s Fit to Reprint: Do Investors React to Stale Information?",
+            "The Structure of Economic News",
+            "Language Models and Cognitive Automation for Economic Research",
+            "Large language models can rate news outlet credibility",
+            "How to Learn and Teach Economics with Large Language Models, Including GPT",
+            "International stock return predictability: What is the role of the united states?",
+            "News implied volatility and disaster concerns",
+            "Can Chatgpt Improve Investment Decision? From a Portfolio Management Perspective",
+            "Artificial Intelligence: The Ambiguous Labor Market Impact of Automating Prediction",
+            "Surviving the FinTech disruption",
+            "Artificial Intelligence, Firm Growth, and Product Innovation",
+            "Tasks, Automation, and the Rise in U.S. Wage Inequality",
+            "Man vs. Machine Learning: The Term Structure of Earnings Expectations and Conditional Biases",
+            "Predicting Returns with Text Data",
+            "Lazy Prices",
+            "The information content of mandatory risk factor disclosures in corporate filings"
+          ],
+          "2 Institutional Background": [
+            "Attention is all you need",
+            "PIXIU: A Large Language Model, Instruction Data and Evaluation Benchmark for Finance"
+          ],
+          "3 Data": [
+            "Pervasive underreaction: Evidence from high-frequency data"
+          ],
+          "5 Results 5.2 Results from Predictive Regressions": [
+            "Momentum strategies",
+            "Driven to distraction: Extraneous events and underreaction to earnings news",
+            "A five-factor asset pricing model",
+            "Pervasive underreaction: Evidence from high-frequency data",
+            "Post-earnings-announcement drift: delayed price response or risk premium?",
+            "Investor inattention and Friday earnings announcements"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.9769969582557678,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Financial Statement Analysis with Large Language Models",
+        "arxiv_id": "2407.17866",
+        "depth": 0,
+        "child": {},
+        "abstract": "We investigate whether an LLM can successfully perform financial statement analysis in a way similar to a professional human analyst. We provide standardized and anonymous financial statements to GPT4 and instruct the model to analyze them to determine the direction of future earnings. Even without any narrative or industry-specific information, the LLM outperforms financial analysts in its ability to predict earnings changes. The LLM exhibits a relative advantage over human analysts in situations when the analysts tend to struggle. Furthermore, we find that the prediction accuracy of the LLM is on par with the performance of a narrowly trained state-of-the-art ML model. LLM prediction does not stem from its training memory. Instead, we find that the LLM generates useful narrative insights about a company\u2019s future performance. Lastly, our trading strategies based on GPT\u2019s predictions yield a higher Sharpe ratio and alphas than strategies based on other models. Taken together, our results suggest that LLMs may take a central role in decision-making. Keywords: Financial statement analysis, Large language models, GPT4, chain-of-thought, neural network, asset pricing, earnings, direction of earnings changes, analysts JEL Codes: G12, G14, G41, M41 Companion App: To showcase the capabilities of LLMs for financial statement analysis, we created an interactive Companion App.*\u2020\u2020*This app requires ChatGPT Plus subscription and relies on a different prompt that integrates narrative context while processing 10-Ks and 10-Qs step-by-step. The downside of this functionality is that it is more prone to retrieval errors and the accuracy of information must be verified.",
+        "sections": {
+          "1\u00a0\u00a0\u00a0Introduction": [
+            "Predicting future earnings changes using machine learning and detailed financial data",
+            "A comparison of dividend, cash flow, and earnings approaches to equity valuation",
+            "Chain-of-thought prompting elicits reasoning in large language models",
+            "Machine+ man: A field experiment on the role of discretion in augmenting ai-based lending models",
+            "A re-examination of analysts\u2019 superiority over time-series forecasts of annual earnings",
+            "Chatgpt goes to law school",
+            "Financial statement analysis and the prediction of stock returns",
+            "Tests of analysts\u2019 overreaction/underreaction to earnings information as an explanation for anomalous stock price behavior",
+            "How do financial analysts make decisions? a process model of the investment screening decision",
+            "Using md&a to improve earnings forecasts",
+            "Thinking, fast and slow",
+            "Confused readers: A modular measure of business complexity",
+            "Language models are few-shot learners"
+          ],
+          "2\u00a0\u00a0\u00a0Conceptual Underpinnings": [
+            "Predicting future earnings changes using machine learning and detailed financial data",
+            "Loss function assumptions in rational expectations tests on financial analysts\u2019 earnings forecasts",
+            "Navigating the jagged technological frontier: Field experimental evidence of the effects of ai on knowledge worker productivity and quality",
+            "Analysts\u2019 forecasts: what do we know after decades of work?",
+            "The ghost in the machine: Generating beliefs with large language models",
+            "Inside the \u201cblack box\u201d of sell-side financial analysts",
+            "Financial statement analysis and the prediction of stock returns",
+            "Expected returns and large language models",
+            "Bloated disclosures: can chatgpt help investors process information?",
+            "How do financial analysts make decisions? a process model of the investment screening decision",
+            "Eulerich, M., A.\u00a0Sanatizadeh, H.\u00a0Vakilzadeh, and D.\u00a0A. Wood (2023). Can artificial intelligence pass accounting certification exams? chatgpt: Cpa, cma, cia, and ea?",
+            "Errors and questionable judgments in analysts\u2019 dcf models",
+            "The promise and peril of generative ai: Evidence from chatgpt as sell-side analysts",
+            "Security Analysis",
+            "Gpt-4 technical report",
+            "Diagnostic expectations and stock returns",
+            "Common stock returns surrounding earnings forecast revisions: More puzzling evidence",
+            "Can chatgpt decipher fedspeak?",
+            "Language models are few-shot learners",
+            "Can chatgpt forecast stock price movements? return predictability and large language models",
+            "Do security analysts overreact?"
+          ],
+          "3\u00a0\u00a0\u00a0Methodology and Data 3.1\u00a0\u00a0\u00a0Financial Statement Analysis and Earnings Prediction": [
+            "Chain-of-thought prompting elicits reasoning in large language models",
+            "A five-factor asset pricing model",
+            "The effect of international institutional factors on properties of accounting earnings",
+            "The ghost in the machine: Generating beliefs with large language models",
+            "Value investing: The use of historical financial statement information to separate winners from losers",
+            "Using accounting earnings and aggregate economic indicators to estimate firm-level systematic risk",
+            "How do financial analysts make decisions? a process model of the investment screening decision",
+            "Using md&a to improve earnings forecasts"
+          ],
+          "3\u00a0\u00a0\u00a0Methodology and Data 3.2\u00a0\u00a0\u00a0Data": [
+            "Financial statement analysis and the prediction of stock returns"
+          ],
+          "4\u00a0\u00a0\u00a0How Does an LLM Perform Compared to Financial Analysts? 4.3\u00a0\u00a0\u00a0Complementarity Between Human Analysts and GPT": [
+            "Loss firms and analysts\u2019 earnings forecast errors",
+            "Positive accounting theory.",
+            "Machine+ man: A field experiment on the role of discretion in augmenting ai-based lending models",
+            "Corporate financial reporting: A methodological review of empirical research",
+            "Profitability context and the cross-section of stock returns",
+            "The predictive qualities of earnings volatility and earnings uncertainty",
+            "Context-based interpretation of financial information",
+            "The discovery and reporting of internal control deficiencies prior to sox-mandated audits"
+          ],
+          "5\u00a0\u00a0\u00a0Comparison with Specialized ML Models 5.1\u00a0\u00a0\u00a0Methodology": [
+            "Context-based interpretation of financial information",
+            "Financial statement analysis and the prediction of stock returns",
+            "Improving earnings predictions and abnormal returns with machine learning"
+          ],
+          "5\u00a0\u00a0\u00a0Comparison with Specialized ML Models 5.2\u00a0\u00a0\u00a0Main Results": [
+            "Context-based interpretation of financial information",
+            "Financial statement analysis and the prediction of stock returns"
+          ],
+          "6\u00a0\u00a0\u00a0Where Does an LLM\u2019s Predictive Ability Come From? 6.1\u00a0\u00a0\u00a0Is There a Look-ahead Bias in the Model?": [
+            "Assessing look-ahead bias in stock return predictions generated by gpt sentiment analysis",
+            "Lookahead bias in pretrained language models"
+          ],
+          "6\u00a0\u00a0\u00a0Where Does an LLM\u2019s Predictive Ability Come From? 6.2\u00a0\u00a0\u00a0Are LLM-Generated Texts Informative?": [
+            "Context-based interpretation of financial information"
+          ],
+          "7\u00a0\u00a0\u00a0Asset Pricing Tests": [
+            "A five-factor asset pricing model",
+            "The other side of value: The gross profitability premium"
+          ],
+          "7\u00a0\u00a0\u00a0Asset Pricing Tests 7.2\u00a0\u00a0\u00a0Results": [
+            "Expected returns and large language models",
+            "A five-factor asset pricing model"
+          ],
+          "8\u00a0\u00a0\u00a0Conclusion": [
+            "Why do individual investors disregard accounting information? the roles of information awareness and acquisition costs",
+            "Bloated disclosures: can chatgpt help investors process information?"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.6888861060142517,
+        "extra": {
+          "expand": "not expand"
+        }
+      }
+    ],
+    "Use of ChatGPT in stock exchange analysis": [
+      {
+        "title": "Potential of ChatGPT in predicting stock market trends based on Twitter Sentiment Analysis",
+        "arxiv_id": "2311.06273",
+        "depth": 0,
+        "child": {},
+        "abstract": "The rise of ChatGPT has brought a notable shift to the AI sector, with its exceptional conversational skills and deep grasp of language. Recognizing its value across different areas, our study investigates ChatGPT's capacity to predict stock market movements using only social media tweets and sentiment analysis. We aim to see if ChatGPT can tap into the vast sentiment data on platforms like Twitter to offer insightful predictions about stock trends. We focus on determining if a tweet has a positive, negative, or neutral effect on two big tech giants Microsoft and Google's stock value. Our findings highlight a positive link between ChatGPT's evaluations and the following days stock results for both tech companies. This research enriches our view on ChatGPT's adaptability and emphasizes the growing importance of AI in shaping financial market forecasts.",
+        "sections": null,
+        "source": "Search SearchFrom:arxiv",
+        "select_score": 0.758556604385376,
+        "extra": {
+          "expand": "get full paper error"
+        }
+      },
+      {
+        "title": "ChatGPT Informed Graph Neural Network for Stock Movement Prediction",
+        "arxiv_id": "2306.03763",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract ChatGPT has demonstrated remarkable capabilities across various natural language processing (NLP) tasks. However, its potential for inferring dynamic network structures from temporal textual data, specifically financial news, remains an unexplored frontier. In this research, we introduce a novel framework that leverages ChatGPT\u2019s graph inference capabilities to enhance Graph Neural Networks (GNN). Our framework adeptly extracts evolving network structures from textual data, and incorporates these networks into graph neural networks for subsequent predictive tasks. The experimental results from stock movement forecasting indicate our model has consistently outperformed the state-of-the-art Deep Learning-based benchmarks. Furthermore, the portfolios constructed based on our model\u2019s outputs demonstrate higher annualized cumulative returns, alongside reduced volatility and maximum drawdown. This superior performance highlights the potential of ChatGPT for text-based network inferences and underscores its promising implications for the financial sector.00footnotetext: The dataset can be accessed at our Github Repo or https://github.com/ZihanChen1995/ChatGPT-GNN-StockPredict ",
+        "sections": {
+          "1 Introduction": [
+            "Stock price reaction to news and no-news: drift and reversal after headlines",
+            "Advances in financial machine learning",
+            "The behavior of stock-market prices",
+            "Text-based network industries and endogenous product differentiation",
+            "The cross-sectional relationship between trading costs and lead/lag effects in stock & option markets",
+            "Gpt-4 passes the bar exam",
+            "A survey of large language models, 2023.",
+            "Genetic algorithms approach to feature discretization in artificial neural networks for the prediction of stock price index"
+          ],
+          "2 Related Work": [
+            "The behavior of stock-market prices",
+            "Preston Gralla. This lawsuit against microsoft could change the future of AI.",
+            "Financial time series forecasting with multi-modality graph neural network",
+            "OpenNRE: An open and extensible toolkit for neural relation extraction",
+            "Genetic algorithms approach to feature discretization in artificial neural networks for the prediction of stock price index",
+            "Can chatgpt forecast stock price movements",
+            "Graph convolutional networks: a comprehensive review",
+            "Nvidia shares surge amid AI-driven boom, earnings report.",
+            "Stock market movement forecast: A systematic review",
+            "Roland: Graph learning framework for dynamic graphs",
+            "A comprehensive survey on graph neural networks",
+            "Automated news reading: Stock price prediction based on financial news using context-capturing features",
+            "Random walks in stock market prices",
+            "The cross-sectional relationship between trading costs and lead/lag effects in stock & option markets",
+            "Large language models can rate news outlet credibility",
+            "Knowledge-driven stock trend prediction and explanation via temporal convolutional network",
+            "Training language models to follow instructions with human feedback",
+            "A multitask, multilingual, multimodal evaluation of chatgpt on reasoning, hallucination, and interactivity.",
+            "Stock price reaction to news and no-news: drift and reversal after headlines",
+            "Text-based network industries and endogenous product differentiation",
+            "Responses of us equity market sectors to the silicon valley bank implosion"
+          ],
+          "3 Method 3.1 Network Structure Inference via ChatGPT": [
+            "Can chatgpt forecast stock price movements"
+          ],
+          "3 Method 3.2 Company Embedding through GNN": [
+            "Graph convolutional networks: a comprehensive review"
+          ],
+          "3 Method 3.3 Sequential Models and Output Layers": [
+            "Financial time series forecasting with multi-modality graph neural network"
+          ],
+          "4 Experiment": [
+            "Can chatgpt forecast stock price movements",
+            "Long short-term memory"
+          ],
+          "4 Experiment 4.1 Financial Forecasting of Stock Movement": [
+            "Can chatgpt forecast stock price movements",
+            "Advances in financial machine learning"
+          ],
+          "5 Discussion": [
+            "Measuring and relieving the over-smoothing problem for graph neural networks from the topological view"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.8527255058288574,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "The Wall Street Neophyte: A Zero-Shot Analysis of ChatGPT Over Multimodal Stock Movement Prediction Challenges",
+        "arxiv_id": "2304.05351",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Recently, large language models (LLMs) like ChatGPT have demonstrated remarkable performance across a variety of natural language processing tasks. However, their effectiveness in the financial domain, specifically in predicting stock market movements, remains to be explored. In this paper, we conduct an extensive zero-shot analysis of ChatGPT\u2019s capabilities in multimodal stock movement prediction, on three tweets and historical stock price datasets. Our findings indicate that ChatGPT is a \"Wall Street Neophyte\" with limited success in predicting stock movements, as it underperforms not only state-of-the-art methods but also traditional methods like linear regression using price features. Despite the potential of Chain-of-Thought prompting strategies and the inclusion of tweets, ChatGPT\u2019s performance remains subpar. Furthermore, we observe limitations in its explainability and stability, suggesting the need for more specialized training or fine-tuning. This research provides insights into ChatGPT\u2019s capabilities and serves as a foundation for future work aimed at improving financial market analysis and prediction by leveraging social media sentiment and historical stock data. ",
+        "sections": {
+          "1 Introduction": [
+            "Stock movement prediction from tweets and historical prices",
+            "Chatgpt: A large-scale pretrained language model for conversational agents",
+            "Fingpt: Leveraging pre-trained language model for event detection from financial news",
+            "Hierarchical complementary attention network for predicting stock price movements with news",
+            "Systematic analysis and review of stock market prediction techniques",
+            "Bananarama: A novel approach for finance research using chatgpt",
+            "Gpt-3 for financial sentiment analysis",
+            "Natural language processing for financial applications: A survey using chatgpt",
+            "Accurate multivariate stock movement prediction via data-axis transformer with multi-level contexts",
+            "Can chatgpt forecast stock price movements? return predictability and large language models",
+            "Portfolio management with chatgpt: A case study on us stock market",
+            "Deep reinforcement learning for asset allocation and portfolio management: A survey"
+          ],
+          "2 Methodology 2.1 Task": [
+            "Accurate stock movement prediction with self-supervised learning from sparse noisy tweets"
+          ],
+          "2 Methodology 2.2 Datasets": [
+            "Hybrid deep sequential modeling for social text-driven stock prediction",
+            "Stock movement prediction from tweets and historical prices",
+            "Accurate stock movement prediction with self-supervised learning from sparse noisy tweets"
+          ],
+          "2 Methodology 2.3 Prompts": [
+            "Investor sentiment, social media and stock returns: Wisdom of crowds or power of words?",
+            "Chaingpt: A transformer-based approach for commonsense reasoning with conceptual chains"
+          ],
+          "2 Methodology 2.4 Baselines": [
+            "Enhancing stock movement prediction with adversarial training",
+            "Accurate stock movement prediction with self-supervised learning from sparse noisy tweets",
+            "A dual-stage attention-based recurrent neural network for time series prediction",
+            "Distributed representations of sentences and documents",
+            "Combining multiple feature selection methods for stock prediction: Union, intersection, and multi-intersection approaches",
+            "Accurate multivariate stock movement prediction via data-axis transformer with multi-level contexts",
+            "Efficient estimation of word representations in vector space",
+            "Stock market\u2019s price movement prediction with lstm neural networks"
+          ],
+          "2 Methodology 2.5 Metrics": [
+            "Comparison of the predicted and observed secondary structure of t4 phage lysozyme"
+          ],
+          "3 Experiments 3.1 Implementation Details": [
+            "Accurate stock movement prediction with self-supervised learning from sparse noisy tweets"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.18136581778526306,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Can ChatGPT Compute Trustworthy Sentiment Scores from Bloomberg Market Wraps?",
+        "arxiv_id": "2401.05447",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract We used a dataset of daily Bloomberg Financial Market Summaries from 2010 to 2023, reposted on large financial media, to determine how global news headlines may affect stock market movements using ChatGPT and a two-stage prompt approach. We document a statistically significant positive correlation between the sentiment score and future equity market returns over short to medium term, which reverts to a negative correlation over longer horizons. Validation of this correlation pattern across multiple equity markets indicates its robustness across equity regions and resilience to non-linearity, evidenced by comparison of Pearson and Spearman correlations. Finally, we provide an estimate of the optimal horizon that strikes a balance between reactivity to new information and correlation.   Keywords:\u2009sentiment analysis, ChatGPT, stock exchange, financial news ",
+        "sections": {
+          "1.\u00a0\u00a0\u00a0Introduction": [
+            "Aspect extraction for opinion mining with a deep convolutional neural network",
+            "NLP analytics in finance with DoRe: a French 250M tokens corpus of corporate annual reports",
+            "When is a liability not a liability? Textual analysis, dictionaries, and 10-Ks",
+            "GPT-4 Technical Report",
+            "Finmath: Injecting a tree-structured solver for question answering over financial reports",
+            "A Graph-Based Method for Unsupervised Knowledge Discovery from Financial Texts",
+            "Democratizing financial knowledge with ChatGPT by OpenAI: Unleashing the Power of Technology",
+            "The evolution of Fintech: A new post-crisis paradigm",
+            "A review of ChatGPT AI\u2019s impact on several business sectors",
+            "A review of affective computing: From unimodal analysis to multimodal fusion",
+            "Giving Content to Investor Sentiment: The Role of Media in the Stock Market",
+            "Bert: Pre-training of deep bidirectional transformers for language understanding",
+            "Target-based sentiment annotation in Chinese financial news"
+          ],
+          "2.\u00a0\u00a0\u00a0Related works": [
+            "Can ChatGPT Decipher Fedspeak?",
+            "The Wall Street Neophyte: A Zero-Shot Analysis of ChatGPT Over MultiModal Stock Movement Prediction Challenges",
+            "Can ChatGPT Forecast Stock Price Movements? Return Predictability and Large Language Models",
+            "Language Models and Cognitive Automation for Economic Research",
+            "Large language models can rate news outlet credibility",
+            "Experimental Evidence on the Productivity Effects of Generative Artificial Intelligence",
+            "How to Learn and Teach Economics with Large Language Models, Including GPT",
+            "Can Chatgpt Improve Investment Decision? From a Portfolio Management Perspective"
+          ],
+          "3.\u00a0\u00a0\u00a0Prompt engineering 3.2.\u00a0\u00a0\u00a0Two-step approach": [
+            "Can ChatGPT Forecast Stock Price Movements? Return Predictability and Large Language Models"
+          ],
+          "5.\u00a0\u00a0\u00a0Evaluation of the Sentiment Score\u2019s Validity 5.1.\u00a0\u00a0\u00a0Descriptive statistics": [
+            "Fundamentals of Modern Statistical Methods: Substantially Improving Power and Accuracy"
+          ],
+          "5.\u00a0\u00a0\u00a0Evaluation of the Sentiment Score\u2019s Validity 5.4.\u00a0\u00a0\u00a0T-test on the correlation": [
+            "Control of the false discovery rate in multiple testing under dependency"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.9465870261192322,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "What Does ChatGPT Make of Historical Stock Returns? Extrapolation and Miscalibration in LLM Stock Return Forecasts",
+        "arxiv_id": "2409.11540",
+        "depth": 0,
+        "child": {},
+        "abstract": "We examine how large language models (LLMs) interpret historical stock returns and compare their forecasts with estimates from a crowd-sourced platform for ranking stocks. While stock returns exhibit short-term reversals, LLM forecasts over-extrapolate, placing excessive weight on recent performance similar to humans. LLM forecasts appear optimistic relative to historical and future realized returns. When prompted for 80% confidence interval predictions, LLM responses are better calibrated than survey evidence but are pessimistic about outliers, leading to skewed forecast distributions. The findings suggest LLMs manifest common behavioral biases when forecasting expected returns but are better at gauging risks than humans.",
+        "sections": null,
+        "source": "Search SearchFrom:arxiv",
+        "select_score": 0.06456617265939713,
+        "extra": {
+          "expand": "get full paper error"
+        }
+      }
+    ],
+    "Impact of large language models on stock exchange analysis": [
+      {
+        "title": "LLMFactor: Extracting Profitable Factors through Prompts for Explainable Stock Movement Prediction",
+        "arxiv_id": "2406.10811",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract Recently, Large Language Models (LLMs) have attracted significant attention for their exceptional performance across a broad range of tasks, particularly in text analysis. However, the finance sector presents a distinct challenge due to its dependence on time-series data for complex forecasting tasks. In this study, we introduce a novel framework called LLMFactor, which employs Sequential Knowledge-Guided Prompting (SKGP) to identify factors that influence stock movements using LLMs. Unlike previous methods that relied on keyphrases or sentiment analysis, this approach focuses on extracting factors more directly related to stock market dynamics, providing clear explanations for complex temporal changes. Our framework directs the LLMs to create background knowledge through a fill-in-the-blank strategy and then discerns potential factors affecting stock prices from related news. Guided by background knowledge and identified factors, we leverage historical stock prices in textual format to predict stock movement. An extensive evaluation of the LLMFactor framework across four benchmark datasets from both the U.S. and Chinese stock markets demonstrates its superiority over existing state-of-the-art methods and its effectiveness in financial time-series forecasting.",
+        "sections": {
+          "1 Introduction": [
+            "Efficient capital markets: A review of theory and empirical work",
+            "Predicting stock and stock price index movement using trend deterministic data preparation and machine learning techniques",
+            "Identifying Corporate Credit Risk Sentiments from Financial News",
+            "The adaptive markets hypothesis: Market efficiency from an evolutionary perspective",
+            "Temporal relational ranking for stock prediction",
+            "Efficient market hypothesis and forecasting",
+            "Sentiment analysis on social media for stock movement prediction",
+            "Deep leaming for stock market prediction using technical indicators and financial news articles",
+            "Group recommendation based on financial social network for robo-advisor"
+          ],
+          "2 Related Work 2.1 Stock Movement Prediction using Textual Data": [
+            "Trade the event: Corporate events detection for news-based event-driven trading",
+            "Incorporating expert-based investment opinion signals in stock prediction: A deep learning framework",
+            "Causality-guided multi-memory interaction network for multivariate stock price movement prediction",
+            "Stock movement prediction from tweets and historical prices",
+            "Sentiment correlation in financial news networks and associated market movements"
+          ],
+          "2 Related Work 2.2 Time-series Forecasting with LLMs": [
+            "Large language models are zero-shot time series forecasters",
+            "Harnessing LLMs for temporal data - a study on explainable financial time series forecasting",
+            "Promptcast: A new prompt-based learning paradigm for time series forecasting",
+            "Language models are few-shot learners"
+          ],
+          "2 Related Work 2.3 Prompt Engineering": [
+            "Pre-train, prompt, and predict: A systematic survey of prompting methods in natural language processing",
+            "Generated knowledge prompting for commonsense reasoning",
+            "Retrieval-augmented generation for knowledge-intensive nlp tasks",
+            "Chain-of-thought prompting elicits reasoning in large language models"
+          ],
+          "3 LLMFactor 3.2 Sequential Knowledge-Guided Prompting": [
+            "Fingat: Financial graph attention networks for recommending top-k\ud835\udc58k k profitable stocks"
+          ],
+          "4 Experiments 4.1 Datasets": [
+            "Trade the event: Corporate events detection for news-based event-driven trading",
+            "Causality-guided multi-memory interaction network for multivariate stock price movement prediction",
+            "Stock movement prediction from tweets and historical prices"
+          ],
+          "4 Experiments 4.2 Evaluation Metrics": [
+            "Stock movement prediction from tweets and historical prices"
+          ],
+          "4 Experiments 4.3 Baselines": [
+            "Trade the event: Corporate events detection for news-based event-driven trading",
+            "Instruct-fingpt: Financial sentiment analysis by instruction tuning of general-purpose large language models",
+            "Yake! keyword extraction from single documents using multiple local features",
+            "Causality-guided multi-memory interaction network for multivariate stock price movement prediction",
+            "A statistical interpretation of term specificity and its application in retrieval",
+            "Stock movement prediction from tweets and historical prices",
+            "PromptRank: Unsupervised keyphrase extraction using prompt",
+            "Fengshenbang 1.0: Being the foundation of chinese cognitive intelligence",
+            "CollabRank: Towards a collaborative approach to single-document keyphrase extraction",
+            "Finbert: Financial sentiment analysis with pre-trained language models",
+            "TopicRank: Graph-based topic ranking for keyphrase extraction",
+            "TextRank: Bringing order into text",
+            "Keybert: Minimal keyword extraction with bert"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.9993398785591125,
+        "extra": {
+          "expand": "not expand"
+        }
+      }
+    ],
+    "Application of GPT-3 in stock market prediction and analysis": [
+      {
+        "title": "GPT-3 Models are Few-Shot Financial Reasoners",
+        "arxiv_id": "2307.13617",
+        "depth": 0,
+        "child": {},
+        "abstract": "Financial analysis is an important tool for evaluating company performance. Practitioners work to answer financial questions to make profitable investment decisions, and use advanced quantitative analyses to do so. As a result, Financial Question Answering (QA) is a question answering task that requires deep reasoning about numbers. Furthermore, it is unknown how well pre-trained language models can reason in the financial domain. The current state-of-the-art requires a retriever to collect relevant facts about the financial question from the text and a generator to produce a valid financial program and a final answer. However, recently large language models like GPT-3 have achieved state-of-the-art performance on wide variety of tasks with just a few shot examples. We run several experiments with GPT-3 and find that a separate retrieval model and logic engine continue to be essential components to achieving SOTA performance in this task, particularly due to the precise nature of financial questions and the complex information stored in financial documents. With this understanding, our refined prompt-engineering approach on GPT-3 achieves near SOTA accuracy without any fine-tuning.",
+        "sections": null,
+        "source": "Search SearchFrom:arxiv",
+        "select_score": 0.09789223968982697,
+        "extra": {
+          "expand": "get full paper error"
+        }
+      },
+      {
+        "title": "Sentiment trading with large language models",
+        "arxiv_id": "2412.19245",
+        "depth": 0,
+        "child": {},
+        "abstract": "We investigate the efficacy of large language models (LLMs) in sentiment analysis of U.S. financial news and their potential in predicting stock market returns. We analyze a dataset comprising 965,375 news articles that span from January 1, 2010, to June 30, 2023; we focus on the performance of various LLMs, including BERT, OPT, FINBERT, and the traditional Loughran-McDonald dictionary model, which has been a dominant methodology in the finance literature. The study documents a significant association between LLM scores and subsequent daily stock returns. Specifically, OPT, which is a GPT-3 based LLM, shows the highest accuracy in sentiment prediction with an accuracy of 74.4%, slightly ahead of BERT (72.5%) and FINBERT (72.2%). In contrast, the Loughran-McDonald dictionary model demonstrates considerably lower effectiveness with only 50.1% accuracy. Regression analyses highlight a robust positive impact of OPT model scores on next-day stock returns, with coefficients of 0.274 and 0.254 in different model specifications. BERT and FINBERT also exhibit predictive relevance, though to a lesser extent. Notably, we do not observe a significant relationship between the Loughran-McDonald dictionary model scores and stock returns, challenging the efficacy of this traditional method in the current financial context. In portfolio performance, the long-short OPT strategy excels with a Sharpe ratio of 3.05, compared to 2.11 for BERT and 2.07 for FINBERT long-short strategies. Strategies based on the Loughran-McDonald dictionary yield the lowest Sharpe ratio of 1.23. Our findings emphasize the superior performance of advanced LLMs, especially OPT, in financial market prediction and portfolio management, marking a significant shift in the landscape of financial analysis tools with implications to financial regulation and policy analysis.",
+        "sections": null,
+        "source": "Search SearchFrom:arxiv",
+        "select_score": 0.9796513915061951,
+        "extra": {
+          "expand": "get full paper error"
+        }
+      }
+    ],
+    "Role of AI and language models in stock market prediction": [
+      {
+        "title": "Learning to Generate Explainable Stock Predictions using Self-Reflective Large Language Models",
+        "arxiv_id": "2402.03659",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract. Explaining stock predictions is generally a difficult task for traditional non-generative deep learning models, where explanations are limited to visualizing the attention weights on important texts. Today, Large Language Models (LLMs) present a solution to this problem, given their known capabilities to generate human-readable explanations for their decision-making process. However, the task of stock prediction remains challenging for LLMs, as it requires the ability to weigh the varying impacts of chaotic social texts on stock prices. The problem gets progressively harder with the introduction of the explanation component, which requires LLMs to explain verbally why certain factors are more important than the others. On the other hand, to fine-tune LLMs for such a task, one would need expert-annotated samples of explanation for every stock movement in the training set, which is expensive and impractical to scale. To tackle these issues, we propose our Summarize-Explain-Predict (SEP) framework, which utilizes a verbal self-reflective agent and Proximal Policy Optimization (PPO) that allow a LLM teach itself how to generate explainable stock predictions, in a fully autonomous manner. The reflective agent learns how to explain past stock movements through a self-reasoning process, while the PPO trainer trains the model to generate the most likely explanations given the input texts at test-time. The training samples for the PPO trainer are also the responses generated during the reflective process, which eliminates the need for human annotators. Using our SEP framework, we fine-tune a specialized LLM that can outperform both traditional deep-learning and LLM methods in prediction accuracy and Matthews correlation coefficient, for the stock classification task. To justify the generalization capability of our framework, we further test it on the portfolio construction task, and demonstrate its effectiveness through various portfolio metrics. Our code can be accessed through https://github.com/koa-fin/sep. ",
+        "sections": {
+          "1. Introduction": [
+            "PEN: prediction-explanation network to forecast stock price movement with better explainability",
+            "Using news articles to predict stock price movements",
+            "Factor models, machine learning, and asset pricing",
+            "RLAIF: Scaling Reinforcement Learning from Human Feedback with AI Feedback",
+            "Self-refine: Iterative refinement with self-feedback",
+            "Chain of hindsight aligns language models with feedback",
+            "Hybrid learning to rank for financial event ranking",
+            "Harnessing the power of llms in practice: A survey on chatgpt and beyond",
+            "Temporal Data Meets LLM\u2013Explainable Financial Time Series Forecasting",
+            "Human-Centric Justification of Machine Learning Predictions.",
+            "Summarization is (Almost) Dead",
+            "Chain-of-thought prompting elicits reasoning in large language models",
+            "Reflexion: Language Agents with Verbal Reinforcement Learning",
+            "Listening to chaotic whispers: A deep learning framework for news-oriented stock trend prediction",
+            "Knowledge-driven stock trend prediction and explanation via temporal convolutional network",
+            "Training language models to follow instructions with human feedback",
+            "Temporal relational ranking for stock prediction",
+            "Explainable machine learning exploiting news and domain-specific lexicon for stock market forecasting",
+            "A five-factor asset pricing model",
+            "The Stock Market Reaction to Different Types of Company-Specific News Events",
+            "Proximal policy optimization algorithms",
+            "Holistic evaluation of language models",
+            "Efficient capital markets: A review of theory and empirical work"
+          ],
+          "2. Related Works": [
+            "Stock movement prediction from tweets and historical prices",
+            "NumHTML: Numeric-Oriented Hierarchical Transformer Model for Multi-task Financial Forecasting",
+            "Textual analysis of stock market prediction using breaking financial news: The AZFin text system",
+            "Can ChatGPT Decipher Fedspeak?",
+            "Using structured events to predict stock price movement: An empirical investigation",
+            "Html: Hierarchical transformer-based multi-task learning for volatility prediction",
+            "PIXIU: A Large Language Model, Instruction Data and Evaluation Benchmark for Finance",
+            "Temporal Data Meets LLM\u2013Explainable Financial Time Series Forecasting",
+            "FinGPT: Open-Source Financial Large Language Models",
+            "Deep attentive learning for stock movement prediction from social media text and company correlations",
+            "Can chatgpt forecast stock price movements? return predictability and large language models",
+            "ChatGPT Informed Graph Neural Network for Stock Movement Prediction",
+            "Listening to chaotic whispers: A deep learning framework for news-oriented stock trend prediction",
+            "Bloomberggpt: A large language model for finance",
+            "Knowledge-driven stock trend prediction and explanation via temporal convolutional network"
+          ],
+          "3. Methodology 3.1. Preliminaries": [
+            "Enhancing stock movement prediction with adversarial training",
+            "Stock movement prediction from tweets and historical prices",
+            "BERTopic: Neural topic modeling with a class-based TF-IDF procedure"
+          ],
+          "3. Methodology 3.2. Summary Generation": [
+            "Summarization is (Almost) Dead",
+            "In-context instruction learning",
+            "Temporal Data Meets LLM\u2013Explainable Financial Time Series Forecasting"
+          ],
+          "3. Methodology 3.3. Explanation Generation": [
+            "React: Synergizing reasoning and acting in language models",
+            "Chain-of-thought prompting elicits reasoning in large language models",
+            "Calibrate before use: Improving few-shot performance of language models",
+            "In-context instruction learning",
+            "Reflexion: Language Agents with Verbal Reinforcement Learning"
+          ],
+          "3. Methodology 3.4. Prediction Generation": [
+            "Learning to summarize with human feedback",
+            "Retroformer: Retrospective large language agents with policy gradient optimization.",
+            "Way off-policy batch deep reinforcement learning of implicit human preferences in dialog",
+            "Proximal policy optimization algorithms",
+            "Training language models to follow instructions with human feedback"
+          ],
+          "4. Experiment 4.1. Experimental Settings": [
+            "Stock movement prediction from tweets and historical prices",
+            "A dual-stage attention-based recurrent neural network for time series prediction",
+            "Diffusion Variational Autoencoder for Tackling Stochasticity in Multi-Step Regression Stock Price Prediction",
+            "Leveraging multiple relations for fashion trend forecasting based on social media",
+            "Lora: Low-rank adaptation of large language models",
+            "Html: Hierarchical transformer-based multi-task learning for volatility prediction",
+            "Deep attentive learning for stock movement prediction from social media text and company correlations",
+            "Relationship between interest rate and stock price: empirical evidence from developed and developing countries",
+            "Listening to chaotic whispers: A deep learning framework for news-oriented stock trend prediction",
+            "Vicuna: An open-source chatbot impressing gpt-4 with 90%* chatgpt quality.",
+            "Auto-encoding variational bayes",
+            "Training language models to follow instructions with human feedback",
+            "NumHTML: Numeric-Oriented Hierarchical Transformer Model for Multi-task Financial Forecasting",
+            "Universal sentence encoder",
+            "Can chatgpt forecast stock price movements? return predictability and large language models",
+            "FinGPT: Open-Source Financial Large Language Models",
+            "Glove: Global vectors for word representation",
+            "Bert: Pre-training of deep bidirectional transformers for language understanding",
+            "Hierarchical attention networks for document classification"
+          ],
+          "4. Experiment 4.2. Performance Comparison (RQ1)": [
+            "How close is chatgpt to human experts? comparison corpus, evaluation, and detection.",
+            "Sentiment Analysis in the Era of Large Language Models: A Reality Check",
+            "The advantages of the Matthews correlation coefficient (MCC) over F1 score and accuracy in binary classification evaluation"
+          ],
+          "4. Experiment 4.3. Ablation Study (RQ2)": [
+            "Chain-of-thought prompting elicits reasoning in large language models",
+            "Learning to summarize with human feedback"
+          ],
+          "4. Experiment 4.4. Portfolio Optimization (RQ3)": [
+            "The statistics of Sharpe ratios",
+            "Diffusion Variational Autoencoder for Tackling Stochasticity in Multi-Step Regression Stock Price Prediction",
+            "Optimal versus naive diversification: How inefficient is the 1/N portfolio strategy?"
+          ],
+          "5. Conclusion and Future Work": [
+            "Can ChatGPT Decipher Fedspeak?",
+            "NumHTML: Numeric-Oriented Hierarchical Transformer Model for Multi-task Financial Forecasting",
+            "A multitask, multilingual, multimodal evaluation of chatgpt on reasoning, hallucination, and interactivity."
+          ],
+          "6. Ethical Use of Data": [
+            "Towards llm-based fact verification on news claims with a hierarchical step-by-step prompting method",
+            "Sex matters: Gender bias in the mutual fund industry",
+            "Combating misinformation in the age of llms: Opportunities and challenges",
+            "Jailbroken: How does llm safety training fail?",
+            "Explore, Establish, Exploit: Red Teaming Language Models from Scratch",
+            "Bias and fairness in large language models: A survey",
+            "Detecting financial market manipulation with statistical physics tools"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.7111791372299194,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Revolutionizing Finance with LLMs: An Overview of Applications and Insights",
+        "arxiv_id": "2401.11641",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract In recent years, Large Language Models (LLMs) like ChatGPT have seen considerable advancements and have been applied in diverse fields. Built on the Transformer architecture, these models are trained on extensive datasets, enabling them to understand and generate human language effectively. In the financial domain, the deployment of LLMs is gaining momentum. These models are being utilized for automating financial report generation, forecasting market trends, analyzing investor sentiment, and offering personalized financial advice. Leveraging their natural language processing capabilities, LLMs can distill key insights from vast financial data, aiding institutions in making informed investment choices and enhancing both operational efficiency and customer satisfaction. In this study, we provide a comprehensive overview of the emerging integration of LLMs into various financial tasks. Additionally, we conducted holistic tests on multiple financial tasks through the combination of natural language instructions. Our findings show that GPT-4 effectively follow prompt instructions across various financial tasks. This survey and evaluation of LLMs in the financial domain aim to deepen the understanding of LLMs\u2019 current role in finance for both financial practitioners and LLM researchers, identify new research and application prospects, and highlight how these technologies can be leveraged to solve practical challenges in the finance industry. ",
+        "sections": {
+          "1 Introduction": [
+            "Finbert: A pretrained language model for financial communications",
+            "Bloomberggpt: A large language model for finance",
+            "A survey on evaluation of large language models",
+            "Gpt-investar: Enhancing stock investment strategies through annual report analysis with large language models"
+          ],
+          "2 Related Work 2.1 Large Language Models": [
+            "A survey of large language models",
+            "Improving language understanding by generative pre-training",
+            "Bart: Denoising sequence-to-sequence pre-training for natural language generation, translation, and comprehension",
+            "Summary of chatgpt-related research and perspective towards the future of large language models",
+            "Beam search strategies for neural machine translation",
+            "Understanding llms: A comprehensive overview from training to inference",
+            "Language models are few-shot learners",
+            "Artificial general intelligence for radiation oncology",
+            "Attention is all you need",
+            "A new algorithm for data compression",
+            "Exploring the limits of transfer learning with a unified text-to-text transformer",
+            "Enhancing financial sentiment analysis via retrieval augmented large language models"
+          ],
+          "2 Related Work 2.2 Named Entity Recognition": [
+            "Named entity recognition using support vector machine: A language independent approach",
+            "A survey on deep learning for named entity recognition",
+            "A bert based sentiment analysis and key entity detection approach for online financial texts",
+            "Named entity recognition and classification on historical documents: A survey",
+            "Named entity recognition and classification in historical documents: A survey",
+            "Named entity recognition and relation extraction: State-of-the-art"
+          ],
+          "2 Related Work 2.3 Sentiment Analysis": [
+            "Twitter mood predicts the stock market",
+            "Efficacy of news sentiment for stock market prediction",
+            "Predicting the effects of news sentiments on the stock market",
+            "Analysis and prediction in sparse and high dimensional text data: The case of dow jones stock market",
+            "Predicting stock market behavior using data mining technique and news sentiment analysis",
+            "Sentiment analysis on news articles for stocks",
+            "Incorporating stock prices and news sentiments for stock market prediction: A case of hong kong",
+            "Stock prediction using twitter sentiment analysis",
+            "Analysis of sentiments using unsupervised learning techniques",
+            "Sentiment analysis of news headlines for stock price prediction",
+            "Stock price prediction using news sentiment analysis"
+          ],
+          "2 Related Work 2.4 Question Answering": [
+            "Exploring the trade-offs: Unified large language models vs local fine-tuned models for highly-specific radiology nli task",
+            "Chain-of-thought prompting elicits reasoning in large language models",
+            "Summary of chatgpt-related research and perspective towards the future of large language models",
+            "The science of detecting llm-generated texts",
+            "On the promises and challenges of multimodal foundation models for geographical, environmental, agricultural, and urban planning applications."
+          ],
+          "2 Related Work 2.5 Time Series Forecasting": [
+            "Temporal data meets llm \u2013 explainable financial time series forecasting",
+            "A selective overview of nonparametric methods in financial econometrics",
+            "Comparison of kalman filter estimation approaches for state space models with nonlinear measurements",
+            "Vector autoregressive models for multivariate time series",
+            "Likelihood-based inference in cointegrated vector autoregressive models",
+            "Language models are few-shot learners",
+            "Forecasting short term interest rates using arma, arma-garch and arma-egarch models",
+            "Gpt-4 technical report",
+            "Llama: Open and efficient foundation language models"
+          ],
+          "2 Related Work 2.6 Mathematical Reasoning": [
+            "Deep hedging",
+            "Empirical properties of asset returns: stylized facts and statistical issues",
+            "Financial econometrics, mathematics and statistics",
+            "Interest rate models-theory and practice: with smile, inflation and credit"
+          ],
+          "3 Scope of Finance Tasks 3.1 Financial Engineering": [
+            "What makes a portfolio a portfolio?",
+            "The ai revolution: opportunities and challenges for the finance sector",
+            "Trust me, i am a robo-advisor",
+            "Fine-tuning and utilization methods of domain-specific llms",
+            "One size does not fit all: Young retail investors\u2019 initial trust in financial robo-advisors",
+            "Alpha-gpt: Human-ai interactive alpha mining for quantitative investment",
+            "Regulating robo advice across the financial services industry",
+            "Whose algorithm says so: The relationships between type of firm, perceptions of trust and expertise, and the acceptance of financial robo-advice",
+            "Generative ai and the future of financial advice regulation",
+            "Fingpt: Democratizing internet-scale data for financial large language models",
+            "Counteracting dark sides of robo-advisors: justice, privacy and intrusion considerations",
+            "Geopolitical threat, market capitalization, and portfolio return. Market Capitalization, and Portfolio Return"
+          ],
+          "3 Scope of Finance Tasks 3.2 Financial Forecasting": [
+            "Models for predicting business bankruptcies and their application to banking and financial regulation.",
+            "Trustworthiness in large language models",
+            "Corporate bankruptcy prediction with domain-adapted bert",
+            "Time series analysis using autoregressive integrated moving average (arima) models",
+            "Towards bankruptcy prediction: Deep sentiment mining to detect financial distress from business management reports",
+            "Fingpt: Open-source financial large language models",
+            "Can chatgpt forecast stock price movements? return predictability and large language models",
+            "Large language models: Their success and impact",
+            "Fact check: Analyzing financial events from multilingual news sources"
+          ],
+          "3 Scope of Finance Tasks 3.3 Financial Risk Management": [
+            "Esg rating\u2014necessity for the investor or the company?",
+            "Esg and financial performance: aggregated evidence from more than 2000 empirical studies",
+            "Paysim: A financial mobile money simulator for fraud detection",
+            "Design and implementation of an llm system to improve response time for smes technology credit evaluation",
+            "Improving esg scores with sustainability concepts",
+            "Deep learning detecting fraud in credit card transactions",
+            "Empowering many, biasing a few: Generalist credit scoring through large language models",
+            "Llm-funcmapper: Function identification for interpreting complex clauses in building codes via llm",
+            "A gpt-based method of automated compliance checking through prompt engineering",
+            "Evaluating how esg rating agencies integrate sustainability principles",
+            "Ai-powered fraud detection in decentralized finance: A project life cycle perspective",
+            "Statistical and machine learning models in credit scoring: A systematic literature survey"
+          ],
+          "3 Scope of Finance Tasks 3.4 Financial Real-Time Question Answering": [
+            "Auggpt: Leveraging chatgpt for text data augmentation",
+            "Bloomberggpt: A large language model for finance",
+            "Evaluating the potential of leading large language models in reasoning biology questions",
+            "Tailoring large language models to radiology: A preliminary approach to llm adaptation for a highly specialized domain"
+          ],
+          "4 GPT-4 Empowered Financial Tasks Evaluations 4.1 Datasets": [
+            "Convfinqa: Exploring the chain of numerical reasoning in conversational finance question answering",
+            "Www\u201918 open challenge: financial opinion mining and question answering",
+            "Accurate stock movement prediction with self-supervised learning from sparse noisy tweets",
+            "Good debt or bad debt: Detecting semantic orientations in economic texts",
+            "Finbert: A pretrained language model for financial communications",
+            "Domain adaption of named entity recognition to support credit risk assessment",
+            "Finqa: A dataset of numerical reasoning over financial data",
+            "Finbert: Financial sentiment analysis with pre-trained language models",
+            "When flue meets flang: Benchmarks and large pre-trained language model for financial domain"
+          ],
+          "6 Limitation and Future work": [
+            "Finme: A performance-enhanced large language model trading agent with layered memory and character design",
+            "Openagi: When llm meets domain experts",
+            "Alpha-gpt: Human-ai interactive alpha mining for quantitative investment"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.03139404207468033,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "When AI Meets Finance (StockAgent): Large Language Model-based Stock Trading in Simulated Real-world Environments",
+        "arxiv_id": "2407.18957",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract. Can AI Agents simulate real-world trading environments to investigate the impact of external factors on stock trading activities (e.g., macroeconomics, policy changes, company fundamentals, and global events)? These factors, which frequently influence trading behaviors, are critical elements in the quest for maximizing investors\u2019 profits. Our work attempts to solve this problem through large language model based agents. We have developed a multi-agent AI system called StockAgent, driven by LLMs, designed to simulate investors\u2019 trading behaviors in response to the real stock market. The StockAgent allows users to evaluate the impact of different external factors on investor trading and to analyze trading behavior and profitability effects. Additionally, StockAgent avoids the test set leakage issue present in existing trading simulation systems based on AI Agents. Specifically, it prevents the model from leveraging prior knowledge it may have acquired related to the test data. We evaluate different LLMs under the framework of StockAgent in a stock trading environment that closely resembles real-world conditions. The experimental results demonstrate the impact of key external factors on stock market trading, including trading behavior and stock price fluctuation rules. This research explores the study of agents\u2019 free trading gaps in the context of no prior knowledge related to market data. The patterns identified through StockAgent simulations provide valuable insights for LLM-based investment advice and stock recommendation. The code is available at https://github.com/MingyuJ666/Stockagent.",
+        "sections": {
+          "1. Introduction": [
+            "Evaluating multi-agent coordination abilities in large language models",
+            "Generative agents: Interactive simulacra of human behavior",
+            "The effects of public sentiments and feelings on stock market behavior: Evidence from Australia",
+            "Institutional traders\u2019 behavior in an emerging stock market: Empirical evidence on polish pension fund investors",
+            "Trading Gym: An open source project for the development of reinforcement learning algorithms in the context of trading",
+            "The real effects of political uncertainty: Elections and investment sensitivity to stock prices",
+            "Does the stock market overreact?",
+            "Backtesting of Trading Strategies for Bitcoin",
+            "Python for Algorithmic Trading",
+            "A hybrid stock trading framework integrating technical analysis with machine learning techniques",
+            "Machine Learning for Algorithmic Trading: Predictive models to extract signals from market and alternative data for systematic trading strategies with Python",
+            "The probability of backtest overfitting",
+            "The impact of sentiment and attention measures on stock market volatility",
+            "Who gambles in the stock market?",
+            "Openagi: When llm meets domain experts",
+            "V-irl: Grounding virtual intelligence in real life"
+          ],
+          "2. Background and Related Work 2.1. Stock Simulation Model": [
+            "ZipLine: in-network compression at line speed",
+            "Stock Trading Quantified: An Exploration of Algorithmic Trading Principles using QuantConnect",
+            "Trading and Investing Systems Analysis",
+            "A review of backtesting and backtesting procedures",
+            "Machine Learning for Algorithmic Trading: Predictive models to extract signals from market and alternative data for systematic trading strategies with Python",
+            "ABIDES-gym: gym environments for multi-agent discrete event simulation and application to financial markets"
+          ],
+          "2. Background and Related Work 2.2. Large Language Model based Agents": [
+            "War and peace (waragent): Large language model-based multi-agent simulation of world wars",
+            "Chain-of-thought prompting elicits reasoning in large language models",
+            "Autogen: Enabling next-gen llm applications via multi-agent conversation framework",
+            "What if LLMs Have Different World Views: Simulating Alien Civilizations with LLM-based Agents",
+            "Metagpt: Meta programming for multi-agent collaborative framework",
+            "Communicative agents for software development"
+          ],
+          "2. Background and Related Work 2.3. Large Language Models with Finance": [
+            "Analysis of CBDC narrative by central banks using large language models",
+            "FinBERT: A large language model for extracting information from financial text",
+            "Revolutionizing finance with llms: An overview of applications and insights",
+            "Optimized Financial Planning: Integrating Individual and Cooperative Budgeting Models with LLM Recommendations"
+          ],
+          "2. Background and Related Work 2.4. Behavioral Finance": [
+            "A behavioral model of rational choice",
+            "Prospect theory: An analysis of decision under risk",
+            "Judgment under Uncertainty: Heuristics and Biases",
+            "Irrational exuberance: Revised and expanded third edition",
+            "Risk as feelings",
+            "Behavioral finance"
+          ],
+          "3. StockAgent Architecture Design 3.1. Investment Agent Module": [
+            "War and peace (waragent): Large language model-based multi-agent simulation of world wars"
+          ],
+          "4. StockAgent Simulation Design": [
+            "Nasdaq Listing Center"
+          ],
+          "5. Experiment, Results, and Validation 5.1. Backbone Large Language Models": [
+            "Gemini: a family of highly capable multimodal models",
+            "Language models are few-shot learners."
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.9466583132743835,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Natural Language Processing and Multimodal Stock Price Prediction",
+        "arxiv_id": "2401.01487",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract In the realm of financial decision-making, predicting stock prices is pivotal. Artificial intelligence techniques such as long short-term memory networks (LSTMs), support-vector machines (SVMs), and natural language processing (NLP) models are commonly employed to predict said prices. This paper utilizes stock percentage change as training data, in contrast to the traditional use of raw currency values, with a focus on analyzing publicly released news articles. The choice of percentage change aims to provide models with context regarding the significance of price fluctuations and overall price change impact on a given stock. The study employs specialized BERT natural language processing models to predict stock price trends, with a particular emphasis on various data modalities. The results showcase the capabilities of such strategies with a small natural language processing model to accurately predict overall stock trends, and highlight the effectiveness of certain data features and sector-specific data. ",
+        "sections": {
+          "1 Introduction": [
+            "Research on stock price prediction method based on convolutional neural network",
+            "Stock price prediction through the sentimental analysis of news articles",
+            "Short term forecasting with support vector machines and application to stock price prediction",
+            "Deep learning-based stock price prediction using lstm and bi-directional lstm model"
+          ],
+          "3 Model": [
+            "Well-read students learn better: The impact of student initialization on knowledge distillation",
+            "Generalization in nli: Ways (not) to go beyond simple heuristics"
+          ],
+          "4 Experimental Results 4.3 Comparison With Similar Models": [
+            "Stock price prediction based on lstm neural network: the effectiveness of news sentiment analysis"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.6822764277458191,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "StockGPT: A GenAI Model for Stock Prediction and Trading",
+        "arxiv_id": "2404.05101",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract This paper introduces StockGPT, an autoregressive \u201cnumber\u201d model trained and tested on 70 million daily U.S. stock returns over nearly 100 years. Treating each return series as a sequence of tokens, StockGPT automatically learns the hidden patterns predictive of future returns via its attention mechanism. On a held-out test sample from 2001 to 2023, a daily rebalanced long-short portfolio formed from StockGPT predictions earns an annual return of 119% with a Sharpe ratio of 6.5. The StockGPT-based portfolio completely spans momentum and long-/short-term reversals, eliminating the need for manually crafted price-based strategies, and also encompasses most leading stock market factors. This highlights the immense promise of generative AI in surpassing human in making complex financial investment decisions. Key words: generative artificial intelligence, transformer, decoder, stock market, investment, trading, return prediction",
+        "sections": {},
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.7994256615638733,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Fine-Tuning Large Language Models for Stock Return Prediction Using Newsflow",
+        "arxiv_id": "2407.18103",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract Large language models (LLMs) and their fine-tuning techniques have demonstrated superior performance in various language understanding and generation tasks. This paper explores fine-tuning LLMs for stock return forecasting with financial newsflow. In quantitative investing, return forecasting is fundamental for subsequent tasks like stock picking, portfolio optimization, etc. We formulate the model to include text representation and forecasting modules. We propose to compare the encoder-only and decoder-only LLMs, considering they generate text representations in distinct ways. The impact of these different representations on forecasting performance remains an open question. Meanwhile, we compare two simple methods of integrating LLMs\u2019 token-level representations into the forecasting module. The experiments on real news and investment universes reveal that: (1) aggregated representations from LLMs\u2019 token-level embeddings generally produce return predictions that enhance the performance of long-only and long-short portfolios; (2) in the relatively large investment universe, the decoder LLMs-based prediction model leads to stronger portfolios, whereas in the small universes, there are no consistent winners. Among the three LLMs studied (DeBERTa, Mistral, Llama), Mistral performs more robustly across different universes; (3) return predictions derived from LLMs\u2019 text representations are a strong signal for portfolio construction, outperforming conventional sentiment scores.",
+        "sections": {
+          "1 Introduction": [
+            "Debertav3: Improving deberta using electra-style pre-training with gradient-disentangled embedding sharing",
+            "Hierarchical complementary attention network for predicting stock price movements with news",
+            "Stock movement prediction from tweets and historical prices",
+            "Lora: Low-rank adaptation of large language models",
+            "Daily market news sentiment and stock prices",
+            "Multifactor explanations of asset pricing anomalies"
+          ],
+          "2 Related Work": [
+            "Deberta: Decoding-enhanced bert with disentangled attention",
+            "Predicting short-term stock prices using ensemble methods and online data sources",
+            "A survey of large language models",
+            "Hierarchical complementary attention network for predicting stock price movements with news",
+            "Supervised contrastive learning for pre-trained language model fine-tuning",
+            "Lora: Low-rank adaptation of large language models",
+            "Chain-of-thought prompting elicits reasoning in large language models",
+            "Bert: Pre-training of deep bidirectional transformers for language understanding",
+            "Group, extract and aggregate: Summarizing a large amount of finance news for forex movement prediction",
+            "Bart: Denoising sequence-to-sequence pre-training for natural language generation, translation, and comprehension",
+            "Improving language understanding by generative pre-training",
+            "Finbert: Financial sentiment analysis with pre-trained language models",
+            "Financial statement analysis with large language models",
+            "Exploring the limits of transfer learning with a unified text-to-text transformer",
+            "Language models are unsupervised multitask learners.",
+            "Ean: Event attention network for stock price trend prediction based on sentimental embedding",
+            "Mistral 7b",
+            "Llmfactor: Extracting profitable factors through prompts for explainable stock movement prediction"
+          ],
+          "3 From Financial Newsflow to Stock Portfolios through LLMs 3.1 Problem Statement": [
+            "A survey of large language models"
+          ],
+          "3 From Financial Newsflow to Stock Portfolios through LLMs 3.2  Methodology": [
+            "Llama 2: Open foundation and fine-tuned chat models",
+            "Debertav3: Improving deberta using electra-style pre-training with gradient-disentangled embedding sharing",
+            "Lora: Low-rank adaptation of large language models",
+            "Transformers need glasses! information over-squashing in language tasks.",
+            "Bert: Pre-training of deep bidirectional transformers for language understanding",
+            "Deepspeed: System optimizations enable training deep learning models with over 100 billion parameters.",
+            "Improving language understanding by generative pre-training",
+            "Leveraging bert to improve the fears index for stock forecasting",
+            "Nv-embed: Improved techniques for training llms as generalist embedding models"
+          ],
+          "4 Experiments": [
+            "Finbert: Financial sentiment analysis with pre-trained language models",
+            "Vader: A parsimonious rule-based model for sentiment analysis of social media text"
+          ],
+          "5 Conclusion": [
+            "Improving text embeddings with large language models"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.8396784067153931,
+        "extra": {
+          "expand": "not expand"
+        }
+      }
+    ]
+  },
+  "abstract": "",
+  "sections": "",
+  "source": "Root",
+  "select_score": 0.0,
+  "extra": {
+    "touch_ids": [
+      "2311.10723",
+      "2408.06361",
+      "2402.03659",
+      "2406.11903",
+      "2401.11641",
+      "2409.08281",
+      "2407.18957",
+      "2311.06273",
+      "2401.03737",
+      "2304.07619",
+      "2401.01487",
+      "2404.05101",
+      "2407.17866",
+      "2406.10811",
+      "2306.03763",
+      "2407.18103",
+      "2304.05351",
+      "2307.13617",
+      "2401.05447",
+      "2409.11540",
+      "2412.19245"
+    ],
+    "crawler_recall_papers": [
+      "LLMFactor: Extracting Profitable Factors through Prompts for Explainable Stock Movement Prediction",
+      "Large Language Models in Finance: A Survey",
+      "Large Language Model Agent in Financial Trading: A Survey",
+      "A Survey of Large Language Models for Financial Applications: Progress, Prospects and Challenges",
+      "StockTime: A Time Series Specialized Large Language Model Architecture for Stock Price Prediction",
+      "Can Large Language Models Beat Wall Street? Unveiling the Potential of AI in Stock Selection",
+      "Can ChatGPT Forecast Stock Price Movements? Return Predictability and Large Language Models We are grateful for the comments and feedback from Svetlana Bryzgalova, Andrew Chen, Carter Davis, Ryan Israelsen, Wei Jiang, Andy Naranjo, Nikolai Roussanov, Ben Lee, Holger von Jouanne-Diedrich, Baozhong Yang, Tao Zha, Guofu Zhou, and seminar and conference participants at AllianceBernstein, Bank of Mexico, Bloomberg, CEIBS, Peking University HSBC Business School, University of Florida, the 1st New Finance Conference, and ITAM Alumni Conference. Emails: Alejandro Lopez-Lira: alejandro.lopez-lira@warrington.ufl.edu, and Yuehua Tang: yuehua.tang@warrington.ufl.edu.",
+      "Financial Statement Analysis with Large Language Models",
+      "Learning to Generate Explainable Stock Predictions using Self-Reflective Large Language Models",
+      "Revolutionizing Finance with LLMs: An Overview of Applications and Insights",
+      "When AI Meets Finance (StockAgent): Large Language Model-based Stock Trading in Simulated Real-world Environments",
+      "Natural Language Processing and Multimodal Stock Price Prediction",
+      "StockGPT: A GenAI Model for Stock Prediction and Trading",
+      "Fine-Tuning Large Language Models for Stock Return Prediction Using Newsflow",
+      "GPT-3 Models are Few-Shot Financial Reasoners",
+      "Sentiment trading with large language models",
+      "Potential of ChatGPT in predicting stock market trends based on Twitter Sentiment Analysis",
+      "ChatGPT Informed Graph Neural Network for Stock Movement Prediction",
+      "The Wall Street Neophyte: A Zero-Shot Analysis of ChatGPT Over Multimodal Stock Movement Prediction Challenges",
+      "Can ChatGPT Compute Trustworthy Sentiment Scores from Bloomberg Market Wraps?",
+      "What Does ChatGPT Make of Historical Stock Returns? Extrapolation and Miscalibration in LLM Stock Return Forecasts"
+    ],
+    "recall_papers": [
+      "LLMFactor: Extracting Profitable Factors through Prompts for Explainable Stock Movement Prediction",
+      "StockTime: A Time Series Specialized Large Language Model Architecture for Stock Price Prediction",
+      "Can Large Language Models Beat Wall Street? Unveiling the Potential of AI in Stock Selection",
+      "Can ChatGPT Forecast Stock Price Movements? Return Predictability and Large Language Models We are grateful for the comments and feedback from Svetlana Bryzgalova, Andrew Chen, Carter Davis, Ryan Israelsen, Wei Jiang, Andy Naranjo, Nikolai Roussanov, Ben Lee, Holger von Jouanne-Diedrich, Baozhong Yang, Tao Zha, Guofu Zhou, and seminar and conference participants at AllianceBernstein, Bank of Mexico, Bloomberg, CEIBS, Peking University HSBC Business School, University of Florida, the 1st New Finance Conference, and ITAM Alumni Conference. Emails: Alejandro Lopez-Lira: alejandro.lopez-lira@warrington.ufl.edu, and Yuehua Tang: yuehua.tang@warrington.ufl.edu.",
+      "Financial Statement Analysis with Large Language Models",
+      "Learning to Generate Explainable Stock Predictions using Self-Reflective Large Language Models",
+      "When AI Meets Finance (StockAgent): Large Language Model-based Stock Trading in Simulated Real-world Environments",
+      "Natural Language Processing and Multimodal Stock Price Prediction",
+      "StockGPT: A GenAI Model for Stock Prediction and Trading",
+      "Fine-Tuning Large Language Models for Stock Return Prediction Using Newsflow",
+      "Sentiment trading with large language models",
+      "Potential of ChatGPT in predicting stock market trends based on Twitter Sentiment Analysis",
+      "ChatGPT Informed Graph Neural Network for Stock Movement Prediction",
+      "Can ChatGPT Compute Trustworthy Sentiment Scores from Bloomberg Market Wraps?"
+    ],
+    "answer": [
+      "Unveiling the Potential of Sentiment: Can Large Language Models Predict Chinese Stock Price Movements?",
+      "Automate Strategy Finding with LLM in Quant investment",
+      "LLMFactor: Extracting Profitable Factors through Prompts for Explainable Stock Movement Prediction",
+      "Can ChatGPT Forecast Stock Price Movements? Return Predictability and Large Language Models",
+      "Linking microblogging sentiments to stock price movement: An application of GPT-4",
+      "Alpha-GPT: Human-AI Interactive Alpha Mining for Quantitative Investment",
+      "FinLlama: Financial Sentiment Classification for Algorithmic Trading Applications",
+      "Background-aware Multi-source Fusion Financial Trend Forecasting Mechanism"
+    ]
+  }
+}

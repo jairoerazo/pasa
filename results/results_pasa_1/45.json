@@ -1,0 +1,2378 @@
+{
+  "title": "All papers about controllability of video generation.",
+  "arxiv_id": "",
+  "depth": -1,
+  "child": {
+    "Papers on techniques for controlling video generation": [
+      {
+        "title": "MotionMaster: Training-free Camera Motion Transfer For Video Generation",
+        "arxiv_id": "2404.15789",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract The emergence of diffusion models has greatly propelled the progress in image and video generation. Recently, some efforts have been made in controllable video generation, including text-to-video, image-to-video generation, video editing, and video motion control, among which camera motion control is an important topic. However, existing camera motion control methods rely on training a temporal camera module, and necessitate substantial computation resources due to the large amount of parameters in video generation models. Moreover, existing methods pre-define camera motion types during training, which limits their flexibility in camera control, preventing the realization of some specific camera controls, such as various camera movements in films. Therefore, to reduce training costs and achieve flexible camera control, we propose MotionMaster, a novel training-free video motion transfer model, which disentangles camera motions and object motions in source videos, and transfers the extracted camera motions to new videos. We first propose a one-shot camera motion disentanglement method to extract camera motion from a single source video, which separates the moving objects from the background and estimates the camera motion in the moving objects region based on the motion in the background by solving a Poisson equation. Furthermore, we propose a few-shot camera motion disentanglement method to extract the common camera motion from multiple videos with similar camera motions, which employs a window-based clustering technique to extract the common features in temporal attention maps of multiple videos. Finally, we propose a motion combination method to combine different types of camera motions together, enabling our model a more controllable and flexible camera control. Extensive experiments demonstrate that our training-free approach can effectively decouple camera-object motion and apply the decoupled camera motion to a wide range of controllable video generation tasks, achieving flexible and diverse camera motion control. More details can be referred in https://sjtuplayer.github.io/projects/MotionMaster.",
+        "sections": {
+          "1 Introduction": [
+            "Motionctrl: A unified and flexible motion controller for video generation",
+            "Lora: Low-rank adaptation of large language models",
+            "Uniedit: A unified tuning-free framework for video motion and appearance editing",
+            "Animatediff: Animate your personalized text-to-image diffusion models without specific tuning",
+            "Direct-a-video: Customized video generation with user-directed camera movement and object motion",
+            "Motion-zero: Zero-shot moving object control framework for diffusion-based video generation",
+            "Denoising diffusion probabilistic models",
+            "Motion-conditioned diffusion model for controllable video synthesis",
+            "Stable video diffusion: Scaling latent video diffusion models to large datasets"
+          ],
+          "2 Related Work 2.1 Text-to-Video Generation": [
+            "Imagen video: High definition video generation with diffusion models",
+            "Emu video: Factorizing text-to-video generation by explicit image conditioning",
+            "Motionctrl: A unified and flexible motion controller for video generation",
+            "High-resolution image synthesis with latent diffusion models",
+            "Dreamvideo: Composing your dream videos with customized subject and motion",
+            "Generating videos with scene dynamics",
+            "Control-a-video: Controllable text-to-video generation with diffusion models"
+          ],
+          "2 Related Work 2.2 Motion Controllable Video Generation": [
+            "Motionctrl: A unified and flexible motion controller for video generation",
+            "Lora: Low-rank adaptation of large language models",
+            "Vmc: Video motion customization using temporal attention adaption for text-to-video diffusion models",
+            "Videocomposer: Compositional video synthesis with motion controllability",
+            "Animatediff: Animate your personalized text-to-image diffusion models without specific tuning",
+            "Direct-a-video: Customized video generation with user-directed camera movement and object motion",
+            "Motion-zero: Zero-shot moving object control framework for diffusion-based video generation",
+            "Dragvideo: Interactive drag-style video editing"
+          ],
+          "3 Method": [
+            "Segment anything",
+            "Mvflow: Deep optical flow estimation of compressed videos with motion vector prior"
+          ],
+          "3 Method 3.1 Camera Motion Extraction Based on Temporal Attention": [
+            "Align your latents: High-resolution video synthesis with latent diffusion models",
+            "High-resolution image synthesis with latent diffusion models",
+            "Uniedit: A unified tuning-free framework for video motion and appearance editing"
+          ],
+          "3 Method 3.2 One-shot Camera Motion Disentanglement": [
+            "Iterative methods for solving partial difference equations of elliptic type",
+            "Mvflow: Deep optical flow estimation of compressed videos with motion vector prior"
+          ],
+          "3 Method 3.3 Few-shot Camera Motion Disentanglement": [
+            "Visualizing data using t-sne.",
+            "A density-based algorithm for discovering clusters in large spatial databases with noise"
+          ],
+          "4 Experiments 4.1 Implementation Details": [
+            "Conditional gan with discriminative filter generation for text-to-video synthesis.",
+            "Towards accurate generative models of video: A new metric & challenges",
+            "Animatediff: Animate your personalized text-to-image diffusion models without specific tuning",
+            "Two-frame motion estimation based on polynomial expansion",
+            "Denoising diffusion implicit models"
+          ],
+          "4 Experiments 4.2 Camera Motion Transfer": [
+            "Lora: Low-rank adaptation of large language models",
+            "Motionctrl: A unified and flexible motion controller for video generation",
+            "Animatediff: Animate your personalized text-to-image diffusion models without specific tuning"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.9903573393821716,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Control-A-Video: Controllable Text-to-Video Generation with Diffusion Models",
+        "arxiv_id": "2305.13840",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Recent advancements in diffusion models have unlocked unprecedented abilities in visual creation. However, current text-to-video generation models struggle with the trade-off among movement range, action coherence and object consistency. To mitigate this issue, we present a controllable text-to-video (T2V) diffusion model, called Control-A-Video, capable of maintaining consistency while customizable video synthesis. Based on a pre-trained conditional text-to-image (T2I) diffusion model, our model aims to generate videos conditioned on a sequence of control signals, such as edge or depth maps. For the purpose of improving object consistency, Control-A-Video integrates motion priors and content priors into video generation. We propose two motion-adaptive noise initialization strategies, which are based on pixel residual and optical flow, to introduce motion priors from input videos, producing more coherent videos. Moreover, a first-frame conditioned controller is proposed to generate videos from content priors of the first frame, which facilitates the semantic alignment with text and allows longer video generation in an auto-regressive manner. With the proposed architecture and strategies, our model achieves resource-efficient convergence and generate consistent and coherent videos with fine-grained control. Extensive experiments demonstrate its success in various video generative tasks such as video editing and video style transfer, outperforming previous methods in terms of consistency and quality. ",
+        "sections": {
+          "1 Introduction": [
+            "Structure and content-guided video synthesis with diffusion models",
+            "Videocomposer: Compositional video synthesis with motion controllability",
+            "Adding conditional control to text-to-image diffusion models",
+            "Glide: Towards photorealistic image generation and editing with text-guided diffusion models.",
+            "Preserve your own correlation: A noise prior for video diffusion models.",
+            "Fatezero: Fusing attentions for zero-shot text-based video editing"
+          ],
+          "2 Related Work 2.1 Text-to-image generation with diffusion models": [
+            "Prompt-to-prompt image editing with cross attention control",
+            "Instructpix2pix: Learning to follow image editing instructions",
+            "Denoising diffusion probabilistic models.",
+            "Photorealistic text-to-image diffusion models with deep language understanding",
+            "Adding conditional control to text-to-image diffusion models",
+            "T2i-adapter: Learning adapters to dig out more controllable ability for text-to-image diffusion models",
+            "Glide: Towards photorealistic image generation and editing with text-guided diffusion models.",
+            "Composer: Creative and controllable image synthesis with composable conditions",
+            "Plug-and-play diffusion features for text-driven image-to-image translation",
+            "Dreambooth: Fine tuning text-to-image diffusion models for subject-driven generation",
+            "Hierarchical text-conditional image generation with clip latents.",
+            "An image is worth one word: Personalizing text-to-image generation using textual inversion",
+            "Auto-encoding variational bayes",
+            "Generative adversarial networks"
+          ],
+          "2 Related Work 2.2 Text-to-video generation with diffusion models": [
+            "Text2video-zero: Text-to-image diffusion models are zero-shot video generators.",
+            "Imagen video: High definition video generation with diffusion models",
+            "Align your latents: High-resolution video synthesis with latent diffusion models",
+            "Rerender a video: Zero-shot text-guided video-to-video translation.",
+            "Tune-a-video: One-shot tuning of image diffusion models for text-to-video generation",
+            "Structure and content-guided video synthesis with diffusion models",
+            "Videocomposer: Compositional video synthesis with motion controllability",
+            "Animatediff: Animate your personalized text-to-image diffusion models without specific tuning",
+            "Make-a-video: Text-to-video generation without text-video data",
+            "Fatezero: Fusing attentions for zero-shot text-based video editing",
+            "Codef: Content deformation fields for temporally consistent video processing",
+            "Tokenflow: Consistent diffusion features for consistent video editing",
+            "Video diffusion models",
+            "Zero-shot video editing using off-the-shelf image diffusion models.",
+            "Latent video diffusion models for high-fidelity video generation with arbitrary lengths",
+            "Video-p2p: Video editing with cross-attention control",
+            "Masked conditional video diffusion for prediction, generation, and interpolation."
+          ],
+          "3 Method": [
+            "Denoising diffusion probabilistic models.",
+            "Adding conditional control to text-to-image diffusion models"
+          ],
+          "3 Method 3.1 Model Architecture": [
+            "Zero-shot video editing using off-the-shelf image diffusion models.",
+            "Adding conditional control to text-to-image diffusion models"
+          ],
+          "3 Method 3.3 Latent First-frame Conditioned Controller": [
+            "Structure and content-guided video synthesis with diffusion models",
+            "Classifier-free diffusion guidance."
+          ],
+          "4 Experiments 4.1 Implementation Details": [
+            "A computational approach to edge detection",
+            "Laion-5b: An open large-scale dataset for training next generation image-text models",
+            "Adding conditional control to text-to-image diffusion models",
+            "Towards robust monocular depth estimation: Mixing datasets for zero-shot cross-dataset transfer",
+            "Hierarchical text-conditional image generation with clip latents.",
+            "Holistically-nested edge detection"
+          ],
+          "4 Experiments 4.2 Main Results": [
+            "Text2video-zero: Text-to-image diffusion models are zero-shot video generators.",
+            "Structure and content-guided video synthesis with diffusion models",
+            "Rerender a video: Zero-shot text-guided video-to-video translation.",
+            "Videocomposer: Compositional video synthesis with motion controllability",
+            "Tokenflow: Consistent diffusion features for consistent video editing"
+          ],
+          "4 Experiments 4.3 Ablation Studies": [
+            "The 2017 davis challenge on video object segmentation",
+            "Expanding language-image pretrained models for general video recognition"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.9987680315971375,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "MotionBooth: Motion-Aware Customized Text-to-Video Generation",
+        "arxiv_id": "2406.17758",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract \u2020\u2020footnotetext: Work done when Jianzong is an intern at Shanghai AI Laboratory. \u2020\u2020\\dagger: Project Lead. In this work, we present MotionBooth, an innovative framework designed for animating customized subjects with precise control over both object and camera movements. By leveraging a few images of a specific object, we efficiently fine-tune a text-to-video model to capture the object\u2019s shape and attributes accurately. Our approach presents subject region loss and video preservation loss to enhance the subject\u2019s learning performance, along with a subject token cross-attention loss to integrate the customized subject with motion control signals. Additionally, we propose training-free techniques for managing subject and camera motions during inference. In particular, we utilize cross-attention map manipulation to govern subject motion and introduce a novel latent shift module for camera movement control as well. MotionBooth excels in preserving the appearance of subjects while simultaneously controlling the motions in generated videos. Extensive quantitative and qualitative evaluations demonstrate the superiority and effectiveness of our method. Models and codes will be made publicly available.",
+        "sections": {
+          "1 Introduction": [
+            "Videobooth: Diffusion-based video generation with image prompts",
+            "An image is worth one word: Personalizing text-to-image generation using textual inversion",
+            "Customvideo: Customizing text-to-video generation with multiple subjects",
+            "Dreamvideo: Composing your dream videos with customized subject and motion"
+          ],
+          "2 Related Work": [
+            "Photorealistic text-to-image diffusion models with deep language understanding",
+            "Videocrafter1: Open diffusion models for high-quality video generation.",
+            "Dreamtuner: Single image is enough for subject-driven generation.",
+            "Anydoor: Zero-shot object-level image customization",
+            "Direct-a-video: Customized video generation with user-directed camera movement and object motion",
+            "Attention is all you need",
+            "Boxdiff: Text-to-image synthesis with training-free box-constrained diffusion",
+            "Dreamvideo: Composing your dream videos with customized subject and motion",
+            "Sora: Creating video from text",
+            "Videocrafter2: Overcoming data limitations for high-quality video diffusion models",
+            "A generalist facex via learning unified facial representation",
+            "Modelscope text-to-video technical report",
+            "Cameractrl: Enabling camera control for text-to-video generation",
+            "Animatediff: Animate your personalized text-to-image diffusion models without specific tuning",
+            "Videocomposer: Compositional video synthesis with motion controllability",
+            "Make-a-video: Text-to-video generation without text-video data",
+            "An image is worth one word: Personalizing text-to-image generation using textual inversion",
+            "Photorealistic video generation with diffusion models",
+            "Videopoet: A large language model for zero-shot video generation",
+            "Motionctrl: A unified and flexible motion controller for video generation.",
+            "Dreambooth: Fine tuning text-to-image diffusion models for subject-driven generation",
+            "Lavie: High-quality video generation with cascaded latent diffusion models",
+            "Latte: Latent diffusion transformer for video generation",
+            "Elite: Encoding visual concepts into textual embeddings for customized text-to-image generation",
+            "Multi-concept customization of text-to-image diffusion",
+            "Frozen in time: A joint video and image encoder for end-to-end retrieval"
+          ],
+          "3 Method 3.2 Subject Learning": [
+            "Segment anything",
+            "Dreambooth: Fine tuning text-to-image diffusion models for subject-driven generation",
+            "Multi-concept customization of text-to-image diffusion",
+            "High-resolution image synthesis with latent diffusion models"
+          ],
+          "3 Method 3.3 Subject Motion Control": [
+            "Dense text-to-image generation with attention modulation",
+            "Direct-a-video: Customized video generation with user-directed camera movement and object motion",
+            "Gligen: Open-set grounded text-to-image generation",
+            "Boxdiff: Text-to-image synthesis with training-free box-constrained diffusion"
+          ],
+          "4 Experiments 4.1 Experimental Setup": [
+            "Dreambooth: Fine tuning text-to-image diffusion models for subject-driven generation",
+            "Dinov2: Learning robust visual features without supervision",
+            "Learning transferable visual models from natural language supervision",
+            "Dreamvideo: Composing your dream videos with customized subject and motion",
+            "Cameractrl: Enabling camera control for text-to-video generation",
+            "Animatediff: Animate your personalized text-to-image diffusion models without specific tuning",
+            "Videoflow: Exploiting temporal cues for multi-frame optical flow estimation",
+            "Panda-70m: Captioning 70m videos with multiple cross-modality teachers.",
+            "Multi-concept customization of text-to-image diffusion",
+            "Customvideo: Customizing text-to-video generation with multiple subjects"
+          ],
+          "4 Experiments 4.2 Main Results": [
+            "Dreamvideo: Composing your dream videos with customized subject and motion",
+            "Cameractrl: Enabling camera control for text-to-video generation",
+            "Sora: Creating video from text",
+            "Animatediff: Animate your personalized text-to-image diffusion models without specific tuning",
+            "Customvideo: Customizing text-to-video generation with multiple subjects"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.9960836172103882,
+        "extra": {
+          "expand": "not expand"
+        }
+      }
+    ],
+    "Studies on control systems in video generation": [
+      {
+        "title": "This&That: Language-Gesture Controlled Video Generation for Robot Planning",
+        "arxiv_id": "2407.05530",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract We propose a robot learning method for communicating, planning, and executing a wide range of tasks, dubbed This&That. We achieve robot planning for general tasks by leveraging the power of video generative models trained on internet-scale data containing rich physical and semantic context. In this work, we tackle three fundamental challenges in video-based planning: 1) unambiguous task communication with simple human instructions, 2) controllable video generation that respects user intents, and 3) translating visual planning into robot actions. We propose language-gesture conditioning to generate videos, which is both simpler and clearer than existing language-only methods, especially in complex and uncertain environments. We then suggest a behavioral cloning design that seamlessly incorporates the video plans. This&That demonstrates state-of-the-art effectiveness in addressing the above three challenges, and justifies the use of video generation as an intermediate representation for generalizable task planning and execution. Project website: https://cfeng16.github.io/this-and-that/.",
+        "sections": {
+          "1 Introduction": [
+            "Stable video diffusion: Scaling latent video diffusion models to large datasets.",
+            "Learning interactive real-world simulators",
+            "Learning fine-grained bimanual manipulation with low-cost hardware",
+            "Learning to act from actionless videos through dense correspondences",
+            "Bridgedata v2: A dataset for robot learning at scale"
+          ],
+          "2 Related work": [
+            "A survey of robot learning from demonstration",
+            "Sparsectrl: Adding sparse controls to text-to-video diffusion models",
+            "Learning universal policies via text-guided video generation",
+            "Perceiver-actor: A multi-task transformer for robotic manipulation",
+            "Video language planning",
+            "Draganything: Motion control for anything using entity representation",
+            "Learning to act from actionless videos through dense correspondences",
+            "Bc-z: Zero-shot task generalization with robotic imitation learning",
+            "Emo: Emote portrait alive-generating expressive portrait videos with audio2video diffusion model under weak conditions",
+            "Cameractrl: Enabling camera control for text-to-video generation",
+            "Brohan, N",
+            "Make-a-video: Text-to-video generation without text-video data",
+            "Storydiffusion: Consistent self-attention for long-range image and video generation",
+            "Follow-your-click: Open-domain regional image animation via short prompts",
+            "Motionctrl: A unified and flexible motion controller for video generation.",
+            "Learning interactive real-world simulators",
+            "Mechanical search: Multi-step retrieval of a target object occluded by clutter",
+            "Rt-sketch: Goal-conditioned imitation learning from hand-drawn sketches",
+            "Champ: Controllable and consistent human image animation with 3d parametric guidance",
+            "Streamingt2v: Consistent, dynamic, and extendable long video generation from text"
+          ],
+          "4 Language-Gesture Conditioned Video Diffusion Models Preliminaries": [
+            "Stable video diffusion: Scaling latent video diffusion models to large datasets."
+          ],
+          "4 Language-Gesture Conditioned Video Diffusion Models Fine-tuning Large Video Models": [
+            "Stable video diffusion: Scaling latent video diffusion models to large datasets."
+          ],
+          "4 Language-Gesture Conditioned Video Diffusion Models 4.1 Language-Conditioned Finetuning": [
+            "Film: Visual reasoning with a general conditioning layer",
+            "Learning transferable visual models from natural language supervision"
+          ],
+          "4 Language-Gesture Conditioned Video Diffusion Models 4.2 Gesture-Conditioned Training and Inference": [
+            "Follow-your-click: Open-domain regional image animation via short prompts",
+            "Adding conditional control to text-to-image diffusion models",
+            "Motionctrl: A unified and flexible motion controller for video generation."
+          ],
+          "5 Video-Conditioned Behavioral Cloning": [
+            "Attention is all you need",
+            "Tokenlearner: What can 8 learned tokens do for images and videos?",
+            "Learning fine-grained bimanual manipulation with low-cost hardware"
+          ],
+          "6 Experiments 6.1 Video Generation Experiments and Comparisons": [
+            "Stable video diffusion: Scaling latent video diffusion models to large datasets.",
+            "The unreasonable effectiveness of deep features as a perceptual metric",
+            "Towards accurate generative models of video: A new metric & challenges",
+            "Draganything: Motion control for anything using entity representation",
+            "Bridge data: Boosting generalization of robotic skills with cross-domain datasets",
+            "pytorch-fid: FID Score for PyTorch",
+            "Learning to act from actionless videos through dense correspondences",
+            "Bridgedata v2: A dataset for robot learning at scale",
+            "Streamingt2v: Consistent, dynamic, and extendable long video generation from text"
+          ],
+          "6 Experiments 6.2 Synthetic Rollout Experiments": [
+            "Isaac gym: High performance gpu-based physics simulation for robot learning",
+            "Learning fine-grained bimanual manipulation with low-cost hardware"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.9634180068969727,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "ReVideo: Remake a Video with Motion and Content Control",
+        "arxiv_id": "2405.13865",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract Despite significant advancements in video generation and editing using diffusion models, achieving accurate and localized video editing remains a substantial challenge. Additionally, most existing video editing methods primarily focus on altering visual content, with limited research dedicated to motion editing. In this paper, we present a novel attempt to Remake a Video (ReVideo) which stands out from existing methods by allowing precise video editing in specific areas through the specification of both content and motion. Content editing is facilitated by modifying the first frame, while the trajectory-based motion control offers an intuitive user interaction experience. ReVideo addresses a new task involving the coupling and training imbalance between content and motion control. To tackle this, we develop a three-stage training strategy that progressively decouples these two aspects from coarse to fine. Furthermore, we propose a spatiotemporal adaptive fusion module to integrate content and motion control across various sampling steps and spatial locations. Extensive experiments demonstrate that our ReVideo has promising performance on several accurate video editing applications, i.e., (1) locally changing video content while keeping the motion constant, (2) keeping content unchanged and customizing new motion trajectories, (3) modifying both content and motion trajectories. Our method can also seamlessly extend these applications to multi-area editing without specific training, demonstrating its flexibility and robustness.",
+        "sections": {
+          "1 Introduction": [
+            "Fatezero: Fusing attentions for zero-shot text-based video editing",
+            "Make-a-protagonist: Generic video editing with an ensemble of experts",
+            "High-resolution image synthesis with latent diffusion models",
+            "Video editing via factorized diffusion distillation",
+            "Space-time diffusion features for zero-shot text-driven motion transfer",
+            "Denoising diffusion probabilistic models",
+            "Stable video diffusion: Scaling latent video diffusion models to large datasets",
+            "Imagen video: High definition video generation with diffusion models",
+            "Dreamvideo: Composing your dream videos with customized subject and motion",
+            "Tune-a-video: One-shot tuning of image diffusion models for text-to-video generation",
+            "Draganything: Motion control for anything using entity representation",
+            "Anyv2v: A plug-and-play framework for any video-to-video editing tasks",
+            "https://www.pika.art/",
+            "Videocomposer: Compositional video synthesis with motion controllability",
+            "Motionctrl: A unified and flexible motion controller for video generation.",
+            "Peekaboo: Interactive video generation via masked-diffusion",
+            "Dragnuwa: Fine-grained control in video generation by integrating text, image, and trajectory",
+            "Flatten: optical flow-guided attention for consistent text-to-video editing",
+            "Boximator: Generating rich and controllable motions for video synthesis"
+          ],
+          "2 Related Works 2.1 Controllable Image and Video Generation": [
+            "Photorealistic text-to-image diffusion models with deep language understanding",
+            "High-resolution image synthesis with latent diffusion models",
+            "Adding conditional control to text-to-image diffusion models",
+            "Videocrafter1: Open diffusion models for high-quality video generation.",
+            "Denoising diffusion probabilistic models",
+            "Stable video diffusion: Scaling latent video diffusion models to large datasets",
+            "Control-a-video: Controllable text-to-video generation with diffusion models",
+            "Imagen video: High definition video generation with diffusion models",
+            "Draganything: Motion control for anything using entity representation",
+            "Motion-i2v: Consistent and controllable image-to-video generation with explicit motion modeling",
+            "Hierarchical text-conditional image generation with clip latents",
+            "T2i-adapter: Learning adapters to dig out more controllable ability for text-to-image diffusion models",
+            "Animatediff: Animate your personalized text-to-image diffusion models without specific tuning",
+            "Motionctrl: A unified and flexible motion controller for video generation.",
+            "Peekaboo: Interactive video generation via masked-diffusion",
+            "Trailblazer: Trajectory control for diffusion-based video generation",
+            "Dragnuwa: Fine-grained control in video generation by integrating text, image, and trajectory",
+            "Align your latents: High-resolution video synthesis with latent diffusion models",
+            "Boximator: Generating rich and controllable motions for video synthesis"
+          ],
+          "2 Related Works 2.2 Diffusion-based Video Editing": [
+            "Pix2video: Video editing using image diffusion",
+            "Anyv2v: A plug-and-play framework for any video-to-video editing tasks",
+            "High-resolution image synthesis with latent diffusion models",
+            "Fairy: Fast parallelized instruction-guided video-to-video synthesis",
+            "Consistent video-to-video transfer using synthetic dataset",
+            "Tune-a-video: One-shot tuning of image diffusion models for text-to-video generation",
+            "https://www.pika.art/",
+            "Videocomposer: Compositional video synthesis with motion controllability",
+            "Video editing via factorized diffusion distillation",
+            "Tokenflow: Consistent diffusion features for consistent video editing",
+            "Sdedit: Guided image synthesis and editing with stochastic differential equations",
+            "Motion-conditioned image animation for video editing",
+            "Video generation models as world simulators",
+            "Structure and content-guided video synthesis with diffusion models"
+          ],
+          "3 Method 3.1 Preliminaries": [
+            "Stable video diffusion: Scaling latent video diffusion models to large datasets",
+            "High-resolution image synthesis with latent diffusion models",
+            "Elucidating the design space of diffusion-based generative models",
+            "Learning transferable visual models from natural language supervision"
+          ],
+          "3 Method 3.2 Task Formulation and Some Insights": [
+            "Dragnuwa: Fine-grained control in video generation by integrating text, image, and trajectory",
+            "Adding conditional control to text-to-image diffusion models"
+          ],
+          "4 Experiments 4.1 Implementation Details": [
+            "Decoupled weight decay regularization",
+            "Cotracker: It is better to track together",
+            "Frozen in time: A joint video and image encoder for end-to-end retrieval"
+          ],
+          "4 Experiments 4.2 Comparison": [
+            "Pix2video: Video editing using image diffusion",
+            "Learning transferable visual models from natural language supervision",
+            "Anyv2v: A plug-and-play framework for any video-to-video editing tasks",
+            "Weighted-to-spherically-uniform quality evaluation for omnidirectional video",
+            "Consistent video-to-video transfer using synthetic dataset",
+            "https://www.pika.art/"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.918427586555481,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "CameraCtrl: Enabling Camera Control for Text-to-Video Generation",
+        "arxiv_id": "2404.02101",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract Controllability plays a crucial role in video generation since it allows users to create desired content. However, existing models largely overlooked the precise control of camera pose that serves as a cinematic language to express deeper narrative nuances. To alleviate this issue, we introduce CameraCtrl, enabling accurate camera pose control for text-to-video (T2V) models. After precisely parameterizing the camera trajectory, a plug-and-play camera module is then trained on a T2V model, leaving others untouched. Additionally, a comprehensive study on the effect of various datasets is also conducted, suggesting that videos with diverse camera distribution and similar appearances indeed enhance controllability and generalization. Experimental results demonstrate the effectiveness of CameraCtrl in achieving precise and domain-adaptive camera control, marking a step forward in the pursuit of dynamic and customized video storytelling from textual and camera pose inputs. Our project website is at: https://hehao13.github.io/projects-CameraCtrl/.",
+        "sections": {
+          "1 Introduction": [
+            "Animatediff: Animate your personalized text-to-image diffusion models without specific tuning.",
+            "Stereo magnification: Learning view synthesis using multiplane images",
+            "Videocomposer: Compositional video synthesis with motion controllability",
+            "Sparsectrl: Adding sparse controls to text-to-video diffusion models",
+            "Light field networks: Neural scene representations with single-evaluation rendering",
+            "Align your latents: High-resolution video synthesis with latent diffusion models",
+            "Motionctrl: A unified and flexible motion controller for video generation.",
+            "Dragnuwa: Fine-grained control in video generation by integrating text, image, and trajectory.",
+            "Follow your pose: Pose-guided text-to-video generation using pose-free videos"
+          ],
+          "2 Related Work": [
+            "Dreambooth: Fine tuning text-to-image diffusion models for subject-driven generation",
+            "Animatediff: Animate your personalized text-to-image diffusion models without specific tuning.",
+            "Lora: Low-rank adaptation of large language models",
+            "High-resolution image synthesis with latent diffusion models",
+            "Videopoet: A large language model for zero-shot video generation.",
+            "Sparsectrl: Adding sparse controls to text-to-video diffusion models",
+            "Latte: Latent diffusion transformer for video generation",
+            "Video diffusion models",
+            "Direct-a-video: Customized video generation with user-directed camera movement and object motion",
+            "Lumiere: A space-time diffusion model for video generation",
+            "Motionctrl: A unified and flexible motion controller for video generation.",
+            "Denoising diffusion probabilistic models",
+            "Align your latents: High-resolution video synthesis with latent diffusion models",
+            "Photorealistic video generation with diffusion models",
+            "Dreampose: Fashion video synthesis with stable diffusion",
+            "Video generation models as world simulators",
+            "Frozen in time: A joint video and image encoder for end-to-end retrieval"
+          ],
+          "3 CameraCtrl 3.1 Preliminary of Video Generation": [
+            "Animatediff: Animate your personalized text-to-image diffusion models without specific tuning.",
+            "Make-a-video: Text-to-video generation without text-video data",
+            "Adding conditional control to text-to-image diffusion models"
+          ],
+          "3 CameraCtrl 3.2 Representing Camera Condition Effectively": [
+            "Light field networks: Neural scene representations with single-evaluation rendering"
+          ],
+          "3 CameraCtrl 3.3 Introducing Camera Controllability into Video Generators": [
+            "T2i-adapter: Learning adapters to dig out more controllable ability for text-to-image diffusion models",
+            "Adding conditional control to text-to-image diffusion models"
+          ],
+          "3 CameraCtrl 3.4 Learning Camera Distribution in Data-Driven Manner": [
+            "Infinite nature: Perpetual view generation of natural scenes from a single image",
+            "Learning the depths of moving people by watching frozen people",
+            "quat-dist",
+            "Stereo magnification: Learning view synthesis using multiplane images",
+            "Objaverse: A universe of annotated 3d objects",
+            "Mvimgnet: A large-scale dataset of multi-view images",
+            "Structure-from-motion revisited",
+            "Frozen in time: A joint video and image encoder for end-to-end retrieval"
+          ],
+          "4 Experiments": [
+            "Animatediff: Animate your personalized text-to-image diffusion models without specific tuning.",
+            "Motionctrl: A unified and flexible motion controller for video generation."
+          ],
+          "4 Experiments 4.1 Implementation details": [
+            "Animatediff: Animate your personalized text-to-image diffusion models without specific tuning."
+          ],
+          "4 Experiments 4.2 Comparisons with other methods": [
+            "Animatediff: Animate your personalized text-to-image diffusion models without specific tuning.",
+            "Direct-a-video: Customized video generation with user-directed camera movement and object motion",
+            "Motionctrl: A unified and flexible motion controller for video generation."
+          ],
+          "4 Experiments 4.3 Ablation study": [
+            "Sparsectrl: Adding sparse controls to text-to-video diffusion models",
+            "Toonyou",
+            "Objaverse: A universe of annotated 3d objects",
+            "Adding conditional control to text-to-image diffusion models"
+          ],
+          "4 Experiments 4.4 Application of CameraCtrl": [
+            "Sparsectrl: Adding sparse controls to text-to-video diffusion models"
+          ],
+          "5 Conclusion and Discussion": [
+            "Animatediff: Animate your personalized text-to-image diffusion models without specific tuning.",
+            "Stable video diffusion: Scaling latent video diffusion models to large datasets.",
+            "Videocrafter1: Open diffusion models for high-quality video generation",
+            "Video generation models as world simulators"
+          ],
+          "6 More Discussions on Dataset Selection": [
+            "Stereo magnification: Learning view synthesis using multiplane images",
+            "Objaverse: A universe of annotated 3d objects",
+            "Frozen in time: A joint video and image encoder for end-to-end retrieval",
+            "Mvimgnet: A large-scale dataset of multi-view images"
+          ],
+          "7 More Implementation Details": [
+            "Animatediff: Animate your personalized text-to-image diffusion models without specific tuning.",
+            "LAVIS: A one-stop library for language-vision intelligence",
+            "Structure-from-motion revisited"
+          ],
+          "8 Extra Ablation Study": [
+            "T2i-adapter: Learning adapters to dig out more controllable ability for text-to-image diffusion models"
+          ],
+          "9 More Visualization results 9.1 Visualization results of various domain videos": [
+            "Animatediff: Animate your personalized text-to-image diffusion models without specific tuning.",
+            "str",
+            "Toonyou"
+          ],
+          "9 More Visualization results 9.2 Integrating CameraCtrl with other video control method": [
+            "Sparsectrl: Adding sparse controls to text-to-video diffusion models"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.9975080490112305,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "MoonShot: Towards Controllable Video Generation and Editing with Multimodal Conditions",
+        "arxiv_id": "2401.01827",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Most existing video diffusion models (VDMs) are limited to mere text conditions. Thereby, they are usually lacking in control over visual appearance and geometry structure of the generated videos. This work presents\u00a0MoonShot, a new video generation model that conditions simultaneously on multimodal inputs of image and text. The model builts upon a core module, called multimodal video block (MVB), which consists of conventional spatialtemporal layers for representing video features, and a decoupled cross-attention layer to address image and text inputs for appearance conditioning. In addition, we carefully design the model architecture such that it can optionally integrate with pre-trained image ControlNet modules for geometry visual conditions, without needing of extra training overhead as opposed to prior methods. Experiments show that with versatile multimodal conditioning mechanisms, MoonShot\u00a0demonstrates significant improvement on visual quality and temporal consistency compared to existing models. In addition, the model can be easily repurposed for a variety of generative applications, such as personalized video generation, image animation and video editing, unveiling its potential to serve as a fundamental architecture for controllable video generation. Models will be made public on https://github.com/salesforce/LAVIS. ",
+        "sections": {
+          "1 Introduction": [
+            "Tune-a-video: One-shot tuning of image diffusion models for text-to-video generation",
+            "Videocomposer: Compositional video synthesis with motion controllability",
+            "Control-a-video: Controllable text-to-video generation with diffusion models",
+            "Adding conditional control to text-to-image diffusion models",
+            "T2i-adapter: Learning adapters to dig out more controllable ability for text-to-image diffusion models",
+            "Rerender a video: Zero-shot text-guided video-to-video translation",
+            "Lora: Low-rank adaptation of large language models",
+            "Blip-diffusion: Pre-trained subject representation for controllable text-to-image generation and editing",
+            "Dreambooth: Fine tuning text-to-image diffusion models for subject-driven generation",
+            "Animatediff: Animate your personalized text-to-image diffusion models without specific tuning",
+            "Make-a-video: Text-to-video generation without text-video data",
+            "Magicvideo: Efficient video generation with latent diffusion models"
+          ],
+          "2 Related Work": [
+            "Videocomposer: Compositional video synthesis with motion controllability",
+            "Adding conditional control to text-to-image diffusion models",
+            "T2i-adapter: Learning adapters to dig out more controllable ability for text-to-image diffusion models",
+            "Ip-adapter: Text compatible image prompt adapter for text-to-image diffusion models",
+            "Blip-diffusion: Pre-trained subject representation for controllable text-to-image generation and editing",
+            "Animatediff: Animate your personalized text-to-image diffusion models without specific tuning",
+            "Tune-a-video: One-shot tuning of image diffusion models for text-to-video generation",
+            "Stochastic variational video prediction",
+            "Dreambooth: Fine tuning text-to-image diffusion models for subject-driven generation",
+            "Videoswap: Customized video subject swapping with interactive semantic point correspondence",
+            "Imagen video: High definition video generation with diffusion models",
+            "Structure and content-guided video synthesis with diffusion models",
+            "Unsupervised learning of video representations using lstms",
+            "Control-a-video: Controllable text-to-video generation with diffusion models",
+            "I2vgen-xl: High-quality image-to-video synthesis via cascaded diffusion models",
+            "Dreamix: Video diffusion models are general video editors",
+            "Dynamicrafter: Animating open-domain images with video diffusion priors",
+            "Controlvideo: Training-free controllable text-to-video generation",
+            "Masked conditional video diffusion for prediction, generation, and interpolation",
+            "High-resolution image synthesis with latent diffusion models",
+            "Stylegan-v: A continuous video generator with the price, image quality and perks of stylegan2",
+            "Generating videos with scene dynamics"
+          ],
+          "3 Model Architecture and Adaptations 3.1 Multimodal Video Block": [
+            "Is space-time attention all you need for video understanding?",
+            "Make-a-video: Text-to-video generation without text-video data"
+          ],
+          "3 Model Architecture and Adaptations 3.2 Adapting for Video Generation Applications": [
+            "Align your latents: High-resolution video synthesis with latent diffusion models",
+            "Dreamix: Video diffusion models are general video editors",
+            "Denoising diffusion probabilistic models"
+          ],
+          "4 Experiments 4.1 Implementation Details": [
+            "LAION-5B: laion-5b: A new era of open large-scale multi-modal datasets",
+            "Internvideo: General video foundation models via generative and discriminative learning.",
+            "Ip-adapter: Text compatible image prompt adapter for text-to-image diffusion models",
+            "Sdxl: Improving latent diffusion models for high-resolution image synthesis",
+            "Frozen in time: A joint video and image encoder for end-to-end retrieval"
+          ],
+          "4 Experiments 4.2 Human Evaluations": [
+            "Fatezero: Fusing attentions for zero-shot text-based video editing",
+            "Rerender a video: Zero-shot text-guided video-to-video translation",
+            "Make-a-video: Text-to-video generation without text-video data"
+          ],
+          "4 Experiments 4.3 Subject Customized Generation": [
+            "Dreambooth: Fine tuning text-to-image diffusion models for subject-driven generation"
+          ],
+          "4 Experiments 4.4 Image Animation": [
+            "I2vgen-xl: High-quality image-to-video synthesis via cascaded diffusion models",
+            "Videocomposer: Compositional video synthesis with motion controllability",
+            "Dynamicrafter: Animating open-domain images with video diffusion priors"
+          ],
+          "4 Experiments 4.5 Video Editing": [
+            "Text2video-zero: Text-to-image diffusion models are zero-shot video generators.",
+            "Pix2video: Video editing using image diffusion",
+            "Rerender a video: Zero-shot text-guided video-to-video translation",
+            "Fatezero: Fusing attentions for zero-shot text-based video editing",
+            "The 2017 davis challenge on video object segmentation"
+          ],
+          "4 Experiments 4.6 Text to Video Generation": [
+            "Godiva: Generating open-domain videos from natural descriptions",
+            "Towards accurate generative models of video: A new metric & challenges",
+            "Gans trained by a two time-scale update rule converge to a local nash equilibrium",
+            "Msr-vtt: A large video description dataset for bridging video and language"
+          ],
+          "6 Ethic": [
+            "Diffusers: State-of-the-art diffusion models",
+            "Blip-diffusion: Pre-trained subject representation for controllable text-to-image generation and editing"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.9968530535697937,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "CamCo: Camera-Controllable 3D-Consistent Image-to-Video Generation",
+        "arxiv_id": "2406.02509",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract Recently video diffusion models have emerged as expressive generative tools for high-quality video content creation readily available to general users. However, these models often do not offer precise control over camera poses for video generation, limiting the expression of cinematic language and user control. To address this issue, we introduce CamCo, which allows fine-grained Camera pose Control for image-to-video generation. We equip a pre-trained image-to-video generator with accurately parameterized camera pose input using Pl\u00fccker coordinates. To enhance 3D consistency in the videos produced, we integrate an epipolar attention module in each attention block that enforces epipolar constraints to the feature maps. Additionally, we fine-tune CamCo on real-world videos with camera poses estimated through structure-from-motion algorithms to better synthesize object motion. Our experiments show that CamCo significantly improves 3D consistency and camera control capabilities compared to previous models while effectively generating plausible object motion. Project page: https://ir1d.github.io/CamCo/.",
+        "sections": {
+          "1 Introduction": [
+            "An embodiment of the cinematographer: emotional and perceptual responses to different camera movement techniques",
+            "Moving mirrors: a high-density eeg study investigating the effect of camera movements on motor cortex activation during action observation",
+            "Lora: Low-rank adaptation of large language models",
+            "High-resolution image synthesis with latent diffusion models",
+            "Tune-a-video: One-shot tuning of image diffusion models for text-to-video generation",
+            "Adding conditional control to text-to-image diffusion models",
+            "Text2video-zero: Text-to-image diffusion models are zero-shot video generators.",
+            "Animatediff: Animate your personalized text-to-image diffusion models without specific tuning",
+            "Camera movement in narrative cinema: towards a taxonomy of functions",
+            "Film studies: An introduction",
+            "Motionctrl: A unified and flexible motion controller for video generation."
+          ],
+          "2 Related Work 2.1 Diffusion-based Video Generation": [
+            "Scalable diffusion models with transformers",
+            "High-resolution image synthesis with latent diffusion models",
+            "Stability AI. Stable video diffusion: Scaling latent video diffusion models to large datasets.",
+            "Animatediff: Animate your personalized text-to-image diffusion models without specific tuning",
+            "Text2video-zero: Text-to-image diffusion models are zero-shot video generators.",
+            "Align your latents: High-resolution video synthesis with latent diffusion models",
+            "Video generation models as world simulators",
+            "Laion-5b: An open large-scale dataset for training next generation image-text models"
+          ],
+          "2 Related Work 2.2 Controllable Content Creation": [
+            "Lora: Low-rank adaptation of large language models",
+            "High-resolution image synthesis with latent diffusion models",
+            "T2i-adapter: Learning adapters to dig out more controllable ability for text-to-image diffusion models",
+            "Gligen: Open-set grounded text-to-image generation",
+            "Adding conditional control to text-to-image diffusion models",
+            "Animatediff: Animate your personalized text-to-image diffusion models without specific tuning",
+            "Stability AI. Stable video diffusion: Scaling latent video diffusion models to large datasets.",
+            "Cameractrl: Enabling camera control for text-to-video generation",
+            "Motionctrl: A unified and flexible motion controller for video generation."
+          ],
+          "2 Related Work 2.3 3D Scene Synthesis": [
+            "Compositional 3d scene generation using locally conditioned diffusion",
+            "Improving image generation with better captions",
+            "Magic3d: High-resolution text-to-3d content creation",
+            "Sv3d: Novel multi-view synthesis and 3d generation from a single image using latent video diffusion",
+            "Objaverse: A universe of annotated 3d objects",
+            "Zero-1-to-3: Zero-shot one image to 3d object",
+            "Neurallift-360: Lifting an in-the-wild 2d photo to a 3d object with 360 {{\\{\\\\\\backslashdeg}}\\} views.",
+            "Dreamfusion: Text-to-3d using 2d diffusion"
+          ],
+          "3 Method 3.1 Image-to-video Generation": [
+            "High-resolution image synthesis with latent diffusion models",
+            "Stability AI. Stable video diffusion: Scaling latent video diffusion models to large datasets.",
+            "Text2video-zero: Text-to-image diffusion models are zero-shot video generators.",
+            "Classifier-free diffusion guidance",
+            "Align your latents: High-resolution video synthesis with latent diffusion models",
+            "Elucidating the design space of diffusion-based generative models"
+          ],
+          "3 Method 3.2 Injecting Camera Control to Video Diffusion Model": [
+            "Sv3d: Novel multi-view synthesis and 3d generation from a single image using latent video diffusion",
+            "Adding conditional control to text-to-image diffusion models",
+            "Light field networks: Neural scene representations with single-evaluation rendering",
+            "Pl\u00fccker coordinates for lines in the space",
+            "Motionctrl: A unified and flexible motion controller for video generation."
+          ],
+          "3 Method 3.3 Ensuring 3D-Consistent Generation": [
+            "Spad: Spatially aware multiview diffusers",
+            "Consistent view synthesis with pose-guided diffusion models"
+          ],
+          "3 Method 3.4 Improving Object Motion": [
+            "Particlesfm: Exploiting dense point trajectories for localizing moving cameras in the wild",
+            "Frozen in time: A joint video and image encoder for end-to-end retrieval"
+          ],
+          "4 Experiments 4.1 Baselines": [
+            "Stereo magnification: Learning view synthesis using multiplane images",
+            "Motionctrl: A unified and flexible motion controller for video generation.",
+            "Stability AI. Stable video diffusion: Scaling latent video diffusion models to large datasets.",
+            "Videocrafter1: Open diffusion models for high-quality video generation."
+          ],
+          "4 Experiments 4.2 Metrics": [
+            "Structure-from-motion revisited",
+            "Gans trained by a two time-scale update rule converge to a local nash equilibrium",
+            "Towards accurate generative models of video: A new metric & challenges",
+            "Cameractrl: Enabling camera control for text-to-video generation"
+          ],
+          "4 Experiments 4.3 Main Results": [
+            "Stereo magnification: Learning view synthesis using multiplane images",
+            "Structure-from-motion revisited",
+            "Sdxl: Improving latent diffusion models for high-resolution image synthesis",
+            "Frozen in time: A joint video and image encoder for end-to-end retrieval"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.997885525226593,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Video Diffusion Models are Training-free Motion Interpreter and Controller",
+        "arxiv_id": "2405.14864",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract Video generation primarily aims to model authentic and customized motion across frames, making understanding and controlling the motion a crucial topic. Most diffusion-based studies on video motion focus on motion customization with training-based paradigms, which, however, demands substantial training resources and necessitates retraining for diverse models. Crucially, these approaches do not explore how video diffusion models encode cross-frame motion information in their features, lacking interpretability and transparency in their effectiveness. To answer this question, this paper introduces a novel perspective to understand, localize, and manipulate motion-aware features in video diffusion models. Through analysis using Principal Component Analysis (PCA), our work discloses that robust motion-aware feature already exists in video diffusion models. We present a new MOtion FeaTure (MOFT) by eliminating content correlation information and filtering motion channels. MOFT provides a distinct set of benefits, including the ability to encode comprehensive motion information with clear interpretability, extraction without the need for training, and generalizability across diverse architectures. Leveraging MOFT, we propose a novel training-free video motion control framework. Our method demonstrates competitive performance in generating natural and faithful motion, providing architecture-agnostic insights and applicability in a variety of downstream tasks. Figure 1: Characteristics of MOtion FeaTure (MOFT). (a-b) Rich Motion Information: We extract MOFT at the red point in the reference video in (a) and draw similarity heatmaps in (b) across various videos (yellow indicates higher similarity). The heatmap aligns well with the motion flow in the bottom left. (c) MOFT serves as guidance for controlling motion direction in the light-masked region, with the motion direction signal illustrated by red arrows in the first image.",
+        "sections": {
+          "1 Introduction": [
+            "Stable video diffusion: Scaling latent video diffusion models to large datasets.",
+            "Unsupervised semantic correspondence using stable diffusion",
+            "Principal component analysis",
+            "Animatediff: Animate your personalized text-to-image diffusion models without specific tuning.",
+            "Modelscope text-to-video technical report",
+            "Diffusion models beat gans on image synthesis",
+            "Motionctrl: A unified and flexible motion controller for video generation.",
+            "Dragnuwa: Fine-grained control in video generation by integrating text, image, and trajectory.",
+            "Emergent correspondence from image diffusion"
+          ],
+          "2 Related Works": [
+            "Stable video diffusion: Scaling latent video diffusion models to large datasets.",
+            "Unsupervised semantic correspondence using stable diffusion",
+            "Animatediff: Animate your personalized text-to-image diffusion models without specific tuning.",
+            "High-resolution image synthesis with latent diffusion models",
+            "Diffusion models beat gans on image synthesis",
+            "Videocomposer: Compositional video synthesis with motion controllability",
+            "Video diffusion models",
+            "Motionctrl: A unified and flexible motion controller for video generation.",
+            "Dragnuwa: Fine-grained control in video generation by integrating text, image, and trajectory.",
+            "Freecontrol: Training-free spatial control of any text-to-image diffusion model with any condition",
+            "Emergent correspondence from image diffusion"
+          ],
+          "3 MOtion FeaTures (MOFT)": [
+            "Animatediff: Animate your personalized text-to-image diffusion models without specific tuning.",
+            "Lora: Low-rank adaptation of large language models",
+            "Emergent correspondence from image diffusion"
+          ],
+          "3 MOtion FeaTures (MOFT) 3.1 Content Correlation Removal": [
+            "Principal component analysis",
+            "Denoising diffusion implicit models",
+            "Videofusion: Decomposed diffusion models for high-quality video generation"
+          ],
+          "3 MOtion FeaTures (MOFT) 3.3 MOFT Extraction": [
+            "Animatediff: Animate your personalized text-to-image diffusion models without specific tuning."
+          ],
+          "4 MOFT Guidance 4.1 Motion Control": [
+            "Dragdiffusion: Harnessing diffusion models for interactive point-based image editing",
+            "Denoising diffusion implicit models"
+          ],
+          "4 MOFT Guidance 4.2 Point-Drag Manipulation": [
+            "Drag your gan: Interactive point-based manipulation on the generative image manifold"
+          ],
+          "5 Experiments 5.1 Implementation details": [
+            "Animatediff: Animate your personalized text-to-image diffusion models without specific tuning.",
+            "Sparsectrl: Adding sparse controls to text-to-video diffusion models"
+          ],
+          "5 Experiments 5.2 Qualitative Results": [
+            "Modelscope text-to-video technical report",
+            "Cerspense: Zeroscope"
+          ],
+          "5 Experiments 5.3 Motion Feature Design": [
+            "Vbench: Comprehensive benchmark suite for video generative models",
+            "Space-time diffusion features for zero-shot text-driven motion transfer",
+            "Cotracker: It is better to track together",
+            "Perceptual quality assessment of smartphone photography"
+          ],
+          "5 Experiments 5.4 Point-drag Manipulation": [
+            "Drag your gan: Interactive point-based manipulation on the generative image manifold",
+            "Cotracker: It is better to track together",
+            "Dragnuwa: Fine-grained control in video generation by integrating text, image, and trajectory."
+          ],
+          "5 Experiments 5.5 User study": [
+            "runway: Gen-2",
+            "Dragnuwa: Fine-grained control in video generation by integrating text, image, and trajectory."
+          ],
+          "7 Supplementory Material 7.1 Limitations add Future Works": [
+            "Denoising diffusion implicit models"
+          ],
+          "7 Supplementory Material 7.2 Preliminary for Latent Optimization": [
+            "High-resolution image synthesis with latent diffusion models",
+            "Dragdiffusion: Harnessing diffusion models for interactive point-based image editing",
+            "Denoising diffusion probabilistic models",
+            "Auto-encoding variational bayes"
+          ],
+          "7 Supplementory Material 7.3 More Analysis and Details": [
+            "Dragdiffusion: Harnessing diffusion models for interactive point-based image editing"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.9964317083358765,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "FreeTraj: Tuning-Free Trajectory Control in Video Diffusion Models",
+        "arxiv_id": "2406.16863",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract Diffusion model has demonstrated remarkable capability in video generation, which further sparks interest in introducing trajectory control into the generation process. While existing works mainly focus on training-based methods (e.g., conditional adapter), we argue that diffusion model itself allows decent control over the generated content without requiring any training. In this study, we introduce a tuning-free framework to achieve trajectory-controllable video generation, by imposing guidance on both noise construction and attention computation. Specifically, 1) we first show several instructive phenomenons and analyze how initial noises influence the motion trajectory of generated content. 2) Subsequently, we propose FreeTraj, a tuning-free approach that enables trajectory control by modifying noise sampling and attention mechanisms. 3) Furthermore, we extend FreeTraj to facilitate longer and larger video generation with controllable trajectories. Equipped with these designs, users have the flexibility to provide trajectories manually or opt for trajectories automatically generated by the LLM trajectory planner. Extensive experiments validate the efficacy of our approach in enhancing the trajectory controllability of video diffusion models.",
+        "sections": {
+          "1 Introduction": [
+            "Peekaboo: Interactive video generation via masked-diffusion",
+            "Modelscope text-to-video technical report",
+            "Videocomposer: Compositional video synthesis with motion controllability",
+            "Scalecrafter: Tuning-free higher-resolution visual generation with diffusion models",
+            "Freeinit: Bridging initialization gap in video diffusion models",
+            "Freenoise: Tuning-free longer video diffusion via noise rescheduling",
+            "Move anything with layered scene diffusion"
+          ],
+          "2 Related Work": [
+            "Latent video diffusion models for high-fidelity video generation with arbitrary lengths",
+            "High-resolution image synthesis with latent diffusion models",
+            "Videocrafter1: Open diffusion models for high-quality video generation.",
+            "Direct-a-video: Customized video generation with user-directed camera movement and object motion",
+            "Denoising diffusion probabilistic models",
+            "Motion-conditioned diffusion model for controllable video synthesis",
+            "Stable video diffusion: Scaling latent video diffusion models to large datasets",
+            "Control-a-video: Controllable text-to-video generation with diffusion models",
+            "Tune-a-video: One-shot tuning of image diffusion models for text-to-video generation",
+            "Pixart-\u03b1\ud835\udefc\\alpha: Fast training of diffusion transformer for photorealistic text-to-image synthesis, 2023b.",
+            "Evalcrafter: Benchmarking and evaluating large video generation models",
+            "Lamp: Learn a motion pattern for few-shot-based video generation",
+            "Sdxl: Improving latent diffusion models for high-resolution image synthesis",
+            "Align your latents: High-resolution video synthesis with latent diffusion models",
+            "Motiondirector: Motion customization of text-to-video diffusion models",
+            "Animatediff: Animate your personalized text-to-image diffusion models without specific tuning",
+            "Videocomposer: Compositional video synthesis with motion controllability",
+            "Video diffusion models",
+            "Video-p2p: Video editing with cross-attention control",
+            "Video generation models as world simulators",
+            "Peekaboo: Interactive video generation via masked-diffusion",
+            "Trailblazer: Trajectory control for diffusion-based video generation",
+            "Diffusion models beat gans on image synthesis",
+            "Lumiere: A space-time diffusion model for video generation",
+            "Vbench: Comprehensive benchmark suite for video generative models"
+          ],
+          "3 Methodology 3.1 Preliminaries: Video Diffusion Models": [
+            "Align your latents: High-resolution video synthesis with latent diffusion models",
+            "High-resolution image synthesis with latent diffusion models",
+            "Imagen video: High definition video generation with diffusion models",
+            "Auto-encoding variational bayes"
+          ],
+          "3 Methodology 3.2 Noise Influence on Trajectory Control": [
+            "Freeinit: Bridging initialization gap in video diffusion models"
+          ],
+          "3 Methodology 3.3 The Framework of FreeTraj": [
+            "Videocrafter2: Overcoming data limitations for high-quality video diffusion models",
+            "Trailblazer: Trajectory control for diffusion-based video generation",
+            "Peekaboo: Interactive video generation via masked-diffusion"
+          ],
+          "3 Methodology 3.4 Longer Video Generation": [
+            "Freenoise: Tuning-free longer video diffusion via noise rescheduling"
+          ],
+          "4 Experiments": [
+            "Videocrafter2: Overcoming data limitations for high-quality video diffusion models",
+            "Simple open-vocabulary object detection",
+            "Towards accurate generative models of video: A new metric & challenges",
+            "Learning transferable visual models from natural language supervision"
+          ],
+          "4 Experiments 4.1 Evaluation of Trajectory Control": [
+            "Peekaboo: Interactive video generation via masked-diffusion",
+            "Trailblazer: Trajectory control for diffusion-based video generation"
+          ],
+          "6 Implementation 6.1 Hyperparameters": [
+            "Denoising diffusion implicit models"
+          ],
+          "6 Implementation 6.2 Prompts": [
+            "Peekaboo: Interactive video generation via masked-diffusion"
+          ],
+          "7 Longer and Larger Video Generation 7.1 Related Work of Long Video Generation.": [
+            "Nuwa-infinity: Autoregressive over autoregressive generation for infinite visual synthesis",
+            "Latent video diffusion models for high-fidelity video generation with arbitrary lengths",
+            "Gen-l-video: Multi-text to long video generation via temporal co-denoising",
+            "Phenaki: Variable length video generation from open domain textual description",
+            "Animate-a-story: Storytelling with retrieval-augmented video generation",
+            "Flexifilm: Long video generation with flexible conditions",
+            "Freenoise: Tuning-free longer video diffusion via noise rescheduling",
+            "Long video generation with time-agnostic vqgan and time-sensitive transformer",
+            "Nuwa-xl: Diffusion over diffusion for extremely long video generation",
+            "Video generation models as world simulators",
+            "Flexible diffusion modeling of long videos",
+            "Streamingt2v: Consistent, dynamic, and extendable long video generation from text"
+          ],
+          "7 Longer and Larger Video Generation 7.2 Results of Longer Generation": [
+            "Freenoise: Tuning-free longer video diffusion via noise rescheduling"
+          ],
+          "7 Longer and Larger Video Generation 7.3 Results of Larger Generation": [
+            "Scalecrafter: Tuning-free higher-resolution visual generation with diffusion models"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.9983125925064087,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "A Survey on Long Video Generation: Challenges, Methods, and Prospects",
+        "arxiv_id": "2403.16407",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Video generation is a rapidly advancing research area, garnering significant attention due to its broad range of applications. One critical aspect of this field is the generation of long-duration videos, which presents unique challenges and opportunities. This paper presents the first survey of recent advancements in long video generation and summarises them into two key paradigms: divide and conquer or temporal autoregressive. We delve into the common models employed in each paradigm, including aspects of network design and conditioning techniques. Furthermore, we offer a comprehensive overview and classification of the datasets and evaluation metrics which are crucial for advancing long video generation research. Concluding with a summary of existing studies, we also discuss the emerging challenges and future directions in this dynamic field. We hope that this survey will serve as an essential reference for researchers and practitioners in the realm of long video generation. ",
+        "sections": {
+          "1 Introduction": [
+            "Openai.com. Sora. Sora, 2024.",
+            "Vlogger: Make your dream a vlog",
+            "Nuwa-xl: Diffusion over diffusion for extremely long video generation"
+          ],
+          "2 Basic Video Generation Techniques 2.1 Four types of video generation models": [
+            "Denoising diffusion probabilistic models",
+            "Generating sequences with recurrent neural networks",
+            "Generative adversarial networks: An overview"
+          ],
+          "3 Long Video Generation Paradigms 3.1 Divide and Conquer": [
+            "Video generation beyond a single clip",
+            "Nuwa-xl: Diffusion over diffusion for extremely long video generation",
+            "Long video generation with time-agnostic vqgan and time-sensitive transformer",
+            "Cogvideo: Large-scale pretraining for text-to-video generation via transformers",
+            "Generating long videos of dynamic scenes"
+          ],
+          "3 Long Video Generation Paradigms 3.3 Diffusion Models with AutoRegressive": [
+            "Make pixels dance: High-dynamic video generation",
+            "Reuse and diffuse: Iterative denoising for text-to-video generation",
+            "Video probabilistic diffusion models in projected latent space",
+            "Align your latents: High-resolution video synthesis with latent diffusion models"
+          ],
+          "3 Long Video Generation Paradigms 3.4 Spatial Auto-regressive Models with Temporal AutoRegressive": [
+            "Transframer: Arbitrary frame prediction with generative models",
+            "Nuwa-infinity: Autoregressive over autoregressive generation for infinite visual synthesis",
+            "Look outside the room: Synthesizing a consistent long-term 3d scene video from a single image"
+          ],
+          "3 Long Video Generation Paradigms 3.5 GAN Models with Temporal AutoRegressive": [
+            "Enabling the encoder-empowered gan-based video generators for long video generation",
+            "Generating videos with dynamics-aware implicit generative adversarial networks",
+            "Stylegan-v: A continuous video generator with the price, image quality and perks of stylegan2"
+          ],
+          "3 Long Video Generation Paradigms 3.6 Mask Modeling with Temporal AutoRegressive": [
+            "Phenaki: Variable length video generation from open domain textual description",
+            "Align your latents: High-resolution video synthesis with latent diffusion models",
+            "Seine: Short-to-long video diffusion model for generative transition and prediction",
+            "Towards end-to-end generative modeling of long videos with memory-efficient bidirectional transformers"
+          ],
+          "4 Towards Photo-realistic Long Video Generation 4.1 Improve Temporal-Spatial Consistency": [
+            "Align your latents: High-resolution video synthesis with latent diffusion models",
+            "Video probabilistic diffusion models in projected latent space",
+            "Control-a-video: Controllable text-to-video generation with diffusion models",
+            "Videofusion: Decomposed diffusion models for high-quality video generation",
+            "Mcvd-masked conditional video diffusion for prediction, generation, and interpolation",
+            "Mv-diffusion: Motion-aware video diffusion model",
+            "Reuse and diffuse: Iterative denoising for text-to-video generation",
+            "Nuwa-infinity: Autoregressive over autoregressive generation for infinite visual synthesis",
+            "Flexible diffusion modeling of long videos"
+          ],
+          "4 Towards Photo-realistic Long Video Generation 4.2 Improve Content Continuity": [
+            "Mcvd-masked conditional video diffusion for prediction, generation, and interpolation",
+            "Videopoet: A large language model for zero-shot video generation",
+            "Videofusion: Decomposed diffusion models for high-quality video generation"
+          ],
+          "4 Towards Photo-realistic Long Video Generation 4.3 Improve Diversity of Long Video": [
+            "Align your latents: High-resolution video synthesis with latent diffusion models",
+            "Transframer: Arbitrary frame prediction with generative models",
+            "Nuwa-infinity: Autoregressive over autoregressive generation for infinite visual synthesis",
+            "Consistent view synthesis with pose-guided diffusion models"
+          ],
+          "5 Computational, Memory, and Data Resources": [
+            "Align your latents: High-resolution video synthesis with latent diffusion models",
+            "Video diffusion models with local-global context guidance",
+            "Video probabilistic diffusion models in projected latent space",
+            "Towards end-to-end generative modeling of long videos with memory-efficient bidirectional transformers",
+            "Reuse and diffuse: Iterative denoising for text-to-video generation"
+          ],
+          "6 Conclusion and Future Directions": [
+            "Openai.com. Sora. Sora, 2024.",
+            "Reuse and diffuse: Iterative denoising for text-to-video generation",
+            "FiT: Flexible Vision Transformer for Diffusion Model",
+            "Stylegan-v: A continuous video generator with the price, image quality and perks of stylegan2"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.0012554931454360485,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "MotionCtrl: A Unified and Flexible Motion Controller for Video Generation https://wzhouxiff.github.io/projects/MotionCtrl/",
+        "arxiv_id": "2312.03641",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Motions in a video primarily consist of camera motion, induced by camera movement, and object motion, resulting from object movement. Accurate control of both camera and object motion is essential for video generation. However, existing works either mainly focus on one type of motion or do not clearly distinguish between the two, limiting their control capabilities and diversity. Therefore, this paper presents MotionCtrl, a unified and flexible motion controller for video generation designed to effectively and independently control camera and object motion. The architecture and training strategy of MotionCtrl are carefully devised, taking into account the inherent properties of camera motion, object motion, and imperfect training data. Compared to previous methods, MotionCtrl offers three main advantages: 1) It effectively and independently controls camera motion and object motion, enabling more fine-grained motion control and facilitating flexible and diverse combinations of both types of motion. 2) Its motion conditions are determined by camera poses and trajectories, which are appearance-free and minimally impact the appearance or shape of objects in generated videos. 3) It is a relatively generalizable model that can adapt to a wide array of camera poses and trajectories once trained. Extensive qualitative and quantitative experiments have been conducted to demonstrate the superiority of MotionCtrl over existing methods. ",
+        "sections": {
+          "1 Introduction": [
+            "Imagen video: High definition video generation with diffusion models",
+            "Structure and content-guided video synthesis with diffusion models",
+            "Dragnuwa: Fine-grained control in video generation by integrating text, image, and trajectory",
+            "Photorealistic text-to-image diffusion models with deep language understanding",
+            "Videocomposer: Compositional video synthesis with motion controllability",
+            "Adding conditional control to text-to-image diffusion models",
+            "Lora: Low-rank adaptation of large language models",
+            "Animatediff: Animate your personalized text-to-image diffusion models without specific tuning",
+            "Particlesfm: Exploiting dense point trajectories for localizing moving cameras in the wild",
+            "Frozen in time: A joint video and image encoder for end-to-end retrieval",
+            "https://www.pika.art/",
+            "Blip-2: Bootstrapping language-image pre-training with frozen image encoders and large language models",
+            "Latent video diffusion models for high-fidelity long video generation",
+            "Videocrafter1: Open diffusion models for high-quality video generation.",
+            "Stereo magnification: Learning view synthesis using multiplane images"
+          ],
+          "2 Related Works": [
+            "Tune-a-video: One-shot tuning of image diffusion models for text-to-video generation",
+            "Imagen video: High definition video generation with diffusion models",
+            "Dragnuwa: Fine-grained control in video generation by integrating text, image, and trajectory",
+            "High-resolution image synthesis with latent diffusion models",
+            "Videocomposer: Compositional video synthesis with motion controllability"
+          ],
+          "3 Methodology 3.1 Preliminary": [
+            "Latent video diffusion models for high-fidelity long video generation",
+            "U-net: Convolutional networks for biomedical image segmentation"
+          ],
+          "3 Methodology 3.2 MotionCtrl": [
+            "Dragnuwa: Fine-grained control in video generation by integrating text, image, and trajectory",
+            "Towards accurate generative models of video: A new metric & challenges",
+            "T2i-adapter: Learning adapters to dig out more controllable ability for text-to-image diffusion models",
+            "Adding conditional control to text-to-image diffusion models",
+            "pytorch-fid: FID Score for PyTorch",
+            "Particlesfm: Exploiting dense point trajectories for localizing moving cameras in the wild",
+            "Frozen in time: A joint video and image encoder for end-to-end retrieval",
+            "Blip-2: Bootstrapping language-image pre-training with frozen image encoders and large language models",
+            "Latent video diffusion models for high-fidelity long video generation",
+            "Stereo magnification: Learning view synthesis using multiplane images"
+          ],
+          "4 Experiments 4.1 Experiment Settings": [
+            "Adam: A method for stochastic optimization",
+            "Towards accurate generative models of video: A new metric & challenges",
+            "pytorch-fid: FID Score for PyTorch",
+            "Particlesfm: Exploiting dense point trajectories for localizing moving cameras in the wild",
+            "Frozen in time: A joint video and image encoder for end-to-end retrieval",
+            "Latent video diffusion models for high-fidelity long video generation",
+            "Videocrafter1: Open diffusion models for high-quality video generation.",
+            "Stereo magnification: Learning view synthesis using multiplane images",
+            "Learning transferable visual models from natural language supervision"
+          ],
+          "4 Experiments 4.2 Comparisons with State-of-the-Art Methods": [
+            "Dragnuwa: Fine-grained control in video generation by integrating text, image, and trajectory",
+            "Videocomposer: Compositional video synthesis with motion controllability",
+            "Animatediff: Animate your personalized text-to-image diffusion models without specific tuning",
+            "Lora: Low-rank adaptation of large language models"
+          ],
+          "4 Experiments 4.3 Ablation Studies": [
+            "Towards accurate generative models of video: A new metric & challenges",
+            "Adding conditional control to text-to-image diffusion models",
+            "pytorch-fid: FID Score for PyTorch",
+            "Particlesfm: Exploiting dense point trajectories for localizing moving cameras in the wild",
+            "Stereo magnification: Learning view synthesis using multiplane images"
+          ],
+          "5 Conclusion": [
+            "Animatediff: Animate your personalized text-to-image diffusion models without specific tuning"
+          ],
+          "6 More Results of MotionCtrl Deployed on LVDM\u00a0[9]": [
+            "Latent video diffusion models for high-fidelity long video generation",
+            "Lora: Low-rank adaptation of large language models",
+            "Animatediff: Animate your personalized text-to-image diffusion models without specific tuning"
+          ],
+          "7 Results of MotionCtrl Deployed on AimateDiff\u00a0[8]": [
+            "Lora: Low-rank adaptation of large language models",
+            "Animatediff: Animate your personalized text-to-image diffusion models without specific tuning",
+            "Civitai: https://civitai.com."
+          ],
+          "8 More Results and Analyses of Ablation Studies": [
+            "Latent video diffusion models for high-fidelity long video generation"
+          ],
+          "9 More Discussions about the Related Works": [
+            "Tune-a-video: One-shot tuning of image diffusion models for text-to-video generation",
+            "Motiondirector: Motion customization of text-to-video diffusion models",
+            "Videocomposer: Compositional video synthesis with motion controllability",
+            "Animatediff: Animate your personalized text-to-image diffusion models without specific tuning",
+            "Lamp: Learn a motion pattern for few-shot-based video generation"
+          ],
+          "10 Details of Evaluation Datasets": [
+            "Stereo magnification: Learning view synthesis using multiplane images"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.9956468939781189,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Image Conductor: Precision Control for Interactive Video Synthesis",
+        "arxiv_id": "2406.15339",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract Filmmaking and animation production often require sophisticated techniques for coordinating camera transitions and object movements, typically involving labor-intensive real-world capturing. Despite advancements in generative AI for video creation, achieving precise control over motion for interactive video asset generation remains challenging. To this end, we propose Image Conductor, a method for precise control of camera transitions and object movements to generate video assets from a single image. An well-cultivated training strategy is proposed to separate distinct camera and object motion by camera LoRA weights and object LoRA weights. To further address cinematographic variations from ill-posed trajectories, we introduce a camera-free guidance technique during inference, enhancing object movements while eliminating camera transitions. Additionally, we develop a trajectory-oriented video motion data curation pipeline for training. Quantitative and qualitative experiments demonstrate our method\u2019s precision and fine-grained control in generating motion-controllable videos from images, advancing the practical application of interactive video synthesis.",
+        "sections": {
+          "1 Introduction": [
+            "Imagen video: High definition video generation with diffusion models",
+            "Particlesfm: Exploiting dense point trajectories for localizing moving cameras in the wild",
+            "Dragnuwa: Fine-grained control in video generation by integrating text, image, and trajectory",
+            "Lora: Low-rank adaptation of large language models",
+            "Adding conditional control to text-to-image diffusion models",
+            "Classifier-free diffusion guidance",
+            "Cotracker: It is better to track together",
+            "Raft: Recurrent all-pairs field transforms for optical flow",
+            "Motionctrl: A unified and flexible motion controller for video generation."
+          ],
+          "2 Approach 2.1 Overview": [
+            "Adding conditional control to text-to-image diffusion models"
+          ],
+          "2 Approach 2.2 Trajectory-Oriented Video Motion Data Construction.": [
+            "Dragnuwa: Fine-grained control in video generation by integrating text, image, and trajectory",
+            "Stereo magnification: Learning view synthesis using multiplane images",
+            "Adding conditional control to text-to-image diffusion models",
+            "Draganything: Motion control for anything using entity representation",
+            "Blip-2: Bootstrapping language-image pre-training with frozen image encoders and large language models",
+            "Cotracker: It is better to track together",
+            "Stable video diffusion: Scaling latent video diffusion models to large datasets",
+            "Raft: Recurrent all-pairs field transforms for optical flow",
+            "Frozen in time: A joint video and image encoder for end-to-end retrieval"
+          ],
+          "2 Approach 2.3 Motion-aware Image-to-video Architecture": [
+            "Learning transferable visual models from natural language supervision",
+            "U-net: Convolutional networks for biomedical image segmentation",
+            "Adding conditional control to text-to-image diffusion models",
+            "Animatediff: Animate your personalized text-to-image diffusion models without specific tuning",
+            "Sparsectrl: Adding sparse controls to text-to-video diffusion models"
+          ],
+          "2 Approach 2.5 Camera-free Guidance": [
+            "Classifier-free diffusion guidance"
+          ],
+          "3 Experiments 3.1 Comparisons with State-of-the-Art Methods": [
+            "Draganything: Motion control for anything using entity representation",
+            "Motionctrl: A unified and flexible motion controller for video generation.",
+            "Dragnuwa: Fine-grained control in video generation by integrating text, image, and trajectory"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.9961150884628296,
+        "extra": {
+          "expand": "not expand"
+        }
+      }
+    ],
+    "Latest research on controllability of video production": [
+      {
+        "title": "RefDrop: Controllable Consistency in Image or Video Generation via Reference Feature Guidance",
+        "arxiv_id": "2405.17661",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract There is a rapidly growing interest in controlling consistency across multiple generated images using diffusion models. Among various methods, recent works have found that simply manipulating attention modules by concatenating features from multiple reference images provides an efficient approach to enhancing consistency without fine-tuning. Despite its popularity and success, few studies have elucidated the underlying mechanisms that contribute to its effectiveness. In this work, we reveal that the popular approach is a linear interpolation of image self-attention and cross-attention between synthesized content and reference features, with a constant rank-1 coefficient. Motivated by this observation, we find that a rank-1 coefficient is not necessary and simplifies the controllable generation mechanism. The resulting algorithm, which we coin as RefDrop, allows users to control the influence of reference context in a direct and precise manner. Besides further enhancing consistency in single-subject image generation, our method also enables more interesting applications, such as the consistent generation of multiple subjects, suppressing specific features to encourage more diverse content, and high-quality personalized video generation by boosting temporal consistency. Even compared with state-of-the-art image-prompt-based generators, such as IP-Adapter, RefDrop is competitive in terms of controllability and quality while avoiding the need to train a separate image encoder for feature injection from reference images, making it a versatile plug-and-play solution for any image or video diffusion model. Our project webpage is https://sbyebss.github.io/refdrop/.",
+        "sections": {
+          "1 Introduction": [
+            "Dreambooth: Fine tuning text-to-image diffusion models for subject-driven generation",
+            "Make-a-story: Visual memory conditioned consistent story generation",
+            "Emu video: Factorizing text-to-video generation by explicit image conditioning",
+            "Sdxl: Improving latent diffusion models for high-resolution image synthesis",
+            "Anyv2v: A plug-and-play framework for any video-to-video editing tasks",
+            "Training-free consistent text-to-image generation",
+            "U-Net: Convolutional networks for biomedical image segmentation",
+            "Elite: Encoding visual concepts into textual embeddings for customized text-to-image generation"
+          ],
+          "2 Related work": [
+            "Diffusion hyperfeatures: Searching through time and space for semantic correspondence",
+            "Text2video-zero: Text-to-image diffusion models are zero-shot video generators",
+            "Training-free consistent text-to-image generation",
+            "Tune-a-video: One-shot tuning of image diffusion models for text-to-video generation",
+            "Ip-adapter: Text compatible image prompt adapter for text-to-image diffusion models",
+            "Videoelevator: Elevating video generation quality with versatile text-to-image diffusion models"
+          ],
+          "2 Related work Consistency in Image Generation": [
+            "Dreambooth: Fine tuning text-to-image diffusion models for subject-driven generation",
+            "Training-free consistent text-to-image generation",
+            "The chosen one: Consistent characters in text-to-image diffusion models",
+            "Elite: Encoding visual concepts into textual embeddings for customized text-to-image generation",
+            "Storydiffusion: Consistent self-attention for long-range image and video generation",
+            "Zero-shot generation of coherent storybook from plain text story using diffusion models"
+          ],
+          "2 Related work Temporal-consistency in video generation": [
+            "Text2video-zero: Text-to-image diffusion models are zero-shot video generators",
+            "Anyv2v: A plug-and-play framework for any video-to-video editing tasks",
+            "Tune-a-video: One-shot tuning of image diffusion models for text-to-video generation",
+            "Tokenflow: Consistent diffusion features for consistent video editing",
+            "Freeinit: Bridging initialization gap in video diffusion models"
+          ],
+          "3 Method 3.1 Background": [
+            "Training-free consistent text-to-image generation",
+            "Attention is all you need"
+          ],
+          "3 Method 3.2 Reference feature guidance": [
+            "Instantfamily: Masked attention for zero-shot multi-id image generation",
+            "Loss-guided diffusion models for plug-and-play controllable generation",
+            "Training-free consistent text-to-image generation",
+            "Classifier-free diffusion guidance",
+            "Stable video diffusion: Scaling latent video diffusion models to large datasets"
+          ],
+          "4 Experiments 4.1 Controllable consistency in  image generation": [
+            "Blip-diffusion: Pre-trained subject representation for controllable text-to-image generation and editing",
+            "Sdxl: Improving latent diffusion models for high-resolution image synthesis",
+            "Training-free consistent text-to-image generation",
+            "Ip-adapter: Text compatible image prompt adapter for text-to-image diffusion models",
+            "Storydiffusion: Consistent self-attention for long-range image and video generation"
+          ],
+          "4 Experiments 4.2 Improving temporal-consistency in video generation": [
+            "Text2video-zero: Text-to-image diffusion models are zero-shot video generators",
+            "Instantid: Zero-shot identity-preserving generation in seconds",
+            "Anyv2v: A plug-and-play framework for any video-to-video editing tasks",
+            "Magic-me: Identity-specific video customized diffusion",
+            "Tune-a-video: One-shot tuning of image diffusion models for text-to-video generation",
+            "Animatediff: Animate your personalized text-to-image diffusion models without specific tuning",
+            "Videoelevator: Elevating video generation quality with versatile text-to-image diffusion models",
+            "Freeinit: Bridging initialization gap in video diffusion models",
+            "Customvideo: Customizing text-to-video generation with multiple subjects"
+          ],
+          "6 Conclusion": [
+            "Scalable diffusion models with transformers"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.9473149180412292,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "CinePreGen: Camera Controllable Video Previsualization via Engine-powered Diffusion",
+        "arxiv_id": "2408.17424",
+        "depth": 0,
+        "child": {},
+        "abstract": "With advancements in video generative AI models (e.g., SORA), creators are increasingly using these techniques to enhance video previsualization. However, they face challenges with incomplete and mismatched AI workflows. Existing methods mainly rely on text descriptions and struggle with camera placement, a key component of previsualization. To address these issues, we introduce CinePreGen, a visual previsualization system enhanced with engine-powered diffusion. It features a novel camera and storyboard interface that offers dynamic control, from global to local camera adjustments. This is combined with a user-friendly AI rendering workflow, which aims to achieve consistent results through multi-masked IP-Adapter and engine simulation guidelines. In our comprehensive evaluation study, we demonstrate that our system reduces development viscosity (i.e., the complexity and challenges in the development process), meets users' needs for extensive control and iteration in the design process, and outperforms other AI video production workflows in cinematic camera movement, as shown by our experiments and a within-subjects user study. With its intuitive camera controls and realistic rendering of camera motion, CinePreGen shows great potential for improving video production for both individual creators and industry professionals.",
+        "sections": {
+          "2. Related Work 2.1. Video Generation with Motion Control": [
+            "Videocomposer: Compositional video synthesis with motion controllability",
+            "AnimateDiff: Animate Your Personalized Text-to-Image Diffusion Models without Specific Tuning",
+            "Yang, L",
+            "Wang, Z",
+            "Bai, T",
+            "Chen, J",
+            "J"
+          ],
+          "2. Related Work 2.2. Storyboard and PreVis tools": [
+            "Aesthetic-guided outward image cropping",
+            "Schematic storyboarding for video visualization and editing",
+            "Automated staging for virtual cinematography. In Proceedings of the 11th Annual International Conference on Motion, Interaction, and Games. 1\u201310.",
+            "Learning to Cut by Watching Movies. In Proceedings of the IEEE/CVF International Conference on Computer Vision. 6858\u20136868.",
+            "Occlusion Detection for Automatic Video Editing. In Proceedings of the ACM International Conference on Multimedia. 2255\u20132263.",
+            "Automatic generation of game level solutions as storyboards",
+            "A novel technique for size constrained video storyboard generation using statistical run test and spanning tree",
+            "Cine-AI: Generating video game cutscenes in the style of human directors",
+            "Automatic editing of footage from multiple social cameras",
+            "Storyboarding of recipes: grounded contextual generation. In Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics. 6040\u20136046.",
+            "Dynamic storyboard generation in an engine-based virtual environment for video production",
+            "Towards Automatic Animated Storyboarding.. In AAAI. 578\u2013583.",
+            "Automatic Instructional Video Creation from a Markdown-Formatted Tutorial. In The 34th Annual ACM Symposium on User Interface Software and Technology. 677\u2013690."
+          ],
+          "2. Related Work 2.3. AI Storytelling Visualization": [
+            "Nuwa-xl: Diffusion over diffusion for extremely long video generation",
+            "The Chosen One: Consistent Characters in Text-to-Image Diffusion Models",
+            "Talecrafter: Interactive story visualization with multiple characters",
+            "Synthesizing coherent story with auto-regressive latent diffusion models. In Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision. 2920\u20132930.",
+            "Intelligent Grimm\u2013Open-ended Visual Storytelling via Latent Diffusion Models",
+            "AutoStory: Generating Diverse Storytelling Images with Minimal Human Effort",
+            "Animate-a-story: Storytelling with retrieval-augmented video generation"
+          ],
+          "4. User Interface": [
+            "ComfyUI",
+            "Unity Real-Time Development Platform"
+          ],
+          "5. Implementation 5.1. Cinematic Camera Space": [
+            "Efficient composition for virtual camera control. In ACM SIGGRAPH/Eurographics Symposium on Computer Animation.",
+            "Dynamic storyboard generation in an engine-based virtual environment for video production"
+          ],
+          "5. Implementation 5.3. Diffusion Rendering": [
+            "IP-Adapter: Text Compatible Image Prompt Adapter for Text-to-Image Diffusion Models",
+            "AnimateDiff: Animate Your Personalized Text-to-Image Diffusion Models without Specific Tuning"
+          ],
+          "6. User Study": [
+            "Deforum"
+          ]
+        },
+        "source": "Search SearchFrom:arxiv",
+        "select_score": 0.9843242168426514,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "DiVE: DiT-based Video Generation with Enhanced Control",
+        "arxiv_id": "2409.01595",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract Generating high-fidelity, temporally consistent videos in autonomous driving scenarios faces a significant challenge, e.g. problematic maneuvers in corner cases. Despite recent video generation works are proposed to tackcle the mentioned problem, i.e. models built on top of Diffusion Transformers (DiT), works are still missing which are targeted on exploring the potential for multi-view videos generation scenarios. Noticeably, we propose the first DiT-based framework specifically designed for generating temporally and multi-view consistent videos which precisely match the given bird\u2019s-eye view layouts control. Specifically, the proposed framework leverages a parameter-free spatial view-inflated attention mechanism to guarantee the cross-view consistency, where joint cross-attention modules and ControlNet-Transformer are integrated to further improve the precision of control. To demonstrate our advantages, we extensively investigate the qualitative comparisons on nuScenes dataset, particularly in some most challenging corner cases. In summary, the effectiveness of our proposed method in producing long, controllable, and highly consistent videos under difficult conditions is proven to be effective.",
+        "sections": {
+          "1 Introduction": [
+            "Bevformer: Learning bird\u2019s-eye-view representation from multi-camera images via spatiotemporal transformers",
+            "Exploring object-centric temporal modeling for efficient multi-view 3d object detection",
+            "Pixart-\u03b4\ud835\udeff\\delta: Fast and controllable image generation with latent consistency models.",
+            "Open-sora: Democratizing efficient video production for all"
+          ],
+          "2 Methodology": [
+            "Unleashing generalization of end-to-end autonomous driving with controllable long video generation",
+            "Open-sora: Democratizing efficient video production for all"
+          ],
+          "2 Methodology 2.1 Mutli-Conditioned Spatial-Temporal DiT": [
+            "Scalable diffusion models with transformers",
+            "Learning transferable visual models from natural language supervision",
+            "High-resolution image synthesis with latent diffusion models",
+            "Pixart-\u03b4\ud835\udeff\\delta: Fast and controllable image generation with latent consistency models.",
+            "Exploring the limits of transfer learning with a unified text-to-text transformer",
+            "Open-sora: Democratizing efficient video production for all",
+            "Magicdrive: Street view generation with diverse 3d geometry control"
+          ],
+          "2 Methodology 2.2 Training": [
+            "Instructpix2pix: Learning to follow image editing instructions",
+            "Flow straight and fast: Learning to generate and transfer data with rectified flow",
+            "Improved denoising diffusion probabilistic models",
+            "Open-sora: Democratizing efficient video production for all"
+          ],
+          "3 Experiments 3.1 Setups": [
+            "Learning transferable visual models from natural language supervision",
+            "Bevformer: Learning bird\u2019s-eye-view representation from multi-camera images via spatiotemporal transformers",
+            "DINOv2: Learning robust visual features without supervision",
+            "Open-sora: Democratizing efficient video production for all",
+            "nuscenes: A multimodal dataset for autonomous driving",
+            "Musiq: Multi-scale image quality transformer"
+          ],
+          "3 Experiments 3.2 Quality of Controllable Generation": [
+            "Magicdrive: Street view generation with diverse 3d geometry control"
+          ],
+          "3 Experiments 3.3 Ablation Study": [
+            "Magicdrive: Street view generation with diverse 3d geometry control"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.9913356304168701,
+        "extra": {
+          "expand": "not expand"
+        }
+      }
+    ],
+    "Research on video generation controllability": [
+      {
+        "title": "DreaMoving: A Human Video Generation Framework based on Diffusion Models",
+        "arxiv_id": "2312.05107",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract In this paper, we present DreaMoving, a diffusion-based controllable video generation framework to produce high-quality customized human videos. Specifically, given target identity and posture sequences, DreaMoving can generate a video of the target identity moving or dancing anywhere driven by the posture sequences. To this end, we propose a Video ControlNet for motion-controlling and a Content Guider for identity preserving. The proposed model is easy to use and can be adapted to most stylized diffusion models to generate diverse results. The project page is available at https://dreamoving.github.io/dreamoving. ",
+        "sections": {
+          "1 Introduction": [
+            "Dreambooth: Fine tuning text-to-image diffusion models for subject-driven generation",
+            "LoRA: Low-rank adaptation of large language models",
+            "Adding conditional control to text-to-image diffusion models"
+          ],
+          "2 Architecture": [
+            "High-resolution image synthesis with latent diffusion models",
+            "Animatediff: Animate your personalized text-to-image diffusion models without specific tuning"
+          ],
+          "2 Architecture 2.1 Data Collection and Preprocessing": [
+            "Minigpt-v2: large language model as a unified interface for vision-language multi-task learning"
+          ],
+          "2 Architecture 2.2 Motion Block": [
+            "Animatediff: Animate your personalized text-to-image diffusion models without specific tuning"
+          ],
+          "2 Architecture 2.3 Content Guider": [
+            "Ip-adapter: Text compatible image prompt adapter for text-to-image diffusion models"
+          ],
+          "2 Architecture 2.4 Model Training": [
+            "Openclip",
+            "Ip-adapter: Text compatible image prompt adapter for text-to-image diffusion models",
+            "Decoupled weight decay regularization",
+            "Arcface: Additive angular margin loss for deep face recognition",
+            "Frozen in time: A joint video and image encoder for end-to-end retrieval",
+            "Zoedepth: Zero-shot transfer by combining relative and metric depth",
+            "Effective whole-body pose estimation with two-stages distillation"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.9977182149887085,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "ControlNeXt: Powerful and Efficient Control for Image and Video Generation",
+        "arxiv_id": "2408.06070",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract Diffusion models have demonstrated remarkable and robust abilities in both image and video generation. To achieve greater control over generated results, researchers introduce additional architectures, such as ControlNet, Adapters and ReferenceNet, to integrate conditioning controls. However, current controllable generation methods often require substantial additional computational resources, especially for video generation, and face challenges in training or exhibit weak control. In this paper, we propose ControlNeXt: a powerful and efficient method for controllable image and video generation. We first design a more straightforward and efficient architecture, replacing heavy additional branches with minimal additional cost compared to the base model. Such a concise structure also allows our method to seamlessly integrate with other LoRA weights, enabling style alteration without the need for additional training. As for training, we reduce up to 90% of learnable parameters compared to the alternatives. Furthermore, we propose another method called Cross Normalization (CN) as a replacement for \u201czero-convolution\u201d to achieve fast and stable training convergence. We have conducted various experiments with different base models across images and videos, demonstrating the robustness of our method.",
+        "sections": {
+          "1 Introduction": [
+            "Stability. Stable diffusion v1.5.",
+            "Sdxl: Improving latent diffusion models for high-resolution image synthesis",
+            "Controllable generation with text-to-image diffusion models: A survey",
+            "Lora: Low-rank adaptation of large language models",
+            "High-resolution image synthesis with latent diffusion models",
+            "Animate anyone: Consistent and controllable image-to-video synthesis for character animation",
+            "T2i-adapter: Learning adapters to dig out more controllable ability for text-to-image diffusion models",
+            "Adding conditional control to text-to-image diffusion models",
+            "Llama-adapter: Efficient fine-tuning of language models with zero-init attention",
+            "Laion-5b: An open large-scale dataset for training next generation image-text models"
+          ],
+          "2 Related Work": [
+            "Stability. Stable diffusion v1.5.",
+            "All are worth words: A vit backbone for diffusion models",
+            "BERT: Pre-training of deep bidirectional transformers for language understanding",
+            "Scalable diffusion models with transformers",
+            "Learning transferable visual models from natural language supervision",
+            "Lora: Low-rank adaptation of large language models",
+            "Diffusion models beat gans on image synthesis",
+            "Adding conditional control to text-to-image diffusion models",
+            "Denoising diffusion probabilistic models",
+            "Exploring the limits of transfer learning with a unified text-to-text transformer",
+            "Composer: Creative and controllable image synthesis with composable conditions",
+            "Tackling the singularities at the endpoints of time intervals in diffusion models"
+          ],
+          "3 Method 3.1 Preliminaries": [
+            "Adding conditional control to text-to-image diffusion models"
+          ],
+          "3 Method 3.2 Architecture Pruning": [
+            "Lora: Low-rank adaptation of large language models",
+            "Deep residual learning for image recognition",
+            "Laion-5b: An open large-scale dataset for training next generation image-text models",
+            "Adding conditional control to text-to-image diffusion models"
+          ],
+          "3 Method 3.3 Cross Normalization": [
+            "Batch normalization: Accelerating deep network training by reducing internal covariate shift",
+            "Adding conditional control to text-to-image diffusion models",
+            "Rethinking imagenet pre-training"
+          ],
+          "4 Experiments 4.1 Generality": [
+            "Stability. Stable diffusion v1.5.",
+            "Sdxl: Improving latent diffusion models for high-resolution image synthesis",
+            "Scaling rectified flow transformers for high-resolution image synthesis",
+            "Denoising diffusion probabilistic models",
+            "Stable video diffusion: Scaling latent video diffusion models to large datasets"
+          ],
+          "4 Experiments 4.2 Training Convergence": [
+            "Adding conditional control to text-to-image diffusion models"
+          ],
+          "4 Experiments 4.4 Plug-and-Play": [
+            "Stability. Stable diffusion v1.5.",
+            "Lora: Low-rank adaptation of large language models",
+            "Civitai 2024. Civitai",
+            "Anything v3",
+            "Dreamshaper"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.9931638836860657,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "TrackGo: A Flexible and Efficient Method for Controllable Video Generation",
+        "arxiv_id": "2408.11475",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract Recent years have seen substantial progress in diffusion-based controllable video generation. However, achieving precise control in complex scenarios, including fine-grained object parts, sophisticated motion trajectories, and coherent background movement, remains a challenge. In this paper, we introduce TrackGo, a novel approach that leverages free-form masks and arrows for conditional video generation. This method offers users with a flexible and precise mechanism for manipulating video content. We also propose the TrackAdapter for control implementation, an efficient and lightweight adapter designed to be seamlessly integrated into the temporal self-attention layers of a pretrained video generation model. This design leverages our observation that the attention map of these layers can accurately activate regions corresponding to motion in videos. Our experimental results demonstrate that our new approach, enhanced by the TrackAdapter, achieves state-of-the-art performance on key metrics such as FVD, FID, and ObjMC scores. The project page of TrackGo can be found at: https://zhtjtcz.github.io/TrackGo-Page/",
+        "sections": {
+          "Introduction": [
+            "DragAnything: Motion Control for Anything using Entity Representation.",
+            "Dragnuwa: Fine-grained control in video generation by integrating text, image, and trajectory.",
+            "Stable video diffusion: Scaling latent video diffusion models to large datasets",
+            "Adding conditional control to text-to-image diffusion models",
+            "Denoising diffusion probabilistic models",
+            "Align your latents: High-resolution video synthesis with latent diffusion models",
+            "Boximator: Generating Rich and Controllable Motions for Video Synthesis",
+            "Animate anyone: Consistent and controllable image-to-video synthesis for character animation.",
+            "TrailBlazer: Trajectory Control for Diffusion-Based Video Generation"
+          ],
+          "Related Work Diffusion Model-based Image and Video Generation": [
+            "Improving image generation with better captions",
+            "Animatediff: Animate your personalized text-to-image diffusion models without specific tuning.",
+            "Align your latents: High-resolution video synthesis with latent diffusion models",
+            "Denoising diffusion probabilistic models",
+            "Stable video diffusion: Scaling latent video diffusion models to large datasets",
+            "I2vgen-xl: High-quality image-to-video synthesis via cascaded diffusion models"
+          ],
+          "Related Work Controllable Image and Video Generation": [
+            "DragAnything: Motion Control for Anything using Entity Representation.",
+            "Magicanimate: Temporally consistent human image animation using diffusion model",
+            "Animatediff: Animate your personalized text-to-image diffusion models without specific tuning.",
+            "Lora: Low-rank adaptation of large language models",
+            "Boximator: Generating Rich and Controllable Motions for Video Synthesis",
+            "Disco: Disentangled control for realistic human dance generation",
+            "T2i-adapter: Learning adapters to dig out more controllable ability for text-to-image diffusion models",
+            "Adding conditional control to text-to-image diffusion models",
+            "Videocomposer: Compositional video synthesis with motion controllability",
+            "Animate anyone: Consistent and controllable image-to-video synthesis for character animation.",
+            "Dragnuwa: Fine-grained control in video generation by integrating text, image, and trajectory.",
+            "Motionctrl: A unified and flexible motion controller for video generation.",
+            "Dreampose: Fashion image-to-video synthesis via stable diffusion"
+          ],
+          "Methodology Overview": [
+            "Stable video diffusion: Scaling latent video diffusion models to large datasets",
+            "Align your latents: High-resolution video synthesis with latent diffusion models"
+          ],
+          "Methodology Point Trajectories Generation": [
+            "Tracking anything with decoupled video segmentation",
+            "Some methods for classification and analysis of multivariate observations",
+            "Cotracker: It is better to track together"
+          ],
+          "Methodology Injecting Motion Conditions via TrackAdapter": [
+            "Animate anyone: Consistent and controllable image-to-video synthesis for character animation."
+          ],
+          "Methodology Experiment Settings": [
+            "Towards accurate generative models of video: A new metric & challenges",
+            "Gans trained by a two time-scale update rule converge to a local nash equilibrium",
+            "Stable video diffusion: Scaling latent video diffusion models to large datasets",
+            "Decoupled weight decay regularization",
+            "Animate anyone: Consistent and controllable image-to-video synthesis for character animation."
+          ],
+          "Methodology Qualitative Evaluation": [
+            "DragAnything: Motion Control for Anything using Entity Representation."
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.9986754059791565,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "DragNUWA: Fine-grained Control in Video Generation by Integrating Text, Image, and Trajectory",
+        "arxiv_id": "2308.08089",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Controllable video generation has gained significant attention in recent years. However, two main limitations persist: Firstly, most existing works focus on either text, image, or trajectory-based control, leading to an inability to achieve fine-grained control in videos. Secondly, trajectory control research is still in its early stages, with most experiments being conducted on simple datasets like Human3.6M. This constraint limits the models\u2019 capability to process open-domain images and effectively handle complex curved trajectories. In this paper, we propose DragNUWA, an open-domain diffusion-based video generation model. To tackle the issue of insufficient control granularity in existing works, we simultaneously introduce text, image, and trajectory information to provide fine-grained control over video content from semantic, spatial, and temporal perspectives. To resolve the problem of limited open-domain trajectory control in current research, We propose trajectory modeling with three aspects: a Trajectory Sampler (TS) to enable open-domain control of arbitrary trajectories, a Multiscale Fusion (MF) to control trajectories in different granularities, and an Adaptive Training (AT) strategy to generate consistent videos following trajectories. Our experiments validate the effectiveness of DragNUWA, demonstrating its superior performance in fine-grained control in video generation. The homepage link is https://www.microsoft.com/en-us/research/project/dragnuwa/     Figure 1: Samples generated by DragNUWA are presented, with the first column showcasing three input controls: text, image, and trajectory. The second, third, and fourth columns exhibit the 5th, 10th, and 15th frames of the output video, respectively. There are 16 frames with a resolution of 576\u00d7320576320576\\times 320 in total. DragNUWA is capable of concurrently controlling the movement of the camera, multiple objects, and complex trajectories, enabling the generation of videos featuring both real-world scenes and artistic paintings.  ",
+        "sections": {
+          "1 Introduction": [
+            "Click To Move: Controlling Video Generation With Sparse Motion",
+            "Ipoke: Poking a still image for controlled stochastic video synthesis",
+            "Make It Move: Controllable Image-to-Video Generation With Text Descriptions",
+            "Deep High-Resolution Representation Learning for Visual Recognition",
+            "Motion-Conditioned Diffusion Model for Controllable Video Synthesis",
+            "Deep Predictive Coding Networks for Video Prediction and Unsupervised Learning",
+            "Controllable Video Generation With Sparse Trajectories",
+            "GODIVA: Generating Open-DomaIn Videos from nAtural Descriptions",
+            "Understanding Object Dynamics for Interactive Image-to-Video Synthesis"
+          ],
+          "2 Related Works 2.1 Text/Image Control in Video Synthesis": [
+            "Structure and content-guided video synthesis with diffusion models",
+            "Phenaki: Variable Length Video Generation from Open Domain Textual Descriptions",
+            "NUWA-XL: Diffusion over Diffusion for eXtremely Long Video Generation",
+            "Make-A-Video: Text-to-Video Generation without Text-Video Data",
+            "Make It Move: Controllable Image-to-Video Generation With Text Descriptions",
+            "Deep Predictive Coding Networks for Video Prediction and Unsupervised Learning",
+            "CogVideo: Large-scale Pretraining for Text-to-Video Generation via Transformers",
+            "Imagen video: High ~video generation with diffusion models",
+            "GODIVA: Generating Open-DomaIn Videos from nAtural Descriptions",
+            "N\\\"UWA: Visual Synthesis Pre-training for Neural visUal World creAtion"
+          ],
+          "2 Related Works 2.2 Trajectory Control in Video Synthesis": [
+            "Click To Move: Controlling Video Generation With Sparse Motion",
+            "Ipoke: Poking a still image for controlled stochastic video synthesis",
+            "VideoComposer: Compositional Video Synthesis with Motion Controllability",
+            "Deep High-Resolution Representation Learning for Visual Recognition",
+            "Motion-Conditioned Diffusion Model for Controllable Video Synthesis",
+            "Controllable Video Generation With Sparse Trajectories",
+            "Future Video Synthesis With Object Motion Prediction",
+            "Everybody Dance Now",
+            "Understanding Object Dynamics for Interactive Image-to-Video Synthesis"
+          ],
+          "3 Method": [
+            "Motion-Conditioned Diffusion Model for Controllable Video Synthesis",
+            "Make It Move: Controllable Image-to-Video Generation With Text Descriptions",
+            "DTVNet: Dynamic Time-Lapse Video Generation via Single Still Image",
+            "GODIVA: Generating Open-DomaIn Videos from nAtural Descriptions"
+          ],
+          "3 Method 3.1 Trajectory Sampler (TS)": [
+            "Unifying flow, stereo and depth estimation"
+          ],
+          "3 Method 3.2 Multiscale Fusion (MF)": [
+            "High-Resolution Image Synthesis With Latent Diffusion Models",
+            "Learning transferable visual models from natural language supervision"
+          ],
+          "3 Method 3.4 Inference": [
+            "Learning transferable visual models from natural language supervision"
+          ],
+          "4 Experiments 4.1 Datasets": [
+            "Frozen in time: A joint video and image encoder for end-to-end retrieval",
+            "BLIP-2: Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models"
+          ],
+          "4 Experiments 4.2 Implementation Details": [
+            "Adam: A method for stochastic optimization"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.9977349042892456,
+        "extra": {
+          "expand": "not expand"
+        }
+      }
+    ],
+    "Survey papers on controllability of video generation": [
+      {
+        "title": "MimicMotion: High-Quality Human Motion Video Generation with Confidence-aware Pose Guidance",
+        "arxiv_id": "2406.19680",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract In recent years, generative artificial intelligence has achieved significant advancements in the field of image generation, spawning a variety of applications. However, video generation still faces considerable challenges in various aspects, such as controllability, video length, and richness of details, which hinder the application and popularization of this technology. In this work, we propose a controllable video generation framework, dubbed MimicMotion, which can generate high-quality videos of arbitrary length mimicking specific motion guidance. Compared with previous methods, our approach has several highlights. Firstly, we introduce confidence-aware pose guidance that ensures high frame quality and temporal smoothness. Secondly, we introduce regional loss amplification based on pose confidence, which significantly reduces image distortion. Lastly, for generating long and smooth videos, we propose a progressive latent fusion strategy. By this means, we can produce videos of arbitrary length with acceptable resource consumption. With extensive experiments and user studies, MimicMotion demonstrates significant improvements over previous approaches in various aspects. Detailed results and comparisons are available on our project page: https://tencent.github.io/MimicMotion.",
+        "sections": {
+          "1 Introduction": [
+            "Dreamoving: A human video generation framework based on diffusion models",
+            "Magicanimate: Temporally consistent human image animation using diffusion model",
+            "Animate anyone: Consistent and controllable image-to-video synthesis for character animation",
+            "Disco: Disentangled control for realistic human dance generation",
+            "Magicpose: Realistic human poses and facial expressions retargeting with identity-aware diffusion",
+            "Dreampose: Fashion image-to-video synthesis via stable diffusion",
+            "Champ: Controllable and consistent human image animation with 3d parametric guidance",
+            "Follow your pose: Pose-guided text-to-video generation using pose-free videos"
+          ],
+          "2 Related work 2.1 Diffusion models for image/video generation": [
+            "High-resolution image synthesis with latent diffusion models",
+            "Videogpt: Video generation using vq-vae and transformers",
+            "Make-a-video: Text-to-video generation without text-video data",
+            "Denoising diffusion probabilistic models",
+            "Stable video diffusion: Scaling latent video diffusion models to large datasets"
+          ],
+          "2 Related work 2.2 Pose-guided human motion transfer": [
+            "Everybody dance now",
+            "Dreamoving: A human video generation framework based on diffusion models",
+            "First order motion model for image animation",
+            "Thin-plate spline motion model for image animation",
+            "Champ: Controllable and consistent human image animation with 3d parametric guidance"
+          ],
+          "2 Related work 2.3 Long video generation": [
+            "Multidiffusion: Fusing diffusion paths for controlled image generation",
+            "Latent video diffusion models for high-fidelity long video generation",
+            "Nuwa-xl: Diffusion over diffusion for extremely long video generation",
+            "Lumiere: A space-time diffusion model for video generation"
+          ],
+          "3 Method 3.1 Preliminaries": [
+            "Denoising diffusion probabilistic models"
+          ],
+          "3 Method 3.2 Data preparation": [
+            "Effective whole-body pose estimation with two-stages distillation"
+          ],
+          "3 Method 3.3 Pose-guided Video Diffusion Model": [
+            "Stable video diffusion: Scaling latent video diffusion models to large datasets",
+            "High-resolution image synthesis with latent diffusion models",
+            "Learning transferable visual models from natural language supervision"
+          ],
+          "3 Method 3.4 Confidence-aware pose guidance": [
+            "Effective whole-body pose estimation with two-stages distillation",
+            "MooreThreads/Moore-AnimateAnyone, May 2024."
+          ],
+          "3 Method 3.5 Progressive latent fusion for long video generation": [
+            "Multidiffusion: Fusing diffusion paths for controlled image generation",
+            "Lumiere: A space-time diffusion model for video generation"
+          ],
+          "4 Experiments 4.2 Comparison to state-of-the-art methods": [
+            "Musev: Infinite-length and high fidelity virtual human video generation with visual conditioned parallel denoising",
+            "Disco: Disentangled control for realistic human dance generation",
+            "MooreThreads/Moore-AnimateAnyone, May 2024.",
+            "Towards accurate generative models of video: A new metric & challenges",
+            "Conditional gan with discriminative filter generation for text-to-video synthesis",
+            "Learning high fidelity depths of dressed humans by watching social media dance videos",
+            "Magicpose: Realistic human poses and facial expressions retargeting with identity-aware diffusion"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.9968957901000977,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Collaborative Video Diffusion: Consistent Multi-video Generation with Camera Control",
+        "arxiv_id": "2405.17414",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract Research on video generation has recently made tremendous progress, enabling high-quality videos to be generated from text prompts or images. Adding control to the video generation process is an important goal moving forward and recent approaches that condition video generation models on camera trajectories make strides towards it. Yet, it remains challenging to generate a video of the same scene from multiple different camera trajectories. Solutions to this multi-video generation problem could enable large-scale 3D scene generation with editable camera trajectories, among other applications. We introduce collaborative video diffusion (CVD) as an important step towards this vision. The CVD framework includes a novel cross-video synchronization module that promotes consistency between corresponding frames of the same video rendered from different camera poses using an epipolar attention mechanism. Trained on top of a state-of-the-art camera-control module for video generation, CVD generates multiple videos rendered from different camera trajectories with significantly better consistency than baselines, as shown in extensive experiments. Project page: https://collaborativevideodiffusion.github.io/.",
+        "sections": {
+          "1 Introduction": [
+            "Dragnuwa: Fine-grained control in video generation by integrating text, image, and trajectory",
+            "Motionctrl: A unified and flexible motion controller for video generation",
+            "Lora: Low-rank adaptation of large language models",
+            "Stereo magnification: Learning view synthesis using multiplane images",
+            "Cameractrl: Enabling camera control for text-to-video generation",
+            "Frozen in time: A joint video and image encoder for end-to-end retrieval",
+            "Denoising diffusion probabilistic models",
+            "Video generation models as world simulators",
+            "Structure and content-guided video synthesis with diffusion models"
+          ],
+          "2 Related Work Video Diffusion Models.": [
+            "High-resolution image synthesis with latent diffusion models",
+            "Animatediff: Animate your personalized text-to-image diffusion models without specific tuning",
+            "Video diffusion models",
+            "Preserve your own correlation: A noise prior for video diffusion models",
+            "Align your latents: High-resolution video synthesis with latent diffusion models",
+            "Video generation models as world simulators"
+          ],
+          "2 Related Work Controllable Video Generation.": [
+            "Analytisch-Geometrische Entwicklungen",
+            "Dragnuwa: Fine-grained control in video generation by integrating text, image, and trajectory",
+            "Motionctrl: A unified and flexible motion controller for video generation",
+            "Lora: Low-rank adaptation of large language models",
+            "Motiondirector: Motion customization of text-to-video diffusion models",
+            "Cameractrl: Enabling camera control for text-to-video generation",
+            "Adding conditional control to text-to-image diffusion models",
+            "Animatediff: Animate your personalized text-to-image diffusion models without specific tuning",
+            "Structure and content-guided video synthesis with diffusion models"
+          ],
+          "2 Related Work Multi-View Image Generation.": [
+            "Consistent view synthesis with pose-guided diffusion models",
+            "Text2room: Extracting textured 3d meshes from 2d text-to-image models",
+            "Stereo magnification: Learning view synthesis using multiplane images",
+            "Zero-1-to-3: Zero-shot one image to 3d object",
+            "Diffdreamer: Towards consistent unsupervised single-view scene extrapolation with conditional diffusion models",
+            "Multidiffusion: Fusing diffusion paths for controlled image generation",
+            "Diffcollage: Parallel generation of large content with diffusion models",
+            "GeNVS: Generative novel view synthesis with 3D-aware diffusion models",
+            "Scenescape: Text-driven consistent scene generation",
+            "State of the art on diffusion models for visual computing",
+            "Infinite nature: Perpetual view generation of natural scenes from a single image"
+          ],
+          "3 Collaborative Video Generation": [
+            "Generative rendering: Controllable 4d-guided video generation with 2d diffusion models",
+            "Video diffusion models",
+            "Denoising diffusion probabilistic models"
+          ],
+          "4 Collaborative Video Diffusion with Camera Control": [
+            "Stereo magnification: Learning view synthesis using multiplane images",
+            "Cameractrl: Enabling camera control for text-to-video generation",
+            "Frozen in time: A joint video and image encoder for end-to-end retrieval"
+          ],
+          "4 Collaborative Video Diffusion with Camera Control 4.1 Cross-View Synchronization Module": [
+            "Attention is all you need",
+            "Pix2video: Video editing using image diffusion",
+            "Consistent view synthesis with pose-guided diffusion models",
+            "Latent video diffusion models for high-fidelity long video generation",
+            "Animatediff: Animate your personalized text-to-image diffusion models without specific tuning",
+            "Stable video diffusion: Scaling latent video diffusion models to large datasets",
+            "Video generation models as world simulators"
+          ],
+          "4 Collaborative Video Diffusion with Camera Control 4.2 Hybrid Training Strategy from Two Datasets": [
+            "Stereo magnification: Learning view synthesis using multiplane images",
+            "High-resolution image synthesis with latent diffusion models",
+            "Cameractrl: Enabling camera control for text-to-video generation",
+            "Animatediff: Animate your personalized text-to-image diffusion models without specific tuning",
+            "Frozen in time: A joint video and image encoder for end-to-end retrieval"
+          ],
+          "4 Collaborative Video Diffusion with Camera Control 4.3 Towards More Videos": [
+            "Universal guidance for diffusion models"
+          ],
+          "5 Experiments 5.1 Quantitative Results": [
+            "SuperGlue: Learning feature matching with graph neural networks",
+            "High-fidelity performance metrics for generative models in pytorch",
+            "Motionctrl: A unified and flexible motion controller for video generation",
+            "Stereo magnification: Learning view synthesis using multiplane images",
+            "Learning transferable visual models from natural language supervision",
+            "Cameractrl: Enabling camera control for text-to-video generation",
+            "Random sample consensus: a paradigm for model fitting with applications to image analysis and automated cartography",
+            "Animatediff: Animate your personalized text-to-image diffusion models without specific tuning",
+            "Sparsectrl: Adding sparse controls to text-to-video diffusion models",
+            "Demystifying mmd gans",
+            "Stable video diffusion: Scaling latent video diffusion models to large datasets",
+            "Gans trained by a two time-scale update rule converge to a local nash equilibrium",
+            "Frozen in time: A joint video and image encoder for end-to-end retrieval"
+          ],
+          "5 Experiments 5.2 Qualitative Results": [
+            "Sparsectrl: Adding sparse controls to text-to-video diffusion models",
+            "Stable video diffusion: Scaling latent video diffusion models to large datasets",
+            "Cameractrl: Enabling camera control for text-to-video generation",
+            "Motionctrl: A unified and flexible motion controller for video generation"
+          ],
+          "6 Discussion": [
+            "Zero-1-to-3: Zero-shot one image to 3d object"
+          ],
+          "6 Discussion 6.1 Limitations": [
+            "Cameractrl: Enabling camera control for text-to-video generation",
+            "Animatediff: Animate your personalized text-to-image diffusion models without specific tuning"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.9799315333366394,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "A Comprehensive Survey on Human Video Generation: Challenges, Methods, and Insights",
+        "arxiv_id": "2407.08428",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract Human video generation is a dynamic and rapidly evolving task that aims to synthesize 2D human body video sequences with generative models given control conditions such as text, audio, and pose. With the potential for wide-ranging applications in film, gaming, and virtual communication, the ability to generate natural and realistic human video is critical. Recent advancements in generative models have laid a solid foundation for the growing interest in this area. Despite the significant progress, the task of human video generation remains challenging due to the consistency of characters, the complexity of human motion, and difficulties in their relationship with the environment. This survey provides a comprehensive review of the current state of human video generation, marking, to the best of our knowledge, the first extensive literature review in this domain. We start with an introduction to the fundamentals of human video generation and the evolution of generative models that have facilitated the field\u2019s growth. We then examine the main methods employed for three key sub-tasks within human video generation: text-driven, audio-driven, and pose-driven motion generation. These areas are explored concerning the conditions that guide the generation process. Furthermore, we offer a collection of the most commonly utilized datasets and the evaluation metrics that are crucial in assessing the quality and realism of generated videos. The survey concludes with a discussion of the current challenges in the field and suggests possible directions for future research. The goal of this survey is to offer the research community a clear and holistic view of the advancements in human video generation, highlighting the milestones achieved and the challenges that lie ahead.",
+        "sections": {
+          "I Introduction": [
+            "Speech drives templates: Co-speech gesture synthesis with learned templates",
+            "Generative adversarial nets",
+            "Auto-encoding variational bayes",
+            "Magicdance: Realistic human dance video generation with motions & facial expressions transfer",
+            "Denoising diffusion probabilistic models",
+            "Id-animator: Zero-shot identity-preserving human video generation"
+          ],
+          "II Comparisons with Previous Surveys": [
+            "Human motion generation: A survey",
+            "Video generative adversarial networks: a review",
+            "Appearance and pose-guided human generation: A survey",
+            "What comprises a good talking-head video generation?: A survey and benchmark"
+          ],
+          "III Dataset and Matrix III-B Datasets": [
+            "Effective whole-body pose estimation with two-stages distillation",
+            "Posenet: A convolutional network for real-time 6-dof camera relocalization",
+            "Motionbert: A unified perspective on learning human motion representations",
+            "Digging into self-supervised monocular depth estimation",
+            "Raft: Recurrent all-pairs field transforms for optical flow",
+            "Flownet 2.0: Evolution of optical flow estimation with deep networks",
+            "Smpl: A skinned multi-person linear model",
+            "Alphapose: Whole-body regional multi-person pose estimation and tracking in real-time",
+            "Depth anything: Unleashing the power of large-scale unlabeled data",
+            "Mmflow: Openmmlab optical flow toolbox and benchmark",
+            "Expressive body capture: 3d hands, face, and body from a single image",
+            "Deep high-resolution representation learning for visual recognition",
+            "Unsupervised learning of depth and ego-motion from monocular video using 3d geometric constraints",
+            "Stacked hourglass networks for human pose estimation",
+            "Densepose: Dense human pose estimation in the wild",
+            "Monocular expressive body regression through body-driven attention",
+            "Realtime multi-person 2d pose estimation using part affinity fields"
+          ],
+          "IV Text to Human Video Generation": [
+            "High-resolution image synthesis with latent diffusion models",
+            "Sora as an agi world model? a complete survey on text-to-video generation"
+          ],
+          "IV Text to Human Video Generation IV-A Text-driven Human Appearance Control": [
+            "Id-animator: Zero-shot identity-preserving human video generation",
+            "Follow your pose: Pose-guided text-to-video generation using pose-free videos"
+          ],
+          "IV Text to Human Video Generation IV-B Text-driven Human Motion Control": [
+            "Signllm: Sign languages production large language models",
+            "Bridge to non-barrier communication: Gloss-prompted fine-grained cued speech gesture generation with diffusion model",
+            "Signsynth: Data-driven sign language video generation",
+            "Cued speech",
+            "Text2performer: Text-driven human video generation",
+            "Development of an end-to-end deep learning framework for sign language recognition, translation, and video generation",
+            "Human motion aware text-to-video generation with explicit camera control"
+          ],
+          "V Audio to Human Video Generation V-A Speech-driven Human Video Generation": [
+            "Speech2video synthesis with 3d skeleton regularization and expressive body poses",
+            "Learning individual styles of conversational gesture",
+            "Neural discrete representation learning",
+            "Motion representations for articulated animation",
+            "Thin-plate spline motion model for image animation",
+            "Denoising diffusion probabilistic models",
+            "High-fidelity and freely controllable talking head video generation",
+            "Audio-driven co-speech gesture video generation"
+          ],
+          "V Audio to Human Video Generation V-B Music-driven Human Video Generation": [
+            "Music2play: Audio-driven instrumental animation",
+            "Beat based realistic dance video generation using deep learning",
+            "Let\u2019s play music: Audio-driven performance video generation",
+            "Danceit: music-inspired dancing video synthesis",
+            "Dance any beat: Blending beats with visuals in dance video generation"
+          ],
+          "VI Pose to Human Video Generation VI-A Single-condition Pose-guided Methods": [
+            "Magicanimate: Temporally consistent human image animation using diffusion model",
+            "High-resolution image synthesis with latent diffusion models",
+            "Adding conditional control to text-to-image diffusion models",
+            "Stable video diffusion: Scaling latent video diffusion models to large datasets",
+            "Effective whole-body pose estimation with two-stages distillation",
+            "Sora as an agi world model? a complete survey on text-to-video generation",
+            "Mimicmotion: High-quality human motion video generation with confidence-aware pose guidance",
+            "Animate anyone: Consistent and controllable image-to-video synthesis for character animation",
+            "High-resolution image synthesis and semantic manipulation with conditional gans",
+            "Human4dit: Free-view human video generation with 4d diffusion transformer",
+            "Stacked hourglass networks for human pose estimation",
+            "Mocogan: Decomposing motion and content for video generation",
+            "Densepose: Dense human pose estimation in the wild",
+            "Magicpose: Realistic human poses and facial expressions retargeting with identity-aware diffusion",
+            "Smpl: A skinned multi-person linear model",
+            "Image-to-image translation with conditional adversarial networks",
+            "Conditional generative adversarial nets",
+            "Motionfollower: Editing video motion via lightweight score-guided diffusion",
+            "Realtime multi-person 2d pose estimation using part affinity fields",
+            "Dreampose: Fashion image-to-video synthesis via stable diffusion",
+            "Unianimate: Taming unified video diffusion models for consistent human image animation"
+          ],
+          "VI Pose to Human Video Generation VI-B Multi-condition Poses-guided Methods": [
+            "Disentangling foreground and background motion for enhanced realism in human video generation",
+            "Vividpose: Advancing stable video diffusion for realistic human image animation",
+            "Dreamoving: A human video generation framework based on diffusion models",
+            "High-resolution image synthesis with latent diffusion models",
+            "Disco: Disentangled control for realistic human dance generation",
+            "Follow-your-pose v2: Multiple-condition guided character image animation for stable pose control",
+            "Smpler-x: Scaling up expressive human pose and shape estimation",
+            "Stable video diffusion: Scaling latent video diffusion models to large datasets"
+          ],
+          "VII Challenges": [
+            "Follow-your-pose v2: Multiple-condition guided character image animation for stable pose control",
+            "Handrefiner: Refining malformed hands in generated images by diffusion-based conditional inpainting",
+            "Speech drives templates: Co-speech gesture synthesis with learned templates"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.11972556263208389,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "From Sora What We Can See: A Survey of Text-to-Video Generation",
+        "arxiv_id": "2405.10674",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract With impressive achievements made, artificial intelligence is on the path forward to artificial general intelligence. Sora, developed by OpenAI, which is capable of minute-level world-simulative abilities can be considered as a milestone on this developmental path. However, despite its notable successes, Sora still encounters various obstacles that need to be resolved. In this survey, we embark from the perspective of disassembling Sora in text-to-video generation, and conducting a comprehensive review of literature, trying to answer the question, From Sora What We Can See. Specifically, after basic preliminaries regarding the general algorithms are introduced, the literature is categorized from three mutually perpendicular dimensions: evolutionary generators, excellent pursuit, and realistic panorama. Subsequently, the widely used datasets and metrics are organized in detail. Last but more importantly, we identify several challenges and open problems in this domain and propose potential future directions for research and development. A comprehensive list of text-to-video generation studies in this survey is available at https://github.com/soraw-ai/Awesome-Text-to-Video-Generation",
+        "sections": {
+          "1 Introduction": [
+            "Improving image generation with better captions",
+            "A survey on video diffusion models",
+            "Scalable diffusion models with transformers",
+            "Long-term video prediction via criticization and retrospection",
+            "High-resolution image synthesis with latent diffusion models",
+            "Gentron: Delving deep into diffusion transformers for image and video generation",
+            "U-net: Convolutional networks for biomedical image segmentation",
+            "Align your latents: High-resolution video synthesis with latent diffusion models",
+            "Latte: Latent diffusion transformer for video generation",
+            "Detector guidance for multi-object text-to-image generation",
+            "Imagine this! scripts to compositions to videos",
+            "Sora: A review on background, technology, limitations, and opportunities of large vision models",
+            "Midjourney",
+            "Generating videos with scene dynamics",
+            "Introducing chatgpt",
+            "Photorealistic video generation with diffusion models",
+            "Video generation models as world simulators"
+          ],
+          "2 Preliminaries 2.2 Foundational Models and Algorithms": [
+            "Attention is all you need",
+            "Auto-encoding variational bayes",
+            "Autoregressive model",
+            "Generative adversarial networks",
+            "Denoising diffusion probabilistic models",
+            "Generative adversarial networks: An overview"
+          ],
+          "3 From Sora What We Can See 3.1 Evolutionary Generators": [
+            "Make pixels dance: High-dynamic video generation",
+            "Long short-term memory",
+            "Latent video diffusion models for high-fidelity video generation with arbitrary lengths",
+            "Denoising diffusion probabilistic models",
+            "Stable video diffusion: Scaling latent video diffusion models to large datasets",
+            "Irc-gan: Introspective recurrent convolutional gan for text-to-video generation.",
+            "Video generation from text",
+            "Nuwa-xl: Diffusion over diffusion for extremely long video generation",
+            "Denoising diffusion implicit models",
+            "Improving image generation with better captions",
+            "Cogvideo: Large-scale pretraining for text-to-video generation via transformers",
+            "Imagen video: High definition video generation with diffusion models",
+            "Cogview2: Faster and better text-to-image generation via hierarchical transformers",
+            "Gentron: Delving deep into diffusion transformers for image and video generation",
+            "Videocrafter1: Open diffusion models for high-quality video generation",
+            "Tune-a-video: One-shot tuning of image diffusion models for text-to-video generation",
+            "Motiondiffuse: Text-driven human motion generation with diffusion model",
+            "Videocrafter2: Overcoming data limitations for high-quality video diffusion models",
+            "Long video generation with time-agnostic vqgan and time-sensitive transformer",
+            "Genie: Generative interactive environments",
+            "Neural discrete representation learning",
+            "U-net: Convolutional networks for biomedical image segmentation",
+            "Videolcm: Video latent consistency model",
+            "Videogpt: Video generation using vq-vae and transformers",
+            "Phenaki: Variable length video generation from open domain textual description",
+            "Godiva: Generating open-domain videos from natural descriptions",
+            "Make-a-video: Text-to-video generation without text-video data",
+            "Video diffusion models",
+            "Midjourney",
+            "To create what you tell: Generating videos from captions",
+            "World model on million-length video and language with ringattention",
+            "Photorealistic video generation with diffusion models",
+            "3d u-net: learning dense volumetric segmentation from sparse annotation",
+            "Video generation models as world simulators",
+            "Sync-draw: Automatic video generation using deep recurrent attentive architectures",
+            "Howto100m: Learning a text-video embedding by watching hundred million narrated video clips",
+            "Text2video-zero: Text-to-image diffusion models are zero-shot video generators",
+            "Nuwa-infinity: Autoregressive over autoregressive generation for infinite visual synthesis",
+            "Scalable diffusion models with transformers",
+            "N\u00fcwa: Visual synthesis pre-training for neural visual world creation",
+            "Magicvideo: Efficient video generation with latent diffusion models",
+            "Show-1: Marrying pixel and latent diffusion models for text-to-video generation",
+            "Latte: Latent diffusion transformer for video generation"
+          ],
+          "3 From Sora What We Can See 3.2 Excellent Pursuit": [
+            "Latent video diffusion models for high-fidelity video generation with arbitrary lengths",
+            "Adding conditional control to text-to-image diffusion models",
+            "Mcvd-masked conditional video diffusion for prediction, generation, and interpolation",
+            "Creating video from text",
+            "Nuwa-xl: Diffusion over diffusion for extremely long video generation",
+            "Seine: Short-to-long video diffusion model for generative transition and prediction",
+            "Long-term video prediction via criticization and retrospection",
+            "Flavr: Flow-agnostic video representations for fast frame interpolation",
+            "Implicit neural representations with periodic activation functions",
+            "Long video generation with time-agnostic vqgan and time-sensitive transformer",
+            "Text2performer: Text-driven human video generation",
+            "Softmax splatting for video frame interpolation",
+            "Stylegan-v: A continuous video generator with the price, image quality and perks of stylegan2",
+            "Depth-aware video frame interpolation",
+            "Phenaki: Variable length video generation from open domain textual description",
+            "Make-a-video: Text-to-video generation without text-video data",
+            "Moonshot: Towards controllable video generation and editing with multimodal conditions",
+            "Deep video frame interpolation using cyclic frame generation",
+            "Video generation models as world simulators",
+            "Gen-l-video: Multi-text to long video generation via temporal co-denoising",
+            "Vlogger: Make your dream a vlog",
+            "Generating videos with dynamics-aware implicit generative adversarial networks",
+            "Styleinv: A temporal style modulated inversion network for unconditional video generation",
+            "A good image generator is what you need for high-resolution video synthesis",
+            "Lumiere: A space-time diffusion model for video generation",
+            "Show-1: Marrying pixel and latent diffusion models for text-to-video generation",
+            "Scenescape: Text-driven consistent scene generation",
+            "Align your latents: High-resolution video synthesis with latent diffusion models"
+          ],
+          "3 From Sora What We Can See 3.3 Realistic Panorama": [
+            "Make pixels dance: High-dynamic video generation",
+            "Microcinema: A divide-and-conquer approach for text-to-video generation",
+            "Imagine this! scripts to compositions to videos",
+            "Movideo: Motion-aware video generation with diffusion models",
+            "Generating videos with scene dynamics",
+            "Conditionvideo: Training-free condition-guided text-to-video generation",
+            "Dreamvideo: Composing your dream videos with customized subject and motion",
+            "Motiondiffuse: Text-driven human motion generation with diffusion model",
+            "Gpt4motion: Scripting physical motions in text-to-video generation via blender-oriented gpt planning",
+            "Videodreamer: Customized multi-subject text-to-video generation with disen-mix finetuning",
+            "Text2performer: Text-driven human video generation",
+            "Art\u2022v: Auto-regressive text-to-video generation with diffusion models",
+            "Videodrafter: Content-consistent multi-scene video generation with llm",
+            "Empowering dynamics-aware text-to-video diffusion with large language models",
+            "Lamp: Learn a motion pattern for few-shot-based video generation",
+            "Animatediff: Animate your personalized text-to-image diffusion models without specific tuning",
+            "Detector guidance for multi-object text-to-image generation",
+            "A recipe for scaling up text-to-video generation with text-free videos",
+            "Flowzero: Zero-shot text-to-video synthesis with llm-driven dynamic scene syntax",
+            "Videodirectorgpt: Consistent multi-scene video generation via llm-guided planning",
+            "Multi-object video generation from single frame layouts",
+            "Dynamicrafter: Animating open-domain images with video diffusion priors",
+            "Lumiere: A space-time diffusion model for video generation",
+            "Scenescape: Text-driven consistent scene generation",
+            "Univg: Towards unified-modal video generation",
+            "Llm-grounded video diffusion models"
+          ],
+          "3 From Sora What We Can See 3.4 Datasets and Metrics": [
+            "Youku-mplug: A 10 million large-scale chinese video-language dataset for pre-training and benchmarks",
+            "Panda-70m: Captioning 70m videos with multiple cross-modality teachers",
+            "How2: a large-scale dataset for multimodal language understanding",
+            "Approximating the kullback leibler divergence between gaussian mixture models",
+            "Charades-ego: A large-scale dataset of paired third and first person videos",
+            "Youku",
+            "Msr-vtt: A large video description dataset for bridging video and language",
+            "The something something video database for learning and evaluating visual common sense",
+            "Rethinking the inception architecture for computer vision",
+            "Hollywood in homes: Crowdsourcing data collection for activity understanding",
+            "The kinetics human action video dataset",
+            "Scaling egocentric vision: The epic-kitchens dataset",
+            "Learning transferable visual models from natural language supervision",
+            "Fvd: A new metric for video generation",
+            "Tune-a-video: One-shot tuning of image diffusion models for text-to-video generation",
+            "Youtube",
+            "Ucf101: A dataset of 101 human actions classes from videos in the wild",
+            "Advancing high-resolution video-language representation with large-scale video transcriptions",
+            "A survey on video diffusion models",
+            "Dense-captioning events in videos",
+            "Movie description",
+            "Merlot: Multimodal neural script knowledge models",
+            "Towards accurate generative models of video: A new metric & challenges",
+            "Make-a-video: Text-to-video generation without text-video data",
+            "Localizing moments in video with natural language",
+            "Videofactory: Swap attention in spatiotemporal diffusions for text-to-video generation",
+            "Towards automatic learning of procedures from web instructional videos",
+            "Quo vadis, action recognition? a new model and the kinetics dataset",
+            "Celebv-text: A large-scale facial text-video dataset",
+            "Mad: A scalable dataset for language grounding in videos from movie audio descriptions",
+            "Vast: A vision-audio-subtitle-text omni-modality foundation model and dataset",
+            "Learning spatiotemporal features with 3d convolutional networks",
+            "Howto100m: Learning a text-video embedding by watching hundred million narrated video clips",
+            "Image quality assessment: from error visibility to structural similarity",
+            "Internvid: A large-scale video-text dataset for multimodal understanding and generation",
+            "Improved techniques for training gans",
+            "Train sparsely, generate densely: Memory-efficient unsupervised training of high-resolution temporal gan",
+            "Activitynet: A large-scale video benchmark for human activity understanding",
+            "Gans trained by a two time-scale update rule converge to a local nash equilibrium",
+            "Frozen in time: A joint video and image encoder for end-to-end retrieval"
+          ],
+          "4 Challenges and Open Problems 4.1 Unsolved Problems from Sora": [
+            "Creating video from text"
+          ],
+          "4 Challenges and Open Problems 4.2 Data access privacy": [
+            "Communication-efficient learning of deep networks from decentralized data",
+            "Video generation models as world simulators",
+            "Federated learning-empowered ai-generated content in wireless networks",
+            "Towards building the federated gpt: Federated instruction tuning"
+          ],
+          "4 Challenges and Open Problems 4.4 Multi-Agent Co-creation": [
+            "Metagpt: Meta programming for multi-agent collaborative framework",
+            "Llm-deliberation: Evaluating llms with interactive multi-agent negotiation games",
+            "Llm multi-agent systems: Challenges and open problems"
+          ],
+          "5 Future Directions 5.1 Robot Learning from Visual Assistance": [
+            "Voxposer: Composable 3d value maps for robotic manipulation with language models",
+            "3d gaussian splatting for real-time radiance field rendering",
+            "Universal manipulation interface: In-the-wild robot teaching without in-the-wild robots",
+            "Recent advances in robot learning from demonstration",
+            "Distilled feature fields enable few-shot language-guided manipulation",
+            "Video generation models as world simulators",
+            "NeRF: Representing scenes as neural radiance fields for view synthesis"
+          ],
+          "5 Future Directions 5.2 Infinity 3D Dynamic Scene Reconstruction and Generation": [
+            "Detailed real-time urban 3d reconstruction from video",
+            "Neuralrecon: Real-time coherent 3d reconstruction from monocular video",
+            "Neural 3d video synthesis from multi-view video",
+            "Video generation models as world simulators",
+            "NeRF: Representing scenes as neural radiance fields for view synthesis"
+          ],
+          "5 Future Directions 5.3 Augmented Digital Twins": [
+            "Characterising the digital twin: A systematic literature review"
+          ],
+          "5 Future Directions 5.4 Establish Normative Frameworks for AI applications": [
+            "Deid-gpt: Zero-shot medical text de-identification by gpt-4",
+            "Value fulcra: Mapping large language models to the multidimensional spectrum of basic human values",
+            "Can llm-generated misinformation be detected?"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.002576424740254879,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Boximator: Generating Rich and Controllable Motions for Video Synthesis",
+        "arxiv_id": "2402.01566",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Generating rich and controllable motion is a pivotal challenge in video synthesis. We propose Boximator, a new approach for fine-grained motion control. Boximator introduces two constraint types: hard box and soft box. Users select objects in the conditional frame using hard boxes and then use either type of boxes to roughly or rigorously define the object\u2019s position, shape, or motion path in future frames. Boximator functions as a plug-in for existing video diffusion models. Its training process preserves the base model\u2019s knowledge by freezing the original weights and training only the control module. To address training challenges, we introduce a novel self-tracking technique that greatly simplifies the learning of box-object correlations. Empirically, Boximator achieves state-of-the-art video quality (FVD) scores, improving on two base models, and further enhanced after incorporating box constraints. Its robust motion controllability is validated by drastic increases in the bounding box alignment metric. Human evaluation also shows that users favor Boximator generation results over the base model. ",
+        "sections": {
+          "1 Introduction": [
+            "Make pixels dance: High-dynamic video generation",
+            "Dragnuwa: Fine-grained control in video generation by integrating text, image, and trajectory",
+            "Videocomposer: Compositional video synthesis with motion controllability",
+            "Modelscope text-to-video technical report",
+            "Fine-grained controllable video generation via object appearance and context",
+            "Gligen: Open-set grounded text-to-image generation",
+            "Hierarchical spatio-temporal decoupling for text-to-video generation",
+            "Frozen in time: A joint video and image encoder for end-to-end retrieval",
+            "Video diffusion models",
+            "Magicanimate: Temporally consistent human image animation using diffusion model"
+          ],
+          "2 Related Work": [
+            "Imagen video: High definition video generation with diffusion models",
+            "Make pixels dance: High-dynamic video generation",
+            "Dragnuwa: Fine-grained control in video generation by integrating text, image, and trajectory",
+            "Trailblazer: Trajectory control for diffusion-based video generation",
+            "Videocomposer: Compositional video synthesis with motion controllability",
+            "Phenaki: Variable length video generation from open domain textual description",
+            "Fine-grained controllable video generation via object appearance and context",
+            "Preserve your own correlation: A noise prior for video diffusion models",
+            "Latent video diffusion models for high-fidelity video generation with arbitrary lengths",
+            "Magicanimate: Temporally consistent human image animation using diffusion model"
+          ],
+          "3 Background: Video Diffusion Model": [
+            "Video diffusion models",
+            "U-net: Convolutional networks for biomedical image segmentation"
+          ],
+          "4 Boximator: Box-guided Motion Control 4.1 Model Architecture": [
+            "Nerf: Representing scenes as neural radiance fields for view synthesis"
+          ],
+          "4 Boximator: Box-guided Motion Control 4.2 Data Pipeline": [
+            "Tracking anything with decoupled video segmentation",
+            "Grounding dino: Marrying dino with grounded pre-training for open-set object detection",
+            "Frozen in time: A joint video and image encoder for end-to-end retrieval",
+            "Visual instruction tuning"
+          ],
+          "4 Boximator: Box-guided Motion Control 4.3 Self-Tracking": [
+            "Emu edit: Precise image editing via recognition and generation tasks"
+          ],
+          "5 Experiments 5.1 Experiment Settings": [
+            "Make pixels dance: High-dynamic video generation",
+            "Towards accurate generative models of video: A new metric & challenges",
+            "Modelscope text-to-video technical report",
+            "Microsoft coco: Common objects in context",
+            "Fine-grained controllable video generation via object appearance and context",
+            "Grounding dino: Marrying dino with grounded pre-training for open-set object detection",
+            "Msr-vtt: A large video description dataset for bridging video and language",
+            "Tracking anything with decoupled video segmentation",
+            "Activitynet: A large-scale video benchmark for human activity understanding",
+            "Ucf101: A dataset of 101 human actions classes from videos in the wild",
+            "Godiva: Generating open-domain videos from natural descriptions",
+            "Grounded video description"
+          ],
+          "5 Experiments 5.2 Quantitative Evaluation": [
+            "Fine-grained controllable video generation via object appearance and context"
+          ],
+          "5 Experiments 5.5 Case Study": [
+            "Reco: Region-controlled text-to-image generation"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.9985321760177612,
+        "extra": {
+          "expand": "not expand"
+        }
+      }
+    ]
+  },
+  "abstract": "",
+  "sections": "",
+  "source": "Root",
+  "select_score": 0.0,
+  "extra": {
+    "touch_ids": [
+      "2407.05530",
+      "2405.13865",
+      "2405.17661",
+      "2404.02101",
+      "2408.17424",
+      "2401.01827",
+      "2406.02509",
+      "2405.14864",
+      "2406.16863",
+      "2406.19680",
+      "2405.17414",
+      "2403.16407",
+      "2312.05107",
+      "2409.01595",
+      "2407.08428",
+      "2312.03641",
+      "2408.06070",
+      "2404.15789",
+      "2406.15339",
+      "2405.10674",
+      "2408.11475",
+      "2305.13840",
+      "2402.01566",
+      "2308.08089",
+      "2406.17758"
+    ],
+    "crawler_recall_papers": [
+      "RefDrop: Controllable Consistency in Image or Video Generation via Reference Feature Guidance",
+      "CinePreGen: Camera Controllable Video Previsualization via Engine-powered Diffusion",
+      "DiVE: DiT-based Video Generation with Enhanced Control",
+      "This&That: Language-Gesture Controlled Video Generation for Robot Planning",
+      "ReVideo: Remake a Video with Motion and Content Control",
+      "CameraCtrl: Enabling Camera Control for Text-to-Video Generation",
+      "MoonShot: Towards Controllable Video Generation and Editing with Multimodal Conditions",
+      "CamCo: Camera-Controllable 3D-Consistent Image-to-Video Generation",
+      "Video Diffusion Models are Training-free Motion Interpreter and Controller",
+      "FreeTraj: Tuning-Free Trajectory Control in Video Diffusion Models",
+      "A Survey on Long Video Generation: Challenges, Methods, and Prospects",
+      "MotionCtrl: A Unified and Flexible Motion Controller for Video Generation https://wzhouxiff.github.io/projects/MotionCtrl/",
+      "Image Conductor: Precision Control for Interactive Video Synthesis",
+      "DreaMoving: A Human Video Generation Framework based on Diffusion Models",
+      "ControlNeXt: Powerful and Efficient Control for Image and Video Generation",
+      "TrackGo: A Flexible and Efficient Method for Controllable Video Generation",
+      "DragNUWA: Fine-grained Control in Video Generation by Integrating Text, Image, and Trajectory",
+      "MimicMotion: High-Quality Human Motion Video Generation with Confidence-aware Pose Guidance",
+      "Collaborative Video Diffusion: Consistent Multi-video Generation with Camera Control",
+      "A Comprehensive Survey on Human Video Generation: Challenges, Methods, and Insights",
+      "From Sora What We Can See: A Survey of Text-to-Video Generation",
+      "Boximator: Generating Rich and Controllable Motions for Video Synthesis",
+      "MotionMaster: Training-free Camera Motion Transfer For Video Generation",
+      "Control-A-Video: Controllable Text-to-Video Generation with Diffusion Models",
+      "MotionBooth: Motion-Aware Customized Text-to-Video Generation"
+    ],
+    "recall_papers": [
+      "RefDrop: Controllable Consistency in Image or Video Generation via Reference Feature Guidance",
+      "CinePreGen: Camera Controllable Video Previsualization via Engine-powered Diffusion",
+      "DiVE: DiT-based Video Generation with Enhanced Control",
+      "This&That: Language-Gesture Controlled Video Generation for Robot Planning",
+      "ReVideo: Remake a Video with Motion and Content Control",
+      "CameraCtrl: Enabling Camera Control for Text-to-Video Generation",
+      "MoonShot: Towards Controllable Video Generation and Editing with Multimodal Conditions",
+      "CamCo: Camera-Controllable 3D-Consistent Image-to-Video Generation",
+      "Video Diffusion Models are Training-free Motion Interpreter and Controller",
+      "FreeTraj: Tuning-Free Trajectory Control in Video Diffusion Models",
+      "MotionCtrl: A Unified and Flexible Motion Controller for Video Generation https://wzhouxiff.github.io/projects/MotionCtrl/",
+      "Image Conductor: Precision Control for Interactive Video Synthesis",
+      "DreaMoving: A Human Video Generation Framework based on Diffusion Models",
+      "ControlNeXt: Powerful and Efficient Control for Image and Video Generation",
+      "TrackGo: A Flexible and Efficient Method for Controllable Video Generation",
+      "DragNUWA: Fine-grained Control in Video Generation by Integrating Text, Image, and Trajectory",
+      "MimicMotion: High-Quality Human Motion Video Generation with Confidence-aware Pose Guidance",
+      "Collaborative Video Diffusion: Consistent Multi-video Generation with Camera Control",
+      "Boximator: Generating Rich and Controllable Motions for Video Synthesis",
+      "MotionMaster: Training-free Camera Motion Transfer For Video Generation",
+      "Control-A-Video: Controllable Text-to-Video Generation with Diffusion Models",
+      "MotionBooth: Motion-Aware Customized Text-to-Video Generation"
+    ],
+    "answer": [
+      "Motion-Conditioned Diffusion Model for Controllable Video Synthesis",
+      "Panacea+: Panoramic and Controllable Video Generation for Autonomous   Driving",
+      "Cinemo: Consistent and Controllable Image Animation with Motion   Diffusion Models",
+      "Magic-Me: Identity-Specific Video Customized Diffusion",
+      "AnimateLCM: Accelerating the Animation of Personalized Diffusion Models\n  and Adapters with Decoupled Consistency Learning",
+      "DrivingDiffusion: Layout-Guided multi-view driving scene video\n  generation with latent diffusion model",
+      "TrailBlazer: Trajectory Control for Diffusion-Based Video Generation",
+      "MoCoGAN: Decomposing Motion and Content for Video Generation",
+      "Genie: Generative Interactive Environments",
+      "Direct-a-Video: Customized Video Generation with User-Directed Camera\n  Movement and Object Motion",
+      "Click to Move: Controlling Video Generation with Sparse Motion",
+      "LaMD: Latent Motion Diffusion for Video Generation",
+      "Structure and Content-Guided Video Synthesis with Diffusion Models",
+      "Collaborative Video Diffusion: Consistent Multi-video Generation with   Camera Control",
+      "Control-A-Video: Controllable Text-to-Video Generation with Diffusion\n  Models",
+      "Text-Animator: Controllable Visual Text Video Generation",
+      "DiVE: DiT-based Video Generation with Enhanced Control",
+      "Understanding Object Dynamics for Interactive Image-to-Video Synthesis",
+      "ControlVideo: Training-free Controllable Text-to-Video Generation",
+      "Animate Anyone: Consistent and Controllable Image-to-Video Synthesis for\n  Character Animation",
+      "DriveScape: Towards High-Resolution Controllable Multi-View Driving   Video Generation",
+      "CamCo: Camera-Controllable 3D-Consistent Image-to-Video Generation",
+      "PEEKABOO: Interactive Video Generation via Masked-Diffusion",
+      "CameraCtrl: Enabling Camera Control for Text-to-Video Generation",
+      "Video Generation Beyond a Single Clip",
+      "VideoComposer: Compositional Video Synthesis with Motion Controllability",
+      "DragAnything: Motion Control for Anything using Entity Representation",
+      "RefDrop: Controllable Consistency in Image or Video Generation via   Reference Feature Guidance",
+      "Make-Your-Video: Customized Video Generation Using Textual and\n  Structural Guidance",
+      "DreamVideo: High-Fidelity Image-to-Video Generation with Image Retention\n  and Text Guidance",
+      "DragNUWA: Fine-grained Control in Video Generation by Integrating Text,\n  Image, and Trajectory",
+      "MagicDrive: Street View Generation with Diverse 3D Geometry Control",
+      "FreeTraj: Tuning-Free Trajectory Control in Video Diffusion Models",
+      "Fine-grained Controllable Video Generation via Object Appearance and\n  Context",
+      "Panacea: Panoramic and Controllable Video Generation for Autonomous\n  Driving",
+      "Ctrl-V: Higher Fidelity Video Generation with Bounding-Box Controlled   Object Motion",
+      "LLM-grounded Video Diffusion Models",
+      "Boximator: Generating Rich and Controllable Motions for Video Synthesis",
+      "TrackGo: A Flexible and Efficient Method for Controllable Video   Generation",
+      "Make It Move: Controllable Image-to-Video Generation with Text\n  Descriptions",
+      "MotionCtrl: A Unified and Flexible Motion Controller for Video\n  Generation",
+      "AMG: Avatar Motion Guided Video Generation",
+      "Imagen Video: High Definition Video Generation with Diffusion Models",
+      "VideoControlNet: A Motion-Guided Video-to-Video Translation Framework by\n  Using Diffusion Model with ControlNet",
+      "ControlNeXt: Powerful and Efficient Control for Image and Video   Generation",
+      "MyGo: Consistent and Controllable Multi-View Driving Video Generation   with Camera Control",
+      "Follow Your Pose: Pose-Guided Text-to-Video Generation using Pose-Free\n  Videos",
+      "Moonshot: Towards Controllable Video Generation and Editing with\n  Multimodal Conditions",
+      "Training-free Camera Control for Video Generation",
+      "MotionDirector: Motion Customization of Text-to-Video Diffusion Models",
+      "Stochastic Image-to-Video Synthesis using cINNs",
+      "SparseCtrl: Adding Sparse Controls to Text-to-Video Diffusion Models",
+      "MotionClone: Training-Free Motion Cloning for Controllable Video Generation",
+      "MagicStick: Controllable Video Editing via Control Handle Transformations",
+      "VMC: Video Motion Customization using Temporal Attention Adaption for Text-to-Video Diffusion Models",
+      "DreamVideo: Composing Your Dream Videos with Customized Subject and Motion",
+      "Motion-I2V: Consistent and Controllable Image-to-Video Generation with Explicit Motion Modeling",
+      "MOFA-Video: Controllable Image Animation via Generative Motion Field Adaptions in Frozen Image-to-Video Diffusion Model"
+    ]
+  }
+}

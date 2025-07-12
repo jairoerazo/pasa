@@ -1,0 +1,2704 @@
+{
+  "title": "Is there any work that analyzes the scaling law of the multi-module models, such as video-text, image-text models?",
+  "arxiv_id": "",
+  "depth": -1,
+  "child": {
+    "Empirical characterization of scaling laws in video-text and image-text models": [
+      {
+        "title": "Inference Scaling Laws: An Empirical Analysis of Compute-Optimal Inference for Problem-Solving with Language Models",
+        "arxiv_id": "2408.00724",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract The optimal training configurations of large language models (LLMs) with respect to model sizes and compute budgets have been extensively studied. But how to optimally configure LLMs during inference has not been explored in sufficient depth. We study compute-optimal inference: designing models and inference strategies that optimally trade off additional inference-time compute for improved performance. As a first step towards understanding and designing compute-optimal inference methods, we assessed the effectiveness and computational efficiency of multiple inference strategies such as Greedy Search, Majority Voting, Best-of-N, Weighted Voting, and their variants on two different Tree Search algorithms, involving different model sizes and computational budgets. We found that a smaller language model with a novel tree search algorithm typically achieves a Pareto-optimal trade-off. These results highlight the potential benefits of deploying smaller models equipped with more sophisticated decoding algorithms in budget-constrained scenarios, e.g., on end-devices, to enhance problem-solving accuracy. For instance, we show that the Llemma-7B model can achieve competitive accuracy to a Llemma-34B model on MATH500 while using 2\u00d72\\times less FLOPs. Our findings could potentially apply to any generation task with a well-defined measure of success.",
+        "sections": {
+          "1 Introduction": [
+            "Scaling laws for reward model overoptimization",
+            "Scaling laws for autoregressive generative modeling",
+            "Llemma: An open language model for mathematics",
+            "Show your work: Scratchpads for intermediate computation with language models",
+            "Deep learning scaling is predictable, empirically",
+            "Training verifiers to solve math word problems",
+            "Scaling laws for neural language models",
+            "Measuring mathematical problem solving with the math dataset",
+            "Pythia: A suite for analyzing large language models across training and scaling.",
+            "Mistral 7b",
+            "Solving math word problems with process- and outcome-based feedback",
+            "Video generation models as world simulators",
+            "Scaling scaling laws with board games"
+          ],
+          "2 Related Works Mathematical Reasoning with LLMs.": [
+            "Chain-of-thought prompting elicits reasoning in large language models",
+            "Show your work: Scratchpads for intermediate computation with language models",
+            "Training verifiers to solve math word problems",
+            "Large language models are zero-shot reasoners",
+            "Language models are few-shot learners.",
+            "Program induction by rationale generation: Learning to solve and explain algebraic word problems"
+          ],
+          "2 Related Works Inference Strategies of LLM Problem Solving.": [
+            "Tree of thoughts: Deliberate problem solving with large language models",
+            "Self-evaluation guided beam search for reasoning",
+            "Planning with large language models for code generation",
+            "A learning algorithm for boltzmann machines",
+            "Speech and language processing: an introduction to natural language processing, computational linguistics, and speech recognition",
+            "Self-consistency improves chain of thought reasoning in language models"
+          ],
+          "2 Related Works Process Reward Models.": [
+            "Math-shepherd: Verify and reinforce llms step-by-step without human annotations",
+            "Solving math word problems with process- and outcome-based feedback",
+            "Let\u2019s reward step by step: Step-level reward model as the navigators for reasoning",
+            "Let\u2019s verify step by step."
+          ],
+          "3 Compute-Optimal Inference for Problem-Solving 3.2 Inference Strategies": [
+            "Tree of thoughts: Deliberate problem solving with large language models",
+            "Planning with large language models for code generation",
+            "Mastering the game of Go with deep neural networks and tree search"
+          ],
+          "4 Experiments 4.1 Setup": [
+            "Pythia: A suite for analyzing large language models across training and scaling.",
+            "Let\u2019s verify step by step",
+            "Math-shepherd: Verify and reinforce llms step-by-step without human annotations",
+            "Llemma: An open language model for mathematics",
+            "Training verifiers to solve math word problems",
+            "Measuring coding challenge competence with apps",
+            "Mistral 7b",
+            "Metamath: Bootstrap your own mathematical questions for large language models"
+          ],
+          "4 Experiments 4.2 Main Results of Compute-Optimal Inference": [
+            "Scaling laws for neural language models"
+          ],
+          "4 Experiments 4.3 Comparing REBASE to Other Baselines": [
+            "Alphamath almost zero: process supervision without process"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.0003472647222224623,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Visual Autoregressive Modeling: Scalable Image Generation via Next-Scale Prediction",
+        "arxiv_id": "2404.02905",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract We present Visual AutoRegressive modeling (VAR), a new generation paradigm that redefines the autoregressive learning on images as coarse-to-fine \u201cnext-scale prediction\u201d or \u201cnext-resolution prediction\u201d, diverging from the standard raster-scan \u201cnext-token prediction\u201d. This simple, intuitive methodology allows autoregressive (AR) transformers to learn visual distributions fast and can generalize well: VAR, for the first time, makes GPT-style AR models surpass diffusion transformers in image generation. On ImageNet 256\u00d7\\times256 benchmark, VAR significantly improve AR baseline by improving Fr\u00e9chet inception distance (FID) from 18.65 to 1.80, inception score (IS) from 80.4 to 356.4, with 20\u00d7\\times faster inference speed. It is also empirically verified that VAR outperforms the Diffusion Transformer (DiT) in multiple dimensions including image quality, inference speed, data efficiency, and scalability. Scaling up VAR models exhibits clear power-law scaling laws similar to those observed in LLMs, with linear correlation coefficients near \u22120.9980.998-0.998 as solid evidence. VAR further showcases zero-shot generalization ability in downstream tasks including image in-painting, out-painting, and editing. These results suggest VAR has initially emulated the two important properties of LLMs: Scaling Laws and zero-shot generalization. We have released all models and codes to promote the exploration of AR/VAR models for visual generation and unified learning.",
+        "sections": {
+          "1 Introduction": [
+            "Scalable diffusion models with transformers",
+            "Generating diverse high-fidelity images with vq-vae-2",
+            "Object recognition from local scale-invariant features",
+            "A survey on hallucination in large language models: Principles, taxonomy, challenges, and open questions.",
+            "Taming transformers for high-resolution image synthesis",
+            "Improving language understanding by generative pre-training",
+            "Language model beats diffusion\u2013tokenizer is key to visual generation.",
+            "Scaling rectified flow transformers for high-resolution image synthesis",
+            "Palm: Scaling language modeling with pathways",
+            "Language models are unsupervised multitask learners.",
+            "Scaling laws for neural language models",
+            "Unified-io: A unified model for vision, language, and multi-modal tasks"
+          ],
+          "2 Related Work 2.1 Properties of large autoregressive language models": [
+            "Images speak in images: A generalist painter for in-context visual learning",
+            "Segment anything",
+            "Dinov2: Learning robust visual features without supervision",
+            "Scaling laws for autoregressive generative modeling",
+            "Learning transferable visual models from natural language supervision",
+            "Multitask prompted training enables zero-shot task generalization",
+            "Llama: Open and efficient foundation language models",
+            "Language models are unsupervised multitask learners.",
+            "Scaling laws for neural language models",
+            "Sequential modeling enables scalable learning for large vision models.",
+            "Language models are few-shot learners."
+          ],
+          "2 Related Work 2.2 Visual generation": [
+            "Photorealistic text-to-image diffusion models with deep language understanding",
+            "High-resolution image synthesis with latent diffusion models",
+            "Bert: Pre-training of deep bidirectional transformers for language understanding",
+            "Magvit: Masked generative video transformer",
+            "Denoising diffusion probabilistic models",
+            "Denoising diffusion implicit models",
+            "Attention is all you need",
+            "Generating diverse high-fidelity images with vq-vae-2",
+            "Vector-quantized image modeling with improved vqgan",
+            "Taming transformers for high-resolution image synthesis",
+            "Classifier-free diffusion guidance",
+            "Autoregressive image generation using residual quantization",
+            "Neural discrete representation learning",
+            "A new algorithm for data compression",
+            "Muse: Text-to-image generation via masked generative transformers.",
+            "Scaling rectified flow transformers for high-resolution image synthesis",
+            "Video generation models as world simulators",
+            "Scalable diffusion models with transformers",
+            "Language model beats diffusion\u2013tokenizer is key to visual generation.",
+            "Maskgit: Masked generative image transformer",
+            "Exploring the limits of transfer learning with a unified text-to-text transformer",
+            "Scaling autoregressive models for content-rich text-to-image generation."
+          ],
+          "3 Method 3.1 Preliminary: autoregressive modeling via next-token prediction": [
+            "The unreasonable effectiveness of deep features as a perceptual metric",
+            "A style-based generator architecture for generative adversarial networks",
+            "Taming transformers for high-resolution image synthesis"
+          ],
+          "3 Method 3.2 Visual autoregressive modeling via next-scale prediction": [
+            "Autoregressive image generation using residual quantization",
+            "Taming transformers for high-resolution image synthesis"
+          ],
+          "3 Method 3.3 Implementation details": [
+            "A style-based generator architecture for generative adversarial networks",
+            "Taming transformers for high-resolution image synthesis",
+            "Llama: Open and efficient foundation language models",
+            "Language models are unsupervised multitask learners.",
+            "Scaling laws for neural language models",
+            "The open images dataset v4: Unified image classification, object detection, and visual relationship detection at scale"
+          ],
+          "4 Empirical Results": [
+            "Language model beats diffusion\u2013tokenizer is key to visual generation."
+          ],
+          "4 Empirical Results 4.1 State-of-the-art image generation": [
+            "Scalable diffusion models with transformers",
+            "Vector-quantized image modeling with improved vqgan",
+            "Taming transformers for high-resolution image synthesis",
+            "Alpha-VLLM. Large-dit-imagenet",
+            "Scaling rectified flow transformers for high-resolution image synthesis",
+            "Autoregressive image generation using residual quantization",
+            "The open images dataset v4: Unified image classification, object detection, and visual relationship detection at scale",
+            "Video generation models as world simulators"
+          ],
+          "4 Empirical Results 4.2 Power-law scaling laws": [
+            "Imagenet: A large-scale hierarchical image database",
+            "Scaling laws for neural language models",
+            "Scaling laws for autoregressive generative modeling"
+          ],
+          "4 Empirical Results 4.3 Zero-shot task generalization": [
+            "Maskgit: Masked generative image transformer"
+          ],
+          "4 Empirical Results 4.4 Ablation Study": [
+            "Maskgit: Masked generative image transformer"
+          ],
+          "5 Future Work": [
+            "Video generation models as world simulators",
+            "Taming transformers for high-resolution image synthesis",
+            "Movq: Modulating quantized vectors for high-fidelity image generation"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.08229213953018188,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Will we run out of data? An analysis of the limits of scaling datasets in Machine Learning",
+        "arxiv_id": "2211.04325",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract We analyze the growth of dataset sizes used in machine learning for natural language processing and computer vision, and extrapolate these using two methods; using the historical growth rate and estimating the compute-optimal dataset size for future predicted compute budgets. We investigate the growth in data usage by estimating the total stock of unlabeled data available on the internet over the coming decades. Our analysis indicates that the stock of high-quality language data will be exhausted soon; likely before 2026. By contrast, the stock of low-quality language data and image data will be exhausted only much later; between 2030 and 2050 (for low-quality language) and between 2030 and 2060 (for images). Our work suggests that the current trend of ever-growing ML models that rely on enormous datasets might slow down if data efficiency is not drastically improved or new sources of data become available. \u2020\u20201Epoch, 2University of Aberdeen, 3MIT Computer Science & Artificial Intelligence Laboratory, 4Centre for the Governance of AI, 5University of T\u00fcbingen ",
+        "sections": {
+          "Key Takeaways": [
+            "Trends in training dataset sizes"
+          ],
+          "I Introduction": [
+            "Scaling laws for neural language models",
+            "Trends in training dataset sizes"
+          ],
+          "II Previous work": [
+            "chinchilla\u2019s wild implications",
+            "The size and growth rate of the internet",
+            "The digitization of the world from edge to core",
+            "Training compute-optimal large language models"
+          ],
+          "III Methods III-A Projecting growth in training dataset sizes": [
+            "Scaling laws for neural language models",
+            "Trends in training dataset sizes",
+            "Projecting compute trends in machine learning"
+          ],
+          "III Methods III-B Estimating data accumulation rates": [
+            "Technology adoption",
+            "Meta pseudo labels",
+            "World population prospects 2022, online edition"
+          ],
+          "III Methods III-C High-quality data": [
+            "Glam: Efficient scaling of language models with mixture-of-experts",
+            "The pile: An 800gb dataset of diverse text for language modeling",
+            "Quality not quantity: On the interaction between dataset design and robustness of clip",
+            "Gross domestic spending on R&D (indicator)",
+            "Publications output: U.s. trends and international comparisons"
+          ],
+          "III Methods III-D Limitations": [
+            "Scaling laws for neural language models",
+            "Mastering atari games with limited data",
+            "Training compute-optimal large language models"
+          ],
+          "IV Analysis IV-A Trends in dataset size": [
+            "Trends in training dataset sizes"
+          ],
+          "IV Analysis IV-B Language": [
+            "Training compute-optimal large language models",
+            "Palm: Scaling language modeling with pathways",
+            "The pile: An 800gb dataset of diverse text for language modeling"
+          ],
+          "IV Analysis IV-C Vision": [
+            "2021 worldwide image capture forecast: 2020 \u2013 2025"
+          ],
+          "V Discussion": [
+            "Training compute-optimal large language models"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.0003411387442611158,
+        "extra": {
+          "expand": "not expand"
+        }
+      }
+    ],
+    "Empirical studies on the scaling laws of text-to-video generation models": [
+      {
+        "title": "Sora: A Review on Background, Technology, Limitations, and Opportunities of Large Vision Models",
+        "arxiv_id": "2402.17177",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Warning: This is not an official technical report from OpenAI.  Sora is a text-to-video generative AI model, released by OpenAI in February 2024. The model is trained to generate videos of realistic or imaginative scenes from text instructions and show potential in simulating the physical world. Based on public technical reports and reverse engineering, this paper presents a comprehensive review of the model\u2019s background, related technologies, applications, remaining challenges, and future directions of text-to-video AI models. We first trace Sora\u2019s development and investigate the underlying technologies used to build this \u201cworld simulator\u201d. Then, we describe in detail the applications and potential impact of Sora in multiple industries ranging from film-making and education to marketing. We discuss the main challenges and limitations that need to be addressed to widely deploy Sora, such as ensuring safe and unbiased video generation. Lastly, we discuss the future development of Sora and video generation models in general, and how advancements in the field could enable new ways of human-AI interaction, boosting productivity and creativity of video generation.   Figure 1: Sora: A Breakthrough in AI-Powered Vision Generation.  ",
+        "sections": {
+          "1 Introduction": [
+            "Scalable diffusion models with transformers",
+            "Sora: Creating video from text",
+            "Chatgpt: Get instant answers, find creative inspiration, learn something new.."
+          ],
+          "2 Background 2.1 History": [
+            "A comprehensive survey of ai-generated content (aigc): A history of generative ai from gan to chatgpt",
+            "Learning transferable visual models from natural language supervision",
+            "Improving image generation with better captions",
+            "An image is worth 16x16 words: Transformers for image recognition at scale",
+            "Attention is all you need",
+            "Generative modeling by estimating gradients of the data distribution",
+            "Generative adversarial networks",
+            "Improving language understanding by generative pre-training",
+            "Texture synthesis by non-parametric sampling",
+            "Pika is the idea-to-video platform that sets your creativity in motion.",
+            "U-net: Convolutional networks for biomedical image segmentation",
+            "Midjourney: Text to image with ai art generator.",
+            "Auto-encoding variational bayes",
+            "High-resolution image synthesis with latent diffusion models",
+            "Swin transformer: Hierarchical vision transformer using shifted windows",
+            "Survey of texture mapping",
+            "Gen-2: Gen-2: The next step forward for generative ai.",
+            "Nice: Non-linear independent components estimation",
+            "Bert: Pre-training of deep bidirectional transformers for language understanding"
+          ],
+          "2 Background 2.2 Advanced Concepts": [
+            "Scaling vision transformers to 22 billion parameters",
+            "Scaling vision transformers"
+          ],
+          "3 Technology 3.1 Overview of Sora": [
+            "Scalable diffusion models with transformers",
+            "Learning transferable visual models from natural language supervision"
+          ],
+          "3 Technology 3.2 Data Pre-processing": [
+            "Masked autoencoders are scalable vision learners",
+            "Take on sora technical report.",
+            "Make-a-video: Text-to-video generation without text-video data",
+            "Mamba: Linear-time sequence modeling with selective state spaces",
+            "Fast transformer decoding: One write-head is all you need",
+            "Patch n\u2019pack: Navit, a vision transformer for any aspect ratio and resolution",
+            "The bitter lesson",
+            "An image is worth 16x16 words: Transformers for image recognition at scale",
+            "Tokenlearner: Adaptive space-time tokenization for videos",
+            "Attention is all you need",
+            "Imagen video: High definition video generation with diffusion models",
+            "A-vit: Adaptive tokens for efficient vision transformer",
+            "Stable video diffusion: Scaling latent video diffusion models to large datasets",
+            "Preserve your own correlation: A noise prior for video diffusion models",
+            "Efficient sequence packing without cross-contamination: Accelerating large language models without impacting performance",
+            "Flexivit: One model for all patch sizes",
+            "Neural discrete representation learning",
+            "High-resolution image synthesis with latent diffusion models",
+            "Sora: Creating video from text",
+            "Language model beats diffusion\u2013tokenizer is key to visual generation",
+            "Scalable diffusion models with transformers"
+          ],
+          "3 Technology 3.3 Modeling": [
+            "Masked autoencoders are scalable vision learners",
+            "Imagen video: High definition video generation with diffusion models",
+            "Align your latents: High-resolution video synthesis with latent diffusion models",
+            "High-resolution image synthesis with latent diffusion models",
+            "Diffit: Diffusion vision transformers for image generation",
+            "All are worth words: A vit backbone for diffusion models",
+            "Cascaded diffusion models for high fidelity image generation",
+            "Scalable diffusion models with transformers",
+            "Deep unsupervised learning using nonequilibrium thermodynamics",
+            "Masked diffusion transformer is a strong image synthesizer",
+            "Progressive distillation for fast sampling of diffusion models",
+            "Classifier-free diffusion guidance"
+          ],
+          "3 Technology 3.4 Language Instruction Following": [
+            "Improving image generation with better captions",
+            "Sora: Creating video from text",
+            "mplug-2: A modularized multi-modal foundation model across text, image and video",
+            "Git: A generative image-to-text transformer for vision and language",
+            "Zero-shot video question answering via frozen bidirectional language models",
+            "Finetuned language models are zero-shot learners",
+            "Language models are few-shot learners",
+            "Video-text modeling with zero-shot transfer from contrastive captioners",
+            "Scaling up visual and vision-language representation learning with noisy text supervision",
+            "Coca: Contrastive captioners are image-text foundation models",
+            "Multitask prompted training enables zero-shot task generalization",
+            "Learning transferable visual models from natural language supervision"
+          ],
+          "3 Technology 3.5 Prompt Engineering": [
+            "Tune-a-video: One-shot tuning of image diffusion models for text-to-video generation",
+            "Video-to-video synthesis",
+            "Optimizing prompts for text-to-image generation",
+            "Sora: Creating video from text",
+            "Stable video diffusion: Scaling latent video diffusion models to large datasets",
+            "Moonshot: Towards controllable video generation and editing with multimodal conditions",
+            "A practical survey on zero-shot prompt design for in-context learning",
+            "Image segmentation using text and image prompts",
+            "Fast-vid2vid: Spatial-temporal compression for video-to-video synthesis",
+            "Pre-train, prompt, and predict: A systematic survey of prompting methods in natural language processing",
+            "Make-a-video: Text-to-video generation without text-video data",
+            "Vop: Text-video co-operative prompt tuning for cross-modal retrieval"
+          ],
+          "3 Technology 3.6 Trustworthiness": [
+            "Privacy in large language models: Attacks, defenses and future directions",
+            "Sora safety",
+            "Beyond detection: Unveiling fairness vulnerabilities in abusive language models",
+            "I think, therefore i am: Benchmarking awareness of large language models using awarebench",
+            "Jailbreaking attack against multimodal large language model",
+            "Mitigating hallucination in large multi-modal models via robust instruction tuning",
+            "Autodan: Interpretable gradient-based adversarial attacks on large language models",
+            "Mitigating political bias in language models through reinforced calibration",
+            "Large language model alignment: A survey",
+            "Bias and fairness in large language models: A survey",
+            "Can llm-generated misinformation be detected?",
+            "Introducing chatgpt",
+            "Gpt-4v(ision) system card",
+            "Lawbench: Benchmarking legal knowledge of large language models",
+            "A systematic review of hate speech automatic detection using natural language processing.",
+            "You are what you write: Preserving privacy in the era of large language models",
+            "Jailbroken: How does llm safety training fail?",
+            "Harnessing the power of chatgpt in fake news: An in-depth exploration in generation, detection and explanation",
+            "Is chatgpt fair for recommendation? evaluating fairness in large language model recommendation",
+            "Can llms keep a secret? testing privacy implications of language models via contextual integrity theory",
+            "Deep reinforcement learning from human preferences",
+            "Sora: Creating video from text",
+            "Value fulcra: Mapping large language models to the multidimensional spectrum of basic human values",
+            "A survey on hallucination in large vision-language models",
+            "Hallusionbench: An advanced diagnostic suite for entangled language hallucination & visual illusion in large vision-language models",
+            "Fair diffusion: Instructing text-to-image generation models on fairness",
+            "Deid-gpt: Zero-shot medical text de-identification by gpt-4",
+            "Sun, Y",
+            "Bommasani, D"
+          ],
+          "4 Applications 4.1 Movie": [
+            "Moviefactory: Automatic movie creation from text using large generative models for language and images",
+            "Introducing chatgpt",
+            "Mobilevidfactory: Automatic diffusion-based social media video generation for mobile devices from text",
+            "Vlogger: Make your dream a vlog"
+          ],
+          "4 Applications 4.2 Education": [
+            "Conditional image-to-video generation with latent flow diffusion models",
+            "Ccedit: Creative and controllable video editing via diffusion models"
+          ],
+          "4 Applications 4.3 Gaming": [
+            "Vidm: Video implicit diffusion models",
+            "Physics-driven diffusion models for impact sound synthesis from videos"
+          ],
+          "4 Applications 4.4 Healthcare": [
+            "Medsegdiff-v2: Diffusion based medical image segmentation with transformer",
+            "Diffusion transformer u-net for medical image segmentation",
+            "Multimodal motion conditioned diffusion model for skeleton-based video anomaly detection",
+            "Video diffusion models for the apoptosis forcasting",
+            "Dermosegdiff: A boundary-aware segmentation diffusion model for skin lesion delineation"
+          ],
+          "4 Applications 4.5 Robotics": [
+            "Genaug: Retargeting behaviors to unseen situations via generative augmentation",
+            "Planning with diffusion for flexible behavior synthesis",
+            "Dall-e-bot: Introducing web-scale diffusion models to robotics",
+            "Seer: Language instructed video prediction with latent diffusion models"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.0007940178620629013,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Lumina-T2X: Transforming Text into Any Modality, Resolution, and Duration via Flow-based Large Diffusion Transformers",
+        "arxiv_id": "2405.05945",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract Sora unveils the potential of scaling Diffusion Transformer (DiT) for generating photorealistic images and videos at arbitrary resolutions, aspect ratios, and durations, yet it still lacks sufficient implementation details. In this technical report, we introduce the Lumina-T2X family \u2013 a series of Flow-based Large Diffusion Transformers (Flag-DiT) equipped with zero-initialized attention, as a unified framework designed to transform noise into images, videos, multi-view 3D objects, and audio clips conditioned on text instructions. By tokenizing the latent spatial-temporal space and incorporating learnable placeholders such as [nextline] and [nextframe] tokens, Lumina-T2X seamlessly unifies the representations of different modalities across various spatial-temporal resolutions. This unified approach enables training within a single framework for different modalities and allows for flexible generation of multimodal data at any resolution, aspect ratio, and length during inference. Advanced techniques like RoPE, RMSNorm, and flow matching enhance the stability, flexibility, and scalability of Flag-DiT, enabling models of Lumina-T2X to scale up to 7 billion parameters and extend the context window to 128K tokens. This is particularly beneficial for creating ultra-high-definition images with our Lumina-T2I model and long 720p videos with our Lumina-T2V model. Remarkably, Lumina-T2I, powered by a 5-billion-parameter Flag-DiT, requires only 35% of the training computational costs of a 600-million-parameter naive DiT (PixArt-\u03b1\ud835\udefc\\alpha), indicating that increasing the number of parameters significantly accelerates convergence of generative models without compromising visual quality. Our further comprehensive analysis underscores Lumina-T2X\u2019s preliminary capability in resolution extrapolation, high-resolution editing, generating consistent 3D views, and synthesizing videos with seamless transitions. Code and a series of checkpoints will be successively released to facilitate future research at https://github.com/Alpha-VLLM/Lumina-T2X. We expect that the open-sourcing of Lumina-T2X will further foster creativity, transparency, and diversity in the generative AI community.",
+        "sections": {
+          "1 Introduction": [
+            "OpenAI. https://openai.com/sora. In OpenAI blog, 2024.",
+            "Scalable diffusion models with transformers",
+            "Pixart-\u03b1\ud835\udefc\\alpha: Fast training of diffusion transformer for photorealistic text-to-image synthesis.",
+            "Sdxl: Improving latent diffusion models for high-resolution image synthesis",
+            "Flow straight and fast: Learning to generate and transfer data with rectified flow",
+            "Demofusion: Democratising high-resolution image generation with no $$",
+            "Style aligned image generation via shared attention",
+            "Prompt-to-prompt image editing with cross attention control",
+            "Pixart-\u03c3\ud835\udf0e\\sigma: Weak-to-strong training of diffusion transformer for 4k text-to-image generation.",
+            "Multidiffusion: fusing diffusion paths for controlled image generation",
+            "Scaling rectified flow transformers for high-resolution image synthesis",
+            "Suno. https://suno.com/. In Suno Website, 2024.",
+            "Denoising diffusion probabilistic models",
+            "Mvdream: Multi-view diffusion for 3d generation",
+            "Stable video diffusion: Scaling latent video diffusion models to large datasets",
+            "Sphinx-x: Scaling data and parameters for a family of multi-modal large language models"
+          ],
+          "1 Introduction Flow-based Large Diffusion Transformers (Flag-DiT):": [
+            "Imagenet: A large-scale hierarchical image database",
+            "Query-key normalization for transformers",
+            "Llama: Open and efficient foundation language models",
+            "Roformer: Enhanced transformer with rotary position embedding",
+            "Root mean square layer normalization",
+            "Sit: Exploring flow and diffusion-based generative models with scalable interpolant transformers",
+            "Yarn: Efficient context window extension of large language models",
+            "Language models are few-shot learners"
+          ],
+          "1 Introduction Any Modalities, Resolution, and Duration within One Framework:": [
+            "Language models are unsupervised multitask learners."
+          ],
+          "1 Introduction Low Training Resources:": [
+            "Improving image generation with better captions",
+            "Exploring the limits of transfer learning with a unified text-to-text transformer",
+            "Llama: Open and efficient foundation language models"
+          ],
+          "2 Method 2.1 Revisiting RoPE, DiT, SiT, PixArt-\u03b1\ud835\udefc\\alpha and Sora": [
+            "Segment anything",
+            "Imagenet: A large-scale hierarchical image database",
+            "Scalable diffusion models with transformers",
+            "Sdxl: Improving latent diffusion models for high-resolution image synthesis",
+            "Pixart-\u03b1\ud835\udefc\\alpha: Fast training of diffusion transformer for photorealistic text-to-image synthesis.",
+            "OpenAI. https://openai.com/sora. In OpenAI blog, 2024.",
+            "Ntk-aware Scaled Rope Allows Llama Models to Have Extended (8k+) Context Size Without Any Fine-tuning and Minimal Perplexity Degradation.",
+            "Raphael: Text-to-image generation via large mixture of diffusion paths",
+            "Extending context window of large language models via positional interpolation",
+            "Roformer: Enhanced transformer with rotary position embedding",
+            "Denoising diffusion probabilistic models",
+            "Sit: Exploring flow and diffusion-based generative models with scalable interpolant transformers",
+            "Yarn: Efficient context window extension of large language models"
+          ],
+          "2 Method 2.2 Architecture of Flag-DiT": [
+            "Palm: Scaling language modeling with pathways",
+            "Denoising diffusion probabilistic models",
+            "Mixed precision training",
+            "Denoising diffusion implicit models",
+            "Attention is all you need",
+            "Auto-encoding variational bayes",
+            "Pytorch fsdp: experiences on scaling fully sharded data parallel",
+            "Roformer: Enhanced transformer with rotary position embedding",
+            "Llama-adapter: Efficient fine-tuning of language models with zero-init attention",
+            "Megatron-lm: Training multi-billion parameter language models using model parallelism",
+            "Score-based generative modeling through stochastic differential equations",
+            "Layer normalization",
+            "Scaling vision transformers to 22 billion parameters",
+            "Ring attention with blockwise transformers for near-infinite context",
+            "Elucidating the design space of diffusion-based generative models",
+            "Scalable diffusion models with transformers",
+            "Llama: Open and efficient foundation language models",
+            "Root mean square layer normalization",
+            "Sit: Exploring flow and diffusion-based generative models with scalable interpolant transformers",
+            "Yarn: Efficient context window extension of large language models",
+            "Flow matching for generative modeling",
+            "An image is worth 16x16 words: Transformers for image recognition at scale"
+          ],
+          "2 Method 2.3 The Overall Pipeline of Lumina-T2X": [
+            "Scaling rectified flow transformers for high-resolution image synthesis",
+            "Elucidating the design space of diffusion-based generative models"
+          ],
+          "2 Method 2.4 Lumina-T2X System": [
+            "Imagen video: High definition video generation with diffusion models"
+          ],
+          "2 Method 2.5 Advanced Applications of Lumina-T2I": [
+            "Ntk-aware Scaled Rope Allows Llama Models to Have Extended (8k+) Context Size Without Any Fine-tuning and Minimal Perplexity Degradation.",
+            "Style aligned image generation via shared attention",
+            "Prompt-to-prompt image editing with cross attention control",
+            "Scalecrafter: Tuning-free higher-resolution visual generation with diffusion models",
+            "Training-free diffusion model adaptation for variable-sized text-to-image synthesis",
+            "Scaling rectified flow transformers for high-resolution image synthesis",
+            "Mixture of diffusers for scene composition and high resolution image generation"
+          ],
+          "3 Experiments 3.1 Validating Flag-DiT on ImageNet": [
+            "Imagenet: A large-scale hierarchical image database",
+            "Scalable diffusion models with transformers",
+            "Improved techniques for training gans",
+            "Pixart-\u03b1\ud835\udefc\\alpha: Fast training of diffusion transformer for photorealistic text-to-image synthesis.",
+            "Improved precision and recall metric for assessing generative models",
+            "Elucidating the design space of diffusion-based generative models",
+            "Classifier-free diffusion guidance",
+            "Denoising diffusion probabilistic models",
+            "On aliased resizing and surprising subtleties in gan evaluation",
+            "Generating images with sparse representations"
+          ],
+          "3 Experiments 3.2 Results for Lumina-T2I": [
+            "What the daam: Interpreting stable diffusion using cross attention",
+            "Segment anything",
+            "Laion-400m: Open dataset of clip-filtered 400 million image-text pairs",
+            "Imagenet: A large-scale hierarchical image database",
+            "Mastering text-to-image diffusion: Recaptioning, planning, and generating with multimodal llms",
+            "Pixart-\u03b1\ud835\udefc\\alpha: Fast training of diffusion transformer for photorealistic text-to-image synthesis.",
+            "Coyo-700m: Image-text pair dataset",
+            "Llama-adapter v2: Parameter-efficient visual instruction model",
+            "Style aligned image generation via shared attention",
+            "Prompt-to-prompt image editing with cross attention control",
+            "Llama: Open and efficient foundation language models",
+            "Roformer: Enhanced transformer with rotary position embedding",
+            "Arbitrary style transfer in real-time with adaptive instance normalization"
+          ],
+          "3 Experiments 3.3 Results for Lumina-T2V": [
+            "Animatediff: Animate your personalized text-to-image diffusion models without specific tuning",
+            "Panda-70m: Captioning 70m videos with multiple cross-modality teachers.",
+            "Learning transferable visual models from natural language supervision"
+          ],
+          "4 Related Work AI-Generated Contents (AIGCs)": [
+            "Nice: Non-linear independent components estimation",
+            "OpenAI. https://openai.com/sora. In OpenAI blog, 2024.",
+            "Flow straight and fast: Learning to generate and transfer data with rectified flow",
+            "Style aligned image generation via shared attention",
+            "Prompt-to-prompt image editing with cross attention control",
+            "Adding conditional control to text-to-image diffusion models",
+            "Scalecrafter: Tuning-free higher-resolution visual generation with diffusion models",
+            "Denoising diffusion probabilistic models",
+            "Denoising diffusion implicit models",
+            "Make-an-audio: Text-to-audio generation with prompt-enhanced diffusion models",
+            "Auto-encoding variational bayes",
+            "Classifier-free diffusion guidance",
+            "Mvdream: Multi-view diffusion for 3d generation",
+            "Chatgpt",
+            "Generative adversarial nets",
+            "Sdxl: Improving latent diffusion models for high-resolution image synthesis",
+            "Deep unsupervised learning using nonequilibrium thermodynamics",
+            "Animatediff: Animate your personalized text-to-image diffusion models without specific tuning",
+            "Scaling rectified flow transformers for high-resolution image synthesis",
+            "Mixture of diffusers for scene composition and high resolution image generation",
+            "Pixel recurrent neural networks",
+            "Scalable diffusion models with transformers",
+            "Cascaded diffusion models for high fidelity image generation",
+            "Sit: Exploring flow and diffusion-based generative models with scalable interpolant transformers"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.10830174386501312,
+        "extra": {
+          "expand": "not expand"
+        }
+      }
+    ],
+    "Analysis of scaling law in image-text models": [
+      {
+        "title": "A Tale of Tails: Model Collapse as a Change of Scaling Laws",
+        "arxiv_id": "2402.07043",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract As AI model size grows, neural scaling laws have become a crucial tool to predict the improvements of large models when increasing capacity and the size of original (human or natural) training data. Yet, the widespread use of popular models means that the ecosystem of online data and text will co-evolve to progressively contain increased amounts of synthesized data. In this paper we ask: How will the scaling laws change in the inevitable regime where synthetic data makes its way into the training corpus? Will future models, still improve, or be doomed to degenerate up to total (model) collapse? We develop a theoretical framework of model collapse through the lens of scaling laws. We discover a wide range of decay phenomena, analyzing loss of scaling, shifted scaling with number of generations, the \u201dun-learning\u201d of skills, and grokking when mixing human and synthesized data. Our theory is validated by large-scale experiments with a transformer on an arithmetic task and text generation using the large language model Llama2. ",
+        "sections": {
+          "1 Introduction": [
+            "High-resolution image synthesis with latent diffusion models",
+            "Emergent abilities of large language models",
+            "Prevalence of neural collapse during the terminal phase of deep learning training",
+            "Gpt-4 technical report",
+            "Data and parameter scaling laws for neural machine translation",
+            "Learning curve theory",
+            "Deep learning scaling is predictable, empirically"
+          ],
+          "1 Introduction Model Collapse.": [
+            "High-resolution image synthesis with latent diffusion models",
+            "Midjourney",
+            "On the stability of iterative retraining of generative models on their own data.",
+            "Llama 2: Open foundation and fine-tuned chat models",
+            "Can transformers learn the greatest common divisor?",
+            "Will large-scale generative models corrupt future datasets?",
+            "Gpt-4 technical report",
+            "Zero-shot text-to-image generation",
+            "The curse of recursion: Training on generated data makes models forget",
+            "Bert: Pre-training of deep bidirectional transformers for language understanding",
+            "The psycho-biology of language: an introduction to dynamic philology",
+            "Self-consuming generative models go mad"
+          ],
+          "1 Introduction (1) A Double Scaling Law.": [
+            "Learning curve theory"
+          ],
+          "1 Introduction (2) A Triplet Scaling Law for Memory-Limited Models.": [
+            "Scaling laws for associative memories"
+          ],
+          "1 Introduction (4) Mitigation Strategies.": [
+            "Learning curve theory"
+          ],
+          "1 Introduction Related Work.": [
+            "Scaling laws of synthetic images for model training\u2026 for now.",
+            "Scaling laws for associative memories",
+            "Asymptotic learning curves of kernel methods: empirical data versus teacher\u2013student paradigm",
+            "On the stability of iterative retraining of generative models on their own data.",
+            "Nonparametric regression using deep neural networks with relu activation function",
+            "Learning curve theory",
+            "Auto-encoding variational bayes",
+            "The curse of recursion: Training on generated data makes models forget",
+            "Self-consuming generative models go mad"
+          ],
+          "2 A Deterministic Infinite Memory Model": [
+            "The quantization model of neural scaling",
+            "Learning curve theory"
+          ],
+          "2 A Deterministic Infinite Memory Model 2.2 A New Scaling Law in the Hutter LLM": [
+            "Learning curve theory"
+          ],
+          "3 Mitigating Model Collapse via Data Mixing 3.2 A Grokking Phenomenon": [
+            "Is synthetic data from generative models ready for image recognition?"
+          ],
+          "4 A Tailed Bigram Model 4.1 The Hutter++ Algorithm": [
+            "On the convergence of the empirical distribution"
+          ],
+          "4 A Tailed Bigram Model 4.2 A Scaling Law for Hutter++": [
+            "Learning curve theory"
+          ],
+          "5 Capacity-Limited Memory Models: A Triplet Scaling Law": [
+            "Scaling laws for associative memories",
+            "Learning curve theory"
+          ],
+          "6 Experiments": [
+            "Can transformers learn the greatest common divisor?",
+            "The curse of recursion: Training on generated data makes models forget",
+            "Llama 2: Open foundation and fine-tuned chat models"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.0027500614523887634,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Scaling Laws of Synthetic Images for Model Training \u2026 for Now",
+        "arxiv_id": "2312.04567",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Recent significant advances in text-to-image models unlock the possibility of training vision systems using synthetic images, potentially overcoming the difficulty of collecting curated data at scale. It is unclear, however, how these models behave at scale, as more synthetic data is added to the training set. In this paper we study the scaling laws of synthetic images generated by state of the art text-to-image models, for the training of supervised models: image classifiers with label supervision, and CLIP with language supervision. We identify several factors, including text prompts, classifier-free guidance scale, and types of text-to-image models, that significantly affect scaling behavior. After tuning these factors, we observe that synthetic images demonstrate a scaling trend similar to, but slightly less effective than, real images in CLIP training, while they significantly underperform in scaling when training supervised image classifiers. Our analysis indicates that the main reason for this underperformance is the inability of off-the-shelf text-to-image models to generate certain concepts, a limitation that significantly impairs the training of image classifiers. Our findings also suggest that scaling synthetic data can be particularly effective in scenarios such as: (1) when there is a limited supply of real images for a supervised problem (e.g., fewer than 0.5 million images in ImageNet), (2) when the evaluation dataset diverges significantly from the training data, indicating the out-of-distribution scenario, or (3) when synthetic data is used in conjunction with real images, as demonstrated in the training of CLIP models. ",
+        "sections": {
+          "1 Introduction": [
+            "High-resolution image synthesis with latent diffusion models",
+            "Imagenet: A large-scale hierarchical image database",
+            "Laion-5b: An open large-scale dataset for training next generation image-text models",
+            "Photorealistic text-to-image diffusion models with deep language understanding",
+            "Conceptual captions: A cleaned, hypernymed, image alt-text dataset for automatic image captioning",
+            "Learning multiple layers of features from tiny images",
+            "Scaling laws for neural language models",
+            "Muse: Text-to-image generation via masked generative transformers",
+            "Scaling up visual and vision-language representation learning with noisy text supervision",
+            "Learning transferable visual models from natural language supervision"
+          ],
+          "2 Related Work": [
+            "Scaling autoregressive models for content-rich text-to-image generation.",
+            "Revisiting neural scaling laws in language and vision",
+            "Learning semantic segmentation from synthetic data: A geometrically guided input-output adaptation approach",
+            "Nerf-supervision: Learning dense object descriptors from neural radiance fields",
+            "Improving image generation with better captions",
+            "Denoising diffusion probabilistic models",
+            "Scaling laws for autoregressive generative modeling",
+            "Training compute-optimal large language models",
+            "Scaling up gans for text-to-image synthesis",
+            "Attention is all you need",
+            "Palm: Scaling language modeling with pathways",
+            "Scaling laws for generative mixed-modal language models",
+            "Scaling laws for transfer",
+            "Photorealistic text-to-image diffusion models with deep language understanding",
+            "Cross-domain self-supervised multi-task feature learning using synthetic imagery",
+            "Data and parameter scaling laws for neural machine translation",
+            "Beyond neural scaling laws: beating power law scaling via data pruning",
+            "Generating high-fidelity synthetic patient data for assessing machine learning healthcare software",
+            "Synthetic data from diffusion models improves imagenet classification",
+            "Neural discrete representation learning",
+            "High-resolution image synthesis with latent diffusion models",
+            "Augmented reality meets computer vision: Efficient data generation for urban driving scenes",
+            "Muse: Text-to-image generation via masked generative transformers",
+            "On rendering synthetic images for training an object detector",
+            "Deep learning scaling is predictable, empirically",
+            "Generative adversarial nets"
+          ],
+          "3 Preliminaries 3.1 Three Factors on T2I Generation": [
+            "High-resolution image synthesis with latent diffusion models",
+            "Photorealistic text-to-image diffusion models with deep language understanding",
+            "Wordnet: a lexical database for english",
+            "Exploring the limits of transfer learning with a unified text-to-text transformer",
+            "Blip-2: Bootstrapping language-image pre-training with frozen image encoders and large language models",
+            "Is synthetic data from generative models ready for image recognition?",
+            "Muse: Text-to-image generation via masked generative transformers",
+            "Classifier-free diffusion guidance"
+          ],
+          "3 Preliminaries 3.2 Metrics: Recognizability and Diversity": [
+            "Gans trained by a two time-scale update rule converge to a local nash equilibrium",
+            "The unreasonable effectiveness of deep features as a perceptual metric",
+            "Diffusion models as artists: Are we closing the gap between humans and machines?",
+            "Pytorch image models"
+          ],
+          "3 Preliminaries 3.3 Scaling Law for Synthetic Data": [
+            "Scaling laws for neural language models"
+          ],
+          "4 Scaling on Supervised Training 4.1 Setup": [
+            "An image is worth 16x16 words: Transformers for image recognition at scale"
+          ],
+          "4 Scaling on Supervised Training 4.4 Scaling beyond 4M": [
+            "Scaling laws for neural language models"
+          ],
+          "4 Scaling on Supervised Training 4.5 Out-Of-Distribution Scaling": [
+            "Do imagenet classifiers generalize to imagenet?",
+            "The many faces of robustness: A critical analysis of out-of-distribution generalization",
+            "Natural adversarial examples",
+            "Learning robust global representations by penalizing local predictive power"
+          ],
+          "6 Scaling on CLIP 6.1 Setup": [
+            "Food-101\u2013mining discriminative components with random forests",
+            "Cats and dogs",
+            "3d object representations for fine-grained categorization",
+            "Learning transferable visual models from natural language supervision"
+          ],
+          "6 Scaling on CLIP 6.3 Scaling on downstream datasets": [
+            "Cats and dogs",
+            "Sun database: Large-scale scene recognition from abbey to zoo"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.005666996818035841,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Reproducible scaling laws for contrastive language-image learning",
+        "arxiv_id": "2212.07143",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Scaling up neural networks has led to remarkable performance across a wide range of tasks. Moreover, performance often follows reliable scaling laws as a function of training set size, model size, and compute, which offers valuable guidance as large-scale experiments are becoming increasingly expensive. However, previous work on scaling laws has primarily used private data & models or focused on uni-modal language or vision learning. To address these limitations, we investigate scaling laws for contrastive language-image pre-training (CLIP) with the public LAION dataset and the open-source OpenCLIP repository. Our large-scale experiments involve models trained on up to two billion image-text pairs and identify power law scaling for multiple downstream tasks including zero-shot classification, retrieval, linear probing, and end-to-end fine-tuning. We find that the training distribution plays a key role in scaling laws as the OpenAI and OpenCLIP models exhibit different scaling behavior despite identical model architectures and similar training recipes. We open-source our evaluation workflow and all models, including the largest public CLIP models, to ensure reproducibility and make scaling laws research more accessible. Source code and instructions to reproduce this study will be available at https://github.com/LAION-AI/scaling-laws-openclip ",
+        "sections": {
+          "1 Introduction": [
+            "Openclip",
+            "Measuring robustness to natural distribution shifts in image classification",
+            "Big transfer (bit): General visual representation learning",
+            "Scaling laws for neural language models",
+            "LAION-5B: An open large-scale dataset for training next generation image-text models",
+            "BERT: Pre-training of deep bidirectional transformers for language understanding",
+            "Scaling vision transformers",
+            "Robust speech recognition via large-scale weak supervision",
+            "Learning transferable visual models from natural language supervision"
+          ],
+          "2 Background and related work Scaling laws for generalization and transfer.": [
+            "Reconciling modern machine-learning practice and the classical bias-variance trade-off",
+            "Big transfer (bit): General visual representation learning",
+            "Scaling laws for neural language models",
+            "Training compute-optimal large language models",
+            "Scale efficiently: Insights from pretraining and finetuning transformers",
+            "On the predictability of pruning across scales",
+            "Revisiting unreasonable effectiveness of data in deep learning era",
+            "Scaling vision with sparse mixture of experts",
+            "Effect of scale on catastrophic forgetting in neural networks",
+            "Deep learning scaling is predictable, empirically",
+            "Language models are few-shot learners."
+          ],
+          "2 Background and related work Scaling up language-vision learning.": [
+            "LiT: Zero-shot transfer with locked-image text tuning",
+            "Measuring robustness to natural distribution shifts in image classification",
+            "Multimodal contrastive learning with limoe: the language-image mixture of experts",
+            "Pali: A jointly-scaled multilingual language-image model",
+            "CoCa: Contrastive captioners are image-text foundation models",
+            "Scaling vision transformers",
+            "Combined scaling for zero-shot transfer learning",
+            "Flamingo: a visual language model for few-shot learning",
+            "Scaling up visual and vision-language representation learning with noisy text supervision",
+            "Learning transferable visual models from natural language supervision"
+          ],
+          "2 Background and related work Open large-scale language-vision datasets.": [
+            "Common Crawl",
+            "High-resolution image synthesis with latent diffusion models",
+            "Microsoft coco: Common objects in context",
+            "Coyo-700m: Image-text pair dataset",
+            "Conceptual captions: A cleaned, hypernymed, image alt-text dataset for automatic image captioning",
+            "LAION-5B: An open large-scale dataset for training next generation image-text models",
+            "LAION-400M: Open dataset of CLIP-filtered 400 million image-text pairs",
+            "Visual genome: Connecting language and vision using crowdsourced dense image annotations",
+            "Yfcc100m: The new data in multimedia research"
+          ],
+          "3 Datasets and Methods 3.1 Open large-scale datasets LAION-400M/2B": [
+            "LAION-5B: An open large-scale dataset for training next generation image-text models",
+            "LAION-400M: Open dataset of CLIP-filtered 400 million image-text pairs",
+            "High-resolution image synthesis with latent diffusion models",
+            "Learning transferable visual models from natural language supervision"
+          ],
+          "3 Datasets and Methods 3.2 Pre-training OpenCLIP across various scales": [
+            "Openclip",
+            "Decoupled weight decay regularization",
+            "Pytorch distributed: Experiences on accelerating data parallel training",
+            "Training compute-optimal large language models",
+            "Stability AI HPC facility",
+            "JUWELS Booster Supercomputer",
+            "Llm. int8 (): 8-bit matrix multiplication for transformers at scale",
+            "Learning transferable visual models from natural language supervision"
+          ],
+          "4 Scaling laws for different downstream tasks 4.1 Zero-shot transfer and robustness": [
+            "Imagenet: A large-scale hierarchical image database",
+            "A large-scale study of representation learning with the visual task adaptation benchmark",
+            "Implementation and benchmarking of perceptual image hash functions",
+            "The many faces of robustness: A critical analysis of out-of-distribution generalization",
+            "Learning transferable visual models from natural language supervision"
+          ],
+          "4 Scaling laws for different downstream tasks 4.2 Retrieval": [
+            "Deep visual-semantic alignments for generating image descriptions",
+            "From image descriptions to visual denotations: New similarity metrics for semantic inference over event descriptions",
+            "Microsoft coco: Common objects in context"
+          ],
+          "4 Scaling laws for different downstream tasks 4.3 Full and few-shot linear probing": [
+            "Adam: A method for stochastic optimization",
+            "Do better imagenet models transfer better?",
+            "Imagenet: A large-scale hierarchical image database",
+            "A large-scale study of representation learning with the visual task adaptation benchmark",
+            "Learning transferable visual models from natural language supervision",
+            "Learning multiple layers of features from tiny images"
+          ],
+          "4 Scaling laws for different downstream tasks 4.4 Fine-tuning": [
+            "Sun database: Exploring a large collection of scene categories",
+            "Decoupled weight decay regularization",
+            "Remote sensing image scene classification: Benchmark and state of the art",
+            "3d object representations for fine-grained categorization",
+            "Beit: Bert pre-training of image transformers",
+            "Eurosat: A novel dataset and deep learning benchmark for land use and land cover classification",
+            "The german traffic sign recognition benchmark: a multi-class classification competition",
+            "The many faces of robustness: A critical analysis of out-of-distribution generalization",
+            "Pytorch image models",
+            "Describing textures in the wild",
+            "Reading digits in natural images with unsupervised feature learning",
+            "Patching open-vocabulary models by interpolating weights",
+            "The mnist database of handwritten digits",
+            "Learning transferable visual models from natural language supervision"
+          ],
+          "5 Discussion Larger scale improves performance across different downstream tasks.": [
+            "LiT: Zero-shot transfer with locked-image text tuning",
+            "Scaling laws for neural language models",
+            "CoCa: Contrastive captioners are image-text foundation models",
+            "Robust fine-tuning of zero-shot models",
+            "Combined scaling for zero-shot transfer learning"
+          ],
+          "5 Discussion Limitations of the current study.": [
+            "Learning transferable visual models from natural language supervision"
+          ],
+          "6 Conclusion": [
+            "Openclip",
+            "Measuring robustness to natural distribution shifts in image classification",
+            "Scaling laws for neural language models",
+            "Training compute-optimal large language models",
+            "LAION-400M: Open dataset of CLIP-filtered 400 million image-text pairs",
+            "Beyond neural scaling laws: beating power law scaling via data pruning"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.9857861995697021,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Scaling Laws for Generative Mixed-Modal Language Models",
+        "arxiv_id": "2301.03728",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Generative language models define distributions over sequences of tokens that can represent essentially any combination of data modalities (e.g., any permutation of image tokens from VQ-VAEs, speech tokens from HuBERT, BPE tokens for language or code, and so on). To better understand the scaling properties of such mixed-modal models, we conducted over 250 experiments using seven different modalities and model sizes ranging from 8 million to 30 billion, trained on 5-100 billion tokens. We report new mixed-modal scaling laws that unify the contributions of individual modalities and the interactions between them. Specifically, we explicitly model the optimal synergy and competition due to data and model size as an additive term to previous uni-modal scaling laws. We also find four empirical phenomena observed during the training, such as emergent coordinate-ascent style training that naturally alternates between modalities, guidelines for selecting critical hyper-parameters, and connections between mixed-modal competition and training stability. Finally, we test our scaling law by training a 30B speech-text model, which significantly outperforms the corresponding unimodal models. Overall, our research provides valuable insights into the design and training of mixed-modal generative models, an important new class of unified models that have unique distributional properties. ",
+        "sections": {
+          "1 Introduction": [
+            "Bartsmiles: Generative masked language models for molecular representations",
+            "Scaling laws for neural language models",
+            "Scaling laws for acoustic models",
+            "Evaluating large language models trained on code",
+            "Language models are few-shot learners",
+            "Zero-shot text-to-image generation",
+            "Taming transformers for high-resolution image synthesis",
+            "Cm3: A causal masked multimodal model of the internet",
+            "Hubert: Self-supervised speech representation learning by masked prediction of hidden units"
+          ],
+          "2 Related Work": [
+            "Causes and cures for interference in multilingual translation",
+            "Unsupervised cross-lingual representation learning at scale",
+            "Scaling laws for neural language models",
+            "Unified scaling laws for routed language models",
+            "Training compute-optimal large language models",
+            "Scaling laws for autoregressive generative modeling",
+            "Scaling laws for acoustic models",
+            "Larger-scale transformers for multilingual masked language modeling",
+            "Reproducible scaling laws for contrastive language-image learning",
+            "Data and parameter scaling laws for neural machine translation",
+            "Scaling laws for neural machine translation",
+            "Deep learning scaling is predictable, empirically",
+            "Llm. int8 (): 8-bit matrix multiplication for transformers at scale"
+          ],
+          "3 Definitions 3.2 Uni-Modal Scaling Laws": [
+            "Training compute-optimal large language models"
+          ],
+          "4 Empirical Setting 4.1 Datasets": [
+            "Opt: Open pre-trained transformer language models",
+            "Bartsmiles: Generative masked language models for molecular representations",
+            "Laion-5b: An open large-scale dataset for training next generation image-text models",
+            "Incoder: A generative model for code infilling and synthesis",
+            "Make-a-scene: Scene-based text-to-image generation with human priors"
+          ],
+          "4 Empirical Setting 4.2 Tokenization": [
+            "Make-a-scene: Scene-based text-to-image generation with human priors",
+            "Neural machine translation of rare words with subword units",
+            "Hubert: Self-supervised speech representation learning by masked prediction of hidden units",
+            "Taming transformers for high-resolution image synthesis"
+          ],
+          "4 Empirical Setting 4.3 Model Architecture": [
+            "Opt: Open pre-trained transformer language models",
+            "Language models are few-shot learners"
+          ],
+          "4 Empirical Setting 4.4 Causal Masking Objective": [
+            "Cm3: A causal masked multimodal model of the internet",
+            "Incoder: A generative model for code infilling and synthesis"
+          ],
+          "4 Empirical Setting 4.5 Training Procedure": [
+            "Adam: A method for stochastic optimization",
+            "Opt: Open pre-trained transformer language models",
+            "A study of bfloat16 for deep learning training",
+            "PyTorch: An imperative style, high-performance deep learning library",
+            "Aim",
+            "FairScale: A general purpose modular PyTorch library for high performance and large scale training.",
+            "Megatron-lm: Training multi-billion parameter language models using model parallelism"
+          ],
+          "5 Scaling Laws 5.1 Uni-Modal Scaling Laws": [
+            "Training compute-optimal large language models"
+          ],
+          "5 Scaling Laws 5.2 Bi-Modal Scaling Laws": [
+            "Scaling laws for neural language models",
+            "Opt: Open pre-trained transformer language models"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.9252355098724365,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Bigger is not Always Better: Scaling Properties of Latent Diffusion Models",
+        "arxiv_id": "2404.01367",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract We study the scaling properties of latent diffusion models (LDMs) with an emphasis on their sampling efficiency. While improved network architecture and inference algorithms have shown to effectively boost sampling efficiency of diffusion models, the role of model size\u2014a critical determinant of sampling efficiency\u2014has not been thoroughly examined. Through empirical analysis of established text-to-image diffusion models, we conduct an in-depth investigation into how model size influences sampling efficiency across varying sampling steps. Our findings unveil a surprising trend: when operating under a given inference budget, smaller models frequently outperform their larger equivalents in generating high-quality results. Moreover, we extend our study to demonstrate the generalizability of the these findings by applying various diffusion samplers, exploring diverse downstream tasks, evaluating post-distilled models, as well as comparing performance relative to training compute. These findings open up new pathways for the development of LDM scaling strategies which can be employed to enhance generative capabilities within limited inference budgets.",
+        "sections": {
+          "1 Introduction": [
+            "Audioldm: Text-to-audio generation with latent diffusion models",
+            "Score-based generative modeling through stochastic differential equations",
+            "Snapfusion: Text-to-image diffusion model on mobile devices within two seconds",
+            "Vidm: Video implicit diffusion models",
+            "Dreambooth: Fine tuning text-to-image diffusion models for subject-driven generation",
+            "Magic3d: High-resolution text-to-3d content creation",
+            "Image super-resolution via iterative refinement",
+            "High-resolution image synthesis with latent diffusion models",
+            "Exploring collaborative distributed diffusion-based ai-generated content (aigc) in wireless networks.",
+            "Generative adversarial networks",
+            "Tpu v4: An optically reconfigurable supercomputer for machine learning with hardware support for embeddings",
+            "Knowledge distillation in iterative generative models for improved sampling speed",
+            "Microsoft coco: Common objects in context",
+            "Denoising diffusion implicit models"
+          ],
+          "1 Introduction 1.1 Summary": [
+            "Dpm-solver++: Fast solver for guided sampling of diffusion probabilistic models",
+            "Denoising diffusion implicit models",
+            "Denoising diffusion probabilistic models"
+          ],
+          "2 Related Work Scaling laws.": [
+            "Llama 2: Open foundation and fine-tuned chat models",
+            "Palm 2 technical report",
+            "Scalable diffusion models with transformers",
+            "High-resolution image synthesis with latent diffusion models",
+            "Real-esrgan: Training real-world blind super-resolution with pure synthetic data",
+            "Generative pretraining from pixels",
+            "Training compute-optimal large language models",
+            "Improved denoising diffusion probabilistic models",
+            "Scaling laws for neural language models",
+            "Codi: Conditional diffusion distillation for higher-fidelity and faster image generation",
+            "Language models are few-shot learners"
+          ],
+          "2 Related Work Efficient diffusion models.": [
+            "Snapfusion: Text-to-image diffusion model on mobile devices within two seconds",
+            "Hierarchical text-conditional image generation with clip latents",
+            "High-resolution image synthesis with latent diffusion models",
+            "Improved denoising diffusion probabilistic models",
+            "Denoising diffusion implicit models"
+          ],
+          "2 Related Work Efficient non-diffusion generative models.": [
+            "A style-based generator architecture for generative adversarial networks",
+            "BERT: Pre-training of deep bidirectional transformers for language understanding",
+            "Auto-encoding variational bayes",
+            "Generative adversarial networks",
+            "Muse: Text-to-image generation via masked generative transformers.",
+            "Stylegan-t: Unlocking the power of gans for fast large-scale text-to-image synthesis"
+          ],
+          "3 Scaling LDMs": [
+            "High-resolution image synthesis with latent diffusion models",
+            "Real-esrgan: Training real-world blind super-resolution with pure synthetic data",
+            "Microsoft coco: Common objects in context"
+          ],
+          "3 Scaling LDMs 3.2 Pretraining scales downstream performance": [
+            "Image super-resolution via iterative refinement",
+            "Dreambooth: Fine tuning text-to-image diffusion models for subject-driven generation"
+          ],
+          "3 Scaling LDMs 3.3 Scaling sampling-efficiency": [
+            "High-resolution image synthesis with latent diffusion models",
+            "Classifier-free diffusion guidance"
+          ],
+          "3 Scaling LDMs 3.4 Scaling sampling-efficiency in different samplers": [
+            "Dpm-solver++: Fast solver for guided sampling of diffusion probabilistic models",
+            "Denoising diffusion probabilistic models"
+          ],
+          "3 Scaling LDMs 3.6 Scaling sampling-efficiency in distilled LDMs.": [
+            "Consistency models",
+            "Knowledge distillation in iterative generative models for improved sampling speed"
+          ],
+          "4 Conclusion Limitations.": [
+            "Cross-modal contrastive learning for text-to-image generation",
+            "Scalable diffusion models with transformers"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.003996056970208883,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "On the Scalability of Diffusion-based Text-to-Image Generation",
+        "arxiv_id": "2404.02883",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract Scaling up model and data size has been quite successful for the evolution of LLMs. However, the scaling law for the diffusion based text-to-image (T2I) models is not fully explored. It is also unclear how to efficiently scale the model for better performance at reduced cost. The different training settings and expensive training cost make a fair model comparison extremely difficult. In this work, we empirically study the scaling properties of diffusion based T2I models by performing extensive and rigours ablations on scaling both denoising backbones and training set, including training scaled UNet and Transformer variants ranging from 0.4B to 4B parameters on datasets upto 600M images. For model scaling, we find the location and amount of cross attention distinguishes the performance of existing UNet designs. And increasing the transformer blocks is more parameter-efficient for improving text-image alignment than increasing channel numbers. We then identify an efficient UNet variant, which is 45% smaller and 28% faster than SDXL\u2019s UNet. On the data scaling side, we show the quality and diversity of the training set matters more than simply dataset size. Increasing caption density and diversity improves text-image alignment performance and the learning efficiency. Finally, we provide scaling functions to predict the text-image alignment performance as functions of the scale of model size, compute and dataset size.",
+        "sections": {
+          "1 Introduction": [
+            "Learning transferable visual models from natural language supervision",
+            "Hierarchical text-conditional image generation with clip latents",
+            "Photorealistic text-to-image diffusion models with deep language understanding",
+            "Scaling laws for neural language models",
+            "Sdxl: improving latent diffusion models for high-resolution image synthesis",
+            "Language models are few-shot learners"
+          ],
+          "1 Introduction 1.1 What we have done": [
+            "Sdxl: improving latent diffusion models for high-resolution image synthesis",
+            "DeepFloyd. Deepfloyd",
+            "High-resolution image synthesis with latent diffusion models",
+            "Scalable diffusion models with transformers"
+          ],
+          "2 Related Work Diffusion Models": [
+            "Generative adversarial nets",
+            "Auto-encoding variational bayes",
+            "Hierarchical text-conditional image generation with clip latents",
+            "Photorealistic text-to-image diffusion models with deep language understanding",
+            "High-resolution image synthesis with latent diffusion models",
+            "Emu: Enhancing image generation models using photogenic needles in a haystack",
+            "Diffusion models beat gans on image synthesis",
+            "Deep unsupervised learning using nonequilibrium thermodynamics",
+            "DeepFloyd. Deepfloyd",
+            "Sdxl: improving latent diffusion models for high-resolution image synthesis"
+          ],
+          "2 Related Work Scaling UNets": [
+            "Snapfusion: Text-to-image diffusion model on mobile devices within two seconds",
+            "High-resolution image synthesis with latent diffusion models",
+            "DeepFloyd. Deepfloyd",
+            "Improved denoising diffusion probabilistic models",
+            "Denoising diffusion probabilistic models",
+            "Sdxl: improving latent diffusion models for high-resolution image synthesis"
+          ],
+          "2 Related Work Transformer Backbones": [
+            "All are worth words: A vit backbone for diffusion models",
+            "Attention is all you need",
+            "Scalable diffusion models with transformers",
+            "Pixart-\u03b1\ud835\udefc\\alpha: Fast training of diffusion transformer for photorealistic text-to-image synthesis.",
+            "Scaling rectified flow transformers for high-resolution image synthesis",
+            "Masked diffusion transformer is a strong image synthesizer"
+          ],
+          "3 Scaling Denoising Backbone 3.1 Existing UNet Design": [
+            "High-resolution image synthesis with latent diffusion models",
+            "simple diffusion: End-to-end diffusion for high resolution images",
+            "Denoising diffusion probabilistic models"
+          ],
+          "3 Scaling Denoising Backbone 3.2 Controlled Comparison of UNets": [
+            "Human preference score v2: A solid benchmark for evaluating human preferences of text-to-image synthesis.",
+            "Learning transferable visual models from natural language supervision",
+            "Openclip",
+            "High-resolution image synthesis with latent diffusion models",
+            "DeepFloyd. Deepfloyd",
+            "Tifa: Accurate and interpretable text-to-image faithfulness evaluation with question answering",
+            "Imagereward: Learning and evaluating human preferences for text-to-image generation",
+            "Sdxl: improving latent diffusion models for high-resolution image synthesis",
+            "Decoupled weight decay regularization",
+            "Denoising diffusion implicit models"
+          ],
+          "3 Scaling Denoising Backbone 3.4 Comparing with Transformers": [
+            "Pixart-\u03b1\ud835\udefc\\alpha: Fast training of diffusion transformer for photorealistic text-to-image synthesis.",
+            "Scaling instruction-finetuned language models",
+            "Scalable diffusion models with transformers",
+            "Masked diffusion transformer is a strong image synthesizer"
+          ],
+          "4 Scaling Training Data 4.2 Data Cleaning": [
+            "Laion aesthetic v2"
+          ],
+          "4 Scaling Training Data 4.3 Expanding Knowledge via Synthetic Captions": [
+            "Improving image generation with better captions",
+            "Blip-2: Bootstrapping language-image pre-training with frozen image encoders and large language models"
+          ],
+          "5 More Scaling Properties Numerical Scaling Law": [
+            "Scaling laws for neural language models"
+          ],
+          "5 More Scaling Properties Model Evaluation at Low Resolution": [
+            "Emu: Enhancing image generation models using photogenic needles in a haystack"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.4654443860054016,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "An Empirical Study of Scaling Law for OCR",
+        "arxiv_id": "2401.00028",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract The laws of model size, data volume, computation and model performance have been extensively studied in the field of Natural Language Processing (NLP). However, the scaling laws in Optical Character Recognition (OCR) have not yet been investigated. To address this, we conducted comprehensive studies that involved examining the correlations between performance and the scale of models, data volume and computation in the field of text recognition. Conclusively, the study demonstrates smooth power laws between performance and model size, as well as training data volume, when other influencing factors are held constant. Additionally, we have constructed a large-scale dataset called REBU-Syn, which comprises 6 million real samples and 18 million synthetic samples. Based on our scaling law and new dataset, we have successfully trained a scene text recognition model, achieving a new state-of-the-art on 6 common test benchmarks with a top-1 average accuracy of 97.42%percent\\%. The models and dataset are publicly available at large-ocr-model.github.io. ",
+        "sections": {
+          "1 Introduction": [
+            "Scaling laws for neural language models",
+            "Trocr: Transformer-based optical character recognition with pre-trained models",
+            "Beit: Bert pre-training of image transformers",
+            "An end-to-end trainable neural network for image-based sequence recognition and its application to scene text recognition"
+          ],
+          "2 Related Work Model Scale": [
+            "Universal transformers",
+            "Generating wikipedia by summarizing long sequences"
+          ],
+          "2 Related Work Data Scale": [
+            "An end-to-end trainable neural network for image-based sequence recognition and its application to scene text recognition",
+            "What is wrong with scene text recognition model comparisons?",
+            "Imagenet large scale visual recognition challenge"
+          ],
+          "2 Related Work Scaling Laws": [
+            "Scaling laws for neural language models",
+            "Scaling laws for autoregressive generative modeling",
+            "Scaling vision transformers",
+            "Chatgpt",
+            "Gpt-4 technical report",
+            "An inverse scaling law for clip training",
+            "Learning transferable visual models from natural language supervision"
+          ],
+          "3 Method Details 3.1 Model Scaling": [
+            "Learning deep transformer models for machine translation",
+            "Trocr: Transformer-based optical character recognition with pre-trained models",
+            "Scaling laws for neural language models",
+            "Scaling vision transformers",
+            "Beit: Bert pre-training of image transformers",
+            "Minilm: Deep self-attention distillation for task-agnostic compression of pre-trained transformers",
+            "Roberta: A robustly optimized bert pretraining approach",
+            "Scene text recognition with permuted autoregressive sequence models",
+            "Training data-efficient image transformers & distillation through attention"
+          ],
+          "3 Method Details 3.2 Dataset": [
+            "Icdar 2015 competition on robust reading",
+            "A robust arbitrary text detection system for natural scene images",
+            "Towards accurate scene text recognition with semantic reasoning networks",
+            "Icdar2019 robust reading challenge on arbitrary-shaped text (rrc-art)",
+            "Icdar 2019 robust reading challenge on reading chinese text on signboard",
+            "Synthetic data and artificial neural networks for natural scene text recognition",
+            "Icdar 2013 robust reading competition",
+            "End-to-end scene text recognition",
+            "Scene text recognition using higher order language priors",
+            "Detecting curve text in the wild: New dataset and new solution",
+            "Chinese street view text: Large-scale chinese text reading with partially supervised learning",
+            "Icdar2019 robust reading challenge on multi-lingual scene text detection and recognition \u2013 rrc-mlt-2019",
+            "Recognizing text with perspective distortion in natural scenes",
+            "Textocr: Towards large-scale end-to-end reasoning for arbitrary-shaped scene text",
+            "Synthetic data for text localisation in natural images",
+            "Swintextspotter: Scene text spotting via better synergy between text detection and text recognition",
+            "Uber-text: A large-scale dataset for optical character recognition from street-level imagery",
+            "Scene text recognition with permuted autoregressive sequence models",
+            "Total-text: A comprehensive dataset for scene text detection and recognition",
+            "Open images v5 text annotation and yet another mask text spotter",
+            "Coco-text: Dataset and benchmark for text detection and recognition in natural images",
+            "Icdar2017 competition on reading chinese text in the wild (rctw-17)"
+          ],
+          "3 Method Details 3.3 Experiment Settings": [
+            "Neural machine translation of rare words with subword units",
+            "Sentencepiece: A simple and language independent subword tokenizer and detokenizer for neural text processing"
+          ],
+          "4 Results and Analysis 4.2 Other Observations": [
+            "Scaling laws for neural language models",
+            "Scaling laws for multilingual neural machine translation",
+            "Scene text recognition with permuted autoregressive sequence models"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.00039351891609840095,
+        "extra": {
+          "expand": "not expand"
+        }
+      }
+    ],
+    "Scaling laws in video-text models": [
+      {
+        "title": "Scaling Laws for Autoregressive Generative Modeling",
+        "arxiv_id": "2010.14701",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract We identify empirical scaling laws for the cross-entropy loss in four domains: generative image modeling, video modeling, multimodal image\u2194\u2194\\leftrightarrowtext models, and mathematical problem solving. In all cases autoregressive Transformers smoothly improve in performance as model size and compute budgets increase, following a power-law plus constant scaling law. The optimal model size also depends on the compute budget through a power-law, with exponents that are nearly universal across all data domains. The cross-entropy loss has an information theoretic interpretation as S(S(True)+DKL()+D_{\\mathrm{KL}}(True||||Model))), and the empirical scaling laws suggest a prediction for both the true data distribution\u2019s entropy and the KL divergence between the true and model distributions. With this interpretation, billion-parameter Transformers are nearly perfect models of the YFCC100M image distribution downsampled to an 8\u00d78888\\times 8 resolution, and we can forecast the model size needed to achieve any given reducible loss (ie DKLsubscript\ud835\udc37KLD_{\\mathrm{KL}}) in nats/image for other resolutions. We find a number of additional scaling laws in specific domains: (a) we identify a scaling relation for the mutual information between captions and images in multimodal models, and show how to answer the question \u201cIs a picture worth a thousand words?\u201d; (b) in the case of mathematical problem solving, we identify scaling laws for model performance when extrapolating beyond the training distribution; (c) we finetune generative image models for ImageNet classification and find smooth scaling of the classification loss and error rate, even as the generative loss levels off. Taken together, these results strengthen the case that scaling laws have important implications for neural network performance, including on downstream tasks. ",
+        "sections": {
+          "1 Introduction": [
+            "The new data and new challenges in multimedia research",
+            "Multimodal transformer for unaligned multimodal language sequences",
+            "Analysing mathematical reasoning abilities of neural models",
+            "Scaling autoregressive video models",
+            "Scaling laws for neural language models",
+            "A downsampled variant of imagenet as an alternative to the CIFAR datasets",
+            "Attention is all you need",
+            "Deep learning scaling is predictable, empirically"
+          ],
+          "1 Introduction 1.1 Summary of Results": [
+            "The new data and new challenges in multimedia research",
+            "Neural discrete representation learning",
+            "Scaling laws for neural language models"
+          ],
+          "2 Central Empirical Scaling Laws in Each Domain 2.1 Domain Descriptions and Training Setups": [
+            "The new data and new challenges in multimedia research",
+            "Neural discrete representation learning",
+            "Analysing mathematical reasoning abilities of neural models",
+            "Scaling laws for neural language models",
+            "Generating long sequences with sparse transformers",
+            "Jukebox: A generative model for music",
+            "Language models are few-shot learners",
+            "Fixing weight decay regularization in adam"
+          ],
+          "2 Central Empirical Scaling Laws in Each Domain 2.2 Model Size Scaling and Aspect Ratios": [
+            "Scaling laws for neural language models"
+          ],
+          "2 Central Empirical Scaling Laws in Each Domain 2.3 Compute Scaling and Optimal Model Sizes": [
+            "Scaling laws for neural language models",
+            "The power of interpolation: Understanding the effectiveness of SGD in modern over-parametrized learning",
+            "An empirical model of large-batch training"
+          ],
+          "2 Central Empirical Scaling Laws in Each Domain 2.4 Loss versus Position in the Context Depends on the Structure of the Data": [
+            "Scaling laws for neural language models"
+          ],
+          "3 Image and Video Modeling, the Reducible Loss, and Downstream Tasks": [
+            "Neural discrete representation learning"
+          ],
+          "3 Image and Video Modeling, the Reducible Loss, and Downstream Tasks 3.1 Varying the Image Resolution and Encoding": [
+            "Neural discrete representation learning"
+          ],
+          "3 Image and Video Modeling, the Reducible Loss, and Downstream Tasks 3.4 Finetuning on ImageNet at 32x32 Resolution": [
+            "Language models are few-shot learners",
+            "A downsampled variant of imagenet as an alternative to the CIFAR datasets"
+          ],
+          "5 Mathematical Problem Solving and Extrapolation": [
+            "Compositionality decomposed: how do neural networks generalise?",
+            "Analysing mathematical reasoning abilities of neural models",
+            "Scaling laws for neural language models"
+          ],
+          "6 An Inconsistency in Compute and Datasize Scaling Laws": [
+            "Scaling laws for neural language models",
+            "One epoch is all you need",
+            "A constructive prediction of the generalization error across scales"
+          ],
+          "7 Related Work": [
+            "A neural scaling law from the dimension of the data manifold",
+            "Pixel recurrent neural networks",
+            "Multimodal transformer for unaligned multimodal language sequences",
+            "Generating wikipedia by summarizing long sequences",
+            "Analysing mathematical reasoning abilities of neural models",
+            "Wide neural networks of any depth evolve as linear models under gradient descent",
+            "Scaling laws for neural language models",
+            "Scaling autoregressive video models",
+            "Generative pretraining from pixels",
+            "Generating long sequences with sparse transformers",
+            "A constructive prediction of the generalization error across scales",
+            "Language models are few-shot learners",
+            "Enhancing the transformer with explicit relational encoding for math problem solving",
+            "The large learning rate phase of deep learning: the catapult mechanism",
+            "Deep learning scaling is predictable, empirically"
+          ],
+          "8 Discussion": [
+            "Scaling laws for neural language models",
+            "Language models are few-shot learners"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.9302026033401489,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "InternVideo2: Scaling Video Foundation Models for Multimodal Video Understanding",
+        "arxiv_id": "2403.15377",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract We introduce InternVideo2, a new video foundation model (ViFM) that achieves the state-of-the-art performance in action recognition, video-text tasks, and video-centric dialogue. Our approach employs a progressive training paradigm that unifies the different self- or weakly-supervised learning frameworks of masked video token reconstruction, cross-modal contrastive learning, and next token prediction. Different training stages would guide our model to capture different levels of structure and semantic information through different pretext tasks. At the data level, we prioritize the spatiotemporal consistency by semantically segmenting videos and generating video-audio-speech captions. This improves the alignment between video and text. We scale both data and model size for our InternVideo2. Through extensive experiments, we validate our designs and demonstrate the state-of-the-art performance on over 60 video and audio tasks. Notably, our model outperforms others on various video-related captioning, dialogue, and long video understanding benchmarks, highlighting its ability to reason and comprehend long temporal contexts. 00footnotetext: *Equal contribution. \u2020\u2020\\daggerCorresponding authors. ",
+        "sections": {
+          "1 Introduction": [
+            "Gpt-4v(ision) system card",
+            "Masked autoencoders are scalable vision learners",
+            "Internvideo: General video foundation models via generative and discriminative learning.",
+            "Gemini: a family of highly capable multimodal models",
+            "Videoprism: A foundational visual encoder for video understanding",
+            "Chatgpt",
+            "Videomae v2: Scaling video masked autoencoders with dual masking",
+            "Internvl: Scaling up vision foundation models and aligning for generic visual-linguistic tasks",
+            "Multi-modal transformer for video retrieval",
+            "Language models are few-shot learners",
+            "Genie: Generative interactive environments",
+            "Explainability of deep vision-based autonomous driving systems: Review and challenges",
+            "Videoclip: Contrastive pre-training for zero-shot video-text understanding",
+            "Flamingo: a visual language model for few-shot learning",
+            "Palm-e: An embodied multimodal language model",
+            "Unmasked teacher: Towards training-efficient video foundation models"
+          ],
+          "2 Related Work": [
+            "Videomae: Masked autoencoders are data-efficient learners for self-supervised video pre-training",
+            "Valley: Video assistant with large language model enhanced ability",
+            "Video-chatgpt: Towards detailed video understanding via large vision and language models",
+            "Making the v in vqa matter: Elevating the role of image understanding in visual question answering",
+            "Videoprism: A foundational visual encoder for video understanding",
+            "Instructblip: Towards general-purpose vision-language models with instruction tuning",
+            "Valor: Vision-audio-language omni-perception pretraining model and dataset",
+            "Merlot reserve: Neural script knowledge through vision and language and sound",
+            "Learning spatiotemporal features via video and text pair discrimination",
+            "Minigpt-4: Enhancing vision-language understanding with advanced large language models",
+            "Visual instruction tuning",
+            "Vast: A vision-audio-subtitle-text omni-modality foundation model and dataset",
+            "Videoclip: Contrastive pre-training for zero-shot video-text understanding",
+            "All in one: Exploring unified video-language pre-training",
+            "Flamingo: a visual language model for few-shot learning",
+            "Bert: Pre-training of deep bidirectional transformers for language understanding",
+            "mplug-2: A modularized multi-modal foundation model across text, image and video",
+            "Unmasked teacher: Towards training-efficient video foundation models"
+          ],
+          "3 Method Video Encoder.": [
+            "Internvl: Scaling up vision foundation models and aligning for generic visual-linguistic tasks",
+            "Coca: Contrastive captioners are image-text foundation models",
+            "An image is worth 16x16 words: Transformers for image recognition at scale"
+          ],
+          "3 Method 3.1 Stage1: Reconstructing Masked Video Tokens": [
+            "Videomae v2: Scaling video masked autoencoders with dual masking",
+            "Internvl: Scaling up vision foundation models and aligning for generic visual-linguistic tasks"
+          ],
+          "3 Method 3.2 Stage 2: Aligning Video to Audio-Speech-Text": [
+            "BEATs: Audio pre-training with acoustic tokenizers",
+            "Bert: Pre-training of deep bidirectional transformers for language understanding",
+            "Vindlu: A recipe for effective video-and-language pretraining"
+          ],
+          "3 Method 3.3 Stage3: Predicting Next Token with Video-Centric Inputs": [
+            "Judging llm-as-a-judge with mt-bench and chatbot arena",
+            "Mvbench: A comprehensive multi-modal video understanding benchmark",
+            "Blip-2: Bootstrapping language-image pre-training with frozen image encoders and large language models"
+          ],
+          "4 Multimodal Video Data 4.1 Video-only Data for Masked AutoEncoders": [
+            "Quo vadis, action recognition? a new model and the kinetics dataset"
+          ],
+          "4 Multimodal Video Data 4.2 Videos with Audio-Speech Modalities for Contrastive Learning": [
+            "Mvbench: A comprehensive multi-modal video understanding benchmark",
+            "BEATs: Audio pre-training with acoustic tokenizers",
+            "Wavcaps: A chatgpt-assisted weakly-labelled audio captioning dataset for audio-language multimodal research",
+            "Robust speech recognition via large-scale weak supervision",
+            "Internvid: A large-scale video-text dataset for multimodal understanding and generation",
+            "Judging llm-as-a-judge with mt-bench and chatbot arena",
+            "Autoshot: A short video dataset and state-of-the-art shot boundary detection",
+            "Videochat: Chat-centric video understanding"
+          ],
+          "5 Experiments": [
+            "Flashattention: Fast and memory-efficient exact attention with io-awareness"
+          ],
+          "5 Experiments 5.1 Video Classification": [
+            "Hmdb: a large video database for human motion recognition",
+            "Fineaction: A fine-grained video dataset for temporal action localization",
+            "Per-pixel classification is not all you need for semantic segmentation",
+            "Tall: Temporal activity localization via language query",
+            "Activitynet: A large-scale video benchmark for human activity understanding",
+            "Masked video distillation: Rethinking masked feature modeling for self-supervised video representation learning",
+            "Internvl: Scaling up vision foundation models and aligning for generic visual-linguistic tasks",
+            "Dense-captioning events in videos",
+            "Ucf101: A dataset of 101 human actions classes from videos in the wild",
+            "Moments in time dataset: One million videos for event understanding",
+            "Bmn: Boundary-matching network for temporal action proposal generation",
+            "Actionformer: Localizing moments of actions with transformers",
+            "Hacs: Human action clips and segments dataset for recognition and temporal localization",
+            "Vision transformer adapter for dense predictions",
+            "The \u201csomething something\u201d video database for learning and evaluating visual common sense",
+            "Dinov2: Learning robust visual features without supervision",
+            "Quo vadis, action recognition? a new model and the kinetics dataset",
+            "Scaling vision transformers to 22 billion parameters.",
+            "V-JEPA: Latent video prediction for visual representation learning",
+            "Video instance segmentation",
+            "Coca: Contrastive captioners are image-text foundation models",
+            "The thumos challenge on action recognition for videos \u201cin the wild\u201d"
+          ],
+          "5 Experiments 5.2 Video-Language Tasks": [
+            "Slowfast networks for video recognition",
+            "Correlation-guided query-dependency calibration in video representation learning for temporal grounding",
+            "Qvhighlights: Detecting moments and highlights in videos via natural language queries",
+            "Audiocaps: Generating captions for audios in the wild",
+            "Aquallm: Audio question answering data generation using large language models",
+            "Clotho-aqa: A crowdsourced dataset for audio question answering",
+            "Tall: Temporal activity localization via language query",
+            "Esc: Dataset for environmental sound classification",
+            "Activitynet: A large-scale video benchmark for human activity understanding",
+            "Egoschema: A diagnostic benchmark for very long-form video language understanding",
+            "Clotho: An audio captioning dataset",
+            "Learning transferable visual models from natural language supervision"
+          ],
+          "5 Experiments 5.3 Video-centric Dialogue and its Applications": [
+            "Movqa: A benchmark of versatile question-answering for long-form movie understanding",
+            "Mvbench: A comprehensive multi-modal video understanding benchmark",
+            "Video-chatgpt: Towards detailed video understanding via large vision and language models"
+          ],
+          "5 Experiments 5.4 Ablation Studies": [
+            "Videomae: Masked autoencoders are data-efficient learners for self-supervised video pre-training",
+            "Learning transferable visual models from natural language supervision"
+          ],
+          "6 Conclusion and Discussion Limitations and Discussions.": [
+            "Unmasked teacher: Towards training-efficient video foundation models"
+          ],
+          "7 Broader Impact": [
+            "Videomae: Masked autoencoders are data-efficient learners for self-supervised video pre-training",
+            "Mistral 7b"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.11722207814455032,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Scaling Laws with Vocabulary: Larger Models Deserve Larger Vocabularies",
+        "arxiv_id": "2407.13623",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract Research on scaling large language models (LLMs) has primarily focused on model parameters and training data size, overlooking the role of vocabulary size. We investigate how vocabulary size impacts LLM scaling laws by training models ranging from 33M to 3B parameters on up to 500B characters with various vocabulary configurations. We propose three complementary approaches for predicting the compute-optimal vocabulary size: IsoFLOPs analysis, derivative estimation, and parametric fit of the loss function. Our approaches converge on the same result that the optimal vocabulary size depends on the available compute budget and that larger models deserve larger vocabularies. However, most LLMs use too small vocabulary sizes. For example, we predict that the optimal vocabulary size of Llama2-70B should have been at least 216K, 7 times larger than its vocabulary of 32K. We validate our predictions empirically by training models with 3B parameters across different FLOPs budgets. Adopting our predicted optimal vocabulary size consistently improves downstream performance over commonly used vocabulary sizes. By increasing the vocabulary size from the conventional 32K to 43K, we improve performance on ARC-Challenge from 29.1 to 32.0 with the same 2.3e21 FLOPs. Our work emphasizes the necessity of jointly considering model parameters and vocabulary size for efficient scaling.",
+        "sections": {
+          "1 Introduction": [
+            "Llama 2: Open foundation and fine-tuned chat models",
+            "Scaling data-constrained language models",
+            "Language models scale reliably with over-training and on downstream tasks.",
+            "Gemma: Open models based on gemini research and technology",
+            "Training compute-optimal large language models",
+            "Socoder: may the source be with you!",
+            "Scaling laws for neural language models",
+            "Gpt-4 technical report"
+          ],
+          "2 Preliminary 2.1 Scaling law": [
+            "Language models scale reliably with over-training and on downstream tasks.",
+            "Training compute-optimal large language models",
+            "Scaling laws for neural language models",
+            "Improving language understanding by generative pre-training"
+          ],
+          "2 Preliminary 2.2 Scaling law with vocabulary": [
+            "Compression Represents Intelligence Linearly",
+            "Training compute-optimal large language models",
+            "Scaling laws for neural language models",
+            "Neural Machine Translation of Rare Words with Subword Units",
+            "Unigram-normalized perplexity as a language model performance measure with different vocabulary sizes"
+          ],
+          "3 Analysis: Why the optimal vocabulary size is bounded by compute 3.1 Analysis 1: The perspective of fixed normalized loss": [
+            "Scaling laws for neural language models"
+          ],
+          "3 Analysis: Why the optimal vocabulary size is bounded by compute 3.3 Analysis 3: The perspective of parameter growing": [
+            "Scaling Laws vs Model Architectures: How does Inductive Bias Influence Scaling?"
+          ],
+          "4 Estimating the optimal vocabulary size 4.1 Approach 1: Estimating power laws via IsoFLOPs": [
+            "To repeat or not to repeat: Insights from scaling llm under token-crisis",
+            "Training compute-optimal large language models",
+            "SlimPajama: A 627B token cleaned and deduplicated version of RedPajama.",
+            "Scaling laws for neural language models"
+          ],
+          "4 Estimating the optimal vocabulary size 4.2 Approach 2: Derivative-based fast estimation": [
+            "Beyond chinchilla-optimal: Accounting for inference in language model scaling laws",
+            "Training compute-optimal large language models",
+            "Scaling laws for neural language models"
+          ],
+          "4 Estimating the optimal vocabulary size 4.3 Approach 3: Parametric fit of loss formula": [
+            "Scaling data-constrained language models",
+            "Training compute-optimal large language models",
+            "Llama 2: Open foundation and fine-tuned chat models"
+          ],
+          "5 Discussion Predicting allocations for larger models": [
+            "Llama 2: Open foundation and fine-tuned chat models",
+            "Training compute-optimal large language models",
+            "Will we run out of data? an analysis of the limits of scaling datasets in machine learning",
+            "Meta LLaMA-3: The most capable openly available LLM to date"
+          ],
+          "5 Discussion Experiments with scarce and excessive training data": [
+            "Scaling data-constrained language models",
+            "Scaling laws for neural language models",
+            "Tinyllama: An open-source small language model"
+          ],
+          "6 Related work Large language models": [
+            "Attention is all you need",
+            "Dt-solver: Automated theorem proving with dynamic-tree sampling guided by proof-level value function",
+            "Training language models to follow instructions with human feedback",
+            "Socoder: may the source be with you!",
+            "Language models are few-shot learners"
+          ],
+          "6 Related work Scaling laws": [
+            "Scaling data-constrained language models",
+            "Beyond chinchilla-optimal: Accounting for inference in language model scaling laws",
+            "Bigger is not Always Better: Scaling Properties of Latent Diffusion Models",
+            "Language models scale reliably with over-training and on downstream tasks.",
+            "Reproducible scaling laws for contrastive language-image learning",
+            "Visual Autoregressive Modeling: Scalable Image Generation via Next-Scale Prediction",
+            "Training compute-optimal large language models",
+            "Scaling laws for neural language models"
+          ],
+          "6 Related work Vocabulary in language models": [
+            "Automatic speech recognition with very large conversational finnish and estonian vocabularies",
+            "Improving pre-trained multilingual models with vocabulary expansion",
+            "Getting the most out of your tokenizer for pre-training and domain adaptation",
+            "Efficient estimate of low-frequency words\u2019 embeddings based on the dictionary: a case study on Chinese",
+            "Do neural nets learn statistical laws behind natural language?",
+            "Bloom: A 176b-parameter open-access multilingual language model.",
+            "Sailor: Open Language Models for South-East Asia"
+          ],
+          "6 Related work Byte-level language models": [
+            "Megabyte: Predicting million-byte sequences with multiscale transformers"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.0007261860882863402,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Scaling Laws for Neural Language Models",
+        "arxiv_id": "2001.08361",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract We study empirical scaling laws for language model performance on the cross-entropy loss. The loss scales as a power-law with model size, dataset size, and the amount of compute used for training, with some trends spanning more than seven orders of magnitude. Other architectural details such as network width or depth have minimal effects within a wide range. Simple equations govern the dependence of overfitting on model/dataset size and the dependence of training speed on model size. These relationships allow us to determine the optimal allocation of a fixed compute budget. Larger models are significantly more sample-efficient, such that optimally compute-efficient training involves training very large models on a relatively modest amount of data and stopping significantly before convergence. ",
+        "sections": {
+          "1 Introduction": [
+            "Language models are unsupervised multitask learners.",
+            "Improving language understanding by generative pre-training",
+            "Superglue: A stickier benchmark for general-purpose language understanding systems",
+            "Attention is all you need"
+          ],
+          "1 Introduction 1.1 Summary": [
+            "An empirical model of large-batch training"
+          ],
+          "1 Introduction 1.2 Summary of Scaling Laws": [
+            "Language models are unsupervised multitask learners.",
+            "Universal transformers",
+            "An empirical model of large-batch training"
+          ],
+          "1 Introduction 1.3 Notation": [
+            "An empirical model of large-batch training"
+          ],
+          "2 Background and Methods": [
+            "Generating wikipedia by summarizing long sequences",
+            "Language models are unsupervised multitask learners.",
+            "Neural machine translation of rare words with subword units",
+            "Universal transformers",
+            "Attention is all you need"
+          ],
+          "2 Background and Methods 2.2 Training Procedures": [
+            "Adam: A method for stochastic optimization",
+            "Adafactor: Adaptive learning rates with sublinear memory cost"
+          ],
+          "2 Background and Methods 2.3 Datasets": [
+            "Language models are unsupervised multitask learners.",
+            "The Common Crawl Foundation. Common crawl. URL http://commoncrawl.org.",
+            "Aligning books and movies: Towards story-like visual explanations by watching movies and reading books"
+          ],
+          "3 Empirical Results and Basic Power Laws 3.1 Approximate Transformer Shape and Hyperparameter Independence": [
+            "Residual networks behave like ensembles of relatively shallow networks"
+          ],
+          "3 Empirical Results and Basic Power Laws 3.2 Performance with Non-Embedding Parameter Count N\ud835\udc41N": [
+            "Albert: A lite bert for self-supervised learning of language representations",
+            "Universal transformers"
+          ],
+          "4 Charting the Infinite Data Limit and Overfitting 4.1 Proposed L\u200b(N,D)\ud835\udc3f\ud835\udc41\ud835\udc37L(N,D) Equation": [
+            "High-dimensional dynamics of generalization error in neural networks"
+          ],
+          "5 Scaling Laws with Model Size and Training Time": [
+            "An empirical model of large-batch training"
+          ],
+          "5 Scaling Laws with Model Size and Training Time 5.1 Adjustment for Training at Bcrit\u200b(L)subscript\ud835\udc35crit\ud835\udc3fB_{\\rm crit}(L)": [
+            "Measuring the effects of data parallelism on neural network training",
+            "An empirical model of large-batch training"
+          ],
+          "7 Related Work": [
+            "The full spectrum of deep net hessians at scale: Dynamics with sample size",
+            "Residual networks behave like ensembles of relatively shallow networks",
+            "Analysis of a random forests model",
+            "Which algorithmic choices matter at which batch sizes? insights from a noisy quadratic model",
+            "Neural tangent kernel: Convergence and generalization in neural networks",
+            "Scaling description of generalization with number of parameters in deep learning",
+            "Scaling to very very large corpora for natural language disambiguation",
+            "Introduction to the theory of complex systems",
+            "A constructive prediction of the generalization error across scales",
+            "High-dimensional dynamics of generalization error in neural networks",
+            "Wide residual networks",
+            "All of nonparametric statistics",
+            "One epoch is all you need",
+            "Deep learning scaling is predictable, empirically",
+            "Efficientnet: Rethinking model scaling for convolutional neural networks"
+          ],
+          "8 Discussion": [
+            "Mesh-tensorflow: Deep learning for supercomputers",
+            "Imagenet classification with deep convolutional neural networks",
+            "Generating long sequences with sparse transformers",
+            "Growing a brain: Fine-tuning by increasing model capacity",
+            "Gpipe: Efficient training of giant neural networks using pipeline parallelism"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.001914174878038466,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Video In-context Learning",
+        "arxiv_id": "2407.07356",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract In-context learning for vision data has been underexplored compared with that in natural language. Previous works studied image in-context learning, urging models to generate a single image guided by demonstrations. In this paper, we propose and study video in-context learning, where the model starts from an existing video clip and generates diverse potential future sequences, each semantically guided by the prompted video demonstrations. To achieve this, we provide a clear definition of the task, and train an autoregressive Transformer on video datasets. We thoroughly analyze the effect of different datasets and represent frames as discrete tokens, and then model them by next token predictions. We design various evaluation metrics, including both objective and subjective measures, to demonstrate the visual quality and semantic accuracy of generation results. Our model follows the scaling law and generates high-quality video clips that accurately align with the semantic guidance provided by in-context examples.",
+        "sections": {
+          "1 Introduction": [
+            "Video as the new language for real-world decision making",
+            "Attention is all you need",
+            "Masked autoencoders are scalable vision learners",
+            "Neural discrete representation learning",
+            "Visual prompting via image inpainting",
+            "Language models are unsupervised multitask learners.",
+            "Sequential modeling enables scalable learning for large vision models.",
+            "Scaling laws for neural language models",
+            "Language models are few-shot learners."
+          ],
+          "2 Related work In-context Learning for Natural Language": [
+            "Chain-of-thought prompting elicits reasoning in large language models",
+            "Language models are few-shot learners."
+          ],
+          "2 Related work In-context Learning for Vision": [
+            "Sequential modeling enables scalable learning for large vision models.",
+            "Visual prompting via image inpainting",
+            "Masked autoencoders are scalable vision learners"
+          ],
+          "2 Related work Video Generation": [
+            "Video as the new language for real-world decision making",
+            "Attention is all you need",
+            "Learning universal policies via text-guided video generation",
+            "Video diffusion models",
+            "Denoising diffusion probabilistic models",
+            "Learning interactive real-world simulators"
+          ],
+          "3 Video In-context Learning 3.1 Problem Definition": [
+            "Images speak in images: A generalist painter for in-context visual learning",
+            "Sequential modeling enables scalable learning for large vision models."
+          ],
+          "3 Video In-context Learning 3.2 Approach": [
+            "Neural discrete representation learning",
+            "Magvit: Masked generative video transformer",
+            "Llama: Open and efficient foundation language models",
+            "Roformer: Enhanced transformer with rotary position embedding",
+            "Root mean square layer normalization",
+            "Exploring the limits of transfer learning with a unified text-to-text transformer",
+            "amused: An open muse reproduction"
+          ],
+          "3 Video In-context Learning 3.3 Data": [
+            "A short note about kinetics-600",
+            "The\" something something\" video database for learning and evaluating visual common sense.",
+            "Ego4d: Around the world in 3,000 hours of egocentric video",
+            "Training compute-optimal large language models",
+            "Frozen in time: A joint video and image encoder for end-to-end retrieval"
+          ],
+          "4 Experimental Setups 4.1 Evaluation": [
+            "The unreasonable effectiveness of deep features as a perceptual metric",
+            "Gans trained by a two time-scale update rule converge to a local nash equilibrium",
+            "VideoMAE: Masked autoencoders are data-efficient learners for self-supervised video pre-training",
+            "Masked autoencoders are scalable vision learners"
+          ],
+          "4 Experimental Setups 4.2 Implementation Details": [
+            "Data-efficient large vision models through sequential autoregression",
+            "amused: An open muse reproduction",
+            "Sequential modeling enables scalable learning for large vision models.",
+            "Llama: Open and efficient foundation language models"
+          ],
+          "5 Results and Analysis 5.2 Comparison with DeLVM Baseline": [
+            "Data-efficient large vision models through sequential autoregression"
+          ],
+          "5 Results and Analysis 5.4 Ablation and Analysis": [
+            "Learning interactive real-world simulators",
+            "Exploring the limits of transfer learning with a unified text-to-text transformer"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.11180436611175537,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Neural Scaling Laws for Embodied AI",
+        "arxiv_id": "2405.14005",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract Scaling laws have driven remarkable progress across machine learning domains like language modeling and computer vision. However, the exploration of scaling laws in embodied AI and robotics has been limited, despite the rapidly increasing usage of machine learning in this field. This paper presents the first study to quantify scaling laws for Robot Foundation Models (RFMs) and the use of LLMs in robotics tasks. Through a meta-analysis spanning 198 research papers, we analyze how key factors like compute, model size, and training data quantity impact model performance across various robotic tasks. Our findings confirm that scaling laws apply to both RFMs and LLMs in robotics, with performance consistently improving as resources increase. The power law coefficients for RFMs closely match those of LLMs in robotics, resembling those found in computer vision and outperforming those for LLMs in the language domain. We also note that these coefficients vary with task complexity, with familiar tasks scaling more efficiently than unfamiliar ones, emphasizing the need for large and diverse datasets. Furthermore, we highlight the absence of standardized benchmarks in embodied AI. Most studies indicate diminishing returns, suggesting that significant resources are necessary to achieve high performance, posing challenges due to data and computational limitations. Finally, as models scale, we observe the emergence of new capabilities, particularly related to data and model size.",
+        "sections": {
+          "1 Introduction": [
+            "The White House, B. (2023). Executive order on the safe, secure, and trustworthy development and use of artificial intelligence.",
+            "Scaling laws for autoregressive generative modeling",
+            "Revisiting neural scaling laws in language and vision",
+            "Rt-2: Vision-language-action models transfer web knowledge to robotic control",
+            "The bitter lesson",
+            "A constructive prediction of the generalization error across scales",
+            "Scaling laws for neural language models",
+            "Beyond neural scaling laws: beating power law scaling via data pruning",
+            "Open x-embodiment: Robotic learning datasets and rt-x models"
+          ],
+          "2 Background and related work Embodied AI": [
+            "Grid: A platform for general robot intelligence development.",
+            "Smart: Self-supervised multi-task pretraining with control transformers",
+            "Rt-1: Robotics transformer for real-world control at scale",
+            "Palm-e: An embodied multimodal language model",
+            "Toward general-purpose robots via foundation models: A survey and meta-analysis"
+          ],
+          "2 Background and related work Neural Scaling Laws": [
+            "Emergent abilities of large language models",
+            "Predictability and surprise in large generative models",
+            "A constructive prediction of the generalization error across scales",
+            "Scaling laws for neural language models"
+          ],
+          "2 Background and related work Neural Scaling Laws in Embodied AI": [
+            "Open-world object manipulation using pre-trained vision-language models",
+            "Robocat: A self-improving generalist agent for robotic manipulation",
+            "Open-vocabulary queryable scene representations for real world planning",
+            "Tail: Task-specific adapters for imitation learning with large pretrained models",
+            "Rt-1: Robotics transformer for real-world control at scale",
+            "The economic impact of moore\u2019s law: Evidence from when it faltered"
+          ],
+          "3 Empirical approach Research paper meta analysis": [
+            "Foundation models in robotics: Applications, challenges, and the future",
+            "robotics-fm-survey",
+            "The growing influence of industry in ai research"
+          ],
+          "3 Empirical approach Data extraction from papers": [
+            "Tail: Task-specific adapters for imitation learning with large pretrained models",
+            "Language conditioned imitation learning over unstructured data",
+            "The computational limits of deep learning",
+            "Scaling laws for neural language models",
+            "Scalable deep reinforcement learning for vision-based robotic manipulation",
+            "Please report your compute.",
+            "Instruct2act: Mapping multi-modality instructions to robotic actions with large language model"
+          ],
+          "4 Results 4.1 Scaling Laws for Robot Foundation Models": [
+            "Deep learning scaling is predictable, empirically",
+            "On the predictability of pruning across scales",
+            "Open x-embodiment: Robotic learning datasets and rt-x models"
+          ],
+          "5 Discussion Limitations": [
+            "The computational limits of deep learning"
+          ],
+          "5 Discussion Ethical Considerations": [
+            "Deep learning\u2019s diminishing returns: The cost of improvement is becoming unsustainable",
+            "The White House, B. (2023). Executive order on the safe, secure, and trustworthy development and use of artificial intelligence."
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.0013320081634446979,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Wukong: Towards a Scaling Law for Large-Scale Recommendation",
+        "arxiv_id": "2403.02545",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Scaling laws play an instrumental role in the sustainable improvement in model quality. Unfortunately, recommendation models to date do not exhibit such laws similar to those observed in the domain of large language models, due to the inefficiencies of their upscaling mechanisms. This limitation poses significant challenges in adapting these models to increasingly more complex real-world datasets. In this paper, we propose an effective network architecture based purely on stacked factorization machines, and a synergistic upscaling strategy, collectively dubbed Wukong, to establish a scaling law in the domain of recommendation. Wukong\u2019s unique design makes it possible to capture diverse, any-order of interactions simply through taller and wider layers. We conducted extensive evaluations on six public datasets, and our results demonstrate that Wukong consistently outperforms state-of-the-art models quality-wise. Further, we assessed Wukong\u2019s scalability on an internal, large-scale dataset. The results show that Wukong retains its superiority in quality over state-of-the-art models, while holding the scaling law across two orders of magnitude in model complexity, extending beyond 100 GFLOP/example or  equivalently up to Large Launguage Model (GPT-3) training compute scale, where prior arts fall short. ",
+        "sections": {
+          "1 Introduction": [
+            "Deep learning recommendation model for personalization and recommendation systems",
+            "Dcn v2: Improved deep & cross network and practical lessons for web-scale learning to rank systems",
+            "Scaling laws for neural language models",
+            "Actions speak louder than words: Trillion-parameter sequential transducers for generative recommendations.",
+            "Deep residual learning for image recognition",
+            "Learning to embed categorical features without embedding tables for recommendation",
+            "Parameter hub: a rack-scale parameter server for distributed deep neural network training",
+            "On the difficulty of training recurrent neural networks",
+            "On the opportunities and risks of foundation models",
+            "Layer normalization",
+            "Improving training stability for multitask ranking models in recommender systems",
+            "Language models are few-shot learners"
+          ],
+          "2 Related Work": [
+            "Deep learning recommendation model for personalization and recommendation systems",
+            "Adaptive factorization network: Learning adaptive-order feature interactions",
+            "Dcn v2: Improved deep & cross network and practical lessons for web-scale learning to rank systems",
+            "Masknet: Introducing feature-wise multiplication to ctr ranking models by instance-guided mask",
+            "Factorization machines",
+            "Finalmlp: An enhanced two-stream mlp model for ctr prediction",
+            "Autoint: Automatic feature interaction learning via self-attentive neural networks",
+            "Learning to embed categorical features without embedding tables for recommendation",
+            "Higher-order factorization machines",
+            "Combining explicit and implicit feature interactions for recommender systems"
+          ],
+          "3 Design of Wukong 3.2 Embedding Layer": [
+            "Dcn v2: Improved deep & cross network and practical lessons for web-scale learning to rank systems"
+          ],
+          "3 Design of Wukong 3.4 Factorization Machine Block (FMB)": [
+            "Deep learning recommendation model for personalization and recommendation systems"
+          ],
+          "3 Design of Wukong 3.6 Optimized FM": [
+            "Dcn v2: Improved deep & cross network and practical lessons for web-scale learning to rank systems",
+            "Feature fusion for the uninitiated | by siddharth sharma | medium"
+          ],
+          "3 Design of Wukong 3.9 Intuition Behind Wukong\u2019s Enhanced Effectiveness": [
+            "Latent cross: Making use of context in recurrent recommender systems"
+          ],
+          "4 Implementation": [
+            "Pre-train and search: Efficient embedding table sharding with pre-trained neural cost models",
+            "High-performance, distributed training of large-scale deep learning recommendation models",
+            "Pytorch fsdp: experiences on scaling fully sharded data parallel",
+            "Torch. fx: Practical program capture and transformation for deep learning in python"
+          ],
+          "6 Evaluation on Public Datasets": [
+            "BARS: towards open benchmarking for recommender systems"
+          ],
+          "6 Evaluation on Public Datasets 6.1 General Evaluation Setup": [
+            "Criteo 1tb click logs dataset",
+            "Deep learning recommendation model for personalization and recommendation systems",
+            "Adaptive factorization network: Learning adaptive-order feature interactions",
+            "Dcn v2: Improved deep & cross network and practical lessons for web-scale learning to rank systems",
+            "Combining explicit and implicit feature interactions for recommender systems",
+            "Ad display/click data on taobao.com",
+            "Masknet: Introducing feature-wise multiplication to ctr ranking models by instance-guided mask",
+            "Kuaishou",
+            "The movielens datasets: History and context",
+            "Finalmlp: An enhanced two-stream mlp model for ctr prediction",
+            "Autoint: Automatic feature interaction learning via self-attentive neural networks",
+            "Temporal hierarchical attention at category- and item-level for micro-video click-through prediction",
+            "Frappe - mobile app usage"
+          ],
+          "6 Evaluation on Public Datasets 6.2 Model-Specific Setup": [
+            "BARS: towards open benchmarking for recommender systems"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.0005724607617594302,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Scaling Law Hypothesis for Multimodal Model",
+        "arxiv_id": "2409.06754",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract We propose a scaling law hypothesis for multimodal models processing text, audio, images, and video within a shared token and embedding space. Our framework predicts model performance based on modality-specific compression and tokenization efficiency, extending established scaling laws from text-based decoder models to mixed-modality systems. We explore whether leveraging more training data in multiple modalities can reduce the size of the multimodal model, enabling efficient deployment on resource-constrained devices.",
+        "sections": {
+          "Introduction": [
+            "Meta Platforms, Inc. Meta llama 3",
+            "Compression represents intelligence linearly",
+            "Neural machine translation of rare words with subword units",
+            "More compute is what you need",
+            "Spectral codecs: Spectrogram-based audio codecs for high quality speech synthesis",
+            "Training compute-optimal large language models",
+            "Vivit: A video vision transformer",
+            "Scaling laws for neural language models",
+            "An image is worth 16x16 words: Transformers for image recognition at scale"
+          ],
+          "Predicting Multimodal Model Performance": [
+            "More compute is what you need"
+          ],
+          "Limitations": [
+            "Vila: On pre-training for visual language models",
+            "Visual instruction tuning"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.9528381824493408,
+        "extra": {
+          "expand": "not expand"
+        }
+      }
+    ],
+    "Survey papers on scaling law of multi-module models": [
+      {
+        "title": "Scaling Large-Language-Model-based Multi-Agent Collaboration",
+        "arxiv_id": "2406.07155",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract Pioneering advancements in large language model-powered agents have underscored the design pattern of multi-agent collaboration, demonstrating that collective intelligence can surpass the capabilities of each individual. Inspired by the neural scaling law, which posits that increasing neurons leads to emergent abilities, this study investigates whether a similar principle applies to increasing agents in multi-agent collaboration. Technically, we propose multi-agent collaboration networks (MacNet), which utilize directed acyclic graphs to organize agents and streamline their interactive reasoning via topological ordering, with solutions derived from their dialogues. Extensive experiments show that MacNet consistently outperforms baseline models, enabling effective agent collaboration across various network topologies and supporting cooperation among more than a thousand agents. Notably, we observed a small-world collaboration phenomenon, where topologies resembling small-world properties achieved superior performance. Additionally, we identified a collaborative scaling law, indicating that normalized solution quality follows a logistic growth pattern as scaling agents, with collaborative emergence occurring much earlier than previously observed instances of neural emergence. The code and data will be available at https://github.com/OpenBMB/ChatDev.",
+        "sections": {
+          "1 Introduction": [
+            "Toran Bruce Richards",
+            "Neural Networks and Physical Systems with Emergent Collective Computational Abilities",
+            "Toolformer: Language Models Can Teach Themselves to Use Tools",
+            "Generative Agents: Interactive Simulacra of Human Behavior",
+            "ChatDev: Communicative Agents for Software Development",
+            "Attention is All You Need",
+            "Are More LLM Calls All You Need? Towards Scaling Laws of Compound Inference Systems",
+            "Chain-of-thought Prompting Elicits Reasoning in Large Language Models",
+            "Scaling Laws for Neural Language Models"
+          ],
+          "2 Related Work": [
+            "Toran Bruce Richards",
+            "AgentVerse: Facilitating Multi-agent Collaboration and Exploring Emergent Behaviors in Agents",
+            "Language Models are Few-Shot Learners",
+            "CAMEL: Communicative Agents for \u201cMind\u201d Exploration of Large Language Model Society",
+            "More Agents is All You Need",
+            "Emergent Abilities of Large Language Models",
+            "Toolformer: Language Models Can Teach Themselves to Use Tools",
+            "Generative Agents: Interactive Simulacra of Human Behavior",
+            "ChatDev: Communicative Agents for Software Development",
+            "Are More LLM Calls All You Need? Towards Scaling Laws of Compound Inference Systems",
+            "Chain-of-thought Prompting Elicits Reasoning in Large Language Models",
+            "Scaling Laws for Neural Language Models"
+          ],
+          "3 Multi-Agent Collaboration Network 3.1 Network Construction": [
+            "Experiential Co-Learning of Software-Developing Agents",
+            "The Waterfall Model in Large-Scale Development",
+            "Exploring Complex Networks",
+            "A Directed Acyclic Graph for Interactions",
+            "CAMEL: Communicative Agents for \u201cMind\u201d Exploration of Large Language Model Society",
+            "ChatDev: Communicative Agents for Software Development",
+            "Toolformer: Language Models Can Teach Themselves to Use Tools",
+            "Generative Agents: Interactive Simulacra of Human Behavior",
+            "Dynamic LLM-Agent Network: An LLM-agent Collaboration Framework with Agent Team Optimization"
+          ],
+          "3 Multi-Agent Collaboration Network 3.2 Interactive Reasoning": [
+            "Graph Theory with Applications",
+            "Graph Theory and Its Applications"
+          ],
+          "3 Multi-Agent Collaboration Network 3.3 Memory Control": [
+            "ChatDev: Communicative Agents for Software Development"
+          ],
+          "4 Experiments Baselines": [
+            "Toran Bruce Richards",
+            "Chain-of-thought Prompting Elicits Reasoning in Large Language Models",
+            "AgentVerse: Facilitating Multi-agent Collaboration and Exploring Emergent Behaviors in Agents",
+            "Language Agents as Optimizable Graphs"
+          ],
+          "4 Experiments Datasets and Metrics": [
+            "Self-Refine: Iterative Refinement with Self-Feedback",
+            "Evaluating Large Language Models Trained on Code",
+            "Generating Reasonable and Diversified Story Ending using Sequence to Sequence Model with Adversarial Training",
+            "Measuring Massive Multitask Language Understanding",
+            "ChatDev: Communicative Agents for Software Development"
+          ],
+          "4 Experiments Implementation Details": [
+            "Topological Sorting of Large Networks"
+          ],
+          "4 Experiments 4.1 Does Our Method Lead to Superior Performance?": [
+            "ChatDev: Communicative Agents for Software Development"
+          ],
+          "4 Experiments 4.2 How Do Different Topologies Perform Against Each Other?": [
+            "Exploring Complex Networks",
+            "Collective Dynamics of Small-World Networks",
+            "Statistical Mechanics of Complex Networks"
+          ],
+          "4 Experiments 4.3 Does a Collaborative Scaling Law Exist?": [
+            "Are Emergent Abilities of Large Language Models a Mirage?",
+            "Scaling Laws for Neural Language Models"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.003971794154495001,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "When Scaling Meets LLM Finetuning: The Effect of Data, Model and Finetuning Method",
+        "arxiv_id": "2402.17193",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract While large language models (LLMs) often adopt finetuning to unlock their capabilities for downstream applications, our understanding on the inductive biases (especially the scaling properties) of different finetuning methods is still limited. To fill this gap, we conduct systematic experiments studying whether and how different scaling factors, including LLM model size, pretraining data size, new finetuning parameter size and finetuning data size, affect the finetuning performance. We consider two types of finetuning \u2013 full-model tuning (FMT) and parameter efficient tuning (PET, including prompt tuning and LoRA), and explore their scaling behaviors in the data-limited regime where the LLM model size substantially outweighs the finetuning data size. Based on two sets of pretrained bilingual LLMs from 1B to 16B and experiments on bilingual machine translation and multilingual summarization benchmarks, we find that 1) LLM finetuning follows a power-based multiplicative joint scaling law between finetuning data size and each other scaling factor; 2) LLM finetuning benefits more from LLM model scaling than pretraining data scaling, and PET parameter scaling is generally ineffective; and 3) the optimal finetuning method is highly task- and finetuning data-dependent. We hope our findings could shed light on understanding, selecting and developing LLM finetuning methods. ",
+        "sections": {
+          "1 Introduction": [
+            "Scaling laws for transfer",
+            "Scaling laws for neural language models",
+            "Chain-of-thought prompting elicits reasoning in large language models",
+            "BERT: Pre-training of deep bidirectional transformers for language understanding",
+            "The power of scale for parameter-efficient prompt tuning",
+            "Lora: Low-rank adaptation of large language models",
+            "Gpt-4 technical report",
+            "Language models are few-shot learners",
+            "Palm 2 technical report",
+            "Training language models to follow instructions with human feedback"
+          ],
+          "2 Setup Downstream Tasks": [
+            "Findings of the 2022 conference on machine translation (wmt22)",
+            "MLSUM: The multilingual summarization corpus",
+            "Teaching machines to read and comprehend"
+          ],
+          "2 Setup LLMs and Preraining": [
+            "Ul2: Unifying language learning paradigms",
+            "Adafactor: Adaptive learning rates with sublinear memory cost",
+            "Palm: Scaling language modeling with pathways",
+            "The unreasonable effectiveness of few-shot learning for machine translation"
+          ],
+          "2 Setup Finetuning Settings": [
+            "The power of scale for parameter-efficient prompt tuning",
+            "Lora: Low-rank adaptation of large language models"
+          ],
+          "2 Setup Evaluation": [
+            "BLEURT: Learning robust metrics for text generation",
+            "ROUGE: A package for automatic evaluation of summaries",
+            "No language left behind: Scaling human-centered machine translation"
+          ],
+          "3 Why Multiplicative Joint Scaling Law? Finetuning data scaling follows a power law.": [
+            "Lima: Less is more for alignment",
+            "Training compute-optimal large language models",
+            "Scaling laws for transfer"
+          ],
+          "3 Why Multiplicative Joint Scaling Law? Additive or multiplicative joint scaling law for LLM finetuning?": [
+            "Scaling laws for neural machine translation",
+            "Training compute-optimal large language models"
+          ],
+          "4 Scaling Results for LLM Finetuning LLM finetuning benefits more from LLM model scaling than pretraining data scaling across tasks and methods.": [
+            "Training compute-optimal large language models"
+          ],
+          "4 Scaling Results for LLM Finetuning Scaling PET parameters is ineffective, delivering limited gains for both LoRA and Prompt.": [
+            "The power of scale for parameter-efficient prompt tuning"
+          ],
+          "5 Discussion How does finetuning affect the generalization capability of the base LLM?": [
+            "Google\u2019s multilingual neural machine translation system: Enabling zero-shot translation"
+          ],
+          "6 Related Work LLM finetuning": [
+            "Parameter-efficient transfer learning for NLP",
+            "Prefix-tuning: Optimizing continuous prompts for generation",
+            "Lora: Low-rank adaptation of large language models",
+            "Few-shot parameter-efficient fine-tuning is better and cheaper than in-context learning",
+            "Qlora: Efficient finetuning of quantized llms",
+            "Towards a unified view of parameter-efficient transfer learning",
+            "Bitfit: Simple parameter-efficient fine-tuning for transformer-based masked language-models"
+          ],
+          "6 Related Work Scaling Laws": [
+            "Scaling laws for transfer",
+            "Scaling laws for multilingual neural machine translation",
+            "Scaling laws for autoregressive generative modeling",
+            "Scaling vision transformers",
+            "Training compute-optimal large language models",
+            "Scaling laws for sparsely-connected foundation models",
+            "Gpt-4 technical report",
+            "Scaling laws for generative mixed-modal language models",
+            "Data and parameter scaling laws for neural machine translation",
+            "Deep learning scaling is predictable, empirically"
+          ],
+          "8 Acknowledgements": [
+            "Scaling up models and data with t5x and seqio"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.0010499816853553057,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Scaling Laws for a Multi-Agent Reinforcement Learning Model",
+        "arxiv_id": "2210.00849",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract The recent observation of neural power-law scaling relations has made a significant impact in the field of deep learning. A substantial amount of attention has been dedicated as a consequence to the description of scaling laws, although mostly for supervised learning and only to a reduced extent for reinforcement learning frameworks. In this paper we present an extensive study of performance scaling for a cornerstone reinforcement learning algorithm, AlphaZero. On the basis of a relationship between Elo rating, playing strength and power-law scaling, we train AlphaZero agents on the games Connect Four and Pentago and analyze their performance. We find that player strength scales as a power law in neural network parameter count when not bottlenecked by available compute, and as a power of compute when training optimally sized agents. We observe nearly identical scaling exponents for both games. Combining the two observed scaling laws we obtain a power law relating optimal size to compute similar to the ones observed for language models. We find that the predicted scaling of optimal neural network size fits our data for both games. We also show that large AlphaZero models are more sample efficient, performing better than smaller models with the same amount of training data. ",
+        "sections": {
+          "1 Introduction": [
+            "A generalist agent",
+            "Unified scaling laws for routed language models",
+            "Scaling laws for neural language models",
+            "Mastering the game of go without human knowledge",
+            "Scaling scaling laws with board games",
+            "A constructive prediction of the generalization error across scales",
+            "Revisiting resnets: Improved training and scaling strategies",
+            "Language models are few-shot learners",
+            "Mastering chess and shogi by self-play with a general reinforcement learning algorithm",
+            "Mastering atari, go, chess and shogi by planning with a learned model.",
+            "Deep learning scaling is predictable, empirically",
+            "Rank analysis of incomplete block designs: I. the method of paired comparisons"
+          ],
+          "2 Related work": [
+            "Size scaling in self-play reinforcement learning",
+            "From motor control to team play in simulated humanoid football",
+            "Online and offline reinforcement learning by planning with a learned model",
+            "Scaling scaling laws with board games",
+            "Multi-game decision transformers"
+          ],
+          "3 Background 3.1 Language model scaling laws": [
+            "Scaling laws for neural language models",
+            "Training compute-optimal large language models",
+            "Attention is all you need"
+          ],
+          "3 Background 3.2 Power law scaling and Elo rating": [
+            "The rating of chessplayers, past and present",
+            "Computing \u201delo ratings\u201d of move patterns in the game of go",
+            "Rank analysis of incomplete block designs: I. the method of paired comparisons"
+          ],
+          "4 Experimental setting": [
+            "Whole-history rating: A bayesian rating system for players of time-varying strength",
+            "Deep reinforcement learning that matters",
+            "Scaling laws for neural language models",
+            "Efficient selectivity and backup operators in monte-carlo tree search",
+            "OpenSpiel: A framework for reinforcement learning in games",
+            "Connect four solver"
+          ],
+          "5 Results 5.1 Neural network size scaling": [
+            "Pentago is a first player win: Strongly solving a game using parallel in-core retrograde analysis",
+            "An analysis of alpha-beta pruning",
+            "Training compute-optimal large language models",
+            "Connect four solver"
+          ],
+          "5 Results 5.3 Compute scaling": [
+            "Scaling scaling laws with board games"
+          ],
+          "5 Results 5.4 Estimating the compute optimal model size": [
+            "Ai and compute",
+            "Scaling laws for neural language models",
+            "Compute trends across three eras of machine learning",
+            "Mastering chess and shogi by self-play with a general reinforcement learning algorithm",
+            "Mastering the game of go without human knowledge"
+          ],
+          "5 Results 5.5 Sample efficiency": [
+            "Scaling laws for neural language models",
+            "Challenges of real-world reinforcement learning: definitions, benchmarks and analysis"
+          ],
+          "6 Discussion": [
+            "Scaling laws for neural language models",
+            "Energy and policy considerations for deep learning in nlp",
+            "Training compute-optimal large language models",
+            "Investment vs. reward in a competitive knapsack problem"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.00030649901600554585,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Are More LLM Calls All You Need? Towards Scaling Laws of Compound Inference Systems",
+        "arxiv_id": "2403.02419",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Many recent state-of-the-art results in language tasks were achieved using compound systems that perform multiple Large Language Model (LLM) calls and aggregate their responses. However, there is little understanding of how the number of LLM calls \u2013 e.g., when asking the LLM to answer each question multiple times and taking a consensus \u2013 affects such a compound system\u2019s performance. In this paper, we initiate the study of scaling laws of compound inference systems. We analyze, theoretically and empirically, how the number of LLM calls affects the performance of one-layer Voting Inference Systems \u2013 one of the simplest compound systems, which aggregates LLM responses via majority voting. We find empirically that across multiple language tasks, surprisingly, Voting Inference Systems\u2019 performance first increases but then decreases as a function of the number of LLM calls. Our theoretical results suggest that this non-monotonicity is due to the diversity of query difficulties within a task: more LLM calls lead to higher performance on \u201ceasy\u201d queries, but lower performance on \u201chard\u201d queries, and non-monotone behavior emerges when a task contains both types of queries. This insight then allows us to compute, from a small number of samples, the number of LLM calls that maximizes system performance, and define a scaling law of Voting Inference Systems. Experiments show that our scaling law can predict the performance of Voting Inference Systems and find the optimal number of LLM calls to make. ",
+        "sections": {
+          "1 Introduction": [
+            "Gemini: a family of highly capable multimodal models",
+            "Solving olympiad geometry without human demonstrations",
+            "AlphaCode. Alphacode 2 technical report",
+            "Capabilities of gpt-4 on medical challenge problems",
+            "The shift from models to compound ai systems"
+          ],
+          "2 Related Work Neural Scaling Laws.": [
+            "Scaling laws for neural language models",
+            "Inverse scaling: When bigger isn't better",
+            "Explaining neural scaling laws"
+          ],
+          "2 Related Work Compound Systems using LLMs.": [
+            "AlphaCode. Alphacode 2 technical report",
+            "Self-consistency improves chain of thought reasoning in language models",
+            "Improving factuality and reasoning in language models through multiagent debate",
+            "Gemini: a family of highly capable multimodal models"
+          ],
+          "3 Definitions and Problem Statement 3.1 Voting Inference Systems": [
+            "Capabilities of gpt-4 on medical challenge problems",
+            "Self-consistency improves chain of thought reasoning in language models",
+            "Gemini: a family of highly capable multimodal models"
+          ],
+          "5 Experiments 5.4 Scaling Properties on Real-world Datasets": [
+            "Measuring massive multitask language understanding"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.005769459530711174,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "A Survey of Multimodal Large Language Model from A Data-centric Perspective",
+        "arxiv_id": "2405.16640",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract. Human beings perceive the world through diverse senses such as sight, smell, hearing, and touch. Similarly, multimodal large language models (MLLMs) enhance the capabilities of traditional large language models by integrating and processing data from multiple modalities including text, vision, audio, video, and 3D environments. Data plays a pivotal role in the development and refinement of these models. In this survey, we comprehensively review the literature on MLLMs from a data-centric perspective. Specifically, we explore methods for preparing multimodal data during the pretraining and adaptation phases of MLLMs. Additionally, we analyze the evaluation methods for datasets and review benchmarks for evaluating MLLMs. Our survey also outlines potential future research directions. This work aims to provide researchers with a detailed understanding of the data-driven aspects of MLLMs, fostering further exploration and innovation in this field.",
+        "sections": {
+          "1. introduction": [
+            "Multimodal large language models: A survey",
+            "LLaVA-UHD: an LMM Perceiving Any Aspect Ratio and High-Resolution Images",
+            "Blip-2: Bootstrapping language-image pre-training with frozen image encoders and large language models",
+            "A Pretrainer\u2019s Guide to Training Data: Measuring the Effects of Data Age, Domain Coverage, Quality, & Toxicity",
+            "X-InstructBLIP: A Framework for aligning X-Modal instruction-aware representations to LLMs and Emergent Cross-modal Reasoning",
+            "Beyond neural scaling laws: beating power law scaling via data pruning",
+            "GPT-4 technical report",
+            "Data management for large language models: A survey",
+            "A survey of large language models",
+            "VLM: Task-agnostic Video-Language Model Pre-training for Video Understanding",
+            "Data-centric artificial intelligence: A survey",
+            "Point-bind & point-llm: Aligning point cloud with multi-modality for 3d understanding, generation, and instruction following.",
+            "Datasets for Large Language Models: A Comprehensive survey",
+            "A Survey on Data Selection for Language Models",
+            "Exploring the integration of large language models into automatic speech recognition systems: An empirical study",
+            "MM-LLMs: Recent Advances in MultiModal Large Language Models",
+            "Vision-language models for vision tasks: A survey",
+            "Bliva: A simple multimodal llm for better handling of text-rich visual questions",
+            "Training compute-optimal large language models",
+            "Flamingo: a visual language model for few-shot learning"
+          ],
+          "2. backgrounds and categorization 2.1. Large Language Models": [
+            "Improving Language Understanding by Generative Pre-Training",
+            "A survey of large language models",
+            "meta llama. Introducing Meta Llama 3: The most capable openly available LLM to date.",
+            "Statistical methods for speech recognition",
+            "The pile: An 800gb dataset of diverse text for language modeling",
+            "Emergent Abilities of Large Language Models",
+            "Scaling laws for neural language models",
+            "Exploring the limits of transfer learning with a unified text-to-text transformer",
+            "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+            "Language models are few-shot learners.",
+            "A neural probabilistic language model"
+          ],
+          "2. backgrounds and categorization 2.2. Multimodal Large Language Models": [
+            "MM1: Methods, Analysis & Insights from Multimodal LLM Pre-training",
+            "Blip: Bootstrapping language-image pre-training for unified vision-language understanding and generation",
+            "Large language models for robotics: A survey",
+            "MM-LLMs: Recent Advances in MultiModal Large Language Models",
+            "Visual instruction tuning",
+            "Improved Baselines with Visual Instruction Tuning",
+            "Multimodal large language models: A survey"
+          ],
+          "2. backgrounds and categorization 2.3. Data-Centric AI and Why Data-Centric LLMs": [
+            "MM1: Methods, Analysis & Insights from Multimodal LLM Pre-training",
+            "Datacomp: In search of the next generation of multimodal datasets.",
+            "MLLM-as-a-Judge: Assessing Multimodal LLM-as-a-Judge with Vision-Language Benchmark",
+            "meta llama. Introducing Meta Llama 3: The most capable openly available LLM to date.",
+            "Data-centric artificial intelligence: A survey",
+            "Visual instruction tuning",
+            "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+            "Language models are few-shot learners."
+          ],
+          "3. Data collecting and processing 3.1. Data Collecting Sources": [
+            "Towards Automatic Learning of Procedures from Web Instructional Videos",
+            "mRedditSum: A Multimodal Abstractive Summarization Dataset of Reddit Threads with Images",
+            "Wukong: A 100 million large-scale chinese cross-modal pre-training benchmark",
+            "FSD50K: An Open Dataset of Human-Labeled Sound Events",
+            "TweetEval: Unified Benchmark and Comparative Evaluation for Tweet Classification",
+            "Conceptual 12M: Pushing Web-Scale Image-Text Pre-Training To Recognize Long-Tail Visual Concepts",
+            "The pushshift reddit dataset",
+            "MIMIC-CXR-JPG, a large publicly available database of labeled chest radiographs",
+            "Dolma: An Open Corpus of Three Trillion Tokens for Language Model Pretraining Research",
+            "HowTo100M: Learning a Text-Video Embedding by Watching Hundred Million Narrated Video Clips",
+            "Conceptual captions: A cleaned, hypernymed, image alt-text dataset for automatic image captioning",
+            "Codegen: An open large language model for code with multi-turn program synthesis",
+            "FinTree: Financial Dataset Pretrain Transformer Encoder for Relation Extraction",
+            "Redcaps: Web-curated image-text data created by the people, for the people",
+            "The pile: An 800gb dataset of diverse text for language modeling",
+            "Dvqa: Understanding data visualizations via question answering",
+            "Analysing Mathematical Reasoning Abilities of Neural Models",
+            "Huatuo-26M, a Large-scale Chinese Medical QA Dataset",
+            "Fully authentic visual question answering dataset from online communities",
+            "A question-entailment approach to question answering",
+            "Bbt-fin: Comprehensive construction of chinese financial domain pre-trained language model, corpus and benchmark",
+            "The stack: 3 tb of permissively licensed source code.",
+            "From image descriptions to visual denotations: New similarity metrics for semantic inference over event descriptions",
+            "Aligning books and movies: Towards story-like visual explanations by watching movies and reading books",
+            "Wit: Wikipedia-based image text dataset for multimodal multilingual machine learning",
+            "Ocr-vqa: Visual question answering by reading text in images",
+            "Improving Language Understanding by Generative Pre-Training",
+            "Ai challenger: A large-scale dataset for going deeper in image understanding.",
+            "Mmc: Advancing multimodal chart understanding with large-scale instruction tuning",
+            "Padchest: A large chest x-ray image dataset with multi-label annotated reports",
+            "Together Computer. 2023. RedPajama: An Open Source Recipe to Reproduce LLaMA training dataset.",
+            "A dataset and reranking method for multimodal MT of user-generated image captions",
+            "SlimPajama: A 627B token cleaned and deduplicated version of RedPajama",
+            "Wudaocorpora: A super large-scale chinese corpora for pre-training language models",
+            "Laion-5b: An open large-scale dataset for training next generation image-text models",
+            "MIMIC-IV, a freely accessible electronic health record dataset",
+            "Wavcaps: A chatgpt-assisted weakly-labelled audio captioning dataset for audio-language multimodal research.",
+            "peS2o (Pretraining Efficiently on S2ORC) Dataset",
+            "Constructing Image-Text Pair Dataset from Books",
+            "StarCoder: may the source be with you!",
+            "Constructing datasets for multi-hop reading comprehension across documents",
+            "S2ORC: The Semantic Scholar Open Research Corpus",
+            "Exploring the limits of transfer learning with a unified text-to-text transformer",
+            "Compressive transformers for long-range sequence modelling",
+            "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"
+          ],
+          "3. Data collecting and processing 3.2. Data Processing": [
+            "Ureader: Universal ocr-free visually-situated language understanding with multimodal large language model",
+            "Character region awareness for text detection",
+            "Otterhd: A high-resolution multi-modality model",
+            "Opt: Open pre-trained transformer language models",
+            "Qwen-vl: A frontier large vision-language model with versatile abilities",
+            "Visual instruction tuning",
+            "Youku-mplug: A 10 million large-scale chinese video-language dataset for pre-training and benchmarks.",
+            "LLaVA-UHD: an LMM Perceiving Any Aspect Ratio and High-Resolution Images",
+            "Palm: Scaling language modeling with pathways",
+            "Sample and computation redistribution for efficient face detection",
+            "VeCLIP: Improving CLIP Training via Visual-enriched Captions",
+            "Dolma: An Open Corpus of Three Trillion Tokens for Language Model Pretraining Research",
+            "What\u2019s in the box? an analysis of undesirable content in the Common Crawl corpus",
+            "A study of face obfuscation in imagenet",
+            "Similarity estimation techniques from rounding algorithms",
+            "Multimodal c4: An open, billion-scale corpus of images interleaved with text.",
+            "Implementation and benchmarking of perceptual image hash functions",
+            "Monkey: Image resolution and text label are important things for large multi-modal models.",
+            "CLUECorpus2020: A large-scale Chinese corpus for pre-training language model",
+            "The RefinedWeb dataset for Falcon LLM: outperforming curated corpora with web data, and web data only.",
+            "Text embeddings by weakly-supervised contrastive pre-training",
+            "Two-frame motion estimation based on polynomial expansion",
+            "Aligning books and movies: Towards story-like visual explanations by watching movies and reading books",
+            "The bigscience roots corpus: A 1.6 tb composite multilingual dataset",
+            "Feast Your Eyes: Mixture-of-Resolution Adaptation for Multimodal Large Language Models",
+            "Noise-Robust De-Duplication at Scale",
+            "SemDeDup: Data-efficient learning at web-scale through semantic deduplication",
+            "Finetuned Multimodal Language Models Are High-Quality Image-Text Data Filters",
+            "Improved Baselines with Visual Instruction Tuning",
+            "On the resemblance and containment of documents",
+            "Scaling laws and interpretability of learning from repeated data.",
+            "Addressing \u201dDocumentation Debt\u201d in Machine Learning: A Retrospective Datasheet for BookCorpus",
+            "Together Computer. 2023. RedPajama: An Open Source Recipe to Reproduce LLaMA training dataset.",
+            "Improving Multimodal Datasets with Image Captioning",
+            "Sharegpt4v: Improving large multi-modal models with better captions",
+            "Vast: A vision-audio-subtitle-text omni-modality foundation model and dataset",
+            "Wudaocorpora: A super large-scale chinese corpora for pre-training language models",
+            "Suffix arrays: a new method for on-line string searches",
+            "The MiniPile Challenge for Data-Efficient Language Models",
+            "Internvid: A large-scale video-text dataset for multimodal understanding and generation",
+            "Mpnet: Masked and permuted pre-training for language understanding",
+            "Vary: Scaling up the vision vocabulary for large vision-language models",
+            "Deduplicating Training Data Makes Language Models Better",
+            "Bliva: A simple multimodal llm for better handling of text-rich visual questions",
+            "Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks",
+            "Quantifying Memorization Across Neural Language Models",
+            "Improving clip training with language rewrites",
+            "A comprehensive survey of image augmentation techniques for deep learning",
+            "Exploring the limits of transfer learning with a unified text-to-text transformer",
+            "Deduplicating training data mitigates privacy risks in language models",
+            "Textbooks Are All You Need"
+          ],
+          "3. Data collecting and processing 3.3. Commonly-used Datasets for MLLMs": [
+            "Panda-70M: Captioning 70M Videos with Multiple Cross-Modality Teachers.",
+            "Wukong: A 100 million large-scale chinese cross-modal pre-training benchmark",
+            "Textcaps: a dataset for image captioning with reading comprehension",
+            "Msr-vtt: A large video description dataset for bridging video and language",
+            "Obelics: An open web-scale filtered dataset of interleaved image-text documents.",
+            "Conceptual 12M: Pushing Web-Scale Image-Text Pre-Training To Recognize Long-Tail Visual Concepts",
+            "Towards vqa models that can read",
+            "Visual7w: Grounded question answering in images",
+            "Conceptual captions: A cleaned, hypernymed, image alt-text dataset for automatic image captioning",
+            "Multimodal c4: An open, billion-scale corpus of images interleaved with text.",
+            "MM1: Methods, Analysis & Insights from Multimodal LLM Pre-training",
+            "Datacomp: In search of the next generation of multimodal datasets.",
+            "Aishell-2: Transforming mandarin asr research into industrial scale",
+            "X-llm: Bootstrapping advanced large language models by treating multi-modalities as foreign languages.",
+            "Microsoft coco captions: Data collection and evaluation server",
+            "COYO-700M: Image-Text Pair Dataset",
+            "Ok-vqa: A visual question answering benchmark requiring external knowledge",
+            "Making the V in VQA Matter: Elevating the Role of Image Understanding in Visual Question Answering",
+            "Gqa: A new dataset for real-world visual reasoning and compositional question answering",
+            "Scaling up vision-language pre-training for image captioning",
+            "From image descriptions to visual denotations: New similarity metrics for semantic inference over event descriptions",
+            "Datasets for Large Language Models: A Comprehensive survey",
+            "Ai challenger: A large-scale dataset for going deeper in image understanding.",
+            "Laion-400m: Open dataset of clip-filtered 400 million image-text pairs.",
+            "Joint 2d-3d-semantic data for indoor scene understanding",
+            "Docvqa: A dataset for vqa on document images",
+            "Visual storytelling",
+            "Laion-5b: An open large-scale dataset for training next generation image-text models",
+            "Structured3D: A Large Photo-realistic Dataset for Structured 3D Modeling",
+            "Scene Text Visual Question Answering",
+            "Scannet: Richly-annotated 3d reconstructions of indoor scenes",
+            "Im2text: Describing images using 1 million captioned photographs",
+            "Wavcaps: A chatgpt-assisted weakly-labelled audio captioning dataset for audio-language multimodal research.",
+            "Shikra: Unleashing Multimodal LLM\u2019s Referential Dialogue Magic",
+            "Flamingo: a visual language model for few-shot learning",
+            "Visual genome: Connecting language and vision using crowdsourced dense image annotations",
+            "Frozen in time: A joint video and image encoder for end-to-end retrieval"
+          ],
+          "4. Data-centric pre-training": [
+            "Blip: Bootstrapping language-image pre-training for unified vision-language understanding and generation",
+            "Hubert: Self-supervised speech representation learning by masked prediction of hidden units",
+            "X-llm: Bootstrapping advanced large language models by treating multi-modalities as foreign languages.",
+            "Learning transferable visual models from natural language supervision",
+            "Vicuna: An Open-Source Chatbot Impressing GPT-4 with 90%* ChatGPT Quality",
+            "Llama: Open and efficient foundation language models",
+            "Bootstrapping Vision-Language Learning with Decoupled Language Pre-training",
+            "ULIP: Learning Unified Representation of Language, Image and Point Cloud for 3D Understanding",
+            "An image is worth 16x16 words: Transformers for image recognition at scale"
+          ],
+          "4. Data-centric pre-training 4.1. Domain Mixture": [
+            "Doremi: Optimizing data mixtures speeds up language model pretraining",
+            "Glam: Efficient scaling of language models with mixture-of-experts",
+            "Coherent hierarchical multi-label classification networks",
+            "Youku-mplug: A 10 million large-scale chinese video-language dataset for pre-training and benchmarks."
+          ],
+          "4. Data-centric pre-training 4.2. Modality Mixture": [
+            "MM1: Methods, Analysis & Insights from Multimodal LLM Pre-training",
+            "From scarcity to efficiency: Improving clip training via visual-enriched captions.",
+            "Video-llama: An instruction-tuned audio-visual language model for video understanding",
+            "Video-llava: Learning united visual representation by alignment before projection",
+            "Audio-Visual LLM for Video Understanding",
+            "AutoAD: Movie description in context",
+            "Vast: A vision-audio-subtitle-text omni-modality foundation model and dataset"
+          ],
+          "4. Data-centric pre-training 4.3. Quality Selection": [
+            "Datacomp: In search of the next generation of multimodal datasets.",
+            "Finetuned Multimodal Language Models Are High-Quality Image-Text Data Filters",
+            "Sieve: Multimodal Dataset Pruning Using Image Captioning Models",
+            "CiT: Curation in Training for Effective Vision-Language Data",
+            "Variance Alignment Score: A Simple But Tough-to-Beat Data Selection Method for Multimodal Contrastive Learning"
+          ],
+          "5. data-centric adaptation 5.1. Data-Centric Supervised Finetuning": [
+            "Active Instruction Tuning: Improving Cross-Task Generalization by Training on Prompt Sensitive Tasks",
+            "From quantity to quality: Boosting llm performance with self-guided data selection for instruction tuning",
+            "Practical coreset constructions for machine learning",
+            "What Makes Good Data for Alignment? A Comprehensive Study of Automatic Data Selection in Instruction Tuning",
+            "Deep learning on a data diet: Finding important examples early in training",
+            "Quantifying visual image quality: A bayesian view",
+            "LLaVA-UHD: an LMM Perceiving Any Aspect Ratio and High-Resolution Images",
+            "M3IT: A Large-Scale Dataset towards Multi-Modal Multilingual Instruction Tuning",
+            "The hateful memes challenge: Detecting hate speech in multimodal memes",
+            "Active learning for convolutional neural networks: A core-set approach",
+            "Towards vqa models that can read",
+            "Video question answering via gradually refined attention over appearance and motion",
+            "X-InstructBLIP: A Framework for aligning X-Modal instruction-aware representations to LLMs and Emergent Cross-modal Reasoning",
+            "Beyond neural scaling laws: beating power law scaling via data pruning",
+            "GPT-4 technical report",
+            "Less: Selecting influential data for targeted instruction tuning",
+            "Instructblip: Towards general-purpose vision-language models with instruction tuning",
+            "Moderate coreset: A universal method of data selection for real-world data-efficient deep learning",
+            "MiniGPT-4: Enhancing Vision-Language Understanding with Advanced Large Language Models",
+            "Lima: Less is more for alignment",
+            "End-to-end multimodal fact-checking and explanation generation: A challenging dataset and models",
+            "Rethinking the Instruction Quality: LIFT is What You Need",
+            "Ok-vqa: A visual question answering benchmark requiring external knowledge",
+            "MiniGPT-v2: large language model as a unified interface for vision-language multi-task learning",
+            "Making the V in VQA Matter: Elevating the Role of Image Understanding in Visual Question Answering",
+            "Gqa: A new dataset for real-world visual reasoning and compositional question answering",
+            "Microsoft coco: Common objects in context",
+            "Coco-text: Dataset and benchmark for text detection and recognition in natural images",
+            "Just ask: Learning to answer questions from millions of narrated videos",
+            "From image descriptions to visual denotations: New similarity metrics for semantic inference over event descriptions",
+            "Ocr-vqa: Visual question answering by reading text in images",
+            "SelectLLM: Can LLMs Select Important Instructions to Annotate?",
+            "CogVLM: Visual Expert for Pretrained Language Models",
+            "SelectIT: Selective Instruction Tuning for Large Language Models via Uncertainty-Aware Self-Reflection",
+            "Activitynet-qa: A dataset for understanding complex web videos via question answering",
+            "e-vil: A dataset and benchmark for natural language explanations in vision-language tasks",
+            "One shot learning as instruction data prospector for large language models.",
+            "Improved Baselines with Visual Instruction Tuning",
+            "Neural module networks",
+            "Alpagasus: Training a better alpaca with fewer data",
+            "Docvqa: A dataset for vqa on document images",
+            "InsTag: Instruction Tagging for Analyzing Supervised Fine-tuning of Large Language Models",
+            "Sharegpt4v: Improving large multi-modal models with better captions",
+            "Audio set: An ontology and human-labeled dataset for audio events",
+            "Mods: Model-oriented data selection for instruction tuning",
+            "Maybe only 0.5% data is needed: A preliminary exploration of low training data instruction tuning",
+            "A new active labeling method for deep learning",
+            "Referitgame: Referring to objects in photographs of natural scenes",
+            "NLU on Data Diets: Dynamic Data Subset Selection for NLP Classification Tasks",
+            "Similar: Submodular information measures based active learning in realistic scenarios",
+            "Visual genome: Connecting language and vision using crowdsourced dense image annotations",
+            "DEFT: Data Efficient Fine-Tuning for Large Language Models via Unsupervised Core-Set Selection",
+            "Imagenet large scale visual recognition challenge",
+            "Unnatural instructions: Tuning language models with (almost) no human labor",
+            "Shikra: Unleashing Multimodal LLM\u2019s Referential Dialogue Magic",
+            "Position-enhanced visual instruction tuning for multimodal large language models",
+            "LLaMA-VID: An image is worth 2 tokens in large language models",
+            "DECODING-ENHANCED BERT WITH DISENTANGLED ATTENTION"
+          ],
+          "5. data-centric adaptation 5.2. Data-Centric Human Preference Alignment": [
+            "Aligning large multimodal models with factually augmented rlhf",
+            "Dress: Instructing large vision-language models to align and interact with humans via natural language feedback",
+            "Training language models to follow instructions with human feedback",
+            "Visual spatial reasoning",
+            "LLaMA-VID: An image is worth 2 tokens in large language models"
+          ],
+          "6. evaluation 6.1. Data Evaluation": [
+            "The vendi score: A diversity evaluation metric for machine learning",
+            "Mauve scores for generative models: Theory and practice",
+            "TRUE: Re-evaluating factual consistency evaluation",
+            "Deep coral: Correlation alignment for deep domain adaptation",
+            "Mixture models for diverse machine translation: Tricks of the trade",
+            "Unsupervised quality estimation for neural machine translation",
+            "Faithscore: Evaluating hallucinations in large vision-language models",
+            "Object hallucination in image captioning",
+            "Gans trained by a two time-scale update rule converge to a local nash equilibrium",
+            "Transferability in deep learning: A survey"
+          ],
+          "6. evaluation 6.2. Evaluation Datasets for MLLMs": [
+            "Imagenet: A large-scale hierarchical image database",
+            "Learn to explain: Multimodal reasoning via thought chains for science question answering",
+            "Vatex: A large-scale, high-quality multilingual dataset for video-and-language research",
+            "Clotho-aqa: A crowdsourced dataset for audio question answering",
+            "Evaluating object hallucination in large vision-language models",
+            "Learning to answer questions in dynamic audio-visual scenarios",
+            "Chartqa: A benchmark for question answering about charts with visual and logical reasoning.",
+            "Visual instruction tuning",
+            "Msr-vtt: A large video description dataset for bridging video and language",
+            "The hateful memes challenge: Detecting hate speech in multimodal memes",
+            "3d shapenets: A deep representation for volumetric shapes",
+            "M3IT: A Large-Scale Dataset towards Multi-Modal Multilingual Instruction Tuning",
+            "Towards vqa models that can read",
+            "Video question answering via gradually refined attention over appearance and motion",
+            "Grit: General robust image task benchmark",
+            "Mvbench: A comprehensive multi-modal video understanding benchmark",
+            "Microsoft coco captions: Data collection and evaluation server",
+            "Egoschema: A diagnostic benchmark for very long-form video language understanding",
+            "Ok-vqa: A visual question answering benchmark requiring external knowledge",
+            "Visual spatial reasoning",
+            "Making the V in VQA Matter: Elevating the Role of Image Understanding in Visual Question Answering",
+            "Gqa: A new dataset for real-world visual reasoning and compositional question answering",
+            "Deep visual-semantic alignments for generating image descriptions",
+            "Tgif-qa: Toward spatio-temporal reasoning in visual question answering",
+            "The\u201d something something\u201d video database for learning and evaluating visual common sense.",
+            "From image descriptions to visual denotations: New similarity metrics for semantic inference over event descriptions",
+            "Audiocaps: Generating captions for audios in the wild",
+            "Mmbench: Is your multi-modal model an all-around player?",
+            "Ocr-vqa: Visual question answering by reading text in images",
+            "Detecting moments and highlights in videos via natural language queries",
+            "Activitynet-qa: A dataset for understanding complex web videos via question answering",
+            "Movie description",
+            "ESC: Dataset for environmental sound classification",
+            "Mm-vet: Evaluating large multimodal models for integrated capabilities",
+            "Localizing moments in video with natural language",
+            "Nocaps: Novel object captioning at scale",
+            "Vizwiz grand challenge: Answering visual questions from blind people",
+            "Docvqa: A dataset for vqa on document images",
+            "Touchstone: Evaluating vision-language models by language models",
+            "Mathvista: Evaluating mathematical reasoning of foundation models in visual contexts",
+            "Collecting highly parallel data for paraphrase evaluation",
+            "Tvr: A large-scale dataset for video-subtitle moment retrieval",
+            "MME: A Comprehensive Evaluation Benchmark for Multimodal Large Language Models",
+            "Referitgame: Referring to objects in photographs of natural scenes",
+            "A diagram is worth a dozen images",
+            "Clotho: An audio captioning dataset",
+            "Tall: Temporal activity localization via language query",
+            "Video-chatgpt: Towards detailed video understanding via large vision and language models",
+            "Translating Videos to Natural Language Using Deep Recurrent Neural Networks",
+            "Seed-bench: Benchmarking multimodal llms with generative comprehension"
+          ],
+          "7. future direction 7.1. Data Processing System for MLLMs.": [
+            "Data-juicer: A one-stop data processing system for large language models.",
+            "Flamingo: a visual language model for few-shot learning",
+            "Oasis: Data curation and assessment system for pretraining of large language models"
+          ],
+          "7. future direction 7.2. Data Quantity Analysis for MLLM Pre-training.": [
+            "When Scaling Meets LLM Finetuning: The Effect of Data, Model and Finetuning Method",
+            "Emergent Abilities of Large Language Models",
+            "Training compute-optimal large language models",
+            "Scaling laws for neural language models",
+            "Scaling Laws for Data Filtering\u2013Data Curation cannot be Compute Agnostic",
+            "Data Mixing Laws: Optimizing Data Mixtures by Predicting Language Modeling Performance"
+          ],
+          "7. future direction 7.3. Data Quality Analysis for MLLM Pre-training.": [
+            "Doremi: Optimizing data mixtures speeds up language model pretraining",
+            "Doge: Domain reweighting with generalization estimation"
+          ],
+          "7. future direction 7.4. MLLM Data Evaluation.": [
+            "Improved Baselines with Visual Instruction Tuning",
+            "Transferability in deep learning: A survey"
+          ],
+          "7. future direction 7.5. Data Quality Improving for MLLM Supervised Fine-Tuning.": [
+            "Mods: Model-oriented data selection for instruction tuning"
+          ],
+          "7. future direction 7.6. MLLM Lifelong Learning.": [
+            "Blip: Bootstrapping language-image pre-training for unified vision-language understanding and generation"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.000789383368100971,
+        "extra": {
+          "expand": "not expand"
+        }
+      }
+    ]
+  },
+  "abstract": "",
+  "sections": "",
+  "source": "Root",
+  "select_score": 0.0,
+  "extra": {
+    "touch_ids": [
+      "2010.14701",
+      "2403.15377",
+      "2402.07043",
+      "2407.13623",
+      "2312.04567",
+      "2001.08361",
+      "2408.00724",
+      "2212.07143",
+      "2407.07356",
+      "2404.02905",
+      "2402.17177",
+      "2301.03728",
+      "2405.14005",
+      "2211.04325",
+      "2405.05945",
+      "2406.07155",
+      "2404.01367",
+      "2403.02545",
+      "2404.02883",
+      "2402.17193",
+      "2409.06754",
+      "2401.00028",
+      "2210.00849",
+      "2403.02419",
+      "2405.16640"
+    ],
+    "crawler_recall_papers": [
+      "Inference Scaling Laws: An Empirical Analysis of Compute-Optimal Inference for Problem-Solving with Language Models",
+      "Visual Autoregressive Modeling: Scalable Image Generation via Next-Scale Prediction",
+      "Will we run out of data? An analysis of the limits of scaling datasets in Machine Learning",
+      "Sora: A Review on Background, Technology, Limitations, and Opportunities of Large Vision Models",
+      "Lumina-T2X: Transforming Text into Any Modality, Resolution, and Duration via Flow-based Large Diffusion Transformers",
+      "A Tale of Tails: Model Collapse as a Change of Scaling Laws",
+      "Scaling Laws of Synthetic Images for Model Training \u2026 for Now",
+      "Reproducible scaling laws for contrastive language-image learning",
+      "Scaling Laws for Generative Mixed-Modal Language Models",
+      "Bigger is not Always Better: Scaling Properties of Latent Diffusion Models",
+      "On the Scalability of Diffusion-based Text-to-Image Generation",
+      "An Empirical Study of Scaling Law for OCR",
+      "Scaling Laws for Autoregressive Generative Modeling",
+      "InternVideo2: Scaling Video Foundation Models for Multimodal Video Understanding",
+      "Scaling Laws with Vocabulary: Larger Models Deserve Larger Vocabularies",
+      "Scaling Laws for Neural Language Models",
+      "Video In-context Learning",
+      "Neural Scaling Laws for Embodied AI",
+      "Wukong: Towards a Scaling Law for Large-Scale Recommendation",
+      "Scaling Law Hypothesis for Multimodal Model",
+      "Scaling Large-Language-Model-based Multi-Agent Collaboration",
+      "When Scaling Meets LLM Finetuning: The Effect of Data, Model and Finetuning Method",
+      "Scaling Laws for a Multi-Agent Reinforcement Learning Model",
+      "Are More LLM Calls All You Need? Towards Scaling Laws of Compound Inference Systems",
+      "A Survey of Multimodal Large Language Model from A Data-centric Perspective"
+    ],
+    "recall_papers": [
+      "Reproducible scaling laws for contrastive language-image learning",
+      "Scaling Laws for Generative Mixed-Modal Language Models",
+      "Scaling Laws for Autoregressive Generative Modeling",
+      "Scaling Law Hypothesis for Multimodal Model"
+    ],
+    "answer": [
+      "Scaling Laws for Autoregressive Generative Modeling",
+      "Scaling Laws for Generative Mixed-Modal Language Models",
+      "Reproducible scaling laws for contrastive language-image learning",
+      "Transfusion: Predict the Next Token and Diffuse Images with One Multi-Modal Model",
+      "Scaling Up Vision-Language Pre-training for Image Captioning",
+      "Are Bigger Encoders Always Better in Vision Large Models?",
+      "EVA: Exploring the Limits of Masked Visual Representation Learning at   Scale",
+      "PaLI: A Jointly-Scaled Multilingual Language-Image Model",
+      "Scaling Law Hypothesis for Multimodal Model",
+      "An Empirical Study of Scaling Instruct-Tuned Large Multimodal Models",
+      "SPHINX-X: Scaling Data and Parameters for a Family of Multi-modal Large Language Models",
+      "Multimodal contrastive learning with limoe: the language-image mixture of experts",
+      "Simple open-vocabulary object detection with vision transformers",
+      "Scaling language-image pre-training via masking",
+      "Scaling rectified flow transformers for high-resolution image synthesis"
+    ]
+  }
+}

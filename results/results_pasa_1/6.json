@@ -1,0 +1,2249 @@
+{
+  "title": "Papers that propose methods based on large language models and evaluate their performance through experiments on the HotPotQA dataset.",
+  "arxiv_id": "",
+  "depth": -1,
+  "child": {
+    "Papers discussing methods based on large language models using HotPotQA dataset for evaluation": [
+      {
+        "title": "When Hindsight is Not 20/20: Testing Limits on Reflective Thinking in Large Language Models",
+        "arxiv_id": "2404.09129",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract Recent studies suggest that self-reflective prompting can significantly enhance the reasoning capabilities of Large Language Models (LLMs). However, the use of external feedback as a stop criterion raises doubts about the true extent of LLMs\u2019 ability to emulate human-like self-reflection. In this paper, we set out to clarify these capabilities under a more stringent evaluation setting in which we disallow any kind of external feedback. Our findings under this setting show a split: while self-reflection enhances performance in TruthfulQA, it adversely affects results in HotpotQA. We conduct follow-up analyses to clarify the contributing factors in these patterns, and find that the influence of self-reflection is impacted both by reliability of accuracy in models\u2019 initial responses, and by overall question difficulty: specifically, self-reflection shows the most benefit when models are less likely to be correct initially, and when overall question difficulty is higher. We also find that self-reflection reduces tendency toward majority voting. Based on our findings, we propose guidelines for decisions on when to implement self-reflection. We release the codebase for reproducing our experiments at https://github.com/yanhong-lbh/LLM-SelfReflection-Eval.",
+        "sections": {
+          "1 Introduction": [
+            "Constitutional ai: Harmlessness from ai feedback",
+            "Large language models cannot self-correct reasoning yet",
+            "Large language models can self-improve",
+            "HotpotQA: A dataset for diverse, explainable multi-hop question answering",
+            "TruthfulQA: Measuring how models mimic human falsehoods.",
+            "Chatgpt"
+          ],
+          "2 Self-Reflection Prompting": [
+            "Large language models cannot self-correct reasoning yet"
+          ],
+          "3 Preliminary Study: Does Self-Reflection Prompting Work Under SR2V?": [
+            "Constitutional ai: Harmlessness from ai feedback"
+          ],
+          "3 Preliminary Study: Does Self-Reflection Prompting Work Under SR2V? Experiment Setup": [
+            "Llama 2: Open foundation and fine-tuned chat models",
+            "Mixtral of experts",
+            "Self-consistency improves chain of thought reasoning in language models."
+          ],
+          "3 Preliminary Study: Does Self-Reflection Prompting Work Under SR2V? Observations": [
+            "Constitutional ai: Harmlessness from ai feedback",
+            "Large language models cannot self-correct reasoning yet"
+          ],
+          "4 Why Self-Reflection May Not Work?": [
+            "Reflection at work\u2013a conceptual model and the meaning of its components in the domain of VET teachers"
+          ],
+          "Limitations": [
+            "Llama 2: Open foundation and fine-tuned chat models",
+            "Mixtral of experts"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.7582741975784302,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "MoreHopQA: More Than Multi-hop Reasoning",
+        "arxiv_id": "2406.13397",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract Most existing multi-hop datasets are extractive answer datasets, where the answers to the questions can be extracted directly from the provided context. This often leads models to use heuristics or shortcuts instead of performing true multi-hop reasoning. In this paper, we propose a new multi-hop dataset, MoreHopQA, which shifts from extractive to generative answers. Our dataset is created by utilizing three existing multi-hop datasets: HotpotQA, 2WikiMultihopQA, and MuSiQue. Instead of relying solely on factual reasoning, we enhance the existing multi-hop questions by adding another layer of questioning that involves one, two, or all three of the following types of reasoning: commonsense, arithmetic, and symbolic. Our dataset is created through a semi-automated process, resulting in a dataset with 1,118 samples that have undergone human verification. We then use our dataset to evaluate five different large language models: Mistral 7B, Gemma 7B, Llama 3 (8B and 70B), and GPT-4. We also design various cases to analyze the reasoning steps in the question-answering process. Our results show that models perform well on initial multi-hop questions but struggle with our extended questions, indicating that our dataset is more challenging than previous ones. Our analysis of question decomposition reveals that although models can correctly answer questions, only a portion\u201438.7% for GPT-4 and 33.4% for Llama3-70B\u2014achieve perfect reasoning, where all corresponding sub-questions are answered correctly.111Our data and code are available at https://github.com/Alab-NII/morehopqa",
+        "sections": {
+          "1 Introduction": [
+            "MRKE: The multi-hop reasoning evaluation of llms by knowledge edition",
+            "Chain-of-thought prompting elicits reasoning in large language models",
+            "Compositional questions do not necessitate multi-hop reasoning",
+            "Constructing a multi-hop QA dataset for comprehensive evaluation of reasoning steps",
+            "HotpotQA: A dataset for diverse, explainable multi-hop question answering",
+            "Constructing datasets for multi-hop reading comprehension across documents",
+            "MuSiQue: Multihop questions via single-hop question composition",
+            "MQuAKE: Assessing knowledge editing in language models via multi-hop questions",
+            "FanOutQA: Multi-hop, multi-document question answering for large language models",
+            "Reasoning with language model prompting: A survey"
+          ],
+          "2 Related Work 2.1 Multi-hop QA Datasets": [
+            "Constructing a multi-hop QA dataset for comprehensive evaluation of reasoning steps",
+            "The value of semantic parse labeling for knowledge base question answering",
+            "The web as a knowledge-base for answering complex questions",
+            "HotpotQA: A dataset for diverse, explainable multi-hop question answering",
+            "Constructing datasets for multi-hop reading comprehension across documents",
+            "MuSiQue: Multihop questions via single-hop question composition",
+            "R4C: A benchmark for evaluating RC systems to get the right answer for the right reason",
+            "MQuAKE: Assessing knowledge editing in language models via multi-hop questions",
+            "FanOutQA: Multi-hop, multi-document question answering for large language models"
+          ],
+          "2 Related Work 2.2 Multi-hop Analyses": [
+            "Successive prompting for decomposing complex questions",
+            "Compositional questions do not necessitate multi-hop reasoning",
+            "Is a question decomposition unit all we need?",
+            "The web as a knowledge-base for answering complex questions",
+            "Is multihop QA in DiRe condition? measuring and reducing disconnected reasoning",
+            "Do multi-hop question answering systems know how to answer the single-hop sub-questions?",
+            "When do decompositions help for machine reading?"
+          ],
+          "3 Dataset Creation Process 3.1 Sample Selection": [
+            "MuSiQue: Multihop questions via single-hop question composition",
+            "Constructing a multi-hop QA dataset for comprehensive evaluation of reasoning steps",
+            "Do multi-hop question answering systems know how to answer the single-hop sub-questions?",
+            "HotpotQA: A dataset for diverse, explainable multi-hop question answering"
+          ],
+          "3 Dataset Creation Process 3.2 Template Design": [
+            "Reasoning with language model prompting: A survey"
+          ],
+          "4 Dataset Quality Assessment": [
+            "HotpotQA: A dataset for diverse, explainable multi-hop question answering"
+          ],
+          "5 Experiments 5.1 Experimental Settings": [
+            "Chain-of-thought prompting elicits reasoning in large language models",
+            "HotpotQA: A dataset for diverse, explainable multi-hop question answering",
+            "Gemma: Open models based on gemini research and technology",
+            "AI@Meta. Llama 3 model card.",
+            "Large language models are zero-shot reasoners",
+            "Mistral 7b",
+            "Gpt-4 technical report",
+            "What makes reading comprehension questions easier?"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.6340538263320923,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Factuality of Large Language Models in the Year 2024",
+        "arxiv_id": "2402.02420",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Large language models (LLMs), especially when instruction-tuned for chat, have become part of our daily lives, freeing people from the process of searching, extracting, and integrating information from multiple sources by offering a straightforward answer to a variety of questions in a single place. Unfortunately, in many cases, LLM responses are factually incorrect, which limits their applicability in real-world scenarios. As a result, research on evaluating and improving the factuality of LLMs has attracted a lot of research attention recently. In this survey, we critically analyze existing work with the aim to identify the major challenges and their associated causes, pointing out to potential solutions for improving the factuality of LLMs, and analyzing the obstacles to automated factuality evaluation for open-ended text generation. We further offer an outlook on where future research should go.  ",
+        "sections": {
+          "1 Introduction": [
+            "Felm: Benchmarking factuality evaluation of large language models",
+            "A comprehensive survey of hallucination mitigation techniques in large language models"
+          ],
+          "1 Introduction Why this survey?": [
+            "Retrieval-augmented generation for large language models: A survey",
+            "A survey of hallucination in large foundation models",
+            "A survey on hallucination in large language models: Principles, taxonomy, challenges, and open questions.",
+            "A survey on automated fact-checking",
+            "A comprehensive survey of hallucination mitigation techniques in large language models"
+          ],
+          "1 Introduction Scope": [
+            "A survey of language model confidence estimation and calibration"
+          ],
+          "2 Background Hallucination vs. Factuality": [
+            "Siren\u2019s song in the AI ocean: A survey on hallucination in large language models",
+            "A survey on hallucination in large language models: Principles, taxonomy, challenges, and open questions.",
+            "Survey on factuality in large language models: Knowledge, retrieval and domain-specificity",
+            "A comprehensive survey of hallucination mitigation techniques in large language models",
+            "Survey of hallucination in natural language generation"
+          ],
+          "2 Background Relevance vs. Factuality": [
+            "Felm: Benchmarking factuality evaluation of large language models"
+          ],
+          "2 Background Trustworthiness/Reliability vs. Factuality": [
+            "Survey on factuality in large language models: Knowledge, retrieval and domain-specificity",
+            "Trustworthiness in large language models"
+          ],
+          "3 Evaluating Factuality 3.1 Datasets and Metrics": [
+            "Siren\u2019s song in the AI ocean: A survey on hallucination in large language models",
+            "Factcheck-gpt: End-to-end fine-grained document-level fact-checking and correction of LLM output"
+          ],
+          "3 Evaluating Factuality 3.2 Other Metrics": [
+            "The troubling emergence of hallucination in large language models - an extensive definition, quantification, and prescriptive remediations.",
+            "Factuality enhanced language models for open-ended text generation"
+          ],
+          "4 Improving Factuality": [
+            "Retrieval-augmented generation for large language models: A survey"
+          ],
+          "4 Improving Factuality 4.1 Pre-training": [
+            "Textbooks are all you need II: phi-1.5 technical report",
+            "Llama 2: Open foundation and fine-tuned chat models",
+            "Improving language models by retrieving from trillions of tokens",
+            "Language models are few-shot learners",
+            "Shall we pretrain autoregressive language models with retrieval? a comprehensive study"
+          ],
+          "4 Improving Factuality 4.2 Tuning and RLXF": [
+            "Retrieval-augmented generation for knowledge-intensive nlp tasks",
+            "R-tuning: Teaching large language models to refuse unknown questions",
+            "Dense passage retrieval for open-domain question answering",
+            "Hallucination augmented recitations for language models",
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "Webgpt: Browser-assisted question-answering with human feedback",
+            "Simple synthetic data reduces sycophancy in large language models.",
+            "Dial beinfo for faithfulness: Improving factuality of information-seeking dialogue via behavioural fine-tuning",
+            "Halo: Estimation and reduction of hallucinations in open-source weak large language models",
+            "Behavioral cloning from observation",
+            "Leveraging passage retrieval with generative models for open domain question answering",
+            "Language models are few-shot learners",
+            "Fine-tuning language models for factuality",
+            "Training language models to follow instructions with human feedback",
+            "Towards understanding sycophancy in language models"
+          ],
+          "4 Improving Factuality 4.3 Inference": [
+            "Dola: Decoding by contrasting layers improves factuality in large language models",
+            "React: Synergizing reasoning and acting in language models",
+            "How language model hallucinations can snowball",
+            "Factuality enhanced language models for open-ended text generation",
+            "Ever: Mitigating hallucination in large language models through real-time verification and rectification",
+            "Chain-of-thought prompting elicits reasoning in large language models",
+            "Reflexion: Language agents with verbal reinforcement learning",
+            "Improving factuality and reasoning in language models through multiagent debate",
+            "Freshllms: Refreshing large language models with search engine augmentation",
+            "T rusting your evidence: Hallucinate less with context-aware decoding.",
+            "Can we edit factual knowledge by in-context learning?",
+            "A stitch in time saves nine: Detecting and mitigating hallucinations of llms by validating low-confidence generation",
+            "The curious case of neural text degeneration",
+            "Enabling large language models to generate text with citations"
+          ],
+          "4 Improving Factuality 4.4 Automatic Fact Checkers": [
+            "Factuality enhanced language models for open-ended text generation",
+            "Chain-of-verification reduces hallucination in large language models",
+            "Factcheck-gpt: End-to-end fine-grained document-level fact-checking and correction of LLM output",
+            "Generating benchmarks for factuality evaluation of language models",
+            "Factscore: Fine-grained atomic evaluation of factual precision in long form text generation",
+            "FEVER: a large-scale dataset for fact extraction and VERification",
+            "Attributed text generation via post-hoc research and revision",
+            "Factool: Factuality detection in generative AI - A tool augmented framework for multi-task and multi-domain scenarios."
+          ],
+          "5 Factuality of Multimodal LLMs": [
+            "Multimodal automated fact-checking: A survey",
+            "A survey of hallucination in large foundation models",
+            "Woodpecker: Hallucination correction for multimodal large language models",
+            "Aligning large multimodal models with factually augmented RLHF",
+            "Beyond hallucinations: Enhancing lvlms through hallucination-aware direct preference optimization"
+          ],
+          "6 Challenges and Future Directions Automatic evaluation of factual accuracy of open-ended generations remains challenging.": [
+            "Factscore: Fine-grained atomic evaluation of factual precision in long form text generation"
+          ],
+          "6 Challenges and Future Directions Potential Future Directions": [
+            "Fine-tuning language models for factuality"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.00020693223632406443,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Large Language Models: A Survey",
+        "arxiv_id": "2402.06196",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Large Language Models (LLMs) have drawn a lot of attention due to their strong performance on a wide range of natural language tasks, since the release of ChatGPT in November 2022. LLMs\u2019 ability of general-purpose language understanding and generation is acquired by training billions of model\u2019s parameters on massive amounts of text data, as predicted by scaling laws [1, 2]. The research area of LLMs, while very recent, is evolving rapidly in many different ways. In this paper, we review some of the most prominent LLMs, including three popular LLM families (GPT, LLaMA, PaLM), and discuss their characteristics, contributions and limitations. We also give an overview of techniques developed to build, and augment LLMs. We then survey popular datasets prepared for LLM training, fine-tuning, and evaluation, review widely used LLM evaluation metrics, and compare the performance of several popular LLMs on a set of representative benchmarks. Finally, we conclude the paper by discussing open challenges and future research directions. ",
+        "sections": {
+          "I Introduction": [
+            "Efficiently modeling long sequences with structured state spaces",
+            "React: Synergizing reasoning and acting in language models",
+            "Deep contextualized word representations. corr abs/1802.05365 (2018),",
+            "From captions to visual concepts and back",
+            "GPT-4 Technical Report",
+            "Augmented language models: a survey",
+            "A survey of large language models",
+            "Chain-of-thought prompting elicits reasoning in large language models",
+            "Sequence to sequence learning with neural networks",
+            "An empirical study of smoothing techniques for language modeling",
+            "Statistical methods for speech recognition",
+            "Palm: Scaling language modeling with pathways",
+            "A comprehensive survey on pretrained foundation models: A history from bert to chatgpt",
+            "Learning deep structured semantic models for web search using clickthrough data",
+            "Llama: Open and efficient foundation language models",
+            "Bert: Pre-training of deep bidirectional transformers for language understanding",
+            "Prediction and entropy of printed english",
+            "A neural probabilistic language model"
+          ],
+          "II Large Language Models II-A Early Pre-trained Neural Language Models": [
+            "Cross-lingual language model pretraining",
+            "Bart: Denoising sequence-to-sequence pre-training for natural language generation, translation, and comprehension",
+            "Deep learning\u2013based text classification: a comprehensive review",
+            "Strategies for training large scale neural network language models",
+            "Roberta: A robustly optimized bert pretraining approach",
+            "Xlnet: Generalized autoregressive pretraining for language understanding",
+            "On the properties of neural machine translation: Encoder-decoder approaches",
+            "Unified language model pre-training for natural language understanding and generation",
+            "Electra: Pre-training text encoders as discriminators rather than generators",
+            "Attention is all you need",
+            "Exploring the limits of transfer learning with a unified text-to-text transformer",
+            "Albert: A lite bert for self-supervised learning of language representations",
+            "Mass: Masked sequence to sequence pre-training for language generation",
+            "Improving language understanding by generative pre-training",
+            "Language models are unsupervised multitask learners",
+            "Continuous space language models for statistical machine translation",
+            "mt5: A massively multilingual pre-trained text-to-text transformer",
+            "Learning internal representations by error propagation",
+            "A neural probabilistic language model",
+            "Sequence to sequence learning with neural networks",
+            "Deberta: Decoding-enhanced bert with disentangled attention",
+            "Bert: Pre-training of deep bidirectional transformers for language understanding"
+          ],
+          "II Large Language Models II-B Large Language Model Families": [
+            "GPT-4 Technical Report",
+            "Koala: A dialogue model for academic research",
+            "Llama 2: Open foundation and fine-tuned chat models",
+            "Webgpt: Browser-assisted question-answering with human feedback",
+            "Evaluating large language models trained on code",
+            "Transcending scaling laws with 0.1% extra compute",
+            "Alpaca: A strong, replicable instruction-following model",
+            "Palm 2 technical report",
+            "Scaling instruction-finetuned language models",
+            "Qlora: Efficient finetuning of quantized llms",
+            "Focused transformer: Contrastive training for context scaling",
+            "Palm: Scaling language modeling with pathways",
+            "Gorilla: Large language model connected with massive apis",
+            "Introducing chatgpt",
+            "Mistral 7b",
+            "Stable beluga models.",
+            "Towards expert-level medical question answering with large language models",
+            "Giraffe: Adventures in expanding context lengths in llms",
+            "How far can camels go? exploring the state of instruction tuning on open resources",
+            "Training language models to follow instructions with human feedback",
+            "Large language models encode clinical knowledge",
+            "Vigogne: French instruction-following and chat models",
+            "Code llama: Open foundation models for code",
+            "Language models are few-shot learners",
+            "Llama: Open and efficient foundation language models"
+          ],
+          "II Large Language Models II-C Other Representative LLMs": [
+            "Lamda: Language models for dialog applications",
+            "Bloom: A 176b-parameter open-access multilingual language model",
+            "Starcoder: may the source be with you!",
+            "Anthropic. claude. [Online]. Available: https://www.anthropic.com/news/introducing-claude",
+            "Orca 2: Teaching small language models how to reason",
+            "Unifying language learning paradigms",
+            "Llama pro: Progressive llama with block expansion",
+            "Grok",
+            "Using deepspeed and megatron to train megatron-turing nlg 530b, a large-scale generative language model",
+            "Multitask prompted training enables zero-shot task generalization",
+            "Jurassic-1: Technical details and evaluation",
+            "Yandex. Yalm. [Online]. Available: https://github.com/yandex/YaLM-100B",
+            "Camel-5b instructgpt",
+            "Mamba: Linear-time sequence modeling with selective state spaces",
+            "Language models are general-purpose interfaces",
+            "mixtral. mixtral. [Online]. Available: https://mistral.ai/news/mixtral-of-experts/",
+            "Gemini: a family of highly capable multimodal models",
+            "Introducing mpt-7b: a new standard for open-source, commercially usable llms",
+            "Galactica: A large language model for science",
+            "Inner monologue: Embodied reasoning through planning with language models",
+            "Training compute-optimal large language models",
+            "Principle-driven self-alignment of language models from scratch with minimal human supervision",
+            "Solving quantitative reasoning problems with language models",
+            "Gorilla: Large language model connected with massive apis",
+            "Orca: Progressive learning from complex explanation traces of gpt-4",
+            "Language is not all you need: Aligning perception with language models",
+            "Qwen-vl: A frontier large vision-language model with versatile abilities",
+            "Opt: Open pre-trained transformer language models",
+            "Docllm: A layout-aware generative language model for multimodal document understanding",
+            "Codegen2: Lessons for training llms on programming and natural languages",
+            "Glm-130b: An open bilingual pre-trained model",
+            "Pythia: A suite for analyzing large language models across training and scaling",
+            "Codegen: An open large language model for code with multi-turn program synthesis",
+            "Tinyllama: An open-source small language model",
+            "Ernie 3.0: Large-scale knowledge enhanced pre-training for language understanding and generation",
+            "Finetuned language models are zero-shot learners",
+            "Pal: Program-aided language models",
+            "Knowledge fusion of large language models",
+            "Alexatm 20b: Few-shot learning using a large-scale multilingual seq2seq model",
+            "Palmyra-base Parameter Autoregressive Language Model",
+            "Scaling language models: Methods, analysis & insights from training gopher",
+            "Glam: Efficient scaling of language models with mixture-of-experts",
+            "Longformer: The long-document transformer",
+            "Improving alignment of dialogue agents via targeted human judgements",
+            "Improving language models by retrieving from trillions of tokens",
+            "Opt-iml: Scaling language model instruction meta learning through the lens of generalization",
+            "Zephyr: Direct distillation of lm alignment",
+            "Deepseek-coder: When the large language model meets programming \u2013 the rise of code intelligence"
+          ],
+          "III How LLMs Are Built III-A Dominant LLM Architectures": [
+            "Bert: Pre-training of deep bidirectional transformers for language understanding",
+            "Attention is all you need"
+          ],
+          "III How LLMs Are Built III-B Data Cleaning": [
+            "Scaling laws and interpretability of learning from repeated data",
+            "The refinedweb dataset for falcon llm: outperforming curated corpora with web data, and web data only"
+          ],
+          "III How LLMs Are Built III-D Positional Encoding": [
+            "Roformer: Enhanced transformer with rotary position embedding",
+            "Train short, test long: Attention with linear biases enables input length extrapolation",
+            "Attention is all you need",
+            "Self-attention with relative position representations"
+          ],
+          "III How LLMs Are Built III-E Model Pre-training": [
+            "Bert: Pre-training of deep bidirectional transformers for language understanding",
+            "Outrageously large neural networks: The sparsely-gated mixture-of-experts layer"
+          ],
+          "III How LLMs Are Built III-F Fine-tuning and Instruction Tuning": [
+            "Instruction tuning for large language models: A survey",
+            "Self-instruct: Aligning language model with self generated instructions",
+            "Cross-task generalization via natural language crowdsourcing instructions",
+            "Alpaca: A strong, replicable instruction-following model",
+            "Parameter-efficient multi-task fine-tuning for transformers via shared hypernetworks",
+            "Bert: Pre-training of deep bidirectional transformers for language understanding",
+            "Training language models to follow instructions with human feedback"
+          ],
+          "III How LLMs Are Built III-G Alignment": [
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "Rlaif: Scaling reinforcement learning from human feedback with ai feedback",
+            "Deep reinforcement learning from human preferences",
+            "Kto"
+          ],
+          "III How LLMs Are Built III-I Cost-Effective Training/Inference/Adaptation/Compression": [
+            "Rwkv: Reinventing rnns for the transformer era",
+            "Zero: Memory optimizations toward training trillion parameter models",
+            "Lora: Low-rank adaptation of large language models",
+            "Distilling the knowledge in a neural network"
+          ],
+          "IV How LLMs Are Used and Augmented IV-A LLM limitations": [
+            "Generating persona consistent dialogues by exploiting natural language inference",
+            "Rome was built in 1776: A case study on factual correctness in knowledge-grounded response generation",
+            "Towards faithful neural table-to-text generation with content-matching constraints",
+            "Factscore: Fine-grained atomic evaluation of factual precision in long form text generation",
+            "Evaluating attribution in dialogue systems: The BEGIN benchmark",
+            "Sources of hallucination by large language models on inference tasks",
+            "ROUGE: A package for automatic evaluation of summaries",
+            "Survey of hallucination in natural language generation",
+            "Handling divergent reference texts when evaluating table-to-text generation",
+            "Bleu: a method for automatic evaluation of machine translation",
+            "q2superscript\ud835\udc5e2q^{2}: Evaluating factual consistency in knowledge-grounded dialogues via question generation and question answering"
+          ],
+          "IV How LLMs Are Used and Augmented IV-B Using LLMs: Prompt Design and Engineering": [
+            "Large language models are human-level prompt engineers",
+            "Automatic chain of thought prompting in large language models",
+            "Chain-of-thought prompting elicits reasoning in large language models",
+            "Exploring the mit mathematics and eecs curriculum using large language models",
+            "Promptchainer: Chaining large language model prompts through visual programming",
+            "Reflexion: Language agents with verbal reinforcement learning",
+            "Machine learning: The high interest credit card of technical debt",
+            "Selfcheckgpt: Zero-resource black-box hallucination detection for generative large language models",
+            "Tree of thoughts: Deliberate problem solving with large language models"
+          ],
+          "IV How LLMs Are Used and Augmented IV-C Augmenting LLMs through external knowledge - RAG": [
+            "Retrieval-augmented generation for large language models: A survey",
+            "Retrieval-augmented generation for knowledge-intensive NLP tasks",
+            "Active retrieval augmented generation"
+          ],
+          "IV How LLMs Are Used and Augmented IV-D Using External Tools": [
+            "Art: Automatic multi-step reasoning and tool-use for large language models",
+            "Toolformer: Language models can teach themselves to use tools",
+            "Gorilla: Large language model connected with massive apis"
+          ],
+          "IV How LLMs Are Used and Augmented IV-E LLM Agents": [
+            "Hugginggpt: Solving ai tasks with chatgpt and its friends in huggingface",
+            "Check your facts and try again: Improving large language models with external knowledge and automated feedback",
+            "React: Synergizing reasoning and acting in language models",
+            "Dera: Enhancing large language model completions with dialog-enabled resolving agents",
+            "The rise and potential of large language model based agents: A survey",
+            "Rewoo: Decoupling reasoning from observations for efficient augmented language models"
+          ],
+          "V Popular Datasets for LLMs": [
+            "A survey on evaluation of large language models"
+          ],
+          "V Popular Datasets for LLMs V-A Datasets for Basic Tasks: language modeling/understanding/generation": [
+            "Measuring coding challenge competence with apps",
+            "QuAC: Question answering in context",
+            "Boolq: Exploring the surprising difficulty of natural yes/no questions",
+            "Program synthesis with large language models",
+            "RACE: Large-scale ReAding comprehension dataset from examinations",
+            "TriviaQA: A large scale distantly supervised challenge dataset for reading comprehension",
+            "SQuAD: 100,000+ questions for machine comprehension of text",
+            "Measuring massive multitask language understanding",
+            "Looking beyond the surface:a challenge set for reading comprehension over multiple sentences",
+            "Seq2sql: Generating structured queries from natural language using reinforcement learning",
+            "Natural questions: A benchmark for question answering research"
+          ],
+          "V Popular Datasets for LLMs V-B Datasets for Emergent: ICL, reasoning (CoT), instruction following": [
+            "Can a suit of armor conduct electricity? A new dataset for open book question answering",
+            "Think you have solved question answering? try arc, the AI2 reasoning challenge",
+            "Hellaswag: Can a machine really finish your sentence?",
+            "Training verifiers to solve math word problems",
+            "Truthfulqa: Measuring how models mimic human falsehoods",
+            "PIQA: reasoning about physical commonsense in natural language",
+            "Measuring mathematical problem solving with the MATH dataset",
+            "Opt-iml: Scaling language model instruction meta learning through the lens of generalization",
+            "Socialiqa: Commonsense reasoning about social interactions"
+          ],
+          "V Popular Datasets for LLMs V-C Datasets for Augmented: using external knowledge/tools": [
+            "Toolqa: A dataset for llm question answering with external tools",
+            "Hotpotqa: A dataset for diverse, explainable multi-hop question answering"
+          ],
+          "VI Prominent LLMs\u2019 Performance on Benchmarks VI-A Popular Metrics for Evaluating LLMs": [
+            "Flowqa: Grasping flow in history for conversational machine comprehension",
+            "More than reading comprehension: A survey on datasets and metrics of textual question answering",
+            "QuAC: Question answering in context",
+            "A survey on evaluation metrics for machine translation"
+          ],
+          "VI Prominent LLMs\u2019 Performance on Benchmarks VI-B LLMs\u2019 Performance on Different Tasks": [
+            "Hughes hallucination evaluation model (hhem) leaderboard",
+            "Halueval: A large-scale hallucination evaluation benchmark for large language models"
+          ],
+          "VII Challenges and Future Directions": [
+            "Challenges and applications of large language models"
+          ],
+          "VII Challenges and Future Directions VII-A Smaller and more efficient Language Models": [
+            "Textbooks are all you need ii: phi-1.5 technical report",
+            "Textbooks are all you need"
+          ],
+          "VII Challenges and Future Directions VII-B New Post-attention Architectural Paradigms": [
+            "Efficiently modeling long sequences with structured state spaces",
+            "Mamba: Linear-time sequence modeling with selective state spaces",
+            "Finite mixture models",
+            "Monarch mixer: A simple sub-quadratic gemm-based architecture",
+            "mixtral. mixtral. [Online]. Available: https://mistral.ai/news/mixtral-of-experts/",
+            "Glam: Efficient scaling of language models with mixture-of-experts",
+            "StripedHyena: Moving Beyond Transformers with Hybrid Signal Processing Models",
+            "Hyena hierarchy: Towards larger convolutional language models"
+          ],
+          "VII Challenges and Future Directions VII-C Multi-modal Models": [
+            "Llava-plus: Learning to use tools for creating multimodal agents",
+            "GPT-4 Technical Report",
+            "Next-gpt: Any-to-any multimodal llm",
+            "Visual instruction tuning",
+            "Convgenvismo: Evaluation of conversational generative vision models",
+            "Qwen-vl: A frontier large vision-language model with versatile abilities"
+          ],
+          "VII Challenges and Future Directions VII-D Improved LLM Usage and Augmentation techniques": [
+            "The rise and potential of large language model based agents: A survey",
+            "Automated unit test improvement using large language models at meta"
+          ],
+          "VII Challenges and Future Directions VII-E Security and Ethical/Responsible AI": [
+            "Trustllm: Trustworthiness in large language models"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.00029923743568360806,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "A Survey of Useful LLM Evaluation",
+        "arxiv_id": "2406.00936",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract LLMs have gotten attention across various research domains due to their exceptional performance on a wide range of complex tasks. Therefore, refined methods to evaluate the capabilities of LLMs are needed to determine the tasks and responsibility they should undertake. Our study mainly discussed how LLMs, as useful tools, should be effectively assessed. We proposed the two-stage framework: from \u201ccore ability\u201d to \u201cagent\u201d, clearly explaining how LLMs can be applied based on their specific capabilities, along with the evaluation methods in each stage. Core ability refers to the capabilities that LLMs need in order to generate high-quality natural language texts. After confirming LLMs possess core ability, they can solve real-world and complex tasks as agent. In the \"core ability\" stage, we discussed the reasoning ability, societal impact, and domain knowledge of LLMs. In the \u201cagent\u201d stage, we demonstrated embodied action, planning, and tool learning of LLMs agent applications. Finally, we examined the challenges currently confronting the evaluation methods for LLMs, as well as the directions for future development.111https://github.com/MiuLab/EvalLLM-Survey **footnotetext: Equal contribution.",
+        "sections": {
+          "1 Introduction 1.1 Artificial Intelligence and Large Language Model": [
+            "Attention is all you need",
+            "Recent advances in natural language processing via large pre-trained language models: A survey",
+            "Improving language understanding by generative pre-training",
+            "Language models are unsupervised multitask learners.",
+            "Gpt-4 technical report",
+            "Brief history of artificial intelligence",
+            "Language models are few-shot learners"
+          ],
+          "1 Introduction 1.2 Why Evaluating LLMs is Important": [
+            "Emerging artificial intelligence methods in structural engineering",
+            "Beyond the imitation game: Quantifying and extrapolating the capabilities of language models.",
+            "Dissociating language and thought in large language models: a cognitive perspective",
+            "On the unexpected abilities of large language models",
+            "Turing test: 50 years later",
+            "Language models as knowledge bases?",
+            "Theory of mind may have spontaneously emerged in large language models",
+            "Alpacafarm: A simulation framework for methods that learn from human feedback",
+            "Judging llm-as-a-judge with mt-bench and chatbot arena",
+            "Holistic evaluation of language models"
+          ],
+          "1 Introduction 1.3 The Roadmap of Useful LLMs": [
+            "Automated Planning: theory and practice",
+            "A survey on evaluation of large language models",
+            "Evaluating large language models: A comprehensive survey"
+          ],
+          "2 Core Ability Evaluation 2.1 Reasoning": [
+            "Can a suit of armor conduct electricity? a new dataset for open book question answering",
+            "Hybridqa: A dataset of multi-hop question answering over tabular and textual data",
+            "Structure-grounded pretraining for text-to-sql",
+            "Did aristotle use a laptop? a question answering benchmark with implicit reasoning strategies",
+            "Why does chatgpt fall short in providing truthful answers?",
+            "Evaluating the logical reasoning ability of chatgpt and gpt-4",
+            "A causal framework to quantify the robustness of mathematical reasoning with language models.",
+            "Measuring mathematical problem solving with the math dataset",
+            "Text-to-sql empowered by large language models: A benchmark evaluation",
+            "Chatgpt is a knowledgeable but inexperienced solver: An investigation of commonsense problem in large language models.",
+            "Hotpotqa: A dataset for diverse, explainable multi-hop question answering",
+            "Abductive commonsense reasoning",
+            "Are large language models really good logical reasoners? a comprehensive evaluation and beyond.",
+            "Abductionrules: Training transformers to explain unexpected inputs",
+            "A multitask, multilingual, multimodal evaluation of chatgpt on reasoning, hallucination, and interactivity.",
+            "How well do large language models perform in arithmetic tasks?",
+            "Hover: A dataset for many-hop fact extraction and claim verification.",
+            "Explaining answers with entailment trees",
+            "Inductive reasoning in humans and large language models.",
+            "Commonsenseqa: A question answering challenge targeting commonsense knowledge",
+            "Towards ai-complete question answering: A set of prerequisite toy tasks",
+            "Piqa: Reasoning about physical commonsense in natural language",
+            "Variational reasoning for question answering with knowledge graph",
+            "Training verifiers to solve math word problems",
+            "Towards reasoning in large language models: A survey."
+          ],
+          "2 Core Ability Evaluation 2.2 Societal Impact": [
+            "Is chatgpt fair for recommendation? evaluating fairness in large language model recommendation",
+            "Exploring and evaluating hallucinations in llm-powered code generation",
+            "Language models don\u2019t always say what they think: Unfaithful explanations in chain-of-thought prompting.",
+            "On protecting the data privacy of large language models (llms): A survey.",
+            "Exploring the potential utility of ai large language models for medical ethics: an expert panel evaluation of gpt-4",
+            "Denevil: Towards deciphering and navigating the ethical values of large language models via instruction learning.",
+            "Ahmed, Victor Akinwande, Namir Al-Nuaimi, Najla Alfaraj, Elie Alhajjar, Lora Aroyo, Trupti Bavalatti, Borhane Blili-Hamelin, Kurt Bollacker, Rishi Bomassani, Marisa\u00a0Ferrara Boston, Sim\u00e9on Campos, Kal Chakra, Canyu Chen, Cody Coleman, Zacharie\u00a0Delpierre Coudert, Leon Derczynski, Debojyoti Dutta, Ian Eisenberg, James Ezick, Heather Frase, Brian Fuller, Ram Gandikota, Agasthya Gangavarapu, Ananya Gangavarapu, James Gealy, Rajat Ghosh, James Goel, Usman Gohar, Sujata Goswami, Scott\u00a0A",
+            "Propile: Probing privacy leakage in large language models",
+            "Bbq: A hand-built bias benchmark for question answering",
+            "Style over substance: Evaluation biases for large language models.",
+            "A holistic approach to undesired content detection in the real world.",
+            "A survey of artificial intelligence strategies for automatic detection of sexually explicit videos",
+            "Towards context-based violence detection: A korean crime dialogue dataset",
+            "Fairea: A model behaviour mutation approach to benchmarking bias mitigation methods",
+            "Evaluating the moral beliefs encoded in llms",
+            "Machine learning in digital forensics: a systematic literature review",
+            "Aegis: Online adaptive ai content safety moderation with ensemble of llm experts.",
+            "Value kaleidoscope: Engaging ai with pluralistic human values, rights, and duties",
+            "Beyond memorization: Violating privacy via inference with large language models",
+            "Debating with more persuasive llms leads to more truthful answers",
+            "A new benchmark and reverse validation method for passage-level hallucination detection.",
+            "Amber: An llm-free multi-dimensional benchmark for mllms hallucination evaluation.",
+            "A novel evaluation framework for assessing resilience against prompt injection attacks in large language models.",
+            "Introducing mbib-the first media bias identification benchmark task and dataset collection",
+            "A survey on large language model (llm) security and privacy: The good, the bad, and the ugly",
+            "Truthfulqa: Measuring how models mimic human falsehoods.",
+            "Security and privacy challenges of large language models: A survey",
+            "Rigorllm: Resilient guardrails for large language models against undesired content.",
+            "Cvalues: Measuring the values of chinese large language models from safety to responsibility.",
+            "Toxicchat: Unveiling hidden challenges of toxicity detection in real-world user-ai conversation.",
+            "Quantifying memorization across neural language models.",
+            "Look-ahead benchmark bias in portfolio performance evaluation",
+            "Beavertails: Towards improved safety alignment of llm via a human-preference dataset.",
+            "Salad-bench: A hierarchical and comprehensive safety benchmark for large language models.",
+            "Trapping llm hallucinations using tagged context prompts.",
+            "Automatic and universal prompt injection attacks against large language models",
+            "Bias: A toolbox for benchmarking structural bias in the continuous domain",
+            "Self-alignment for factuality: Mitigating hallucinations in llms via self-evaluation",
+            "Injecagent: Benchmarking indirect prompt injections in tool-integrated large language model agents",
+            "The risks of using chatgpt to obtain common safety-related information and advice",
+            "Tofueval: Evaluating hallucinations of llms on topic-focused dialogue summarization.",
+            "Hal-eval: A universal and fine-grained hallucination evaluation framework for large vision language models",
+            "Measuring and reducing llm hallucination without gold-standard answers via expertise-weighting"
+          ],
+          "2 Core Ability Evaluation 2.3 Domain Knowledge": [
+            "Finbert: A pre-trained financial language representation model for financial text mining",
+            "Bloomberggpt: A large language model for finance",
+            "Oasis legalruleml",
+            "Convfinqa: Exploring the chain of numerical reasoning in conversational finance question answering",
+            "Challenging big-bench tasks and whether chain-of-thought can solve them",
+            "Natural questions: a benchmark for question answering research",
+            "Can gpt-3 perform statutory reasoning?",
+            "Impact of news on the commodity market: Dataset and results",
+            "Gpt-3-driven pedagogical agents to train children\u2019s curious question-asking skills",
+            "Teaching language models to support answers with verified quotes",
+            "Gpt as psychologist? preliminary evaluations for gpt-4v on visual affective computing",
+            "Chatgpt for good? on opportunities and challenges of large language models for education",
+            "Testing ordinary meaning",
+            "Large language models are few-shot clinical information extractors",
+            "A survey of large language models in finance (finllms)",
+            "Reliable crowdsourcing and deep locality-preserving learning for unconstrained facial expression recognition",
+            "Www\u201918 open challenge: financial opinion mining and question answering",
+            "Bleu: a method for automatic evaluation of machine translation",
+            "Rouge: A package for automatic evaluation of summaries",
+            "Good debt or bad debt: Detecting semantic orientations in economic texts",
+            "Akoma-ntoso for legal documents",
+            "Large language models in medicine",
+            "A dataset for statutory reasoning in tax law entailment and question answering",
+            "Using large language models in psychology",
+            "A sense inventory for clinical abbreviations and acronyms created using clinical notes and medical dictionary resources",
+            "Wame recommendations on chatgpt and chatbots in relation to scholarly publications.",
+            "Casme ii: An improved spontaneous micro-expression database and the baseline evaluation",
+            "Fine-tuning gpt-3 for legal rule classification",
+            "Domain adaption of named entity recognition to support credit risk assessment",
+            "Analysis of chatgpt tool to assess the potential of its utility for academic writing in biomedical domain",
+            "Gpt is an effective tool for multilingual psychological text analysis.",
+            "Disfa: A spontaneous facial action intensity database",
+            "Xuanyuan 2.0: A large chinese financial chat model with hundreds of billions parameters",
+            "imigue: An identity-free video dataset for micro-gesture understanding and emotion analysis",
+            "Chatgpt in drug discovery.",
+            "Evaluation of symptom checkers for self diagnosis and triage: audit study",
+            "Compound facial expressions of emotion",
+            "Chatgpt for clinical vignette generation, revision, and evaluation",
+            "A new multi-choice reading comprehension dataset for curriculum learning",
+            "Working with ai to persuade: Examining a large language model\u2019s ability to generate pro-vaccination messages",
+            "How ready are pre-trained abstractive models and llms for legal case judgement summarization?",
+            "Facial micro-expressions: an overview",
+            "Multiple-choice question generation: Towards an automated assessment framework",
+            "Pixiu: A large language model, instruction data and evaluation benchmark for finance",
+            "Asking gpt for the ordinary meaning of statutory terms",
+            "Large language models in finance: A survey",
+            "Eli5: Long form question answering",
+            "Performance of chatgpt on usmle: potential for ai-assisted medical education using large language models.",
+            "All-in-one: Multi-task learning bert models for evaluating peer assessments",
+            "Gpt-4 passes the bar exam",
+            "Reading comprehension quiz generation using generative pre-trained transformers",
+            "Meteor: An automatic metric for mt evaluation with improved correlation with human judgments"
+          ],
+          "3 Agent Evaluation": [
+            "A survey on large language model based autonomous agents."
+          ],
+          "3 Agent Evaluation 3.1 Planning": [
+            "Adaplanner: Adaptive planning from feedback with language models",
+            "Reflexion: Language agents with verbal reinforcement learning.",
+            "Sayplan: Grounding large language models using 3d scene graphs for scalable task planning",
+            "Selfcheck: Using llms to zero-shot check their own step-by-step reasoning",
+            "Language models as zero-shot planners: Extracting actionable knowledge for embodied agents",
+            "Inner monologue: Embodied reasoning through planning with language models",
+            "React: Synergizing reasoning and acting in language models.",
+            "Robots that ask for help: Uncertainty alignment for large language model planners",
+            "Describe, explain, plan and select: Interactive planning with large language models enables open-world multi-task agents."
+          ],
+          "3 Agent Evaluation 3.2 Application Scenarios": [
+            "Voxposer: Composable 3d value maps for robotic manipulation with language models",
+            "Chatdb: Augmenting llms with databases as their symbolic memory.",
+            "Navigation with large language models: Semantic guesswork as a heuristic for planning",
+            "Language to rewards for robotic skill synthesis",
+            "Creator: Tool creation for disentangling abstract and concrete reasoning of large language models.",
+            "Webshop: Towards scalable real-world web interaction with grounded language agents.",
+            "Code as policies: Language model programs for embodied control",
+            "Towards learning a generalist model for embodied navigation.",
+            "Tool learning with foundation models.",
+            "Codeagent: Enhancing code generation with tool-integrated agent systems for real-world repo-level coding challenges.",
+            "Toolformer: Language models can teach themselves to use tools.",
+            "Navgpt: Explicit reasoning in vision-and-language navigation with large language models",
+            "Webcpm: Interactive web search for chinese long-form question answering.",
+            "Webgpt: Browser-assisted question-answering with human feedback.",
+            "Brown, Adam Santoro, Aditya Gupta, Adri\u00e0 Garriga-Alonso, Agnieszka Kluska, Aitor Lewkowycz, Akshat Agarwal, Alethea Power, Alex Ray, Alex Warstadt, Alexander\u00a0W",
+            "Api-bank: A comprehensive benchmark for tool-augmented llms.",
+            "Berkeley function calling leaderboard.",
+            "Large language models as tool makers.",
+            "LM-nav: Robotic navigation with large pre-trained models of language, vision, and action",
+            "Tptu: Large language model-based ai agents for task planning and tool usage."
+          ],
+          "3 Agent Evaluation 3.3 Benchmark": [
+            "Toolllm: Facilitating large language models to master 16000+ real-world apis.",
+            "Gorilla: Large language model connected with massive apis.",
+            "Self-instruct: Aligning language models with self-generated instructions.",
+            "Toolalpaca: Generalized tool learning for language models with 3000 simulated cases.",
+            "On the tool manipulation capability of open-source large language models.",
+            "Webarena: A realistic web environment for building autonomous agents.",
+            "Restgpt: Connecting large language models with real-world restful apis.",
+            "Mind2web: Towards a generalist agent for the web.",
+            "React: Synergizing reasoning and acting in language models."
+          ],
+          "4 Future Directions 4.1 Dynamic Evaluation": [
+            "Benchmark self-evolving: A multi-agent framework for dynamic llm evaluation."
+          ],
+          "4 Future Directions 4.2 LLMs as Evaluators": [
+            "Leveraging large language models for nlg evaluation: A survey"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.0001793855190044269,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Evaluating evaluation metrics for intruction-tuned open-domain question answering",
+        "arxiv_id": "2307.16877",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Retriever-augmented instruction-following models are attractive alternatives to fine-tuned approaches for information-seeking tasks such as question answering (QA). By simply prepending retrieved documents in its input along with an instruction, these models can be adapted to various information domains and tasks without additional fine-tuning. While the model responses tend to be natural and fluent, the additional verbosity makes traditional QA evaluation metrics such as exact match (EM) and F1 unreliable for accurately quantifying model performance. In this work, we investigate the performance of instruction-following models across three information-seeking QA tasks. We use both automatic and human evaluation to evaluate these models along two dimensions: 1) how well they satisfy the user\u2019s information need (correctness), and 2) whether they produce a response based on the provided knowledge (faithfulness). Guided by human evaluation and analysis, we highlight the shortcomings of traditional metrics for both correctness and faithfulness. We then propose simple token-overlap based and model-based metrics that reflect the true performance of these models. Our analysis reveals that instruction-following models are competitive, and sometimes even outperform fine-tuned models for correctness. However, these models struggle to stick to the provided knowledge and often hallucinate in their responses. We hope our work encourages a more holistic evaluation of instruction-following models for QA. Our code and data is available at https://github.com/McGill-NLP/instruct-qa ",
+        "sections": {},
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.020200474187731743,
+        "extra": {
+          "expand": "not expand"
+        }
+      }
+    ],
+    "Experimental evaluations of large language model based systems on HotPotQA dataset": [
+      {
+        "title": "Evaluating Large Language Models: A Comprehensive Survey",
+        "arxiv_id": "2310.19736",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Large language models (LLMs) have demonstrated remarkable capabilities across a broad spectrum of tasks. They have attracted significant attention and been deployed in numerous downstream applications. Nevertheless, akin to a double-edged sword, LLMs also present potential risks. They could suffer from private data leaks or yield inappropriate, harmful, or misleading content. Additionally, the rapid progress of LLMs raises concerns about the potential emergence of superintelligent systems without adequate safeguards. To effectively capitalize on LLM capacities as well as ensure their safe and beneficial development, it is critical to conduct a rigorous and comprehensive evaluation of LLMs. This survey endeavors to offer a panoramic perspective on the evaluation of LLMs. We categorize the evaluation of LLMs into three major groups: knowledge and capability evaluation, alignment evaluation and safety evaluation. In addition to the comprehensive review on the evaluation methodologies and benchmarks on these three aspects, we collate a compendium of evaluations pertaining to LLMs\u2019 performance in specialized domains, and discuss the construction of comprehensive evaluation platforms that cover LLM evaluations on capabilities, alignment, safety, and applicability. We hope that this comprehensive overview will stimulate further research interests in the evaluation of LLMs, with the ultimate goal of making evaluation serve as a cornerstone in guiding the responsible development of LLMs. We envision that this will channel their evolution into a direction that maximizes societal benefit while minimizing potential risks. A curated list of related papers has been publicly available at a GitHub repository.111https://github.com/tjunlp-lab/Awesome-LLMs-Evaluation-Papers ",
+        "sections": {
+          "1 Introduction": [
+            "Message understanding conference- 6: A brief history",
+            "Webgpt: Browser-assisted question-answering with human feedback",
+            "XNLI: evaluating cross-lingual sentence representations",
+            "SQuAD: 100, 000+ questions for machine comprehension of text",
+            "BERT: pre-training of deep bidirectional transformers for language understanding",
+            "A large annotated corpus for learning natural language inference",
+            "Agieval: A human-centric benchmark for evaluating foundation models",
+            "Introducing chatgpt",
+            "Brown, Benjamin Mann, Nick Ryder, Melanie Subbiah, Jared Kaplan, Prafulla Dhariwal, Arvind Neelakantan, Pranav Shyam, Girish Sastry, Amanda Askell, Sandhini Agarwal, Ariel Herbert-Voss, Gretchen Krueger, Tom Henighan, Rewon Child, Aditya Ramesh, Daniel\u00a0M",
+            "Semeval-2016 task 4: Sentiment analysis in twitter",
+            "GLUE: A multi-task benchmark and analysis platform for natural language understanding",
+            "M3exam: A multilingual, multimodal, multilevel benchmark for examining large language models",
+            "Introduction to the conll-2003 shared task: Language-independent named entity recognition",
+            "Superglue: A stickier benchmark for general-purpose language understanding systems",
+            "Measuring massive multitask language understanding",
+            "A survey on evaluation of large language models",
+            "Carr, Jan Leike, Joshua Achiam, Vedant Misra, Evan Morikawa, Alec Radford, Matthew Knight, Miles Brundage, Mira Murati, Katie Mayer, Peter Welinder, Bob McGrew, Dario Amodei, Sam McCandlish, Ilya Sutskever, and Wojciech Zaremba",
+            "Trustworthy llms: a survey and guideline for evaluating large language models\u2019 alignment",
+            "CLEVA: chinese language models evaluation platform"
+          ],
+          "3 Knowledge and Capability Evaluation 3.1 Question Answering": [
+            "The narrativeqa reading comprehension challenge",
+            "Natural questions: a benchmark for question answering research",
+            "Coqa: A conversational question answering challenge",
+            "Hotpotqa: A dataset for diverse, explainable multi-hop question answering",
+            "SQuAD: 100, 000+ questions for machine comprehension of text",
+            "Dureader_robust: A chinese dataset towards evaluating robustness and generalization of machine reading comprehension in real-world applications"
+          ],
+          "3 Knowledge and Capability Evaluation 3.2 Knowledge Completion": [
+            "Language models as knowledge bases?",
+            "Representing general relational knowledge in conceptnet 5",
+            "Assessing the factual accuracy of generated text",
+            "KoLA: Carefully benchmarking world knowledge of large language models",
+            "SQuAD: 100, 000+ questions for machine comprehension of text"
+          ],
+          "3 Knowledge and Capability Evaluation 3.3 Reasoning": [
+            "Are large language models really good logical reasoners? A comprehensive evaluation and beyond.",
+            "Training verifiers to solve math word problems",
+            "C-Eval: A multi-level multi-discipline chinese evaluation suite for foundation models",
+            "OPT: open pre-trained transformer language models",
+            "Have llms advanced enough? A challenging problem solving benchmark for large language models",
+            "Evaluating the logical reasoning ability of chatgpt and GPT-4",
+            "Measuring mathematical problem solving with the MATH dataset",
+            "Natural language inference in context - investigating contextual reasoning over long texts",
+            "Reclor: A reading comprehension dataset requiring logical reasoning",
+            "Modeling semantic plausibility by injecting world knowledge",
+            "Commonsenseqa: A question answering challenge targeting commonsense knowledge",
+            "\"going on a vacation\" takes longer than \"going for a walk\": A study of temporal commonsense understanding",
+            "Logiqa 2.0 - an improved dataset for logical reasoning in natural language understanding",
+            "GPT-NeoX-20B: An open-source autoregressive language model",
+            "Conjnli: Natural language inference over conjunctive sentences",
+            "How well do large language models perform in arithmetic tasks?",
+            "Plan-and-Solve prompting: Improving zero-shot chain-of-thought reasoning by large language models",
+            "FOLIO: natural language reasoning with first-order logic",
+            "Abduction",
+            "Law School Admission Council",
+            "A broad-coverage challenge corpus for sentence understanding through inference",
+            "Hotpotqa: A dataset for diverse, explainable multi-hop question answering",
+            "Brown, Benjamin Mann, Nick Ryder, Melanie Subbiah, Jared Kaplan, Prafulla Dhariwal, Arvind Neelakantan, Pranav Shyam, Girish Sastry, Amanda Askell, Sandhini Agarwal, Ariel Herbert-Voss, Gretchen Krueger, Tom Henighan, Rewon Child, Aditya Ramesh, Daniel\u00a0M",
+            "Hybridqa: A dataset of multi-hop question answering over tabular and textual data",
+            "Chain-of-Thought prompting elicits reasoning in large language models",
+            "Taxinli: Taking a ride up the NLU hill",
+            "A multitask, multilingual, multimodal evaluation of chatgpt on reasoning, hallucination, and interactivity",
+            "Solving general arithmetic word problems",
+            "PIQA: reasoning about physical commonsense in natural language",
+            "Chatgpt is a knowledgeable but inexperienced solver: An investigation of commonsense problem in large language models",
+            "Social iqa: Commonsense reasoning about social interactions",
+            "Learning to solve arithmetic word problems with verb categorization",
+            "VNHSGE: vietnamese high school graduation examination dataset for large language models",
+            "Evaluating language models for mathematics through interactions",
+            "Carr, Jan Leike, Joshua Achiam, Vedant Misra, Evan Morikawa, Alec Radford, Matthew Knight, Miles Brundage, Mira Murati, Katie Mayer, Peter Welinder, Bob McGrew, Dario Amodei, Sam McCandlish, Ilya Sutskever, and Wojciech Zaremba",
+            "Diagnosing the first-order logical reasoning ability through logicnli",
+            "Representations of commonsense knowledge",
+            "Logicinference: A new dataset for teaching logical inference to seq2seq models",
+            "A diverse corpus for evaluating and developing english math word problem solvers",
+            "HELP: A dataset for identifying shortcomings of neural models in monotonicity reasoning",
+            "Program induction by rationale generation: Learning to solve and explain algebraic word problems",
+            "M3KE: A massive multi-level multi-subject knowledge evaluation benchmark for chinese large language models",
+            "Hellaswag: Can a machine really finish your sentence?",
+            "From LSAT: the progress and challenges of complex reasoning",
+            "Are NLP models really able to solve simple math word problems?",
+            "Do multi-hop question answering systems know how to answer the single-hop sub-questions?",
+            "Logiqa: A challenge dataset for machine reading comprehension with logical reasoning",
+            "CMATH: can your language model pass chinese elementary school math test?",
+            "How is chatgpt\u2019s behavior changing over time?",
+            "A large annotated corpus for learning natural language inference",
+            "Can neural networks understand monotonicity reasoning?"
+          ],
+          "3 Knowledge and Capability Evaluation 3.4 Tool Learning": [
+            "Webshop: Towards scalable real-world web interaction with grounded language agents",
+            "Training verifiers to solve math word problems",
+            "Multilingual denoising pre-training for neural machine translation",
+            "Webgpt: Browser-assisted question-answering with human feedback",
+            "TPTU: task planning and tool usage of large language model-based AI agents",
+            "Dai, Thanumalayan\u00a0Sankaranarayana Pillai, Marie Pellat, Aitor Lewkowycz, Erica Moreira, Rewon Child, Oleksandr Polozov, Katherine Lee, Zongwei Zhou, Xuezhi Wang, Brennan Saeta, Mark Diaz, Orhan Firat, Michele Catasta, Jason Wei, Kathy Meier-Hellstern, Douglas Eck, Jeff Dean, Slav Petrov, and Noah Fiedel",
+            "Geneturing tests gpt models in genomics",
+            "Api-bank: A benchmark for tool-augmented llms",
+            "On the tool manipulation capability of open-source large language models",
+            "Large language models as tool makers",
+            "Brown, Adam Santoro, Aditya Gupta, Adri\u00e0 Garriga-Alonso, Agnieszka Kluska, Aitor Lewkowycz, Akshat Agarwal, Alethea Power, Alex Ray, Alex Warstadt, Alexander\u00a0W",
+            "Joshi, Kyle Jeffrey, Rosario\u00a0Jauregui Ruano, Jasmine Hsu, Keerthana Gopalakrishnan, Byron David, Andy Zeng, and Chuyuan\u00a0Kelly Fu",
+            "CREATOR: disentangling abstract and concrete reasonings of large language models through tool creation",
+            "Tool learning with foundation models",
+            "GPT-4 technical report",
+            "Saiful Bari, Sheng Shen, Zheng\u00a0Xin Yong, Hailey Schoelkopf, Xiangru Tang, Dragomir Radev, Alham\u00a0Fikri Aji, Khalid Almubarak, Samuel Albanie, Zaid Alyafeai, Albert Webson, Edward Raff, and Colin Raffel",
+            "Inner monologue: Embodied reasoning through planning with language models",
+            "Language models as zero-shot planners: Extracting actionable knowledge for embodied agents",
+            "Bowman, Zac Hatfield-Dodds, Ben Mann, Dario Amodei, Nicholas Joseph, Sam McCandlish, Tom Brown, and Jared Kaplan",
+            "GLM-130B: an open bilingual pre-trained model",
+            "Toolllm: Facilitating large language models to master 16000+ real-world apis",
+            "BEHAVIOR: benchmark for everyday household activities in virtual, interactive, and ecological environments",
+            "Toolalpaca: Generalized tool learning for language models with 3000 simulated cases",
+            "Gorilla: Large language model connected with massive apis",
+            "Self-instruct: Aligning language models with self-generated instructions",
+            "Brown, Benjamin Mann, Nick Ryder, Melanie Subbiah, Jared Kaplan, Prafulla Dhariwal, Arvind Neelakantan, Pranav Shyam, Girish Sastry, Amanda Askell, Sandhini Agarwal, Ariel Herbert-Voss, Gretchen Krueger, Tom Henighan, Rewon Child, Aditya Ramesh, Daniel\u00a0M",
+            "Meier-Hellstern, Meredith\u00a0Ringel Morris, Tulsee Doshi, Renelito\u00a0Delos Santos, Toju Duke, Johnny Soraker, Ben Zevenbergen, Vinodkumar Prabhakaran, Mark Diaz, Ben Hutchinson, Kristen Olson, Alejandra Molina, Erin Hoffman-John, Josh Lee, Lora Aroyo, Ravi Rajakumar, Alena Butryna, Matthew Lamm, Viktoriya Kuzmina, Joe Fenton, Aaron Cohen, Rachel Bernstein, Ray Kurzweil, Blaise\u00a0Ag\u00fcera y\u00a0Arcas, Claire Cui, Marian Croak, Ed\u00a0H",
+            "Restgpt: Connecting large language models with real-world applications via restful apis",
+            "Tool documentation enables zero-shot tool-usage with large language models",
+            "Vicuna: An open-source chatbot impressing gpt-4 with 90%* chatgpt quality.",
+            "mt5: A massively multilingual pre-trained text-to-text transformer",
+            "Alfworld: Aligning text and embodied environments for interactive learning",
+            "ALFRED: A benchmark for interpreting grounded instructions for everyday tasks",
+            "Code as policies: Language model programs for embodied control",
+            "React: Synergizing reasoning and acting in language models",
+            "Augmented language models: a survey",
+            "CPT: A pre-trained unbalanced transformer for both chinese language understanding and generation",
+            "Toolqa: A dataset for LLM question answering with external tools",
+            "Webcpm: Interactive web search for chinese long-form question answering",
+            "Carr, Jan Leike, Joshua Achiam, Vedant Misra, Evan Morikawa, Alec Radford, Matthew Knight, Miles Brundage, Mira Murati, Katie Mayer, Peter Welinder, Bob McGrew, Dario Amodei, Sam McCandlish, Ilya Sutskever, and Wojciech Zaremba",
+            "Genegpt: Augmenting large language models with domain tools for improved access to biomedical information"
+          ],
+          "4 Alignment Evaluation 4.1 Ethics and Morality": [
+            "Social chemistry 101: Learning to reason about social and moral norms",
+            "Enhancing the measurement of social effects by capturing morality",
+            "When to make exceptions: Exploring language models as accounts of human moral judgment",
+            "Liberals and conservatives rely on different sets of moral foundations",
+            "Moral stories: Situated reasoning about norms, intents, actions, and their consequences",
+            "Prosocialdialog: A prosocial backbone for conversational agents",
+            "Classification of moral foundations in microblog political discourse",
+            "The extended moral foundations dictionary (emfd): Development and applications of a crowd-sourced approach to extracting moral intuitions from text",
+            "Gpt-neo: Large scale autoregressive language modeling with mesh-tensorflow",
+            "Moral foundations twitter corpus: A collection of 35k tweets annotated for moral sentiment.",
+            "Reformer: The efficient transformer",
+            "Brown, Benjamin Mann, Nick Ryder, Melanie Subbiah, Jared Kaplan, Prafulla Dhariwal, Arvind Neelakantan, Pranav Shyam, Girish Sastry, Amanda Askell, Sandhini Agarwal, Ariel Herbert-Voss, Gretchen Krueger, Tom Henighan, Rewon Child, Aditya Ramesh, Daniel\u00a0M",
+            "Analysis of moral judgement on reddit",
+            "Evaluating the moral beliefs encoded in LLMs",
+            "Trustgpt: A benchmark for trustworthy and responsible large language models",
+            "SCRUPLES: A corpus of community ethical judgments on 32, 000 real-life anecdotes",
+            "The moral integrity corpus: A benchmark for ethical dialogue systems",
+            "DIALOGPT : Large-scale generative pre-training for conversational response generation",
+            "Common Morality: Deciding What to Do",
+            "Aligning AI with shared human values",
+            "Recipes for building an open-domain chatbot"
+          ],
+          "4 Alignment Evaluation 4.2 Bias": [
+            "The winograd schema challenge",
+            "Evaluating gender bias in machine translation",
+            "\"i\u2019m sorry to hear that\": Finding new biases in language models with a holistic descriptor dataset",
+            "BOLD: dataset and metrics for measuring biases in open-ended language generation",
+            "The social impact of natural language processing",
+            "CBBQ: A chinese bias benchmark dataset curated with human-ai collaboration for large language models",
+            "An empirical study of metrics to measure representational harms in pre-trained language models",
+            "Multilingual holistic bias: Extending descriptors and patterns to unveil demographic biases in languages at scale.",
+            "The trouble with bias",
+            "Measuring and mitigating unintended bias in text classification",
+            "Toward gender-inclusive coreference resolution",
+            "Investigating failures of automatic translation in the case of unambiguous gender",
+            "Semantics derived automatically from language corpora contain human-like biases",
+            "The woman worked as a babysitter: On biases in language generation",
+            "On measuring and mitigating biased inferences of word embeddings",
+            "Gender bias in coreference resolution: Evaluation and debiasing methods",
+            "Toxigen: A large-scale machine-generated dataset for adversarial and implicit hate speech detection",
+            "Towards identifying social bias in dialog systems: Frame, datasets, and benchmarks",
+            "Stereotyping norwegian salmon: An inventory of pitfalls in fairness benchmark datasets",
+            "BERT: pre-training of deep bidirectional transformers for language understanding",
+            "Gender bias in coreference resolution",
+            "Gender bias in multilingual embeddings and cross-lingual transfer",
+            "Jigsaw unintended bias in toxicity classification",
+            "Addressing age-related bias in sentiment analysis",
+            "Going gray, failure to hire, and the ick factor: Analyzing how older bloggers talk about ageism",
+            "Social bias frames: Reasoning about social and power implications of language",
+            "Does gender matter? towards fairness in dialogue systems",
+            "A causal framework for explaining the predictions of black-box sequence-to-sequence models",
+            "On the dangers of stochastic parrots: Can language models be too big?",
+            "On measures of biases and harms in NLP",
+            "Obtaining reliable human ratings of valence, arousal, and dominance for 20, 000 english words",
+            "Unqovering stereotyping biases via underspecified questions",
+            "CORGI-PM: A chinese corpus for gender bias probing and mitigation",
+            "Revealing persona biases in dialogue systems",
+            "Fairlex: A multilingual benchmark for evaluating fairness in legal text processing",
+            "Examining gender and race bias in two hundred sentiment analysis systems",
+            "Nuanced metrics for measuring unintended bias with real data for text classification",
+            "Towards understanding gender bias in relation extraction",
+            "Hatecheck: Functional tests for hate speech detection models",
+            "Crows-pairs: A challenge dataset for measuring social biases in masked language models",
+            "Mind the GAP: A balanced corpus of gendered ambiguous pronouns",
+            "Learning from the worst: Dynamically generated datasets to improve online hate detection",
+            "BBQ: A hand-built bias benchmark for question answering",
+            "DIALOGPT : Large-scale generative pre-training for conversational response generation",
+            "Stereoset: Measuring stereotypical bias in pretrained language models",
+            "Glove: Global vectors for word representation",
+            "Deep contextualized word representations",
+            "Recipes for building an open-domain chatbot"
+          ],
+          "4 Alignment Evaluation 4.3 Toxicity": [
+            "T\u00fcrk\u00e7e tweetler \u00fczerinde makine \u00f6\u011frenmesi ile nefret s\u00f6ylemi tespiti",
+            "\"hot\" chatgpt: The promise of chatgpt in detecting and discriminating hateful, offensive, and toxic comments on social media",
+            "Toxicity in chatgpt: Analyzing persona-assigned language models",
+            "On second thought, let\u2019s not think step by step! bias and toxicity in zero-shot reasoning",
+            "Semeval-2019 task 6: Identifying and categorizing offensive language in social media (offenseval)",
+            "Evaluation of chatgpt and bert-based models for turkish hate speech detection",
+            "Is chatgpt better than human annotators? potential and limitations of chatgpt in explaining implicit hate speech",
+            "Realtoxicityprompts: Evaluating neural toxic degeneration in language models",
+            "Social bias frames: Reasoning about social and power implications of language",
+            "Toxicity detection with generative prompt-based inference",
+            "Olid-br: offensive language identification dataset for brazilian portuguese",
+            "Predicting the type and target of offensive posts in social media",
+            "A new generation of perspective API: efficient multilingual character-level transformers",
+            "Racism is a virus: anti-asian hate and counterspeech in social media during the COVID-19 crisis",
+            "\"why do I feel offended?\" - korean dataset for offensive language identification",
+            "Latent hatred: A benchmark for understanding implicit hate speech",
+            "Hatexplain: A benchmark dataset for explainable hate speech detection",
+            "Can chatgpt reproduce human-generated labels? A study of social computing tasks.",
+            "SOLID: A large-scale semi-supervised dataset for offensive language identification"
+          ],
+          "4 Alignment Evaluation 4.4 Truthfulness": [
+            "Roberta: A robustly optimized BERT pretraining approach",
+            "Summeval: Re-evaluating summarization evaluation",
+            "Dialogue natural language inference",
+            "Do large language models know what they don\u2019t know?",
+            "Brown, Adam Santoro, Aditya Gupta, Adri\u00e0 Garriga-Alonso, Agnieszka Kluska, Aitor Lewkowycz, Akshat Agarwal, Alethea Power, Alex Ray, Alex Warstadt, Alexander\u00a0W",
+            "Hallucinated but factual! inspecting the factuality of hallucinations in abstractive summarization",
+            "Evaluating the factual consistency of large language models through news summarization",
+            "SQuAD: 100, 000+ questions for machine comprehension of text",
+            "Wizard of wikipedia: Knowledge-powered conversational agents",
+            "Understanding factuality in abstractive summarization with FRANK: A benchmark for factuality metrics",
+            "Adversarial NLI: A new benchmark for natural language understanding",
+            "Summac: Re-visiting nli-based models for inconsistency detection in summarization",
+            "BERT: pre-training of deep bidirectional transformers for language understanding",
+            "Ranking generated summaries by correctness: An interesting but challenging application for natural language inference",
+            "Personalizing dialogue agents: I have a dog, do you have pets too?",
+            "Exploring the limits of transfer learning with a unified text-to-text transformer",
+            "Evaluating factual consistency of summaries with large language models",
+            "Dialfact: A benchmark for fact-checking in dialogue",
+            "A broad-coverage challenge corpus for sentence understanding through inference",
+            "Factool: Factuality detection in generative AI - A tool augmented framework for multi-task and multi-domain scenarios.",
+            "Gptscore: Evaluate as you desire",
+            "A multitask, multilingual, multimodal evaluation of chatgpt on reasoning, hallucination, and interactivity",
+            "Large language models are state-of-the-art evaluators of translation quality",
+            "The internal state of an LLM knows when its lying",
+            "Asking and answering questions to evaluate the factual consistency of summaries",
+            "FEQA: A question answering evaluation framework for faithfulness assessment in abstractive summarization",
+            "Factscore: Fine-grained atomic evaluation of factual precision in long form text generation",
+            "Newsqa: A machine comprehension dataset",
+            "mt5: A massively multilingual pre-trained text-to-text transformer",
+            "Evaluating factuality in generation with dependency-level entailment",
+            "Understanding factual errors in summarization: Errors, summarizers, datasets, error detectors",
+            "What have we achieved on text summarization?",
+            "Evaluating the factual consistency of abstractive text summarization",
+            "Teaching models to express their uncertainty in words",
+            "Evaluating factual consistency in knowledge-grounded dialogues via question generation and question answering",
+            "Truthfulqa: Measuring how models mimic human falsehoods",
+            "What was your name again? interrogating generative conversational models for factual consistency evaluation",
+            "CLIFF: contrastive learning for improving faithfulness and factuality in abstractive summarization",
+            "Annotating and modeling fine-grained factuality in summarization",
+            "Selfcheckgpt: Zero-resource black-box hallucination detection for generative large language models",
+            "Evaluating attribution in dialogue systems: The BEGIN benchmark",
+            "Know what you don\u2019t know: Unanswerable questions for squad",
+            "A large annotated corpus for learning natural language inference",
+            "On faithfulness and factuality in abstractive summarization"
+          ],
+          "5 Safety Evaluation 5.1 Robustness Evaluation": [
+            "The second conversational intelligence challenge (convai2)",
+            "Adversarial GLUE: A multi-task benchmark for robustness evaluation of language models",
+            "Jailbreaking chatgpt via prompt engineering: An empirical study",
+            "XNLI: evaluating cross-lingual sentence representations",
+            "Exploring the robustness of large language models for solving programming problems",
+            "A causal framework to quantify the robustness of mathematical reasoning with language models",
+            "Recode: Robustness evaluation of code generation models",
+            "Trustworthy llms: a survey and guideline for evaluating large language models\u2019 alignment",
+            "Cross-lingual name tagging and linking for 282 languages",
+            "Can you put it all together: Evaluating conversational agents\u2019 ability to blend skills",
+            "On robustness-accuracy characterization of large language models using synthetic datasets",
+            "Adversarial NLI: A new benchmark for natural language understanding",
+            "Program synthesis with large language models",
+            "JGLUE: japanese general language understanding evaluation",
+            "End-to-end slot alignment and recognition for cross-lingual NLU",
+            "Personalizing dialogue agents: I have a dog, do you have pets too?",
+            "On the robustness of chatgpt: An adversarial and out-of-distribution perspective",
+            "Sensitivity and robustness of large language models to prompt in japanese",
+            "Robustification of multilingual language models to real-world noise in crosslingual zero-shot settings with robust contrastive pretraining",
+            "Findings of the WMT 2020 shared task on machine translation robustness",
+            "Robut: A systematic study of table QA robustness against human-annotated adversarial perturbations",
+            "Jailbroken: How does LLM safety training fail?",
+            "Search-based neural structured learning for sequential question answering",
+            "Towards empathetic open-domain conversation models: A new benchmark and dataset",
+            "White-box multi-objective adversarial attack on dialogue generation",
+            "A diverse corpus for evaluating and developing english math word problem solvers",
+            "Neves, Felipe Soares, Amy Siu, Karin Verspoor, and Maika\u00a0Vicente Navarro",
+            "Promptbench: Towards evaluating the robustness of large language models on adversarial prompts",
+            "Masterkey: Automated jailbreak across multiple large language model chatbots",
+            "Are NLP models really able to solve simple math word problems?",
+            "Is chatgpt A good translator? A preliminary study",
+            "MAWPS: A math word problem repository",
+            "Seq2sql: Generating structured queries from natural language using reinforcement learning",
+            "Carr, Jan Leike, Joshua Achiam, Vedant Misra, Evan Morikawa, Alec Radford, Matthew Knight, Miles Brundage, Mira Murati, Katie Mayer, Peter Welinder, Bob McGrew, Dario Amodei, Sam McCandlish, Ilya Sutskever, and Wojciech Zaremba",
+            "Compositional semantic parsing on semi-structured tables",
+            "Writing your own book: A method for going from closed to open book QA to improve robustness and performance of smaller llms"
+          ],
+          "5 Safety Evaluation 5.2 Risk Evaluation": [
+            "Agentbench: Evaluating llms as agents",
+            "Webarena: A realistic web environment for building autonomous agents",
+            "GPT-4 technical report",
+            "Model evaluation for extreme risks",
+            "Understanding social reasoning in language models with language models",
+            "Is power-seeking AI an existential risk?",
+            "Evaluating language-model agents on realistic autonomous tasks",
+            "Agentsims: An open-source sandbox for large language model evaluation",
+            "Training socially aligned language models in simulated human society",
+            "Do models explain themselves? counterfactual simulatability of natural language explanations",
+            "Unifiedqa: Crossing format boundaries with a single QA system",
+            "Evaluating superhuman models with consistency checks",
+            "Towards the scalable evaluation of cooperativeness in language models",
+            "The child's theory of mind",
+            "Training language models to follow instructions with human feedback",
+            "Brown, Benjamin Mann, Nick Ryder, Melanie Subbiah, Jared Kaplan, Prafulla Dhariwal, Arvind Neelakantan, Pranav Shyam, Girish Sastry, Amanda Askell, Sandhini Agarwal, Ariel Herbert-Voss, Gretchen Krueger, Tom Henighan, Rewon Child, Aditya Ramesh, Daniel\u00a0M",
+            "Bowman, Amanda Askell, Roger Grosse, Danny Hernandez, Deep Ganguli, Evan Hubinger, Nicholas Schiefer, and Jared Kaplan"
+          ],
+          "6 Specialized LLMs Evaluation 6.1 Biology and Medicine": [
+            "Large language models encode clinical knowledge.",
+            "Clinical language understanding evaluation (CLUE)",
+            "The diagnostic and triage accuracy of the gpt-3 artificial intelligence model",
+            "Overview of the medical question answering task at TREC 2017 liveqa",
+            "Pubmedqa: A dataset for biomedical research question answering",
+            "Chatgpt goes to the operating room: evaluating gpt-4 performance and its potential in surgical education and training in the era of large language models",
+            "Evaluating the performance of chatgpt in ophthalmology: An analysis of its successes and shortcomings",
+            "Evaluating large language models on medical evidence summarization",
+            "Towards expert-level medical question answering with large language models",
+            "Comparing Physician and Artificial Intelligence Chatbot Responses to Patient Questions Posted to a Public Social Media Forum"
+          ],
+          "6 Specialized LLMs Evaluation 6.2 Education": [
+            "Can large language models provide feedback to students? a case study on chatgpt",
+            "Is chatgpt a good teacher coach? measuring zero-shot performance for scoring and providing actionable insights on classroom instruction",
+            "Learning gain differences between chatgpt and human tutor generated algebra hints",
+            "The AI teacher test: Measuring the pedagogical ability of blender and GPT-3 in educational dialogues",
+            "Recipes for building an open-domain chatbot"
+          ],
+          "6 Specialized LLMs Evaluation 6.3 Legislation": [
+            "How well do SOTA legal reasoning models support abductive reasoning?",
+            "Gpt takes the bar exam",
+            "Summac: Re-visiting nli-based models for inconsistency detection in summarization",
+            "Gpt-4 passes the bar exam",
+            "Overview and discussion of the competition on legal information extraction/entailment (COLIEE) 2021",
+            "Chatgpt goes to law school",
+            "Explaining legal concepts with augmented large language models (GPT-4)",
+            "Can GPT-3 perform statutory reasoning?",
+            "How ready are pre-trained abstractive models and llms for legal case judgement summarization?",
+            "Legal prompting: Teaching a language model to think like a lawyer",
+            "A dataset for statutory reasoning in tax law entailment and question answering",
+            "LEGAL-BERT: the muppets straight out of law school"
+          ],
+          "6 Specialized LLMs Evaluation 6.4 Computer Science": [
+            "Comparing code explanations created by students and large language models",
+            "The programmer\u2019s assistant: Conversational interaction with a large language model for software development",
+            "Transformer-based language models for software vulnerability detection",
+            "Is your code generated by chatgpt really correct? rigorous evaluation of large language models for code generation.",
+            "Lost at C: A user study on the security implications of large language model code assistants",
+            "A systematic evaluation of large language models of code"
+          ],
+          "6 Specialized LLMs Evaluation 6.5 Finance": [
+            "Convfinqa: Exploring the chain of numerical reasoning in conversational finance question answering",
+            "Good debt or bad debt: Detecting semantic orientations in economic texts",
+            "Beyond classification: Financial reasoning in state-of-the-art language models",
+            "Impact of news on the commodity market: Dataset and results",
+            "Chatgpt: Unlocking the future of nlp in finance",
+            "Gpt as a financial advisor",
+            "Xuanyuan 2.0: A large chinese financial chat model with hundreds of billions parameters",
+            "Bloomberggpt: A large language model for finance",
+            "Finbert: Financial sentiment analysis with pre-trained language models",
+            "Www\u201918 open challenge: Financial opinion mining and question answering"
+          ],
+          "7 Evaluation Organization 7.1 Benchmarks for NLU and NLG": [
+            "GLUE: A multi-task benchmark and analysis platform for natural language understanding",
+            "Superglue: A stickier benchmark for general-purpose language understanding systems",
+            "Longbench: A bilingual, multitask benchmark for long context understanding",
+            "CLUE: A chinese language understanding evaluation benchmark",
+            "Dynabench: Rethinking benchmarking in NLP"
+          ],
+          "7 Evaluation Organization 7.2 Benchmarks for Knowledge and Reasoning": [
+            "GPT-4 technical report",
+            "M3KE: A massive multi-level multi-subject knowledge evaluation benchmark for chinese large language models",
+            "C-Eval: A multi-level multi-discipline chinese evaluation suite for foundation models",
+            "M3exam: A multilingual, multimodal, multilevel benchmark for examining large language models",
+            "GLM-130B: an open bilingual pre-trained model",
+            "Superglue: A stickier benchmark for general-purpose language understanding systems",
+            "Measuring massive multitask language understanding",
+            "Evaluating the generation capabilities of large chinese language models",
+            "Agieval: A human-centric benchmark for evaluating foundation models",
+            "CMMLU: measuring massive multitask language understanding in chinese",
+            "Measuring massive multitask chinese understanding",
+            "Chain-of-Thought prompting elicits reasoning in large language models"
+          ],
+          "7 Evaluation Organization 7.3 Benchmarks for Holistic Evaluation": [
+            "GLUE: A multi-task benchmark and analysis platform for natural language understanding",
+            "Manning, Christopher R\u00e9, Diana Acosta-Navas, Drew\u00a0A",
+            "Brown, Adam Santoro, Aditya Gupta, Adri\u00e0 Garriga-Alonso, Agnieszka Kluska, Aitor Lewkowycz, Akshat Agarwal, Alethea Power, Alex Ray, Alex Warstadt, Alexander\u00a0W",
+            "A framework for few-shot language model evaluation",
+            "Judging llm-as-a-judge with mt-bench and chatbot arena",
+            "CLEVA: chinese language models evaluation platform"
+          ],
+          "8 Future Directions 8.4 Enhancement-Oriented Evaluation for LLMs": [
+            "Towards a unified multi-dimensional evaluator for text generation",
+            "A general language assistant as a laboratory for alignment"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.00015831197379156947,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "A Comparison of LLM Finetuning Methods & Evaluation Metrics with Travel Chatbot Use Case",
+        "arxiv_id": "2408.03562",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract This research compares large language model (LLM) fine-tuning methods, including Quantized Low Rank Adapter (QLoRA), Retrieval Augmented fine-tuning (RAFT), and Reinforcement Learning from Human Feedback (RLHF), and additionally compared LLM evaluation methods including End to End (E2E) benchmark method of \u201cGolden Answers\u201d, traditional natural language processing (NLP) metrics, RAG Assessment (Ragas), OpenAI GPT-4 evaluation metrics, and human evaluation, using the travel chatbot use case. The travel dataset was sourced from the the Reddit API by requesting posts from travel-related subreddits to get travel-related conversation prompts and personalized travel experiences, and augmented for each fine-tuning method. We used two pretrained LLMs utilized for fine-tuning research: LLaMa 2 7B, and Mistral 7B. QLoRA and RAFT are applied to the two pretrained models. The inferences from these models are extensively evaluated against the aforementioned metrics. The best model according to human evaluation and some GPT-4 metrics was Mistral RAFT, so this underwent a Reinforcement Learning from Human Feedback (RLHF) training pipeline, and ultimately was evaluated as the best model. Our main findings are that: 1) quantitative and Ragas metrics do not align with human evaluation, 2) Open AI GPT-4 evaluation most aligns with human evaluation, 3) it is essential to keep humans in the loop for evaluation because, 4) traditional NLP metrics insufficient, 5) Mistral generally outperformed LLaMa, 6) RAFT outperforms QLoRA, but still needs postprocessing, 7) RLHF improves model performance significantly. Next steps include improving data quality, increasing data quantity, exploring RAG methods, and focusing data collection on a specific city, which would improve data quality by narrowing the focus, while creating a useful product.",
+        "sections": {
+          "I Introduction": [
+            "Ai assistant: The future of travel industry with the increase of artificial intelligence",
+            "Attention is all you need",
+            "Tourism Analytics Before and After COVID-19",
+            "Rlhf training pipeline for llms",
+            "Qlora: Efficient finetuning of quantized llms",
+            "Raft: Adapting language model to domain specific rag",
+            "Several categories of large language models (llms): A short survey",
+            "The future of tourism: Bridging the labor gap, enhancing customer experience",
+            "Retrieving multimodal information for augmented generation: A survey",
+            "An impact study of covid-19 on six different industries: Automobile"
+          ],
+          "II Related Work": [
+            "Approximating online human evaluation of social chatbots with prompting",
+            "LIMA: Less Is More for Alignment",
+            "The false promise of imitating proprietary llms",
+            "Benchmarking llm powered chatbots: Methods and metrics",
+            "A survey on evaluation methods for chatbots",
+            "Raft: Adapting language model to domain specific rag",
+            "Rewarding chatbots for real-world engagement with millions of users",
+            "Llm-eval: Unified multi-dimensional automatic evaluation for open-domain conversations with large language models",
+            "Retrieving multimodal information for augmented generation: A survey",
+            "Autonomous travel decision-making: An early glimpse into chatgpt and generative ai"
+          ],
+          "III Travel Dataset": [
+            "Reddit: The definitive list of travel subreddits",
+            "How to scrape data from reddit using python with code",
+            "Uncovering chatgpt's capabilities in recommender systems"
+          ],
+          "III Travel Dataset III-A Data Collection": [
+            "2018. [Online]. Available: https://www.reddit.com/dev/api/",
+            "Reddit: The definitive list of travel subreddits",
+            "2023. [Online]. Available: https://www.reddit.com/r/travel/comments/100t75r/passport_questions_issues_megathread_2023/?sort=top",
+            "Praw documentation"
+          ],
+          "III Travel Dataset III-B Data Process": [
+            "Praw documentation"
+          ],
+          "III Travel Dataset III-D RAFT Data Augmentation": [
+            "Raft: Adapting language model to domain specific rag"
+          ],
+          "III Travel Dataset III-E RLHF Data Selection": [
+            "Rlhf training pipeline for llms",
+            "Rlhf in 2024 with dpo and hugging face"
+          ],
+          "IV Fine-tuning Methods": [
+            "6 main differences between llama 2, gpt-3.5 & gpt-4",
+            "Online",
+            "Fine tuning open source large language models (peft qlora) on azure machine learning",
+            "Rlhf in 2024 with dpo and hugging face",
+            "Rlhf training pipeline for llms",
+            "Qlora: Efficient finetuning of quantized llms",
+            "Raft: Adapting language model to domain specific rag",
+            "Mistral 7b"
+          ],
+          "IV Fine-tuning Methods IV-A Model Supports": [
+            "Full fine-tuning, peft, prompt engineering, or rag",
+            "Fine tuning open source large language models (peft qlora) on azure machine learning"
+          ],
+          "V Model Training & Performance": [
+            "Raft: A new way to teach llms to be better at rag",
+            "Dpo trainer"
+          ],
+          "VI LLM Evaluation Methods VI-A Quantitative Evaluation Metrics": [
+            "Rouge: A package for automatic evaluation of summaries",
+            "Bertscore: Evaluating text generation with bert",
+            "Benchmarking llm powered chatbots: Methods and metrics",
+            "Two minutes nlp \u2014 learn the rouge metric by examples",
+            "Llm-eval: Unified multi-dimensional automatic evaluation for open-domain conversations with large language models",
+            "Bertscore explained"
+          ],
+          "VI LLM Evaluation Methods VI-B Qualitative Evaluation Metrics": [
+            "Ragas: Evaluation framework for your retrieval augmented generation (rag) pipelines"
+          ],
+          "VII Results VII-A RLHF Analysis": [
+            "Rlhf training pipeline for llms"
+          ],
+          "VII Results VII-B Inference Generation Evaluation": [
+            "Openai documentation"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.000347302237059921,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Fact, Fetch, and Reason: A Unified Evaluation of Retrieval-Augmented Generation",
+        "arxiv_id": "2409.12941",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract Large Language Models (LLMs) have demonstrated significant performance improvements across various cognitive tasks. An emerging application is using LLMs to enhance retrieval-augmented generation (RAG) capabilities. These systems require LLMs to understand user queries, retrieve relevant information, and synthesize coherent and accurate responses. Given the increasing real-world deployment of such systems, comprehensive evaluation becomes crucial. To this end, we propose FRAMES (Factuality, Retrieval, And reasoning MEasurement Set), a high-quality evaluation dataset designed to test LLMs\u2019 ability to provide factual responses, assess retrieval capabilities, and evaluate the reasoning required to generate final answers. While previous work has provided datasets and benchmarks to evaluate these abilities in isolation, FRAMES offers a unified framework that provides a clearer picture of LLM performance in end-to-end RAG scenarios. Our dataset comprises challenging multi-hop questions that require the integration of information from multiple sources. We present baseline results demonstrating that even state-of-the-art LLMs struggle with this task, achieving 0.40 accuracy with no retrieval. The accuracy is significantly improved with our proposed multi-step retrieval pipeline, achieving an accuracy of 0.66 (>50% improvement). We hope our work will help bridge evaluation gaps and assist in developing more robust and capable RAG systems.",
+        "sections": {
+          "1 Introduction": [
+            "Retrieval-augmented generation for large language models: A survey",
+            "A survey of large language models",
+            "Evaluation of retrieval-augmented generation: A survey",
+            "Hotpotqa: A dataset for diverse, explainable multi-hop question answering",
+            "Training verifiers to solve math word problems",
+            "Retrieval-augmented generation for knowledge-intensive nlp tasks",
+            "Truthfulqa: Measuring how models mimic human falsehoods"
+          ],
+          "2 FRAMES": [
+            "Truthfulqa: Measuring how models mimic human falsehoods"
+          ],
+          "2 FRAMES Dataset Statistics.": [
+            "Learning to rank for information retrieval"
+          ],
+          "2 FRAMES Quality Checks.": [
+            "Freshllms: Refreshing large language models with search engine augmentation"
+          ],
+          "3 Empirical Analysis 3.1 Single-Step Evaluations": [
+            "Gemma 2: Improving open language models at a practical size",
+            "Gemini 1.5 flash",
+            "Okapi at trec-3",
+            "Google. Gemini 1.5 pro"
+          ],
+          "3 Empirical Analysis 3.2 Multi-Step Evaluations": [
+            "Large language models are zero-shot reasoners"
+          ],
+          "4 Related Works": [
+            "Triviaqa: A large scale distantly supervised challenge dataset for reading comprehension",
+            "Eli5: Long form question answering",
+            "Evaluation of retrieval-augmented generation: A survey",
+            "Natural questions: a benchmark for question answering research"
+          ],
+          "5 Conclusion Future Work.": [
+            "Simcse: Simple contrastive learning of sentence embeddings",
+            "Let\u2019s verify step by step.",
+            "Dspy: Compiling declarative language model calls into self-improving pipelines",
+            "Colbert: Efficient and effective passage search via contextualized late interaction over bert",
+            "Toolformer: Language models can teach themselves to use tools"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.059043630957603455,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Large Language Model-based Human-Agent Collaboration for Complex Task Solving",
+        "arxiv_id": "2402.12914",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract In recent developments within the research community, the integration of Large Language Models (LLMs) in creating fully autonomous agents has garnered significant interest. Despite this, LLM-based agents frequently demonstrate notable shortcomings in adjusting to dynamic environments and fully grasping human needs. In this work, we introduce the problem of LLM-based human-agent collaboration for complex task-solving, exploring their synergistic potential. In addition, we propose a Reinforcement Learning-based Human-Agent Collaboration method, ReHAC. This approach includes a policy model designed to determine the most opportune stages for human intervention within the task-solving process. We construct a human-agent collaboration dataset to train this policy model in an offline reinforcement learning environment. Our validation tests confirm the model\u2019s effectiveness. The results demonstrate that the synergistic efforts of humans and LLM-based agents significantly improve performance in complex tasks, primarily through well-planned, limited human intervention. Datasets and code are available at: https://github.com/XueyangFeng/ReHAC. ",
+        "sections": {
+          "1 Introduction": [
+            "A survey on large language model based autonomous agents.",
+            "A survey of large language models.",
+            "Gemini: a family of highly capable multimodal models",
+            "Llama 2: Open foundation and fine-tuned chat models",
+            "Systematic review of research on artificial intelligence applications in higher education\u2013where are the educators?",
+            "Language models are few-shot learners",
+            "Level-5 autonomous driving\u2014are we there yet? a review of research literature",
+            "Human-in-the-loop through chain-of-thought"
+          ],
+          "2 Approach 2.1 Preliminary and Problem Formulation": [
+            "Human-in-the-loop through chain-of-thought",
+            "React: Synergizing reasoning and acting in language models",
+            "Iglu 2022: Interactive grounded language understanding in a collaborative environment at neurips 2022.",
+            "Drive as you speak: Enabling human-like interaction with large language models in autonomous vehicles"
+          ],
+          "2 Approach 2.2 ReHAC": [
+            "Simple statistical gradient-following algorithms for connectionist reinforcement learning"
+          ],
+          "3 Experiments 3.1 Experimental Setup": [
+            "React: Synergizing reasoning and acting in language models",
+            "Intercode: Standardizing and benchmarking interactive coding with execution feedback",
+            "Llama 2: Open foundation and fine-tuned chat models",
+            "Did aristotle use a laptop? a question answering benchmark with implicit reasoning strategies",
+            "Lora: Low-rank adaptation of large language models",
+            "Hotpotqa: A dataset for diverse, explainable multi-hop question answering"
+          ],
+          "5 Related Work LLM-based Agent": [
+            "Mint: Evaluating llms in multi-turn interaction with tools and language feedback.",
+            "React: Synergizing reasoning and acting in language models",
+            "Sayplan: Grounding large language models using 3d scene graphs for scalable robot task planning",
+            "Webgpt: Browser-assisted question-answering with human feedback",
+            "Chain-of-thought prompting elicits reasoning in large language models",
+            "Large language models for multi-modal human-robot interaction",
+            "Reflexion: language agents with verbal reinforcement learning",
+            "Communicative agents for software development",
+            "Tree of thoughts: Deliberate problem solving with large language models",
+            "ALFWorld: Aligning Text and Embodied Environments for Interactive Learning",
+            "Llm+ p: Empowering large language models with optimal planning proficiency"
+          ],
+          "5 Related Work Human-Agent Collaboration": [
+            "Human-in-the-loop through chain-of-thought",
+            "Inner monologue: Embodied reasoning through planning with language models",
+            "Putting humans in the natural language processing loop: A survey"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.0004904380184598267,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Know the Unknown: An Uncertainty-Sensitive Method for LLM Instruction Tuning",
+        "arxiv_id": "2406.10099",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract Large language models (LLMs) have demonstrated remarkable capabilities across various tasks but still face challenges such as hallucinations. One potential reason for hallucinations is the lack of relevant knowledge or context. Thus, a promising solution to mitigate this issue involves instructing LLMs to respond with \"I do not know\" when a question falls outside their knowledge domain or the provided context. However, in this work, we observed that LLMs struggle to admit their lack of knowledge, primarily due to existing instruction datasets designed to encourage specific answers. To improve large language models\u2019 capability to recognize the boundaries of their knowledge, we propose a novel approach called uncertainty-sensitive tuning. This method involves two-stage training designed for uncertainty recognition and prompt-sensitive activation. In the first stage, we guide the LLM to reject unknown questions. In the second stage, we recover the decreased performance in QA tasks by incorporating designed causal instructions. By leveraging this method, we aim to enhance the model\u2019s ability to identify areas of uncertainty. The experimental results demonstrate that our proposed uncertainty-sensitive tuning method significantly improves the performance of the Llama2-chat-7B model. Specifically, it achieves a substantial 34.7% improvement in handling questions involving knowledge gaps compared to the original model. Moreover, our approach outperforms GPT-4, exhibiting a 9.4% increase in overall performance. We open-source the model and code on GitHub111https://github.com/JiaqiLi404/TrustworthyRAG.",
+        "sections": {
+          "1 Introduction": [
+            "Llama 2: Open foundation and fine-tuned chat models",
+            "Ragas: Automated evaluation of retrieval augmented generation",
+            "R-tuning: Teaching large language models to refuse unknown questions.",
+            "Realtime QA: What\u2019s the answer right now?",
+            "Webglm: Towards an efficient web-enhanced question answering system with human preferences",
+            "On faithfulness and factuality in abstractive summarization",
+            "GPT4 (Nov 7 version)",
+            "Large language models with controllable working memory",
+            "A survey on hallucination in large language models: Principles, taxonomy, challenges, and open questions",
+            "ASQA: Factoid questions meet long-form answers",
+            "Context-faithful prompting for large language models",
+            "Language models are few-shot learners"
+          ],
+          "2 Related Work 2.1 Uncertainty In Hallucinations": [
+            "R-tuning: Teaching large language models to refuse unknown questions.",
+            "T rusting your evidence: Hallucinate less with context-aware decoding",
+            "SelfCheckGPT: Zero-resource black-box hallucination detection for generative large language models",
+            "Do large language models know what they don't know?",
+            "Improving language models via plug-and-play retrieval feedback",
+            "ChatGPT vs human-authored text: Insights into controllable text summarization and sentence style transfer",
+            "Improved natural language generation via loss truncation",
+            "How are prompts different in terms of sensitivity?"
+          ],
+          "2 Related Work 2.2 LLMs With External Knowledge": [
+            "Freshllms: Refreshing large language models with search engine augmentation.",
+            "Purr: Efficiently editing language model hallucinations by denoising language model corruptions",
+            "Self-RAG: Learning to retrieve, generate, and critique through self-reflection",
+            "Crafting in-context examples according to lms' parametric knowledge.",
+            "A token-level reference-free hallucination detection benchmark for free-form text generation.",
+            "Context-faithful prompting for large language models",
+            "why is this misleading?"
+          ],
+          "2 Related Work 2.3 Instruction Dataset for Training": [
+            "Large language model as attributed training data generator: A tale of diversity and bias.",
+            "Self-instruct: Aligning language models with self-generated instructions.",
+            "R-tuning: Instructing large language models to say \u2018i don\u2019t know\u2019",
+            "Wizardlm: Empowering large language models to follow complex instructions."
+          ],
+          "3 Method 3.2 Preliminary Exploration On The Unknown Question": [
+            "Llama 2: Open foundation and fine-tuned chat models",
+            "HotpotQA: A dataset for diverse, explainable multi-hop question answering"
+          ],
+          "4 Experiments 4.1 Data Construction": [
+            "ASQA: Factoid questions meet long-form answers",
+            "HotpotQA: A dataset for diverse, explainable multi-hop question answering"
+          ],
+          "4 Experiments 4.2 Experiment Setting": [
+            "Llama 2: Open foundation and fine-tuned chat models",
+            "Lora: Low-rank adaptation of large language models",
+            "Self-RAG: Learning to retrieve, generate, and critique through self-reflection",
+            "GPT4 (Nov 7 version)",
+            "Judging llm-as-a-judge with mt-bench and chatbot arena",
+            "Llamafactory: Unified efficient fine-tuning of 100+ language models",
+            "Context-faithful prompting for large language models",
+            "Language models are few-shot learners"
+          ],
+          "Limitations": [
+            "How are prompts different in terms of sensitivity?"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.10160186886787415,
+        "extra": {
+          "expand": "not expand"
+        }
+      }
+    ],
+    "Research papers on Large Language Models (LLMs) and their application on HotPotQA dataset": [
+      {
+        "title": "Are Large Language Models Good at Utility Judgments?",
+        "arxiv_id": "2403.19216",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract. Retrieval-augmented generation (RAG) is considered to be a promising approach to alleviate the hallucination issue of large language models (LLMs), and it has received widespread attention from researchers recently. Due to the limitation in the semantic understanding of retrieval models, the success of RAG heavily lies on the ability of LLMs to identify passages with utility. Recent efforts have explored the ability of LLMs to assess the relevance of passages in retrieval, but there has been limited work on evaluating the utility of passages in supporting question answering. In this work, we conduct a comprehensive study about the capabilities of large language models in utility evaluation for open-domain  question answering (QA). Specifically, we introduce a benchmarking procedure and collection of candidate passages with different characteristics, facilitating a series of experiments with five representative LLMs. Our experiments reveal that:   (i) well-instructed LLMs can distinguish between relevance and utility, and that LLMs are highly receptive to newly generated counterfactual passages. Moreover,  (ii) we scrutinize key factors that affect utility judgments in the instruction design. And finally,  (iii) to verify the efficacy of utility judgments in practical retrieval augmentation applications, we delve into LLMs\u2019 QA capabilities using the evidence judged with utility and direct dense retrieval results.  (iv) We propose a k\ud835\udc58k-sampling, listwise approach to reduce the dependency of LLMs on the sequence of input passages, thereby facilitating subsequent answer generation. We believe that the way we formalize and study the problem along with our findings contributes to a critical assessment of retrieval-augmented LLMs. Our code and benchmark can be found at https://github.com/ict-bigdatalab/utility_judgments.   ",
+        "sections": {
+          "1. Introduction": [
+            "Few-shot Learning with Retrieval Augmented Language Models",
+            "A Setwise Approach for Effective and Highly Efficient Zero-shot Ranking with Large Language Models",
+            "Factual and Informative Review Generation for Explainable Recommendation",
+            "Investigating the Factual Knowledge Boundary of Large Language Models with Retrieval Augmentation",
+            "From Relevance to Utility: Evidence Retrieval with Feedback for Fact Verification",
+            "Beyond Yes and No: Improving Zero-shot LLM Rankers via Scoring Fine-grained Relevance Labels",
+            "Hybrid Retrieval-Augmented Generation for Real-time Composition Assistance",
+            "Retrieval Augmentation Reduces Hallucination in Conversation",
+            "WebGLM: Towards An Efficient Web-Enhanced Question Answering System with Human Preferences",
+            "A study of information seeking and retrieving. I. Background and methodology.",
+            "The Notion of Relevance in Information Science: Everybody knows what relevance is. But, what is it really?",
+            "Large Language Models are Effective Text Rankers with Pairwise Ranking prompting",
+            "RankVicuna: Zero-Shot Listwise Document Reranking with Open-Source Large Language Models",
+            "Perspectives on Large Language Models for Relevance Judgment"
+          ],
+          "2. Problem statement 2.2. Benchmark construction": [
+            "Investigating the Factual Knowledge Boundary of Large Language Models with Retrieval Augmentation",
+            "spaCy",
+            "Entity-based Knowledge Conflicts in Question Answering",
+            "DECODING-ENHANCED BERT WITH DISENTANGLED ATTENTION",
+            "RocketQAv2: A Joint Training Method for Dense Passage Retrieval and Passage Re-ranking",
+            "HotpotQA: A Dataset for Diverse, Explainable Multi-hop Question Answering",
+            "Adaptive Chameleon or Stubborn Sloth: Unraveling the Behavior of Large Language Models in Knowledge Conflicts",
+            "Linguistically-based Deep Unstructured Question Answering",
+            "ANTIQUE: A Non-factoid Question Answering Benchmark",
+            "MS MARCO: A Human Generated Machine Reading Comprehension Dataset",
+            "Natural Questions: A Benchmark for Question Answering Research",
+            "Optimizing Dense Retrieval Model Training with Hard Negatives"
+          ],
+          "2. Problem statement 2.3. Instructing LLMs with prompts": [
+            "Llama 2: Open Foundation and Fine-Tuned Chat Models",
+            "Introducing ChatGPT",
+            "Is ChatGPT Good at Search? Investigating Large Language Models as Re-Ranking Agent",
+            "Vicuna: An Open-Source Chatbot Impressing GPT-4 with 90%* ChatGPT Quality"
+          ],
+          "2. Problem statement 2.4. Evaluation metrics": [
+            "Bleu: a Method for Automatic Evaluation of Machine Translation",
+            "IR Evaluation Methods for Retrieving Highly Relevant Focuments",
+            "Mean Reciprocal Rank",
+            "Rouge: A Package for Automatic Evaluation of Summaries",
+            "MS MARCO: A Human Generated Machine Reading Comprehension Dataset",
+            "Leveraging Passage Retrieval with Generative Models for Open Domain Question Answering"
+          ],
+          "3. Relevance vs. Utility": [
+            "Introducing ChatGPT",
+            "Adaptive Chameleon or Stubborn Sloth: Unraveling the Behavior of Large Language Models in Knowledge Conflicts"
+          ],
+          "4. Utility judgments depend on instruction design": [
+            "Large Language Models are Zero-shot Reasoners",
+            "Investigating the Factual Knowledge Boundary of Large Language Models with Retrieval Augmentation",
+            "Chain-of-thought Prompting Elicits Reasoning in Large Language Models",
+            "Fantastically Ordered Prompts and Where to Find Them: Overcoming Few-Shot Prompt Order Sensitivity",
+            "LLM-Blender: Ensembling Large Language Models with Pairwise Ranking and Generative Fusion",
+            "Self-alignment with instruction backtranslation",
+            "Large language models sensitivity to the order of options in multiple-choice questions"
+          ],
+          "6. Related Work": [
+            "Few-shot Learning with Retrieval Augmented Language Models",
+            "Investigating the Factual Knowledge Boundary of Large Language Models with Retrieval Augmentation",
+            "From Relevance to Utility: Evidence Retrieval with Feedback for Fact Verification",
+            "Beyond Yes and No: Improving Zero-shot LLM Rankers via Scoring Fine-grained Relevance Labels",
+            "Retrieval-enhanced Machine Learning",
+            "Large Language Models are Effective Text Rankers with Pairwise Ranking prompting",
+            "Introducing ChatGPT",
+            "Is ChatGPT Good at Search? Investigating Large Language Models as Re-Ranking Agent",
+            "Adaptive Chameleon or Stubborn Sloth: Unraveling the Behavior of Large Language Models in Knowledge Conflicts",
+            "REPLUG: Retrieval-augmented Black-box Language Models",
+            "LLM-Blender: Ensembling Large Language Models with Pairwise Ranking and Generative Fusion",
+            "Llama 2: Open Foundation and Fine-Tuned Chat Models",
+            "Generate Rather than Retrieve: Large Language Models are Strong Context Generators.",
+            "Perspectives on Large Language Models for Relevance Judgment",
+            "In-Context Retrieval-Augmented Language Models"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.020438916981220245,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "GenDec: A robust generative Question-decomposition method for Multi-hop reasoning",
+        "arxiv_id": "2402.11166",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Multi-hop QA (MHQA) involves step-by-step reasoning to answer complex questions and find multiple relevant supporting facts. However, Existing large language models\u2019(LLMs) reasoning ability in multi-hop question answering remains exploration, which is inadequate in answering multi-hop questions. Moreover, it is unclear whether LLMs follow a desired reasoning chain to reach the right final answer. In this paper, we propose a generative question decomposition method (GenDec) from the perspective of explainable QA by generating independent and complete sub-questions based on incorporating additional extracted evidence for enhancing LLMs\u2019 reasoning ability in RAG. To demonstrate the impact, generalization and robustness of Gendec, we conduct two experiments, the first is combining GenDec with small QA systems on paragraph retrieval and QA tasks. We secondly examine the reasoning capabilities of various state-of-the-art LLMs including GPT-4 and GPT-3.5 combined with GenDec. We experiment on the HotpotQA, 2WikihopMultiHopQA, MuSiQue, and PokeMQA datasets.  ",
+        "sections": {
+          "1 Introduction": [
+            "HotpotQA: A dataset for diverse, explainable multi-hop question answering",
+            "Do multi-hop question answering systems know how to answer the single-hop sub-questions?",
+            "Multihop-rag: Benchmarking retrieval-augmented generation for multi-hop queries",
+            "In-context ability transfer for question decomposition in complex qa",
+            "Cognitive graph for multi-hop reading comprehension at scale",
+            "Gpt-4 technical report",
+            "What makes good in-context examples for gpt-3?",
+            "Dynamically fused graph network for multi-hop reasoning",
+            "Complexity-based prompting for multi-step reasoning",
+            "Training language models to follow instructions with human feedback",
+            "Multi-hop reading comprehension through question decomposition and rescoring"
+          ],
+          "2 Related Work 2.1 Multi-hop Question-answering": [
+            "HotpotQA: A dataset for diverse, explainable multi-hop question answering",
+            "Constructing a multi-hop QA dataset for comprehensive evaluation of reasoning steps",
+            "Drop: A reading comprehension benchmark requiring discrete reasoning over paragraphs"
+          ],
+          "2 Related Work 2.2 Question Decomposition": [
+            "Unsupervised question decomposition for question answering",
+            "Break it down: A question understanding benchmark",
+            "Complex reading comprehension through question decomposition",
+            "The web as a knowledge-base for answering complex questions",
+            "Edg-based question decomposition for complex question answering over knowledge bases",
+            "Locate then ask: Interpretable stepwise reasoning for multi-hop question answering",
+            "Multi-hop reading comprehension through question decomposition and rescoring",
+            "Learning to decompose: Hypothetical question decomposition based on comparable texts",
+            "Interpretable amr-based question decomposition for multi-hop question answering"
+          ],
+          "2 Related Work 2.3 LLM reasoning": [
+            "Decomposed prompting: A modular approach for solving complex tasks",
+            "A multitask, multilingual, multimodal evaluation of chatgpt on reasoning, hallucination, and interactivity",
+            "Tab-cot: Zero-shot tabular chain of thought",
+            "Large language models are few(1)-shot table reasoners",
+            "Rainier: Reinforced knowledge introspector for commonsense question answering",
+            "Chain of thought prompting elicits reasoning in large language models"
+          ],
+          "3 Framework 3.1 GenDec": [
+            "Pokemqa: Programmable knowledge editing for multi-hop question answering",
+            "Text modular networks: Learning to decompose tasks in the language of existing models",
+            "Bart: Denoising sequence-to-sequence pre-training for natural language generation, translation, and comprehension",
+            "Rethinking label smoothing on multi-hop question answering",
+            "Exploring the limits of transfer learning with a unified text-to-text transformer"
+          ],
+          "3 Framework 3.2 Sub-question-enhanced Paragraph Retrieval (SPR)": [
+            "DeBERTa: Decoding-enhanced BERT with disentangled attention"
+          ],
+          "4 Experiments and Analysis 4.1 Datasets": [
+            "Pokemqa: Programmable knowledge editing for multi-hop question answering",
+            "HotpotQA: A dataset for diverse, explainable multi-hop question answering",
+            "Text modular networks: Learning to decompose tasks in the language of existing models",
+            "Do multi-hop question answering systems know how to answer the single-hop sub-questions?",
+            "Constructing a multi-hop QA dataset for comprehensive evaluation of reasoning steps",
+            "MuSiQue: Multihop questions via single-hop question composition"
+          ],
+          "4 Experiments and Analysis 4.3 SQA against SOTA QA systems": [
+            "MuSiQue: Multihop questions via single-hop question composition",
+            "Beam retrieval: General end-to-end retrieval for multi-hop question answering"
+          ],
+          "4 Experiments and Analysis 4.4 GenDec with LLMs": [
+            "Do multi-hop question answering systems know how to answer the single-hop sub-questions?"
+          ],
+          "4 Experiments and Analysis 4.6 SQA on reasoning chain evaluation": [
+            "Beam retrieval: General end-to-end retrieval for multi-hop question answering",
+            "Prompt-based conservation learning for multi-hop question answering",
+            "Do multi-hop question answering systems know how to answer the single-hop sub-questions?",
+            "Hierarchical graph network for multi-hop question answering",
+            "Dynamically fused graph network for multi-hop reasoning",
+            "Multi-hop reading comprehension through question decomposition and rescoring"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.9963001608848572,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "A Survey on Multi-hop Question Answering and Generation",
+        "arxiv_id": "2204.09140",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract. The problem of Question Answering (QA) has attracted significant research interest for long. Its relevance to language understanding and knowledge retrieval tasks, along with the simple setting makes the task of QA crucial for strong AI systems. Recent success on simple QA tasks has shifted the focus to more complex settings. Among these, Multi-Hop QA (MHQA) is one of the most researched tasks over the recent years. The ability to answer multi-hop questions and perform multi step reasoning can significantly improve the utility of NLP systems. Consequently, the field has seen a sudden surge with high quality datasets, models and evaluation strategies. The notion of \u2018multiple hops\u2019 is somewhat abstract which results in a large variety of tasks that require multi-hop reasoning. This implies that different datasets and models differ significantly which makes the field challenging to generalize and survey. This work aims to provide a general and formal definition of MHQA task, and organize and summarize existing MHQA frameworks. We also outline the best methods to create MHQA datasets. The paper provides a systematic and thorough introduction as well as the structuring of the existing attempts to this highly interesting, yet quite challenging task. ",
+        "sections": {
+          "1. Introduction": [
+            "Visual question answering using deep learning: A survey and performance analysis",
+            "Explainable artificial intelligence: Understanding, visualizing and interpreting deep learning models",
+            "Difficulty Controllable Question Generation for Reading Comprehension",
+            "Easy Questions First? A Case Study on Curriculum Learning for Question Answering",
+            "Learning to recover reasoning chains for multi-hop question answering via cooperative games",
+            "The question answering systems: A survey",
+            "Abstractive unsupervised multi-document summarization using paraphrastic sentence fusion",
+            "Medical Visual Question Answering: A Survey",
+            "HotpotQA: A Dataset for Diverse, Explainable Multi-hop Question Answering",
+            "Cognitive Graph for Multi-Hop Reading Comprehension at Scale",
+            "A Systematic Review of Automatic Question Generation for Educational Purposes",
+            "Evolutionary timeline summarization: a balanced optimization framework via iterative substitution",
+            "Multi-hop Inference for Sentence-level TextGraphs: How Challenging is Meaningfully Combining Information for Science Question Answering?",
+            "Event Detection as Question Answering with Entity Information",
+            "SQuAD: 100,000+ Questions for Machine Comprehension of Text",
+            "Extending Multi-Text Sentence Fusion Resources via Pyramid Annotations",
+            "Difficulty-controllable multi-hop question generation from knowledge graphs",
+            "Efficient and Robust Question Answering from Minimal Context over Documents",
+            "Event Occurrence Date Estimation based on Multivariate Time Series Analysis over Temporal Document Collections",
+            "Multi-hop Reading Comprehension through Question Decomposition and Rescoring",
+            "A survey on complex question answering over knowledge base: Recent advances and challenges",
+            "Multi-document summarization via deep learning techniques: A survey",
+            "Retrieving and reading: A comprehensive survey on open-domain question answering",
+            "Select, answer and explain: Interpretable multi-hop reading comprehension over multiple documents",
+            "Dynamically Fused Graph Network for Multi-hop Reasoning",
+            "ALBERT: A Lite BERT for Self-supervised Learning of Language Representations",
+            "Haitian Sun, William W Cohen, and Ruslan Salakhutdinov. Iterative Hierarchical Attention for Answering Complex Questions over Long Documents."
+          ],
+          "2. Multi-hop Question Answering task": [
+            "A survey on complex question answering over knowledge base: Recent advances and challenges",
+            "Improving question answering for event-focused questions in temporal collections of news articles",
+            "Looking beyond the surface: A challenge set for reading comprehension over multiple sentences",
+            "Haitian Sun, William W Cohen, and Ruslan Salakhutdinov. Iterative Hierarchical Attention for Answering Complex Questions over Long Documents.",
+            "HotpotQA: A Dataset for Diverse, Explainable Multi-hop Question Answering",
+            "Event Occurrence Date Estimation based on Multivariate Time Series Analysis over Temporal Document Collections"
+          ],
+          "3. Datasets 3.1. Dataset creation": [
+            "Can a Suit of Armor Conduct Electricity? A New Dataset for Open Book Question Answering",
+            "Compositional Questions Do Not Necessitate Multi-hop Reasoning",
+            "Looking beyond the surface: A challenge set for reading comprehension over multiple sentences",
+            "Methods for exploring and mining tables on wikipedia",
+            "The narrativeqa reading comprehension challenge",
+            "Adversarial Examples for Evaluating Reading Comprehension Systems",
+            "Generative Context Pair Selection for Multi-hop Question Answering",
+            "HotpotQA: A Dataset for Diverse, Explainable Multi-hop Question Answering",
+            "Constructing datasets for multi-hop reading comprehension across documents",
+            "DrugBank: a knowledgebase for drugs, drug actions and drug targets",
+            "Are We Modeling the Task or the Annotator? An Investigation of Annotator Bias in Natural Language Understanding Datasets",
+            "Benefits of Intermediate Annotations in Reading Comprehension",
+            "Survey of the state of the art in natural language generation: Core tasks, applications and evaluation",
+            "Coarse and Fine Granularity Graph Reasoning for Interpretable Multi-Hop Question Answering",
+            "HybridQA: A Dataset of Multi-Hop Question Answering over Tabular and Textual Data",
+            "WorldTree: A Corpus of Explanation Graphs for Elementary Science Questions supporting Multi-hop Inference",
+            "Multi-hop Reading Comprehension through Question Decomposition and Rescoring"
+          ],
+          "3. Datasets 3.3. Critiques and challenges": [
+            "Compositional Questions Do Not Necessitate Multi-hop Reasoning",
+            "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+            "Simple yet Effective Bridge Reasoning for Open-Domain Multi-Hop Question Answering",
+            "Understanding Dataset Design Choices for Multi-hop Reasoning",
+            "Repurposing Entailment for Multi-Hop Question Answering Tasks",
+            "Multi-step entity-centric information retrieval for multi-hop question answering",
+            "Multi-hop Reading Comprehension through Question Decomposition and Rescoring"
+          ],
+          "4. Overview of Methods 4.1. Retrieval": [
+            "Quick and (not so) Dirty: Unsupervised Selection of Justification Sentences for Multi-hop Question Answering",
+            "Simple yet Effective Bridge Reasoning for Open-Domain Multi-Hop Question Answering",
+            "Combining Lexical and Dense Retrieval for Computationally Efficient Multi-hop Question Answering",
+            "Generative Context Pair Selection for Multi-hop Question Answering",
+            "Generating followup questions for interpretable multi-hop question answering",
+            "Roberta: A robustly optimized bert pretraining approach",
+            "Paragraph-level Neural Question Generation with Maxout Pointer and Gated Self-attention Networks",
+            "Neural Text Generation With Unlikelihood Training",
+            "Deep Contextualized Word Representations",
+            "Memory augmented sequential paragraph retrieval for multi-hop question answering",
+            "Hierarchical Graph Network for Multi-hop Question Answering",
+            "If You Want to Go Far Go Together: Unsupervised Joint Candidate Evidence Retrieval for Multi-hop Question Answering",
+            "Cognitive Graph for Multi-Hop Reading Comprehension at Scale",
+            "Get To The Point: Summarization with Pointer-Generator Networks",
+            "Attention is all you need",
+            "Unsupervised Alignment-based Iterative Evidence Retrieval for Multi-hop Question Answering",
+            "Neural turing machines",
+            "Multi-step entity-centric information retrieval for multi-hop question answering",
+            "Bidirectional Attention Flow for Machine Comprehension",
+            "Answering Complex Open-Domain Questions with Multi-Hop Dense Retrieval",
+            "Coarse and Fine Granularity Graph Reasoning for Interpretable Multi-Hop Question Answering",
+            "HybridQA: A Dataset of Multi-Hop Question Answering over Tabular and Textual Data",
+            "Reading Wikipedia to Answer Open-Domain Questions",
+            "Answering Any-hop Open-domain Questions with Iterative Document Reranking",
+            "Answering Complex Open-domain Questions Through Iterative Query Generation",
+            "Long short-term memory",
+            "Select, answer and explain: Interpretable multi-hop reading comprehension over multiple documents",
+            "Dynamically Fused Graph Network for Multi-hop Reasoning",
+            "Multi-Hop Paragraph Retrieval for Open-Domain Question Answering",
+            "Haitian Sun, William W Cohen, and Ruslan Salakhutdinov. Iterative Hierarchical Attention for Answering Complex Questions over Long Documents.",
+            "Glove: Global vectors for word representation",
+            "Alignment over Heterogeneous Embeddings for Question Answering"
+          ],
+          "4. Overview of Methods 4.2. Reading Comprehension": [
+            "Semi-Supervised Classification with Graph Convolutional Networks",
+            "Coarse-grained decomposition and fine-grained interaction for multi-hop question answering",
+            "A Broad-Coverage Challenge Corpus for Sentence Understanding through Inference",
+            "Multi-hop question answering via reasoning chains",
+            "Graph Attention Networks",
+            "Breadth First Reasoning Graph for Multi-hop Question Answering",
+            "ConceptNet 5.5: An Open Multilingual Graph of General Knowledge",
+            "Repurposing Entailment for Multi-Hop Question Answering Tasks",
+            "Word Association Norms, Mutual Information, and Lexicography",
+            "Enhanced LSTM for Natural Language Inference",
+            "BAG: Bi-directional Attention Entity Graph Convolutional Network for Multi-hop Reasoning Question Answering",
+            "Deep Contextualized Word Representations",
+            "Identifying Supporting Facts for Multi-hop Question Answering with Document Graph Networks",
+            "Memory augmented sequential paragraph retrieval for multi-hop question answering",
+            "Hierarchical Graph Network for Multi-hop Question Answering",
+            "Revealing the Dark Secrets of BERT",
+            "HotpotQA: A Dataset for Diverse, Explainable Multi-hop Question Answering",
+            "Cognitive Graph for Multi-Hop Reading Comprehension at Scale",
+            "A large annotated corpus for learning natural language inference",
+            "Commonsense for Generative Multi-Hop Question Answering Tasks",
+            "Exploring graph-structured passage representation for multi-hop reading comprehension with graph neural networks",
+            "ETC: Encoding Long and Structured Inputs in Transformers",
+            "Bidirectional Attention Flow for Machine Comprehension",
+            "Is Graph Structure Necessary for Multi-hop Question Answering?",
+            "Coarse and Fine Granularity Graph Reasoning for Interpretable Multi-Hop Question Answering",
+            "HybridQA: A Dataset of Multi-Hop Question Answering over Tabular and Textual Data",
+            "Modeling Relational Data with Graph Convolutional Networks (2017). Preprint (2017).",
+            "Learning internal representations by error propagation",
+            "Answering Any-hop Open-domain Questions with Iterative Document Reranking",
+            "Multi-hop Reading Comprehension through Question Decomposition and Rescoring",
+            "Dynamically Fused Graph Network for Multi-hop Reasoning",
+            "Question Answering by Reasoning Across Documents with Graph Convolutional Networks",
+            "Haitian Sun, William W Cohen, and Ruslan Salakhutdinov. Iterative Hierarchical Attention for Answering Complex Questions over Long Documents.",
+            "Bilinear attention networks",
+            "Representation learning with contrastive predictive coding"
+          ],
+          "4. Overview of Methods 4.3. Answer Prediction Module": [
+            "BAG: Bi-directional Attention Entity Graph Convolutional Network for Multi-hop Reasoning Question Answering",
+            "Quick and (not so) Dirty: Unsupervised Selection of Justification Sentences for Multi-hop Question Answering",
+            "Identifying Supporting Facts for Multi-hop Question Answering with Document Graph Networks",
+            "Multi-hop Reading Comprehension through Question Decomposition and Rescoring",
+            "Multi-Hop Paragraph Retrieval for Open-Domain Question Answering",
+            "Simple yet Effective Bridge Reasoning for Open-Domain Multi-Hop Question Answering",
+            "Question Answering by Reasoning Across Documents with Graph Convolutional Networks",
+            "Generative Context Pair Selection for Multi-hop Question Answering",
+            "HotpotQA: A Dataset for Diverse, Explainable Multi-hop Question Answering",
+            "Multi-hop question answering via reasoning chains",
+            "Haitian Sun, William W Cohen, and Ruslan Salakhutdinov. Iterative Hierarchical Attention for Answering Complex Questions over Long Documents.",
+            "Cognitive Graph for Multi-Hop Reading Comprehension at Scale",
+            "Breadth First Reasoning Graph for Multi-hop Question Answering",
+            "Commonsense for Generative Multi-Hop Question Answering Tasks",
+            "Generating followup questions for interpretable multi-hop question answering",
+            "Unsupervised Alignment-based Iterative Evidence Retrieval for Multi-hop Question Answering",
+            "Answering Any-hop Open-domain Questions with Iterative Document Reranking",
+            "Answering Complex Open-domain Questions Through Iterative Query Generation"
+          ],
+          "4. Overview of Methods 4.4. Auxiliary Tasks": [
+            "Learning phrase representations using RNN encoder-decoder for statistical machine translation",
+            "What\u2019s Missing: A Knowledge Gap Guided Approach for Multi-hop Question Answering",
+            "HotpotQA: A Dataset for Diverse, Explainable Multi-hop Question Answering",
+            "Multi-hop question answering via reasoning chains",
+            "Machine comprehension using match-lstm and answer pointer",
+            "Learning to recover reasoning chains for multi-hop question answering via cooperative games",
+            "Learning to Explain: Datasets and Models for Identifying Valid Reasoning Chains in Multihop Question-Answering"
+          ],
+          "5. Proposed Taxonomy": [
+            "Can a Suit of Armor Conduct Electricity? A New Dataset for Open Book Question Answering",
+            "Qasc: A dataset for question answering via sentence composition",
+            "Interpretation of Natural Language Rules in Conversational Machine Reading",
+            "HybridQA: A Dataset of Multi-Hop Question Answering over Tabular and Textual Data",
+            "Bidirectional Attention Flow for Machine Comprehension",
+            "Looking beyond the surface: A challenge set for reading comprehension over multiple sentences",
+            "A Dataset of Information-Seeking Questions and Answers Anchored in Research Papers",
+            "The narrativeqa reading comprehension challenge",
+            "Haitian Sun, William W Cohen, and Ruslan Salakhutdinov. Iterative Hierarchical Attention for Answering Complex Questions over Long Documents.",
+            "HotpotQA: A Dataset for Diverse, Explainable Multi-hop Question Answering",
+            "Think you have solved question answering? try arc, the ai2 reasoning challenge.",
+            "Constructing datasets for multi-hop reading comprehension across documents"
+          ],
+          "6. Evaluation Techniques 6.1. Evaluation Metrics": [
+            "ROUGE: A Package for Automatic Evaluation of Summaries",
+            "Cider: consensus-based image description evaluation",
+            "Looking beyond the surface: A challenge set for reading comprehension over multiple sentences",
+            "Dynamically Fused Graph Network for Multi-hop Reasoning",
+            "The narrativeqa reading comprehension challenge",
+            "Multi-paragraph reasoning with knowledge-enhanced graph neural network",
+            "Combining Lexical and Dense Retrieval for Computationally Efficient Multi-hop Question Answering",
+            "Cumulated Gain-Based Evaluation of IR Techniques",
+            "HotpotQA: A Dataset for Diverse, Explainable Multi-hop Question Answering",
+            "Knowledge Base Completion: Baselines Strike Back",
+            "Area under the ROC Curve",
+            "Commonsense for Generative Multi-Hop Question Answering Tasks",
+            "Mean average precision",
+            "Learning to Explain: Datasets and Models for Identifying Valid Reasoning Chains in Multihop Question-Answering",
+            "Multi-hop Inference for Sentence-level TextGraphs: How Challenging is Meaningfully Combining Information for Science Question Answering?",
+            "Multi-step entity-centric information retrieval for multi-hop question answering",
+            "Bleu: a method for automatic evaluation of machine translation",
+            "Do Multi-Hop Question Answering Systems Know How to Answer the Single-Hop Sub-Questions?"
+          ],
+          "6. Evaluation Techniques 6.2. Adversarial evaluation": [
+            "HotpotQA: A Dataset for Diverse, Explainable Multi-hop Question Answering",
+            "Select, answer and explain: Interpretable multi-hop reading comprehension over multiple documents",
+            "Multi-hop Reading Comprehension through Question Decomposition and Rescoring"
+          ],
+          "6. Evaluation Techniques 6.3. Verifying the extent of multi-hop reasoning": [
+            "R4C: A Benchmark for Evaluating RC Systems to Get the Right Answer for the Right Reason",
+            "Is Multihop QA in DiRe Condition? Measuring and Reducing Disconnected Reasoning",
+            "Cognitive Graph for Multi-Hop Reading Comprehension at Scale",
+            "Learning to Explain: Datasets and Models for Identifying Valid Reasoning Chains in Multihop Question-Answering",
+            "Do Multi-Hop Question Answering Systems Know How to Answer the Single-Hop Sub-Questions?",
+            "Do Multi-hop Readers Dream of Reasoning Chains?",
+            "Multi-hop Reading Comprehension through Question Decomposition and Rescoring"
+          ],
+          "7. Multi-Hop Question Generation": [
+            "Teaching Machines to Ask Questions",
+            "Question Answering and Question Generation as Dual Tasks",
+            "Generating Natural Language Questions to Support Learning On-Line",
+            "Learning to Ask: Neural Question Generation for Reading Comprehension"
+          ],
+          "7. Multi-Hop Question Generation 7.1. Datasets": [
+            "Low-Resource Generation of Multi-hop Reasoning Questions",
+            "Multi-hop Question Generation with Graph Convolutional Network",
+            "The Web as a Knowledge-Base for Answering Complex Questions",
+            "DROP: A Reading Comprehension Benchmark Requiring Discrete Reasoning Over Paragraphs",
+            "Difficulty-controllable multi-hop question generation from knowledge graphs",
+            "Multi-hop Reading Comprehension through Question Decomposition and Rescoring"
+          ],
+          "7. Multi-Hop Question Generation 7.2. Evaluation": [
+            "Difficulty-controllable multi-hop question generation from knowledge graphs",
+            "Google\u2019s Neural Machine Translation System: Bridging the Gap between Human and Machine Translation",
+            "Towards a Better Metric for Evaluating Question Generation Systems",
+            "Stronger Transformers for Neural Multi-Hop Question Generation"
+          ],
+          "7. Multi-Hop Question Generation 7.3. Methods": [
+            "Difficulty Controllable Question Generation for Reading Comprehension",
+            "Reinforced Multi-task Approach for Multi-hop Question Generation",
+            "Paragraph-level Neural Question Generation with Maxout Pointer and Gated Self-attention Networks",
+            "Simple Statistical Gradient-Following Algorithms for Connectionist Reinforcement Learning",
+            "Effective Approaches to Attention-based Neural Machine Translation",
+            "Incorporating Copying Mechanism in Sequence-to-Sequence Learning",
+            "Multi-hop Question Generation with Graph Convolutional Network",
+            "Get To The Point: Summarization with Pointer-Generator Networks",
+            "BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension",
+            "Recurrent Hidden Semi-Markov Model",
+            "Generating Natural Language Questions to Support Learning On-Line",
+            "Low-Resource Generation of Multi-hop Reasoning Questions",
+            "Adversarial Learning for Neural Dialogue Generation",
+            "Transforming Question Answering Datasets Into Natural Language Inference Datasets",
+            "Difficulty-controllable multi-hop question generation from knowledge graphs",
+            "Self-Critical Sequence Training for Image Captioning",
+            "Dynamically Fused Graph Network for Multi-hop Reasoning",
+            "Using Local Knowledge Graph Construction to Scale Seq2Seq Models to Multi-Document Inputs",
+            "Logical Natural Language Generation from Open-Domain Tables",
+            "Unsupervised Multi-hop Question Answering by Question Generation",
+            "Sentence Simplification with Deep Reinforcement Learning",
+            "Stronger Transformers for Neural Multi-Hop Question Generation",
+            "Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer"
+          ],
+          "8. Conclusions and Future Work": [
+            "Cognitive Graph for Multi-Hop Reading Comprehension at Scale"
+          ],
+          "8. Conclusions and Future Work 8.3. Better datasets": [
+            "Compositional Questions Do Not Necessitate Multi-hop Reasoning",
+            "Simple yet Effective Bridge Reasoning for Open-Domain Multi-Hop Question Answering",
+            "Hierarchical Graph Network for Multi-hop Question Answering",
+            "HotpotQA: A Dataset for Diverse, Explainable Multi-hop Question Answering",
+            "Understanding Dataset Design Choices for Multi-hop Reasoning",
+            "Coarse and Fine Granularity Graph Reasoning for Interpretable Multi-Hop Question Answering",
+            "Constructing datasets for multi-hop reading comprehension across documents",
+            "Multi-step entity-centric information retrieval for multi-hop question answering",
+            "Multi-hop Reading Comprehension through Question Decomposition and Rescoring"
+          ],
+          "8. Conclusions and Future Work 8.4. Better evaluation metrics": [
+            "From word embeddings to document distances",
+            "WordNet: A Lexical Database for English",
+            "Question Answering by Reasoning Across Documents with Graph Convolutional Networks",
+            "Hierarchical Graph Network for Multi-hop Question Answering",
+            "Sentence mover\u2019s similarity: Automatic evaluation for multi-sentence texts"
+          ],
+          "8. Conclusions and Future Work 8.5. Methods to incorporate commonsense": [
+            "Commonsense for Generative Multi-Hop Question Answering Tasks",
+            "Hierarchical Graph Network for Multi-hop Question Answering"
+          ],
+          "8. Conclusions and Future Work 8.6. Arithmetic questions": [
+            "Improving question answering for event-focused questions in temporal collections of news articles",
+            "Compositional Questions Do Not Necessitate Multi-hop Reasoning",
+            "Dynamically Fused Graph Network for Multi-hop Reasoning",
+            "Are NLP Models really able to Solve Simple Math Word Problems?",
+            "Cognitive Graph for Multi-Hop Reading Comprehension at Scale",
+            "Event Occurrence Date Estimation based on Multivariate Time Series Analysis over Temporal Document Collections",
+            "Answering Any-hop Open-domain Questions with Iterative Document Reranking"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.000425182020990178,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Knowledge of Knowledge: Exploring Known-Unknowns Uncertainty with Large Language Models",
+        "arxiv_id": "2305.13712",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract This paper investigates the capabilities of Large Language Models (LLMs) in the context of understanding their own knowledge and measuring their uncertainty. We argue this is an important feature for mitigating hallucinations. Specifically, we focus on addressing known-unknown questions, characterized by high uncertainty due to the absence of definitive answers. To facilitate our study, we collect a dataset with new Known-Unknown Questions (KUQ) and propose a novel categorization scheme to elucidate the sources of uncertainty. Subsequently, we assess the LLMs\u2019 ability to differentiate between known and unknown questions and classify them accordingly. Moreover, we evaluate the quality of their answers in an Open-Ended QA setting. To quantify the uncertainty expressed in the answers, we create a semantic evaluation method that measures the model\u2019s accuracy in expressing uncertainty between known vs unknown questions. ",
+        "sections": {
+          "1 Introduction": [
+            "Language models (mostly) know what they know",
+            "Using deepspeed and megatron to train megatron-turing nlg 530b, a large-scale generative language model.",
+            "Evaluating large language models trained on code",
+            "Navigating the grey area: Expressions of overconfidence and uncertainty in language models",
+            "Language models are few-shot learners",
+            "How can we know what language models know?",
+            "Bert: Pre-training of deep bidirectional transformers for language understanding",
+            "Deep contextualized word representations",
+            "Chain of thought prompting elicits reasoning in large language models"
+          ],
+          "2 Related Work Understanding Large Language Models.": [
+            "Benchmarking large language models for news summarization",
+            "Large language models still can\u2019t plan (a benchmark for llms on planning and reasoning about change)",
+            "Beyond the imitation game: Quantifying and extrapolating the capabilities of language models."
+          ],
+          "2 Related Work Text Uncertainty.": [
+            "The conll-2010 shared task: learning to detect hedges and their scope in natural language text",
+            "Teaching models to express their uncertainty in words",
+            "Semantic uncertainty: Linguistic invariances for uncertainty estimation in natural language generation",
+            "Cross-genre and cross-domain detection of semantic uncertainty",
+            "Navigating the grey area: Expressions of overconfidence and uncertainty in language models",
+            "Measuring sentence-level and aspect-level (un) certainty in science communications"
+          ],
+          "2 Related Work Uncertainty in Language Models.": [
+            "Uncertainty quantification with pre-trained language models: A large-scale empirical analysis",
+            "On hallucination and predictive uncertainty in conditional language generation"
+          ],
+          "2 Related Work Investigating what Language Models know.": [
+            "What should you know? a human-in-the-loop approach to unknown unknowns characterization in image recognition",
+            "How can we know what language models know?",
+            "Language models (mostly) know what they know"
+          ],
+          "2 Related Work Similar data.": [
+            "Know what you don't know: Unanswerable questions for squad",
+            "Beyond the imitation game: Quantifying and extrapolating the capabilities of language models."
+          ],
+          "3 Data collection": [
+            "Beyond the imitation game: Quantifying and extrapolating the capabilities of language models."
+          ],
+          "3 Data collection 3.1 Data sources": [
+            "Improvements to bm25 and language models examined",
+            "Gpt-4 technical report",
+            "Eli5: Long form question answering",
+            "Sentence-bert: Sentence embeddings using siamese bert-networks"
+          ],
+          "4 Tasks 4.2 Multi-class Classification: Exploring the unknown": [
+            "Controversialqa: Exploring controversy in question answering",
+            "Question answering with questionable assumptions"
+          ],
+          "4 Tasks 4.3 Open Domain Question-Answering: Generative text Generation": [
+            "Survey of hallucination in natural language generation",
+            "Eli5: Long form question answering"
+          ],
+          "5 Experimental Results": [
+            "Llama: Open and efficient foundation language models",
+            "Stanford alpaca: An instruction-following llama model"
+          ],
+          "5 Experimental Results 5.1 Known vs Unknown: What\u2019s known?": [
+            "Measuring and narrowing the compositionality gap in language models",
+            "Generalizing from a few examples: A survey on few-shot learning",
+            "A survey of zero-shot learning: Settings, methods, and applications"
+          ],
+          "5 Experimental Results 5.4 Evaluating the model answer Uncertainty": [
+            "Measuring sentence-level and aspect-level (un) certainty in science communications",
+            "Communicating the uncertainty of harms and benefits of medical interventions",
+            "Uncertainty about probability: a reconciliation with the subjectivist viewpoint"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.0021174801513552666,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "EfficientRAG: Efficient Retriever for Multi-Hop Question Answering",
+        "arxiv_id": "2408.04259",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract Retrieval-augmented generation (RAG) methods encounter difficulties when addressing complex questions like multi-hop queries. While iterative retrieval methods improve performance by gathering additional information, current approaches often rely on multiple calls of large language models (LLMs). In this paper, we introduce EfficientRAG, an efficient retriever for multi-hop question answering. EfficientRAG iteratively generates new queries without the need for LLM calls at each iteration and filters out irrelevant information. Experimental results demonstrate that EfficientRAG surpasses existing RAG methods on three open-domain multi-hop question-answering datasets.",
+        "sections": {
+          "1 Introduction": [
+            "Siren\u2019s song in the AI ocean: A survey on hallucination in large language models",
+            "Measuring and narrowing the compositionality gap in language models",
+            "Demonstrate-search-predict: Composing retrieval and language models for knowledge-intensive NLP",
+            "Mirror: A universal framework for various information extraction tasks",
+            "Interleaving retrieval with chain-of-thought reasoning for knowledge-intensive multi-step questions",
+            "Retrieval augmented language model pre-training",
+            "FEVER: a large-scale dataset for fact extraction and verification",
+            "Hotpotqa: A dataset for diverse, explainable multi-hop question answering",
+            "Retrieval-augmented generation for knowledge-intensive NLP tasks",
+            "GPT-4 technical report"
+          ],
+          "2 Empirical Study 2.1 Capability of LLM generator": [
+            "Constructing a multi-hop QA dataset for comprehensive evaluation of reasoning steps",
+            "HotpotQA: A dataset for diverse, explainable multi-hop question answering",
+            "Llama: Open and efficient foundation language models",
+            "MuSiQue: Multihop questions via single-hop question composition",
+            "Introducing chatgpt",
+            "GPT-4 technical report"
+          ],
+          "2 Empirical Study 2.2 Retrieve with Query Decomposition": [
+            "Retrieval-augmented generation for large language models: A survey",
+            "Unsupervised dense information retrieval with contrastive learning"
+          ],
+          "3 Methodology 3.2 Synthetic Data Construction": [
+            "Llmlingua-2: Data distillation for efficient and faithful task-agnostic prompt compression"
+          ],
+          "4 Experiments 4.1 End2end QA performance": [
+            "Deberta: decoding-enhanced bert with disentangled attention",
+            "Measuring and narrowing the compositionality gap in language models",
+            "Enhancing retrieval-augmented large language models with iterative retrieval-generation synergy",
+            "Unsupervised dense information retrieval with contrastive learning",
+            "Llama: Open and efficient foundation language models",
+            "Decoupled weight decay regularization"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.14942771196365356,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "MRKE: The Multi-hop Reasoning Evaluation of LLMs by Knowledge Edition",
+        "arxiv_id": "2402.11924",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Although Large Language Models (LLMs) have shown strong performance in Multi-hop Question Answering (MHQA) tasks, their real reasoning ability remains exploration. Current LLM QA evaluation benchmarks have shown limitations, including 1) data contamination, the evaluation data are potentially exposed to LLMs during the pretraining stage; and 2) ignoration of the reasoning chain evaluation. Thus we introduce an LLM MHQA evaluation benchmark, the first QA benchmark based on the new, unprecedented knowledge by editing the off-the-shelf HotpotQA dataset; Besides, we also annotate and evaluate the reasoning chain in the form of sub-questions and intermediate answers corresponding to the multi-hop questions. Specifically, based on the observation, 1) LLMs show a performance gap between the original HotpotQA and our edited data, deeming that current MHQA benchmarks have the potential risk of data contamination that hard to evaluate LLMs\u2019 performance objectively and scientifically; 2) LLMs only get a small percentage of the right reasoning chain, e.g. GPT-4 only gets 36.3% right reasoning chain. We believe this new Multi-hop QA evaluation benchmark and novel evaluation methods will facilitate the development of trustworthy LLM evaluation on the MHQA task. ",
+        "sections": {
+          "1 Introduction": [
+            "Retrieval-augmented generation for large language models: A survey",
+            "HotpotQA: A dataset for diverse, explainable multi-hop question answering",
+            "A survey of large language models",
+            "Longbench: A bilingual, multitask benchmark for long context understanding",
+            "Constructing a multi-hop QA dataset for comprehensive evaluation of reasoning steps",
+            "Evaluating open-qa evaluation",
+            "MuSiQue: Multihop questions via single-hop question composition"
+          ],
+          "2 Related Work": [
+            "Pokemqa: Programmable knowledge editing for multi-hop question answering",
+            "HotpotQA: A dataset for diverse, explainable multi-hop question answering",
+            "Do multi-hop question answering systems know how to answer the single-hop sub-questions?",
+            "Multihop-rag: Benchmarking retrieval-augmented generation for multi-hop queries",
+            "Baleen: Robust multi-hop reasoning at scale via condensed retrieval",
+            "Improving language models by retrieving from trillions of tokens",
+            "Mquake: Assessing knowledge editing in language models via multi-hop questions",
+            "Cognitive graph for multi-hop reading comprehension at scale",
+            "Locating and editing factual associations in gpt",
+            "Drop: A reading comprehension benchmark requiring discrete reasoning over paragraphs",
+            "Dynamically fused graph network for multi-hop reasoning",
+            "Can we edit factual knowledge by in-context learning?",
+            "Enabling large language models to generate text with citations",
+            "Multi-hop reading comprehension through question decomposition and rescoring",
+            "Detecting pretraining data from large language models"
+          ],
+          "3 Proposed Benchmark and Evaluation method 3.1 Data Construction": [
+            "Mquake: Assessing knowledge editing in language models via multi-hop questions",
+            "HotpotQA: A dataset for diverse, explainable multi-hop question answering",
+            "Models in the loop: Aiding crowdworkers with generative annotation assistants"
+          ],
+          "3 Proposed Benchmark and Evaluation method 3.3 Dataset Analysis and Statistics": [
+            "HotpotQA: A dataset for diverse, explainable multi-hop question answering",
+            "Constructing a multi-hop QA dataset for comprehensive evaluation of reasoning steps"
+          ],
+          "3 Proposed Benchmark and Evaluation method 3.4 Multi-hop QA Evaluation": [
+            "Do multi-hop question answering systems know how to answer the single-hop sub-questions?",
+            "Squad: 100,000+ questions for machine comprehension of text"
+          ],
+          "4 Experiments 4.1 Experiment Setup": [
+            "Gpt-4 technical report",
+            "Training language models to follow instructions with human feedback",
+            "Gemini: a family of highly capable multimodal models"
+          ],
+          "4 Experiments 4.2 Analysis": [
+            "Do multi-hop question answering systems know how to answer the single-hop sub-questions?"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.8562789559364319,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "RAFT: Adapting Language Model to Domain Specific RAG",
+        "arxiv_id": "2403.10131",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Pretraining Large Language Models (LLMs) on large corpora of textual data is now a standard paradigm. When using these LLMs for many downstream applications, it is common to additionally bake in new knowledge (e.g., time-critical news, or private domain knowledge) into the pretrained model either through RAG-based-prompting, or finetuning. However, the optimal methodology for the model to gain such new knowledge remains an open question. In this paper, we present Retrieval Augmented Fine Tuning (RAFT), a training recipe that improves the model\u2019s ability to answer questions in an \"open-book\" in-domain setting. In RAFT, given a question, and a set of retrieved documents, we train the model to ignore those documents that don\u2019t help in answering the question, which we call, distractor documents. RAFT accomplishes this by citing verbatim the right sequence from the relevant document that would help answer the question. This coupled with RAFT\u2019s chain-of-thought-style response helps improve the model\u2019s ability to reason. In domain specific RAG, RAFT consistently improves the model\u2019s performance across PubMed, HotpotQA, and Gorilla datasets, presenting a post-training recipe to improve pre-trained LLMs to in-domain RAG. RAFT\u2019s code and demo are open-sourced at https://github.com/ShishirPatil/gorilla  Figure 1: How best to prepare for an Exam?(a) Fine-tuning based approaches implement \"studying\" by either directly \"memorizing\" the input documents or answering practice QA without referencing the documents. (b) Alternatively, in-context retrieval methods fail to leverage the learning opportunity afforded by the fixed domain and are equivalent to taking an open-book exam without studying. While these approaches leverage in-domain learning, they fail to prepare for open-book tests. In contrast, our approach (c) RAFT leverages fine-tuning with question-answer pairs while referencing the documents in a simulated imperfect retrieval setting \u2014 thereby effectively preparing for the open-book exam setting.   ",
+        "sections": {},
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.9971519708633423,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Retrieval-Augmented Generation for Large Language Models: A Survey",
+        "arxiv_id": "2312.10997",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Large Language Models (LLMs) demonstrate significant capabilities but face challenges such as hallucination, outdated knowledge, and non-transparent, untraceable reasoning processes. Retrieval-Augmented Generation (RAG) has emerged as a promising solution by incorporating knowledge from external databases. This enhances the accuracy and credibility of the models, particularly for knowledge-intensive tasks, and allows for continuous knowledge updates and integration of domain-specific information. RAG synergistically merges LLMs\u2019 intrinsic knowledge with the vast, dynamic repositories of external databases. This comprehensive review paper offers a detailed examination of the progression of RAG paradigms, encompassing the Naive RAG, the Advanced RAG, and the Modular RAG. It meticulously scrutinizes the tripartite foundation of RAG frameworks, which includes the retrieval , the generation and the augmentation techniques. The paper highlights the state-of-the-art technologies embedded in each of these critical components, providing a profound understanding of the advancements in RAG systems. Furthermore, this paper introduces the metrics and benchmarks for assessing RAG models, along with the most up-to-date evaluation framework. In conclusion, the paper delineates prospective avenues for research, including the identification of challenges, the expansion of multi-modalities, and the progression of the RAG infrastructure and its ecosystem.\u00a0222Resources are available at https://github.com/Tongji-KGLLM/RAG-Survey . ",
+        "sections": {},
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.0004277165571693331,
+        "extra": {
+          "expand": "not expand"
+        }
+      }
+    ]
+  },
+  "abstract": "",
+  "sections": "",
+  "source": "Root",
+  "select_score": 0.0,
+  "extra": {
+    "touch_ids": [
+      "2403.19216",
+      "2402.11166",
+      "2404.09129",
+      "2204.09140",
+      "2310.19736",
+      "2406.13397",
+      "2305.13712",
+      "2402.02420",
+      "2408.03562",
+      "2402.06196",
+      "2408.04259",
+      "2406.00936",
+      "2402.11924",
+      "2409.12941",
+      "2403.10131",
+      "2402.12914",
+      "2307.16877",
+      "2406.10099",
+      "2312.10997"
+    ],
+    "crawler_recall_papers": [
+      "Evaluating Large Language Models: A Comprehensive Survey",
+      "A Comparison of LLM Finetuning Methods & Evaluation Metrics with Travel Chatbot Use Case",
+      "Fact, Fetch, and Reason: A Unified Evaluation of Retrieval-Augmented Generation",
+      "Large Language Model-based Human-Agent Collaboration for Complex Task Solving",
+      "Know the Unknown: An Uncertainty-Sensitive Method for LLM Instruction Tuning",
+      "When Hindsight is Not 20/20: Testing Limits on Reflective Thinking in Large Language Models",
+      "MoreHopQA: More Than Multi-hop Reasoning",
+      "Factuality of Large Language Models in the Year 2024",
+      "Large Language Models: A Survey",
+      "A Survey of Useful LLM Evaluation",
+      "Evaluating evaluation metrics for intruction-tuned open-domain question answering",
+      "Are Large Language Models Good at Utility Judgments?",
+      "GenDec: A robust generative Question-decomposition method for Multi-hop reasoning",
+      "A Survey on Multi-hop Question Answering and Generation",
+      "Knowledge of Knowledge: Exploring Known-Unknowns Uncertainty with Large Language Models",
+      "EfficientRAG: Efficient Retriever for Multi-Hop Question Answering",
+      "MRKE: The Multi-hop Reasoning Evaluation of LLMs by Knowledge Edition",
+      "RAFT: Adapting Language Model to Domain Specific RAG",
+      "Retrieval-Augmented Generation for Large Language Models: A Survey"
+    ],
+    "recall_papers": [
+      "When Hindsight is Not 20/20: Testing Limits on Reflective Thinking in Large Language Models",
+      "MoreHopQA: More Than Multi-hop Reasoning",
+      "GenDec: A robust generative Question-decomposition method for Multi-hop reasoning",
+      "MRKE: The Multi-hop Reasoning Evaluation of LLMs by Knowledge Edition",
+      "RAFT: Adapting Language Model to Domain Specific RAG"
+    ],
+    "answer": [
+      "AutoPlan: Automatic Planning of Interactive Decision-Making Tasks With   Large Language Models",
+      "GenDec: A robust generative Question-decomposition method for Multi-hop   reasoning",
+      "Dr3: Ask Large Language Models Not to Give Off-Topic Answers in Open   Domain Multi-Hop Question Answering",
+      "ReAct: Synergizing Reasoning and Acting in Language Models",
+      "LongRAG: Enhancing Retrieval-Augmented Generation with Long-context LLMs",
+      "FireAct: Toward Language Agent Fine-tuning",
+      "MRKE: The Multi-hop Reasoning Evaluation of LLMs by Knowledge Edition",
+      "When Hindsight is Not 20/20: Testing Limits on Reflective Thinking in Large Language Models",
+      "GenSco: Can Question Decomposition based Passage Alignment improve Question Answering?",
+      "Interleaving Retrieval with Chain-of-Thought Reasoning for   Knowledge-Intensive Multi-Step Questions",
+      "IM-RAG: Multi-Round Retrieval-Augmented Generation Through Learning Inner Monologues",
+      "RAFT: Adapting Language Model to Domain Specific RAG",
+      "Recitation-Augmented Language Models",
+      "Retrieve, Summarize, Plan: Advancing Multi-hop Question Answering with an Iterative Approach",
+      "Learning to Decompose: Hypothetical Question Decomposition Based on   Comparable Texts",
+      "Language Agent Tree Search Unifies Reasoning Acting and Planning in   Language Models",
+      "ReWOO: Decoupling Reasoning from Observations for Efficient Augmented Language Models",
+      "Prompting Explicit and Implicit Knowledge for Multi-hop Question\n  Answering Based on Human Reading Process",
+      "Chain-of-Skills: A Configurable Model for Open-domain Question Answering",
+      "HOLMES: Hyper-Relational Knowledge Graphs for Multi-hop Question Answering using LLMs",
+      "Can Small Language Models Help Large Language Models Reason Better?: LM-Guided Chain-of-Thought",
+      "Few-shot reranking for multi-hop qa via language model prompting",
+      "Chatcot: Tool-augmented chain-of-thought reasoning on chat-based large language models",
+      "Answering questions by meta-reasoning over multiple chains of thought"
+    ]
+  }
+}

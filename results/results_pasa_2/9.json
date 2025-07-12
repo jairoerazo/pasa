@@ -1,0 +1,2301 @@
+{
+  "title": "Give me papers about how to rank search results by the use of LLM.",
+  "arxiv_id": "",
+  "depth": -1,
+  "child": {
+    "Application of LLM in search result ranking": [
+      {
+        "title": "Large Language Models for Relevance Judgment in Product Search",
+        "arxiv_id": "2406.00247",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract. High relevance of retrieved and re-ranked items to the search query is the cornerstone of successful product search, yet measuring relevance of items to queries is one of the most challenging tasks in product information retrieval, and quality of product search is highly influenced by the precision and scale of available relevance-labelled data. In this paper, we present an array of techniques for leveraging Large Language Models (LLMs) for automating the relevance judgment of query-item pairs (QIPs) at scale. Using a unique dataset of multi-million QIPs, annotated by human evaluators, we test and optimize hyper parameters for finetuning billion-parameter LLMs with and without Low Rank Adaption (LoRA), as well as various modes of item attribute concatenation and prompting in LLM finetuning, and consider trade offs in item attribute inclusion for quality of relevance predictions. We demonstrate considerable improvement over baselines of prior generations of LLMs, as well as off-the-shelf models, towards relevance annotations on par with the human relevance evaluators. Our findings have immediate implications for the growing field of relevance judgment automation in product search.",
+        "sections": {
+          "1. Introduction": [
+            "Perspectives on Large Language Models for Relevance Judgment",
+            "LoRA: Low-Rank Adaptation of Large Language Models",
+            "Do LLMs Understand User Preferences? Evaluating LLMs On User Rating Prediction",
+            "Shopping Queries Dataset: A Large-Scale ESCI Benchmark for Improving Product Search",
+            "Scaling Instruction-Finetuned Language Models"
+          ],
+          "2. Related Work": [
+            "An Introduction to Neural Information Retrieval",
+            "Perspectives on Large Language Models for Relevance Judgment",
+            "Shopping Queries Dataset: A Large-Scale ESCI Benchmark for Improving Product Search",
+            "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+            "Attention is All you Need",
+            "Large language models can accurately predict searcher preferences."
+          ],
+          "2. Related Work 2.1. Crowd Sourcing": [
+            "Can we get rid of TREC assessors? Using Mechanical Turk for relevance assessment",
+            "Crowdsourcing Relevance Assessments: The Unexpected Benefits of Limiting the Time to Judge"
+          ],
+          "2. Related Work 2.2. Query-Product Classification": [
+            "Que2search: Fast and accurate query and document understanding for search at facebook",
+            "Perspectives on Large Language Models for Relevance Judgment",
+            "Learning deep structured semantic models for web search using clickthrough data",
+            "Shopping Queries Dataset: A Large-Scale ESCI Benchmark for Improving Product Search",
+            "Embedding-based product retrieval in taobao search",
+            "A unified neural network approach to e-commerce relevance learning",
+            "Beyond Two-Tower: Attribute Guided Representation Learning for Candidate Retrieval"
+          ],
+          "2. Related Work 2.3. LLM Use in Product Search": [
+            "Towards personalized and semantic retrieval: An end-to-end solution for e-commerce search via embedding learning",
+            "Overview of the TREC 2023 Product Product Search Track",
+            "Do LLMs Understand User Preferences? Evaluating LLMs On User Rating Prediction",
+            "Passage Re-ranking with BERT",
+            "Improving bert fine-tuning via self-ensemble and self-distillation",
+            "Ernie-search: Bridging cross-encoder with dual-encoder via self on-the-fly distillation for dense passage retrieval.",
+            "Semantic retrieval at walmart"
+          ],
+          "3. Methodology 3.1. Data": [
+            "Exploring the Viability of Synthetic Query Generation for Relevance Prediction",
+            "Pre-training with Aspect-Content Text Mutual Prediction for Multi-Aspect Dense Retrieval"
+          ],
+          "3. Methodology 3.2. Relevance Models": [
+            "PEFT: State-of-the-art Parameter-Efficient Fine-Tuning methods",
+            "Sparse, Dense, and Attentional Representations for Text Retrieval",
+            "LoRA: Low-Rank Adaptation of Large Language Models",
+            "DeBERTaV3: Improving DeBERTa using ELECTRA-Style Pre-Training with Gradient-Disentangled Embedding Sharing",
+            "PyTorch Lightning",
+            "Improving BERTbased query-by-document retrieval with multi-task optimization",
+            "Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks",
+            "LLaMA: Open and Efficient Foundation Language Models",
+            "Mistral 7B",
+            "PyTorch: An Imperative Style, High-Performance Deep Learning Library",
+            "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+            "Dropout: a simple way to prevent neural networks from overfitting",
+            "Adam: A method for stochastic optimization",
+            "HuggingFace\u2019s Transformers: State-of-the-art Natural Language Processing"
+          ],
+          "5. Relevance Models for Feature Evaluation 5.1. LLMs\u2019 Relevance Judgment is Comparable to That of Human Evaluators\u2019": [
+            "Cumulated gain-based evaluation of IR techniques"
+          ],
+          "7. Conclusion & Future Directions": [
+            "Self-Rewarding Language Models"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.7125166058540344,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Large Language Models for Information Retrieval: A Survey",
+        "arxiv_id": "2308.07107",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract As a primary means of information acquisition, information retrieval (IR) systems, such as search engines, have integrated themselves into our daily lives. These systems also serve as components of dialogue, question-answering, and recommender systems. The trajectory of IR has evolved dynamically from its origins in term-based methods to its integration with advanced neural models. While the neural models excel at capturing complex contextual signals and semantic nuances, thereby reshaping the IR landscape, they still face challenges such as data scarcity, interpretability, and the generation of contextually plausible yet potentially inaccurate responses. This evolution requires a combination of both traditional methods (such as term-based sparse retrieval methods with rapid response) and modern neural architectures (such as language models with powerful language understanding capacity). Meanwhile, the emergence of large language models (LLMs), typified by ChatGPT and GPT-4, has revolutionized natural language processing due to their remarkable language understanding, generation, generalization, and reasoning abilities. Consequently, recent research has sought to leverage LLMs to improve IR systems. Given the rapid evolution of this research trajectory, it is necessary to consolidate existing methodologies and provide nuanced insights through a comprehensive overview. In this survey, we delve into the confluence of LLMs and IR systems, including crucial aspects such as query rewriters, retrievers, rerankers, and readers. Additionally, we explore promising directions, such as search agents, within this expanding field. ",
+        "sections": {
+          "1 Introduction": [
+            "The use of mmr, diversity-based reranking for reordering documents and producing summaries",
+            "A general language model for information retrieval",
+            "Recommendation as instruction following: A large language model empowered recommendation approach",
+            "Information retrieval meets large language models: A strategic report from chinese IR community",
+            "Sequential matching network: A new architecture for multi-turn response selection in retrieval-based chatbots",
+            "Personalizing search via automated analysis of interests and activities",
+            "Dense passage retrieval for open-domain question answering",
+            "Introduction to Modern Information Retrieval",
+            "Borgeaud, A",
+            "Empowering molecule discovery for molecule-caption translation with large language models: A chatgpt perspective",
+            "B",
+            "A vector space model for automatic indexing",
+            "A survey of large language models",
+            "A deep relevance matching model for ad-hoc retrieval",
+            "Chain-of-thought prompting elicits reasoning in large language models",
+            "From eliza to xiaoice: challenges and opportunities with social chatbots",
+            "Language models are unsupervised multitask learners",
+            "Query reformulation for dynamic information integration",
+            "Training language models to follow instructions with human feedback",
+            "Emergent abilities of large language models",
+            "Okapi at TREC-3",
+            "Image retrieval: Ideas, influences, and trends of the new age",
+            "Pre-train, prompt, and predict: A systematic survey of prompting methods in natural language processing",
+            "Bloomberggpt: A large language model for finance",
+            "Multi-stage document ranking with BERT"
+          ],
+          "2 Background 2.1 Information Retrieval": [
+            "Webgpt: Browser-assisted question-answering with human feedback",
+            "A deep relevance matching model for ad-hoc retrieval",
+            "Introduction to Modern Information Retrieval",
+            "Okapi at TREC-3",
+            "A general language model for information retrieval",
+            "A vector space model for automatic indexing"
+          ],
+          "2 Background 2.2 Large Language Models": [
+            "BERT: pre-training of deep bidirectional transformers for language understanding",
+            "BART: denoising sequence-to-sequence pre-training for natural language generation, translation, and comprehension",
+            "A survey of large language models",
+            "Scaling laws for neural language models",
+            "OPT: open pre-trained transformer language models",
+            "Emergent abilities of large language models",
+            "Training compute-optimal large language models",
+            "Language models are unsupervised multitask learners",
+            "Lora: Low-rank adaptation of large language models",
+            "L",
+            "Qlora: Efficient finetuning of quantized llms",
+            "Attention is all you need",
+            "Exploring the limits of transfer learning with a unified text-to-text transformer",
+            "B",
+            "Llama: Open and efficient foundation language models",
+            "Deep contextualized word representations"
+          ],
+          "3 Query Rewriter": [
+            "Umass at TREC 2004: Novelty and HARD",
+            "Query expansion with locally-trained word embeddings"
+          ],
+          "3 Query Rewriter 3.1 Rewriting Scenario": [
+            "Precise zero-shot dense retrieval without relevance labels",
+            "Enhancing conversational search: Large language model-aided informative query rewriting",
+            "Query2doc: Query expansion with large language models",
+            "Prompt-based effective input reformulation for legal case retrieval",
+            "CONVERSER: few-shot conversational dense retrieval with synthetic data generation",
+            "Large language models know your contextual search intent: A prompting framework for conversational search",
+            "GRM: generative relevance modeling using relevance-aware sample estimation for document retrieval",
+            "Query rewriting for retrieval-augmented large language models"
+          ],
+          "3 Query Rewriter 3.2 Rewriting Knowledge": [
+            "Precise zero-shot dense retrieval without relevance labels",
+            "Query2doc: Query expansion with large language models",
+            "Large language models are strong zero-shot retriever",
+            "Knowledge refinement via interaction between search engines and large language models",
+            "Generate, filter, and fuse: Query expansion via multi-step keyword generation for zero-shot neural rankers",
+            "Query expansion by prompting large language models",
+            "GRM: generative relevance modeling using relevance-aware sample estimation for document retrieval",
+            "Generative and pseudo-relevant feedback for sparse, dense and learned sparse retrieval",
+            "QUILL: query intent with large language models using retrieval augmentation and multi-stage distillation",
+            "Context aware query rewriting for text rankers using LLM",
+            "Query rewriting for retrieval-augmented large language models"
+          ],
+          "3 Query Rewriter 3.3 Rewriting Approaches": [
+            "GLM: general language model pretraining with autoregressive blank infilling",
+            "Query2doc: Query expansion with large language models",
+            "Chain-of-thought prompting elicits reasoning in large language models",
+            "Large language model based long-tail query rewriting in taobao search",
+            "Yang, B",
+            "Bai, S",
+            "Can generative llms create query variants for test collections? an exploratory study",
+            "Query expansion by prompting large language models",
+            "QUILL: query intent with large language models using retrieval augmentation and multi-stage distillation",
+            "ORCAS-I: queries annotated with intent using weak supervision",
+            "Natural questions: a benchmark for question answering research",
+            "Query rewriting for retrieval-augmented large language models",
+            "MS MARCO: A human generated machine reading comprehension dataset"
+          ],
+          "3 Query Rewriter 3.4 Limitations": [
+            "An interactive query generation assistant using llm-based prompt modification and user feedback",
+            "When do generative query and document expansions fail? A comprehensive study across methods, retrievers, and datasets"
+          ],
+          "4 Retriever": [
+            "Okapi at TREC-3",
+            "Approximate nearest neighbor negative contrastive learning for dense text retrieval",
+            "BERT: pre-training of deep bidirectional transformers for language understanding"
+          ],
+          "4 Retriever 4.1 Leveraging LLMs to Generate Search Data": [
+            "Soft prompt tuning for augmenting dense retrieval with large language models",
+            "Pre-training with large language model-based document expansion for dense passage retrieval",
+            "Leveraging llms for synthesizing training data across many languages in multilingual dense retrieval",
+            "Promptagator: Few-shot dense retrieval from 8 examples",
+            "UDAPDR: unsupervised domain adaptation via LLM prompting and distillation of rerankers",
+            "CONVERSER: few-shot conversational dense retrieval with synthetic data generation",
+            "Questions are all you need to train a dense passage retriever",
+            "Augtriever: Unsupervised dense retrieval by scalable data augmentation",
+            "MS MARCO: A human generated machine reading comprehension dataset",
+            "Inpars: Data augmentation for information retrieval using large language models",
+            "BEIR: A heterogeneous benchmark for zero-shot evaluation of information retrieval models",
+            "Inpars-v2: Large language models as efficient dataset generators for information retrieval"
+          ],
+          "4 Retriever 4.2 Employing LLMs to Enhance Model Architecture": [
+            "Unsupervised dense information retrieval with contrastive learning",
+            "Rethinking search: making domain experts out of dilettantes",
+            "Transformer memory as a differentiable search index",
+            "BERT: pre-training of deep bidirectional transformers for language understanding",
+            "Task-aware retrieval with instructions",
+            "Large language models are built-in autoregressive search engines",
+            "Fine-tuning llama for multi-stage text retrieval",
+            "Text and code embeddings by contrastive pre-training",
+            "BEIR: A heterogeneous benchmark for zero-shot evaluation of information retrieval models",
+            "Large dual encoders are generalizable retrievers",
+            "MS MARCO: A human generated machine reading comprehension dataset"
+          ],
+          "5 Reranker": [
+            "MS MARCO: A human generated machine reading comprehension dataset"
+          ],
+          "5 Reranker 5.1 Utilizing LLMs as Supervised Rerankers": [
+            "Text-to-text multi-view learning for passage re-ranking",
+            "BERT: pre-training of deep bidirectional transformers for language understanding",
+            "Document ranking with a pretrained sequence-to-sequence model",
+            "Rankinggpt: Empowering large language models in text ranking with progressive enhancement",
+            "Rank-without-gpt: Building gpt-independent listwise rerankers on open-source large language models",
+            "Rankt5: Fine-tuning T5 for text ranking with ranking losses",
+            "Fine-tuning llama for multi-stage text retrieval",
+            "The expando-mono-duo design pattern for text ranking with pretrained sequence-to-sequence models",
+            "Learning to rank using gradient descent",
+            "Multi-stage document ranking with BERT",
+            "MS MARCO: A human generated machine reading comprehension dataset"
+          ],
+          "5 Reranker 5.2 Utilizing LLMs as Unsupervised Rerankers": [
+            "Rankvicuna: Zero-shot listwise document reranking with open-source large language models",
+            "Multi-stage document ranking with BERT",
+            "Beyond yes and no: Improving zero-shot LLM rankers via scoring fine-grained relevance labels",
+            "Discrete prompt optimization via constrained generation for zero-shot re-ranker",
+            "Document ranking with a pretrained sequence-to-sequence model",
+            "Liang, R",
+            "Found in the middle: Permutation self-consistency improves listwise ranking in large language models",
+            "A setwise approach for effective and highly efficient zero-shot ranking with large language models",
+            "Large language models are effective text rankers with pairwise ranking prompting",
+            "Is chatgpt good at search? investigating large language models as re-ranking agents",
+            "PaRaDe: Passage ranking using demonstrations with LLMs",
+            "Open-source large language models are strong zero-shot query likelihood models for document ranking",
+            "Improving passage retrieval with zero-shot question generation"
+          ],
+          "5 Reranker 5.3 Utilizing LLMs for Training Data Augmentation": [
+            "Exaranker: Synthetic explanations improve neural rankers",
+            "Rankvicuna: Zero-shot listwise document reranking with open-source large language models",
+            "Rankzephyr: Effective and robust zero-shot listwise reranking is a breeze!",
+            "Inpars-light: Cost-effective unsupervised training of efficient rankers",
+            "Instruction distillation makes large language models efficient zero-shot rankers",
+            "Is chatgpt good at search? investigating large language models as re-ranking agents",
+            "Generating synthetic documents for cross-encoder re-rankers: A comparative study of chatgpt and human experts"
+          ],
+          "5 Reranker 5.4 Limitations": [
+            "Retrieval of the best counterargument without prior topic knowledge",
+            "BEIR: A heterogeneous benchmark for zero-shot evaluation of information retrieval models",
+            "MS MARCO: A human generated machine reading comprehension dataset"
+          ],
+          "6 Reader 6.1 Passive Reader": [
+            "Atlas: Few-shot learning with retrieval augmented language models",
+            "Internet-augmented language models through few-shot prompting for open-domain question answering",
+            "Search augmented instruction learning",
+            "RETA-LLM: A retrieval-augmented large language model toolkit",
+            "Retrieval augmented language model pre-training",
+            "In-context retrieval-augmented language models",
+            "Improving language models via plug-and-play retrieval feedback",
+            "Active retrieval augmented generation",
+            "Retrieval-augmented generation for knowledge-intensive NLP tasks",
+            "Language models (mostly) know what they know",
+            "Interleaving retrieval with chain-of-thought reasoning for knowledge-intensive multi-step questions",
+            "Improving retrieval-augmented large language models via data importance learning",
+            "Borgeaud, A",
+            "REPLUG: retrieval-augmented black-box language models",
+            "Self-rag: Learning to retrieve, generate, and critique through self-reflection",
+            "Enabling large language models to generate text with citations"
+          ],
+          "6 Reader 6.2 Active Reader": [
+            "Answering questions by meta-reasoning over multiple chains of thought",
+            "Measuring and narrowing the compositionality gap in language models",
+            "Demonstrate-search-predict: Composing retrieval and language models for knowledge-intensive NLP"
+          ],
+          "6 Reader 6.3 Compressor": [
+            "Leancontext: Cost-efficient domain-specific question answering using llms",
+            "Learning to filter context for retrieval-augmented generation",
+            "RECOMP: improving retrieval-augmented lms with compression and selective augmentation",
+            "TCRA-LLM: token compression retrieval augmented large language model for inference cost reduction"
+          ],
+          "6 Reader 6.4 Analysis": [
+            "Lost in the middle: How language models use long contexts",
+            "Characterizing attribution and fluency tradeoffs for retrieval-augmented large language models",
+            "When not to trust language models: Investigating effectiveness of parametric and non-parametric memories",
+            "Investigating the factual knowledge boundary of large language models with retrieval augmentation",
+            "Exploring the integration strategies of retriever and large language models"
+          ],
+          "6 Reader 6.5 Applications": [
+            "RETA-LLM: A retrieval-augmented large language model toolkit",
+            "Augmenting black-box llms with medical textbooks for clinical question answering",
+            "ATLANTIC: structure-aware retrieval-augmented language model for interdisciplinary science",
+            "Don't forget private retrieval: distributed private similarity search for large language models"
+          ],
+          "7 Search Agent 7.1 Static Agent": [
+            "Thoppilan, D",
+            "A real-world webagent with planning, long context understanding, and program synthesis",
+            "Language models that seek for knowledge: Modular search & generation for dialogue and prompt completion",
+            "Webglm: Towards an efficient web-enhanced question answering system with human preferences",
+            "Know where to go: Make LLM a relevant, responsible, and trustworthy searcher",
+            "Teaching language models to support answers with verified quotes"
+          ],
+          "7 Search Agent 7.2 Dynamic Agent": [
+            "Mind2web: Towards a generalist agent for the web",
+            "Webshop: Towards scalable real-world web interaction with grounded language agents",
+            "Webgpt: Browser-assisted question-answering with human feedback",
+            "Webcpm: Interactive web search for chinese long-form question answering",
+            "Hierarchical prompting assists large language model on web navigation"
+          ],
+          "8 Future Direction": [
+            "Information retrieval meets large language models: A strategic report from chinese IR community"
+          ],
+          "8 Future Direction 8.1 Query Rewriter": [
+            "Intent5: Search result diversification using causal language models",
+            "Query rewriting for retrieval-augmented large language models"
+          ],
+          "8 Future Direction 8.2 Retriever": [
+            "GPT-4 technical report"
+          ],
+          "8 Future Direction 8.3 Reranker": [
+            "Is chatgpt good at search? investigating large language models as re-ranking agents"
+          ],
+          "8 Future Direction 8.4 Reader": [
+            "Investigating the factual knowledge boundary of large language models with retrieval augmentation"
+          ],
+          "8 Future Direction 8.6 Evaluation": [
+            "Cumulated gain-based evaluation of IR techniques",
+            "Selfcheckgpt: Zero-resource black-box hallucination detection for generative large language models",
+            "Mean reciprocal rank",
+            "ROUGE: A package for automatic evaluation of summaries",
+            "Bleu: a method for automatic evaluation of machine translation"
+          ],
+          "8 Future Direction 8.7 Bias": [
+            "Ai-generated images introduce invisible relevance bias to text-image retrieval"
+          ],
+          "9 Conclusion": [
+            "Generative agents: Interactive simulacra of human behavior",
+            "Information retrieval meets large language models: A strategic report from chinese IR community"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.427170991897583,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Large language models can accurately predict searcher preferences",
+        "arxiv_id": "2309.10621",
+        "depth": 0,
+        "child": {},
+        "abstract": "Relevance labels, which indicate whether a search result is valuable to a searcher, are key to evaluating and optimising search systems. The best way to capture the true preferences of users is to ask them for their careful feedback on which results would be useful, but this approach does not scale to produce a large number of labels. Getting relevance labels at scale is usually done with third-party labellers, who judge on behalf of the user, but there is a risk of low-quality data if the labeller doesn't understand user needs. To improve quality, one standard approach is to study real users through interviews, user studies and direct feedback, find areas where labels are systematically disagreeing with users, then educate labellers about user needs through judging guidelines, training and monitoring. This paper introduces an alternate approach for improving label quality. It takes careful feedback from real users, which by definition is the highest-quality first-party gold data that can be derived, and develops an large language model prompt that agrees with that data.   We present ideas and observations from deploying language models for large-scale relevance labelling at Bing, and illustrate with data from TREC. We have found large language models can be effective, with accuracy as good as human labellers and similar capability to pick the hardest queries, best runs, and best groups. Systematic changes to the prompts make a difference in accuracy, but so too do simple paraphrases. To measure agreement with real searchers needs high-quality \"gold\" labels, but with these we find that models produce better labels than third-party workers, for a fraction of the cost, and these labels let us train notably better rankers.",
+        "sections": null,
+        "source": "Search SearchFrom:arxiv",
+        "select_score": 0.8041941523551941,
+        "extra": {
+          "expand": "get full paper error"
+        }
+      }
+    ],
+    "Ranking mechanisms in information retrieval using LLM": [
+      {
+        "title": "Information Retrieval Meets Large Language Models: A Strategic Report from Chinese IR Community",
+        "arxiv_id": "2307.09751",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract The research field of Information Retrieval (IR) has evolved significantly, expanding beyond traditional search to meet diverse user information needs. Recently, Large Language Models (LLMs) have demonstrated exceptional capabilities in text understanding, generation, and knowledge inference, opening up exciting avenues for IR research. LLMs not only facilitate generative retrieval but also offer improved solutions for user understanding, model evaluation, and user-system interactions. More importantly, the synergistic relationship among IR models, LLMs, and humans forms a new technical paradigm that is more powerful for information seeking. IR models provide real-time and relevant information, LLMs contribute internal knowledge, and humans play a central role of demanders and evaluators to the reliability of information services. Nevertheless, significant challenges exist, including computational costs, credibility concerns, domain-specific limitations, and ethical considerations. To thoroughly discuss the transformative impact of LLMs on IR research, the Chinese IR community conducted a strategic workshop in April 2023, yielding valuable insights. This paper provides a summary of the workshop\u2019s outcomes, including the rethinking of IR\u2019s core values, the mutual enhancement of LLMs and IR, the proposal of a novel IR technical paradigm, and open challenges. ",
+        "sections": {
+          "1 Introduction": [
+            "Information retrieval on the web",
+            "Generative recommendation: Towards next-generation recommender paradigm",
+            "Kronecker decomposition for gpt compression",
+            "Generative retrieval for long sequences",
+            "Capabilities of gpt-4 on medical challenge problems",
+            "Evaluating the logical reasoning ability of chatgpt and gpt-4",
+            "Information retrieval: a view from the chinese ir community",
+            "Information retrieval on internet using meta-search engines: A review",
+            "Bim-gpt: a prompt-based virtual assistant framework for bim information retrieval",
+            "Is chatgpt fair for recommendation?",
+            "Hierarchical dependence-aware evaluation measures for conversational search",
+            "Ask me what you need: Product retrieval using knowledge from gpt-3",
+            "Sparks of artificial general intelligence: Early experiments with gpt-4"
+          ],
+          "2 Rethinking Core Values of IR 2.1 Scientific Connotation of IR": [
+            "Improving web search ranking by incorporating user behavior information",
+            "Question retrieval with high quality answers in community question answering",
+            "Dense passage retrieval for open-domain question answering",
+            "Transformer memory as a differentiable search index",
+            "The probabilistic relevance framework: Bm25 and beyond",
+            "Practice on long sequential user behavior modeling for click-through rate prediction",
+            "User intent, behaviour, and perceived satisfaction in product search",
+            "Determining the user intent of web search engine queries",
+            "A deep relevance matching model for ad-hoc retrieval",
+            "Understanding user behavior in online social networks: a survey",
+            "Understanding user intent in community question answering",
+            "From ranknet to lambdarank to lambdamart: An overview",
+            "Learning deep structured semantic models for web search using clickthrough data",
+            "Training language models to follow instructions with human feedback",
+            "Introduction to Information Retrieval",
+            "An efficient boosting algorithm for combining preferences",
+            "A persona-based neural conversation model",
+            "Discovering regions of different functions in a city using human mobility and pois",
+            "Deeprank: A new deep architecture for relevance ranking in information retrieval",
+            "Information retrieval on the web",
+            "Motivating participation in social computing applications: a user modeling perspective",
+            "A deep look into neural ranking models for information retrieval",
+            "Learning to rank for recommender systems",
+            "Intent disambiguation for task-oriented dialogue systems",
+            "Towards unsupervised dense information retrieval with contrastive learning",
+            "Learning to rank with partially-labeled data"
+          ],
+          "2 Rethinking Core Values of IR 2.2 Boundaries and Extensions of IR": [
+            "High-resolution image synthesis with latent diffusion models",
+            "Trustworthy recommendation and search: Introduction to the special issue-part 1",
+            "Embodied ai-driven operation of smart cities: A concise review",
+            "Cognitive science of information retrieval",
+            "Deep generative models for decision-making and control",
+            "Generative recommendation: Towards next-generation recommender paradigm",
+            "Meta-learning with memory-augmented neural networks",
+            "Retrieval-enhanced machine learning",
+            "Interactive information retrieval: An introduction",
+            "Metaverse, Encyclopedia 2 (1) (2022) 486\u2013497.",
+            "Towards the unmanned aerial vehicles (uavs): A comprehensive review",
+            "Cross-modal retrieval augmentation for multi-modal classification",
+            "Improving language models by retrieving from trillions of tokens",
+            "Language models are few-shot learners",
+            "Information retrieval for evidence-based decision making",
+            "Biosignal-based human\u2013machine interfaces for assistance and rehabilitation: A survey",
+            "Soft, wearable robotics and haptics: Technologies, trends, and emerging applications",
+            "Foreword for workshop on decision making for information retrieval and recommender systems"
+          ],
+          "3 Large Language Models for IR": [
+            "Training language models to follow instructions with human feedback"
+          ],
+          "3 Large Language Models for IR 3.1 User Modeling": [
+            "Tallrec: An effective and efficient tuning framework to align large language model with recommendation",
+            "Fuzzy user modeling for information retrieval on the world wide web"
+          ],
+          "3 Large Language Models for IR 3.2 Indexing": [
+            "Dense passage retrieval for open-domain question answering",
+            "Transformer memory as a differentiable search index",
+            "Test-time training with self-supervision for generalization under distribution shifts"
+          ],
+          "3 Large Language Models for IR 3.3 Matching/Ranking": [
+            "Knowledge refinement via interaction between search engines and large language models",
+            "Metaphorical user simulators for evaluating task-oriented dialogue systems"
+          ],
+          "3 Large Language Models for IR 3.4 Evaluation": [
+            "In chatgpt we trust? measuring and characterizing the reliability of chatgpt",
+            "Explain like I am BM25: interpreting a dense model\u2019s ranked-list with a sparse approximation",
+            "Mean reciprocal rank",
+            "Recall, precision and average precision",
+            "Cumulated gain-based evaluation of ir techniques",
+            "Neural models for information retrieval",
+            "Moving beyond downstream task accuracy for information retrieval benchmarking"
+          ],
+          "3 Large Language Models for IR 3.5 Interaction": [
+            "Summary of chatgpt/gpt-4 research and perspective towards the future of large language models",
+            "Toolformer: Language models can teach themselves to use tools",
+            "A theoretical framework for conversational search",
+            "Modern information retrieval"
+          ],
+          "4 IR for Large Language Models": [
+            "Rethinking with retrieval: Faithful large language model inference",
+            "Factuality enhanced language models for open-ended text generation",
+            "Internet-augmented dialogue generation"
+          ],
+          "4 IR for Large Language Models 4.1 Pre-training LLMs with Retrieval": [
+            "Atlas: Few-shot learning with retrieval augmented language models",
+            "Webgpt: Browser-assisted question-answering with human feedback",
+            "Realm: Retrieval-augmented language model pre",
+            "Privileged features distillation at taobao recommendations",
+            "Improving language models by retrieving from trillions of tokens",
+            "Shall we pretrain autoregressive language models with retrieval? a comprehensive study"
+          ],
+          "4 IR for Large Language Models 4.2 Fine-Tuning LLMs with Retrieval Adapters": [
+            "Parameter-efficient transfer learning for nlp",
+            "The power of scale for parameter-efficient prompt tuning",
+            "Prefix-tuning: Optimizing continuous prompts for generation",
+            "Low-rank adaptation of large language models",
+            "Towards a unified view of parameter-efficient transfer learning"
+          ],
+          "4 IR for Large Language Models 4.3 Augmenting Black-box LLMs with Retrieval": [
+            "Internet-augmented language models through few-shot prompting for open-domain question answering",
+            "Check your facts and try again: Improving large language models with external knowledge and automated feedback",
+            "In-context retrieval-augmented language models",
+            "Language models that seek for knowledge: Modular search & generation for dialogue and prompt completion",
+            "Internet-augmented dialogue generation",
+            "Rethinking with retrieval: Faithful large language model inference"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.006689834408462048,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "A Setwise Approach for Effective and Highly Efficient Zero-shot Ranking with Large Language Models",
+        "arxiv_id": "2310.09497",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract. Large Language Models (LLMs) demonstrate impressive effectiveness in zero-shot document ranking tasks. Pointwise, Pairwise, and Listwise prompting approaches have been proposed for LLM-based zero-shot ranking. Our study begins by thoroughly evaluating these existing approaches within a consistent experimental framework, considering factors like model size, token consumption, latency, among others. This first-of-its-kind comparative evaluation of these approaches allows us to identify the trade-offs between effectiveness and efficiency inherent in each approach. We find that while Pointwise approaches score high on efficiency, they suffer from poor effectiveness. Conversely, Pairwise approaches demonstrate superior effectiveness but incur high computational overhead. To further enhance the efficiency of LLM-based zero-shot ranking, we propose a novel Setwise prompting approach. Our approach reduces the number of LLM inferences and the amount of prompt token consumption during the ranking procedure, significantly improving the efficiency of LLM-based zero-shot ranking. We test our method using the TREC DL datasets and the BEIR zero-shot document ranking benchmark. The empirical results indicate that our approach considerably reduces computational costs while also retaining high zero-shot ranking effectiveness.  ",
+        "sections": {
+          "1. Introduction": [
+            "Large language models are effective text rankers with pairwise ranking prompting.",
+            "Finetuned Language Models are Zero-Shot Learners",
+            "Palm: Scaling language modeling with pathways.",
+            "Large language models are zero-shot reasoners",
+            "Is ChatGPT Good at Search? Investigating Large Language Models as Re-Ranking Agent",
+            "Holistic evaluation of language models",
+            "Language models are few-shot learners."
+          ],
+          "2. Background & Related Work": [
+            "Is ChatGPT Good at Search? Investigating Large Language Models as Re-Ranking Agent",
+            "Large language models are effective text rankers with pairwise ranking prompting.",
+            "Holistic evaluation of language models"
+          ],
+          "2. Background & Related Work 2.1. Pointwise prompting approaches": [
+            "A language modeling approach to information retrieval",
+            "Improving Passage Retrieval with Zero-Shot Question Generation",
+            "Holistic evaluation of language models"
+          ],
+          "2. Background & Related Work 2.2. Listwise prompting approaches": [
+            "Is ChatGPT Good at Search? Investigating Large Language Models as Re-Ranking Agent"
+          ],
+          "2. Background & Related Work 2.3. Pairwise prompting approaches": [
+            "The art of computer programming. Vol. 3",
+            "Active Sampling for Pairwise Comparisons via Approximate Message Passing and Information Gain Maximization",
+            "The expando-mono-duo design pattern for text ranking with pretrained sequence-to-sequence models",
+            "Large language models are effective text rankers with pairwise ranking prompting."
+          ],
+          "3. Setwise Ranking Prompting 3.3. Listwise Likelihoods with Setwise": [
+            "Is ChatGPT Good at Search? Investigating Large Language Models as Re-Ranking Agent"
+          ],
+          "4. Experiments 4.1. Datasets and evaluations": [
+            "Finetuned Language Models are Zero-Shot Learners",
+            "Overview of the TREC 2019 deep learning track",
+            "Attention is All You Need",
+            "BEIR: A Heterogeneous Benchmark for Zero-shot Evaluation of Information Retrieval Models",
+            "Overview of the TREC 2020 deep learning track"
+          ],
+          "4. Experiments 4.2. Implementation details": [
+            "Is ChatGPT Good at Search? Investigating Large Language Models as Re-Ranking Agent",
+            "Improving Passage Retrieval with Zero-Shot Question Generation",
+            "Pyserini: A Python Toolkit for Reproducible Information Retrieval Research with Sparse and Dense Representations",
+            "Large language models are effective text rankers with pairwise ranking prompting."
+          ],
+          "5. Results and Analysis 5.1. Effectiveness Results": [
+            "Large language models are effective text rankers with pairwise ranking prompting."
+          ],
+          "5. Results and Analysis 5.5. Sensitivity to the Initial Ranking": [
+            "Is ChatGPT Good at Search? Investigating Large Language Models as Re-Ranking Agent"
+          ],
+          "6. Conclusion": [
+            "Llama: Open and efficient foundation language models",
+            "Large language models as optimizers"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.9978310465812683,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "RankRAG: Unifying Context Ranking with Retrieval-Augmented Generation in LLMs",
+        "arxiv_id": "2407.02485",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract Large language models (LLMs) typically utilize the top-k contexts from a retriever in retrieval-augmented generation (RAG). In this work, we propose a novel instruction fine-tuning framework RankRAG, which instruction-tunes a single LLM for the dual purpose of context ranking and answer generation in RAG. In particular, the instruction-tuned LLMs work surprisingly well by adding a small fraction of ranking data into the training blend, and outperform existing expert ranking models, including the same LLM exclusively fine-tuned on a large amount of ranking data. For generation, we compare our model with many strong baselines, including GPT-4-0613, GPT-4-turbo-2024-0409, and ChatQA-1.5, an open-sourced model with the state-of-the-art performance on RAG benchmarks. Specifically, our Llama3-RankRAG significantly outperforms Llama3-ChatQA-1.5 and GPT-4 models on nine knowledge-intensive benchmarks. In addition, it also performs comparably to GPT-4 on five RAG benchmarks in the biomedical domain without instruction fine-tuning on biomedical data, demonstrating its superb capability for generalization to new domains.",
+        "sections": {
+          "1 Introduction": [
+            "Benchmarking retrieval-augmented generation for medicine",
+            "Realtime QA: What\u2019s the answer right now?",
+            "Dense passage retrieval for open-domain question answering",
+            "Retrieval meets long context large language models",
+            "GPT-4",
+            "Sparse, dense, and attentional representations for text retrieval.",
+            "Document ranking with a pretrained sequence-to-sequence model",
+            "Retrieval-augmented generation for knowledge-intensive nlp tasks",
+            "When not to trust language models: Investigating effectiveness of parametric and non-parametric memories"
+          ],
+          "2 Related Work": [
+            "Chatqa: Surpassing gpt-4 on conversational qa and rag",
+            "Dense passage retrieval for open-domain question answering",
+            "Fine-tuning llama for multi-stage text retrieval",
+            "An introduction to neural information retrieval",
+            "Few-shot reranking for multi-hop QA via language model prompting",
+            "Interleaving retrieval with chain-of-thought reasoning for knowledge-intensive multi-step questions",
+            "Learning to filter context for retrieval-augmented generation",
+            "Retrieval augmented language model pre-training",
+            "How to train your dragon: Diverse augmentation towards generalizable dense retrieval",
+            "Re2G: Retrieve, rerank, generate",
+            "Retrieval-augmented generation for knowledge-intensive nlp tasks",
+            "Replug: Retrieval-augmented black-box language models"
+          ],
+          "3 Preliminaries 3.1 Problem Setup": [
+            "Introducing ChatGPT"
+          ],
+          "3 Preliminaries 3.2 Limitation of Current RAG Pipelines": [
+            "Chatqa: Surpassing gpt-4 on conversational qa and rag",
+            "Retrieval meets long context large language models",
+            "Dense passage retrieval for open-domain question answering",
+            "Sparse, dense, and attentional representations for text retrieval.",
+            "Simple bm25 extension to multiple weighted fields",
+            "Making retrieval-augmented language models robust to irrelevant context",
+            "In defense of dual-encoders for neural ranking"
+          ],
+          "4 RankRAG 4.1 Stage-I: Supervised Fine-Tuning\u00a0(SFT)": [
+            "Free Dolly: Introducing the world\u2019s first truly open instruction-tuned llm",
+            "Finetuned language models are zero-shot learners",
+            "Soda: Million-scale dialogue distillation with social commonsense contextualization.",
+            "Openassistant conversations - democratizing large language model alignment",
+            "Eli5: Long form question answering",
+            "Self-instruct: Aligning language models with self-generated instructions",
+            "Unnatural instructions: Tuning language models with (almost) no human labor",
+            "Scaling instruction-finetuned language models"
+          ],
+          "4 RankRAG 4.2 Stage-II: Unified Instruction-Tuning for Ranking and Generation": [
+            "Chatqa: Surpassing gpt-4 on conversational qa and rag",
+            "The narrativeqa reading comprehension challenge",
+            "Drop: A reading comprehension benchmark requiring discrete reasoning over paragraphs",
+            "Semantic parsing on freebase from question-answer pairs",
+            "RA-DIT: Retrieval-augmented dual instruction tuning",
+            "Newsqa: A machine comprehension dataset",
+            "Quoref: A reading comprehension dataset with questions requiring coreferential reasoning",
+            "Ms marco: A human generated machine reading comprehension dataset",
+            "Tat-qa: A question answering benchmark on a hybrid of tabular and textual content in finance.",
+            "Reasoning over paragraph effects in situations",
+            "Squad: 100,000+ questions for machine comprehension of text"
+          ],
+          "5 Experiments 5.1 Experiment Setup": [
+            "Mixtral 8x22b",
+            "Glam: Efficient scaling of language models with mixture-of-experts",
+            "Instructretro: Instruction tuning post retrieval-augmented pretraining",
+            "Natural questions: a benchmark for question answering research",
+            "How to train your dragon: Diverse augmentation towards generalizable dense retrieval",
+            "The flan collection: Designing data and methods for effective instruction tuning",
+            "Inscit: Information-seeking conversations with mixed-initiative interactions",
+            "Dense passage retrieval for open-domain question answering",
+            "Raven: In-context learning with retrieval augmented encoder-decoder language models",
+            "Introducing ChatGPT",
+            "GPT-4",
+            "Anthropic. Model card and evaluations for claude models.",
+            "KILT: a benchmark for knowledge intensive language tasks",
+            "TriviaQA: A large scale distantly supervised challenge dataset for reading comprehension",
+            "Constructing a multi-hop qa dataset for comprehensive evaluation of reasoning steps",
+            "Internet-augmented language models through few-shot prompting for open-domain question answering",
+            "Meta-AI. Llama 3 model card",
+            "Topiocqa: Open-domain conversational question answering with topic switching",
+            "Proving test set contamination in black-box language models",
+            "RECOMP: Improving retrieval-augmented LMs with context compression and selective augmentation",
+            "HotpotQA: A dataset for diverse, explainable multi-hop question answering",
+            "Fever: A large-scale dataset for fact extraction and verification",
+            "Atlas: Few-shot learning with retrieval augmented language models",
+            "Chatqa: Surpassing gpt-4 on conversational qa and rag",
+            "Palm 2 technical report",
+            "Training language models to follow instructions with human feedback",
+            "DeepSeek. Deepseek-v2: A strong, economical, and efficient mixture-of-experts language model",
+            "Self-RAG: Learning to retrieve, generate, and critique through self-reflection",
+            "RA-DIT: Retrieval-augmented dual instruction tuning",
+            "Improving language models via plug-and-play retrieval feedback",
+            "Generate rather than retrieve: Large language models are strong context generators.",
+            "A method for stochastic optimization",
+            "doc2dial: A goal-oriented document-grounded dialogue dataset",
+            "When not to trust language models: Investigating effectiveness of parametric and non-parametric memories",
+            "Replug: Retrieval-augmented black-box language models"
+          ],
+          "5 Experiments 5.2 Main Experiments": [
+            "Active retrieval augmented generation"
+          ],
+          "5 Experiments 5.3 Ablation Studies": [
+            "Dense passage retrieval for open-domain question answering",
+            "RA-DIT: Retrieval-augmented dual instruction tuning",
+            "Unsupervised dense information retrieval with contrastive learning"
+          ],
+          "5 Experiments 5.4 Experiment on Domain-specific RAG Benchmarks": [
+            "Benchmarking retrieval-augmented generation for medicine",
+            "Medcpt: Contrastive pre-trained transformers with large-scale pubmed search logs for zero-shot biomedical information retrieval."
+          ],
+          "5 Experiments 5.5 A Closer Look at the Ranking Module": [
+            "Re2G: Retrieve, rerank, generate",
+            "Document ranking with a pretrained sequence-to-sequence model",
+            "Fine-tuning llama for multi-stage text retrieval"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.9943833351135254,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "A Thorough Comparison of Cross-Encoders and LLMs for Reranking SPLADE",
+        "arxiv_id": "2403.10407",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract. We present a comparative study between cross-encoder and LLMs rerankers in the context of re-ranking effective SPLADE retrievers. We conduct a large evaluation on TREC Deep Learning datasets and out-of-domain datasets such as BEIR and LoTTE. In the first set of experiments, we show how cross-encoder rerankers are hard to distinguish when it comes to re-rerank SPLADE on MS MARCO. Observations shift in the out-of-domain scenario, where both the type of model and the number of documents to re-rank have an impact on effectiveness. Then, we focus on listwise rerankers based on Large Language Models \u2013 especially GPT-4. While GPT-4 demonstrates impressive (zero-shot) performance, we show that traditional cross-encoders remain very competitive. Overall, our findings aim to to provide a more nuanced perspective on the recent excitement surrounding LLM-based re-rankers \u2013 by positioning them as another factor to consider in balancing effectiveness and efficiency in search systems. ",
+        "sections": {
+          "1. Introduction": [
+            "SPLADE-v3: New baselines for SPLADE",
+            "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+            "ColBERTv2: Effective and Efficient Retrieval via Lightweight Late Interaction",
+            "Okapi at TREC-3",
+            "Is ChatGPT Good at Search? Investigating Large Language Models as Re-Ranking Agent",
+            "Pong, Tolly Powell, Alethea Power, Boris Power, Elizabeth Proehl, Raul Puri, Alec Radford, Jack Rae, Aditya Ramesh, Cameron Raymond, Francis Real, Kendra Rimbach, Carl Ross, Bob Rotsted, Henri Roussez, Nick Ryder, Mario Saltarelli, Ted Sanders, Shibani Santurkar, Girish Sastry, Heather Schmidt, David Schnurr, John Schulman, Daniel Selsam, Kyla Sheppard, Toki Sherbakov, Jessica Shieh, Sarah Shoker, Pranav Shyam, Szymon Sidor, Eric Sigler, Maddie Simens, Jordan Sitkin, Katarina Slama, Ian Sohl, Benjamin Sokolowsky, Yang Song, Natalie Staudacher, Felipe\u00a0Petroski Such, Natalie Summers, Ilya Sutskever, Jie Tang, Nikolas Tezak, Madeleine\u00a0B",
+            "Overview of the TREC 2019 deep learning track",
+            "Fine-Tuning LLaMA for Multi-Stage Text Retrieval",
+            "BEIR: A Heterogenous Benchmark for Zero-shot Evaluation of Information Retrieval Models",
+            "Learning to Rank for Information Retrieval",
+            "The Expando-Mono-Duo Design Pattern for Text Ranking with Pretrained Sequence-to-Sequence Models",
+            "Passage Re-ranking with BERT"
+          ],
+          "2. LLMs as Rerankers": [
+            "A Setwise Approach for Effective and Highly Efficient Zero-shot Ranking with Large Language Models",
+            "RankingGPT: Empowering Large Language Models in Text Ranking with Progressive Enhancement",
+            "Scaling Instruction-Finetuned Language Models",
+            "Found in the Middle: Permutation Self-Consistency Improves Listwise Ranking in Large Language Models",
+            "Is ChatGPT Good at Search? Investigating Large Language Models as Re-Ranking Agent",
+            "Pong, Tolly Powell, Alethea Power, Boris Power, Elizabeth Proehl, Raul Puri, Alec Radford, Jack Rae, Aditya Ramesh, Cameron Raymond, Francis Real, Kendra Rimbach, Carl Ross, Bob Rotsted, Henri Roussez, Nick Ryder, Mario Saltarelli, Ted Sanders, Shibani Santurkar, Girish Sastry, Heather Schmidt, David Schnurr, John Schulman, Daniel Selsam, Kyla Sheppard, Toki Sherbakov, Jessica Shieh, Sarah Shoker, Pranav Shyam, Szymon Sidor, Eric Sigler, Maddie Simens, Jordan Sitkin, Katarina Slama, Ian Sohl, Benjamin Sokolowsky, Yang Song, Natalie Staudacher, Felipe\u00a0Petroski Such, Natalie Summers, Ilya Sutskever, Jie Tang, Nikolas Tezak, Madeleine\u00a0B",
+            "Zephyr: Direct Distillation of LM Alignment",
+            "Large Language Models are Effective Text Rankers with Pairwise Ranking Prompting",
+            "RankZephyr: Effective and Robust Zero-Shot Listwise Reranking is a Breeze!"
+          ],
+          "3. Experimental Setting 3.1. An Effective Retriever \u2013 SPLADE-v3": [
+            "SPLADE-v3: New baselines for SPLADE",
+            "Naver Labs Europe (SPLADE) @ TREC Deep Learning 2022",
+            "From Distillation to Hard Negative Sampling: Making Sparse Neural IR Models More Effective",
+            "Is ChatGPT Good at Search? Investigating Large Language Models as Re-Ranking Agent",
+            "RankZephyr: Effective and Robust Zero-Shot Listwise Reranking is a Breeze!"
+          ],
+          "3. Experimental Setting 3.2. Rerankers Based on Cross-Encoders": [
+            "ELECTRA: Pre-training Text Encoders as Discriminators Rather Than Generators",
+            "Naver Labs Europe (SPLADE) @ TREC Deep Learning 2022",
+            "DeBERTaV3: Improving DeBERTa using ELECTRA-Style Pre-Training with Gradient-Disentangled Embedding Sharing"
+          ],
+          "3. Experimental Setting 3.3. Under the Hood of RankGPT": [
+            "Is ChatGPT Good at Search? Investigating Large Language Models as Re-Ranking Agent",
+            "RankZephyr: Effective and Robust Zero-Shot Listwise Reranking is a Breeze!"
+          ],
+          "3. Experimental Setting 3.4. Datasets": [
+            "BEIR: A Heterogenous Benchmark for Zero-shot Evaluation of Information Retrieval Models",
+            "Is ChatGPT Good at Search? Investigating Large Language Models as Re-Ranking Agent",
+            "Overview of the TREC 2019 deep learning track",
+            "ColBERTv2: Effective and Efficient Retrieval via Lightweight Late Interaction"
+          ],
+          "4. Results 4.3. LLM as Rerankers": [
+            "Is ChatGPT Good at Search? Investigating Large Language Models as Re-Ranking Agent",
+            "Found in the Middle: Permutation Self-Consistency Improves Listwise Ranking in Large Language Models",
+            "From Distillation to Hard Negative Sampling: Making Sparse Neural IR Models More Effective"
+          ],
+          "4. Results 4.4. Detailed Comparison on TREC-COVID": [
+            "Llama 2: Open Foundation and Fine-Tuned Chat Models",
+            "Open Foundation Models by 01.AI",
+            "Large Language Models are Effective Text Rankers with Pairwise Ranking Prompting",
+            "TREC-COVID: Constructing a Pandemic Information Retrieval Test Collection"
+          ],
+          "4. Results 4.5. Reranking Pipeline": [
+            "Is ChatGPT Good at Search? Investigating Large Language Models as Re-Ranking Agent",
+            "Overview of the TREC 2023 Deep Learning Track"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.6599711775779724,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Ranking Large Language Models without Ground Truth",
+        "arxiv_id": "2402.14860",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Evaluation and ranking of large language models (LLMs) has become an important problem with the proliferation of these models and their impact. Evaluation methods either require human responses which are expensive to acquire or use pairs of LLMs to evaluate each other which can be unreliable. In this paper, we provide a novel perspective where, given a dataset of prompts (viz. questions, instructions, etc.) and a set of LLMs, we rank them without access to any ground truth or reference responses. Inspired by real life where both an expert and a knowledgeable person can identify a novice our main idea is to consider triplets of models, where each one of them evaluates the other two, correctly identifying the worst model in the triplet with high probability. We also analyze our idea and provide sufficient conditions for it to succeed. Applying this idea repeatedly, we propose two methods to rank LLMs. In experiments on different generative tasks (summarization, multiple-choice, and dialog), our methods reliably recover close to true rankings without reference data. This points to a viable low-resource mechanism for practical use. ",
+        "sections": {
+          "1 Introduction": [
+            "Judgelm: Fine-tuned large language models are scalable judges",
+            "Utility is in the eye of the user: A critique of nlp leaderboards",
+            "A systematic study and comprehensive evaluation of chatgpt on benchmark datasets"
+          ],
+          "2 Related Work": [
+            "Bertscore: Evaluating text generation with bert",
+            "Meteor: An automatic metric for mt evaluation with improved correlation with human judgments",
+            "Judgelm: Fine-tuned large language models are scalable judges",
+            "Open llm leaderboard",
+            "Automatic evaluation of summaries using n-gram co-occurrence statistics",
+            "Bleu: a method for automatic evaluation of machine translation",
+            "Holistic evaluation of language models.",
+            "Benchmarking llms via uncertainty quantification",
+            "Judging LLM-as-a-judge with MT-bench and chatbot arena",
+            "Pandalm: An automatic evaluation benchmark for llm instruction tuning optimization",
+            "Decodingtrust: A comprehensive assessment of trustworthiness in GPT models",
+            "Legal-BERT: The Muppets Straight Out of Law School",
+            "Vicuna: An open-source chatbot impressing gpt-4 with 90%* chatgpt quality",
+            "Training a helpful and harmless assistant with reinforcement learning from human feedback.",
+            "Trustllm: Trustworthiness in large language models",
+            "ROUGE: A package for automatic evaluation of summaries",
+            "Large language models in medicine",
+            "Openassistant conversations - democratizing large language model alignment",
+            "Can large language models be an alternative to human evaluations?",
+            "Bloomberggpt: A large language model for finance",
+            "The proposed uscf rating system, its development, theory, and applications",
+            "Unitxt: Flexible, shareable and reusable data preparation and evaluation for generative ai.",
+            "Recognizing Textual Entailment: Models and Applications"
+          ],
+          "4 Experiments": [
+            "A similarity measure for indefinite rankings",
+            "A survey of ensemble learning: Concepts, algorithms, applications, and prospects"
+          ],
+          "4 Experiments Summarization:": [
+            "Holistic evaluation of language models.",
+            "Don\u2019t give me the details, just the summary! topic-aware convolutional neural networks for extreme summarization",
+            "Teaching machines to read and comprehend"
+          ],
+          "4 Experiments Dialog:": [
+            "The moral integrity corpus: A benchmark for ethical dialogue systems"
+          ],
+          "4 Experiments 4.1 Results": [
+            "Deberta: Decoding-enhanced bert with disentangled attention"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.16600744426250458,
+        "extra": {
+          "expand": "not expand"
+        }
+      }
+    ],
+    "Influence of LLM on Search Engine Results Ranking": [
+      {
+        "title": "Manipulating Large Language Models to Increase Product Visibility",
+        "arxiv_id": "2404.07981",
+        "depth": 0,
+        "child": {},
+        "abstract": "Large language models (LLMs) are increasingly being integrated into search engines to provide natural language responses tailored to user queries. Customers and end-users are also becoming more dependent on these models for quick and easy purchase decisions. In this work, we investigate whether recommendations from LLMs can be manipulated to enhance a product's visibility. We demonstrate that adding a strategic text sequence (STS) -- a carefully crafted message -- to a product's information page can significantly increase its likelihood of being listed as the LLM's top recommendation. To understand the impact of STS, we use a catalog of fictitious coffee machines and analyze its effect on two target products: one that seldom appears in the LLM's recommendations and another that usually ranks second. We observe that the strategic text sequence significantly enhances the visibility of both products by increasing their chances of appearing as the top recommendation. This ability to manipulate LLM-generated search responses provides vendors with a considerable competitive advantage and has the potential to disrupt fair market competition. Just as search engine optimization (SEO) revolutionized how webpages are customized to rank higher in search engine results, influencing LLM recommendations could profoundly impact content optimization for AI-driven search services. Code for our experiments is available at https://github.com/aounon/llm-rank-optimizer.",
+        "sections": null,
+        "source": "Search SearchFrom:arxiv",
+        "select_score": 0.6613126397132874,
+        "extra": {
+          "expand": "get full paper error"
+        }
+      },
+      {
+        "title": "Generative Echo Chamber? Effects of LLM-Powered Search Systems on Diverse Information Seeking",
+        "arxiv_id": "2402.05880",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract. Large language models (LLMs) powered conversational search systems have already been used by hundreds of millions of people, and are believed to bring many benefits over conventional search. However, while decades of research and public discourse interrogated the risk of search systems in increasing selective exposure and creating echo chambers\u2014limiting exposure to diverse opinions and leading to opinion polarization, little is known about such a risk of LLM-powered conversational search. We conduct two experiments to investigate: 1) whether and how LLM-powered conversational search increases selective exposure compared to conventional search; 2) whether and how LLMs with opinion biases that either reinforce or challenge the user\u2019s view change the effect. Overall, we found that participants engaged in more biased information querying with LLM-powered conversational search, and an opinionated LLM reinforcing their views exacerbated this bias. These results present critical implications for the development of LLMs and conversational search systems, and the policy governing these technologies. ",
+        "sections": {
+          "1. Introduction": [
+            "A theoretical framework for conversational search",
+            "Scaling language models: Methods, analysis & insights from training gopher",
+            "On the failure to eliminate hypotheses in a conceptual task",
+            "Recent research on selective exposure to information",
+            "The filter bubble: How the new personalized web is changing what we read and how we think",
+            "On the opportunities and risks of foundation models",
+            "Bias in search and recommender systems"
+          ],
+          "2. Related work 2.1. Selective Exposure, Confirmation Bias, and Echo Chamber Effect": [
+            "Chamberbreaker: Mitigating the echo chamber effect and supporting information hygiene through a gamified inoculation system",
+            "It is all about perspective: An exploration of mitigating selective exposure with aspect indicators",
+            "Broadening exposure to socio-political opinions via a pushy smart home device",
+            "The filter bubble: How the new personalized web is changing what we read and how we think",
+            "The echo chamber is overstated: the moderating effect of political interest and diverse media",
+            "Cognitive dissonance",
+            "Escape the bubble: Guided exploration of music preferences for serendipity and novelty",
+            "On the failure to eliminate hypotheses in a conceptual task",
+            "Political polarization on twitter",
+            "Beyond the filter bubble: interactive effects of perceived threat and topic involvement on selective exposure to information",
+            "Resisting political fragmentation on the Internet",
+            "Opinion space: a scalable tool for browsing online comments",
+            "Echo chambers online?: Politically motivated selective exposure among Internet news users",
+            "Presenting diverse political opinions: how and how much",
+            "The law of group polarization",
+            "Feeling validated versus being correct: a meta-analysis of selective exposure to information",
+            "Avoiding the echo chamber about echo chambers",
+            "Recent research on selective exposure to information",
+            "Can you hear me now? Mitigating the echo chamber effect by source position indicators",
+            "Expert voices in echo chambers: effects of source expertise indicators on exposure to diverse opinions"
+          ],
+          "2. Related work 2.2. Human-LM Interaction": [
+            "Investigating explainability of generative AI for code through scenario-based design",
+            "Wordcraft: story writing with large language models",
+            "Co-writing with opinionated language models affects users\u2019 views",
+            "The AI Ghostwriter Effect: When Users Do Not Perceive Ownership of AI-Generated Text But Self-Declare as Authors",
+            "Predictive text encourages predictable writing",
+            "Performance consequences of automation-induced'complacency'",
+            "Evaluating Verifiability in Generative Search Engines",
+            "Understanding user perception of automated news generation system",
+            "Metaphoria: An algorithmic companion for metaphor creation",
+            "Synthetic lies: Understanding ai-generated misinformation and evaluating algorithmic and human solutions",
+            "Generative Agents: Interactive Simulacra of Human Behavior",
+            "Coauthor: Designing a human-ai collaborative writing dataset for exploring language model capabilities",
+            "Beyond text generation: Supporting writers with continuous automatic text summaries"
+          ],
+          "2. Related work 2.3. Conversational Search": [
+            "Exploring conversational search with humans, assistants, and wizards",
+            "Informing the design of spoken conversational search: Perspective paper",
+            "Towards conversational search and recommendation: System ask, user respond",
+            "A theoretical framework for conversational search"
+          ],
+          "3. Study 1 Method: Comparing Effects of LLM-powered Conversational Search and Web Search 3.2. Experiment Apparatus": [
+            "The double metaphone search algorithm"
+          ],
+          "3. Study 1 Method: Comparing Effects of LLM-powered Conversational Search and Web Search 3.3. Measurements": [
+            "A simple procedure for the assessment of acceptance of advanced transport telematics",
+            "Computers are social actors"
+          ],
+          "3. Study 1 Method: Comparing Effects of LLM-powered Conversational Search and Web Search 3.4. Hypotheses": [
+            "Informing the design of spoken conversational search: Perspective paper"
+          ],
+          "3. Study 1 Method: Comparing Effects of LLM-powered Conversational Search and Web Search 3.5. Analysis Plan": [
+            "Marginally significant effects as evidence for hypotheses: Changing attitudes over four decades"
+          ],
+          "7. Discussion 7.1. Selective Information Seeking with Conversational Search": [
+            "Informing the design of spoken conversational search: Perspective paper",
+            "Accomodation theory: communication, context, and consequences"
+          ],
+          "7. Discussion 7.2. Mitigating Selective Exposure in Conversational Search": [
+            "Supporting reflective public thought with considerit",
+            "A theoretical framework for conversational search",
+            "Feeling validated versus being correct: a meta-analysis of selective exposure to information",
+            "Broadening exposure to socio-political opinions via a pushy smart home device",
+            "Can you hear me now? Mitigating the echo chamber effect by source position indicators"
+          ],
+          "7. Discussion 7.4. Implications for Information Harms of LLMs": [
+            "Rethinking Model Evaluation as Narrowing the Socio-Technical Gap",
+            "Sociotechnical Harms of Algorithmic Systems: Scoping a Taxonomy for Harm Reduction",
+            "Characteristics of harmful text: Towards rigorous benchmarking of language models",
+            "Co-writing with opinionated language models affects users\u2019 views"
+          ],
+          "7. Discussion 7.5. Limitations and Ethical Considerations": [
+            "What can you do? Studying social-agent orientation and agent proactive interactions with an agent for employees.",
+            "Beyond the filter bubble: interactive effects of perceived threat and topic involvement on selective exposure to information"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.00037526589585468173,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Know Where to Go: Make LLM a Relevant, Responsible, and Trustworthy Searcher",
+        "arxiv_id": "2310.12443",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract. The advent of Large Language Models (LLMs) has shown the potential to improve relevance and provide direct answers in web searches. However, challenges arise in validating the reliability of generated results and the credibility of contributing sources, due to the limitations of traditional information retrieval algorithms and the LLM hallucination problem. Aiming to create a \u201dPageRank\u201d for the LLM era, we strive to transform LLM into a relevant, responsible, and trustworthy searcher. We propose a novel generative retrieval framework leveraging the knowledge of LLMs to foster a direct link between queries and online sources. This framework consists of three core modules: Generator, Validator, and Optimizer, each focusing on generating trustworthy online sources, verifying source reliability, and refining unreliable sources, respectively. Extensive experiments and evaluations highlight our method\u2019s superior relevance, responsibility, and trustfulness against various SOTA methods. ",
+        "sections": {
+          "1. Introduction": [
+            "Wordcraft: story writing with large language models",
+            "Knowledge Refinement via Interaction Between Search Engines and Large Language Models",
+            "Leveraging large language models for multiple choice question answering",
+            "WebGLM: Towards An Efficient Web-Enhanced Question Answering System with Human Preferences",
+            "Webgpt: Browser-assisted question-answering with human feedback",
+            "Augmenting Large Language Model Translators via Translation Memories",
+            "Large Language Models Know Your Contextual Search Intent: A Prompting Framework for Conversational Search",
+            "Learning to Tokenize for Generative Retrieval",
+            "Ms marco: A human-generated machine reading comprehension dataset"
+          ],
+          "2. Related Work 2.1. Large Language Models": [
+            "Bloom: A 176b-parameter open-access multilingual language model",
+            "The RefinedWeb dataset for Falcon LLM: outperforming curated corpora with web data, and web data only.",
+            "Query2doc: Query Expansion with Large Language Models",
+            "Large Language Models are Built-in Autoregressive Search Engines",
+            "Llama-adapter: Efficient fine-tuning of language models with zero-init attention",
+            "Large language models are effective text rankers with pairwise ranking prompting.",
+            "Enabling Large Language Models to Generate Text with Citations",
+            "Baize: An open-source chat model with parameter-efficient tuning on self-chat data",
+            "Active retrieval augmented generation",
+            "Toolformer: Language models can teach themselves to use tools.",
+            "Gorilla: Large language model connected with massive apis",
+            "Stanford alpaca: An instruction-following llama model",
+            "Llama: Open and efficient foundation language models",
+            "Judging LLM-as-a-judge with MT-Bench and Chatbot Arena"
+          ],
+          "2. Related Work 2.2. Generative Information Retrieval Systems": [
+            "Webgpt: Browser-assisted question-answering with human feedback",
+            "Evaluating verifiability in generative search engines",
+            "WebGLM: Towards An Efficient Web-Enhanced Question Answering System with Human Preferences"
+          ],
+          "2. Related Work 2.3. Human Feedback and AI Feedback": [
+            "Alpacafarm: A simulation framework for methods that learn from human feedback",
+            "Constitutional ai: Harmlessness from ai feedback",
+            "Principle-driven self-alignment of language models from scratch with minimal human supervision",
+            "Let\u2019s Verify Step by Step",
+            "Training language models to follow instructions with human feedback",
+            "Fine-Grained Human Feedback Gives Better Rewards for Language Model Training"
+          ],
+          "3. Methodology 3.1. Generator": [
+            "The RefinedWeb dataset for Falcon LLM: outperforming curated corpora with web data, and web data only.",
+            "Llama: Open and efficient foundation language models",
+            "Stanford alpaca: An instruction-following llama model"
+          ],
+          "3. Methodology 3.2. Validator": [
+            "Improving passage retrieval with zero-shot question generation"
+          ],
+          "4. Experiment 4.1. Evaluation Criteria": [
+            "Webgpt: Browser-assisted question-answering with human feedback",
+            "ELI5: Long Form Question Answering"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.3954717218875885,
+        "extra": {
+          "expand": "not expand"
+        }
+      }
+    ],
+    "Survey papers on ranking search results with Language Model": [
+      {
+        "title": "Large Language Models: A Survey",
+        "arxiv_id": "2402.06196",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Large Language Models (LLMs) have drawn a lot of attention due to their strong performance on a wide range of natural language tasks, since the release of ChatGPT in November 2022. LLMs\u2019 ability of general-purpose language understanding and generation is acquired by training billions of model\u2019s parameters on massive amounts of text data, as predicted by scaling laws [1, 2]. The research area of LLMs, while very recent, is evolving rapidly in many different ways. In this paper, we review some of the most prominent LLMs, including three popular LLM families (GPT, LLaMA, PaLM), and discuss their characteristics, contributions and limitations. We also give an overview of techniques developed to build, and augment LLMs. We then survey popular datasets prepared for LLM training, fine-tuning, and evaluation, review widely used LLM evaluation metrics, and compare the performance of several popular LLMs on a set of representative benchmarks. Finally, we conclude the paper by discussing open challenges and future research directions. ",
+        "sections": {
+          "I Introduction": [
+            "Efficiently modeling long sequences with structured state spaces",
+            "React: Synergizing reasoning and acting in language models",
+            "Deep contextualized word representations. corr abs/1802.05365 (2018),",
+            "From captions to visual concepts and back",
+            "GPT-4 Technical Report",
+            "Augmented language models: a survey",
+            "A survey of large language models",
+            "Chain-of-thought prompting elicits reasoning in large language models",
+            "Sequence to sequence learning with neural networks",
+            "An empirical study of smoothing techniques for language modeling",
+            "Statistical methods for speech recognition",
+            "Palm: Scaling language modeling with pathways",
+            "A comprehensive survey on pretrained foundation models: A history from bert to chatgpt",
+            "Learning deep structured semantic models for web search using clickthrough data",
+            "Llama: Open and efficient foundation language models",
+            "Bert: Pre-training of deep bidirectional transformers for language understanding",
+            "Prediction and entropy of printed english",
+            "A neural probabilistic language model"
+          ],
+          "II Large Language Models II-A Early Pre-trained Neural Language Models": [
+            "Cross-lingual language model pretraining",
+            "Bart: Denoising sequence-to-sequence pre-training for natural language generation, translation, and comprehension",
+            "Deep learning\u2013based text classification: a comprehensive review",
+            "Strategies for training large scale neural network language models",
+            "Roberta: A robustly optimized bert pretraining approach",
+            "Xlnet: Generalized autoregressive pretraining for language understanding",
+            "On the properties of neural machine translation: Encoder-decoder approaches",
+            "Unified language model pre-training for natural language understanding and generation",
+            "Electra: Pre-training text encoders as discriminators rather than generators",
+            "Attention is all you need",
+            "Exploring the limits of transfer learning with a unified text-to-text transformer",
+            "Albert: A lite bert for self-supervised learning of language representations",
+            "Mass: Masked sequence to sequence pre-training for language generation",
+            "Improving language understanding by generative pre-training",
+            "Language models are unsupervised multitask learners",
+            "Continuous space language models for statistical machine translation",
+            "mt5: A massively multilingual pre-trained text-to-text transformer",
+            "Learning internal representations by error propagation",
+            "A neural probabilistic language model",
+            "Sequence to sequence learning with neural networks",
+            "Deberta: Decoding-enhanced bert with disentangled attention",
+            "Bert: Pre-training of deep bidirectional transformers for language understanding"
+          ],
+          "II Large Language Models II-B Large Language Model Families": [
+            "GPT-4 Technical Report",
+            "Koala: A dialogue model for academic research",
+            "Llama 2: Open foundation and fine-tuned chat models",
+            "Webgpt: Browser-assisted question-answering with human feedback",
+            "Evaluating large language models trained on code",
+            "Transcending scaling laws with 0.1% extra compute",
+            "Alpaca: A strong, replicable instruction-following model",
+            "Palm 2 technical report",
+            "Scaling instruction-finetuned language models",
+            "Qlora: Efficient finetuning of quantized llms",
+            "Focused transformer: Contrastive training for context scaling",
+            "Palm: Scaling language modeling with pathways",
+            "Gorilla: Large language model connected with massive apis",
+            "Introducing chatgpt",
+            "Mistral 7b",
+            "Stable beluga models.",
+            "Towards expert-level medical question answering with large language models",
+            "Giraffe: Adventures in expanding context lengths in llms",
+            "How far can camels go? exploring the state of instruction tuning on open resources",
+            "Training language models to follow instructions with human feedback",
+            "Large language models encode clinical knowledge",
+            "Vigogne: French instruction-following and chat models",
+            "Code llama: Open foundation models for code",
+            "Language models are few-shot learners",
+            "Llama: Open and efficient foundation language models"
+          ],
+          "II Large Language Models II-C Other Representative LLMs": [
+            "Lamda: Language models for dialog applications",
+            "Bloom: A 176b-parameter open-access multilingual language model",
+            "Starcoder: may the source be with you!",
+            "Anthropic. claude. [Online]. Available: https://www.anthropic.com/news/introducing-claude",
+            "Orca 2: Teaching small language models how to reason",
+            "Unifying language learning paradigms",
+            "Llama pro: Progressive llama with block expansion",
+            "Grok",
+            "Using deepspeed and megatron to train megatron-turing nlg 530b, a large-scale generative language model",
+            "Multitask prompted training enables zero-shot task generalization",
+            "Jurassic-1: Technical details and evaluation",
+            "Yandex. Yalm. [Online]. Available: https://github.com/yandex/YaLM-100B",
+            "Camel-5b instructgpt",
+            "Mamba: Linear-time sequence modeling with selective state spaces",
+            "Language models are general-purpose interfaces",
+            "mixtral. mixtral. [Online]. Available: https://mistral.ai/news/mixtral-of-experts/",
+            "Gemini: a family of highly capable multimodal models",
+            "Introducing mpt-7b: a new standard for open-source, commercially usable llms",
+            "Galactica: A large language model for science",
+            "Inner monologue: Embodied reasoning through planning with language models",
+            "Training compute-optimal large language models",
+            "Principle-driven self-alignment of language models from scratch with minimal human supervision",
+            "Solving quantitative reasoning problems with language models",
+            "Gorilla: Large language model connected with massive apis",
+            "Orca: Progressive learning from complex explanation traces of gpt-4",
+            "Language is not all you need: Aligning perception with language models",
+            "Qwen-vl: A frontier large vision-language model with versatile abilities",
+            "Opt: Open pre-trained transformer language models",
+            "Docllm: A layout-aware generative language model for multimodal document understanding",
+            "Codegen2: Lessons for training llms on programming and natural languages",
+            "Glm-130b: An open bilingual pre-trained model",
+            "Pythia: A suite for analyzing large language models across training and scaling",
+            "Codegen: An open large language model for code with multi-turn program synthesis",
+            "Tinyllama: An open-source small language model",
+            "Ernie 3.0: Large-scale knowledge enhanced pre-training for language understanding and generation",
+            "Finetuned language models are zero-shot learners",
+            "Pal: Program-aided language models",
+            "Knowledge fusion of large language models",
+            "Alexatm 20b: Few-shot learning using a large-scale multilingual seq2seq model",
+            "Palmyra-base Parameter Autoregressive Language Model",
+            "Scaling language models: Methods, analysis & insights from training gopher",
+            "Glam: Efficient scaling of language models with mixture-of-experts",
+            "Longformer: The long-document transformer",
+            "Improving alignment of dialogue agents via targeted human judgements",
+            "Improving language models by retrieving from trillions of tokens",
+            "Opt-iml: Scaling language model instruction meta learning through the lens of generalization",
+            "Zephyr: Direct distillation of lm alignment",
+            "Deepseek-coder: When the large language model meets programming \u2013 the rise of code intelligence"
+          ],
+          "III How LLMs Are Built III-A Dominant LLM Architectures": [
+            "Bert: Pre-training of deep bidirectional transformers for language understanding",
+            "Attention is all you need"
+          ],
+          "III How LLMs Are Built III-B Data Cleaning": [
+            "Scaling laws and interpretability of learning from repeated data",
+            "The refinedweb dataset for falcon llm: outperforming curated corpora with web data, and web data only"
+          ],
+          "III How LLMs Are Built III-D Positional Encoding": [
+            "Roformer: Enhanced transformer with rotary position embedding",
+            "Train short, test long: Attention with linear biases enables input length extrapolation",
+            "Attention is all you need",
+            "Self-attention with relative position representations"
+          ],
+          "III How LLMs Are Built III-E Model Pre-training": [
+            "Bert: Pre-training of deep bidirectional transformers for language understanding",
+            "Outrageously large neural networks: The sparsely-gated mixture-of-experts layer"
+          ],
+          "III How LLMs Are Built III-F Fine-tuning and Instruction Tuning": [
+            "Instruction tuning for large language models: A survey",
+            "Self-instruct: Aligning language model with self generated instructions",
+            "Cross-task generalization via natural language crowdsourcing instructions",
+            "Alpaca: A strong, replicable instruction-following model",
+            "Parameter-efficient multi-task fine-tuning for transformers via shared hypernetworks",
+            "Bert: Pre-training of deep bidirectional transformers for language understanding",
+            "Training language models to follow instructions with human feedback"
+          ],
+          "III How LLMs Are Built III-G Alignment": [
+            "Direct preference optimization: Your language model is secretly a reward model",
+            "Rlaif: Scaling reinforcement learning from human feedback with ai feedback",
+            "Deep reinforcement learning from human preferences",
+            "Kto"
+          ],
+          "III How LLMs Are Built III-I Cost-Effective Training/Inference/Adaptation/Compression": [
+            "Rwkv: Reinventing rnns for the transformer era",
+            "Zero: Memory optimizations toward training trillion parameter models",
+            "Lora: Low-rank adaptation of large language models",
+            "Distilling the knowledge in a neural network"
+          ],
+          "IV How LLMs Are Used and Augmented IV-A LLM limitations": [
+            "Generating persona consistent dialogues by exploiting natural language inference",
+            "Rome was built in 1776: A case study on factual correctness in knowledge-grounded response generation",
+            "Towards faithful neural table-to-text generation with content-matching constraints",
+            "Factscore: Fine-grained atomic evaluation of factual precision in long form text generation",
+            "Evaluating attribution in dialogue systems: The BEGIN benchmark",
+            "Sources of hallucination by large language models on inference tasks",
+            "ROUGE: A package for automatic evaluation of summaries",
+            "Survey of hallucination in natural language generation",
+            "Handling divergent reference texts when evaluating table-to-text generation",
+            "Bleu: a method for automatic evaluation of machine translation",
+            "q2superscript\ud835\udc5e2q^{2}: Evaluating factual consistency in knowledge-grounded dialogues via question generation and question answering"
+          ],
+          "IV How LLMs Are Used and Augmented IV-B Using LLMs: Prompt Design and Engineering": [
+            "Large language models are human-level prompt engineers",
+            "Automatic chain of thought prompting in large language models",
+            "Chain-of-thought prompting elicits reasoning in large language models",
+            "Exploring the mit mathematics and eecs curriculum using large language models",
+            "Promptchainer: Chaining large language model prompts through visual programming",
+            "Reflexion: Language agents with verbal reinforcement learning",
+            "Machine learning: The high interest credit card of technical debt",
+            "Selfcheckgpt: Zero-resource black-box hallucination detection for generative large language models",
+            "Tree of thoughts: Deliberate problem solving with large language models"
+          ],
+          "IV How LLMs Are Used and Augmented IV-C Augmenting LLMs through external knowledge - RAG": [
+            "Retrieval-augmented generation for large language models: A survey",
+            "Retrieval-augmented generation for knowledge-intensive NLP tasks",
+            "Active retrieval augmented generation"
+          ],
+          "IV How LLMs Are Used and Augmented IV-D Using External Tools": [
+            "Art: Automatic multi-step reasoning and tool-use for large language models",
+            "Toolformer: Language models can teach themselves to use tools",
+            "Gorilla: Large language model connected with massive apis"
+          ],
+          "IV How LLMs Are Used and Augmented IV-E LLM Agents": [
+            "Hugginggpt: Solving ai tasks with chatgpt and its friends in huggingface",
+            "Check your facts and try again: Improving large language models with external knowledge and automated feedback",
+            "React: Synergizing reasoning and acting in language models",
+            "Dera: Enhancing large language model completions with dialog-enabled resolving agents",
+            "The rise and potential of large language model based agents: A survey",
+            "Rewoo: Decoupling reasoning from observations for efficient augmented language models"
+          ],
+          "V Popular Datasets for LLMs": [
+            "A survey on evaluation of large language models"
+          ],
+          "V Popular Datasets for LLMs V-A Datasets for Basic Tasks: language modeling/understanding/generation": [
+            "Measuring coding challenge competence with apps",
+            "QuAC: Question answering in context",
+            "Boolq: Exploring the surprising difficulty of natural yes/no questions",
+            "Program synthesis with large language models",
+            "RACE: Large-scale ReAding comprehension dataset from examinations",
+            "TriviaQA: A large scale distantly supervised challenge dataset for reading comprehension",
+            "SQuAD: 100,000+ questions for machine comprehension of text",
+            "Measuring massive multitask language understanding",
+            "Looking beyond the surface:a challenge set for reading comprehension over multiple sentences",
+            "Seq2sql: Generating structured queries from natural language using reinforcement learning",
+            "Natural questions: A benchmark for question answering research"
+          ],
+          "V Popular Datasets for LLMs V-B Datasets for Emergent: ICL, reasoning (CoT), instruction following": [
+            "Can a suit of armor conduct electricity? A new dataset for open book question answering",
+            "Think you have solved question answering? try arc, the AI2 reasoning challenge",
+            "Hellaswag: Can a machine really finish your sentence?",
+            "Training verifiers to solve math word problems",
+            "Truthfulqa: Measuring how models mimic human falsehoods",
+            "PIQA: reasoning about physical commonsense in natural language",
+            "Measuring mathematical problem solving with the MATH dataset",
+            "Opt-iml: Scaling language model instruction meta learning through the lens of generalization",
+            "Socialiqa: Commonsense reasoning about social interactions"
+          ],
+          "V Popular Datasets for LLMs V-C Datasets for Augmented: using external knowledge/tools": [
+            "Toolqa: A dataset for llm question answering with external tools",
+            "Hotpotqa: A dataset for diverse, explainable multi-hop question answering"
+          ],
+          "VI Prominent LLMs\u2019 Performance on Benchmarks VI-A Popular Metrics for Evaluating LLMs": [
+            "Flowqa: Grasping flow in history for conversational machine comprehension",
+            "More than reading comprehension: A survey on datasets and metrics of textual question answering",
+            "QuAC: Question answering in context",
+            "A survey on evaluation metrics for machine translation"
+          ],
+          "VI Prominent LLMs\u2019 Performance on Benchmarks VI-B LLMs\u2019 Performance on Different Tasks": [
+            "Hughes hallucination evaluation model (hhem) leaderboard",
+            "Halueval: A large-scale hallucination evaluation benchmark for large language models"
+          ],
+          "VII Challenges and Future Directions": [
+            "Challenges and applications of large language models"
+          ],
+          "VII Challenges and Future Directions VII-A Smaller and more efficient Language Models": [
+            "Textbooks are all you need ii: phi-1.5 technical report",
+            "Textbooks are all you need"
+          ],
+          "VII Challenges and Future Directions VII-B New Post-attention Architectural Paradigms": [
+            "Efficiently modeling long sequences with structured state spaces",
+            "Mamba: Linear-time sequence modeling with selective state spaces",
+            "Finite mixture models",
+            "Monarch mixer: A simple sub-quadratic gemm-based architecture",
+            "mixtral. mixtral. [Online]. Available: https://mistral.ai/news/mixtral-of-experts/",
+            "Glam: Efficient scaling of language models with mixture-of-experts",
+            "StripedHyena: Moving Beyond Transformers with Hybrid Signal Processing Models",
+            "Hyena hierarchy: Towards larger convolutional language models"
+          ],
+          "VII Challenges and Future Directions VII-C Multi-modal Models": [
+            "Llava-plus: Learning to use tools for creating multimodal agents",
+            "GPT-4 Technical Report",
+            "Next-gpt: Any-to-any multimodal llm",
+            "Visual instruction tuning",
+            "Convgenvismo: Evaluation of conversational generative vision models",
+            "Qwen-vl: A frontier large vision-language model with versatile abilities"
+          ],
+          "VII Challenges and Future Directions VII-D Improved LLM Usage and Augmentation techniques": [
+            "The rise and potential of large language model based agents: A survey",
+            "Automated unit test improvement using large language models at meta"
+          ],
+          "VII Challenges and Future Directions VII-E Security and Ethical/Responsible AI": [
+            "Trustllm: Trustworthiness in large language models"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.0003730862226802856,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Retrieval-Augmented Generation for Large Language Models: A Survey",
+        "arxiv_id": "2312.10997",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Large Language Models (LLMs) demonstrate significant capabilities but face challenges such as hallucination, outdated knowledge, and non-transparent, untraceable reasoning processes. Retrieval-Augmented Generation (RAG) has emerged as a promising solution by incorporating knowledge from external databases. This enhances the accuracy and credibility of the models, particularly for knowledge-intensive tasks, and allows for continuous knowledge updates and integration of domain-specific information. RAG synergistically merges LLMs\u2019 intrinsic knowledge with the vast, dynamic repositories of external databases. This comprehensive review paper offers a detailed examination of the progression of RAG paradigms, encompassing the Naive RAG, the Advanced RAG, and the Modular RAG. It meticulously scrutinizes the tripartite foundation of RAG frameworks, which includes the retrieval , the generation and the augmentation techniques. The paper highlights the state-of-the-art technologies embedded in each of these critical components, providing a profound understanding of the advancements in RAG systems. Furthermore, this paper introduces the metrics and benchmarks for assessing RAG models, along with the most up-to-date evaluation framework. In conclusion, the paper delineates prospective avenues for research, including the identification of challenges, the expansion of multi-modalities, and the progression of the RAG infrastructure and its ecosystem.\u00a0222Resources are available at https://github.com/Tongji-KGLLM/RAG-Survey . ",
+        "sections": {},
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.0010075628524646163,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "A Survey of Large Language Models Attribution",
+        "arxiv_id": "2311.03731",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Open-domain generative systems have gained significant attention in the field of conversational AI (e.g., generative search engines). This paper presents a comprehensive review of the attribution mechanisms employed by these systems, particularly large language models. Though attribution or citation improve the factuality and verifiability, issues like ambiguous knowledge reservoirs, inherent biases, and the drawbacks of excessive attribution can hinder the effectiveness of these systems. The aim of this survey is to provide valuable insights for researchers, aiding in the refinement of attribution methodologies to enhance the reliability and veracity of responses generated by open-domain generative systems. We believe that this field is still in its early stages; hence, we maintain a repository to keep track of ongoing studies at https://github.com/HITsz-TMG/awesome-llm-attributions. ",
+        "sections": {
+          "1 Introduction": [
+            "Credible without credit: Domain experts assess generative language models",
+            "A survey of hallucination in large foundation models",
+            "The refinedweb dataset for falcon llm: Outperforming curated corpora with web data, and web data only.",
+            "Do language models know when they\u2019re hallucinating references?",
+            "Expertqa: Expert-curated questions and attributed answers",
+            "Enabling large language models to generate text with citations",
+            "Chatgpt hallucinates when attributing answers.",
+            "Training a helpful and harmless assistant with reinforcement learning from human feedback",
+            "Palm 2 technical report.",
+            "Siren\u2019s song in the ai ocean: A survey on hallucination in large language models",
+            "Lamda: Language models for dialog applications.",
+            "Evaluating verifiability in generative search engines",
+            "Training language models to follow instructions with human feedback",
+            "Adaptive chameleon or stubborn sloth: Unraveling the behavior of large language models in knowledge clashes"
+          ],
+          "2 Task Definition": [
+            "The anatomy of a large-scale hypertextual web search engine",
+            "Measuring attribution in natural language generation models",
+            "Finding news citations for wikipedia",
+            "Attributed question answering: Evaluation and modeling for attributed large language models"
+          ],
+          "3 Sources of Attribution 3.1 Pre-training Data": [
+            "Understanding in-context learning via supportive pretraining data",
+            "The ROOTS search tool: Data transparency for llms",
+            "ORCA: interpreting prompted language models via locating supporting data evidence in the ocean of pretraining data"
+          ],
+          "3 Sources of Attribution 3.2 Out-of-model Knowledge": [
+            "Retrieval-augmented generation for knowledge-intensive NLP tasks",
+            "Retrieval augmentation reduces hallucination in conversation",
+            "Leveraging passage retrieval with generative models for open domain question answering",
+            "Improving language models by retrieving from trillions of tokens"
+          ],
+          "4 Datasets for Attribution": [
+            "Towards verifiable generation: A benchmark for knowledge-aware language model attribution.",
+            "Webbrain: Learning to generate factually correct articles for queries by grounding on large web corpus",
+            "Webgpt: Browser-assisted question-answering with human feedback",
+            "Expertqa: Expert-curated questions and attributed answers",
+            "WebCPM: Interactive web search for Chinese long-form question answering"
+          ],
+          "5 Approaches to Attribution 5.1 Direct Generated Attribution": [
+            "Recitation-augmented language models",
+            "Credible without credit: Domain experts assess generative language models",
+            "according to\u2026\" prompting language models improves quoting from pre-training data",
+            "Learning to plan and generate text with citations"
+          ],
+          "5 Approaches to Attribution 5.2 Post-retrieval Answering": [
+            "Reading wikipedia to answer open-domain questions",
+            "Smartbook: Ai-assisted situation report generation",
+            "Mitigating language model hallucination with interactive question-knowledge alignment",
+            "Search-in-the-chain: Towards the accurate, credible and traceable content generation for complex knowledge-intensive tasks",
+            "Llatrieval: Llm-verified retrieval for verifiable generation",
+            "Self-rag: Learning to retrieve, generate, and critique through self-reflection"
+          ],
+          "5 Approaches to Attribution 5.3 Post-Generation Attribution": [
+            "Complex claim verification with evidence retrieved in the wild",
+            "Retrieving supporting evidence for generative question answering",
+            "RARR: researching and revising what language models say, using language models"
+          ],
+          "5 Approaches to Attribution 5.4 Attribution Systems": [
+            "Webgpt: Browser-assisted question-answering with human feedback",
+            "Improving alignment of dialogue agents via targeted human judgements",
+            "Teaching language models to support answers with verified quotes",
+            "Lamda: Language models for dialog applications."
+          ],
+          "6 Attribution Evaluation": [
+            "Measuring attribution in natural language generation models",
+            "Towards verifiable generation: A benchmark for knowledge-aware language model attribution.",
+            "according to\u2026\" prompting language models improves quoting from pre-training data",
+            "Webgpt: Browser-assisted question-answering with human feedback",
+            "Automatic evaluation of attribution by large language models",
+            "Lamda: Language models for dialog applications.",
+            "Evaluating verifiability in generative search engines"
+          ],
+          "7 Discussion 7.2 Limitations of Attributions": [
+            "Citation: A key to building responsible and accountable large language models",
+            "Factscore: Fine-grained atomic evaluation of factual precision in long form text generation",
+            "Establishing trustworthiness: Rethinking tasks and model evaluation.",
+            "Evaluating verifiability in generative search engines",
+            "Teaching language models to support answers with verified quotes"
+          ],
+          "7 Discussion 7.3 Challenges for Attributions": [
+            "Citation: A key to building responsible and accountable large language models",
+            "Textbooks are all you need"
+          ],
+          "7 Discussion 7.4 Future Directions for Attributions": [
+            "Selfcheckgpt: Zero-resource black-box hallucination detection for generative large language models",
+            "Lamda: Language models for dialog applications."
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.00020822822989430279,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "A Survey on Large Language Models for Recommendation",
+        "arxiv_id": "2305.19860",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Large Language Models (LLMs) have emerged as powerful tools in the field of Natural Language Processing (NLP) and have recently gained significant attention in the domain of Recommendation Systems (RS). These models, trained on massive amounts of data using self-supervised learning, have demonstrated remarkable success in learning universal representations and have the potential to enhance various aspects of recommendation systems by some effective transfer techniques such as fine-tuning and prompt tuning, and so on. The crucial aspect of harnessing the power of language models in enhancing recommendation quality is the utilization of their high-quality representations of textual features and their extensive coverage of external knowledge to establish correlations between items and users. To provide a comprehensive understanding of the existing LLM-based recommendation systems, this survey presents a taxonomy that categorizes these models into two major paradigms, respectively Discriminative LLM for Recommendation (DLLM4Rec) and Generative LLM for Recommendation (GLLM4Rec), with the latter being systematically sorted out for the first time. Furthermore, we systematically review and analyze existing LLM-based recommendation systems within each paradigm, providing insights into their methodologies, techniques, and performance. Additionally, we identify key challenges and several valuable findings to provide researchers and practitioners with inspiration. We have also created a GitHub repository to index relevant papers on LLMs for recommendation444https://github.com/WLiK/LLM4Rec. ",
+        "sections": {
+          "1 Introduction": [
+            "Pre-train, prompt and recommendation: A comprehensive survey of language modelling paradigm adaptations in recommender systems",
+            "Zero-shot recommendation as language modeling",
+            "A survey of large language models",
+            "Recommendation system based on deep learning methods: a systematic review and new directions",
+            "Knowledge transfer via pre-training for recommendation: A review and prospect",
+            "Chat-rec: Towards interactive and explainable llms-augmented recommender system",
+            "Recommendation as language processing (RLP): A unified pretrain, personalized prompt & predict paradigm (P5)",
+            "Personalized prompt learning for explainable recommendation"
+          ],
+          "3 Discriminative LLMs for Recommendation": [
+            "BERT: pre-training of deep bidirectional transformers for language understanding"
+          ],
+          "3 Discriminative LLMs for Recommendation 3.1 Fine-tuning": [
+            "A multi-task learning framework for product ranking with BERT",
+            "Opt: Open pre-trained transformer language models",
+            "Resetbert4rec: A pre-training model integrating time and user historical behavior for sequential recommendation",
+            "Empowering news recommendation with pre-trained language models",
+            "Tiny-newsrec: Effective and efficient plm-based news recommendation",
+            "GBERT: pre-training user representations for ephemeral group recommendation",
+            "Ctr-bert: Cost-effective knowledge distillation for billion-parameter teacher models",
+            "Boosting deep CTR prediction with a plug-and-play pre-trainer for news recommendation",
+            "Where to go next for recommender systems? id-vs. modality-based recommender models revisited",
+            "Towards universal sequence representation learning for recommender systems",
+            "U-BERT: pre-training user representations for improved recommendation",
+            "Exploring the upper limits of text-based collaborative filtering using large language models: Discoveries and insights",
+            "Reprbert: Distilling BERT to an efficient representation-based relevance model for e-commerce",
+            "Bert4rec: Sequential recommendation with bidirectional encoder representations from transformer",
+            "Lightweight composite re-ranking for efficient keyword search with BERT",
+            "Userbert: Contrastive user model pre-training"
+          ],
+          "3 Discriminative LLMs for Recommendation 3.2 Prompt Tuning": [
+            "Improving conversational recommendation systems\u2019 quality with context-aware item meta information",
+            "Prompt learning for news recommendation",
+            "The power of scale for parameter-efficient prompt tuning",
+            "What does BERT know about books, movies and music? probing BERT for conversational recommendation"
+          ],
+          "4 Generative LLMs for Recommendation 4.1 Non-tuning Paradigm": [
+            "A first look at llm-powered generative news recommendation",
+            "Zero-shot recommendation as language modeling",
+            "Towards open-world recommendation with knowledge augmentation from large language models",
+            "Large language models are zero-shot rankers for recommender systems",
+            "Large language models are competitive near cold-start recommenders for language-and item-based preferences",
+            "Generative recommendation: Towards next-generation recommender paradigm",
+            "Chat-rec: Towards interactive and explainable llms-augmented recommender system",
+            "Why can GPT learn in-context? language models secretly perform gradient descent as meta-optimizers.",
+            "Rethinking the evaluation for conversational recommendation in the era of large language models",
+            "Uncovering chatgpt\u2019s capabilities in recommender systems",
+            "Is chatgpt good at search? investigating large language models as re-ranking agent",
+            "Large language model augmented narrative driven recommendations",
+            "Is chatgpt a good recommender? A preliminary study",
+            "Recagent: A novel simulation paradigm for recommender systems.",
+            "Zero-shot next-item recommendation using large pretrained language models",
+            "Language models are few-shot learners."
+          ],
+          "4 Generative LLMs for Recommendation 4.2 Tuning Paradigm": [
+            "Genrec: Large language model for generative recommendation",
+            "Recommendation as instruction following: A large language model empowered recommendation approach",
+            "Exploring large language model for graph data understanding in online job recommendations",
+            "Do llms understand user preferences? evaluating llms on user rating prediction",
+            "Enhancing job recommendation through llm-based generative adversarial networks",
+            "Gpt4rec: A generative framework for personalized recommendation and user interests interpretation",
+            "Recommendation as language processing (RLP): A unified pretrain, personalized prompt & predict paradigm (P5)",
+            "Generative sequential recommendation with gptrec",
+            "M6-rec: Generative pretrained language models are open-ended recommender systems",
+            "Stanford alpaca: An instruction-following llama model",
+            "Generative job recommendations with large language model",
+            "Towards unified conversational recommender systems via knowledge-enhanced prompt learning",
+            "Palr: Personalization aware llms for recommendation",
+            "Amazon-m2: A multilingual multi-locale shopping session dataset for recommendation and text generation.",
+            "Exploring the upper limits of text-based collaborative filtering using large language models: Discoveries and insights",
+            "Tallrec: An effective and efficient tuning framework to align large language model with recommendation",
+            "Leveraging large language models in conversational recommender systems",
+            "Pbnr: Prompt-based news recommender system",
+            "Personalized prompt learning for explainable recommendation"
+          ],
+          "5 Findings 5.1 Model Bias": [
+            "Towards universal sequence representation learning for recommender systems",
+            "Is chatgpt fair for recommendation?",
+            "Should chatgpt be biased? challenges and risks of bias in large language models",
+            "Fantastically ordered prompts and where to find them: Overcoming few-shot prompt order sensitivity"
+          ],
+          "5 Findings 5.2 Recommendation Prompt Designing": [
+            "Recommendation as instruction following: A large language model empowered recommendation approach",
+            "Is chatgpt good at search? investigating large language models as re-ranking agent",
+            "Zero-shot next-item recommendation using large pretrained language models"
+          ],
+          "5 Findings 5.3 Promising Ability": [
+            "Is chatgpt a good recommender? A preliminary study",
+            "Large language models are zero-shot rankers for recommender systems"
+          ],
+          "5 Findings 5.4 Evaluation Issues": [
+            "Large language models are zero-shot rankers for recommender systems",
+            "Generative recommendation: Towards next-generation recommender paradigm",
+            "Uncovering chatgpt\u2019s capabilities in recommender systems",
+            "Large language models are effective text rankers with pairwise ranking prompting",
+            "Towards continual knowledge learning of language models"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.0018694997997954488,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "A Survey of Generative Search and Recommendation in the Era of Large Language Models",
+        "arxiv_id": "2404.16924",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract. With the information explosion on the Web, search and recommendation are foundational infrastructures to satisfying users\u2019 information needs. As the two sides of the same coin, both revolve around the same core research problem, matching queries with documents or users with items. In the recent few decades, search and recommendation have experienced synchronous technological paradigm shifts, including machine learning-based and deep learning-based paradigms. Recently, the superintelligent generative large language models have sparked a new paradigm in search and recommendation, i.e., generative search (retrieval) and recommendation, which aims to address the matching problem in a generative manner. In this paper, we provide a comprehensive survey of the emerging paradigm in information systems and summarize the developments in generative search and recommendation from a unified perspective. Rather than simply categorizing existing works, we abstract a unified framework for the generative paradigm and break down the existing works into different stages within this framework to highlight the strengths and weaknesses. And then, we distinguish generative search and recommendation with their unique challenges, identify open problems and future directions, and envision the next information-seeking paradigm.",
+        "sections": {
+          "1. Introduction": [
+            "Long short-term memory",
+            "Attention is all you need",
+            "Dense passage retrieval for open-domain question answering",
+            "Learning to rank for information retrieval and natural language processing",
+            "Deep Learning for Matching in Search and Recommendation",
+            "The graph neural network model",
+            "Toward the next generation of recommender systems: A survey of the state-of-the-art and possible extensions",
+            "Gradient-based learning applied to document recognition",
+            "A Review of Modern Recommender Systems Using Generative Models (Gen-RecSys)",
+            "Algorithms for non-negative matrix factorization",
+            "Information seeking: convergence of search, recommendations, and advertising",
+            "Information retrieval on the web",
+            "Information filtering and information retrieval: Two sides of the same coin?"
+          ],
+          "2. Traditional Paradigms 2.1. Machine Learning based Search and Recommendation": [
+            "Learning Bilinear Model for Matching Queries and Documents",
+            "Learning to rank for information retrieval and natural language processing",
+            "Neural Collaborative Filtering",
+            "Fism: factored item similarity models for top-n recommender systems",
+            "New approaches to support vector ordinal regression",
+            "Factorization Machines",
+            "BPR: Bayesian personalized ranking from implicit feedback",
+            "Learning to rank using gradient descent",
+            "Supervised semantic indexing",
+            "Empirical analysis of predictive algorithms for collaborative filtering",
+            "Learning to rank: from pairwise approach to listwise approach",
+            "Matrix factorization techniques for recommender systems"
+          ],
+          "2. Traditional Paradigms 2.2. Deep Learning based Search and Recommendation": [
+            "Attention is all you need",
+            "Dense passage retrieval for open-domain question answering",
+            "Joint representation learning for top-n recommendation with heterogeneous information sources",
+            "Neural Collaborative Filtering",
+            "Bert: Pre-training of deep bidirectional transformers for language understanding",
+            "BERT4Rec: Sequential recommendation with bidirectional encoder representations from transformer",
+            "A latent semantic model with convolutional-pooling structure for information retrieval",
+            "Personalized top-n sequential recommendation via convolutional sequence embedding",
+            "Lightgcn: Simplifying and powering graph convolution network for recommendation",
+            "Deep matrix factorization models for recommender systems.",
+            "Neural Graph Collaborative Filtering",
+            "Learning deep structured semantic models for web search using clickthrough data",
+            "Self-attentive sequential recommendation",
+            "Deep sentence embedding using long short-term memory networks: Analysis and application to information retrieval"
+          ],
+          "3. Generative Paradigm for Search and Recommendation 3.1. Scope Clarification": [
+            "Fine-tuning llama for multi-stage text retrieval"
+          ],
+          "4. Generative Search 4.2. Query Formulation": [
+            "Generative multi-hop retrieval",
+            "Generative retrieval for conversational question answering"
+          ],
+          "4. Generative Search 4.3. Document Identifiers": [
+            "Autoregressive search engines: Generating substrings as document identifiers",
+            "Generative retrieval for conversational question answering",
+            "GLEN: Generative Retrieval via Lexical Index Learning",
+            "Neural discrete representation learning",
+            "Enhancing Generative Retrieval with Reinforcement Learning from Relevance Feedback",
+            "How Does Generative Retrieval Scale to Millions of Passages?",
+            "Auto Search Indexer for End-to-End Document Retrieval",
+            "TOME: A Two-stage Approach for Model-based Retrieval",
+            "A neural corpus indexer for document retrieval",
+            "Learning to Tokenize for Generative Retrieval",
+            "DSI++: Updating Transformer Memory with New Documents",
+            "Multiview Identifiers Enhanced Generative Retrieval",
+            "Transformer memory as a differentiable search index",
+            "Autoregressive Entity Retrieval"
+          ],
+          "4. Generative Search 4.4. Training": [
+            "Bridging the gap between indexing and retrieval for differentiable search index with query generation",
+            "Scalable and Effective Generative Information Retrieval",
+            "Learning to rank in generative retrieval"
+          ],
+          "4. Generative Search 4.5. Inference": [
+            "Opportunistic data structures with applications",
+            "Auto Search Indexer for End-to-End Document Retrieval"
+          ],
+          "4. Generative Search 4.6. Summary": [
+            "Scalable and Effective Generative Information Retrieval",
+            "Exploring the limits of transfer learning with a unified text-to-text transformer",
+            "Learning to rank in generative retrieval",
+            "Multiview Identifiers Enhanced Generative Retrieval",
+            "Bart: Denoising sequence-to-sequence pre-training for natural language generation, translation, and comprehension",
+            "Transformer memory as a differentiable search index",
+            "Autoregressive Entity Retrieval"
+          ],
+          "4. Generative Search 4.7. LLMs for Retrieval beyond Generative Search": [
+            "Is chatgpt good at search? investigating large language models as re-ranking agent.",
+            "Query2doc: Query expansion with large language models",
+            "Fine-tuning llama for multi-stage text retrieval"
+          ],
+          "5. Generative Recommendation 5.2. User Formulation": [
+            "Llara: Aligning large language models with sequential recommenders",
+            "Large Language Models meet Collaborative Filtering: An Efficient All-round LLM-based Recommender System",
+            "Large Language Model with Graph Convolution for Recommendation",
+            "RA-Rec: An Efficient ID Representation Alignment Framework for LLM-based Recommendation",
+            "RecRanker: Instruction Tuning Large Language Model as Ranker for Top-k Recommendation",
+            "A bi-step grounding paradigm for large language models in recommendation systems",
+            "Llmrec: Benchmarking large language models on recommendation task",
+            "Recommender Systems with Generative Retrieval",
+            "User profile feature-based approach to address the cold start problem in collaborative filtering for personalized movie recommendation",
+            "Lightgcn: Simplifying and powering graph convolution network for recommendation",
+            "Chat-rec: Towards interactive and explainable llms-augmented recommender system",
+            "Rec-GPT4V: Multimodal Recommendation with Large Vision-Language Models",
+            "Recommendation as instruction following: A large language model empowered recommendation approach",
+            "Large Language Model Distilling Medication Recommendation Model",
+            "Harnessing Large Language Models for Text-Rich Sequential Recommendation",
+            "Towards open-world recommendation with knowledge augmentation from large language models",
+            "A multi-facet paradigm to bridge large language model and recommendation",
+            "M6-rec: Generative pretrained language models are open-ended recommender systems.",
+            "Uncovering chatgpt\u2019s capabilities in recommender systems",
+            "Recommendation as language processing (rlp): A unified pretrain, personalized prompt & predict paradigm (p5)"
+          ],
+          "5. Generative Recommendation 5.3. Item Identifiers": [
+            "A bi-step grounding paradigm for large language models in recommendation systems",
+            "BookGPT: A General Framework for Book Recommendation Empowered by Large Language Model",
+            "PBNR: Prompt-based News Recommender System",
+            "Rec-GPT4V: Multimodal Recommendation with Large Vision-Language Models",
+            "Adapting large language models by integrating collaborative semantics for recommendation",
+            "Recommender Systems with Generative Retrieval",
+            "Collm: Integrating collaborative embeddings into large language models for recommendation",
+            "Uncovering chatgpt\u2019s capabilities in recommender systems",
+            "How to Index Item IDs for Recommendation Foundation Models",
+            "Llama: Open and efficient foundation language models",
+            "Recommendation as language processing (rlp): A unified pretrain, personalized prompt & predict paradigm (p5)",
+            "Tutorial on Large Language Models for Recommendation",
+            "Generative Retrieval with Semantic Tree-Structured Item Identifiers via Contrastive Learning",
+            "Large language models for generative recommendation: A survey and visionary discussions",
+            "Soundstream: An end-to-end neural audio codec",
+            "Towards LLM-RecSys Alignment with Textual ID Learning",
+            "A multi-facet paradigm to bridge large language model and recommendation",
+            "M6-rec: Generative pretrained language models are open-ended recommender systems."
+          ],
+          "5. Generative Recommendation 5.4. Training": [
+            "Data-efficient Fine-tuning for LLM-based Recommendation",
+            "Adapting large language models by integrating collaborative semantics for recommendation",
+            "Recommender Systems with Generative Retrieval",
+            "LightLM: A Lightweight Deep and Narrow Language Model for Generative Recommendation",
+            "Bart: Denoising sequence-to-sequence pre-training for natural language generation, translation, and comprehension"
+          ],
+          "5. Generative Recommendation 5.5. Inference": [
+            "A multi-facet paradigm to bridge large language model and recommendation",
+            "How to Index Item IDs for Recommendation Foundation Models",
+            "DiFashion: Towards Personalized Outfit Generation",
+            "Large language models for generative recommendation: A survey and visionary discussions",
+            "Leveraging large language models for pre-trained recommender systems",
+            "A bi-step grounding paradigm for large language models in recommendation systems"
+          ],
+          "5. Generative Recommendation 5.6. Summary": [
+            "Data-efficient Fine-tuning for LLM-based Recommendation",
+            "A bi-step grounding paradigm for large language models in recommendation systems",
+            "Genrec: Large language model for generative recommendation",
+            "Recommendation as instruction following: A large language model empowered recommendation approach",
+            "Generative Retrieval with Semantic Tree-Structured Item Identifiers via Contrastive Learning",
+            "Leveraging large language models for pre-trained recommender systems",
+            "A multi-facet paradigm to bridge large language model and recommendation"
+          ],
+          "5. Generative Recommendation 5.7. LLMs for Recommendation beyond Generative Recommendation": [
+            "Uncovering chatgpt\u2019s capabilities in recommender systems",
+            "E4SRec: An elegant effective efficient extensible solution of large language models for sequential recommendation",
+            "Rethinking Large Language Model Architectures for Sequential Recommendations",
+            "Towards open-world recommendation with knowledge augmentation from large language models",
+            "Tallrec: An effective and efficient tuning framework to align large language model with recommendation"
+          ],
+          "6. Discussion 6.1. Difference Between Generative Search and Recommendation": [
+            "Data-efficient Fine-tuning for LLM-based Recommendation",
+            "Learning to Tokenize for Generative Retrieval"
+          ],
+          "6. Discussion 6.2. Open Problems in Generative Search and Recommendation": [
+            "Continual learning for generative retrieval over dynamic corpora",
+            "Generative Cross-Modal Retrieval: Memorizing Images in Multimodal Language Models for Retrieval and Beyond"
+          ],
+          "6. Discussion 6.3. Envision Next Information-seeking Paradigm: Content Generation": [
+            "Diffusion models in vision: A survey",
+            "Generative adversarial networks",
+            "Survey of hallucination in natural language generation",
+            "Generative recommendation: Towards next-generation recommender paradigm",
+            "M6-rec: Generative pretrained language models are open-ended recommender systems."
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.062443025410175323,
+        "extra": {
+          "expand": "not expand"
+        }
+      }
+    ],
+    "Use of LLM in ranking search results": [
+      {
+        "title": "LLM-enhanced Reranking in Recommender Systems",
+        "arxiv_id": "2406.12433",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract Reranking is a critical component in recommender systems, playing an essential role in refining the output of recommendation algorithms. Traditional reranking models have focused predominantly on accuracy, but modern applications demand consideration of additional criteria such as diversity and fairness. Existing reranking approaches often fail to harmonize these diverse criteria effectively at the model level. Moreover, these models frequently encounter challenges with scalability and personalization due to their complexity and the varying significance of different reranking criteria in diverse scenarios. In response, we introduce a comprehensive reranking framework enhanced by LLM, designed to seamlessly integrate various reranking criteria while maintaining scalability and facilitating personalized recommendations. This framework employs a fully connected graph structure, allowing the LLM to simultaneously consider multiple aspects such as accuracy, diversity, and fairness through a coherent Chain-of-Thought (CoT) process. A customizable input mechanism is also integrated, enabling the tuning of the language model\u2019s focus to meet specific reranking needs. We validate our approach using three popular public datasets, where our framework demonstrates superior performance over existing state-of-the-art reranking models in balancing multiple criteria.",
+        "sections": {
+          "Introduction": [
+            "Neural re-ranking in multi-stage recommender systems: A review",
+            "Lost in the middle: How language models use long contexts.",
+            "A survey on evaluation of large language models",
+            "Chain-of-thought prompting elicits reasoning in large language models",
+            "Fairness-aware news recommendation with decomposed adversarial learning",
+            "Recent advances in natural language processing via large pre-trained language models: A survey",
+            "The use of MMR, diversity-based reranking for reordering documents and producing summaries",
+            "Fairness in rankings and recommendations: an overview",
+            "Trustworthy Recommender Systems: Foundations and Frontiers",
+            "Learning a deep listwise context model for ranking refinement",
+            "ChatGPT: Jack of all trades, master of none"
+          ],
+          "Framework Problem Formulation": [
+            "Neural collaborative filtering",
+            "Personalized re-ranking for recommendation",
+            "Attention over self-attention: Intention-aware re-ranking with dynamic transformer encoders for recommendation"
+          ],
+          "Framework Nodes Construction": [
+            "Chain-of-thought prompting elicits reasoning in large language models",
+            "Novelty and diversity in information retrieval evaluation",
+            "Reflexion: an autonomous agent with dynamic memory and self-reflection",
+            "Fairness-aware tensor-based recommendation"
+          ],
+          "Experiments Experimental Setup": [
+            "A Graphical and Attentional Framework for Dual-Target Cross-Domain Recommendation",
+            "Dcn v2: Improved deep & cross network and practical lessons for web-scale learning to rank systems",
+            "Fairness-aware news recommendation with decomposed adversarial learning",
+            "Personalized re-ranking for recommendation",
+            "Fast greedy map inference for determinantal point process to improve recommendation diversity",
+            "Attention over self-attention: Intention-aware re-ranking with dynamic transformer encoders for recommendation",
+            "Is ChatGPT Good at Search? Investigating Large Language Models as Re-Ranking Agent",
+            "Graph of thoughts: Solving elaborate problems with large language models.",
+            "Llama: Open and efficient foundation language models",
+            "KuaiRand: An Unbiased Sequential Recommendation Dataset with Randomly Exposed Videos",
+            "Neural collaborative filtering",
+            "The use of MMR, diversity-based reranking for reordering documents and producing summaries",
+            "The movielens datasets: History and context",
+            "Fairness-aware tensor-based recommendation",
+            "Learning a deep listwise context model for ranking refinement"
+          ],
+          "Experiments Hyper-parameter Analysis": [
+            "Lost in the middle: How language models use long contexts."
+          ],
+          "Related Work Reranking in Recommendations": [
+            "Attention is all you need",
+            "Dq-lore: Dual queries with low rank approximation re-ranking for in-context learning.",
+            "Chain-of-thought prompting elicits reasoning in large language models",
+            "Fairness-aware news recommendation with decomposed adversarial learning",
+            "Personalized re-ranking for recommendation",
+            "Fast greedy map inference for determinantal point process to improve recommendation diversity",
+            "Is ChatGPT Good at Search? Investigating Large Language Models as Re-Ranking Agent",
+            "Graph of thoughts: Solving elaborate problems with large language models.",
+            "The use of MMR, diversity-based reranking for reordering documents and producing summaries",
+            "Policy-gradient training of fair and unbiased ranking functions",
+            "Learning a deep listwise context model for ranking refinement",
+            "Large language model is not a good few-shot information extractor, but a good reranker for hard samples!",
+            "Diversification-aware learning to rank using distributed representation"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.2394135296344757,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Re-Ranking Step by Step: Investigating Pre-Filtering for Re-Ranking with Large Language Models",
+        "arxiv_id": "2406.18740",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract Large Language Models (LLMs) have been revolutionizing a myriad of natural language processing tasks with their diverse zero-shot capabilities. Indeed, existing work has shown that LLMs can be used to great effect for many tasks, such as information retrieval (IR), and passage ranking. However, current state-of-the-art results heavily lean on the capabilities of the LLM being used. Currently, proprietary, and very large LLMs such as GPT-4 are the highest performing passage re-rankers. Hence, users without the resources to leverage top of the line LLMs, or ones that are closed source, are at a disadvantage. In this paper, we investigate the use of a pre-filtering step before passage re-ranking in IR. Our experiments show that by using a small number of human generated relevance scores, coupled with LLM relevance scoring, it is effectively possible to filter out irrelevant passages before re-ranking. Our experiments also show that this pre-filtering then allows the LLM to perform significantly better at the re-ranking task. Indeed, our results show that smaller models such as Mixtral can become competitive with much larger proprietary models (e.g., ChatGPT and GPT-4).",
+        "sections": {
+          "1 Introduction": [
+            "Pretrained transformers for text ranking: Bert and beyond",
+            "Pyserini: A python toolkit for reproducible information retrieval research with sparse and dense representations",
+            "Is chatgpt good at search? investigating large language models as re-ranking agent",
+            "Mixtral of experts",
+            "The power of noise: Redefining retrieval for rag systems",
+            "Large language models for information retrieval: A survey",
+            "Gpt-4 technical report"
+          ],
+          "2 Related Work": [
+            "Fine-tuning llama for multi-stage text retrieval",
+            "Is chatgpt good at search? investigating large language models as re-ranking agent",
+            "A setwise approach for effective and highly efficient zero-shot ranking with large language models",
+            "Improving passage retrieval with zero-shot question generation",
+            "Large language models are effective text rankers with pairwise ranking prompting",
+            "Document ranking with a pretrained sequence-to-sequence model",
+            "Large language models for information retrieval: A survey",
+            "Holistic evaluation of language models",
+            "Rankt5: Fine-tuning t5 for text ranking with ranking losses",
+            "Multi-stage document ranking with bert"
+          ],
+          "3 LLM-based Pre-Filtering": [
+            "Pyserini: A python toolkit for reproducible information retrieval research with sparse and dense representations"
+          ],
+          "3 LLM-based Pre-Filtering 3.1 Prompt Design for Score Generation": [
+            "Chain-of-thought prompting elicits reasoning in large language models",
+            "Plan-and-solve prompting: Improving zero-shot chain-of-thought reasoning by large language models"
+          ],
+          "3 LLM-based Pre-Filtering 3.2 Analyzing Relevance Scores": [
+            "Overview of the trec 2019 deep learning track",
+            "Beir: A heterogenous benchmark for zero-shot evaluation of information retrieval models"
+          ],
+          "4 Passage Re-Ranking with LLMs": [
+            "Is chatgpt good at search? investigating large language models as re-ranking agent"
+          ],
+          "5 Experimental Results of LLMs 5.1 Datasets": [
+            "Large language models are effective text rankers with pairwise ranking prompting",
+            "Overview of the trec 2019 deep learning track",
+            "Beir: A heterogenous benchmark for zero-shot evaluation of information retrieval models"
+          ],
+          "5 Experimental Results of LLMs 5.2 Implementation and Metrics": [
+            "Mixtral of experts",
+            "Is chatgpt good at search? investigating large language models as re-ranking agent"
+          ],
+          "5 Experimental Results of LLMs 5.4 Results on Benchmarks": [
+            "Multi-stage document ranking with bert",
+            "Is chatgpt good at search? investigating large language models as re-ranking agent",
+            "A setwise approach for effective and highly efficient zero-shot ranking with large language models",
+            "Improving passage retrieval with zero-shot question generation",
+            "Large language models are effective text rankers with pairwise ranking prompting",
+            "Document ranking with a pretrained sequence-to-sequence model",
+            "Holistic evaluation of language models",
+            "Rankt5: Fine-tuning t5 for text ranking with ranking losses"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.6667483448982239,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "When Search Engine Services meet Large Language Models: Visions and Challenges",
+        "arxiv_id": "2407.00128",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract Combining Large Language Models (LLMs) with search engine services marks a significant shift in the field of services computing, opening up new possibilities to enhance how we search for and retrieve information, understand content, and interact with internet services. This paper conducts an in-depth examination of how integrating LLMs with search engines can mutually benefit both technologies. We focus on two main areas: using search engines to improve LLMs (Search4LLM) and enhancing search engine functions using LLMs (LLM4Search). For Search4LLM, we investigate how search engines can provide diverse high-quality datasets for pre-training of LLMs, how they can use the most relevant documents to help LLMs learn to answer queries more accurately, how training LLMs with Learning-To-Rank (LTR) tasks can enhance their ability to respond with greater precision, and how incorporating recent search results can make LLM-generated content more accurate and current. In terms of LLM4Search, we examine how LLMs can be used to summarize content for better indexing by search engines, improve query outcomes through optimization, enhance the ranking of search results by analyzing document relevance, and help in annotating data for learning-to-rank tasks in various learning contexts. However, this promising integration comes with its challenges, which include addressing potential biases and ethical issues in training models, managing the computational and other costs of incorporating LLMs into search services, and continuously updating LLM training with the ever-changing web content. We discuss these challenges and chart out required research directions to address them. We also discuss broader implications for service computing, such as scalability, privacy concerns, and the need to adapt search engine architectures for these advanced models.",
+        "sections": {
+          "1 Introduction": [
+            "Search engines: Information retrieval in practice, volume 520",
+            "Retrieval augmentation reduces hallucination in conversation",
+            "Attention is all you need",
+            "From Memex to hypertext: Vannevar Bush and the mind\u2019s machine",
+            "Toward a qualitative search engine",
+            "Deep learning",
+            "Xlnet: Generalized autoregressive pretraining for language understanding",
+            "Llamaindex",
+            "Learning to rank for information retrieval",
+            "Enhancing conversational search: Large language model-aided informative query rewriting",
+            "The world-wide web",
+            "News summarization and evaluation in the era of gpt-3",
+            "Gpt-4 technical report",
+            "A simple yet effective framework for active learning to rank",
+            "Retrieval-augmented generation for knowledge-intensive nlp tasks",
+            "Measuring search engine quality",
+            "Sparks of artificial general intelligence: Early experiments with gpt-4"
+          ],
+          "2 Backgrounds and Preliminaries 2.1 Search Engine Services": [
+            "A review on instance ranking problems in statistical learning",
+            "Towards better web search performance: Pre-training, fine-tuning and learning to rank",
+            "How a/b tests could go wrong: Automatic diagnosis of invalid online experiments",
+            "Online controlled experiments and a/b tests",
+            "Listwise approach to learning to rank: theory and algorithm",
+            "Scoring, term weighting and the vector space model",
+            "Skluma: An extensible metadata extraction pipeline for disorganized data",
+            "A simple yet effective framework for active learning to rank",
+            "Automatic evaluation of world wide web search services",
+            "An empirical analysis of sponsored search performance in search engine advertising",
+            "Ranking relevance in yahoo search",
+            "Method and system for updating a search engine",
+            "A/b test configuration environment",
+            "A survey of web crawlers for information retrieval",
+            "Precision at k in multilingual information retrieval",
+            "A/b testing: a systematic literature review",
+            "Learning to rank: from pairwise approach to listwise approach",
+            "Correlation between system and user metrics in a session",
+            "Inverted indexes for phrases and strings",
+            "Efficient query processing for scalable web search",
+            "Measuring and predicting search engine users\u2019 satisfaction",
+            "Personalized search based on user search histories",
+            "Coltr: Semi-supervised learning to rank with co-training and over-parameterization for web search.",
+            "Learning to rank for information retrieval"
+          ],
+          "2 Backgrounds and Preliminaries 2.2 Large Language Models (LLMs)": [
+            "Bert: Pre-training of deep bidirectional transformers for language understanding",
+            "Knowledge-enhanced prompt for open-domain commonsense reasoning",
+            "Xlnet: Generalized autoregressive pretraining for language understanding",
+            "Attention is all you need",
+            "A survey of large language models",
+            "Training a helpful and harmless assistant with reinforcement learning from human feedback",
+            "Autonomous agents modelling other agents: A comprehensive survey and open problems",
+            "Autonomous gis: the next-generation ai-powered gis",
+            "Gpt-4 technical report",
+            "Albert: A lite bert for self-supervised learning of language representations",
+            "A neural probabilistic language model",
+            "Chain-of-thought prompting elicits reasoning in large language models",
+            "Nsp-bert: A prompt-based few-shot learner through an original pre-training task\u2014\u2014next sentence prediction",
+            "How to prompt? opportunities and challenges of zero-and few-shot learning for human-ai interaction in creative applications of generative models.",
+            "Bart: Denoising sequence-to-sequence pre-training for natural language generation, translation, and comprehension",
+            "Confronting reward model overoptimization with constrained rlhf",
+            "Pairwise proximal policy optimization: Harnessing relative feedback for llm alignment",
+            "Attention mechanism, transformers, bert, and gpt: tutorial and survey",
+            "An explanation of in-context learning as implicit bayesian inference",
+            "Safe rlhf: Safe reinforcement learning from human feedback",
+            "Electra: Pre-training text encoders as discriminators rather than generators"
+          ],
+          "3 Search4LLM: Enhancing LLMs with Search Engine Services 3.1 Enhanced LLM Pre-training": [
+            "Web crawler: a review",
+            "Beyond scale: the diversity coefficient as a data quality metric demonstrates llms are pre-trained on formally diverse data",
+            "Pre-training llms using human-like development data corpus",
+            "Improved fine-tuning by better leveraging pre-training data",
+            "The refinedweb dataset for falcon llm: Outperforming curated corpora with web data only",
+            "Freshllms: Refreshing large language models with search engine augmentation",
+            "The freshness of web search engine databases"
+          ],
+          "3 Search4LLM: Enhancing LLMs with Search Engine Services 3.2 Enhanced LLM Fine-tuning": [
+            "Learning to discover domain-specific web content",
+            "Training language models to follow instructions with human feedback",
+            "Methods and systems for efficient query rewriting",
+            "Dsqa-llm: Domain-specific intelligent question answering based on large language model",
+            "Training question answering models from synthetic data"
+          ],
+          "3 Search4LLM: Enhancing LLMs with Search Engine Services 3.3 Enhanced LLM Alignment": [
+            "Detecting hate speech on the world wide web",
+            "Implementation and evaluation of a quality-based search engine",
+            "G-eval: Nlg evaluation using gpt-4 with better human alignment",
+            "A model to estimate intrinsic document relevance from the clickthrough logs of a web search engine",
+            "Trustworthy llms: a survey and guideline for evaluating large language models\u2019 alignment",
+            "Learning to rank for information retrieval"
+          ],
+          "3 Search4LLM: Enhancing LLMs with Search Engine Services 3.4 Enhanced LLM Applications": [
+            "Ragged edges: The double-edged sword of retrieval-augmented chatbots",
+            "Bing chat: The future of search engines?",
+            "Retrieval-augmented generation for knowledge-intensive nlp tasks",
+            "Revisiting out-of-distribution robustness in nlp: Benchmarks, analysis, and llms evaluations"
+          ],
+          "4 LLM4Search: Augmenting Search Engines with LLMs 4.1 Augmented Query Rewriting": [
+            "Unified contextual query rewriting",
+            "Human-centered artificial intelligence: The solution to fear of ai",
+            "Query understanding in the age of large language models",
+            "Query2doc: Query expansion with large language models",
+            "Enhancing conversational search: Large language model-aided informative query rewriting"
+          ],
+          "4 LLM4Search: Augmenting Search Engines with LLMs 4.2 Augmented Information Extraction and Indexing": [
+            "Leveraging large language models to extract terminology",
+            "How well do llms cite relevant medical references? an evaluation framework and analyses.",
+            "Neural question generation from text: A preliminary study",
+            "Leveraging semantic search and llms for domain-adaptive information retrieval",
+            "Selecting better samples from pre-trained llms: A case study on question generation",
+            "Enhancing llm with evolutionary fine tuning for news summary generation",
+            "Best practices for text annotation with large language models",
+            "An unified search and recommendation foundation model for cold-start scenario"
+          ],
+          "4 LLM4Search: Augmenting Search Engines with LLMs 4.3 Augmented\u00a0Information Retrieval,\u00a0Document Ranking,\u00a0and\u00a0Content Recommendation": [
+            "Crowdsourcing for relevance evaluation",
+            "Leveraging semantic search and llms for domain-adaptive information retrieval",
+            "A survey on large language models for recommendation",
+            "Llm-enhanced user-item interactions: Leveraging edge information for optimized recommendations",
+            "Is chatgpt good at search? investigating large language models as re-ranking agents",
+            "Listwise approach to learning to rank: theory and algorithm",
+            "A closer look into using large language models for automatic evaluation",
+            "Learning to rank: from pairwise approach to listwise approach",
+            "An unified search and recommendation foundation model for cold-start scenario",
+            "A review on instance ranking problems in statistical learning"
+          ],
+          "4 LLM4Search: Augmenting Search Engines with LLMs 4.4 Augmented Evaluation for Search Engines": [
+            "Drdt: Dynamic reflection with divergent thinking for llm-based sequential recommendation",
+            "Large content and behavior models to understand, simulate, and optimize content and behavior.",
+            "Data interpreter: An llm agent for data science",
+            "Large language model interaction simulator for cold-start item recommendation",
+            "A new method using llms for keypoints generation in qualitative data analysis",
+            "A closer look into using large language models for automatic evaluation",
+            "Retrieval-augmented generation for knowledge-intensive nlp tasks"
+          ],
+          "5 Challenges and Future Directions 5.1 Memory-Decomposable LLMs": [
+            "Helma: A large-scale hallucination evaluation benchmark for large language models",
+            "Mass-editing memory in a transformer"
+          ],
+          "5 Challenges and Future Directions 5.2 Explainability of LLMs for Web Search": [
+            "First is better than last for language data influence",
+            "Interpretable deep learning: Interpretation, interpretability, trustworthiness, and beyond",
+            "Explainability for large language models: A survey"
+          ],
+          "5 Challenges and Future Directions 5.3 Agents for Search4LLM and LLM4Search": [
+            "Autonomous gis: the next-generation ai-powered gis",
+            "Memory matters: The need to improve long-term memory in llm-agents",
+            "Describe, explain, plan and select: interactive planning with llms enables open-world multi-task agents.",
+            "A generalist agent"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.883689284324646,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Large Language Models are Zero-Shot Rankers for Recommender Systems",
+        "arxiv_id": "2305.08845",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Recently, large language models\u00a0(LLMs) (e.g., GPT-4) have demonstrated impressive general-purpose task-solving abilities, including the potential to approach recommendation tasks. Along this line of research, this work aims to investigate the capacity of LLMs that act as the ranking model for recommender systems. We first formalize the recommendation problem as a conditional ranking task, considering sequential interaction histories as conditions and the items retrieved by other candidate generation models as candidates. To solve the ranking task by LLMs, we carefully design the prompting template and conduct extensive experiments on two widely-used datasets. We show that LLMs have promising zero-shot ranking abilities but (1) struggle to perceive the order of historical interactions, and (2) can be biased by popularity or item positions in the prompts. We demonstrate that these issues can be alleviated using specially designed prompting and bootstrapping strategies. Equipped with these insights, zero-shot LLMs can even challenge conventional recommendation models when ranking candidates are retrieved by multiple candidate generators. The code and processed datasets are available at https://github.com/RUCAIBox/LLMRank. ",
+        "sections": {
+          "1 Introduction": [
+            "Session-based recommendations with recurrent neural networks",
+            "Deep neural networks for youtube recommendations",
+            "Towards universal sequence representation learning for recommender systems",
+            "A survey on knowledge graph-based recommender systems",
+            "Finetuned language models are zero-shot learners",
+            "Chat-rec: Towards interactive and explainable llms-augmented recommender system.",
+            "Recommendation as language processing (RLP): A unified pretrain, personalized prompt & predict paradigm (P5)",
+            "BPR: bayesian personalized ranking from implicit feedback"
+          ],
+          "2 General Framework for LLMs as Rankers 2.1 Problem Formulation": [
+            "Towards universal sequence representation learning for recommender systems",
+            "Deep neural networks for youtube recommendations"
+          ],
+          "2 General Framework for LLMs as Rankers 2.2 Ranking with LLMs Using Natural Language Instructions": [
+            "Deep neural networks for youtube recommendations",
+            "A survey of large language models",
+            "Fast pattern matching in strings",
+            "Finetuned language models are zero-shot learners",
+            "Uncovering chatgpt's capabilities in recommender systems."
+          ],
+          "3 Empirical Studies": [
+            "The movielens datasets: History and context",
+            "Recbole: Towards a unified, comprehensive and efficient framework for recommendation algorithms",
+            "Self-attentive sequential recommendation",
+            "Justifying recommendations using distantly-labeled reviews and fine-grained aspects"
+          ],
+          "3 Empirical Studies 3.2 Do LLMs suffer from biases while ranking?": [
+            "Calibrate before use: Improving few-shot performance of language models",
+            "Self-attentive sequential recommendation",
+            "Bias and debias in recommender system: A survey and future directions"
+          ],
+          "3 Empirical Studies 3.3 How Well Can LLMs Rank Candidates in a Zero-Shot Setting?": [
+            "A revisiting study of appropriate offline evaluation for top-n recommendation algorithms",
+            "Session-based recommendations with recurrent neural networks",
+            "Deep neural networks for youtube recommendations",
+            "Learning vector-quantized item representation for transferable sequential recommenders",
+            "Towards universal sequence representation learning for recommender systems",
+            "The probabilistic relevance framework: BM25 and beyond",
+            "Bert: Pre-training of deep bidirectional transformers for language understanding",
+            "Zero-shot recommender systems",
+            "Self-attentive sequential recommendation",
+            "BPR: bayesian personalized ranking from implicit feedback"
+          ],
+          "4 Related Work": [
+            "Cross-domain recommendation: An embedding and mapping approach",
+            "Session-based recommendations with recurrent neural networks",
+            "A survey of large language models",
+            "M6-rec: Generative pretrained language models are open-ended recommender systems",
+            "Cross-platform app recommendation by jointly modeling ratings and texts",
+            "Tallrec: An effective and efficient tuning framework to align large language model with recommendation",
+            "Chat-rec: Towards interactive and explainable llms-augmented recommender system.",
+            "Bert: Pre-training of deep bidirectional transformers for language understanding",
+            "ITEM2VEC: neural item embedding for collaborative filtering",
+            "Herograph: A heterogeneous graph framework for multi-target cross-domain recommendation",
+            "Cross-domain recommendation: Challenges, progress, and prospects",
+            "Recommendation as language processing (RLP): A unified pretrain, personalized prompt & predict paradigm (P5)",
+            "Personalized prompt learning for explainable recommendation",
+            "Zero-shot next-item recommendation using large pretrained language models",
+            "Cross-market product recommendation",
+            "A survey on cross-domain recommendation: Taxonomies, methods, and future directions"
+          ],
+          "6 Limitations": [
+            "Mistral 7b",
+            "Llama 2: Open foundation and fine-tuned chat models"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.953075110912323,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Large Language Models are Effective Text Rankers with Pairwise Ranking Prompting",
+        "arxiv_id": "2306.17563",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Ranking documents using Large Language Models (LLMs) by directly feeding the query and candidate documents into the prompt is an interesting and practical problem. However, there has been limited success so far, as researchers have found it difficult to outperform fine-tuned baseline rankers on benchmark datasets. We analyze pointwise and listwise ranking prompts used by existing methods and argue that off-the-shelf LLMs do not fully understand these ranking formulations, possibly due to the nature of how LLMs are trained. In this paper, we propose to significantly reduce the burden on LLMs by using a new technique called Pairwise Ranking Prompting (PRP). Our results are the first in the literature to achieve state-of-the-art ranking performance on standard benchmarks using moderate-sized open-sourced LLMs. On TREC-DL2020, PRP based on the Flan-UL2 model with 20B parameters outperforms the previous best approach in the literature, which is based on the blackbox commercial GPT-4 that has 50x (estimated) model size, by over 5% at NDCG@1. On TREC-DL2019, PRP is only inferior to the GPT-4 solution on the NDCG@5 and NDCG@10 metrics, while outperforming other existing solutions, such as InstructGPT which has 175B parameters, by over 10% for nearly all ranking metrics. Furthermore, we propose several variants of PRP to improve efficiency and show that it is possible to achieve competitive results even with linear complexity. We also discuss other benefits of PRP, such as supporting both generation and scoring LLM APIs, as well as being insensitive to input ordering. ",
+        "sections": {
+          "1 Introduction": [
+            "Document ranking with a pretrained sequence-to-sequence model",
+            "Large language models are zero-shot reasoners",
+            "Language models are few-shot learners",
+            "Is chatgpt good at search? investigating large language models as re-ranking agent",
+            "Palm: Scaling language modeling with pathways",
+            "Zero-shot listwise document reranking with a large language model"
+          ],
+          "2 Difficulties of ranking tasks for LLMs 2.1 Pointwise approaches": [
+            "Learning to rank for information retrieval",
+            "Improving passage retrieval with zero-shot question generation",
+            "Holistic evaluation of language models"
+          ],
+          "2 Difficulties of ranking tasks for LLMs 2.2 Listwise approaches": [
+            "Training language models to follow instructions with human feedback",
+            "Is chatgpt good at search? investigating large language models as re-ranking agent",
+            "Gpt-3.5 turbo vs gpt-4: What\u2019s the difference?"
+          ],
+          "3 Pairwise ranking prompting 3.1 Prompting design": [
+            "Fantastically ordered prompts and where to find them: Overcoming few-shot prompt order sensitivity"
+          ],
+          "4 Experiments 4.1 Datasets and Metrics": [
+            "Is chatgpt good at search? investigating large language models as re-ranking agent",
+            "Pyserini: A Python toolkit for reproducible information retrieval research with sparse and dense representations"
+          ],
+          "4 Experiments 4.2 Methods": [
+            "Improving passage retrieval with zero-shot question generation",
+            "Document ranking with a pretrained sequence-to-sequence model",
+            "Scaling instruction-finetuned language models",
+            "Unifying language learning paradigms",
+            "Is chatgpt good at search? investigating large language models as re-ranking agent",
+            "Holistic evaluation of language models",
+            "Zero-shot listwise document reranking with a large language model",
+            "Rankt5: Fine-tuning t5 for text ranking with ranking losses",
+            "Passage re-ranking with bert"
+          ],
+          "5 Limitations and discussions Cost and Efficiency.": [
+            "Stanford alpaca: An instruction-following llama model"
+          ],
+          "5 Limitations and discussions Domain adaptation.": [
+            "Retrieval of the best counterargument without prior topic knowledge"
+          ],
+          "5 Limitations and discussions No data leakage.": [
+            "Finetuned language models are zero-shot learners"
+          ],
+          "6 Related Work": [
+            "Precise zero-shot dense retrieval without relevance labels",
+            "Transformer memory as a differentiable search index",
+            "Document ranking with a pretrained sequence-to-sequence model",
+            "Inpars: Unsupervised dataset generation for information retrieval",
+            "Deep reinforcement learning from human preferences",
+            "Learning to rank for information retrieval",
+            "Exaranker: Explanation-augmented neural ranker",
+            "Promptagator: Few-shot dense retrieval from 8 examples",
+            "Passage re-ranking with bert"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.9992272853851318,
+        "extra": {
+          "expand": "not expand"
+        }
+      }
+    ]
+  },
+  "abstract": "",
+  "sections": "",
+  "source": "Root",
+  "select_score": 0.0,
+  "extra": {
+    "touch_ids": [
+      "2406.00247",
+      "2308.07107",
+      "2309.10621",
+      "2402.06196",
+      "2406.12433",
+      "2312.10997",
+      "2311.03731",
+      "2406.18740",
+      "2404.07981",
+      "2407.00128",
+      "2305.19860",
+      "2305.08845",
+      "2404.16924",
+      "2306.17563",
+      "2307.09751",
+      "2310.09497",
+      "2407.02485",
+      "2403.10407",
+      "2402.14860",
+      "2402.05880",
+      "2310.12443"
+    ],
+    "crawler_recall_papers": [
+      "Large Language Models: A Survey",
+      "Retrieval-Augmented Generation for Large Language Models: A Survey",
+      "A Survey of Large Language Models Attribution",
+      "A Survey on Large Language Models for Recommendation",
+      "A Survey of Generative Search and Recommendation in the Era of Large Language Models",
+      "LLM-enhanced Reranking in Recommender Systems",
+      "Re-Ranking Step by Step: Investigating Pre-Filtering for Re-Ranking with Large Language Models",
+      "When Search Engine Services meet Large Language Models: Visions and Challenges",
+      "Large Language Models are Zero-Shot Rankers for Recommender Systems",
+      "Large Language Models are Effective Text Rankers with Pairwise Ranking Prompting",
+      "Information Retrieval Meets Large Language Models: A Strategic Report from Chinese IR Community",
+      "A Setwise Approach for Effective and Highly Efficient Zero-shot Ranking with Large Language Models",
+      "RankRAG: Unifying Context Ranking with Retrieval-Augmented Generation in LLMs",
+      "A Thorough Comparison of Cross-Encoders and LLMs for Reranking SPLADE",
+      "Ranking Large Language Models without Ground Truth",
+      "Large Language Models for Relevance Judgment in Product Search",
+      "Large Language Models for Information Retrieval: A Survey",
+      "Large language models can accurately predict searcher preferences",
+      "Manipulating Large Language Models to Increase Product Visibility",
+      "Generative Echo Chamber? Effects of LLM-Powered Search Systems on Diverse Information Seeking",
+      "Know Where to Go: Make LLM a Relevant, Responsible, and Trustworthy Searcher"
+    ],
+    "recall_papers": [
+      "Re-Ranking Step by Step: Investigating Pre-Filtering for Re-Ranking with Large Language Models",
+      "When Search Engine Services meet Large Language Models: Visions and Challenges",
+      "Large Language Models are Zero-Shot Rankers for Recommender Systems",
+      "Large Language Models are Effective Text Rankers with Pairwise Ranking Prompting",
+      "A Setwise Approach for Effective and Highly Efficient Zero-shot Ranking with Large Language Models",
+      "RankRAG: Unifying Context Ranking with Retrieval-Augmented Generation in LLMs",
+      "A Thorough Comparison of Cross-Encoders and LLMs for Reranking SPLADE",
+      "Large Language Models for Relevance Judgment in Product Search",
+      "Large language models can accurately predict searcher preferences",
+      "Manipulating Large Language Models to Increase Product Visibility"
+    ],
+    "answer": [
+      "Instruction Distillation Makes Large Language Models Efficient Zero-shot   Rankers",
+      "Beyond Yes and No: Improving Zero-Shot LLM Rankers via Scoring   Fine-Grained Relevance Labels",
+      "Large Language Models are Effective Text Rankers with Pairwise Ranking   Prompting",
+      "A Setwise Approach for Effective and Highly Efficient Zero-shot Ranking   with Large Language Models",
+      "RankVicuna: Zero-Shot Listwise Document Reranking with Open-Source Large   Language Models",
+      "PaRaDe: Passage Ranking using Demonstrations with Large Language Models",
+      "Is ChatGPT Good at Search? Investigating Large Language Models as   Re-Ranking Agents",
+      "Large Language Models are Zero-Shot Rankers for Recommender Systems",
+      "TourRank: Utilizing Large Language Models for Documents Ranking with a Tournament-Inspired Strategy",
+      "ExaRanker: Explanation-Augmented Neural Ranker",
+      "RankRAG: Unifying Context Ranking with Retrieval-Augmented Generation in LLMs",
+      "Make Large Language Model a Better Ranker",
+      "LLM-RankFusion: Mitigating Intrinsic Inconsistency in LLM-based Ranking",
+      "Improving Zero-shot LLM Re-Ranker with Risk Minimization",
+      "Zero-Shot Listwise Document Reranking with a Large Language Model",
+      "Consolidating Ranking and Relevance Predictions of Large Language Models through Post-Processing",
+      "Re-Ranking Step by Step: Investigating Pre-Filtering for Re-Ranking with Large Language Models",
+      "Large Language Models for Relevance Judgment in Product Search",
+      "PromptReps: Prompting Large Language Models to Generate Dense and Sparse Representations for Zero-Shot Document Retrieval",
+      "Passage-specific Prompt Tuning for Passage Reranking in Question Answering with Large Language Models",
+      "When Search Engine Services meet Large Language Models: Visions and Challenges",
+      "RankZephyr: Effective and Robust Zero-Shot Listwise Reranking is a   Breeze!",
+      "Rank-without-GPT: Building GPT-Independent Listwise Rerankers on   Open-Source Large Language Models",
+      "MuGI: Enhancing Information Retrieval through Multi-Text Generation Integration with Large Language Models",
+      "Discrete Prompt Optimization via Constrained Generation for Zero-shot   Re-ranker",
+      "REAR: A Relevance-Aware Retrieval-Augmented Framework for Open-Domain   Question Answering",
+      "Agent4Ranking: Semantic Robust Ranking via Personalized Query Rewriting   Using Multi-agent LLM",
+      "FIRST: Faster Improved Listwise Reranking with Single Token Decoding",
+      "Leveraging LLMs for Unsupervised Dense Retriever Ranking",
+      "Unsupervised Contrast-Consistent Ranking with Language Models",
+      "Enhancing Legal Document Retrieval: A Multi-Phase Approach with Large Language Models",
+      "Found in the Middle: Permutation Self-Consistency Improves Listwise Ranking in Large Language Models",
+      "Fine-Tuning LLaMA for Multi-Stage Text Retrieval",
+      "Zero-shot Audio Topic Reranking using Large Language Models",
+      "Uncovering ChatGPT's Capabilities in Recommender Systems",
+      "Cognitive Personalized Search Integrating Large Language Models with an Efficient Memory Mechanism",
+      "Towards More Relevant Product Search Ranking Via Large Language Models: An Empirical Study",
+      "Pretrained Language Model based Web Search Ranking: From Relevance to Satisfaction",
+      "Open-source large language models are strong zero-shot query likelihood models for document ranking"
+    ]
+  }
+}

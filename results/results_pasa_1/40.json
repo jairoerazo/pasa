@@ -1,0 +1,2413 @@
+{
+  "title": "Could you list research that demonstrates the advantages of Quantization-Aware Training (QAT), which can enable the model to learn better representations for low-bit weights?.",
+  "arxiv_id": "",
+  "depth": -1,
+  "child": {
+    "Impact of Quantization-Aware Training on model representations": [
+      {
+        "title": "EfficientQAT: Efficient Quantization-Aware Training for Large Language Models",
+        "arxiv_id": "2407.11062",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract Large language models (LLMs) are integral to modern natural language processing and artificial intelligence. However, they face challenges in managing their significant memory requirements. Although quantization-aware training (QAT) offers a solution by reducing memory consumption through low-bit representations with minimal accuracy loss, it demands substantial training resources to optimize model weights and quantization parameters. To address this, we propose Efficient Quantization-Aware Training (EfficientQAT), a novel quantization technique for compressing LLMs. EfficientQAT involves two consecutive phases: Block-wise training of all parameters (Block-AP) and end-to-end training of quantization parameters (E2E-QP). Block-AP sequentially conducts quantization-aware training for all parameters in each transformer block with block-wise reconstruction, maintaining efficiency by avoiding training the entire LLM. Initialized with quantized model, E2E-QP then trains only quantization parameters (step sizes) end-to-end, enhancing efficiency with a fixed quantized backbone and reduced trainable parameter count. Extensive experiments demonstrate that EfficientQAT outperforms previous quantization methods across a range of models, including base LLMs, instruction-tuned LLMs, and multimodal LLMs, with scales from 7B to 70B parameters at various quantization bits. For instance, EfficientQAT obtains a 2-bit Llama-2-70B model on a single A100-80GB GPU in 41 hours, with less than 3% accuracy degradation compared to the full precision (69.48 vs. 72.41). Notably, this INT2 quantized 70B model obtains a 1.67 accuracy gain over the Llama-2-13B model (69.48 vs. 67.81) while requiring less memory (19.2GB vs. 24.2GB). Code is available at https://github.com/OpenGVLab/EfficientQAT.",
+        "sections": {
+          "1 Introduction": [
+            "Llama 2: Open foundation and fine-tuned chat models",
+            "Qa-lora: Quantization-aware low-rank adaptation of large language models",
+            "Up or down? adaptive rounding for post-training quantization",
+            "Omniquant: Omnidirectionally calibrated quantization for large language models",
+            "Llm-qat: Data-free quantization aware training for large language models",
+            "Learned step size quantization",
+            "Lora: Low-rank adaptation of large language models",
+            "Awq: Activation-aware weight quantization for llm compression and acceleration",
+            "Think you have solved question answering? try arc, the ai2 reasoning challenge",
+            "Memory-efficient fine-tuning of compressed large language models via sub-4-bit integer quantization",
+            "Extreme compression of large language models via additive quantization",
+            "The era of 1-bit llms: All large language models are in 1.58 bits.",
+            "Qlora: Efficient finetuning of quantized llms",
+            "Squeezellm: Dense-and-sparse quantization",
+            "Tool learning with foundation models",
+            "Vicuna: An open-source chatbot impressing gpt-4 with 90%* chatgpt quality",
+            "Improved baselines with visual instruction tuning",
+            "Mme: A comprehensive evaluation benchmark for multimodal large language models"
+          ],
+          "2 Related Works": [
+            "Qa-lora: Quantization-aware low-rank adaptation of large language models",
+            "Llm-qbench: A benchmark towards the best practice for post-training quantization of large language models",
+            "Qserve: W4a8kv4 quantization and system co-design for efficient llm serving",
+            "Bitdistiller: Unleashing the potential of sub-4-bit llms via self-distillation",
+            "Llm-qat: Data-free quantization aware training for large language models",
+            "Int2. 1: Towards fine-tunable quantized large language models with error correction through low-rank adaptation",
+            "Quip#: Even better llm quantization with hadamard incoherence and lattice codebooks",
+            "Gptq: Accurate post-training quantization for generative pre-trained transformers",
+            "Onebit: Towards extremely low-bit large language models",
+            "Loftq: Lora-fine-tuning-aware quantization for large language models",
+            "Lora: Low-rank adaptation of large language models",
+            "Memory-efficient fine-tuning of compressed large language models via sub-4-bit integer quantization",
+            "Extreme compression of large language models via additive quantization",
+            "The era of 1-bit llms: All large language models are in 1.58 bits.",
+            "Qlora: Efficient finetuning of quantized llms",
+            "Smoothquant: Accurate and efficient post-training quantization for large language models",
+            "Lq-lora: Low-rank plus quantized matrix decomposition for efficient language model finetuning"
+          ],
+          "3 EfficientQAT 3.1 Method Overview": [
+            "Brecq: Pushing the limit of post-training quantization by block reconstruction"
+          ],
+          "3 EfficientQAT 3.2 Block-Wise Training of All Parameters": [
+            "Up or down? adaptive rounding for post-training quantization",
+            "Omniquant: Omnidirectionally calibrated quantization for large language models",
+            "Learned step size quantization",
+            "The era of 1-bit llms: All large language models are in 1.58 bits.",
+            "Brecq: Pushing the limit of post-training quantization by block reconstruction"
+          ],
+          "3 EfficientQAT 3.3 End-to-End Training of Quantization Parameters": [
+            "Stanford alpaca: An instruction-following llama model",
+            "Llm-qat: Data-free quantization aware training for large language models"
+          ],
+          "4 Experiments 4.1 EfficientQAT for LLMs Quantization": [
+            "Piqa: Reasoning about physical commonsense in natural language",
+            "Omniquant: Omnidirectionally calibrated quantization for large language models",
+            "Llm-qbench: A benchmark towards the best practice for post-training quantization of large language models",
+            "Llm-qat: Data-free quantization aware training for large language models",
+            "How good are low-bit quantized llama3 models? an empirical study",
+            "Quip#: Even better llm quantization with hadamard incoherence and lattice codebooks",
+            "Gptq: Accurate post-training quantization for generative pre-trained transformers",
+            "Awq: Activation-aware weight quantization for llm compression and acceleration",
+            "Think you have solved question answering? try arc, the ai2 reasoning challenge",
+            "Together Computer. Redpajama: an open dataset for training large language models",
+            "Optimize weight rounding via signed gradient descent for the quantization of llms",
+            "Extreme compression of large language models via additive quantization",
+            "Bitdistiller: Unleashing the potential of sub-4-bit llms via self-distillation",
+            "Winogrande: An adversarial winograd schema challenge at scale",
+            "Hellaswag: Can a machine really finish your sentence?",
+            "Pb-llm: Partially binarized large language models",
+            "Db-llm: Accurate dual-binarization for efficient llms"
+          ],
+          "4 Experiments 4.2 EfficientQAT for Instruction Tuning": [
+            "Qa-lora: Quantization-aware low-rank adaptation of large language models",
+            "Accurate lora-finetuning quantization of llms via information retention",
+            "Memory-efficient fine-tuning of compressed large language models via sub-4-bit integer quantization",
+            "Gptq: Accurate post-training quantization for generative pre-trained transformers",
+            "Together Computer. Redpajama: an open dataset for training large language models",
+            "Qlora: Efficient finetuning of quantized llms",
+            "Stanford alpaca: An instruction-following llama model",
+            "Measuring massive multitask language understanding"
+          ],
+          "4 Experiments 4.3 Ablation Analysis": [
+            "Up or down? adaptive rounding for post-training quantization",
+            "Omniquant: Omnidirectionally calibrated quantization for large language models",
+            "Brecq: Pushing the limit of post-training quantization by block reconstruction",
+            "Learned step size quantization"
+          ],
+          "4 Experiments 4.4 Efficiency of EfficientQAT": [
+            "MLC-LLM",
+            "BitBLAS Team. Bitblas.",
+            "Awq: Activation-aware weight quantization for llm compression and acceleration",
+            "Llm inference unveiled: Survey and roofline model insights"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.9636405110359192,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Mitigating the Impact of Outlier Channels for Language Model Quantization with Activation Regularization",
+        "arxiv_id": "2404.03605",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract We consider the problem of accurate quantization for language models, where both the weights and activations are quantized to 4 bits per parameter with uniform quantization, the lowest bitwidth format natively supported by existing GPU hardware. In this context, the key challenge is activation quantization: it is known that language models contain outlier channels whose values on average are orders of magnitude higher than than other channels, which prevents accurate low-bitwidth quantization with known techniques. We systematically study this phenomena and find that these outlier channels emerge early in training, and that they occur more frequently in layers with residual streams. We then propose a simple strategy which regularizes a layer\u2019s inputs via quantization-aware training (QAT) and its outputs via activation kurtosis regularization. We show that regularizing both the inputs and outputs is crucial for preventing a model\u2019s \u201cmigrating\u201d the difficulty in input quantization to the weights, which makes post-training quantization (PTQ) of weights more difficult. When combined with weight PTQ, we show that our approach can obtain a W4A4 model with integer quantization that performs competitively to the standard-precision W16A16 baseline.111Code is available at https://github.com/aninrusimha/qat-pretrain",
+        "sections": {
+          "1 Introduction": [
+            "Understanding int4 quantization for language models: Latency speedup, composability, and failure cases",
+            "Pact: Parameterized clipping activation for quantized neural networks",
+            "Llm.int8(): 8-bit matrix multiplication for transformers at scale",
+            "Bert busters: Outlier dimensions that disrupt transformers",
+            "Smoothquant: Accurate and efficient post-training quantization for large language models"
+          ],
+          "2 Background and Related Work 2.1 Uniform Quantization & Quantized Matmuls": [
+            "Awq: Activation-aware weight quantization for llm compression and acceleration",
+            "Ten lessons from three generations shaped google\u2019s tpuv4i: Industrial product"
+          ],
+          "2 Background and Related Work 2.2 Challenges in LLM Quantization": [
+            "Bert busters: Outlier dimensions that disrupt transformers",
+            "Llm.int8(): 8-bit matrix multiplication for transformers at scale",
+            "GPTQ: Accurate post-training compression for generative pretrained transformers",
+            "Smoothquant: Accurate and efficient post-training quantization for large language models"
+          ],
+          "2 Background and Related Work 2.3 Quantization-Aware Training": [
+            "Lsq+: Improving low-bit quantization through learnable offsets and better initialization",
+            "Pact: Parameterized clipping activation for quantized neural networks",
+            "Dorefa-net: Training low bitwidth convolutional neural networks with low bitwidth gradients"
+          ],
+          "3 Motivating Study: Outlier Channels in Language Models": [
+            "Omniquant: Omnidirectionally calibrated quantization for large language models",
+            "On layer normalization in the transformer architecture",
+            "Llm.int8(): 8-bit matrix multiplication for transformers at scale",
+            "Bert busters: Outlier dimensions that disrupt transformers",
+            "Smoothquant: Accurate and efficient post-training quantization for large language models",
+            "SlimPajama: A 627B token cleaned and deduplicated version of RedPajama"
+          ],
+          "3 Motivating Study: Outlier Channels in Language Models Open-source Models.": [
+            "Pythia: A suite for analyzing large language models across training and scaling",
+            "Olmo: Accelerating the science of language models, 2024."
+          ],
+          "4 Mitigating Outlier Channels with Activation Regularization 4.1 Input Activations: QAT with Learned Clip Values": [
+            "Pact: Parameterized clipping activation for quantized neural networks",
+            "Lsq+: Improving low-bit quantization through learnable offsets and better initialization"
+          ],
+          "4 Mitigating Outlier Channels with Activation Regularization 4.2 Output Activations: Kurtosis Regularization": [
+            "Robust quantization: One model to rule them all",
+            "GPTQ: Accurate post-training compression for generative pretrained transformers"
+          ],
+          "4 Mitigating Outlier Channels with Activation Regularization 4.3 Post-training Weight Quantization": [
+            "Rptq: Reorder-based post-training quantization for large language models",
+            "GPTQ: Accurate post-training compression for generative pretrained transformers"
+          ],
+          "5 Empirical Study 5.1 Experimental Setup": [
+            "SlimPajama: A 627B token cleaned and deduplicated version of RedPajama",
+            "Megatron-lm: Training multi-billion parameter language models using model parallelism"
+          ],
+          "5 Empirical Study 5.3 Analysis": [
+            "Omniquant: Omnidirectionally calibrated quantization for large language models"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.9248037338256836,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "RepQ: Generalizing Quantization-Aware Training for Re-Parametrized Architectures",
+        "arxiv_id": "2311.05317",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Existing neural networks are memory-consuming and computationally intensive, making deploying them challenging in resource-constrained environments. However, there are various methods to improve their efficiency. Two such methods are quantization, a well-known approach for network compression, and re-parametrization, an emerging technique designed to improve model performance. Although both techniques have been studied individually, there has been limited research on their simultaneous application. To address this gap, we propose a novel approach called RepQ, which applies quantization to re-parametrized networks. Our method is based on the insight that the test stage weights of an arbitrary re-parametrized layer can be presented as a differentiable function of trainable parameters. We enable quantization-aware training by applying quantization on top of this function. RepQ generalizes well to various re-parametrized models and outperforms the baseline method LSQ quantization scheme in all experiments. ",
+        "sections": {
+          "1 Introduction": [
+            "YOLOv7: Trainable bag-of-freebies sets new state-of-the-art for real-time object detectors",
+            "Distilling the Knowledge in a Neural Network",
+            "Repvgg: Making vgg-style convnets great again",
+            "Predicting Parameters in Deep Learning",
+            "Re-parameterizing Your Optimizers rather than Architectures",
+            "DiracNets: Training Very Deep Neural Networks Without Skip-Connections",
+            "Learning both Weights and Connections for Efficient Neural Network",
+            "ACNet: Strengthening the Kernel Skeletons for Powerful CNN via Asymmetric Convolution Blocks",
+            "LEARNED STEP SIZE QUANTIZATION",
+            "Deep Residual Learning for Image Recognition",
+            "ImageNet Large Scale Visual Recognition Challenge",
+            "Neural Architecture Search with Reinforcement Learning",
+            "Ternary weight networks",
+            "ResRep: Lossless CNN Pruning via Decoupling Remembering and Forgetting"
+          ],
+          "2 Related works": [
+            "Relaxed Quantization for Discretized Neural Networks",
+            "Effective training of convolutional neural networks with low-bitwidth weights and activations",
+            "Defensive Quantization: When Efficiency Meets Robustness",
+            "Weight Normalization: A Simple Reparameterization to Accelerate Training of Deep Neural Networks",
+            "Diverse Branch Block: Building a Convolution as an Inception-like Unit",
+            "Deep Residual Learning for Image Recognition",
+            "Model compression via distillation and quantization",
+            "Learnable companding quantization for accurate low-bit neural networks",
+            "DiracNets: Training Very Deep Neural Networks Without Skip-Connections",
+            "LEARNED STEP SIZE QUANTIZATION",
+            "Differentiable soft quantization: Bridging full-precision and low-bit neural networks",
+            "Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift",
+            "Repvgg: Making vgg-style convnets great again",
+            "On the Optimization of Deep Networks: Implicit Acceleration by Overparameterization",
+            "Re-parameterizing Your Optimizers rather than Architectures",
+            "Estimating or Propagating Gradients Through Stochastic Neurons for Conditional Computation",
+            "YOLOv6: A single-stage object detection framework for industrial applications",
+            "Very Deep Convolutional Networks for Large-Scale Image Recognition",
+            "Edge-oriented Convolution Block for Real-time Super Resolution on Mobile Devices",
+            "NICE: Noise Injection and Clamping Estimation for Neural Network Quantization",
+            "ACNet: Strengthening the Kernel Skeletons for Powerful CNN via Asymmetric Convolution Blocks",
+            "Learning accurate low-bit deep neural networks with stochastic quantization"
+          ],
+          "3 Background": [
+            "LEARNED STEP SIZE QUANTIZATION",
+            "Re-parameterizing Your Optimizers rather than Architectures",
+            "Post training 4-bit quantization of convolutional networks for rapid-deployment",
+            "Basic Binary Convolution Unit for Binarized Image Restoration Network"
+          ],
+          "4 Proposed Methods 4.1 RepQ: Quantization-aware training with re-parametrization": [
+            "Online Convolutional Re-parameterization"
+          ],
+          "4 Proposed Methods 4.2 RepQ-BN: Merging batch normalization": [
+            "Quantization and training of neural networks for efficient integer-arithmetic-only inference"
+          ],
+          "5 Experiments 5.1 Experimental setup": [
+            "LSQ+: Improving low-bit quantization through learnable offsets and better initialization",
+            "Online Convolutional Re-parameterization",
+            "Edge-oriented Convolution Block for Real-time Super Resolution on Mobile Devices",
+            "Make RepVGG Greater Again: A Quantization/aware Approach",
+            "Repvgg: Making vgg-style convnets great again",
+            "ACNet: Strengthening the Kernel Skeletons for Powerful CNN via Asymmetric Convolution Blocks"
+          ],
+          "5 Experiments 5.2 Experimental results": [
+            "Make RepVGG Greater Again: A Quantization/aware Approach"
+          ],
+          "5 Experiments 5.3 Discussion": [
+            "Dorefa-net: Training low bitwidth convolutional neural networks with low bitwidth gradients"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.7124634981155396,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Model Compression and Efficient Inference for Large Language Models: A Survey",
+        "arxiv_id": "2402.09748",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Transformer based large language models have achieved tremendous success. However, the significant memory and computational costs incurred during the inference process make it challenging to deploy large models on resource-constrained devices. In this paper, we investigate compression and efficient inference methods for large language models from an algorithmic perspective. Regarding taxonomy, similar to smaller models, compression and acceleration algorithms for large language models can still be categorized into quantization, pruning, distillation, compact architecture design, dynamic networks. However, Large language models have two prominent characteristics compared to smaller models: (1) Most of compression algorithms require finetuning or even retraining the model after compression. The most notable aspect of large models is the very high cost associated with model finetuning or training. Therefore, many algorithms for large models, such as quantization and pruning, start to explore tuning-free algorithms. (2) Large models emphasize versatility and generalization rather than performance on a single task. Hence, many algorithms, such as knowledge distillation, focus on how to preserving their versatility and generalization after compression. Since these two characteristics were not very pronounced in early large models, we further distinguish large language models into medium models and \u201creal\u201d large models. Additionally, we also provide an introduction to some mature frameworks for efficient inference of large models, which can support basic compression or acceleration algorithms, greatly facilitating model deployment for users. ",
+        "sections": {
+          "2 Preliminaries 2.1 Transformer": [
+            "A survey of transformers",
+            "Improving language understanding by generative pre-training",
+            "Attention is all you need",
+            "Exploring the limits of transfer learning with a unified text-to-text transformer",
+            "Bert: Pre-training of deep bidirectional transformers for language understanding"
+          ],
+          "2 Preliminaries 2.2 Medium/Large Language Models": [
+            "OPT: open pre-trained transformer language models",
+            "Glm-130b: An open bilingual pre-trained model",
+            "Improving language understanding by generative pre-training",
+            "Wang, H",
+            "Emergent abilities of large language models",
+            "Bai, S",
+            "L",
+            "Language models are few-shot learners",
+            "ERNIE: enhanced language representation with informative entities",
+            "Touvron, L",
+            "CPM: A large-scale generative chinese pre-trained language model",
+            "Exploring the limits of transfer learning with a unified text-to-text transformer",
+            "Chowdhery, S",
+            "Bert: Pre-training of deep bidirectional transformers for language understanding"
+          ],
+          "3 Quantization": [
+            "Dynamic stashing quantization for efficient transformer training"
+          ],
+          "3 Quantization 3.1 Basic Concepts": [
+            "Zeroquant-v2: Exploring post-training quantization in llms from comprehensive study to low rank compensation"
+          ],
+          "3 Quantization 3.2 Quantization Methods for Medium-Size Language Models": [
+            "Quantization and training of neural networks for efficient integer-arithmetic-only inference",
+            "Compression of generative pre-trained language models via quantization",
+            "Dq-bart: Efficient sequence-to-sequence model via joint distillation and quantization",
+            "Gobo: Quantizing attention-based nlp models for low latency and energy efficient inference",
+            "A survey of quantization methods for efficient neural network inference",
+            "Understanding and overcoming the challenges of efficient transformer quantization",
+            "I-bert: Integer-only bert quantization",
+            "Q8bert: Quantized 8bit bert",
+            "Vs-quant: Per-vector scaled quantization for accurate low-precision neural network inference",
+            "Ternarybert: Distillation-aware ultra-low bit bert",
+            "Q-bert: Hessian based ultra low precision quantization of bert",
+            "A short study on compressing decoder-based language models",
+            "Bibert: Accurate fully binarized bert",
+            "Automatic mixed-precision quantization search of bert",
+            "Binarybert: Pushing the limit of bert quantization"
+          ],
+          "3 Quantization 3.3 Post-Training Quantization for LLMs": [
+            "Olive: Accelerating large language models via hardware-friendly outlier-victim pair quantization",
+            "Omniquant: Omnidirectionally calibrated quantization for large language models",
+            "Quip: 2-bit quantization of large language models with guarantees",
+            "Optimize weight rounding via signed gradient descent for the quantization of llms",
+            "Squeezellm: Dense-and-sparse quantization",
+            "Awq: Activation-aware weight quantization for llm compression and acceleration",
+            "Rex: Data-free residual quantization error expansion",
+            "Qlora: Efficient finetuning of quantized llms",
+            "Zeroquant-v2: Exploring post-training quantization in llms from comprehensive study to low rank compensation",
+            "Glm-130b: An open bilingual pre-trained model",
+            "8-bit optimizers via block-wise quantization",
+            "Optq: Accurate quantization for generative pre-trained transformers",
+            "Zeroquant-fp: A leap forward in llms post-training w4a8 quantization using floating-point formats",
+            "Flexround: Learnable rounding based on element-wise division for post-training quantization",
+            "Up or down? adaptive rounding for post-training quantization",
+            "Rptq: Reorder-based post-training quantization for large language models",
+            "Smoothquant: Accurate and efficient post-training quantization for large language models",
+            "Outlier suppression+: Accurate quantization of large language models by equivalent and optimal shifting and scaling",
+            "Outlier suppression: Pushing the limit of low-bit transformer language models",
+            "Qllm: Accurate and efficient low-bitwidth quantization for large language models",
+            "Xnor-net: Imagenet classification using binary convolutional neural networks",
+            "nuqmm: Quantized matmul for efficient inference of large-scale generative language models",
+            "Fptq: Fine-grained post-training quantization for large language models",
+            "Owq: Lessons learned from activation outliers for weight quantization in large language models",
+            "Optimal brain compression: A framework for accurate post-training quantization and pruning",
+            "Integer or floating point? new outlooks for low-bit quantization on large language models",
+            "Llm. int8 (): 8-bit matrix multiplication for transformers at scale"
+          ],
+          "3 Quantization 3.4 Quantization-Aware Training for LLMs": [
+            "Quantization and training of neural networks for efficient integer-arithmetic-only inference",
+            "Memory-efficient fine-tuning of compressed large language models via sub-4-bit integer quantization",
+            "Llm-qat: Data-free quantization aware training for large language models",
+            "Loftq: Lora-fine-tuning-aware quantization for large language models",
+            "Lacos-bloom: Low-rank adaptation with contrastive objective on 8 bits siamese-bloom",
+            "Alphatuning: Quantization-aware parameter-efficient adaptation of large-scale pre-trained language models",
+            "Xnor-net: Imagenet classification using binary convolutional neural networks",
+            "Zeroquant: Efficient and affordable post-training quantization for large-scale transformers",
+            "Int2. 1: Towards fine-tunable quantized large language models with error correction through low-rank adaptation",
+            "Qa-lora: Quantization-aware low-rank adaptation of large language models",
+            "Qlora: Efficient finetuning of quantized llms",
+            "Compress, then prompt: Improving accuracy-efficiency trade-off of llm inference with transferable prompt",
+            "Understanding and improving knowledge distillation for quantization-aware training of large transformer encoders",
+            "Quadapter: Adapter for gpt-2 quantization"
+          ],
+          "3 Quantization 3.5 Other Topics for LLM Quantization": [
+            "Xnor-net: Imagenet classification using binary convolutional neural networks",
+            "nuqmm: Quantized matmul for efficient inference of large-scale generative language models",
+            "Haq: Hardware-aware automated quantization with mixed precision",
+            "Do emergent abilities exist in quantized large language models: An empirical study",
+            "Empirical evaluation of post-training quantization methods for language tasks",
+            "Zeroquant: Efficient and affordable post-training quantization for large-scale transformers",
+            "Quantizable transformers: Removing outliers by helping attention heads do nothing",
+            "Intriguing properties of quantization at scale",
+            "The case for 4-bit precision: k-bit inference scaling laws",
+            "Llm. int8 (): 8-bit matrix multiplication for transformers at scale",
+            "Pushing large language models to the 6g edge: Vision, challenges, and opportunities",
+            "Outlier suppression: Pushing the limit of low-bit transformer language models",
+            "An efficient sparse inference software accelerator for transformer-based language models on cpus",
+            "Squeezellm: Dense-and-sparse quantization"
+          ],
+          "4 Pruning": [
+            "Learning structured sparsity in deep neural networks"
+          ],
+          "4 Pruning 4.1 Basic Concepts": [
+            "Learning both weights and connections for efficient neural network"
+          ],
+          "4 Pruning 4.2 Pruning Methods for Medium-Size Language Models": [
+            "Prune once for all: Sparse pre-trained language models",
+            "Platon: Pruning large transformer models with upper confidence bound of weight importance",
+            "Joint structured pruning and dense knowledge distillation for efficient transformer model compression",
+            "The concrete distribution: A continuous relaxation of discrete random variables",
+            "Block-sparse recurrent neural networks",
+            "Unstructured pruning of pre-trained language models tuned for sentiment classification.",
+            "Differentiable subset pruning of transformer heads",
+            "To prune, or not to prune: exploring the efficacy of pruning for model compression",
+            "Parameter-efficient sparsity for large language models fine-tuning",
+            "Learning both weights and connections for efficient neural network",
+            "Efficient transformer-based large scale language representations using hardware-friendly block structured pruning",
+            "Learned token pruning for transformers",
+            "Pruning pre-trained language models without fine-tuning",
+            "Analyzing multi-head self-attention: Specialized heads do the heavy lifting, the rest can be pruned",
+            "Structured pruning for efficient generative pre-trained language models",
+            "Power-bert: Accelerating bert inference via progressive word-vector elimination",
+            "Reweighted proximal pruning for large-scale language representation",
+            "Learning n: m fine-grained structured sparse neural networks from scratch",
+            "Movement pruning: Adaptive sparsity by fine-tuning",
+            "Reducing transformer depth on demand with structured dropout",
+            "Pruning redundant mappings in transformer models via spectral-normalized identity prior",
+            "Losparse: Structured compression of large language models based on low-rank and sparse approximation",
+            "Accelerating sparse deep neural networks",
+            "Are sixteen heads really better than one?",
+            "Optimal brain damage",
+            "Structured pruning of a bert-based question answering model",
+            "Optimal brain surgeon and general network pruning",
+            "Louizos, M",
+            "Junk dna hypothesis: A task-centric angle of llm pre-trained weights through sparsity",
+            "Pruning meets low-rank parameter-efficient fine-tuning",
+            "Compressing bert: Studying the effects of weight pruning on transfer learning",
+            "Gmp*: Well-tuned global magnitude pruning can outperform most bert-pruning methods",
+            "The optimal bert surgeon: Scalable and accurate second-order pruning for large language models",
+            "Structured pruning of large language models",
+            "Structured pruning learns compact and accurate models",
+            "From dense to sparse: Contrastive pruning for better pre-trained language model compression",
+            "Block pruning for faster transformers"
+          ],
+          "4 Pruning 4.3 Pruning Methods for LLMs": [
+            "Perp: Rethinking the prune-retrain paradigm in the era of llms",
+            "Sparsegpt: Massive language models can be accurately pruned in one-shot",
+            "Fluctuation-based adaptive structured pruning for large language models",
+            "Llm-pruner: On the structural pruning of large language models",
+            "How does calibration data affect the post-training pruning and quantization of large language models?",
+            "Learning both weights and connections for efficient neural network",
+            "An efficient plug-and-play post-training pruning strategy in large language models",
+            "Sheared llama: Accelerating language model pre-training via structured pruning",
+            "Accelerating sparse deep neural networks",
+            "Optimal brain damage",
+            "One-shot sensitivity-aware mixed sparsity pruning for large language models",
+            "Optimal brain surgeon and general network pruning",
+            "Lorashear: Efficient large language model structured pruning and knowledge recovery",
+            "Pruning large language models via accuracy predictor",
+            "Beyond size: How gradients shape pruning decisions in large language models",
+            "E-sparse: Boosting the large language model inference through entropy-based n: M sparsity",
+            "A simple and effective pruning approach for large language models",
+            "The llm surgeon",
+            "Structured pruning learns compact and accurate models",
+            "Compresso: Structured pruning with collaborative prompting learns compact large language models"
+          ],
+          "4 Pruning 4.4 Other Topics for LLM pruning": [
+            "Outlier weighed layerwise sparsity (OWL): A missing secret sauce for pruning LLMs to high sparsity",
+            "Prune and tune: Improving efficient pruning techniques for massive language models",
+            "Sparsegpt: Massive language models can be accurately pruned in one-shot",
+            "Dynamic sparse no training: Training-free fine-tuning for sparse llms",
+            "Sheared llama: Accelerating language model pre-training via structured pruning",
+            "Flash-llm: Enabling cost-effective and highly-efficient large generative model inference with unstructured sparsity"
+          ],
+          "5 Knowledge Distillation 5.1 Basic Concepts": [
+            "Deep mutual learning",
+            "A gift from knowledge distillation: Fast optimization, network minimization and transfer learning",
+            "Distilling the knowledge in a neural network",
+            "Fitnets: Hints for thin deep nets"
+          ],
+          "5 Knowledge Distillation 5.2 KD for Medium-Size Language Models": [
+            "Less is more: Task-aware layer-wise distillation for language model compression",
+            "Dynabert: Dynamic bert with adaptive width and depth",
+            "Adabert: Task-adaptive bert compression with differentiable neural architecture search",
+            "Mobilebert: a compact task-agnostic bert for resource-limited devices",
+            "Ad-kd: Attribution-driven knowledge distillation for language model compression",
+            "Meta-kd: A meta knowledge distillation framework for language model compression across domains",
+            "Reaugkd: Retrieval-augmented knowledge distillation for pre-trained language models",
+            "Distilling task-specific knowledge from bert into simple neural networks",
+            "Minilm: Deep self-attention distillation for task-agnostic compression of pre-trained transformers",
+            "mixup: Beyond empirical risk minimization",
+            "Improved knowledge distillation via teacher assistant",
+            "Distilbert, a distilled version of bert: smaller, faster, cheaper and lighter",
+            "Homodistil: Homotopic task-agnostic distillation of pre-trained transformers",
+            "Patient knowledge distillation for bert model compression",
+            "Bert learns to teach: Knowledge distillation with meta learning",
+            "Mixkd: Towards efficient distillation of large-scale language models",
+            "Well-read students learn better: On the importance of pre-training compact models",
+            "Tinybert: Distilling bert for natural language understanding",
+            "Cost-effective distillation of large language models"
+          ],
+          "5 Knowledge Distillation 5.3 KD for Large Language Models": [
+            "Universalner: Targeted distillation from large language models for open named entity recognition",
+            "Symbolic chain-of-thought distillation: Small models can also think step-by-step",
+            "Democratizing reasoning ability: Tailored learning from large language model",
+            "The false promise of imitating proprietary llms",
+            "Distilling reasoning capabilities into smaller language models",
+            "Disco: distilling counterfactuals with large language models",
+            "Instruction tuning with gpt-4",
+            "Learning to retrieve in-context examples for large language models",
+            "Scott: Self-consistent chain-of-thought distillation",
+            "Mcc-kd: Multi-cot consistent knowledge distillation",
+            "Propagating knowledge updates to lms through distillation",
+            "Distilling step-by-step! outperforming larger language models with less training data and smaller model sizes",
+            "Pad: Program-aided distillation specializes large models in reasoning",
+            "Towards the law of capacity gap in distilling language models",
+            "Lamini-lm: A diverse herd of distilled models from large-scale instructions",
+            "Knowledge distillation of large language models",
+            "In-context learning distillation: Transferring few-shot learning ability of pre-trained language models",
+            "Large language models are reasoning teachers",
+            "Leveraging training data in few-shot prompting for numerical reasoning",
+            "Self-instruct: Aligning language model with self generated instructions",
+            "Symbolic knowledge distillation: from general language models to commonsense models",
+            "Dialogue chain-of-thought distillation for commonsense-aware conversational agents",
+            "Personalised distillation: Empowering open-sourced llms with adaptive learning for code generation",
+            "Stanford alpaca: An instruction-following llama model",
+            "Vicuna: An open-source chatbot impressing gpt-4 with 90%* chatgpt quality",
+            "Promptmix: A class boundary augmentation method for large language model distillation",
+            "Distilling large language models for biomedical knowledge extraction: A case study on adverse drug events",
+            "Explanations from large language models make small reasoners better",
+            "Generalized knowledge distillation for auto-regressive language models",
+            "Token-scaled logit distillation for ternary weight generative language models",
+            "Lion: Adversarial distillation of closed-source large language model",
+            "Knowledge-augmented reasoning distillation for small language models in knowledge-intensive tasks",
+            "Gpt4all: Training an assistant-style chatbot with large scale data distillation from gpt-3.5-turbo",
+            "Specializing smaller language models towards multi-step reasoning"
+          ],
+          "6 Compact Architecture Design 6.1 Efficient Attention": [
+            "Transformer-xl: Attentive language models beyond a fixed-length context",
+            "Flashattention-2: Faster attention with better parallelism and work partitioning",
+            "Flashattention: Fast and memory-efficient exact attention with io-awareness",
+            "Efficient attention: Attention with linear complexities",
+            "Generating long sequences with sparse transformers",
+            "Hyperattention: Long-context attention in near-linear time",
+            "Sparse sinkhorn attention",
+            "Reformer: The efficient transformer",
+            "Sac: Accelerating and structuring self-attention via sparse adaptive connection",
+            "Transformers are rnns: Fast autoregressive transformers with linear attention",
+            "Rethinking attention with performers",
+            "Bp-transformer: Modelling long-range context via binary partitioning",
+            "Nystr\u00f6mformer: A nystr\u00f6m-based algorithm for approximating self-attention",
+            "Random features for large-scale kernel machines",
+            "Blockwise self-attention for long document understanding",
+            "Longformer: The long-document transformer",
+            "Linformer: Self-attention with linear complexity",
+            "Big bird: Transformers for longer sequences",
+            "Adaptively sparse transformers",
+            "Efficient content-based sparse attention with routing transformers",
+            "Adaptive attention span in transformers",
+            "Combiner: Full attention transformer with sparse computation cost"
+          ],
+          "6 Compact Architecture Design 6.2 Neural Architecture Search.": [
+            "Hat: Hardware-aware transformers for efficient natural language processing"
+          ],
+          "7 Dynamic Networks": [
+            "Frugalgpt: How to use large language models while reducing cost and improving performance",
+            "A survey on dynamic neural networks for natural language processing",
+            "Dola: Decoding by contrasting layers improves factuality in large language models",
+            "Deebert: Dynamic early exiting for accelerating bert inference",
+            "Tabi: An efficient multi-level inference system for large language models",
+            "Scaling laws for neural language models",
+            "Gpt-4 architecture, infrastructure, training dataset, costs, vision, moe",
+            "On optimal caching and model multiplexing for large model inference",
+            "Ecoassistant: Using llm assistant more affordably and accurately",
+            "Large language model cascades with mixture of thoughts representations for cost-efficient reasoning"
+          ],
+          "7 Dynamic Networks 7.1 Mixture of Experts": [
+            "Memory augmented language models through mixture of word experts",
+            "Moec: Mixture of expert clusters",
+            "Adaptive mixtures of local experts",
+            "Gating dropout: Communication-efficient regularization for sparsely activated transformers",
+            "Improving transformer models by reordering their sublayers",
+            "Mixtral of experts",
+            "Evomoe: An evolutional mixture-of-experts training framework via dense-to-sparse gate",
+            "Searching for efficient transformers for language modeling",
+            "Brainformers: Trading simplicity for efficiency",
+            "Stablemoe: Stable routing strategy for mixture of experts",
+            "Unified scaling laws for routed language models",
+            "No language left behind: Scaling human-centered machine translation",
+            "Switch transformers: Scaling to trillion parameter models with simple and efficient sparsity",
+            "Neural architecture search with reinforcement learning",
+            "Scalable and efficient moe training for multitask multilingual models",
+            "Attention is all you need",
+            "Ren, P",
+            "Dselect-k: Differentiable selection in the mixture of experts with applications to multi-task learning",
+            "Deepspeed-moe: Advancing mixture-of-experts inference and training to power next-generation ai scale",
+            "Efficientnet: Rethinking model scaling for convolutional neural networks",
+            "Base layers: Simplifying training of large, sparse models",
+            "Mixture-of-experts with expert choice routing",
+            "On the representation collapse of sparse mixture of experts",
+            "Hash layers for large sparse models",
+            "Touvron, L",
+            "Scaling vision with sparse mixture of experts",
+            "Outrageously large neural networks: The sparsely-gated mixture-of-experts layer",
+            "Gshard: Scaling giant models with conditional computation and automatic sharding",
+            "Cpm-2: Large-scale cost-effective pre-trained language models",
+            "Long short-term memory",
+            "St-moe: Designing stable and transferable sparse expert models",
+            "Deepseekmoe: Towards ultimate expert specialization in mixture-of-experts language models",
+            "M6-t: Exploring sparse expert models and beyond",
+            "Gpt-4 architecture, infrastructure, training dataset, costs, vision, moe",
+            "Glam: Efficient scaling of language models with mixture-of-experts",
+            "Openmoe: An early effort on open mixture-of-experts language models",
+            "Language models are few-shot learners",
+            "Taming sparsely activated transformer with stochastic experts",
+            "Dropout: a simple way to prevent neural networks from overfitting"
+          ],
+          "7 Dynamic Networks 7.2 Combineing MoE with other efficient techniques": [
+            "Parameter-efficient transfer learning for nlp",
+            "Moefication: Transformer feed-forward layers are mixtures of experts",
+            "Mlp-mixer: An all-mlp architecture for vision",
+            "Switchhead: Accelerating transformers with mixture-of-experts attention",
+            "Moebert: from bert to mixture-of-experts via importance-guided adaptation",
+            "Switch transformers: Scaling to trillion parameter models with simple and efficient sparsity",
+            "Lora: Low-rank adaptation of large language models",
+            "Task-specific expert pruning for sparse mixture-of-experts",
+            "Scalable and efficient moe training for multitask multilingual models",
+            "Importance estimation for neural network pruning",
+            "Deepspeed-moe: Advancing mixture-of-experts inference and training to power next-generation ai scale",
+            "Parameter-efficient mixture-of-experts architecture for pre-trained language models",
+            "Mixture-of-linguistic-experts adapters for improving and interpreting pre-trained language models",
+            "Adamix: Mixture-of-adaptations for parameter-efficient model tuning",
+            "Mixture-of-domain-adapters: Decoupling and injecting domain knowledge to pre-trained language models' memories",
+            "Sparse mixers: Combining moe and mixing to build a more efficient bert",
+            "Efficient language modeling with sparse all-mlp",
+            "Approximating two-layer feedforward networks for efficient transformers",
+            "Bert: Pre-training of deep bidirectional transformers for language understanding",
+            "Taming sparsely activated transformer with stochastic experts"
+          ],
+          "8 Acceleration Framework": [
+            "Alpa: Automating inter-and {{\\{Intra-Operator\\}\\} parallelism for distributed deep learning",
+            "Openllm: Operating llms in production"
+          ],
+          "8 Acceleration Framework 8.1 General Framework": [
+            "Mnn: A universal and efficient inference engine",
+            "Pytorch jit",
+            "Deepspeed-inference: enabling efficient inference of transformer models at unprecedented scale",
+            "T. Chen, T. Moreau, Z. Jiang, L. Zheng, E. Yan, H. Shen, M. Cowan, L. Wang, Y. Hu, L. Ceze et al., \u201c{{\\{TVM\\}\\}}: An automated {{\\{End-to-End\\}\\}} optimizing compiler for deep learning,\u201d",
+            "Tensorflow xla",
+            "Dnnfusion: accelerating deep neural networks execution with advanced operator fusion"
+          ],
+          "8 Acceleration Framework 8.2 Specialized Framework": [
+            "Flexgen: High-throughput generative inference of large language models with a single gpu",
+            "Powerinfer: Fast large language model serving with a consumer-grade gpu",
+            "Turbotransformers: an efficient gpu serving system for transformer models",
+            "Bytetransformer: A high-performance transformer boosted for variable-length inputs"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.0012257780181244016,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "A Comprehensive Evaluation of Quantization Strategies for Large Language Models",
+        "arxiv_id": "2402.16775",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Increasing the number of parameters in large language models (LLMs) usually improves performance in downstream tasks but raises compute and memory costs, making deployment difficult in resource-limited settings. Quantization techniques, which reduce the bits needed for model weights or activations with minimal performance loss, have become popular due to the rise of LLMs. However, most quantization studies use pre-trained LLMs, and the impact of quantization on instruction-tuned LLMs and the relationship between perplexity and benchmark performance of quantized LLMs are not well understood. Evaluation of quantized LLMs is often limited to language modeling and a few classification tasks, leaving their performance on other benchmarks unclear. To address these gaps, we propose a structured evaluation framework consisting of three critical dimensions: (1) knowledge & capacity, (2) alignment, and (3) efficiency, and conduct extensive experiments across ten diverse benchmarks. Our experimental results indicate that LLMs with 4-bit quantization can retain performance comparable to their non-quantized counterparts, and perplexity can serve as a proxy metric for quantized LLMs on most benchmarks. Furthermore, quantized LLMs with larger parameter scales can outperform smaller LLMs. Despite the memory savings achieved through quantization, it can also slow down the inference speed of LLMs. Consequently, substantial engineering efforts and hardware support are imperative to achieve a balanced optimization of decoding speed and memory consumption in the context of quantized LLMs. ",
+        "sections": {
+          "1 Introduction": [
+            "A survey of quantization methods for efficient neural network inference",
+            "A survey of large language models",
+            "LLM-QAT: data-free quantization aware training for large language models",
+            "Training trajectories of language models across scales",
+            "Gpt3.int8(): 8-bit matrix multiplication for transformers at scale",
+            "Language models are few-shot learners",
+            "Training language models to follow instructions with human feedback"
+          ],
+          "2 Related Work LLMs Quantization": [
+            "Quantization and training of neural networks for efficient integer-arithmetic-only inference",
+            "Gpt3.int8(): 8-bit matrix multiplication for transformers at scale",
+            "Spqr: A sparse-quantized representation for near-lossless LLM weight compression",
+            "Qlora: Efficient finetuning of quantized llms",
+            "Smoothquant: Accurate and efficient post-training quantization for large language models",
+            "OPTQ: accurate quantization for generative pre-trained transformers",
+            "Outlier suppression+: Accurate quantization of large language models by equivalent and effective shifting and scaling"
+          ],
+          "2 Related Work LLMs Evaluation": [
+            "A multitask, multilingual, multimodal evaluation of chatgpt on reasoning, hallucination, and interactivity",
+            "Beyond the imitation game: Quantifying and extrapolating the capabilities of language models.",
+            "Emergent abilities of large language models",
+            "A survey on evaluation of large language models",
+            "Measuring massive multitask language understanding",
+            "Realtoxicityprompts: Evaluating neural toxic degeneration in language models"
+          ],
+          "3 Evaluation Protocol": [
+            "Training verifiers to solve math word problems",
+            "Don\u2019t give me the details, just the summary! topic-aware convolutional neural networks for extreme summarization",
+            "C-eval: A multi-level multi-discipline chinese evaluation suite for foundation models",
+            "Truthfulqa: Measuring how models mimic human falsehoods",
+            "Get to the point: Summarization with pointer-generator networks",
+            "No language left behind: Scaling human-centered machine translation",
+            "Measuring massive multitask language understanding",
+            "BBQ: A hand-built bias benchmark for question answering",
+            "Followbench: A multi-level fine-grained constraints following benchmark for large language models",
+            "A general language assistant as a laboratory for alignment",
+            "A large annotated corpus for learning natural language inference"
+          ],
+          "4 Evaluation Setup 4.1 LLMs": [
+            "Qwen technical report"
+          ],
+          "4 Evaluation Setup 4.2 Quantization Strategies": [
+            "Transformers: State-of-the-art natural language processing",
+            "Gpt3.int8(): 8-bit matrix multiplication for transformers at scale",
+            "Spqr: A sparse-quantized representation for near-lossless LLM weight compression",
+            "OPTQ: accurate quantization for generative pre-trained transformers",
+            "Instruction tuning with GPT-4",
+            "Stanford alpaca: An instruction-following llama model"
+          ],
+          "5 Experiment Results and Discussion In practical scenarios, the application of low-bit quantization necessitates substantial engineering effort and hardware support.": [
+            "Fast transformer decoding: One write-head is all you need"
+          ],
+          "Limitations": [
+            "Rethinking benchmark and contamination for language models with rephrased samples"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.017559634521603584,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Q-DiT: Accurate Post-Training Quantization for Diffusion Transformers",
+        "arxiv_id": "2406.17343",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract Recent advancements in diffusion models, particularly the trend of architectural transformation from UNet-based Diffusion to Diffusion Transformer (DiT), have significantly improved the quality and scalability of image synthesis. Despite the incredible generative quality, the large computational requirements of these large-scale models significantly hinder the deployments in real-world scenarios. Post-training Quantization (PTQ) offers a promising solution by compressing model sizes and speeding up inference for the pretrained models while eliminating model retraining. However, we have observed the existing PTQ frameworks exclusively designed for both ViT and conventional Diffusion models fall into biased quantization and result in remarkable performance degradation. In this paper, we find that the DiTs typically exhibit considerable variance in terms of both weight and activation, which easily runs out of the limited numerical representations. To address this issue, we devise Q-DiT, which seamlessly integrates three techniques: fine-grained quantization to manage substantial variance across input channels of weights and activations, an automatic search strategy to optimize the quantization granularity and mitigate redundancies, and dynamic activation quantization to capture the activation changes across timesteps. Extensive experiments on the ImageNet dataset demonstrate the effectiveness of the proposed Q-DiT. Specifically, when quantizing DiT-XL/2 to W8A8 on ImageNet 256x256, Q-DiT achieves a remarkable reduction in FID by 1.26 compared to the baseline. Under a W4A8 setting, it maintains high fidelity in image generation, showcasing only a marginal increase in FID and setting a new benchmark for efficient, high-quality quantization in diffusion transformers. Code is available at https://github.com/Juanerx/Q-DiT.",
+        "sections": {
+          "1 Introduction": [
+            "Up or down? adaptive rounding for post-training quantization",
+            "Attention is all you need",
+            "Scalable diffusion models with transformers",
+            "Structural pruning for diffusion models",
+            "High-resolution image synthesis with latent diffusion models",
+            "U-net: Convolutional networks for biomedical image segmentation",
+            "Structured denoising diffusion models in discrete state-spaces",
+            "Post-training quantization on diffusion models",
+            "Scaling rectified flow transformers for high-resolution image synthesis",
+            "Blended diffusion for text-driven editing of natural images",
+            "Denoising diffusion probabilistic models",
+            "Denoising diffusion implicit models",
+            "Consistency models",
+            "Video generation models as world simulators"
+          ],
+          "2 Related Work": [
+            "Up or down? adaptive rounding for post-training quantization",
+            "Q-diffusion: Quantizing diffusion models",
+            "Gptq: Accurate post-training quantization for generative pre-trained transformers",
+            "Pact: Parameterized clipping activation for quantized neural networks",
+            "Awq: Activation-aware weight quantization for llm compression and acceleration",
+            "Gpt3. int8 (): 8-bit matrix multiplication for transformers at scale",
+            "Post-training quantization on diffusion models",
+            "Temporal dynamic quantization for diffusion models",
+            "Repq-vit: Scale reparameterization for post-training quantization of vision transformers",
+            "Ptqd: Accurate post-training quantization for diffusion models",
+            "Tmpq-dm: Joint timestep reduction and quantization precision selection for efficient diffusion models",
+            "Estimating or propagating gradients through stochastic neurons for conditional computation",
+            "Outlier suppression: Pushing the limit of low-bit transformer language models",
+            "Ptq4vit: Post-training quantization for vision transformers with twin uniform quantization"
+          ],
+          "3 Q-DiT 3.1 Preliminary": [
+            "Quantization and training of neural networks for efficient integer-arithmetic-only inference"
+          ],
+          "3 Q-DiT 3.2 Requirements of fine-grained quantization": [
+            "Understanding and overcoming the challenges of efficient transformer quantization",
+            "Awq: Activation-aware weight quantization for llm compression and acceleration"
+          ],
+          "3 Q-DiT 3.3 Dynamic activation quantization": [
+            "Efficientdm: Efficient quantization-aware fine-tuning of low-bit diffusion models",
+            "Temporal dynamic quantization for diffusion models",
+            "Zeroquant-fp: A leap forward in llms post-training w4a8 quantization using floating-point formats"
+          ],
+          "3 Q-DiT 3.4 Automatic quantization granularity allocation": [
+            "Gptq: Accurate post-training quantization for generative pre-trained transformers",
+            "Brecq: Pushing the limit of post-training quantization by block reconstruction"
+          ],
+          "4 Experiments 4.1 Settings": [
+            "Imagenet: A large-scale hierarchical image database",
+            "Scalable diffusion models with transformers",
+            "Improved techniques for training gans",
+            "Gptq: Accurate post-training quantization for generative pre-trained transformers",
+            "Diffusion models beat gans on image synthesis",
+            "Post-training quantization on diffusion models",
+            "Classifier-free diffusion guidance",
+            "Repq-vit: Scale reparameterization for post-training quantization of vision transformers",
+            "Gans trained by a two time-scale update rule converge to a local nash equilibrium",
+            "Denoising diffusion implicit models"
+          ],
+          "4 Experiments 4.3 Ablation Studies": [
+            "Instance-aware group quantization for vision transformers",
+            "Brecq: Pushing the limit of post-training quantization by block reconstruction"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.00480140233412385,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Investigating the Impact of Quantization on Adversarial Robustness",
+        "arxiv_id": "2404.05639",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract Quantization is a promising technique for reducing the bit-width of deep models to improve their runtime performance and storage efficiency, and thus becomes a fundamental step for deployment. In real-world scenarios, quantized models are often faced with adversarial attacks which cause the model to make incorrect inferences by introducing slight perturbations. However, recent studies have paid less attention to the impact of quantization on the model robustness. More surprisingly, existing studies on this topic even present inconsistent conclusions, which prompted our in-depth investigation. In this paper, we conduct a first-time analysis of the impact of the quantization pipeline components that can incorporate robust optimization under the settings of Post-Training Quantization and Quantization-Aware Training. Through our detailed analysis, we discovered that this inconsistency arises from the use of different pipelines in different studies, specifically regarding whether robust optimization is performed and at which quantization stage it occurs. Our research findings contribute insights into deploying more secure and robust quantized networks, assisting practitioners in reference for scenarios with high-security requirements and limited resources.",
+        "sections": {
+          "1 Introduction": [
+            "A white paper on neural network quantization",
+            "Zeroquant: Efficient and affordable post-training quantization for large-scale transformers",
+            "Sequence to sequence learning with neural networks",
+            "Pact: Parameterized clipping activation for quantized neural networks",
+            "Medq: Lossless ultra-low-bit neural network quantization for medical image segmentation",
+            "U-net: Convolutional networks for biomedical image segmentation",
+            "Deepspeed: System optimizations enable training deep learning models with over 100 billion parameters.",
+            "Towards deep learning models resistant to adversarial attacks",
+            "Integer-arithmetic-only certified robustness for quantized neural networks",
+            "Understanding the impact of adversarial robustness on accuracy disparity",
+            "Double-win quant: Aggressively winning robustness of quantized deep neural networks via random precision training and inference",
+            "Flexi-compression: a flexible model compression method for autonomous driving"
+          ],
+          "2 Related Work": [
+            "Attacking binarized neural networks",
+            "Robustmq: benchmarking robustness of quantized models",
+            "Double-win quant: Aggressively winning robustness of quantized deep neural networks via random precision training and inference",
+            "Empir: Ensembles of mixed precision deep networks for increased robustness against adversarial attacks",
+            "Obfuscated gradients give a false sense of security: Circumventing defenses to adversarial examples",
+            "Defensive quantization: When efficiency meets robustness",
+            "Benchmarking the reliability of post-training quantization: a particular focus on worst-case performance"
+          ],
+          "3 Robust Quantization Overview 3.2 Evaluate Method": [
+            "Benchmarking adversarial robustness on image classification"
+          ],
+          "4 Experiments and Insights 4.1 Various Components in Quantization Pipeline": [
+            "Transferring adversarial robustness through robust representation matching",
+            "Brecq: Pushing the limit of post-training quantization by block reconstruction",
+            "Mixed-precision neural network quantization via learned layer-wise importance",
+            "Learned step size quantization"
+          ],
+          "4 Experiments and Insights 4.2 Experimental Setup": [
+            "Post-training piecewise linear quantization for deep neural networks",
+            "Deep residual learning for image recognition",
+            "Pact: Parameterized clipping activation for quantized neural networks",
+            "Reliable evaluation of adversarial robustness with an ensemble of diverse parameter-free attacks",
+            "Learning multiple layers of features from tiny images",
+            "Towards deep learning models resistant to adversarial attacks",
+            "Obfuscated gradients give a false sense of security: Circumventing defenses to adversarial examples"
+          ],
+          "4 Experiments and Insights 4.3 Results and Analysis": [
+            "Transferring adversarial robustness through robust representation matching",
+            "Towards deep learning models resistant to adversarial attacks"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.03103174827992916,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Low-Rank Quantization-Aware Training for LLMs",
+        "arxiv_id": "2406.06385",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract Large language models (LLMs) are omnipresent, however their practical deployment is challenging due to their ever increasing computational and memory demands. Quantization is one of the most effective ways to make them more compute and memory efficient. Quantization-aware training (QAT) methods, generally produce the best quantized performance, however it comes at the cost of potentially long training time and excessive memory usage, making it impractical when applying for LLMs. Inspired by parameter-efficient fine-tuning (PEFT) and low-rank adaptation (LoRA) literature, we propose LR-QAT \u2013 a lightweight and memory-efficient QAT algorithm for LLMs. LR-QAT employs several components to save memory without sacrificing predictive performance: (a) low-rank auxiliary weights that are aware of the quantization grid; (b) a downcasting operator using fixed-point or double-packed integers and (c) checkpointing. Unlike most related work, our method (i) is inference-efficient, leading to no additional overhead compared to traditional PTQ; (ii) can be seen as a general extended pretraining framework, meaning that the resulting model can still be utilized for any downstream task afterwards; (iii) can be applied across a wide range of quantization settings, such as different choices quantization granularity, activation quantization, and seamlessly combined with many PTQ techniques. We apply LR-QAT to LLaMA-2/3 and Mistral model families and validate its effectiveness on several downstream tasks. Our method outperforms common post-training quantization (PTQ) approaches and reaches the same model performance as full-model QAT at the fraction of its memory usage. Specifically, we can train a 7B LLM on a single consumer grade GPU with 24GB of memory.",
+        "sections": {
+          "2 Background and related work Uniform affine quantization": [
+            "Quantized neural networks: Training neural networks with low precision weights and activations"
+          ],
+          "2 Background and related work Post-training quantization methods": [
+            "Omniquant: Omnidirectionally calibrated quantization for large language models",
+            "Owq: Outlier-aware weight quantization for efficient fine-tuning and inference of large language models",
+            "Gptq: Accurate post-training quantization for generative pre-trained transformers",
+            "Understanding and overcoming the challenges of efficient transformer quantization",
+            "Awq: Activation-aware weight quantization for llm compression and acceleration",
+            "Spqr: A sparse-quantized representation for near-lossless llm weight compression",
+            "Gpt3. int8 (): 8-bit matrix multiplication for transformers at scale",
+            "Post-training 4-bit quantization of convolution networks for rapid-deployment",
+            "Outlier suppression: Pushing the limit of low-bit transformer language models",
+            "Smoothquant: Accurate and efficient post-training quantization for large language models",
+            "Enhancing computation efficiency in large language models through weight and activation quantization",
+            "A frustratingly easy post-training quantization scheme for llms"
+          ],
+          "2 Background and related work Quantization-aware training methods": [
+            "Lsq+: Improving low-bit quantization through learnable offsets and better initialization",
+            "Llm-qat: Data-free quantization aware training for large language models",
+            "Edgeqat: Entropy and distribution guided quantization-aware training for the acceleration of lightweight llms on the edge"
+          ],
+          "2 Background and related work Low-rank adapters for fine-tuning": [
+            "Qa-lora: Quantization-aware low-rank adaptation of large language models",
+            "Loftq: Lora-fine-tuning-aware quantization for large language models",
+            "Lora: Low-rank adaptation of large language models",
+            "Memory-efficient fine-tuning of compressed large language models via sub-4-bit integer quantization",
+            "L4q: Parameter efficient quantization-aware training on large language models via lora-wise lsq",
+            "Qlora: Efficient finetuning of quantized llms",
+            "Lq-lora: Low-rank plus quantized matrix decomposition for efficient language model finetuning"
+          ],
+          "2 Background and related work Motivation": [
+            "Qa-lora: Quantization-aware low-rank adaptation of large language models"
+          ],
+          "3 Method QAT with low-rank adapters": [
+            "Lora: Low-rank adaptation of large language models",
+            "Qlora: Efficient finetuning of quantized llms",
+            "Estimating or propagating gradients through stochastic neurons for conditional computation"
+          ],
+          "3 Method Downcasting operator": [
+            "Lora: Low-rank adaptation of large language models",
+            "Loftq: Lora-fine-tuning-aware quantization for large language models",
+            "Fixed-point representation & fractional math"
+          ],
+          "3 Method Gradient checkpointing": [
+            "Lora: Low-rank adaptation of large language models",
+            "Qlora: Efficient finetuning of quantized llms",
+            "Training deep nets with sublinear memory cost"
+          ],
+          "3 Method LR-QAT": [
+            "A white paper on neural network quantization"
+          ],
+          "4 Experiments": [
+            "Llama 2: Open foundation and fine-tuned chat models",
+            "Mistral 7b",
+            "Llama 3 model card",
+            "Llama: Open and efficient foundation language models"
+          ],
+          "4 Experiments Quantization": [
+            "Gpt3. int8 (): 8-bit matrix multiplication for transformers at scale",
+            "Omniquant: Omnidirectionally calibrated quantization for large language models",
+            "Llm-qat: Data-free quantization aware training for large language models"
+          ],
+          "4 Experiments Evaluation": [
+            "Piqa: Reasoning about physical commonsense in natural language",
+            "Gptq: Accurate post-training quantization for generative pre-trained transformers",
+            "Think you have solved question answering? try arc, the ai2 reasoning challenge",
+            "Winogrande: An adversarial winograd schema challenge at scale",
+            "Hellaswag: Can a machine really finish your sentence?",
+            "Boolq: Exploring the surprising difficulty of natural yes/no questions",
+            "A framework for few-shot language model evaluation",
+            "Pointer sentinel mixture models"
+          ],
+          "4 Experiments Datasets and training": [
+            "SlimPajama: A 627B token cleaned and deduplicated version of RedPajama"
+          ],
+          "4 Experiments Baselines": [
+            "Omniquant: Omnidirectionally calibrated quantization for large language models",
+            "Llm-qat: Data-free quantization aware training for large language models",
+            "Gptq: Accurate post-training quantization for generative pre-trained transformers",
+            "Memory-efficient fine-tuning of compressed large language models via sub-4-bit integer quantization",
+            "Awq: Activation-aware weight quantization for llm compression and acceleration",
+            "Outlier suppression+: Accurate quantization of large language models by equivalent and optimal shifting and scaling",
+            "Smoothquant: Accurate and efficient post-training quantization for large language models"
+          ],
+          "4 Experiments 4.2 The choice of the downcasting operator \u03c6\u200b(\u22c5)\ud835\udf11\u22c5\\varphi\\!\\left(\\cdot\\right) and \ud835\udc68\ud835\udc68\\bm{A}, \ud835\udc69\ud835\udc69\\bm{B} initialization": [
+            "Lora: Low-rank adaptation of large language models",
+            "Delving deep into rectifiers: Surpassing human-level performance on imagenet classification",
+            "Loftq: Lora-fine-tuning-aware quantization for large language models"
+          ],
+          "4 Experiments 4.3 Comparison with full-model QAT": [
+            "Learned step size quantization"
+          ],
+          "4 Experiments 4.4 Main results": [
+            "A white paper on neural network quantization"
+          ],
+          "5 Discussion Limitations": [
+            "Qlora: Efficient finetuning of quantized llms"
+          ],
+          "5 Discussion Impact": [
+            "Characterising bias in compressed models"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.8857316970825195,
+        "extra": {
+          "expand": "not expand"
+        }
+      }
+    ],
+    "Benefits of QAT in learning better representations for low-bit weights": [
+      {
+        "title": "EdgeQAT: Entropy and Distribution Guided Quantization-Aware Training for the Acceleration of Lightweight LLMs on the Edge",
+        "arxiv_id": "2402.10787",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Despite the remarkable strides of Large Language Models (LLMs) in various fields, the wide applications of LLMs on edge devices are limited due to their massive parameters and computations. To address this, quantization is commonly adopted to generate lightweight LLMs with efficient computations and fast inference. However, Post-Training Quantization (PTQ) methods dramatically degrade in quality when quantizing weights, activations, and KV cache together to below 8 bits. Besides, many Quantization-Aware Training (QAT) works quantize model weights, leaving the activations untouched, which do not fully exploit the potential of quantization for inference acceleration on the edge. In this paper, we propose EdgeQAT, the Entropy and Distribution Guided QAT for the optimization of lightweight LLMs to achieve inference acceleration on Edge devices. We first identify that the performance drop of quantization primarily stems from the information distortion in quantized attention maps, demonstrated by the different distributions in quantized query and key of the self-attention mechanism. Then, the entropy and distribution guided QAT is proposed to mitigate the information distortion. Moreover, we design a token importance-aware adaptive method to dynamically quantize the tokens with different bit widths for further optimization and acceleration. Our extensive experiments verify the substantial improvements with our framework across various datasets. Furthermore, we achieve an on-device speedup of up to 2.37\u00d7\\times compared with its FP16 counterparts across multiple edge devices, signaling a groundbreaking advancement. The code is available here:https://github.com/shawnricecake/EdgeQAT ",
+        "sections": {
+          "1 Introduction": [
+            "BigScience Workshop, Teven Le Scao, Angela Fan, Christopher Akiki, Ellie Pavlick, Suzana Ili\u0107, Daniel Hesslow, Roman Castagn\u00e9, Alexandra Sasha Luccioni, Fran\u00e7ois Yvon, et al. 2022. Bloom: A 176b-parameter open-access multilingual language model.",
+            "Opt: Open pre-trained transformer language models",
+            "Attention is all you need",
+            "Llama: Open and efficient foundation language models",
+            "Language models are few-shot learners.",
+            "Llm. int8 (): 8-bit matrix multiplication for transformers at scale"
+          ],
+          "2 Related Work 2.1 Efficient Large Language Models": [
+            "BigScience Workshop, Teven Le Scao, Angela Fan, Christopher Akiki, Ellie Pavlick, Suzana Ili\u0107, Daniel Hesslow, Roman Castagn\u00e9, Alexandra Sasha Luccioni, Fran\u00e7ois Yvon, et al. 2022. Bloom: A 176b-parameter open-access multilingual language model.",
+            "Opt: Open pre-trained transformer language models",
+            "Lora: Low-rank adaptation of large language models",
+            "Gpt-4 technical report",
+            "Llama: Open and efficient foundation language models"
+          ],
+          "2 Related Work 2.2 Quantization for LLMs": [
+            "Awq: Activation-aware weight quantization for llm compression and acceleration",
+            "Llm-qat: Data-free quantization aware training for large language models",
+            "Gptq: Accurate post-training quantization for generative pre-trained transformers",
+            "Zeroquant: Efficient and affordable post-training quantization for large-scale transformers",
+            "Smoothquant: Accurate and efficient post-training quantization for large language models"
+          ],
+          "3 Analysis 3.1 Quantized Self-Attention Module": [
+            "Learned step size quantization",
+            "BLiMP: The Benchmark of Linguistic Minimal Pairs for English",
+            "Baby llama: knowledge distillation from an ensemble of teachers trained on a small dataset with no performance penalty"
+          ],
+          "3 Analysis 3.2 Token Importance": [
+            "Token fusion: Bridging the gap between token pruning and token merging"
+          ],
+          "4 Methodology 4.1 Preliminary": [
+            "Estimating or propagating gradients through stochastic neurons for conditional computation"
+          ],
+          "4 Methodology 4.2 Entropy and Distribution Guided Optimization": [
+            "Quantizing for maximum output entropy (corresp.)"
+          ],
+          "4 Methodology 4.4 Adaptive Training Pipeline": [
+            "Distilling the knowledge in a neural network"
+          ],
+          "4 Methodology 4.5 Hardware Implementations": [
+            "llama.cpp: Low-latency audio streaming library for c++",
+            "Understanding the potential of fpga-based spatial acceleration for large language model inference"
+          ],
+          "5 Experimental Results 5.1 Experiment Setup": [
+            "Pact: Parameterized clipping activation for quantized neural networks",
+            "Nipq: Noise injection pseudo quantization for automated dnn optimization",
+            "BLiMP: The Benchmark of Linguistic Minimal Pairs for English",
+            "Superglue: A stickier benchmark for general-purpose language understanding systems",
+            "Language models are unsupervised multitask learners.",
+            "Learned step size quantization",
+            "Penn & BGU BabyBERTa+ for Strict-Small BabyLM Challenge",
+            "Llama: Open and efficient foundation language models"
+          ],
+          "5 Experimental Results 5.2 Hardware Deployment": [
+            "The open cloud testbed (oct): A platform for research into new cloud technologies"
+          ],
+          "5 Experimental Results 5.3 Main Results of Model Performance": [
+            "BLiMP: The Benchmark of Linguistic Minimal Pairs for English",
+            "Zeroquant-fp: A leap forward in llms post-training w4a8 quantization using floating-point formats"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.8549649119377136,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "1 Introduction",
+        "arxiv_id": "2102.04503",
+        "depth": 0,
+        "child": {},
+        "abstract": "",
+        "sections": {},
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.009646698832511902,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "A White Paper on Neural Network Quantization",
+        "arxiv_id": "2106.08295",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract While neural networks have advanced the frontiers in many applications, they often come at a high computational cost. Reducing the power and latency of neural network inference is key if we want to integrate modern networks into edge devices with strict power and compute requirements. Neural network quantization is one of the most effective ways of achieving these savings but the additional noise it induces can lead to accuracy degradation. In this white paper, we introduce state-of-the-art algorithms for mitigating the impact of quantization noise on the network\u2019s performance while maintaining low-bit weights and activations. We start with a hardware motivated introduction to quantization and then consider two main classes of algorithms: Post-Training Quantization (PTQ) and Quantization-Aware-Training (QAT). PTQ requires no re-training or labelled data and is thus a lightweight push-button approach to quantization. In most cases, PTQ is sufficient for achieving 8-bit quantization with close to floating-point accuracy. QAT requires fine-tuning and access to labeled training data but enables lower bit quantization with competitive results. For both solutions, we provide tested pipelines based on existing literature and extensive experimentation that lead to state-of-the-art performance for common deep learning models and tasks. ",
+        "sections": {
+          "2 Quantization fundamentals 2.1 Hardware background": [
+            "Quantization and training of neural networks for efficient integer-arithmetic-only inference",
+            "1.1 computing\u2019s energy problem (and what we can do about it)"
+          ],
+          "2 Quantization fundamentals 2.2 Uniform affine quantization": [
+            "Pushing the limits of narrow precision inferencing at cloud scale with microsoft floating point"
+          ],
+          "2 Quantization fundamentals 2.3 Quantization simulation": [
+            "Quantizing deep convolutional networks for efficient inference: A whitepaper",
+            "Batch normalization: Accelerating deep network training by reducing internal covariate shift",
+            "Searching for activation functions"
+          ],
+          "2 Quantization fundamentals 2.4 Practical considerations": [
+            "Bayesian bits: Unifying quantization and pruning"
+          ],
+          "3 Post-training quantization 3.1 Quantization range setting": [
+            "Post training 4-bit quantization of convolutional networks for rapid-deployment",
+            "Data-free quantization through weight equalization and bias correction"
+          ],
+          "3 Post-training quantization 3.2 Cross-Layer Equalization": [
+            "Same, same but different: Recovering neural network quantization error through weight factorization",
+            "Mobilenetv2: Inverted residuals and linear bottlenecks",
+            "Mobilenets: Efficient convolutional neural networks for mobile vision applications",
+            "Quantizing deep convolutional networks for efficient inference: A whitepaper",
+            "Data-free quantization through weight equalization and bias correction"
+          ],
+          "3 Post-training quantization 3.3 Bias correction": [
+            "Data-free quantization through weight equalization and bias correction"
+          ],
+          "3 Post-training quantization 3.4 AdaRound": [
+            "Deep learning with limited numerical precision",
+            "Distilling optimal neural networks: Rapid search in diverse spaces",
+            "Up or down? Adaptive rounding for post-training quantization"
+          ],
+          "3 Post-training quantization 3.6 Experiments": [
+            "GLUE: A multi-task benchmark and analysis platform for natural language understanding",
+            "Rethinking atrous convolution for semantic image segmentation",
+            "Efficientdet: Scalable and efficient object detection"
+          ],
+          "4 Quantization-aware training 4.1 Simulating quantization for backward path": [
+            "Quantizing deep convolutional networks for efficient inference: A whitepaper",
+            "Estimating or propagating gradients through stochastic neurons for conditional computation",
+            "Learned step size quantization"
+          ],
+          "4 Quantization-aware training 4.2 Batch normalization folding and QAT": [
+            "Quantization and training of neural networks for efficient integer-arithmetic-only inference"
+          ],
+          "4 Quantization-aware training 4.3 Initialization for QAT": [
+            "Learned step size quantization"
+          ],
+          "4 Quantization-aware training 4.5 Experiments": [
+            "One weight bitwidth to rule them all"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.6105732917785645,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "FP8 Quantization: The Power of the Exponent",
+        "arxiv_id": "2208.09225",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract When quantizing neural networks for efficient inference, low-bit integers are the go-to format for efficiency. However, low-bit floating point numbers have an extra degree of freedom, assigning some bits to work on an exponential scale instead. This paper in-depth investigates this benefit of the floating point format for neural network inference. We detail the choices that can be made for the FP8 format, including the important choice of the number of bits for the mantissa and exponent, and show analytically in which settings these choices give better performance. Then we show how these findings translate to real networks, provide an efficient implementation for FP8 simulation, and a new algorithm that enables the learning of both the scale parameters and number of exponent bits in the FP8 format. Our chief conclusion is that when doing post-training quantization for a wide range of networks, the FP8 format is better than INT8 in terms of accuracy, and the choice of the number of exponent bits is driven by the severity of outliers in the network. We also conduct experiments with quantization-aware training where the difference in formats disappears as the network is trained to reduce the effect of outliers. ",
+        "sections": {
+          "1 Introduction": [
+            "Hybrid 8-bit floating point (hfp8) training and inference for deep neural networks."
+          ],
+          "2 Background 2.1 Integer quantization": [
+            "A white paper on neural network quantization"
+          ],
+          "2 Background 2.3 Assumptions and extensions": [
+            "A white paper on neural network quantization"
+          ],
+          "3 Expected quantization error": [
+            "Up or down? Adaptive rounding for post-training quantization"
+          ],
+          "3 Expected quantization error 3.2 Scalar product quantization error": [
+            "A white paper on neural network quantization",
+            "Quantizing deep convolutional networks for efficient inference: A whitepaper",
+            "Understanding deep learning (still) requires rethinking generalization"
+          ],
+          "4 FP8 quantization simulation": [
+            "Hybrid 8-bit floating point (hfp8) training and inference for deep neural networks.",
+            "All-you-can-fit 8-bit flexible floating-point format for accurate and memory-efficient inference of deep neural networks"
+          ],
+          "4 FP8 quantization simulation 4.3 Toy experiment: Learning minimal MSE on common distributions": [
+            "Overcoming oscillations in quantization-aware training"
+          ],
+          "5 Experiments 5.1 Baselines and experimental setup": [
+            "GLUE: A multi-task benchmark and analysis platform for natural language understanding",
+            "Rethinking atrous convolution for semantic image segmentation",
+            "Mobilenetv2: Inverted residuals and linear bottlenecks",
+            "Deep high-resolution representation learning for human pose estimation",
+            "The pascal visual object classes challenge: A retrospective",
+            "Salsanext: Fast, uncertainty-aware semantic segmentation of lidar point clouds for autonomous driving",
+            "The cityscapes dataset for semantic urban scene understanding",
+            "Overcoming oscillations in quantization-aware training",
+            "Deep residual learning for image recognition",
+            "An image is worth 16x16 words: Transformers for image recognition at scale",
+            "SemanticKITTI: A Dataset for Semantic Scene Understanding of LiDAR Sequences",
+            "ImageNet Large Scale Visual Recognition Challenge",
+            "Bert: Pre-training of deep bidirectional transformers for language understanding"
+          ],
+          "5 Experiments 5.2 Post-training quantization results": [
+            "A white paper on neural network quantization"
+          ],
+          "6 Related work Integer quantization": [
+            "Fixed point quantization of deep convolutional networks",
+            "Mixed precision dnns: All you need is a good parametrization",
+            "Quantizing deep convolutional networks for efficient inference: A whitepaper",
+            "Learned step size quantization",
+            "Estimating or propagating gradients through stochastic neurons for conditional computation",
+            "Deep learning with limited numerical precision"
+          ],
+          "6 Related work Floating point formats": [
+            "Hybrid 8-bit floating point (hfp8) training and inference for deep neural networks.",
+            "Accuracy and stability of numerical algorithms",
+            "Quantizing deep convolutional networks for efficient inference: A whitepaper",
+            "All-you-can-fit 8-bit flexible floating-point format for accurate and memory-efficient inference of deep neural networks",
+            "Ultra-low precision 4-bit training of deep neural networks",
+            "Training deep neural networks with 8-bit floating point numbers"
+          ],
+          "7 Impact and Limitations Limitations": [
+            "1.1 computing\u2019s energy problem (and what we can do about it)"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.8830813765525818,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Norm Tweaking: High-performance Low-bit Quantization of Large Language Models",
+        "arxiv_id": "2309.02784",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract As the size of large language models (LLMs) continues to grow, model compression without sacrificing accuracy has become a crucial challenge for deployment. While some quantization methods, such as GPTQ, have made progress in achieving acceptable 4-bit weight-only quantization, attempts at lower bit quantization often result in severe performance degradation. In this paper, we introduce a technique called norm tweaking, which can be used as a plugin in current PTQ methods to achieve high precision while being cost-efficient. Our approach is inspired by the observation that rectifying the quantized activation distribution to match its float counterpart can readily restore accuracy for LLMs. To achieve this, we carefully design a tweaking strategy that includes calibration data generation and channel-wise distance constraint to update the weights of normalization layers for better generalization. We conduct extensive experiments on various datasets using several open-sourced LLMs. Our method demonstrates significant improvements in both weight-only quantization and joint quantization of weights and activations, surpassing existing PTQ methods. On GLM-130B and OPT-66B, our method even achieves the same level of accuracy at 2-bit quantization as their float ones. Our simple and effective approach makes it more practical for real-world applications.  ",
+        "sections": {
+          "Introduction": [
+            "LLM-QAT: Data-Free Quantization Aware Training for Large Language Models",
+            "ERNIE: Enhanced language representation with informative entities",
+            "GPT-4 Technical Report",
+            "Gptq: Accurate post-training quantization for generative pre-trained transformers",
+            "The LAMBADA dataset: Word prediction requiring a broad discourse context",
+            "The BigScience Corpus: A 1.6 TB Composite Multilingual Dataset.",
+            "Compress, Then Prompt: Improving Accuracy-Efficiency Trade-off of LLM Inference with Transferable Prompt",
+            "OPT: Open pre-trained transformer language models",
+            "Introducing ChatGPT",
+            "Language models are few-shot learners",
+            "Glm: General language model pretraining with autoregressive blank infilling",
+            "Palm: Scaling language modeling with pathways",
+            "Smoothquant: Accurate and efficient post-training quantization for large language models",
+            "Llama: Open and efficient foundation language models",
+            "ZeroQuant-V2: Exploring Post-training Quantization in LLMs from Comprehensive Study to Low Rank Compensation"
+          ],
+          "Related Work": [
+            "LLM-Pruner: On the Structural Pruning of Large Language Models",
+            "LLM-QAT: Data-Free Quantization Aware Training for Large Language Models",
+            "Li, Y.; Yu, Y.; Zhang, Q.; Liang, C.; He, P.; Chen, W.; and Zhao, T. 2023. LoSparse: Structured Compression of Large Language Models based on Low-Rank and Sparse Approximation.",
+            "Lifting the Curse of Capacity Gap in Distilling Language Models",
+            "Gptq: Accurate post-training quantization for generative pre-trained transformers",
+            "RPTQ: Reorder-based Post-training Quantization for Large Language Models",
+            "SparseGPT: Massive Language Models Can Be Accurately Pruned in One-Shot",
+            "FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness",
+            "AWQ: Activation-aware Weight Quantization for LLM Compression and Acceleration",
+            "Optimal brain surgeon and general network pruning",
+            "Smoothquant: Accurate and efficient post-training quantization for large language models",
+            "Attention is all you need",
+            "LLM.int8(): 8-bit Matrix Multiplication for Transformers at Scale",
+            "DeepSpeed Inference: Enabling Efficient Inference of Transformer Models at Unprecedented Scale",
+            "ZeroQuant-V2: Exploring Post-training Quantization in LLMs from Comprehensive Study to Low Rank Compensation",
+            "FlexGen: High-Throughput Generative Inference of Large Language Models with a Single GPU."
+          ],
+          "Method Motivation": [
+            "Smoothquant: Accurate and efficient post-training quantization for large language models"
+          ],
+          "Method Calibration Data Generation": [
+            "LLM-QAT: Data-Free Quantization Aware Training for Large Language Models"
+          ],
+          "Method Channel-wise Distribution Loss": [
+            "Smoothquant: Accurate and efficient post-training quantization for large language models"
+          ],
+          "Experiments Settings": [
+            "Adam: A method for stochastic optimization",
+            "Winogrande: An adversarial winograd schema challenge at scale",
+            "Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer",
+            "A framework for few-shot language model evaluation.",
+            "Hellaswag: Can a machine really finish your sentence?",
+            "The LAMBADA dataset: Word prediction requiring a broad discourse context",
+            "The BigScience Corpus: A 1.6 TB Composite Multilingual Dataset.",
+            "OPT: Open pre-trained transformer language models",
+            "Pointer sentinel mixture models",
+            "FasterTransformer",
+            "Glm: General language model pretraining with autoregressive blank infilling",
+            "Root Mean Square Layer Normalization",
+            "The Penn treebank: Annotating predicate argument structure",
+            "Llama: Open and efficient foundation language models",
+            "Piqa: Reasoning about physical commonsense in natural language",
+            "Can a suit of armor conduct electricity? a new dataset for open book question answering"
+          ],
+          "Experiments Tweaking Cost": [
+            "The BigScience Corpus: A 1.6 TB Composite Multilingual Dataset."
+          ],
+          "Experiments Comparison with RTN and SmoothQuant": [
+            "ZeroQuant: Efficient and Affordable Post-Training Quantization for Large-Scale Transformers",
+            "Smoothquant: Accurate and efficient post-training quantization for large language models"
+          ],
+          "Experiments Benchmark Harness": [
+            "A framework for few-shot language model evaluation."
+          ],
+          "Ablation Calibration Data": [
+            "Pointer sentinel mixture models",
+            "The Penn treebank: Annotating predicate argument structure",
+            "Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer"
+          ],
+          "Ablation Loss Function": [
+            "Distilling the Knowledge in a Neural Network"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.07919325679540634,
+        "extra": {
+          "expand": "not expand"
+        }
+      }
+    ],
+    "Advantages of Quantization-Aware Training in AI research": [
+      {
+        "title": "Pruning vs Quantization: Which is Better?",
+        "arxiv_id": "2307.02973",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Neural network pruning and quantization techniques are almost as old as neural networks themselves. However, to date only ad-hoc comparisons between the two have been published. In this paper, we set out to answer the question on which is better: neural network quantization or pruning? By answering this question, we hope to inform design decisions made on neural network hardware going forward. We provide an extensive comparison between the two techniques for compressing deep neural networks. First, we give an analytical comparison of expected quantization and pruning error for general data distributions. Then, we provide lower bounds for the per-layer pruning and quantization error in trained networks, and compare these to empirical error after optimization. Finally, we provide an extensive experimental comparison for training 8 large-scale models on 3 tasks. Our results show that in most cases quantization outperforms pruning. Only in some scenarios with very high compression ratio, pruning might be beneficial from an accuracy standpoint.  ",
+        "sections": {
+          "1 Introduction": [
+            "To prune, or not to prune: exploring the efficacy of pruning for model compression",
+            "Channel pruning for accelerating very deep neural networks",
+            "Sparsegpt: Massive language models can be accurately pruned in one-shot"
+          ],
+          "2 Assumptions": [
+            "A white paper on neural network quantization",
+            "The state of sparsity in deep neural networks",
+            "To prune, or not to prune: exploring the efficacy of pruning for model compression"
+          ],
+          "3 Comparison on statistical distributions": [
+            "Fixed point quantization of deep convolutional networks"
+          ],
+          "3 Comparison on statistical distributions 3.1 Quantization error": [
+            "Fp8 quantization: The power of the exponent"
+          ],
+          "4 Per-layer comparison": [
+            "Accurate post training quantization with small calibration sets",
+            "Up or down? Adaptive rounding for post-training quantization",
+            "Mixed-integer quadratic programming is in np"
+          ],
+          "4 Per-layer comparison 4.1 Post-training quantization": [
+            "A semidefinite programming method for integer convex quadratic minimization",
+            "Ellipsoid bounds for convex quadratic integer programming",
+            "CVX: Matlab software for disciplined convex programming, version 2.1"
+          ],
+          "4 Per-layer comparison 4.2 Post-training pruning": [
+            "Gurobi Optimizer Reference Manual"
+          ],
+          "4 Per-layer comparison 4.3 Experiments": [
+            "A semidefinite programming method for integer convex quadratic minimization"
+          ],
+          "5 Full-model comparison": [
+            "Rethinking atrous convolution for semantic image segmentation",
+            "Mobilenetv2: Inverted residuals and linear bottlenecks",
+            "Microsoft coco: Common objects in context",
+            "Overcoming oscillations in quantization-aware training",
+            "Deep residual learning for image recognition",
+            "An image is worth 16x16 words: Transformers for image recognition at scale",
+            "Searching for mobilenetv3",
+            "Learned step size quantization",
+            "EfficientNet: Rethinking model scaling for convolutional neural networks",
+            "The pascal visual object classes (voc) challenge",
+            "ImageNet Large Scale Visual Recognition Challenge",
+            "Cyclical pruning for sparse neural networks",
+            "Deep learning with limited numerical precision",
+            "Efficientdet: Scalable and efficient object detection"
+          ],
+          "6 Discussion Hardware implications": [
+            "Accelerating sparse deep neural networks"
+          ],
+          "7 Related work Quantization": [
+            "A white paper on neural network quantization",
+            "Deep learning with limited numerical precision",
+            "Fixed point quantization of deep convolutional networks"
+          ],
+          "7 Related work Pruning": [
+            "The state of sparsity in deep neural networks",
+            "Optimal brain damage",
+            "Learning sparse neural networks through l\u200b_\u200b0\ud835\udc59_0l\\_0 regularization.",
+            "Snip: Single-shot network pruning based on connection sensitivity",
+            "The lottery ticket hypothesis: Finding sparse, trainable neural networks",
+            "Optimal brain compression: A framework for accurate post-training quantization and pruning",
+            "Cyclical pruning for sparse neural networks",
+            "Deep compression: Compressing deep neural networks with pruning, trained quantization and huffman coding"
+          ],
+          "7 Related work Combining pruning and quantization": [
+            "Deep compression: Compressing deep neural networks with pruning, trained quantization and huffman coding"
+          ],
+          "7 Related work Comparing pruning and quantization": [
+            "An empirical comparison of quantization, pruning and low-rank neural network compression using the lc toolkit"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.0013887541135773063,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Exploring Quantization for Efficient Pre-Training of Transformer Language Models",
+        "arxiv_id": "2407.11722",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract The increasing scale of Transformer models has led to an increase in their pre-training computational requirements. While quantization has proven to be effective after pre-training and during fine-tuning, applying quantization in Transformers during pre-training has remained largely unexplored at scale for language modeling. This study aims to explore the impact of quantization for efficient pre-training of Transformers, with a focus on linear layer components. By systematically applying straightforward linear quantization to weights, activations, gradients, and optimizer states, we assess its effects on model efficiency, stability, and performance during training. By offering a comprehensive recipe of effective quantization strategies to be applied during the pre-training of Transformers, we promote high training efficiency from scratch while retaining language modeling ability. Code is available at https://github.com/chandar-lab/EfficientLLMs.",
+        "sections": {
+          "1 Introduction": [
+            "Attention is all you need",
+            "Carbon emissions and large neural network training",
+            "Qft: Quantized full-parameter tuning of llms with affordable resources",
+            "Overcoming oscillations in quantization-aware training",
+            "The case for 4-bit precision: k-bit inference scaling laws",
+            "Efficient transformers: A survey.",
+            "Quarot: Outlier-free 4-bit inference in rotated llms",
+            "Language models are unsupervised multitask learners.",
+            "Estimating the carbon footprint of bloom, a 176b parameter language model"
+          ],
+          "2 Related Work": [
+            "8-bit optimizers via block-wise quantization",
+            "Quantized distributed training of large models with convergence guarantees",
+            "Memory efficient optimizers with 4-bit states",
+            "Fp8-lm: Training fp8 large language models",
+            "Stable and low-precision training for large-scale vision-language models",
+            "I-bert: Integer-only bert quantization",
+            "A survey of quantization methods for efficient neural network inference",
+            "Training transformers with 4-bit integers"
+          ],
+          "3 Quantization Methodology 3.1 Quantization Scheme": [
+            "A white paper on neural network quantization",
+            "Estimating or propagating gradients through stochastic neurons for conditional computation"
+          ],
+          "4 Experimental Results": [
+            "Openwebtext corpus",
+            "Flashattention: Fast and memory-efficient exact attention with io-awareness",
+            "Glue: A multi-task benchmark and analysis platform for natural language understanding",
+            "Quick and (not so) dirty: Unsupervised selection of justification sentences for multi-hop question answering",
+            "Hellaswag: Can a machine really finish your sentence?",
+            "Language models are unsupervised multitask learners.",
+            "The LAMBADA dataset: Word prediction requiring a broad discourse context"
+          ],
+          "4 Experimental Results 4.1 Weight Quantization": [
+            "Visualizing the loss landscape of neural nets",
+            "Sharpness-aware minimization for efficiently improving generalization",
+            "Overcoming oscillations in quantization-aware training"
+          ],
+          "4 Experimental Results 4.2 Activation Quantization": [
+            "Massive activations in large language models",
+            "Smoothquant: Accurate and efficient post-training quantization for large language models",
+            "Gaussian error linear units (gelus)"
+          ],
+          "5 Conclusion": [
+            "Jetfire: Efficient and accurate transformer pretraining with int8 data flow and per-block quantization"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.419873982667923,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Low Precision Quantization-aware Training in Spiking Neural Networks with Differentiable Quantization Function",
+        "arxiv_id": "2305.19295",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Deep neural networks have been proven to be highly effective tools in various domains, yet their computational and memory costs restrict them from being widely deployed on portable devices. The recent rapid increase of edge computing devices has led to an active search for techniques to address the above-mentioned limitations of machine learning frameworks. The quantization of artificial neural networks (ANNs), which converts the full-precision synaptic weights into low-bit versions, emerged as one of the solutions. At the same time, spiking neural networks (SNNs) have become an attractive alternative to conventional ANNs due to their temporal information processing capability, energy efficiency, and high biological plausibility. Despite being driven by the same motivation, the simultaneous utilization of both concepts has yet to be thoroughly studied. Therefore, this work aims to bridge the gap between recent progress in quantized neural networks and SNNs. It presents an extensive study on the performance of the quantization function, represented as a linear combination of sigmoid functions, exploited in low-bit weight quantization in SNNs. The presented quantization function demonstrates the state-of-the-art performance on four popular benchmarks, CIFAR10-DVS, DVS128 Gesture, N-Caltech101, and N-MNIST, for binary networks (64.05%, 95.45%, 68.71%, and 99.43% respectively) with small accuracy drops and up to 31\u00d7\\times memory savings, which outperforms existing methods. ",
+        "sections": {
+          "I Introduction": [
+            "A Low Power, Fully Event-Based Gesture Recognition System",
+            "eWB: Event-Based Weight Binarization Algorithm for Spiking Neural Networks",
+            "STDP-Based Pruning of Connections and Weight Quantization in Spiking Neural Networks for Energy-Efficient Recognition",
+            "Hessian Aware Quantization of Spiking Neural Networks",
+            "Intuitive Explanation of Straight-Through Estimators with PyTorch Implementation",
+            "Q-SpiNN: A Framework for Quantizing Spiking Neural Networks",
+            "Binary neural networks: A survey",
+            "BS4NN: Binarized Spiking Neural Networks with Temporal Coding and Learning",
+            "Deep learning with spiking neurons: Opportunities and challenges",
+            "Quantization Networks",
+            "Quantizing Spiking Neural Networks with Integers",
+            "The fine line between dead neurons and sparsity in binarized spiking neural networks",
+            "Surrogate Gradient Learning in Spiking Neural Networks: Bringing the Power of Gradient-Based Optimization to Spiking Neural Networks",
+            "Neural Network Quantization for Efficient Inference: A Survey",
+            "Spiking Neural Networks Hardware Implementations and Challenges: A Survey",
+            "Efficient Deep Learning: A Survey on Making Deep Learning Models Smaller, Faster, and Better",
+            "Quantized STDP-based online-learning spiking neural network"
+          ],
+          "II Proposed Method II-A Spiking Neural Network": [
+            "Neuronal Dynamics: From Single Neurons to Networks and Models of Cognition"
+          ],
+          "II Proposed Method II-B Quantization": [
+            "Quantization Networks"
+          ],
+          "III Experimental Setup": [
+            "SpikingJelly"
+          ],
+          "III Experimental Setup III-A Datasets": [
+            "Incorporating Learnable Membrane Time Constant to Enhance Learning of Spiking Neural Networks",
+            "A Low Power, Fully Event-Based Gesture Recognition System",
+            "Converting Static Image Datasets to Spiking Neuromorphic Datasets Using Saccades",
+            "Learning multiple layers of features from tiny images"
+          ],
+          "III Experimental Setup III-B Network": [
+            "Incorporating Learnable Membrane Time Constant to Enhance Learning of Spiking Neural Networks",
+            "Hessian Aware Quantization of Spiking Neural Networks",
+            "Synaptic Plasticity Dynamics for Deep Continuous Local Learning (DECOLLE)",
+            "The fine line between dead neurons and sparsity in binarized spiking neural networks"
+          ],
+          "IV Results and Discussions IV-A Comparison with prior works": [
+            "Hessian Aware Quantization of Spiking Neural Networks",
+            "Direct Training for Spiking Neural Networks: Faster, Larger, Better",
+            "The fine line between dead neurons and sparsity in binarized spiking neural networks",
+            "Sequence approximation using feedforward spiking neural network for spatiotemporal learning: Theory and optimization methods",
+            "Quantizing Spiking Neural Networks with Integers"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.4256497025489807,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "LLM-QAT: Data-Free Quantization Aware Training for Large Language Models",
+        "arxiv_id": "2305.17888",
+        "depth": 0,
+        "child": {},
+        "abstract": "Several post-training quantization methods have been applied to large language models (LLMs), and have been shown to perform well down to 8-bits. We find that these methods break down at lower bit precision, and investigate quantization aware training for LLMs (LLM-QAT) to push quantization levels even further. We propose a data-free distillation method that leverages generations produced by the pre-trained model, which better preserves the original output distribution and allows quantizing any generative model independent of its training data, similar to post-training quantization methods. In addition to quantizing weights and activations, we also quantize the KV cache, which is critical for increasing throughput and support long sequence dependencies at current model sizes. We experiment with LLaMA models of sizes 7B, 13B, and 30B, at quantization levels down to 4-bits. We observe large improvements over training-free methods, especially in the low-bit settings.",
+        "sections": {
+          "1 Introduction": [
+            "Training language models to follow instructions with human feedback.",
+            "Training compute-optimal large language models.",
+            "Bloom: A 176b-parameter open-access multilingual language model.",
+            "Language models are few-shot learners.",
+            "Llama: Open and efficient foundation language models.",
+            "Palm: Scaling language modeling with pathways.",
+            "Opt: Open pre-trained transformer language models.",
+            "Smoothquant: Accurate and efficient post-training quantization for large language models."
+          ],
+          "2 Method 2.2 Quantization-Aware Training": [
+            "Q-BERT: hessian based ultra low precision quantization of BERT.",
+            "Llm. int8 (): 8-bit matrix multiplication for transformers at scale.",
+            "High-throughput generative inference of large language models with a single gpu."
+          ],
+          "3 Experiments 3.1 Experimental Settings": [
+            "Decoupled weight decay regularization."
+          ],
+          "3 Experiments 3.2 Main Results": [
+            "Smoothquant: Accurate and efficient post-training quantization for large language models.",
+            "Gptq: Accurate post-training quantization for generative pre-trained transformers."
+          ],
+          "3 Experiments 3.3 Ablation": [
+            "Bit: Robustly binarized multi-distilled transformer.",
+            "Pointer sentinel mixture models.",
+            "Nonuniform-to-uniform quantization: Towards accurate quantization via generalized straight-through estimation.",
+            "Learned step size quantization.",
+            "Exploring the limits of transfer learning with a unified text-to-text transformer."
+          ],
+          "3 Experiments 3.4 Compatibility with SmoothQuant": [
+            "Smoothquant: Accurate and efficient post-training quantization for large language models."
+          ],
+          "4 Related Works": [
+            "Dreaming to distill: Data-free knowledge transfer via deepinversion.",
+            "Bart: Denoising sequence-to-sequence pre-training for natural language generation, translation, and comprehension.",
+            "Quantization and training of neural networks for efficient integer-arithmetic-only inference.",
+            "Bert: Pre-training of deep bidirectional transformers for language understanding.",
+            "Q8bert: Quantized 8bit bert.",
+            "Pact: Parameterized clipping activation for quantized neural networks.",
+            "Nonuniform-to-uniform quantization: Towards accurate quantization via generalized straight-through estimation.",
+            "Learned step size quantization.",
+            "Smoothquant: Accurate and efficient post-training quantization for large language models."
+          ],
+          "5 Conclusion and Limitations": [
+            "Training language models to follow instructions with human feedback."
+          ]
+        },
+        "source": "Search SearchFrom:arxiv",
+        "select_score": 0.9818509817123413,
+        "extra": {
+          "expand": "not expand"
+        }
+      }
+    ],
+    "Research papers on the impact of Quantization-Aware Training on low-bit weight representations": [
+      {
+        "title": "BitsFusion: 1.99 bits Weight Quantization of Diffusion Model",
+        "arxiv_id": "2406.04333",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract Diffusion-based image generation models have achieved great success in recent years by showing the capability of synthesizing high-quality content. However, these models contain a huge number of parameters, resulting in a significantly large model size. Saving and transferring them is a major bottleneck for various applications, especially those running on resource-constrained devices. In this work, we develop a novel weight quantization method that quantizes the UNet from Stable Diffusion v1.5 to 1.991.991.99 bits, achieving a model with 7.9\u00d77.9\\times smaller size while exhibiting even better generation quality than the original one. Our approach includes several novel techniques, such as assigning optimal bits to each layer, initializing the quantized model for better performance, and improving the training strategy to dramatically reduce quantization error. Furthermore, we extensively evaluate our quantized model across various benchmark datasets and through human evaluation to demonstrate its superior generation quality.",
+        "sections": {
+          "1 Introduction": [
+            "Geneval: An object-focused framework for evaluating text-to-image alignment",
+            "Snapfusion: Text-to-image diffusion model on mobile devices within two seconds",
+            "Imagen video: High definition video generation with diffusion models",
+            "Learning transferable visual models from natural language supervision",
+            "High-resolution image synthesis with latent diffusion models",
+            "Post-training quantization on diffusion models",
+            "Deep unsupervised learning using nonequilibrium thermodynamics",
+            "Zero-shot text-to-image generation",
+            "Lion: Latent point diffusion models for 3d shape generation",
+            "Denoising diffusion probabilistic models",
+            "Tifa: Accurate and interpretable text-to-image faithfulness evaluation with question answering",
+            "Scaling autoregressive models for content-rich text-to-image generation.",
+            "Microsoft coco: Common objects in context",
+            "Gans trained by a two time-scale update rule converge to a local nash equilibrium",
+            "A survey of quantization methods for efficient neural network inference"
+          ],
+          "2 Related Works": [
+            "Tfmq-dm: Temporal feature maintenance quantization for diffusion models",
+            "Efficientdm: Efficient quantization-aware fine-tuning of low-bit diffusion models",
+            "Q-diffusion: Quantizing diffusion models",
+            "Lora: Low-rank adaptation of large language models",
+            "Temporal dynamic quantization for diffusion models",
+            "Post-training quantization on diffusion models",
+            "Q-dm: An efficient low-bit quantized diffusion model",
+            "Ptqd: Accurate post-training quantization for diffusion models",
+            "Brecq: Pushing the limit of post-training quantization by block reconstruction"
+          ],
+          "3 Mixed Precision Quantization for Diffusion Models 3.1 Preliminaries": [
+            "Snapfusion: Text-to-image diffusion model on mobile devices within two seconds",
+            "Q-diffusion: Quantizing diffusion models",
+            "Auto-encoding variational bayes",
+            "High-resolution image synthesis with latent diffusion models",
+            "Diffusion models beat gans on image synthesis",
+            "Deep unsupervised learning using nonequilibrium thermodynamics",
+            "Classifier-free diffusion guidance",
+            "Estimating or propagating gradients through stochastic neurons for conditional computation"
+          ],
+          "3 Mixed Precision Quantization for Diffusion Models 3.2 Per-Layer Quantization Error Analysis": [
+            "Image quality metrics: Psnr vs. ssim",
+            "The unreasonable effectiveness of deep features as a perceptual metric",
+            "Pearson correlation coefficient",
+            "Learning transferable visual models from natural language supervision"
+          ],
+          "4 Training Extreme Low-bit Diffusion Model 4.1 Initializing the Low-bit Diffusion Model": [
+            "Tfmq-dm: Temporal feature maintenance quantization for diffusion models",
+            "Efficientdm: Efficient quantization-aware fine-tuning of low-bit diffusion models",
+            "Q-diffusion: Quantizing diffusion models",
+            "Trained ternary quantization",
+            "Ternary weight networks",
+            "Fixed-point feedforward deep neural network design using weights+ 1, 0, and- 1",
+            "Optimal quantization using scaled codebook"
+          ],
+          "4 Training Extreme Low-bit Diffusion Model 4.2 Two-Stage Training Pipeline": [
+            "On architectural compression of text-to-image diffusion models",
+            "Denoising diffusion probabilistic models",
+            "Learned step size quantization"
+          ],
+          "5 Experiments": [
+            "Geneval: An object-focused framework for evaluating text-to-image alignment",
+            "Tifa: Accurate and interpretable text-to-image faithfulness evaluation with question answering",
+            "Pseudo numerical methods for diffusion models on manifolds",
+            "Masked-attention mask transformer for universal image segmentation",
+            "Microsoft coco: Common objects in context",
+            "Scaling autoregressive models for content-rich text-to-image generation.",
+            "Dpm-solver: A fast ode solver for diffusion probabilistic model sampling in around 10 steps",
+            "Adam: A method for stochastic optimization",
+            "An image is worth 16x16 words: Transformers for image recognition at scale",
+            "Denoising diffusion implicit models"
+          ],
+          "5 Experiments 5.1 Main Results": [
+            "Stable diffusion with core ml on apple silicon",
+            "Q-diffusion: Quantizing diffusion models",
+            "Efficientdm: Efficient quantization-aware fine-tuning of low-bit diffusion models",
+            "Learned step size quantization"
+          ],
+          "5 Experiments 5.2 Ablation Analysis": [
+            "Scaling autoregressive models for content-rich text-to-image generation.",
+            "Dpm-solver: A fast ode solver for diffusion probabilistic model sampling in around 10 steps",
+            "Denoising diffusion implicit models",
+            "Learned step size quantization"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.11909464746713638,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "LRP-QViT: Mixed-Precision Vision Transformer Quantization via Layer-wise Relevance Propagation",
+        "arxiv_id": "2401.11243",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Vision transformers (ViTs) have demonstrated remarkable performance across various visual tasks. However, ViT models suffer from substantial computational and memory requirements, making it challenging to deploy them on resource-constrained platforms. Quantization is a popular approach for reducing model size, but most studies mainly focus on equal bit-width quantization for the entire network, resulting in sub-optimal solutions. While there are few works on mixed precision quantization (MPQ) for ViTs, they typically rely on search space-based methods or employ mixed precision arbitrarily. In this paper, we introduce LRP-QViT, an explainability-based method for assigning mixed-precision bit allocations to different layers based on their importance during classification. Specifically, to measure the contribution score of each layer in predicting the target class, we employ the Layer-wise Relevance Propagation (LRP) method. LRP assigns local relevance at the output layer and propagates it through all layers, distributing the relevance until it reaches the input layers. These relevance scores serve as indicators for computing the layer contribution score. Additionally, we have introduced a clipped channel-wise quantization aimed at eliminating outliers from post-LayerNorm activations to alleviate severe inter-channel variations. To validate and assess our approach, we employ LRP-QViT across ViT, DeiT, and Swin transformer models on various datasets. Our experimental findings demonstrate that both our fixed-bit and mixed-bit post-training quantization methods surpass existing models in the context of 4-bit and 6-bit quantization. ",
+        "sections": {
+          "1 Introduction": [
+            "Fq-vit: Post-training quantization for fully quantized vision transformer",
+            "Transformer interpretability beyond attention visualization",
+            "Predicting parameters in deep learning",
+            "Soft filter pruning for accelerating deep convolutional neural networks",
+            "Rethinking semantic segmentation from a sequence-to-sequence perspective with transformers",
+            "Repq-vit: Scale reparameterization for post-training quantization of vision transformers",
+            "An image is worth 16x16 words: Transformers for image recognition at scale",
+            "Exploring plain vision transformer backbones for object detection",
+            "Dynamicvit: Efficient vision transformers with dynamic token sparsification",
+            "Post-training quantization for vision transformer",
+            "Dearkd: data-efficient early knowledge distillation for vision transformers",
+            "Hawq: Hessian aware quantization of neural networks with mixed-precision"
+          ],
+          "2 Related Work 2.1 Vision Transformer": [
+            "Swin transformer: Hierarchical vision transformer using shifted windows",
+            "Pyramid vision transformer: A versatile backbone for dense prediction without convolutions",
+            "End-to-end object detection with transformers",
+            "Efficientformer: Vision transformers at mobilenet speed",
+            "Oneformer: One transformer to rule universal image segmentation",
+            "An image is worth 16x16 words: Transformers for image recognition at scale",
+            "Dynamicvit: Efficient vision transformers with dynamic token sparsification",
+            "Vitpose: Simple vision transformer baselines for human pose estimation",
+            "Tinyvit: Fast pretraining distillation for small vision transformers",
+            "Minivit: Compressing vision transformers with weight multiplexing",
+            "Training data-efficient image transformers & distillation through attention"
+          ],
+          "2 Related Work 2.2 Model Quantization": [
+            "Haq: Hardware-aware automated quantization with mixed precision",
+            "Fq-vit: Post-training quantization for fully quantized vision transformer",
+            "Patch-wise mixed-precision quantization of vision transformer",
+            "Repq-vit: Scale reparameterization for post-training quantization of vision transformers",
+            "Towards accurate post-training quantization for vision transformer",
+            "Post-training quantization for vision transformer",
+            "Hawq: Hessian aware quantization of neural networks with mixed-precision",
+            "Ptq4vit: Post-training quantization for vision transformers with twin uniform quantization",
+            "Q-vit: Accurate and fully quantized low-bit vision transformer"
+          ],
+          "2 Related Work 2.3 Explainability for Transformers": [
+            "Layer-wise relevance propagation for neural networks with local renormalization layers",
+            "Analyzing multi-head self-attention: Specialized heads do the heavy lifting, the rest can be pruned",
+            "Quantifying attention flow in transformers",
+            "Transformer interpretability beyond attention visualization",
+            "Full-gradient representation for neural network visualization"
+          ],
+          "3 Methodology 3.1 Vision Transformer Architecture": [
+            "Post-training quantization for vision transformer"
+          ],
+          "3 Methodology 3.2 Model Quantization": [
+            "Repq-vit: Scale reparameterization for post-training quantization of vision transformers",
+            "Fq-vit: Post-training quantization for fully quantized vision transformer",
+            "Q-bert: Hessian based ultra low precision quantization of bert",
+            "Towards accurate post-training quantization for vision transformer"
+          ],
+          "3 Methodology 3.3 Layer-Wise Relevance Propagation": [
+            "Explaining nonlinear classification decisions with deep taylor decomposition",
+            "Gaussian error linear units (gelus)"
+          ],
+          "4 Experiments 4.1 Experimental Setup": [
+            "Transformer interpretability beyond attention visualization"
+          ],
+          "4 Experiments 4.2 Results on ImageNet1K": [
+            "Swin transformer: Hierarchical vision transformer using shifted windows",
+            "Imagenet classification with deep convolutional neural networks",
+            "Repq-vit: Scale reparameterization for post-training quantization of vision transformers",
+            "An image is worth 16x16 words: Transformers for image recognition at scale",
+            "Training data-efficient image transformers & distillation through attention"
+          ],
+          "4 Experiments 4.3 Results on COCO": [
+            "Microsoft coco: Common objects in context"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.028294162824749947,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Power-of-Two Quantization for Low Bitwidth and Hardware Compliant Neural Networks",
+        "arxiv_id": "2203.05025",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract. Deploying Deep Neural Networks in low-power embedded devices for real time-constrained applications requires optimization of memory and computational complexity of the networks, usually by quantizing the weights. Most of the existing works employ linear quantization which causes considerable degradation in accuracy for weight bit widths lower than 8. Since the distribution of weights is usually non-uniform (with most weights concentrated around zero), other methods, such as logarithmic quantization, are more suitable as they are able to preserve the shape of the weight distribution more precise. Moreover, using base-2 logarithmic representation allows optimizing the multiplication by replacing it with bit shifting. In this paper, we explore non-linear quantization techniques for exploiting lower bit precision and identify favorable hardware implementation options. We developed the Quantization Aware Training (QAT) algorithm that allowed training of low bit width Power-of-Two (PoT) networks and achieved accuracies on par with state-of-the-art floating point models for different tasks. We explored PoT weight encoding techniques and investigated hardware designs of MAC units for three different quantization schemes - uniform, PoT and Additive-PoT (APoT) - to show the increased efficiency when using the proposed approach. Eventually, the experiments showed that for low bit width precision, non-uniform quantization performs better than uniform, and at the same time, PoT quantization vastly reduces the computational complexity of the neural network. ",
+        "sections": {
+          "2. Related work": [
+            "Convolutional Neural Networks using Logarithmic Data Representation",
+            "Additive Powers-of-Two Quantization: A Non-uniform Discretization for Neural Networks",
+            "A Deep Look into Logarithmic Quantization of Model Parameters in Neural Networks",
+            "ShiftAddNet: A Hardware-Inspired Deep Network",
+            "A Survey of Quantization Methods for Efficient Neural Network Inference",
+            "DeepShift: Towards Multiplication-Less Neural Networks",
+            "LogNet: Energy-efficient neural networks using logarithmic computation"
+          ],
+          "4. Benchmark results 4.1. CIFAR 10 and CIFAR 100": [
+            "Additive Powers-of-Two Quantization: A Non-uniform Discretization for Neural Networks",
+            "DeepShift: Towards Multiplication-Less Neural Networks"
+          ],
+          "5. Hardware Benefits 5.1. Memory Cost": [
+            "n.d."
+          ],
+          "6. Conclusion": [
+            "DeepShift: Towards Multiplication-Less Neural Networks"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.9872792959213257,
+        "extra": {
+          "expand": "not expand"
+        }
+      }
+    ],
+    "Survey papers on Quantization-Aware Training benefits": [
+      {
+        "title": "Neural Network Quantization for Efficient Inference: A Survey",
+        "arxiv_id": "2112.06126",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract. As neural networks have become more powerful, there has been a rising desire to deploy them in the real world; however, the power and accuracy of neural networks is largely due to their depth and complexity, making them difficult to deploy, especially in resource-constrained devices. Neural network quantization has recently arisen to meet this demand of reducing the size and complexity of neural networks by reducing the precision of a network. With smaller and simpler networks, it becomes possible to run neural networks within the constraints of their target hardware. This paper surveys the many neural network quantization techniques that have been developed in the last decade. Based on this survey and comparison of neural network quantization techniques, we propose future directions of research in the area. ",
+        "sections": {
+          "1. Introduction": [
+            "A VLSI architecture for high-performance, low-cost, on-chip learning",
+            "Predicting Parameters in Deep Learning",
+            "Up or Down? Adaptive Rounding for Post-Training Quantization",
+            "A Survey of Quantization Methods for Efficient Neural Network Inference"
+          ],
+          "2. Representing Numbers on Machines": [
+            "A Survey of Quantization Methods for Efficient Neural Network Inference"
+          ],
+          "2. Representing Numbers on Machines 2.1. Floating Point": [
+            "Computer systems: a programmer\u2019s perspective (2nd ed ed.)"
+          ],
+          "2. Representing Numbers on Machines 2.2. Fixed Point": [
+            "Chapter 11 - Numerical Robustness",
+            "Vivado design suite user guide",
+            "Training deep neural networks with low precision multiplications"
+          ],
+          "3. Quantization Example 3.1. Quantization": [
+            "Up or Down? Adaptive Rounding for Post-Training Quantization",
+            "A Survey of Quantization Methods for Efficient Neural Network Inference"
+          ],
+          "3. Quantization Example 3.2. Dequantization": [
+            "Training with Quantization Noise for Extreme Model Compression"
+          ],
+          "4. Quantization Procedures 4.1. Quantization-Aware Training": [
+            "Estimating or Propagating Gradients Through Stochastic Neurons for Conditional Computation",
+            "PACT: Parameterized Clipping Activation for Quantized Neural Networks"
+          ],
+          "4. Quantization Procedures 4.2. Post-Training Quantization": [
+            "Loss Aware Post-training Quantization"
+          ],
+          "5. Integer/Fixed Point Quantization": [
+            "Quantization and Training of Neural Networks for Efficient Integer-Arithmetic-Only Inference",
+            "Training with Quantization Noise for Extreme Model Compression",
+            "Finite precision error analysis of neural network hardware implementations",
+            "Loss Aware Post-training Quantization",
+            "Distilling the Knowledge in a Neural Network",
+            "Up or Down? Adaptive Rounding for Post-Training Quantization",
+            "Towards Effective Low-Bitwidth Convolutional Neural Networks",
+            "Dynamically scaled fixed point arithmetic",
+            "Training deep neural networks with low precision multiplications",
+            "Highly Efficient 8-bit Low Precision Inference of Convolutional Neural Networks with IntelCaffe",
+            "A VLSI architecture for high-performance, low-cost, on-chip learning",
+            "Maxout networks",
+            "TensorFlow Lite"
+          ],
+          "6. Binary and Ternary Quantization": [
+            "Towards Effective Low-Bitwidth Convolutional Neural Networks"
+          ],
+          "6. Binary and Ternary Quantization 6.1. Binary Quantization": [
+            "Binaryconnect: Training deep neural networks with binary weights during propagations",
+            "XNOR-Net: ImageNet Classification Using Binary Convolutional Neural Networks",
+            "Binarized Neural Networks"
+          ],
+          "6. Binary and Ternary Quantization 6.2. Ternary Quantization": [
+            "Trained Ternary Quantization",
+            "Ternary Weight Networks"
+          ],
+          "7. Mixed Precision Quantization": [
+            "HAWQ: Hessian AWare Quantization of Neural Networks With Mixed-Precision",
+            "Accurate Post Training Quantization With Small Calibration Sets",
+            "Mobilenetv2: Inverted residuals and linear bottlenecks",
+            "Mixed Precision DNNs: All You Need is a Good Parametrization",
+            "Hawq-v3: Dyadic neural network quantization",
+            "BSQ: Exploring Bit-Level Sparsity for Mixed-Precision Neural Network Quantization",
+            "HAWQ-V2: Hessian Aware trace-Weighted Quantization of Neural Networks",
+            "Highly Efficient 8-bit Low Precision Inference of Convolutional Neural Networks with IntelCaffe",
+            "Fixed Point Quantization of Deep Convolutional Networks",
+            "HAQ: Hardware-Aware Automated Quantization With Mixed Precision",
+            "Mixed Precision Neural Architecture Search for Energy Efficient Deep Learning"
+          ],
+          "8. Future Directions": [
+            "Mix and Match: A Novel FPGA-Centric Deep Neural Network Quantization Framework",
+            "Fixed Point Quantization of Deep Convolutional Networks",
+            "A Survey of Quantization Methods for Efficient Neural Network Inference",
+            "Deep Residual Learning for Image Recognition",
+            "Trained Ternary Quantization",
+            "Apprentice: Using Knowledge Distillation Techniques To Improve Low-Precision Network Accuracy",
+            "Ps and Qs: Quantization-aware pruning for efficient low latency neural network inference"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.0014054557541385293,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "A Comprehensive Survey on Model Quantization for Deep Neural Networks in Image Classification",
+        "arxiv_id": "2205.07877",
+        "depth": 0,
+        "child": {},
+        "abstract": "Recent advancements in machine learning achieved by Deep Neural Networks (DNNs) have been significant. While demonstrating high accuracy, DNNs are associated with a huge number of parameters and computations, which leads to high memory usage and energy consumption. As a result, deploying DNNs on devices with constrained hardware resources poses significant challenges. To overcome this, various compression techniques have been widely employed to optimize DNN accelerators. A promising approach is quantization, in which the full-precision values are stored in low bit-width precision. Quantization not only reduces memory requirements but also replaces high-cost operations with low-cost ones. DNN quantization offers flexibility and efficiency in hardware design, making it a widely adopted technique in various methods. Since quantization has been extensively utilized in previous works, there is a need for an integrated report that provides an understanding, analysis, and comparison of different quantization approaches. Consequently, we present a comprehensive survey of quantization concepts and methods, with a focus on image classification. We describe clustering-based quantization methods and explore the use of a scale factor parameter for approximating full-precision values. Moreover, we thoroughly review the training of a quantized DNN, including the use of a straight-through estimator and quantization regularization. We explain the replacement of floating-point operations with low-cost bitwise operations in a quantized DNN and the sensitivity of different layers in quantization. Furthermore, we highlight the evaluation metrics for quantization methods and important benchmarks in the image classification task. We also present the accuracy of the state-of-the-art methods on CIFAR-10 and ImageNet.",
+        "sections": null,
+        "source": "Search SearchFrom:arxiv",
+        "select_score": 0.03995054215192795,
+        "extra": {
+          "expand": "get full paper error"
+        }
+      },
+      {
+        "title": "EfficientDM: Efficient Quantization-Aware Fine-Tuning of Low-Bit Diffusion Models",
+        "arxiv_id": "2310.03270",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Diffusion models have demonstrated remarkable capabilities in image synthesis and related generative tasks. Nevertheless, their practicality for low-latency real-world applications is constrained by substantial computational costs and latency issues. Quantization is a dominant way to compress and accelerate diffusion models, where post-training quantization (PTQ) and quantization-aware training (QAT) are two main approaches, each bearing its own properties. While PTQ exhibits efficiency in terms of both time and data usage, it may lead to diminished performance in low bit-width settings. On the other hand, QAT can help alleviate performance degradation but comes with substantial demands on computational and data resources. To capitalize on the advantages while avoiding their respective drawbacks, we introduce a data-free, quantization-aware and parameter-efficient fine-tuning framework for low-bit diffusion models, dubbed EfficientDM, to achieve QAT-level performance with PTQ-like efficiency. Specifically, we propose a quantization-aware variant of the low-rank adapter (QALoRA) that can be merged with model weights and jointly quantized to low bit-width. The fine-tuning process distills the denoising capabilities of the full-precision model into its quantized counterpart, eliminating the requirement for training data. To further enhance performance, we introduce scale-aware optimization to address ineffective learning of QALoRA due to variations in weight quantization scales across different layers. We also employ temporal learned step-size quantization to handle notable variations in activation distributions across denoising steps. Extensive experimental results demonstrate that our method significantly outperforms previous PTQ-based diffusion models while maintaining similar time and data efficiency. Specifically, there is only a marginal 0.050.050.05 sFID increase when quantizing both weights and activations of LDM-4 to 4-bit on ImageNet 256\u00d7256256256256\\times 256. Compared to QAT-based methods, our EfficientDM also boasts a 16.2\u00d716.2\\times faster quantization speed with comparable generation quality, rendering it a compelling choice for practical applications. ",
+        "sections": {
+          "1 Introduction": [
+            "High-resolution image synthesis with latent diffusion models",
+            "Ptqd: Accurate post-training quantization for diffusion models",
+            "Analytic-dpm: an analytic estimate of the optimal reverse variance in diffusion probabilistic models",
+            "Quantizing deep convolutional networks for efficient inference: A whitepaper",
+            "Learned step size quantization",
+            "Video diffusion models",
+            "Temporal dynamic quantization for diffusion models",
+            "Cutlass: Fast linear algebra in cuda c++"
+          ],
+          "2 Related Work": [
+            "Ptqd: Accurate post-training quantization for diffusion models",
+            "The power of scale for parameter-efficient prompt tuning",
+            "Prefix-tuning: Optimizing continuous prompts for generation",
+            "Lora: Low-rank adaptation of large language models",
+            "Learned step size quantization",
+            "Qlora: Efficient finetuning of quantized llms",
+            "Up or down? adaptive rounding for post-training quantization",
+            "BRECQ: pushing the limit of post-training quantization by block reconstruction",
+            "Temporal dynamic quantization for diffusion models",
+            "Post-training quantization on diffusion models",
+            "Q-diffusion: Quantizing diffusion models"
+          ],
+          "3 Background 3.1 Diffusion Models": [
+            "Denoising diffusion implicit models"
+          ],
+          "4 Efficient Quantization-aware Fine-tuning of Diffusion Models": [
+            "Learned step size quantization",
+            "Qlora: Efficient finetuning of quantized llms",
+            "Temporal dynamic quantization for diffusion models",
+            "Post-training quantization on diffusion models"
+          ],
+          "5 Experiments 5.1 Implementation details": [
+            "Adam: A method for stochastic optimization",
+            "High-resolution image synthesis with latent diffusion models",
+            "Imagenet: A large-scale hierarchical image database",
+            "Improved techniques for training gans",
+            "Gans trained by a two time-scale update rule converge to a local nash equilibrium",
+            "Lsun: Construction of a large-scale image dataset using deep learning with humans in the loop",
+            "Diffusion models beat gans on image synthesis",
+            "Denoising diffusion implicit models",
+            "Learning multiple layers of features from tiny images"
+          ],
+          "5 Experiments 5.2 Main Results": [
+            "Dpm-solver: A fast ODE solver for diffusion probabilistic model sampling in around 10 steps",
+            "Pseudo numerical methods for diffusion models on manifolds",
+            "Learned step size quantization",
+            "Temporal dynamic quantization for diffusion models",
+            "Post-training quantization on diffusion models",
+            "Denoising diffusion implicit models",
+            "Q-diffusion: Quantizing diffusion models"
+          ],
+          "5 Experiments 5.3 Ablation Study": [
+            "Nipq: Noise injection pseudo quantization for automated dnn optimization",
+            "Ptqd: Accurate post-training quantization for diffusion models",
+            "BRECQ: pushing the limit of post-training quantization by block reconstruction"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.7395949959754944,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "Bag of Tricks with Quantized Convolutional Neural Networks for image classification",
+        "arxiv_id": "2303.07080",
+        "depth": 0,
+        "child": {},
+        "abstract": " Abstract Deep neural networks have been proven effective in a wide range of tasks. However, their high computational and memory costs make them impractical to deploy on resource-constrained devices. To address this issue, quantization schemes have been proposed to reduce the memory footprint and improve inference speed. While numerous quantization methods have been proposed, they lack systematic analysis for their effectiveness. To bridge this gap, we collect and improve existing quantization methods and propose a gold guideline for post-training quantization. We evaluate the effectiveness of our proposed method with two popular models, ResNet50 and MobileNetV2, on the ImageNet dataset. By following our guidelines, no accuracy degradation occurs even after directly quantizing the model to 8-bits without additional training. A quantization-aware training based on the guidelines can further improve the accuracy in lower-bits quantization. Moreover, we have integrated a multi-stage fine-tuning strategy that works harmoniously with existing pruning techniques to reduce cost even further. Remarkably, our results reveal that a quantized MobileNetV2 with 30% sparsity actually surpasses the performance of the equivalent full-precision model, underscoring the effectiveness and resilience of our proposed scheme. ",
+        "sections": {
+          "1 Introduction": [
+            "Imagenet classification with deep convolutional neural networks",
+            "Shufflenet: An extremely efficient convolutional neural network for mobile devices",
+            "Mobilenets: Efficient convolutional neural networks for mobile vision applications",
+            "Binarized neural networks: Training deep neural networks with weights and activations constrained to +1 or -1",
+            "Learning both weights and connections for efficient neural network"
+          ],
+          "2 Quantization scheme": [
+            "ImageNet large scale visual recognition challenge",
+            "Mobilenetv2: Inverted residuals and linear bottlenecks",
+            "Very deep convolutional networks for large-scale image recognition",
+            "Deep residual learning for image recognition"
+          ],
+          "2 Quantization scheme 2.1 Post-training Quantization": [
+            "Quantization and training of neural networks for efficient integer-arithmetic-only inference",
+            "8-bit inference with tensorrt"
+          ],
+          "2 Quantization scheme 2.2 Quantization-Aware Training": [
+            "Batch normalization: Accelerating deep network training by reducing internal covariate shift"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.8960001468658447,
+        "extra": {
+          "expand": "not expand"
+        }
+      },
+      {
+        "title": "A Survey on Efficient Inference for Large Language Models",
+        "arxiv_id": "2404.14294",
+        "depth": 0,
+        "child": {},
+        "abstract": "Abstract Large Language Models (LLMs) have attracted extensive attention due to their remarkable performance across various tasks. However, the substantial computational and memory requirements of LLM inference pose challenges for deployment in resource-constrained scenarios. Efforts within the field have been directed towards developing techniques aimed at enhancing the efficiency of LLM inference. This paper presents a comprehensive survey of the existing literature on efficient LLM inference. We start by analyzing the primary causes of the inefficient LLM inference, i.e., the large model size, the quadratic-complexity attention operation, and the auto-regressive decoding approach. Then, we introduce a comprehensive taxonomy that organizes the current literature into data-level, model-level, and system-level optimization. Moreover, the paper includes comparative experiments on representative methods within critical sub-fields to provide quantitative insights. Last but not least, we provide some knowledge summary and discuss future research directions.",
+        "sections": {
+          "1 Introduction": [
+            "Opt: Open pre-trained transformer language models",
+            "Language models are unsupervised multitask learners",
+            "Towards efficient generative large language model serving: A survey from algorithms to systems",
+            "Baichuan 2: Open large-scale language models",
+            "Model compression and efficient inference for large language models: A survey",
+            "Evaluating large language models trained on code",
+            "How long can context length of open-source llms truly promise?",
+            "Vicuna: An open-source chatbot impressing gpt-4 with 90%* chatgpt quality",
+            "The efficiency spectrum of large language models: An algorithmic survey",
+            "Harnessing the power of llms in practice: A survey on chatgpt and beyond",
+            "A survey on model compression for large language models",
+            "The falcon series of open language models",
+            "Efficient large language models: A survey",
+            "A survey of resource-efficient llm and multimodal foundation models",
+            "Glm: General language model pretraining with autoregressive blank infilling",
+            "Language models are few-shot learners",
+            "Sparks of artificial general intelligence: Early experiments with gpt-4",
+            "Bloom: A 176b-parameter open-access multilingual language model",
+            "Mixtral of experts",
+            "Llama: Open and efficient foundation language models",
+            "Improving language understanding by generative pre-training",
+            "A comprehensive survey of compression algorithms for language models"
+          ],
+          "2 Preliminaries 2.1 Transformer-Style LLMs": [
+            "Attention is all you need",
+            "A survey of large language models"
+          ],
+          "2 Preliminaries 2.3 Efficiency Analysis": [
+            "Llm inference unveiled: Survey and roofline model insights"
+          ],
+          "4 Data-level Optimization 4.1 Input Compression": [
+            "Did you read the instructions? rethinking the effectiveness of task definitions in instruction learning",
+            "Adapting language models to compress contexts",
+            "Longllmlingua: Accelerating and enhancing llms in long context scenarios via prompt compression",
+            "Self-rag: Learning to retrieve, generate, and critique through self-reflection",
+            "Efficient prompting via dynamic in-context learning",
+            "Llmlingua: Compressing prompts for accelerated inference of large language models",
+            "Compressing context to enhance inference efficiency of large language models",
+            "A survey for in-context learning",
+            "In-context autoencoder for context compression in a large language model",
+            "Chain-of-thought prompting elicits reasoning in large language models",
+            "Boosting llm reasoning: Push the limits of few-shot learning with reinforced in-context pruning",
+            "Discrete prompt compression with reinforcement learning",
+            "Prefix-tuning: Optimizing continuous prompts for generation",
+            "Retrieval-augmented generation for knowledge-intensive nlp tasks",
+            "Prompt compression and contrastive conditioning for controllability and toxicity reduction in language models",
+            "Learning to compress prompts with gist tokens",
+            "Extending context window of large language models via semantic compression",
+            "Recomp: Improving retrieval-augmented lms with compression and selective augmentation",
+            "Replug: Retrieval-augmented black-box language models"
+          ],
+          "4 Data-level Optimization 4.2 Output Organization": [
+            "Skeleton-of-thought: Large language models can do parallel decoding",
+            "Adaptive skeleton graph decoding",
+            "Medusa: Simple llm inference acceleration framework with multiple decoding heads",
+            "Tree of thoughts: Deliberate problem solving with large language models",
+            "Efficiently programming large language models using sglang",
+            "Efficient memory management for large language model serving with pagedattention",
+            "Apar: Llms can do auto-parallel auto-regressive decoding"
+          ],
+          "4 Data-level Optimization 4.3 Knowledge, Suggestions and Future Direction": [
+            "Skeleton-of-thought: Large language models can do parallel decoding",
+            "Graph of thoughts: Solving elaborate problems with large language models",
+            "Frugalgpt: How to use large language models while reducing cost and improving performance",
+            "The rise and potential of large language model based agents: A survey",
+            "Tree of thoughts: Deliberate problem solving with large language models",
+            "Efficiently programming large language models using sglang"
+          ],
+          "5 Model-level Optimization 5.1 Efficient Structure Design": [
+            "Flurka: Fast fused low-rank & kernel attention",
+            "Diagonal state spaces are as effective as structured state spaces",
+            "Glam: Efficient scaling of language models with mixture-of-experts",
+            "Lightweight and efficient end-to-end speech recognition using low-rank transformer",
+            "Pretraining without attention",
+            "Moefication: Transformer feed-forward layers are mixtures of experts",
+            "Fast transformer decoding: One write-head is all you need",
+            "Transformers are rnns: Fast autoregressive transformers with linear attention",
+            "Long range language modeling via gated state spaces",
+            "An attention free transformer",
+            "Gshard: Scaling giant models with conditional computation and automatic sharding",
+            "Rethinking attention with performers",
+            "Parameter-efficient mixture-of-experts architecture for pre-trained language models",
+            "Liquid structural state-space models",
+            "Vision mamba: Efficient visual representation learning with bidirectional state space model",
+            "Sparse upcycling: Training mixture-of-experts from dense checkpoints",
+            "Mixture-of-experts with expert choice routing",
+            "Blackmamba: Mixture of experts for state-space models",
+            "Switch transformers: Scaling to trillion parameter models with simple and efficient sparsity",
+            "Sparse moe as the new dropout: Scaling dense and self-slimmable transformers",
+            "On the parameterization and initialization of diagonal state space models",
+            "Hippo: Recurrent memory with optimal polynomial projections",
+            "Simplified state space layers for sequence modeling",
+            "Funnel-transformer: Filtering out sequential redundancy for efficient language processing",
+            "Set transformer: A framework for attention-based permutation-invariant neural networks",
+            "Efficiently modeling long sequences with structured state spaces",
+            "Can mamba learn how to learn? a comparative study on in-context learning tasks",
+            "Hungry hungry hippos: Towards language modeling with state space models",
+            "Outrageously large neural networks: The sparsely-gated mixture-of-experts layer",
+            "Random feature attention",
+            "Polysketchformer: Fast transformers via sketches for polynomial kernels",
+            "Mamba: Linear-time sequence modeling with selective state spaces",
+            "Hyena hierarchy: Towards larger convolutional language models",
+            "Gqa: Training generalized multi-query transformer models from multi-head checkpoints",
+            "Rwkv: Reinventing rnns for the transformer era",
+            "Jamba: Ai21\u2019s groundbreaking ssm-transformer model",
+            "What makes convolutional models great on long sequence modeling?",
+            "Luna: Linear unified nested attention",
+            "Combining recurrent, convolutional, and continuous-time models with linear state space layers",
+            "Transformer quality in linear time",
+            "Block-state transformers",
+            "Stablemoe: Stable routing strategy for mixture of experts",
+            "Mixtral of experts",
+            "St-moe: Designing stable and transferable sparse expert models",
+            "Densemamba: State space models with dense hidden connection for efficient large language models",
+            "Moe-mamba: Efficient selective state space models with mixture of experts",
+            "Linformer: Self-attention with linear complexity",
+            "Base layers: Simplifying training of large, sparse models",
+            "Auction algorithms for network flow problems: A tutorial introduction"
+          ],
+          "5 Model-level Optimization 5.2 Model Compression": [
+            "Reformer: The efficient transformer",
+            "Loftq: Lora-fine-tuning-aware quantization for large language models",
+            "Matrix compression via randomized low rank and low precision factorization",
+            "Propagating knowledge updates to lms through distillation",
+            "Bert loses patience: Fast and robust inference with early exit",
+            "Llm-pruner: On the structural pruning of large language models",
+            "Spatten: Efficient sparse attention architecture with cascade token and head pruning",
+            "Structural pruning of large language models via neural architecture search",
+            "Llm-mq: Mixed-precision quantization for efficient llm deployment",
+            "Sparsegpt: Massive language models can be accurately pruned in one-shot",
+            "Autotinybert: Automatic hyper-parameter optimization for efficient pre-trained language models",
+            "Qa-lora: Quantization-aware low-rank adaptation of large language models",
+            "Tensorgpt: Efficient compression of the embedding layer in llms based on the tensor-train decomposition",
+            "Prune and tune: Improving efficient pruning techniques for massive language models",
+            "A global past-future early exit method for accelerating inference of pre-trained language models",
+            "Neural architecture search with reinforcement learning",
+            "Structured pruning for efficient generative pre-trained language models",
+            "Sheared llama: Accelerating language model pre-training via structured pruning",
+            "Lorashear: Efficient large language model structured pruning and knowledge recovery",
+            "Distilling step-by-step! outperforming larger language models with less training data and smaller model sizes",
+            "Nas-bert: task-agnostic and adaptive-size bert compression with neural architecture search",
+            "Qllm: Accurate and efficient low-bitwidth quantization for large language models",
+            "Longformer: The long-document transformer",
+            "Lmdeploy",
+            "Finequant: Unlocking efficiency with fine-grained weight-only quantization for llms",
+            "Quip: 2-bit quantization of large language models with guarantees",
+            "Zeroquant: Efficient and affordable post-training quantization for large-scale transformers",
+            "Disco: distilling counterfactuals with large language models",
+            "Efficient streaming language models with attention sinks",
+            "Kvquant: Towards 10 million context length llm inference with kv cache quantization",
+            "One-shot sensitivity-aware mixed sparsity pruning for large language models",
+            "Smoothquant: Accurate and efficient post-training quantization for large language models",
+            "Olive: Accelerating large language models via hardware-friendly outlier-victim pair quantization",
+            "Loraprune: Pruning meets low-rank parameter-efficient fine-tuning",
+            "Slicegpt: Compress large language models by deleting rows and columns",
+            "Dynamic context pruning for efficient and interpretable autoregressive transformers",
+            "Lion: Adversarial distillation of proprietary large language models",
+            "Pad: Program-aided distillation specializes large models in reasoning",
+            "Optimal brain damage",
+            "A survey for in-context learning",
+            "Llm. int8 (): 8-bit matrix multiplication for transformers at scale",
+            "Spqr: A sparse-quantized representation for near-lossless llm weight compression",
+            "Ziplm: Inference-aware structured pruning of language models",
+            "Platon: Pruning large transformer models with upper confidence bound of weight importance",
+            "Lifting the curse of capacity gap in distilling language models",
+            "Billm: Pushing the limit of post-training quantization for llms",
+            "Outlier suppression+: Accurate quantization of large language models by equivalent and optimal shifting and scaling",
+            "Multistage collaborative knowledge distillation from large language models",
+            "Omniquant: Omnidirectionally calibrated quantization for large language models",
+            "Large language models are reasoning teachers",
+            "SemSA: Semantic sparse attention is hidden in large language models.",
+            "Teaching small language models to reason",
+            "Asvd: Activation-aware singular value decomposition for compressing large language models",
+            "Litetransformersearch: Training-free neural architecture search for efficient language models",
+            "Norm tweaking: High-performance low-bit quantization of large language models",
+            "Sparse sinkhorn attention",
+            "Lamini-lm: A diverse herd of distilled models from large-scale instructions",
+            "Zeroquant-fp: A leap forward in llms post-training w4a8 quantization using floating-point formats",
+            "An efficient plug-and-play post-training pruning strategy in large language models",
+            "Fastbert: a self-distilling bert with adaptive inference time",
+            "Optimal brain compression: A framework for accurate post-training quantization and pruning",
+            "Sparse modular activation for efficient sequence modeling",
+            "Atom: Low-bit quantization for efficient and accurate llm serving",
+            "Gptq: Accurate post-training quantization for generative pre-trained transformers",
+            "Kivi: A tuning-free asymmetric 2bit quantization for kv cache",
+            "Flexgen: High-throughput generative inference of large language models with a single gpu",
+            "Evaluating quantized large language models",
+            "Qlora: Efficient finetuning of quantized llms",
+            "Knowledge distillation of large language models",
+            "Besa: Pruning large language models with blockwise parameter-efficient sparsity allocation",
+            "Confident adaptive language modeling",
+            "Quantease: Optimization-based quantization for language models\u2013an efficient and intuitive algorithm",
+            "Awq: Activation-aware weight quantization for llm compression and acceleration",
+            "Rptq: Reorder-based post-training quantization for large language models",
+            "Llm-fp4: 4-bit floating-point quantized transformers",
+            "Diffuser: efficient transformers with multi-hop attention diffusion for long sequences",
+            "Deebert: Dynamic early exiting for accelerating bert inference",
+            "H2o: Heavy-hitter oracle for efficient generative inference of large language models",
+            "Owq: Lessons learned from activation outliers for weight quantization in large language models",
+            "Few-shot task-agnostic neural architecture search for distilling large language models",
+            "Optimizing inference on large language models with nvidia tensorrt-llm, now publicly available",
+            "Generating long sequences with sparse transformers",
+            "Efficient content-based sparse attention with routing transformers",
+            "Gkd: Generalized knowledge distillation for auto-regressive sequence models",
+            "Lora: Low-rank adaptation of large language models",
+            "Lord: Low rank decomposition of monolingual code llms for one-shot compression",
+            "Mcc-kd: Multi-cot consistent knowledge distillation",
+            "Lut-gemm: Quantized matrix multiplication based on luts for efficient inference in large-scale generative language models",
+            "Big bird: Transformers for longer sequences",
+            "Dsformer: Effective compression of text-transformers by dense-sparse weight factorization",
+            "Accelerating inference for pretrained language models by unified multi-perspective early exiting",
+            "Zeroquant-v2: Exploring post-training quantization in llms from comprehensive study to low rank compensation",
+            "Magic pyramid: Accelerating inference with early exiting and token pruning",
+            "A simple and effective pruning approach for large language models",
+            "Chain-of-thought prompting elicits reasoning in large language models",
+            "In-context learning distillation: Transferring few-shot learning ability of pre-trained language models",
+            "Squeezellm: Dense-and-sparse quantization",
+            "Less is more: Task-aware layer-wise distillation for language model compression",
+            "Symbolic chain-of-thought distillation: Small models can also think step-by-step",
+            "Skipdecode: Autoregressive skip decoding with batching and caching for efficient llm inference",
+            "Losparse: Structured compression of large language models based on low-rank and sparse approximation",
+            "Efficient transformer inference with statically structured sparse attention",
+            "A simple hash-based early exiting approach for language understanding and generation",
+            "Faster causal attention over large sequences through sparse flash attention",
+            "Optimal brain surgeon and general network pruning",
+            "Training language models to follow instructions with human feedback, 2022",
+            "Distilling reasoning capabilities into smaller language models"
+          ],
+          "5 Model-level Optimization 5.3 Knowledge, Suggestions and Future Direction": [
+            "Losparse: Structured compression of large language models based on low-rank and sparse approximation",
+            "Matrix compression via randomized low rank and low precision factorization",
+            "Efficient streaming language models with attention sinks",
+            "Vision mamba: Efficient visual representation learning with bidirectional state space model",
+            "Compressing llms: The truth is rarely pure and never simple",
+            "Evaluating quantized large language models",
+            "Mamba: Linear-time sequence modeling with selective state spaces",
+            "Rwkv: Reinventing rnns for the transformer era",
+            "Asvd: Activation-aware singular value decomposition for compressing large language models",
+            "Parameter-efficient mixture-of-experts architecture for pre-trained language models",
+            "Paving the way to efficient architectures: Stripedhyena-7b, open source models offering a glimpse into a world beyond transformers",
+            "Llm-mq: Mixed-precision quantization for efficient llm deployment"
+          ],
+          "6 System-level Optimization 6.1 Inference Engine": [
+            "Optimizing inference on large language models with nvidia tensorrt-llm, now publicly available",
+            "Cutlass: Cuda templates for linear algebra subroutines",
+            "Openppl: A high-performance deep learning inference platform",
+            "Fastgemv: High-speed gemv kernels",
+            "Fast inference from transformers via speculative decoding",
+            "Pass: Parallel speculative sampling",
+            "Accelerating large language model decoding with speculative sampling",
+            "Rest: Retrieval-based speculative decoding",
+            "Medusa: Simple llm inference acceleration framework with multiple decoding heads",
+            "Transformers: State-of-the-art machine learning for pytorch, tensorflow, and jax.",
+            "Eagle: Lossless acceleration of llm decoding by feature extrapolation",
+            "Megablocks: Efficient sparse training with mixture-of-experts",
+            "Specinfer: Accelerating generative llm serving with speculative inference and token tree verification",
+            "Online speculative decoding",
+            "Vicuna: An open-source chatbot impressing gpt-4 with 90%* chatgpt quality",
+            "Distillspec: Improving speculative decoding via knowledge distillation",
+            "Deepspeed-inference: enabling efficient inference of transformer models at unprecedented scale",
+            "Flashattention: Fast and memory-efficient exact attention with io-awareness",
+            "Bytetransformer: A high-performance transformer boosted for variable-length inputs",
+            "Blockwise parallel decoding for deep autoregressive models",
+            "Draft & verify: Lossless large language model acceleration via self-speculative decoding",
+            "Accelerating llm inference with staged speculative decoding",
+            "Efficient memory management for large language model serving with pagedattention",
+            "Breaking the sequential dependency of llm inference using lookahead decoding",
+            "Glm: General language model pretraining with autoregressive blank infilling",
+            "Triton: an intermediate language and compiler for tiled neural network computations",
+            "Spectr: Fast speculative decoding via optimal transport",
+            "Mixtral of experts",
+            "cublas: Basic linear algebra on nvidia gpus",
+            "Flashdecoding++: Faster large language model inference on gpus",
+            "Llama: Open and efficient foundation language models",
+            "Cascade speculative drafting for even faster llm inference",
+            "Flash-decoding for long-context inference"
+          ],
+          "6 System-level Optimization 6.2 Serving System": [
+            "Spotserve: Serving generative large language models on preemptible instances",
+            "Fastertransformer: About transformer related optimization, including bert, gpt",
+            "Sarathi: Efficient llm inference by piggybacking decodes with chunked prefills",
+            "Fairness in serving large language models",
+            "Infinite-llm: Efficient llm service for long context with distattention and distributed kvcache",
+            "Deepspeed-fastgen: High-throughput text generation for llms via mii and deepspeed-inference",
+            "Efficient memory management for large language model serving with pagedattention",
+            "Taming throughput-latency tradeoff in llm inference with sarathi-serve",
+            "Lightllm",
+            "Fast distributed inference serving for large language models",
+            "Inference without interference: Disaggregate llm inference for mixed downstream workloads",
+            "Splitwise: Efficient generative llm inference using phase splitting",
+            "S3: Increasing gpu utilization during generative inference for higher throughput",
+            "Orca: A distributed serving system for transformer-based generative models",
+            "flashinfer",
+            "Distserve: Disaggregating prefill and decoding for goodput-optimized large language model serving"
+          ],
+          "6 System-level Optimization 6.3 Hardware Accelerator Design": [
+            "Dfx: A low-latency multi-fpga appliance for accelerating transformer-based text generation",
+            "Fact: Ffn-attention co-optimized transformer architecture with eager correlation prediction",
+            "Understanding the potential of fpga-based spatial acceleration for large language model inference",
+            "Flightllm: Efficient large language model inference with a complete mapping flow on fpga",
+            "Ftrans: Energy-efficient acceleration of transformers using fpga"
+          ],
+          "6 System-level Optimization 6.4 Comparison of LLM Frameworks": [
+            "Deepspeed-inference: enabling efficient inference of transformer models at unprecedented scale",
+            "Optimizing inference on large language models with nvidia tensorrt-llm, now publicly available",
+            "Sharegpt",
+            "Efficient memory management for large language model serving with pagedattention",
+            "Lightllm"
+          ],
+          "6 System-level Optimization 6.5 Knowledge, Suggestions and Future Direction": [
+            "Inference without interference: Disaggregate llm inference for mixed downstream workloads",
+            "Efficiently programming large language models using sglang",
+            "Specinfer: Accelerating generative llm serving with speculative inference and token tree verification"
+          ],
+          "7 Discussions of Key Application Scenarios": [
+            "Can mamba learn how to learn? a comparative study on in-context learning tasks",
+            "MLC-LLM",
+            "Frugalgpt: How to use large language models while reducing cost and improving performance",
+            "The rise and potential of large language model based agents: A survey",
+            "Pythia: A suite for analyzing large language models across training and scaling",
+            "Mobilellm: Optimizing sub-billion parameter language models for on-device use cases",
+            "Efficiently programming large language models using sglang",
+            "Minicpm: Unveiling the potential of end-side large language models",
+            "A survey on large language model (llm) security and privacy: The good, the bad, and the ugly",
+            "Rethinking optimization and architecture for tiny language models",
+            "Large multimodal agents: A survey"
+          ]
+        },
+        "source": "Search SearchFrom:local_paper_db",
+        "select_score": 0.000370799214579165,
+        "extra": {
+          "expand": "not expand"
+        }
+      }
+    ]
+  },
+  "abstract": "",
+  "sections": "",
+  "source": "Root",
+  "select_score": 0.0,
+  "extra": {
+    "touch_ids": [
+      "2407.11062",
+      "2404.03605",
+      "2112.06126",
+      "2311.05317",
+      "2205.07877",
+      "2402.09748",
+      "2402.16775",
+      "2406.17343",
+      "2402.10787",
+      "2307.02973",
+      "2406.04333",
+      "2404.05639",
+      "2102.04503",
+      "2407.11722",
+      "2406.06385",
+      "2106.08295",
+      "2401.11243",
+      "2305.19295",
+      "2208.09225",
+      "2203.05025",
+      "2305.17888",
+      "2309.02784",
+      "2310.03270",
+      "2303.07080",
+      "2404.14294"
+    ],
+    "crawler_recall_papers": [
+      "EfficientQAT: Efficient Quantization-Aware Training for Large Language Models",
+      "Mitigating the Impact of Outlier Channels for Language Model Quantization with Activation Regularization",
+      "RepQ: Generalizing Quantization-Aware Training for Re-Parametrized Architectures",
+      "Model Compression and Efficient Inference for Large Language Models: A Survey",
+      "A Comprehensive Evaluation of Quantization Strategies for Large Language Models",
+      "Q-DiT: Accurate Post-Training Quantization for Diffusion Transformers",
+      "Investigating the Impact of Quantization on Adversarial Robustness",
+      "Low-Rank Quantization-Aware Training for LLMs",
+      "BitsFusion: 1.99 bits Weight Quantization of Diffusion Model",
+      "LRP-QViT: Mixed-Precision Vision Transformer Quantization via Layer-wise Relevance Propagation",
+      "Power-of-Two Quantization for Low Bitwidth and Hardware Compliant Neural Networks",
+      "EdgeQAT: Entropy and Distribution Guided Quantization-Aware Training for the Acceleration of Lightweight LLMs on the Edge",
+      "1 Introduction",
+      "A White Paper on Neural Network Quantization",
+      "FP8 Quantization: The Power of the Exponent",
+      "Norm Tweaking: High-performance Low-bit Quantization of Large Language Models",
+      "Neural Network Quantization for Efficient Inference: A Survey",
+      "A Comprehensive Survey on Model Quantization for Deep Neural Networks in Image Classification",
+      "EfficientDM: Efficient Quantization-Aware Fine-Tuning of Low-Bit Diffusion Models",
+      "Bag of Tricks with Quantized Convolutional Neural Networks for image classification",
+      "A Survey on Efficient Inference for Large Language Models",
+      "Pruning vs Quantization: Which is Better?",
+      "Exploring Quantization for Efficient Pre-Training of Transformer Language Models",
+      "Low Precision Quantization-aware Training in Spiking Neural Networks with Differentiable Quantization Function",
+      "LLM-QAT: Data-Free Quantization Aware Training for Large Language Models"
+    ],
+    "recall_papers": [
+      "EfficientQAT: Efficient Quantization-Aware Training for Large Language Models",
+      "Mitigating the Impact of Outlier Channels for Language Model Quantization with Activation Regularization",
+      "RepQ: Generalizing Quantization-Aware Training for Re-Parametrized Architectures",
+      "Low-Rank Quantization-Aware Training for LLMs",
+      "Power-of-Two Quantization for Low Bitwidth and Hardware Compliant Neural Networks",
+      "EdgeQAT: Entropy and Distribution Guided Quantization-Aware Training for the Acceleration of Lightweight LLMs on the Edge",
+      "A White Paper on Neural Network Quantization",
+      "FP8 Quantization: The Power of the Exponent",
+      "EfficientDM: Efficient Quantization-Aware Fine-Tuning of Low-Bit Diffusion Models",
+      "Bag of Tricks with Quantized Convolutional Neural Networks for image classification",
+      "LLM-QAT: Data-Free Quantization Aware Training for Large Language Models"
+    ],
+    "answer": [
+      "Quantizing deep convolutional networks for efficient inference: A\n  whitepaper",
+      "Low-Rank Quantization-Aware Training for LLMs",
+      "EdgeQAT: Entropy and Distribution Guided Quantization-Aware Training for\n  the Acceleration of Lightweight LLMs on the Edge",
+      "LLM-QAT: Data-Free Quantization Aware Training for Large Language Models",
+      "EfficientQAT: Efficient Quantization-Aware Training for Large Language   Models"
+    ]
+  }
+}
