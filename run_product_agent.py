@@ -9,8 +9,8 @@ parser.add_argument('--input_file',        type=str, default="data/RealProductQu
 parser.add_argument('--crawler_path',      type=str, default="checkpoints/pasa-7b-crawler")
 parser.add_argument('--selector_path',     type=str, default="checkpoints/pasa-7b-selector")
 parser.add_argument('--output_folder',     type=str, default="results_products")
-parser.add_argument('--search_queries',    type=int, default=5)
-parser.add_argument('--search_products',   type=int, default=10, help="number of products per query")
+parser.add_argument('--search_queries',    type=int, default=3)
+parser.add_argument('--search_products',   type=int, default=5, help="number of products per query")
 parser.add_argument('--threads_num',       type=int, default=20)
 args = parser.parse_args()
 

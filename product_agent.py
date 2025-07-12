@@ -112,13 +112,13 @@ class ProductAgent:
                         "title": prod["title"],
                         "asin": prod["asin"],
                         "depth": 0,
-                        "description": " ".join(prod["bullets"]),
+                        "description": prod["full_description"],
                         "sections": "",
                         "source": "Search " + prod["source"],
                         "select_score": score,
                         "extra": {
                             "price": prod["price"],
-                            "images": prod["images"],
+                            "images": prod["images"]
                         }
                     })
                     self.root.child[query].append(paper_node)

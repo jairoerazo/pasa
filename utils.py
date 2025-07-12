@@ -65,9 +65,12 @@ def google_search_asin(query: str, num: int = 10) -> list[str]:
     return []
 
 def search_product_by_asin(asin: str):
-    url   = f"https://www.amazon.com/dp/{asin}"
+    '''url   = f"https://www.amazon.com/dp/{asin}"
     headers  = {
-        "User-Agent": "Mozilla/5.0 (compatible)"
+        "User-Agent": (
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) "
+            "Chrome/114.0.0.0 Safari/537.36"
+        )
     }
     resp  = requests.get(url, headers=headers)
     if resp.status_code != 200:
@@ -85,7 +88,30 @@ def search_product_by_asin(asin: str):
         "price":       price_tag.get_text(strip=True) if price_tag else None,
         "bullets":     bullets,
         "images":      images,
-        "source":      "SearchFrom:Amazon",
+        "source":      "SearchFrom:Amazon"
+    }'''
+    payload = {
+        'api_key': '98e90542f49c73b5a3100d4b81f9b9bf',
+        'asin': asin
+    }
+    url = 'https://api.scraperapi.com/structured/amazon/product'
+    r = requests.get(url, params=payload)
+    if r.status_code != 200:
+        return {"error": f"Request failed with status {r.status_code}"}
+
+    try:
+        data = r.json()
+    except Exception as e:
+        return {"error": "Invalid JSON response", "details": str(e)}
+
+    return {
+        "asin": asin,
+        "title": data.get("name", ""),
+        "price": data.get("pricing", ""),
+        "bullets": data.get("feature_bullets", []),
+        "full_description": data.get("full_description", ""),
+        "images": data.get("images", []),
+        "source": "SearchFrom:Amazon"
     }
 
 def google_search_arxiv_id(query, num=10, end_date=None):
